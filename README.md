@@ -3,8 +3,8 @@ READ ME
 
 Prerequisites
 -------------
-#.  [LaTeX](http://www.latex-project.org/ftp.html) must be installed
-#.  [pandoc](http://johnmacfarlane.net/pandoc/) must be installed
+*  [LaTeX](http://www.latex-project.org/ftp.html) must be installed
+*  [pandoc](http://johnmacfarlane.net/pandoc/) must be installed
 
 How to build documents from source
 ----------------------------------
