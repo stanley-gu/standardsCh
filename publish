@@ -1,0 +1,31 @@
+#!/bin/bash
+ #!/bin/bash
+for i in $( ls *.md ); do
+
+    echo "Converting" $i "to tex"
+    mkdir -p tex
+    pandoc -s -S $i -o ./tex/${i%.*}.tex
+
+    echo Converting ${i##*.}.tex into pdf using pdflatex
+    cd tex
+    latex ${i%.*}.tex
+    pdflatex ${i%.*}
+    cd ..
+
+    echo "Converting" $i "to PDF"
+    mkdir -p pdf
+    pandoc -s -S $i -o ./pdf/${i%.*}.pdf
+
+    echo Converting $i to html
+    mkdir -p html
+    pandoc -s -S $i -o ./html/${i%.*}.html
+
+    echo Converting $i to docx
+    mkdir -p docx
+    pandoc -s -S $i -o ./docx/${i%.*}.docx
+
+    echo Converting $i to epub
+    mkdir -p epub
+    pandoc -s -S $i -o ./docx/${i%.*}.epub
+
+done
