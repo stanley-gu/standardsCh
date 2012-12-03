@@ -1,15 +1,23 @@
 #!/bin/bash
+for i in $( ls *.slides ); do
+
+    echo Making $i into slides
+    mkdir -p beamer
+    pandoc -t beamer $i -o ./beamer/${i%.*}.pdf
+
+done
+
 for i in $( ls *.md ); do
 
     echo "Converting" $i "to tex"
     mkdir -p tex
     pandoc -s -S $i -o ./tex/${i%.*}.tex --biblio refs.bib --biblatex --csl=nature.csl
 
-    echo Converting ${i##*.}.tex into pdf using pdflatex
-    cd tex
-    latex ${i%.*}.tex
-    pdflatex ${i%.*}
-    cd ..
+#    echo Converting ${i##*.}.tex into pdf using pdflatex
+#    cd tex
+#    latex ${i%.*}.tex
+#    pdflatex ${i%.*}
+#    cd ..
 
     echo "Converting" $i "to PDF"
     mkdir -p pdf
