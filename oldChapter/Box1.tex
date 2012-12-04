@@ -1,0 +1,166 @@
+\documentclass[12pt]{article}
+\usepackage{html}
+\usepackage{graphicx}
+\usepackage{palatino}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{boxedminipage}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{chicago}
+\onehalfspacing
+
+\newcommand{\bgamma}{\mbox{\boldmath $\Gamma$}}
+\newcommand{\bL}{\mbox{\boldmath $L$}}
+\newcommand{\bT}{\mbox{\boldmath $T$}}
+\newcommand{\bI}{\mbox{\boldmath $I$}}
+\newcommand{\bM}{\mbox{\boldmath $M$}}
+\newcommand{\bm}{\mbox{\boldmath $m$}}
+\newcommand{\bN}{\mbox{\boldmath $N$}}
+\newcommand{\bE}{\mbox{\boldmath $E$}}
+\newcommand{\bA}{\mbox{\boldmath $A$}}
+\newcommand{\bB}{\mbox{\boldmath $B$}}
+\newcommand{\bK}{\mbox{\boldmath $K$}}
+\newcommand{\bP}{\mbox{\boldmath $P$}}
+\newcommand{\bx}{\mbox{\boldmath $x$}}
+\newcommand{\bU}{\mbox{\boldmath $U$}}
+\newcommand{\bV}{\mbox{\boldmath $V$}}
+\newcommand{\bZero}{\mbox{\boldmath $0$}}
+\newcommand{\bLo}{\mbox{\boldmath $L_0$}}
+\newcommand{\bNo}{\mbox{\boldmath $N_0$}}
+\newcommand{\bNr}{\mbox{\boldmath $N_R$}}
+\newcommand{\bSi}{\mbox{\boldmath $S_i$}}
+\newcommand{\bSd}{\mbox{\boldmath $S_d$}}
+\newcommand{\bdSi}{\mbox{\boldmath $dS_i$}}
+\newcommand{\bdSd}{\mbox{\boldmath $dS_d$}}
+\newcommand{\bS}{\mbox{\boldmath $S$}}
+\newcommand{\bdS}{\mbox{\boldmath $dS$}}
+\newcommand{\bdt}{\mbox{\boldmath $dt$}}
+\newcommand{\bdSdt}{\mbox{$\displaystyle \frac{\bdS}{\bdt}$}}
+\newcommand{\bdSddt}{\mbox{$\displaystyle \frac{\bdS_d}{\bdt}$}}
+\newcommand{\bdSidt}{\mbox{$\displaystyle \frac{\bdS_i}{\bdt}$}}
+\newcommand{\bv}{\mbox{\boldmath $v$}}
+\newcommand{\bp}{\mbox{\boldmath $p$}}
+
+\parindent=0pt
+\parskip=4pt
+
+\begin{document}
+
+
+\setlength\fboxsep{18pt}
+\begin{boxedminipage}[hbp]{14cm}
+{\bfseries Box 1. Reaction Network} Consider the simple reaction
+network shown on the left below:
+
+\begin{minipage}[t]{6cm}
+\begin{picture}(60,95)(-60,-50)\thicklines
+%
+\put(18,20){$v_2$}
+\qbezier(0,0)(20,20),(40,0) \put(42,-1){\vector(4,-3){2}}
+%
+\put(16,-46){$v_3$}
+\qbezier(0,-20)(20,-40),(40,-20) \put(0,-19){\vector(-3,4){2}}
+%
+\put(-9,-12){$ES$}
+\put(40,-13){$E$}
+\put(65,23){$S_1$}
+\put(65,-48){$S_2$}
+\put(69,16){\vector(0,-1){48}}
+\put(72,-8){$v_1$}
+%
+% Lower arm
+\qbezier(62,-45)(20,-40),(0,-20)
+% Upper arm
+\qbezier(18,10)(26,8),(60,25) \put(61,25){\vector(2,1){2}}
+%
+\end{picture}
+\end{minipage}
+\begin{minipage}[t]{6cm}
+\begin{picture}(60,85)(-40,-35)\thicklines
+  % Vertical arrows
+  \put(-9, 24){$ES$}
+  \put(-9, 8){$S_1$}
+  \put(-9, -11){$S_2$}
+  \put(-9, -26){$E$}
+
+  \put(26,40){$v_1$}
+  \put(46,40){$v_2$}
+  \put(68,40){$v_3$}
+
+$\begin{array}{cc}
+        \left[
+         \begin{array}{rrr}
+            0 & -1 &  1  \\
+           -1 &  1 &  0  \\
+            1 &  0 & -1  \\
+            0 &  1 & -1
+         \end{array}
+        \right]
+   \end{array}$
+\end{picture}
+\end{minipage}
+
+\vspace{12pt} The {\bfseries stoichiometry matrix} for this
+network is shown to the right. This network possesses two
+conserved cycles given by the constraints: $S_1 + S_2 + ES = T_1$
+and $E + ES = T_2$. The set of independent species includes:
+$\{ES, S_1\}$ and the set of dependent species $\{E, S_2 \}$.
+
+\bigskip
+The $\bLo$ matrix can be shown to be:
+
+\hspace{2cm} $$ \bLo = \left[ \begin{array}{rr}
+  -1 & -1 \\
+  -1 & 0 \\
+\end{array}  \right]$$ \hfill
+%
+\linebreak
+The complete set of equations for this model is therefore:
+
+$$
+\left[ \begin{array}{l}
+  S_2 \\
+  E \\
+\end{array} \right] =
+\left[ \begin{array}{rr}
+  -1 & -1 \\
+  -1 & 0 \\
+\end{array}  \right]
+\left[
+\begin{array}{l}
+    ES \\
+    S_1 \\
+\end{array}
+\right] +
+\left[
+\begin{array}{l}
+  T_1 \\
+  T_2 \\
+\end{array}
+\right]$$
+$$\left[
+\begin{array}{l}
+  dES/dt \\
+  dS_1/dt \\
+\end{array}
+\right] =
+\left[
+\begin{array}{rrr}
+  0 & -1 & 1 \\
+  -1 & 1 & 0 \\
+\end{array}
+\right]
+\left[
+\begin{array}{l}
+  v_1 \\
+  v_2 \\
+  v_3 \\
+\end{array}
+\right]$$ Note that even though there appears to be four variables
+in this system, there are in fact only two independent variables, $\{ES, S_1\}$,
+and hence only two differential equations and two linear constraints.
+
+\end{boxedminipage}
+
+\end{document} 

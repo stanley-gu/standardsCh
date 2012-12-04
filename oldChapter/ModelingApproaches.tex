@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{html}
+\usepackage{graphicx}
+\usepackage{palatino}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{boxedminipage}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{chicago}
+\onehalfspacing
+
+
+\newcommand{\bgamma}{\mbox{\boldmath $\Gamma$}}
+\newcommand{\bL}{\mbox{\boldmath $L$}}
+\newcommand{\bT}{\mbox{\boldmath $T$}}
+\newcommand{\bI}{\mbox{\boldmath $I$}}
+\newcommand{\bM}{\mbox{\boldmath $M$}}
+\newcommand{\bm}{\mbox{\boldmath $m$}}
+\newcommand{\bN}{\mbox{\boldmath $N$}}
+\newcommand{\bE}{\mbox{\boldmath $E$}}
+\newcommand{\bA}{\mbox{\boldmath $A$}}
+\newcommand{\bB}{\mbox{\boldmath $B$}}
+\newcommand{\bK}{\mbox{\boldmath $K$}}
+\newcommand{\bP}{\mbox{\boldmath $P$}}
+\newcommand{\bx}{\mbox{\boldmath $x$}}
+\newcommand{\bU}{\mbox{\boldmath $U$}}
+\newcommand{\bV}{\mbox{\boldmath $V$}}
+\newcommand{\bZero}{\mbox{\boldmath $0$}}
+\newcommand{\bLo}{\mbox{\boldmath $L_0$}}
+\newcommand{\bNo}{\mbox{\boldmath $N_0$}}
+\newcommand{\bNr}{\mbox{\boldmath $N_R$}}
+\newcommand{\bSi}{\mbox{\boldmath $S_i$}}
+\newcommand{\bSd}{\mbox{\boldmath $S_d$}}
+\newcommand{\bdSi}{\mbox{\boldmath $dS_i$}}
+\newcommand{\bdSd}{\mbox{\boldmath $dS_d$}}
+\newcommand{\bS}{\mbox{\boldmath $S$}}
+\newcommand{\bdS}{\mbox{\boldmath $dS$}}
+\newcommand{\bdt}{\mbox{\boldmath $dt$}}
+\newcommand{\bdSdt}{\mbox{$\displaystyle \frac{\bdS}{\bdt}$}}
+\newcommand{\bdSddt}{\mbox{$\displaystyle \frac{\bdS_d}{\bdt}$}}
+\newcommand{\bdSidt}{\mbox{$\displaystyle \frac{\bdS_i}{\bdt}$}}
+\newcommand{\bv}{\mbox{\boldmath $v$}}
+\newcommand{\bp}{\mbox{\boldmath $p$}}
+
+\parindent=0pt
+\parskip=4pt
+
+\begin{document}
+
+
+\begin{figure} \label{table:mathTechniques}
+\rule[-5pt]{14cm}{1pt}
+\begin{description} 
+\item[Boolean:] One of the simplest possible modelling techniques
+is to represent a network using Boolean logic \cite{DeJong2002}.
+This approach has been used to model gene networks.
+%
+\item[Ordinary differential equations (ODEs):] This is the
+commonest and arguably most useful representation. Although based on
+a continuum model, ODE models have proved to be excellent descriptions
+of many biological systems. Another advantage to
+using ODEs is the wide range of analytical and numerical methods that are available. The
+analytical methods in particular provide a means to gain a deeper
+insight into the workings of the model.
+%
+\item[Deterministic hybrid:] A deterministic hybrid model is one
+which combines a continuous model (e.g ODE model) with discrete
+events. These models are notoriously difficult to solve efficiently and
+require carefully crafted numerical solvers. The events can occur
+either in the state variables or parameters and can be
+time dependent or independent. A simple example involves the
+division of a cell into two daughter cells. This event can be
+treated as a discrete event which occurs when the volume of the
+cell reaches some preset value at which point the volume halves.
+%
+\item[Differential-algebraic equations (DAEs):] Sometimes a model
+requires constraints on the variables during the solution of the
+ODEs. Such a situation is often termed a DAE system. The simplest
+constraints are mass conservation constraints, however these are
+linear and can be handled efficiently and easily using simple
+assignment equations (see equation \ref{eq:general}). DAE solvers need only
+ be used when the constraints are nonlinear.
+%
+\item[Partial differential equations (PDEs):] Whereas simple ODEs
+model well stirred reactors, PDEs can be used model heterogenous
+spatial models. 
+%
+\item[Stochastic:] At the molecular level concentrations are
+discrete, but as long as the concentrations levels are sufficiently high,
+the continuous model is perfectly adequate. When concentrations
+fall below approximately one hundred molecules in the volume considered (e.g. the cell or compartment) one has to consider using stochastic modelling. The great disadvantage in
+this approach is that one looses almost all the analytical methods
+that are available for continuous models, as a result stochastic
+models are much more difficult to interpret. 
+\end{description}
+\rule[6pt]{14cm}{1pt}
+\caption{ A non-exhaustive selection of mathematical techniques for modelling biological systems.}
+\end{figure}
+
+\end{document} 
