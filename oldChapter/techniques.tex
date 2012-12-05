@@ -1,0 +1,313 @@
+
+\subsection{Structural Analysis}
+
+Large scale genomic studies are generating significant amounts of
+data on the structure of cellular networks. This is in contrast to
+kinetic data which is frequently absent, unreliable or
+fragmentary. There is therefore a desire by many in the community
+to investigate the potential rewards of analyzing the more readily
+available topological data.
+
+There are a number of areas where work has been carried out on
+network structure. These include network connectivity, elementary
+modes, flux balance and conservation analysis. Note that all these
+approaches only look at the connectivity and do consider kinetics.
+
+\subsubsection{Connectivity Studies}
+
+Connectivity studies have centered around the search for patterns
+in the way cellular networks are physically connected. It is
+however not entirely clear whether the conclusions that have
+emerged from this work are truly novel. One thing is certain, this
+area has received a tremendous amount of coverage in both the
+popular as well as academic press and has stimulated a great deal
+of excitement and discussion.
+
+One of the first difficulties that the connectionists have is how
+to represent a biological network as a mathematical graph. In
+constructing the mathematical graphs a number of simplifications
+are made, these include irreversibility, that is edges in a graph
+are unidirectional and common molecules such as ATP, Pi, NAD etc
+do not contribute to the structure of the graph itself. With this
+in mind, the connectionists then consider a number of network
+metrics which are used to characterize the graphs. The most
+important metrics include: degree distribution, clustering
+distribution and path length. Theoretical studies of artificial
+graphs indicate that these graph metrics can be associated with
+particular graph patterns, the most important being random,
+scale-free and hierarchical.
+
+Random graphs are characterized by nodes that have roughly equal
+numbers of edges and that nodes which deviate from this are
+extremely rare. As a result, the degree distribution follows a
+sharp poisson distribution and the clustering degree is constant.
+The mean path length between nodes in a random graph is roughly
+proportional to the logarithm of the network size which means that
+all nodes are closely connected, so-called small-world property.
+
+The main conclusion from these network studies is that biological
+networks are not random since the network metrics do not follow
+the expected pattern for a random graph. Instead, real networks
+show two additional properties, scale-free and hierarchy.
+
+Much has been made of the observation that real networks are
+scale-free. What this means is that some nodes in the network are
+highly connected where as most nodes are not. A visual inspection
+of a pathway map will reveal this to be the case. What is not
+clear however is what this means in practice. One suggestion is
+that highly connected nodes, the so-called hubs, could be points
+where disruption would lead to network failure. Clearly this kind
+of disruption could only be made in protein networks where it is
+possible through mutation to remove or affect a node's properties.
+In metabolic networks, only the edges can be disrupted in this
+way. However, what is missing from these arguments is the kinetic
+factor. If is true that a network's configuration can affect a
+network dynamic properties, however equally important are the
+kinetic forces at work, including feedback loops and reaction
+rates. These factors are ignored in these studies and one
+therefore wonders how general the conclusion actually are.
+
+The final conclusion that the connectionists make is that real
+networks are not only scale-free and small-world but they are also
+hierarchical. By this they mean that a network is made up of
+highly clustered islands, with few links bridging the island.
+Moreover they observe that islands of clusters form super
+islands within a large structure.
+
+The discoveries that the connectionists have made may appear at
+one level to be quite obvious. Many of these ideas have been known
+to the biological community for many years though they've never
+been quantified. On the other hand, these studies have stimulated
+a great deal of discussion and has brought to the attention of
+biologists the need to take a more computational and theoretical
+approach.
+
+
+\subsubsection{Elementary Modes}
+
+Elementary modes analysis is concerned with identifying subsets of
+reactions whose net stoichiometry is balanced and within which all
+internal reactions are also stoichiometrically balanced. Thus at
+steady-state an elementary mode has no net consumption or
+production of any internal substrate. Given this definition, an
+elementary mode cannot be subdivided into further modes. An
+elementary mode can be thought of as a minimal independent pathway
+within a network of reactions that is capable of supporting a net
+conversion. Any real flux distribution in the living cell is thus
+a superposition of elementary modes. Elementary modes help to
+clarify the notion of a pathway. Applications include maximizing
+product yield in biosynthetic pathways, reconstruction and
+consistency checks of metabolism from genome data, analysis of
+enzyme deficiencies, and drug target identification in metabolic
+networks.
+
+\subsubsection{Flux Balance Analysis}
+
+At steady state all consumption and production rates at every species
+node are balanced. This is described by equating \ref{eq:system} to zero:
+
+$$ \bN \bv = 0 $$ \label{eqn:steadyState}
+
+This equation admits a multitude of solutions in $\bv$. These
+solution represent all potential flow states in the network. By
+the addition of constraints on the magnitude of the fluxes and
+assuming that the solutions to (\ref{eqn:steadyState}) are subject
+to an optimizing function expressed as a linear combination of the
+fluxes contained in v, we can formulate equation
+(\ref{eqn:steadyState}) as a linear programming problem:
+
+\begin{eqnarray} \label{eqn:FluxBalance}
+\bN \bv &=& 0 \\ \nonumber
+0 \leq \alpha_i &\leq& v_i \leq \beta_i \\ \nonumber
+\mbox{(minimize) maximize } \mbox{ } O &=& \sum c_i v_i \\ \nonumber
+\end{eqnarray}
+
+An example of a simple maximization function $O$ might be to
+maximize the ATP turnover by maximizing the ATP hydrolysis flux.
+This procedure will yield a set of fluxes that satisfies the
+equation in (\ref{eqn:FluxBalance}).
+
+\subsubsection{Conservation Analysis}
+
+While the solutions to $\bN \bv = 0$ yields information on flux
+balance, the solutions to
+
+$$ \bN^t \bv = 0$$
+
+yields solutions to mass balance constraints in the network. Such
+constraints are invariable the result of conserved moieties. For
+example in real networks, such moieties would include \{ATP, ADP,
+ADP\}, \{NAD, NADH\} and so on. Detailed on how to compute the
+conservation laws in arbitrary networks is given in Sauro and
+Ingalls (2004).
+
+Computing the conservation laws is useful for a number of reasons.
+Most critically many of the numerical methods require a set of
+independent systems equations (\ref{eq:general}), without which
+they encounter severe numerical difficulties. This will problem
+will be covered in more detail in the next section. In terms of
+biological interest, the mass conservation laws give upper limits
+on the concentrations that the participating species can reach.
+For example, in the human parasite {\em Trypanosoma brucei} model
+developed by Bakker and colleagues \cite{Bakker:1997}, it was
+discovered that the metabolism of the organism was constrained by
+four conservation laws, two relating to AMP another to NAD and a
+third to phosphate. These constraints mean that attempts to
+disrupt metabolite levels (by therapeutic drugs) in this organism
+to levels that are harmful is limited. Conservation constraints
+can impose hard limits to the extent to which a drug can influence
+a metabolite level.
+
+
+\subsection{Solving the System Equations}
+
+The structural analysis of cellular networks can yield much
+interesting information which can have practical as well and
+academic implications. The next level of analysis is to
+incorporate kinetics into the structure analysis. This involves
+assigning rate laws to each reaction in the model and setting
+values for the various parameters such as Km, Vmax and regulatory
+constants. This is arguably, the most difficult aspect of
+modelling, in many cases there will be little information on the
+form of the rate laws, let along the values for the parameters.
+For well studied pathways, such as a number of metabolic pathways,
+the lack of information is less severe. For signaling pathways and
+genetic networks, there is a significant lack of detailed kinetic
+information. In the 60s and 70s it was almost routine for a
+research group to record kinetic information on enzymes that they
+had isolated. Unfortunately in the last twenty five years with the
+rise of genomic research such studies have virtually vanished.
+This means that all networks discovered since the early 80s,
+mainly signalling and genetic have received less attention with
+respect to kinetic measurements, hence the lack of information.
+
+There are a number of techniques that one can use to alleviate the
+lack of information, one is to apply model fitting techniques
+which will be described later. A less known approach is to use
+kinetic approximations combined with data fitting. There are a
+number possible approximations one can use, these include simple
+first order kinetics, power laws kinetics or more useful linlog
+kinetics. One of the characteristics of biological processes is
+that they saturate, this is an inevitable result of how biological
+catalysis operates. Therefore what the approximate it should
+attempt to replicate saturate at high levels of substrate. Linear
+kinetic, although simple do not saturate, if it is known by some
+means that the reaction operate always below saturation then a
+first order approximation is quite suitable. The alternative is to use
+power laws or linlog equations. Power law equations of the form:
+
+$$ v = \alpha \sum S_i^{\varepsilon_i} $$
+
+where the sum if over all effectors that could possible effect the
+rate $v$. $\varepsilon_i$ is the elasticity with respect to
+substrate $i$. This equation has the advantage that it has zero
+rate at zero substrate, and that a intermediate substrate values
+the function will begin to level off, however at high
+concentration the function continues to rise and it's capacity to
+saturate is quite limited. A better approach is to use a new
+approximation, called linlog. The linlog approximation is given by
+the equation:
+
+\begin{equation} \label{eqn:linlog}
+v = J^o \frac{e}{e^o} \left[ 1 + \varepsilon_{S_i}^{v} \frac{S_i}{S^o_i} +
+  \varepsilon_{S_j}^v \frac{S_j}{S^o_j} + \ldots \right]
+\end{equation}
+
+where $\varepsilon$ are the elasticities for the different
+effector. The linlog approximation is always computed relative to
+some convenient operating point, the $x^o$ are the values at this
+operating point. The advantage of this approximation is that the
+function saturates quite well at high substrate con
+concentrations. The only drawback is that the function does not go
+through zero rate at low levels of substrate.
+
+What is important however, is that both the power law and the
+linlog are expressed in terms of elasticities which represent the
+kinetic order of each effector:
+
+$$ \varepsilon^v_S = \frac{\partial v}{\partial S} \frac{S}{v} $$
+
+In many cases the kinetic order can be estimate from other
+information such has the degree of irreversibility and saturation
+of the reaction. Even if this information is not know, it is always
+possible as a first approximation to sent the elasticities to
+0.5. For activators the elasticities can be set to some value
+greater than one but less than the hill coefficient of the
+reaction. Inhibitors can be treated in the same way except the
+values are negative.
+
+Once the set of equation for the network has been constructed, it
+is possible to carry out a number of different analyses. The most
+obvious and what most researcher will do is to carry out a time
+course simulation, that is to observe how the concentrations of
+the various species evolve over time. The second most common
+analysis to do is to compute the steady state of the model. Both
+these techniques will be described next.
+
+COR
+
+\subsubsection{Time Course Solutions}
+
+Plotting the time course solution of the model involves solving
+the set of differential equations (\ref{eq:general}). There are
+many standard techniques that are available to do this. It was
+discovered early on in this field that cellular network models
+tend to be what is called {\em stiff}. Stiffness arises when the
+different parts of the network evolve in time at markedly
+different rates. This means that the numerical method that
+integrates the differential equations has to maintain a very small
+time step in order to contain numerical error. This in turn makes
+the simulation time much longer but more worrying it means that
+the step size might have to be so small that rounding error
+accumulate which causes the numerical method to fail. This problem
+was very well appreciated by the early modelers and in the 1960s
+there was a concerted effort to design numerical methods which
+could deal with stiffness \cite{Ga77}. The result of
+this research was the design of a whole family of what are known
+as implicit integrators, the most celebrated being the one
+developed by Gear. Since that time, various other variants have
+been developed, most notable, LOSDA and CVODE \cite{Cohen1996}.
+Both are highly recommended as the workhorse integrators for
+modelling cellular networks. The latest release of CVODE (version
+2.2) is particularly interesting because it has the capacity to
+detect discrete change during a simulation. This is important if
+the intention is to model deterministic-hybrid models.
+
+
+METHOD OF SOLUTION - LSODE contains two variable-order, variable-
+step (with interpolatory step-changing) integration methods. The
+first is the implicit Adams or non-stiff method, of orders one
+through twelve. The second is the backward differentiation or
+stiff method (or BDF method, or Gear's method), of orders one
+through five.
+
+\subsubsection{Steady State Solutions}
+
+NLEQ2
+
+\subsection{Optimization}
+
+Take sections from Vijay. Fitting Microarray data, Arkin
+
+\subsection{Metabolic Control Analysis}
+
+Metabolic Control Analysis, or more precisely, Cellular Control Analysis (CCA) is
+a theory which describes how perturbations propagate through a network as the
+network changes from one steady state to another steady state. Frank Bergmann in another part of this volume describes CCA in detail. Here it is suffice to say that CCA is an important
+integrative tool for models.
+
+\subsubsection{Frequency Control Analysis}
+
+An extension to steady state control analysis is frequency control analysis (FCC), refs. This allows one to understand how a varying model parameter is transformed by the network. Because
+FCC is a linearized analysis the only effect on the input signal is either to change
+the amplitude or the phase shift.
+
+$$ C_{S_i} (w) = \left( iw {\bf I} - {\bf N_r} \frac{\partial v}{\partial S} {\bf L} \right)^{-1} {\bf N_r} $$
+
+\subsection{Bifurcation}
+
+Usual, take section from grant proposal, list packages.
+
+\subsection{Stochastic Simulation ?}
+
+Brief

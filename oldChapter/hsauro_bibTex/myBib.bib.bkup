@@ -1,0 +1,3355 @@
+
+@ARTICLE{AlonLetter2002,
+   AUTHOR = "S. S Shen-Orr and R. Milo and S. Mangan and U. Alon",
+   TITLE = "Network motifs in the transcriptional regulation network of Escherichia coli",
+   JOURNAL = "Nature Genetics",
+   VOLUME = 31,
+   YEAR = 2002,
+   PAGES = "64--68"
+}
+
+
+@ARTICLE{ASK,
+        AUTHOR = "L. Acerenza and H. M. Sauro and H. Kacser",
+        TITLE = "Control Analysis of time-dependent metabolic systems.",
+        JOURNAL = "J. Theor. Biol.",
+        YEAR = 1989,
+        VOLUME = 137,
+        PAGES = "423--444"
+}
+
+
+@ARTICLE{AG79 ,
+    AUTHOR = "Achs, M. J. and Garfinkel, D.",
+    TITLE = "Metabolism of totally ischemic excised dog heart. 1. Construction of a computer model.",
+    JOURNAL = "Am. J. Physiol.",
+    VOLUME = 237 ,
+    PAGES = "R318--326",
+    YEAR = 1979 }
+
+@ARTICLE{Al90,
+     AUTHOR = "K. R. Albe and M. H. Butler and B. E. Wright",
+     TITLE = "Cellular Concentrations of enzymes and their substrates",
+     JOURNAL = "J. Theor. Biol.",
+     VOLUME = 143,
+     PAGES = "163--195",
+     YEAR = 1990 }
+
+@ARTICLE{AlmArkin2003,
+   AUTHOR = "E. Alm and A. Arkin",
+   TITLE = "Biological Networks",
+   JOURNAL = "Current Opinion in Structural Biology",
+   VOLUME = 13,
+   YEAR = 2003,
+   PAGES = "193--202"
+}
+
+@ARTICLE{Anad:Review,
+      AUTHOR = "A. R. Asthagiri and D. A. Lauffenburger",
+      TITLE = "Bioengineering Models Of Cell Signaling",
+      JOURNAL = "Annu. Rev. Biomed. Eng.",
+      VOLUME = 2,
+      YEAR = 2000,
+      PAGES ="31--53" }
+
+@MISC{AMD,
+    AUTHOR = "AMD",
+    TITLE = "AMD Corporation",
+    HOWPUBLISHED = "url: http://www.amd.com",
+    YEAR = 2003
+}
+
+@ARTICLE{Anad:2001,
+     AUTHOR = "A. R. Asthagiri and D. A. Lauffenburger",
+     TITLE = "A computational study of feedback effects on signal dynamics in a mitogen-activated protein kinase (MAPK) pathway model.",
+     JOURNAL = "Biotechnology Progress",
+     VOLUME = 17,
+     PAGES = "227--239",
+     YEAR = 2001
+}
+
+@ARTICLE{Alves2000,
+   JOURNAL = "Biophys J",
+   YEAR = 2000,
+   PAGES = "2290--2304",
+   VOLUME = 79,
+   TITLE = "Effect of Overall Feedback Inhibition in Unbranched Biosynthetic Pathways",
+   AUTHOR = "R. Alves and M. A. Savageau"
+}
+
+
+@ARTICLE{Aris65,
+     AUTHOR = "R. Aris",
+     TITLE = "Prolegomena to the Rational Analysis of Systems of Chemical Reactions",
+     JOURNAL = "Arch. Rational Mech. Anal",
+     VOLUME = 19,
+     PAGES = "81--99",
+     YEAR = 1965 }
+
+
+@ARTICLE{ArabidopsisSequence,
+   TITLE = "Analysis of the genome sequence of the flowering plant Arabidopsis thaliana",
+   JOURNAL = "Nature",
+   YEAR = 2000,
+   PAGES = "796--815",
+   VOLUME = 408,
+   AUTHOR = "The-Arabidopsis-Initiative"
+}
+
+
+@ARTICLE{ArkinRoss1994,
+  TITLE = "Computational functions in biochemical reaction networks",
+  AUTHOR = "A. Arkin and J. Ross",
+  JOURNAL = "Biophys J.",
+  YEAR = 1994,
+  VOLUME = 67,
+  PAGES = "560--78"
+}
+
+
+@ARTICLE{ArkinLambda1998,
+   AUTHOR = "A. Arkin and J. Ross and H. H. McAdams",
+   TITLE = "Stochastic kinetic analysis of developmental pathway bifurcation in phage lambda-infected Escherichia coli cells.",
+   JOURNAL = "Genetics",
+   YEAR = 1998,
+   VOLUME = 149,
+   PAGES = "1633--48"
+}
+
+
+@ARTICLE{BhallaReview:2003,
+     AUTHOR = "U. S. Bhalla",
+     TITLE = "Understanding complex signaling networks through models and metaphors",
+     YEAR = 2003,
+     JOURNAL = "Prog. Biophys Mol. Biol",
+     VOLUME = 81,
+     PAGES = "45--65"
+}
+
+@ARTICLE{Bakker:1999,
+    AUTHOR = "B. M. Bakker and P. A. M. Michels and F. R. Opperdoes and H.V. Westerhoff",
+    TITLE = "What controls glycloysis in bloodstream form {\em Trypanosoma brucei}",
+    JOURNAL = "J. Biol. Chem.",
+    VOLUME = 274,
+    YEAR = 1999,
+    PAGES = "14551-14559" }
+
+@ARTICLE{Bakker:2000,
+   AUTHOR = "B. M. Bakker and H. V. Westerhoff and F. R. Opperdoes and P. A. M. Michels",
+   TITLE = "Metabolic control analysis of glycolysis in trypanosomes as an approach to improve selectivity and effectiveness of drugs",
+   JOURNAL = "Mol. Biochem. Parasitology",
+   VOLUME = 106,
+   YEAR = 2000,
+   PAGES = "1-10" }
+
+
+@ARTICLE{Banuett:1998,
+   AUTHOR = "F. Banuett",
+   TITLE = "Signaling in the Yeasts: An Informational Cascade with Links to the Filamentous Fungi",
+   JOURNAL = "Microbiology and Molecular Biology Reviews",
+   VOLUME = 62,
+   YEAR = 1998,
+   PAGES = "249--274"
+}
+
+
+@ARTICLE{Ba89,
+        AUTHOR = "J. M. Baranyi and J. J. Blum",
+        JOURNAL = "Biochem. J.",
+        TITLE = "",
+        VOLUME = 258,
+        PAGES = "121--140",
+        YEAR = 1989}
+
+@BOOK{Ba69,
+    AUTHOR = "T.E. Barman",
+    TITLE = "Enzyme Handbook.",
+    PUBLISHER = "Springer Verlag.",
+    ADDRESS = "Berlin, Heidelberg, \& New York.",
+    YEAR = 1969 }
+
+
+@ARTICLE{Berg1977,
+   AUTHOR = "H. C. Berg and E. M. Purcell",
+   JOURNAL = "Biophys J.",
+   VOLUME = 20,
+   PAGES = "193--219",
+   YEAR = 1977,
+   TITLE = "Physics of chemoreception"
+}
+
+@ARTICLE{BhallaRam,
+       AUTHOR = "U. Bhalla and P. Ram and R. Iyengar",
+       TITLE = "MAP kinase phosphatase as a locus of flexibility in a mitogen-activated protein kinase signaling network",
+       JOURNAL = "Science",
+       VOLUME = 297,
+       PAGES = "1018--23",
+       YEAR = 2002
+}
+
+
+@ARTICLE{BhallaPBMB,
+   TITLE = "Understanding complex signaling networks through models and metaphors",
+   PAGES = "45--65",
+   AUTHOR = "U. S. Bhalla",
+   JOURNAL = "Prog. Biophys. Molec. Biol",
+   VOLUME = 81,
+   YEAR = 2003
+}
+
+
+@BOOK{Bennett1,
+        AUTHOR = "J. P. Bennett",
+        TITLE = "Introduction to Compiling Techniques.",
+        PUBLISHER = "McGraw--Hill Book Company, Maidenhead",
+        YEAR = 1990 }
+
+@ARTICLE{BecskeiNegFeedback2000,
+   TITLE = "Engineering stability in gene networks by autoregulation",
+   JOURNAL = "Nature",
+   YEAR = 2000,
+   PAGES = "590--593",
+   VOLUME = 405,
+   AUTHOR = "A. Becskei and L. Serrano"
+}
+
+@MISC{biospice,
+       AUTHOR = "{BioSPICE}",
+        TITLE = "Home Page",
+ HOWPUBLISHED = "The {BioSPICE} Development Project,
+                 {\tt http://www.biospice.org/}",
+         YEAR = 2001
+}
+
+@ARTICLE{blackhist,
+      AUTHOR = "H. S. Black",
+      TITLE = "Inventing the negative feedback amplifier",
+      YEAR = 1977,
+      JOURNAL = "IEEE spectrum, December",
+      VOLUME = 14,
+      PAGES = "55--60"
+}
+
+
+@INPROCEEDINGS{Nils2001,
+   AUTHOR = "N. Blüthgen and H. Herzel",
+   TITLE = "MAP-Kinase-Cascade: Switch, Amplifier or Feedback Controller",
+   EDITOR = "R. Gauges, C. van Gend, U. Kummer",
+   BOOKTITLE = "2nd Workshop on Computation of Biochemical Pathways and Genetic Networks",
+   PUBLISHER = "Berlin: Logos Verlag",
+   YEAR = 2001,
+   PAGES = "55--62"
+}
+
+
+
+@ARTICLE{Bo81 ,
+    AUTHOR = "Bohnensack, R.",
+    TITLE = "Control of energy transformation in mitochondria: analysis by a
+    quantitative model.",
+    JOURNAL = "Biochim. Biophys. Acta",
+    VOLUME =  634,
+    PAGES = "203-227",
+    YEAR = 1981 }
+
+@BOOK{enzymes,
+        EDITOR = "P. D. Boyer",
+        TITLE = "The enzymes",
+        BOOKTITLE = "The enzymes",
+        EDITION = "Third",
+        PUBLISHER = "Academic Press",
+        ADDRESS = "New York",
+        YEAR = 1970}
+
+
+@ARTICLE{Bolouri2002,
+   AUTHOR = "H. Bolouri and E. H. Davidson",
+   TITLE = "Modeling transciptional regulatory networks",
+   VOLUME = 24,
+   JOURNAL = "BioEssays",
+   YEAR = 2002,
+   PAGES = "1118--1129"
+}
+
+
+@ARTICLE{Bourret2002,
+   JOURNAL = "J Biol Chem.",
+   YEAR = 2002,
+   VOLUME = 277,
+   PAGES = "9625--8",
+   TITLE = "Molecular information processing: lessons from bacterial chemotaxis.",
+   AUTHOR = "R. B. Bourret and A. M Stock"
+}
+
+
+@ARTICLE{BagowskiFerrell2003,
+    JOURNAL = "Current Biology",
+    YEAR = 2003,
+    VOLUME = 13,
+    PAGES = "315--20",
+    TITLE = "The JNK Cascade as a Biochemical Switch in Mammalian Cells. Ultrasensitive and All-or-None Responses.",
+    AUTHOR = "C. P. Bagowski and J. Besser and C. R. Frey and J. E. Ferrell"
+}
+
+@ARTICLE{Bray1990,
+   AUTHOR = "D. Bray",
+   YEAR = 1990,
+   TITLE = "Intracellular signaling as a parallel distributed process",
+   JOURNAL = "J. Theor. Biol.",
+   VOLUME = 143,
+   PAGES = "215–231"
+}
+
+
+@ARTICLE{Bray1995,
+    AUTHOR = "D. Bray",
+    YEAR = 1995,
+    TITLE = "Protein molecules as computational elements in living cells",
+    JOURNAL = "Nature",
+    VOLUME = 376,
+    PAGES = "307-–312"
+}
+
+
+@ARTICLE{Brightman:2000,
+     AUTHOR = "F. A. Brightman and D. A. Fell",
+     TITLE = "Differential feedback regulation of the MAPK cascade underlies the
+               quantitative differences in EGF and NGF signaling in PC12 cells",
+     JOURNAL = "FEBS Letters",
+     VOLUME = 482,
+     PAGES = "169--174",
+     YEAR = 2000
+}
+
+@ARTICLE{Bruggeman2002,
+   JOURNAL = "J. Theor Biol.",
+   YEAR = 2002,
+   VOLUME = 218,
+   PAGES = "507--20",
+   TITLE = "Modular response analysis of cellular regulatory networks.",
+   AUTHOR = "F. J. Bruggeman and H. V. Westerhoff and J. B. Hoek and B. N. Kholodenko"
+}
+
+@BOOK{BFR78,
+        AUTHOR = "R. L. Burden and J. D. Faires and A. C. Reynolds",
+        TITLE = "Numerical Analysis.",
+        PUBLISHER = "Prindle, Weber \& Schmidt Boston, Massachusetts",
+        YEAR = 1978,
+        EDITION = "Second"  }
+
+@PHDTHESIS{Bu71,
+    AUTHOR = "Burns, J. A.",
+    TITLE = "Studies on Complex Enzyme Systems",
+    SCHOOL = "University of Edinburgh",
+    NOTE = "url: http://www.cds.caltech.edu/~hsauro/Burns/jimBurns.pdf",
+    YEAR = 1971 }
+
+@ARTICLE{Bu85,
+    AUTHOR = "Burns, J. A. and Cornish-Bowden, A. and Groen, A. K. and Heinrich, R. and
+    H. Kacser and J. W. Porteous and S. M. Rapoport and T. A. Rapoport and J. W. Stucki
+    and J. M. Tager and R. J. A. Wanders and H. V. Westerhoff",
+    TITLE = "Control analysis of metabolic systems.",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME = 10,
+    PAGES = 16,
+    YEAR = 1985 }
+
+@ARTICLE{Ca59,
+        AUTHOR = "G. F.  Cahill and J. Ashmore and A. E. Renold and A. B. Hastings",
+        JOURNAL = "Am. J. Med.",
+        VOLUME = 24,
+        Pages = "264--?",
+        YEAR = 1959}
+
+@ARTICLE{Cardenas:1989,
+     AUTHOR = "M. L. C\'{a}rdenas and A. Cornish-Bowden",
+     TITLE = "Characteristics necessary for an interconvertible enzyme cascade to generate
+                      a highly sensitive response to an effector.",
+     JOURNAL = "Biochem J",
+     YEAR = 1989,
+     VOLUME = 257,
+     PAGES = "339–-345"
+}
+
+
+@ARTICLE{Ca89-2,
+        AUTHOR = "M. Cascante and R. Franco and E. I. Canela",
+        TITLE = "Use of implict methods from general sensitivity theory
+                 to develop a systematic approach to metabolic control.",
+        JOURNAL = "Math Biosci.",
+        YEAR = 1989,
+        VOLUME = 92,
+        NOTE = "In press." }
+
+@ARTICLE{Chass:2001,
+       AUTHOR = "C. Chassagnole and Raïs, B. and E. Quentin and D. A. Fell and J.-P. Mazat",
+       TITLE = "An integrated study of threonine-pathway enzyme kinetics in {\em Escherichia coli}.",
+       JOURNAL = "Biochem. J",
+       VOLUME = 356,
+       PAGES = "415-423",
+       YEAR = 2001}
+
+@INCOLLECTION{CC72,
+    AUTHOR = "A. R. Curtis and E. M. Chance",
+    TITLE = "Numerical methods for simulation and optimization.",
+    BOOKTITLE = "Analysis and Simulation of Biochemical Systems",
+    PUBLISHER = "North-Holland, Amsterdam",
+    YEAR = 1972,
+    EDITOR = "H. C. Hemker and B. Hess",
+    SERIES = "FEBS Symposium, $8^{th}$ meeting",
+    PAGES = "39--57"}
+
+@ARTICLE{CHG62,
+        AUTHOR = "B. Chance and J. J. Higgins and D. Garfinkel",
+        TITLE = "Analogue and digital computer representations of
+                 biochemical processes.",
+        JOURNAL = "Proc. Fedn. Am. Socs. exp. Biol.",
+        YEAR = 1962,
+        VOLUME = 21,
+        PAGES = "75--86"}
+
+@MANUAL{CCJK77,
+        AUTHOR = "E. M. Chance and A. R. Curtis and I. P. Jones and
+                       C. R. Kirby",
+        TITLE = "FACSIMILE: a computer program for flow and chemistry
+                  simulation, and general initial value problems.",
+        YEAR = 1977,
+        NOTE = "AERE-R8775, HMSO London"    }
+
+@ARTICLE{CW86,
+        AUTHOR = "Y-D. Chen and H. V. Westerhoff",
+        TITLE = "How do Inhibitors and Modifiers of Individual
+                Enzymes Affect Steady-state Fluxes and Concentrations in
+                Metabolic Systems?",
+        JOURNAL = "Math. Model.",
+        YEAR = 1986,
+        VOLUME = 7,
+        PAGES = "1173--1180"   }
+
+@ARTICLE{Chang:2001,
+    AUTHOR = "L. Chang and M. Karin",
+    TITLE = "Mammalian MAP kinase signaling cascades",
+    JOURNAL = "Nature",
+    VOLUME = 410,
+    YEAR = 2001,
+    PAGES = "37--40"
+}
+
+
+@ARTICLE{StadtmanChock:1977a,
+      AUTHOR = "P. B. Chock and E. R. Stadtman",
+      TITLE = "Superiority of interconvertible enzyme cascades in metabolic regulation: analysis of monocyclic systems.",
+      JOURNAL = "Proc. Natl. Acad. Sci. U.S.A.",
+      VOLUME = 74,
+      PAGES = "2761-–2765",
+      YEAR = 1977 }
+
+@ARTICLE{StadtmanChock:1977b,
+      AUTHOR = "P. B. Chock and E. R. Stadtman",
+      TITLE = "Superiority of interconvertible enzyme cascades in metabolite regulation: analysis of multicyclic systems.",
+      PAGES = "2766--70",
+      JOURNAL = "Proc. Natl. Acad. Sci. U.S.A.",
+      VOLUME = 74,
+      YEAR = 1977 }
+
+
+@BOOK{Clarke80,
+      AUTHOR = "B. L. Clarke",
+      TITLE = "Stability of complex reaction networks.",
+      YEAR = 1980,
+      VOLUME = 42,
+      PUBLISHER = "Wiley, New York",
+      SERIES = "Adv. Chem. Phys",
+      NOTES = "eds: I. Progogine and S. A. Rice",
+      PAGES = "1--213"}
+
+@ARTICLE{Cl74,
+        AUTHOR = "M. G. Clark and N. M. Kneer and A. L. Bosch and H. A. Lardy",
+        JOURNAL = "J. Biol. Chem",
+        TITLE = "",
+        VOLUME = 249,
+        PAGES = "5695--5703",
+        YEAR = 1974}
+
+@ARTICLE{Cinquin2002,
+    AUTHOR = "O. Cinquin and J. Demongeot",
+    TITLE = "Roles of positive and negative feedback in biological systems.",
+    JOURNAL = "C R Biol.",
+    YEAR = 2002,
+    VOLUME = 325,
+    PAGES = "1085--1095"
+}
+
+@BOOK{Co79,
+    AUTHOR = "A. Cornish-Bowden",
+    TITLE = "Fundamentals of Enzyme Kinetics.",
+    PUBLISHER = "Butterworth",
+    ADDRESS = "London",
+    YEAR = 1979 }
+
+@ARTICLE{Co89,
+    AUTHOR = "A. Cornish-Bowden",
+    TITLE = "Metabolic control theory and Biochemical Systems Theory: different
+     objectives, different assumptions, different results.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 136,
+    PAGES = "365--377",
+    YEAR = 1989 }
+
+@BOOK{CB90,
+         TITLE = "Control of Metabolic Processes",
+         BOOKTITLE = "Control of Metabolic Processes",
+         PUBLISHER = "Plenum Press, New York",
+         YEAR = 1990,
+         EDITOR = "A. Cornish-Bowden and M. L. C\'{a}rdenas",
+         SERIES = "NATO ASI Series"}
+
+@ARTICLE{CBH91,
+        AUTHOR = "A. Cornish-Bowden and J.-H. S. Hofmeyr",
+        TITLE = "MetaModel: a program for modelling and control analysis
+                 of metabolic pathways on the IBM PC and compatibles.",
+        JOURNAL = "Comp. Appl. Biosci.",
+        YEAR = 1991,
+        VOLUME = 7,
+        PAGES = "89--93"}
+
+@INCOLLECTION{Cornish2000,
+    AUTHOR = "A. Cornish-Bowden and R. Eisenthal",
+    TITLE = "Computer simulation as a tool for studying metabolism and drug design",
+    BOOKTITLE = "Technological and Medical Implications of Metabolic Control Analysis",
+    YEAR = 2000,
+    EDITOR = "A. Cornish-Bowden and M. L. Cardenas",
+    PUBLISHER = "Kluwer Academic Publishers, Dordrecht, The Netherlands",
+    PAGES = "165-–172"}
+
+@ARTICLE{AthelHof2002,
+        AUTHOR = "A. Cornish-Bowden and J.-H. S. Hofmeyr",
+        TITLE = "The Role of Stoichiometric Analysis in Studies of Metabolism: An Example",
+        JOURNAL = "J. theor. Biol",
+        YEAR = 2002,
+        VOLUME = 216,
+        PAGES = "179--191"}
+
+@MISC{CORBARef,
+    AUTHOR = "OMG",
+    Title = "{CORBA} Specication",
+    YEAR = 2001,
+    HOWPUBLISHED = "http://www.omg.org",
+}
+
+@ARTICLE{Cr76,
+    AUTHOR = "B. Crabtree",
+    TITLE = "Theoretical considerations of the sensitivity conferred by substrate
+    cycles in vivo.",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 4,
+    PAGES = "999-1002",
+    YEAR = 1976 }
+
+@ARTICLE{CN78 ,
+    AUTHOR = "B. Crabtree and E.A. Newsholme",
+    TITLE = "Sensitivity of a near-equilibrium reaction in a metabolic pathway
+to
+    changes in substrate concentration",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME = 89,
+    PAGES = "19-22",
+    YEAR = 1978 }
+
+@ARTICLE{CN85,
+    AUTHOR = "B. Crabtree and E.A. Newsholme",
+    TITLE = "A quantitative approach to metabolic control.",
+    JOURNAL = "Curr. Top. Cell. Reg. ",
+    VOLUME = 25,
+    PAGES = "21--76",
+    YEAR = 1985}
+
+@ARTICLE{CN87,
+    AUTHOR = "B. Crabtree and E.A. Newsholme",
+    TITLE = "A systematic approach to describing and analysing metabolic control
+    systems.",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME = 12,
+    PAGES = "4--12",
+    YEAR = 1987}
+
+@ARTICLE{CN87b,
+    AUTHOR = "B. Crabtree and E.A. Newsholme",
+    TITLE = "The derivation and interpretation of control coefficients",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 247 ,
+    PAGES = "113--120 ",
+    YEAR = 1987 }
+
+@ARTICLE{De85,
+    AUTHOR = "R.F. Derr",
+    TITLE = "Modern metabolic control theory. {I}. Fundamental theorems",
+    JOURNAL = "Biochemical Archives",
+    VOLUME = 1 ,
+    PAGES = "239--247",
+    YEAR = 1985 }
+
+@ARTICLE{De86,
+    AUTHOR = "R.F. Derr",
+    TITLE = "Modern metabolic control theory. {II}. Determination
+of flux control coefficients.",
+    JOURNAL = "Biochemical Archives",
+    VOLUME = 2 ,
+    PAGES = "31--44 ",
+    YEAR = 1986 }
+
+@ARTICLE{DecrolyPNAS1982,
+    AUTHOR = "O. Decroly and A. Goldbeter",
+    TITLE = "Birhythmicity, chaos, and other patterns of temporal self-organization in a multiply regulated biochemical system.",
+    JOURNAL = "Proc Natl Acad Sci U S A.",
+    YEAR = 1982,
+    VOLUME = 79,
+    PAGES = "6917--6921"
+}
+
+
+@ARTICLE{De87,
+    AUTHOR = "R.F Derr and R.E. Derr",
+    TITLE = "Control of flux by isozymes and alternate enzymes. ",
+    JOURNAL = "Biochem. Arch.",
+    VOLUME = 3 ,
+    PAGES = "453--464",
+    YEAR = 1987 }
+
+@INPROCEEDINGS{Do81,
+              AUTHOR = "E. J. Doedel",
+              TITLE = "Auto: a program for the automatic bifurcation analysis
+                        of autonomous systems.",
+              BOOKTITLE = "Proc. Manitoba Conf. Num. Math. Comput.,
+                           10th, Winnipeg, Canada",
+              YEAR = 1981,
+              NOTE = "[Congressus Numeratium, 30:265--284]" }
+
+@ARTICLE{DDH87,
+    AUTHOR = "Dykhuizen, D. E. and Dean, A. M. and Hartl, D. L.",
+    TITLE = "Metabolic flux and fitness.",
+    JOURNAL = "Genetics",
+    VOLUME = 115 ,
+    PAGES = "25--31",
+    YEAR = 1987 }
+
+@ARTICLE{Edel70,
+    AUTHOR = "B. Edelstein",
+    TITLE = "A biochemical model with multiple steady states.",
+    JOURNAL = "J, Theor. Biol.",
+    VOLUME = 29,
+    PAGES = "57--62",
+    YEAR = 1970}
+
+@ARTICLE{Edwards:2000,
+   AUTHOR = "J. S. Edwards and B. O. Palsson",
+   TITLE = "Metabolic flux balance analysis and the in silico analysis of {\em Escherichia coli} K-12 gene deletions",
+   JOUNRAL = "BMC Bioinformatics",
+   VOLUME = 1,
+   YEAR = 2000,
+   PAGES = "1"}
+
+@ARTICLE{Edwards2000a,
+   AUTHOR="J.S. Edwards and B.O. Palsson",
+   TITLE="The Escherichia coli MG1655 in silico metabolic genotype: Its definition, characteristics, and capabilities",
+   JOURNAL="PNAS",
+   VOLUME = 97,
+   YEAR = 2000,
+   PAGES = "5528--5533"}
+
+@ARTICLE{Famili2003,
+    AUTHOR = "I. Famili and B. O. Palsson",
+    TITLE = "The convex basis of the left null space of the stoichiometric matrix leads to the definition of metabolically meaningful pools.",
+    JOURNAL = "Biophys J.",
+    YEAR = 2003,
+    VOLUME = 85,
+    PAGES = "16--26"
+}
+
+@ARTICLE{Elowitz2000,
+      AUTHOR = "M. B Elowitz and S Leibler",
+      YEAR = 2000,
+      TITLE = "A synthetic oscillatory network of transcriptional regulators",
+      JOURNAL = "Nature",
+      VOLUME = 403,
+      PAGES = "335--338"
+}
+
+@ARTICLE{Endy2001,
+   AUTHOR="D. Endy and R. Brent",
+   TITLE="Modeling Cellular Behavior.",
+   JOURNAL = "Nature",
+   VOLUME = 409,
+   YEAR = 2001,
+   PAGES = "391--395"}
+
+@MISC{entelos:2001,
+       AUTHOR = {Entelos},
+        TITLE = {Company Page},
+ HOWPUBLISHED = {Biosimulation for in silico drug discovery and development,
+                 {\tt http://www.entelos.com/}},
+         YEAR = 2001
+}
+
+@ARTICLE{ESH80,
+    AUTHOR = "K. Eschrich and W. Scellenberger and E. Hofmann",
+    TITLE = "In vitro demonstration of alternate stationary states
+             in an open enzyme system containing phosphofructokinase.",
+    JOURNAL = "Arch. Biochem. Biophys.",
+    VOLUME = 205,
+    PAGES = "114--121",
+    YEAR = 1980 }
+
+@ARTICLE{ESH83,
+        AUTHOR = "K. Eschrich and W. Schellenberger and E. Hofmann",
+        TITLE = "Sustained Oscillations in a Reconstituted Enzyme System
+                Containing Phosphofructokinase and Fructose 1,6-Bisphosphatase.",
+        JOURNAL = "Arch. Biochem. Biophys.",
+        YEAR = 1983,
+        VOLUME = 222,
+        PAGES = "657--660" }
+
+@ARTICLE{ESH90,
+   TITLE = "A Hysteretic Cycle In Glucose-6-Phosphate Metabolism Observed In A Cell-Free Yeast Extract",
+   AUTHOR = "K. Eschrich and W. Schellenberger and E. Hofmann",
+   JOURNAL = "European Journal Of Biochemistry",
+   VOLUME = 188,
+   PAGES = "697--703",
+   YEAR = 1990
+}
+
+@ARTICLE{Falke1997,
+   AUTHOR = "J. J. Falke and R. B. Bass and S. L Butler and S. A. Chervitz and M. A. Danielson",
+   TITLE = "The Two-Component Singaling Pathway of Batercial Chemotaxis",
+   JOURNAL = "Annu. Rev. Cell Dev. Biol",
+   YEAR = 1997,
+   VOLUME = 13,
+   PAGES = "457--512"
+}
+
+@ARTICLE{Feinberg89,
+    AUTHOR = "M. Feinberg",
+    TITLE = "Necessary and Suffficient Conditions for detailed Balancing in mass action systems of arbitrary complexity",
+    JOURNAL = "Chem. Eng. Sci.",
+    VOLUME = 44,
+    PAGES = "1819-1827",
+    YEAR = 1989}
+
+@ARTICLE{Ferrell:1996,
+   AUTHOR = "C. F. Huang and J. E. Ferrell",
+   TITLE = "Ultrasensitivity in the mitogen-activated protein kinase cascade",
+   JOURNAL = "Proc. Natl. Acad. Sci",
+   VOLUME = 93,
+   PAGES = "10078--10083",
+   YEAR = 1996 }
+
+@ARTICLE{FerrellTIBS1996,
+    AUTHOR = "J. E. Ferrell",
+    TITLE = "Tripping the switch fantastic: how a protein kinase cascade can convert graded inputs into switch-like outputs",
+    VOLUME = 21,
+    PAGES = "460--466",
+    JOURNAL = "Trends in Biochemical Sciences",
+    YEAR = 1996
+}
+
+@ARTICLE{Ferrell:1997,
+    AUTHOR = "J. E. Ferrell",
+    TITLE = "How responses get more switch-like as you move down a protein kinase cascade.",
+    JOURNAL = "Trends Biochem Sci.",
+    YEAR = 1997,
+    VOLUME = 22,
+    PAGES = "288--9"
+}
+
+
+@ARTICLE{Ferrell:2002,
+   AUTHOR = "J. E. Ferrell",
+   TITLE = "Self-perpetuating states in signal transduction: positive feedback, double-negative feedback and bistability",
+   JOURNAL = "Current Opinion in Cell Biology",
+   VOLUME = 14,
+   YEAR = 2002,
+   PAGES = "140--148" }
+
+@ARTICLE{Ferrell:2001,
+    AUTHOR = "C. P. Bagowski and J. E. Ferrell, Jr.",
+    YEAR = 2001,
+    TITLE = "Bistability in the JNK cascade",
+    JOUNRAL = "J Curr. Biol.",
+    VOLUME = 11,
+    PAGES = "1176--1182" }
+
+@ARTICLE{FerrellScience1998,
+    VOLUME = 280,
+    YEAR = 1998,
+    PAGES = "895--898",
+    JOURNAL = "Science",
+    TITLE = "The Biochemical Basis of an All-or-None Cell Fate Switch in Xenopus Oocytes",
+    AUTHOR = "J. E. Ferrell and E. M. Machleder"
+}
+
+
+@ARTICLE{FerrellBioEssays1999,
+    TITLE = "Building a cellular switch: more lessons from a good egg",
+    AUTHOR = "J. E. Jr. Ferrell",
+    JOURNAL = "BioEssays",
+    VOLUME = 21,
+    YEAR = 1999,
+    PAGES = "866--870"
+}
+
+@ARTICLE{Ferrell2002,
+    TITLE = "Self-perpetuating states in signal transduction: positive feedback, double-negative feedback and bistability",
+    AUTHOR = "J. E. Ferrell, Jr",
+    YEAR = 2002,
+    VOLUME = 14,
+    PAGES = "140-148",
+    JOURNAL = "Current Opinion in Cell Biology"
+}
+
+
+@ARTICLE{Fe84,
+    AUTHOR = "D.A. Fell",
+    TITLE = "Phosphofructokinase and glycolytic flux.",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME = 9,
+    PAGES = "515-516",
+    YEAR = 1984}
+
+@ARTICLE{FS85,
+        AUTHOR = "D. A. Fell and H. M. Sauro",
+        TITLE = "Metabolic Control Analysis: Additional relationships
+                 between elasticities and control coefficients",
+        JOURNAL = "Eur. J. Biochem.",
+        YEAR = 1985,
+        VOLUME = 148,
+        PAGES = "555--561"  }
+
+@ARTICLE{FS85b,
+    AUTHOR = "D. A. Fell and H. M. Sauro",
+    TITLE = "Substrate cycles: do they really cause amplification?",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 13,
+    PAGES = "762--763",
+    YEAR = 1985}
+
+@ARTICLE{FSa86,
+    AUTHOR = "D. A. Fell and H. M. Sauro",
+    TITLE = "Non-equilibrium / equilibrium reactions:
+ which controls?",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 14,
+    PAGES = "624--625",
+    YEAR = 1986}
+
+@ARTICLE{FSm86b,
+    AUTHOR = "D.A. Fell AND J.R. Small",
+    TITLE = "Theoretical aspects of covalent modification in metabolic control.",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 14,
+    pages ="623--624",
+    YEAR = 1986}
+
+@ARTICLE{FSm86a,
+    AUTHOR = "D. A. Fell and J. R. Small",
+    TITLE = "Fat synthesis in adipose tissue: an examination
+ of stoichiometric constraints.",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 238,
+    PAGES = "781--786",
+    YEAR = 1986}
+
+@ARTICLE{Fe87,
+    AUTHOR = "Fell, D. A.",
+    TITLE = "A sensitivity issue.",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME = 12,
+    PAGES = "217--218",
+    YEAR = 1987}
+
+@INCOLLECTION{FSS88,
+    AUTHOR = "D.A. Fell and H.M. Sauro and J.R. Small",
+    TITLE ="Le calcul des coefficients de contr\^{o}le par
+ l'alg\`{e}bre matricielle.",
+    CROSSREF = "MR88"}
+
+@BOOK{FSS90,
+    AUTHOR = "D.A. Fell and H.M. Sauro and J.R. Small",
+    TITLE = "Control coefficients and the matrix method.",
+        BOOKTITLE = "Control of Metabolic Processes",
+        PUBLISHER = "Plenum Press, New York",
+        YEAR = 1990,
+        EDITOR = "A. Cornish-Bowden and M. L. C\'{a}rdenas",
+        SERIES = "NATO ASI Series",
+    PAGES = "139--148"}
+
+@ARTICLE{FS90,
+        AUTHOR = "D. A. Fell and H. M. Sauro",
+        TITLE = "Metabolic Control Analysis: the effects of high enzyme
+                   concentrations.",
+        JOURNAL = "Eur. J. Biochem.",
+        YEAR = 1990,
+        VOLUME = 192,
+    PAGES = "183--187"}
+
+@ARTICLE{SCAMPFS90,
+        AUTHOR = "D. A. Fell and H. M. Sauro",
+        TITLE = "Metabolic Control Analysis by Computer: Progress and
+                   prospects.",
+        JOURNAL = "Biomed. Biochim. Acta",
+        YEAR = 1990,
+        VOLUME = "8/9",
+    PAGES = "811--816"}
+
+
+@ARTICLE{Fe88,
+    AUTHOR = "D.A. Fell and K. Snell",
+    TITLE = "Control analysis of mammalian serine biosynthesis.",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 256 ,
+    PAGES = "97--101",
+    YEAR = 1988 }
+
+@BOOK{Fell:Book,
+    AUTHOR = "D.A. Fell",
+    TITLE = "Understanding the Control of Metabolism",
+    PUBLISHER = "Portland Press.",
+    ADDRESS = "London",
+    YEAR = 1997 }
+
+@ARTICLE{FTBPDK81,
+    AUTHOR = "H. J. Flint and R. W. Tateson and I. B. Bartelmess and
+              D. J. Porteous and W. D. Donochie and H. Kacser",
+    TITLE = "Control of flux in the arginine pathway of
+             {\em {N}eurospora crassa.}",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 200,
+    PAGES = "231--246",
+    YEAR = 1981 }
+
+
+@BOOK{Ford1985,
+   AUTHOR = "B. J. Ford",
+   TITLE = "Single lens, the story of the simple microscope",
+   PUBLISHER = "Harper \& Row, Publishers, New York",
+   YEAR = 1985,
+   PAGES = "49--50"
+}
+
+@ARTICLE{GardnerNegFeedbackComment,
+   TITLE = "Neutralizing noise in gene networks",
+   JOURNAL = "Nature",
+   VOLUME = 405,
+   PAGES = "520--521",
+   YEAR = 2000,
+   AUTHOR = "T. S. Gardner and J. J. Collins"
+}
+
+@ARTICLE{GardnerNature2000,
+   AUTHOR = "T. S. Gardner and C. R. Cantor and J. J. Collins",
+   TITLE = "Construction of a genetic toggle switch in Escherichia coli",
+   JOURNAL = "Nature",
+   VOLUME = 403,
+   PAGES = "339--342",
+   YEAR = 2000
+}
+
+
+@ARTICLE{GH64,
+        AUTHOR = "D. Garfinkel and B. Hess",
+        TITLE = "Metabolic Control Mechanisms {VII}. A detailed computer model
+                of the glycolytic pathway in Ascites cells.",
+        JOURNAL = "J. Biol. Chem",
+        YEAR = 1964,
+        VOLUME = 239,
+        PAGES = "971--983"   }
+
+@ARTICLE{Ga68,
+        AUTHOR = "D. Garfinkel",
+        TITLE = "A Machine-Independent Language for the Simulation of
+                Complex Chemical and Biochemical Systems.",
+        JOURNAL = "Comput. Biomed. Res.",
+        YEAR = 1968,
+        VOLUME = 2,
+        PAGES = "31--44"   }
+
+@ARTICLE{Ga71,
+        AUTHOR = "D. Garfinkel",
+        TITLE = "Simulation of the Krebs Cycle and Closely Related
+                Metabolism in Perfused Rat Liver. II Properties
+                of the model.",
+        JOURNAL = "Comput. Biomed. Res.",
+        YEAR = 1971,
+        VOLUME = 4,
+        PAGES = "18--42"   }
+
+@ARTICLE{Ga81,
+        AUTHOR = "D. Garfinkel",
+        TITLE = "Computer modelling of metabolic pathways",
+        JOURNAL = "Trends Biochem. Sci.",
+        YEAR = 1981,
+        VOLUME = 6,
+        PAGES = "69--71"   }
+
+@ARTICLE{Garrington1999,
+   AUTHOR = "T. P. Garrington and G. L. Johnson",
+   TITLE = "Organization and regulation of mitogen-activated protein kinase signaling pathways.",
+   JOURNAL = "Curr Opin Cell Biol.",
+   YEAR = 1999,
+   VOLUME = 11,
+   PAGES = "211--8"
+}
+
+
+@BOOK{Gear,
+     AUTHOR = "C. W. Gear",
+     TITLE = "Numerical Initial Value Problems in Ordinary Differential Equations.",
+     YEAR = 1971,
+     PUBLISHER = "Prentice-Hall, Inc. Englewood Cliffs, New Jersey"   }
+
+
+@MISC{GNS:2003,
+       AUTHOR = "GNS",
+        TITLE = "Gene Network Sciences: Company Web Page",
+ HOWPUBLISHED = "Gene Network Sciences accelerates the drug discovery process by creating dynamic
+computer models of living cells, {\tt www.gnsbiotech.com}",
+         YEAR = 2003
+}
+
+
+@ARTICLE{Gi88a,
+     AUTHOR = "C. Giersch",
+    TITLE = "Control analysis of metabolic networks: 1. homogeneous functions
+and the
+    summation theorem for control coefficients.",
+     JOURNAL = "Eur. J. Biochem",
+     VOLUME = 174,
+     PAGES = "509-513",
+     YEAR = 1988  }
+
+@ARTICLE{Gi88b ,
+    AUTHOR = "C. Giersch",
+    TITLE = "Control analysis of metabolic networks: 2. total differentials and
+ general
+    formulation of the connectivity relations.",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME =174  ,
+    PAGES = "515--519",
+    YEAR = 1988 }
+
+@ARTICLE{Gi88c ,
+    AUTHOR = "C. Giersch",
+    TITLE = "Control analysis of biochemical pathways.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 134 ,
+    PAGES = "451--462",
+    YEAR = 1988 }
+
+
+@ARTICLE{GDKosh81,
+    AUTHOR = "A. Goldbeter and D. E. Koshland",
+    TITLE = "An amplified sensitivity arising from covalent modification in biological systems",
+    JOURNAL = "Proc. Natl. Acad. Sci",
+    YEAR = 1981,
+    VOLUME = 78,
+    PAGES = "6840--6844"}
+
+@ARTICLE{GD83,
+    AUTHOR = "A. Goldbeter and O. Decroly",
+    TITLE = "Temporal self-organization in biochemical systems:
+             periodic behaviour vs. chaos.",
+    JOURNAL = "Amer. J. Physiol",
+    YEAR = 1983,
+    VOLUME = 245,
+    PAGES = "R478--R483"}
+
+@ARTICLE{Goldbeter:1984,
+    AUTHOR = "A. Goldbeter and D. E. Koshland",
+    TITLE = "Ultrasensitivity in biochemical systems controlled by covalent modification. Interplay between zero-order and multistep effects.",
+    JOURNAL = "J. Biol. Chem.",
+    VOLUME = 259,
+    YEAR = 1984,
+    PAGES = "14441--7" }
+
+@BOOK{MAPKBook2002,
+   AUTHOR = "B. D. Gomperts and I. M. Mramer and P. E. R. Tatham",
+   YEAR = 2002,
+   TITLE = "Signal Transduction",
+   PUBLISHER = "Academic Press"
+}
+
+
+@ARTICLE{Gonze2001,
+   AUTHOR = "D. Gonze and A. Goldbeter",
+   TITLE = "A model for a network of phosphorylation-dephosphorylation cycles displaying the dynamics of dominoes and clocks.",
+   JOURNAL = "J. Theor. Biol.",
+   YEAR = 2001,
+   VOLUME = 210,
+   PAGES = "167--86"
+}
+
+
+@PHDTHESIS{Gr84,
+    AUTHOR = "A. . Groen",
+    TITLE = "Quantification of control in studies on intermediary metabolism.",
+    SCHOOL = "University of Amsterdam",
+    YEAR = 1984 }
+
+@ARTICLE{Gr83,
+    AUTHOR = "A. K. Groen and R. C. Vervoorn and R. Van der Meer and J. M. Tager",
+    TITLE = "Control of gluconeogenesis in rat liver cells. 1. Kinetics of the
+    individual enzymes and the effects of glucagon.",
+    JOURNAL = "J. Biol. Chem.",
+    VOLUME = 258,
+    PAGES = "14346--14353",
+    YEAR = 1983 }
+
+@ARTICLE{Gr86,
+    AUTHOR = "Groen, A. K. and van Roermund, C. W. T. Vervoorn, R. C. and Tager, J. M.",
+    TITLE = "Control of gluconeogenesis in rat liver cells.",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 237 ,
+    PAGES = "379--389",
+    YEAR = 1986 }
+
+@ARTICLE{Gr82,
+    AUTHOR = "Groen, A. K. and Wanders, R. J. A. and Westerhoff, H. V. and van der  Meer, R. and Tager, J. M.",
+    TITLE = "Quantification of the contribution of various steps to the control
+of  mitochondrial respiration.",
+    JOURNAL = "J. Biol. Chem.",
+    VOLUME =257,
+    PAGES = " 2754--2757 ",
+    YEAR = 1982 }
+
+
+@ARTICLE{Grossman1995,
+    TITLE = "Genetic Networks Controlling the Initiation of Sporulation and the Development of Genetic Competence in Bacillus Subtilus",
+    JOURNAL = "Annual Reviews in Genetics",
+    YEAR = 1995,
+    VOLUME = 29,
+    PAGES = "477--508",
+    AUTHOR = "A. D. Grossman"
+}
+
+
+@ARTICLE{HastyReview2001,
+   TITLE = "Computational Studies of Gene Regulatory Networks: in Numero Molecular Biology",
+   JOURNAL = "Nature Reviews: Genetics",
+   VOLUME = 2,
+   YEAR = 2001,
+   AUTHOR = "J. Hasty and D. McMillen and F. Isaacs and J. J. Collins",
+   PAGES = "268--279"
+}
+
+@ARTICLE{Hasty2002,
+    JOURNAL = "Nature",
+    YEAR = 2002,
+    VOLUME = 420,
+    PAGES = "224--30",
+    TITLE = "Engineered gene circuits",
+    AUTHOR = "J. Hasty and D. McMillen and J. J. Collins"
+}
+
+
+@ARTICLE{Hjelmfelt1991,
+   AUTHOR = "A. Hjelmfelt and E. D. Weinberger and J. Ross",
+   TITLE = "Chemical implementation of neural networks and Turing machines",
+   JOURNAL = "Proc. natl. Acad. Sci",
+   VOLUME = 88,
+   PAGES = "10983--10987",
+   YEAR = 1991
+}
+
+@ARTICLE{Hjelmfelt1992,
+   AUTHOR = "A. Hjelmfelt and E. D. Weinberger and J. Ross",
+   TITLE = "Chemical implementation of finite-state machines",
+   JOURNAL = "Proc. natl. Acad. Sci",
+   VOLUME = 89,
+   PAGES = "383--387",
+   YEAR = 1992
+}
+
+@ARTICLE{HazzalinGraded,
+    AUTHOR = "C. Hazzalin and L. C. Mahadevan",
+    TITLE = "MAPK-Regulated Transciption: A Continuously Variable Gene Switch?",
+    JOURNAL = "Nature Reviews: Molecular Cell Biology",
+    VOLUME = 3,
+    YEAR = 2002,
+    PAGES = "30--40"
+}
+
+
+@ARTICLE{Hecker2001,
+    JOURNAL = "Adv Microb Physiol.",
+    YEAR = 2001,
+    VOLUME = 44,
+    PAGES = "35--91",
+    TITLE = "General stress response of Bacillus subtilis and other bacteria.",
+    AUTHOR = "M. Hecker and U. Volker"
+}
+
+
+@Book{ArtOfElectronics,
+     TITLE = "The Art of Electronics",
+     AUTHOR = "P. Horowitz and H. Winfield",
+     PUBLISHER = "Cambridge University Press",
+     YEAR = 1990
+}
+
+
+@ARTICLE{Horn72,
+    AUTHOR = "F. Horn and R. Jackson",
+    TITLE = "General Mass Action Kinetics",
+    JOURNAL = "Arch. Rational Mech. Anal",
+    VOLUME = 47,
+    PAGES = "81--116",
+    YEAR = 1972}
+
+@ARTICLE{HR74a,
+        AUTHOR = "R. Heinrich and T. A. Rapoport",
+        TITLE = "A Linear Steady-state Treatment of Enzymatic Chains;
+                    General Properties, Control and Effector Strength",
+        JOURNAL = "Eur. J. Biochem.",
+        YEAR = 1974,
+        VOLUME = 42,
+        PAGES = "89--95"        }
+
+@ARTICLE{HR74b,
+    AUTHOR = "R. Heinrich and T. A. Rapoport",
+    TITLE = "A Linear Steady State Treatment of Enzymatic Chains.
+             Critique of the Crossover Theorem and a General Procedure
+             to Identify Interaction Sites with an Effector.",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME = 42,
+    PAGES = "97--105",
+    YEAR = 1974 }
+
+@ARTICLE{HRR77 ,
+    AUTHOR = "R. Heinrich and S. M. Rapoport and T. A. Rapoport",
+    TITLE = "Metabolic regulation and mathematical models.",
+    JOURNAL = "Prog. Biophys. Molec. Biol.",
+    VOLUME =32 ,
+    PAGES = "1--82",
+    YEAR = 1977 }
+
+@BOOK{Schuster:Book,
+    AUTHOR = "R. Heinrich and S Schuster",
+    TITLE = "The Regulation of Cellular Systems",
+    PUBLISHER = "Chapman and Hall",
+    YEAR = 1996}
+
+@ARTICLE{Schuster:2000,
+    AUTHOR = "S. Schuster and D. A. Fell and T. Dandekar",
+    TITLE = "A general definition of metabolic pathways useful for systematic organization and analysis of complex metabolic networks",
+    JOURNAL = "Nature Biotechnlogy",
+    VOLUME = 18,
+    YEAR = 2000,
+    PAGES = "326--332" }
+
+
+@ARTICLE{Heijden1984a,
+   AUTHOR = "R. T. J. M. van der Heijden and J. J Heijnen and C. Hellinga and B. Romein and K. Ch. A. M. Luyben",
+   JOURNAL = "Biotechnol. Bioeng.",
+   YEAR = 1994,
+   TITLE = "Linear constraint relations in biochemical reaction systems: I. Classification of the calculability and the balancebility of conversion rates",
+   VOLUME = 43,
+   PAGES = "3-–10"
+}
+
+
+@ARTICLE{He87,
+        AUTHOR = "J.-F. Hervagault and S. Canu",
+        TITLE = "Bistability and irreversible transitions in a simple
+        substrate cycle",
+        JOURNAL = "J. Theor. Biol.",
+        VOLUME = 127,
+        PAGES = "439-449",
+        YEAR = 1987}
+
+@ARTICLE{He89,
+        AUTHOR = "J.-F. Hervagault and A. Cimino",
+        TITLE = "Dynamic behaviours of an open substrate cycle: a graphical
+        approach",
+        JOURNAL = "J. Theor. Biol.",
+        VOLUME = 140,
+        PAGES = "399-416",
+        YEAR = 1989}
+
+@ARTICLE{He68 ,
+    AUTHOR = "B. Hess and A. Boiteux and J. Kruger",
+    TITLE = "Cooperation of glycolytic enzymes.",
+    JOURNAL = "Adv. Enzyme Reg.",
+    VOLUME =7,
+    PAGES = "149--167",
+    YEAR = 1968 }
+
+@ARTICLE{Hi63,
+    AUTHOR = "J. Higgins",
+    TITLE = "Analysis of sequential reactions.",
+    JOURNAL = "Ann. N. Y. Acad. Sci.",
+    VOLUME = 108,
+    PAGES = "305--321",
+    YEAR = 1963 }
+
+@INCOLLECTION{HIND83,
+         AUTHOR = "A. C. Hindmarsh",
+         TITLE = "ODEPACK, a systematized collection of ode
+                  solvers in scientific computing.",
+         PUBLISHER = "North-Holland, Amsterdam",
+         BOOKTITLE = "",
+         YEAR = 1983,
+         NOTES = "eds: R. S. Stepleman et. al.",
+         PAGES = "55--64"}
+
+@PHDTHESIS{Ho86a,
+    AUTHOR = "J.-H. S. Hofmeyr",
+    TITLE = "Studies in steady state modelling and control analysis of metabolic systems.",
+    SCHOOL = "University of Stellenbosch.",
+    YEAR = 1986 }
+
+@ARTICLE{Ho86b,
+        AUTHOR = "J.-H. S. Hofmeyr",
+        TITLE = "Steady state modelling of metabolic pathways:
+                 a guide for the prespective simulator.",
+        JOURNAL = "Comp. Appl. Biosci.",
+        YEAR = 1986,
+        VOLUME = 2,
+        PAGES = "5--11"     }
+
+@ARTICLE{HM86,
+        AUTHOR = "J.-H. S. Hofmeyr and K. J. van der Merwe",
+        TITLE = "METAMOD: software for steady-state modelling and control
+                 analysis of metabolic pathways on the BBC microcomputer.",
+        JOURNAL = "Comp. Appl. Biosci.",
+        YEAR = 1986,
+        VOLUME = 2,
+        PAGES = "243--249"     }
+
+@ARTICLE{HKM86,
+        AUTHOR = "J.-H. S. Hofmeyr and H. Kacser and K. J. van der Merwe",
+        TITLE = "Metabolic Control Analysis of Moiety-Conserved Cycles",
+        JOURNAL = "Eur. J. Biochem.",
+        YEAR = 1986,
+        VOLUME = 155,
+        PAGES = "631--641"     }
+
+@INPROCEEDINGS{hofmeyr-nutshell,
+          AUTHOR = "J.-H. S. Hofmeyr",
+          TITLE = "Metabolic Control Analysis in a Nutshell",
+          BOOKTITLE = "Proceedings of the Second International Conference on Systems Biology",
+          PUBLISHER = "Caltech",
+          YEAR = 2001,
+}
+
+@ARTICLE{HofmeyrModularity,
+    TITLE = "Building the Cellular Puzzle: Control in Multi-level Reaction Networks",
+    JOURNAL = "J.Theor. Biol",
+    VOLUME = 208,
+    YEAR = 2001,
+    PAGES = "261--285",
+    AUTHOR = "J.-H.S. Hofmeyr and H. V. Westerhoff"
+}
+
+@INCOLLECTION{Holstein1994,
+    AUTHOR = "H. Holstein and C.P. Greenshaw",
+    TITLE = "A Numerical Treatment of Metabolic Control Models",
+        BOOKTITLE = "Biothermokinetics",
+        PUBLISHER = "Intercept Ltd, Andover",
+        YEAR = 1994,
+        EDITOR = "Hans V. Westerhoff",
+        PAGES = "293--299"}
+
+@ARTICLE{hedley:2001,
+       AUTHOR = {W. J. Hedley and N. R. Melanie and D.~P. Bullivant
+                 and P. F. Nielson},
+        TITLE = {A Short Introduction to {CellML}},
+      JOURNAL = "Phil. Trans. Roy. Soc. London A",
+         YEAR = 2001,
+       VOLUME = 359,
+        PAGES = {1073--1089}
+}
+
+@MISC{hedley:2001b,
+       AUTHOR = {W. J. Hedley and N. R. Melanie and D. Bullivant and
+                 A. Cuellar and Yi Ge and M. Grehlinger and K. Jim and
+                 S. Lett and D. Nickerson and P. Nielsen and H. Yu},
+        TITLE = {{CellML} Specification},
+ HOWPUBLISHED = {Available via the World Wide Web at
+                 {\tt http://www.cellml.org}.},
+         YEAR = 2001
+}
+
+@ARTICLE{Ho84,
+    AUTHOR = "M. Holmes and A. Crespo Armas and J. Mowbray",
+    TITLE = " ",
+    JOURNAL = "FEBS Lett.",
+    VOLUME = 177 ,
+    PAGES = "231--236",
+    YEAR = 1984 }
+
+@ARTICLE{HJB85,
+        AUTHOR = "H-G. Holzhutter and G. Jacobasch and A. Bisdorff",
+        TITLE = "Mathematical modelling of metabolic pathways affected
+                 by an enzyme deficiency.",
+        JOURNAL = "Eur. J. Biochem.",
+        YEAR = 1985,
+        VOLUME = 149,
+        PAGES = "101--111"     }
+
+@ARTICLE{Ho88,
+        AUTHOR = "M. D. Houslay",
+        TITLE = "Microfile: Into {STELLAR} Space.",
+        JOURNAL = "Trends in Biochemical Sciences.",
+        YEAR = 1988,
+        VOLUME = 13,
+        PAGES = "234--235"     }
+
+@MISC{hucka:2001,
+       AUTHOR = {M. Hucka and A. Finney and H.~M. Sauro and H. Bolouri},
+        TITLE = {{Systems Biology Markup Language} ({SBML}) {L}evel 1: Structures
+                  and Facilities for Basic Model Definitions},
+ HOWPUBLISHED = {Available via the World Wide Web at
+                 {\tt http://www.cds.caltech.edu/erato}},
+         YEAR = 2001
+}
+
+@ARTICLE{hucka:2002d,
+       AUTHOR = {M. Hucka and A. Finney and H.~M. Sauro
+                 and H. Bolouri and J.~C. Doyle and H. Kitano
+                 and A.~P. Arkin and B.~J. Bornstein
+                 and D. Bray and A. Cornish-Bowden
+                 and A.~A. Cuellar and S. Dronov
+                 and E.~D. Gilles and M. Ginkel
+                 and V. Gor and I.~I. Goryanin
+                 and W.~J. Hedley and T.~C. Hodgman
+                 and J.-H. Hofmeyr and P.~J. Hunter
+                 and N.~S. Juty and J.~L. Kasberger
+                 and A. Kremling and U. Kummer
+                 and N. Le~Nov\`{e}re and L.~M. Loew
+                 and D. Lucio and P. Mendes and E.~D. Mjolsness
+                 and Y. Nakayama and M.~R. Nelson and P.~F. Nielsen
+                 and T. Sakurada and J.~C. Schaff and B.~E. Shapiro
+                 and T.~S. Shimizu and H.~D. Spence and J. Stelling
+                 and K. Takahashi and M. Tomita and J. Wagner
+                 and J. Wang},
+        TITLE = {The {Systems Biology Markup Language} ({SBML}):
+                 A Medium for Representation and Exchange
+                 of Biochemical Network Models},
+      JOURNAL = "Boinformatics",
+         YEAR = 2003,
+         VOLUME = 19,
+         PAGES = "524-531"
+}
+
+
+@INPROCEEDINGS{HuckaSBW2002,
+   AUTHOR = "H. M. Hucka and A. Finney and H. M. Sauro and H. Bolouri and J. Doyle and H. Kitano",
+   TITLE = "The {ERATO Systems Biology Workbench}: enabling interaction and exchange between software tools for computational biology.",
+   BOOKTITLE = "Pac Symp Biocomput.",
+   PUBLISHER = "World Scientific Pub Co",
+   YEAR = 2002,
+   PAGES = "450--461"
+}
+
+@INCOLLECTION{Hu82,
+        CROSSREF = "Si82",
+        AUTHOR = "L. Hue",
+        TITLE = "Futile cycles and regulation of metabolism.",
+        PAGES = "71-97"}
+
+@ARTICLE{Hunting1974,
+   AUTHOR = "A. Hunting",
+   TITLE = "Limit-cycles in enzyme-systems with nonlinear negative feedback",
+   JOURNAL = "Biophys. Struct. Mech.",
+   VOLUME = 1,
+   YEAR = 1974,
+   PAGES = "47--54"
+}
+
+
+@INCOLLECTION{Ill72,
+    AUTHOR = "J. A. Illingworth",
+    TITLE = "Computer simulation studies on the control mechanism
+                 of yeast isocitrate dehydrogenase",
+    BOOKTITLE = "Analysis and Simulation of Biochemical Systems",
+    PUBLISHER = "North-Holland, Amsterdam",
+    YEAR = 1972,
+    EDITOR = "H. C. Hemker and B. Hess",
+    SERIES = "FEBS Symposium, $8^{th}$ meeting",
+    PAGES = "345--359"}
+
+@ARTICLE{Ingalls2002,
+        AUTHOR = "B. P. Ingalls and H. M. Sauro",
+        TITLE = "Sensitivity Analysis of Stoichiometric Networks: An Extension of Metabolic Control Analysis to Non-equilibrium Trajectories",
+        JOURNAL = "J. theor. Biol",
+        YEAR = 2002,
+        VOLUME = 0,
+        PAGES = "0--0" }
+
+@MISC{Intel,
+    AUTHOR = "Intel",
+    TITLE = "Intel Corporation",
+    HOWPUBLISHED = "url: http://www.intel.com",
+    YEAR = 2003
+}
+
+@ARTICLE{Ir88,
+        AUTHOR = "D. H. Irvine",
+        TITLE = "S--Systems. Efficient solution of nonlinear models
+                 expressed in S--System canonical form",
+        JOURNAL = "Math. Comput. Modelling.",
+        YEAR = 1988,
+        VOLUME = 11,
+        PAGES = "123--128"  }
+
+@ARTICLE{JP90,
+        AUTHOR = "A. Joshi and B. O. Palsson",
+        TITLE = "Metabolic Dynamics in the Human Red Cell. Part IV-Data
+                 Prediction and Some Model Computations",
+        JOURNAL = "J. Theor. Biol",
+        YEAR = 1990,
+        VOLUME = 142,
+        PAGES = "69--85"  }
+
+
+@BOOK{JungOpAmps,
+    AUTHOR = "W. G. Jung",
+    TITLE = "IC Op-Amp Cookbook",
+    PUBLISHER = "Prentice Hall PTR; 3rd edition",
+    YEAR = 1986
+}
+
+
+@INCOLLECTION{KB73,
+        AUTHOR = "H. Kacser and J. A. Burns",
+        TITLE  = "The Control of Flux",
+        BOOKTITLE = "Rate Control of Biological Processes",
+        PUBLISHER = "Cambridge University Press",
+        YEAR = 1973,
+        VOLUME = 27,
+        EDITOR = "D. D. Davies",
+        SERIES = "Symp. Soc. Exp. Biol.",
+        PAGES = "65--104"           }
+
+@ARTICLE{Ka83,
+    AUTHOR = "H. Kacser",
+    TITLE = "The control of enzyme systems in vivo: elasticity of the
+steady state.",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 11,
+    PAGES = "35--40 ",
+    YEAR = 1983 }
+
+@ARTICLE{KB79 ,
+    AUTHOR = "H. Kacser and J.A. Burns",
+    TITLE = "Molecular democracy: who shares the controls?",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 7 ,
+    PAGES = "1149--1160. ",
+    YEAR = 1979 }
+
+@ARTICLE{KP87a,
+        AUTHOR = "H. Kacser and J. W. Porteous",
+        TITLE = "Control of Metabolism: what do we have to measure?",
+        JOURNAL = "Trends in Biochemical Sciences",
+        YEAR = 1987,
+        VOLUME = 12,
+        PAGES = "5--14"   }
+
+@ARTICLE{KP87b,
+    AUTHOR = "H. Kacser and J.W. Porteous",
+    TITLE = "Reply to {S}avageau.",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME =12  ,
+    PAGES = "222--223 ",
+    YEAR = 1987 }
+
+@ARTICLE{KSA90,
+        AUTHOR = "H. Kacser and H. M. Sauro and L. Acerenza",
+        TITLE = "Enzyme-enzyme interaction and control analysis.
+             1. The case of non-additivity: monomer-oligomer associations.",
+        JOURNAL = "Eur. J. Biochem.",
+        YEAR = 1990,
+        VOLUME = 187,
+        PAGES = "481--491"     }
+
+@INCOLLECTION{KSA90a,
+         AUTHOR = "H. Kacser and H. M. Sauro and L. Acerenza",
+         TITLE = "Control Analysis of Systems with Enzyme-Enzyme Interactions",
+         BOOKTITLE = "Control of Metabolic Processes",
+         PUBLISHER = "Plenum Press, New York",
+         YEAR = 1990,
+         EDITOR = "A. Cornish-Bowden and M. L. C\'{a}rdenas",
+         SERIES = "NATO ASI Series",
+         CHAPTER = 20,
+         PAGES = "251--257"  }
+
+@ARTICLE{Kahn:1991,
+     AUTHOR = "D. Kahn and H. V. Westerhoff",
+     TITLE = "Control Theory of Regulatory Cascades",
+     JOURNAL = "J. Theor. Biol.",
+     VOLUME = 153,
+     YEAR = 1991,
+     PAGES = "255--285"
+}
+
+@ARTICLE{Ka76,
+        AUTHOR = "J. Katz and R. Rognstad",
+        TITLE = "",
+        JOURNAL = "Curr. Top. Cell. Reg.",
+        VOLUME = 10,
+        PAGES = "237-289",
+        YEAR = 1976}
+
+@ARTICLE{KKW79,
+    AUTHOR = "Kelly, P. J. and Kelleher, J. K. and Wright, B. E.",
+    TITLE = "Glycogen phosphorylase from Dictyostelium: a kinetic
+analysis by computer simulation.",
+    JOURNAL = "Biosystems",
+    VOLUME = 11 ,
+    PAGES = "55--63 ",
+    YEAR = 1979 }
+
+@ARTICLE{Kyriakis2001,
+   AUTHOR = "J. M. Kyriakis and J. Avruch",
+   TITLE = "Mammalian Mitogen-Activated Protein Kinase Signal Transduction Pathways Activated by Stress and Inflamation",
+   YEAR = 2002,
+   JOURNAL = "Physiological Reviews",
+   VOLUME = 81,
+   PAGES = "807--869"
+}
+
+@BOOK{Kn81,
+        AUTHOR = "D. E. Knuth",
+        TITLE = "Seminumerical algorithms",
+        VOLUME = 2,
+        SERIES = "The art of computer programming",
+        PUBLISHER = "Addison-Wesley",
+        ADDRESS = "Reading",
+        EDITION = "Second",
+        YEAR = 1981}
+
+@BOOK{KozaBookIII,
+     TITLE = "Genetic Programming III: Automatic Programming and Automatic Circuit Synthesis",
+     AUTHOR = "J. R. Koza and F. H. Bennett III and H. F. Bennett and D. Andre",
+     YEAR = 1999,
+     PUBLISHER = "Morgan Kaufmann"
+}
+
+
+@ARTICLE{KozaSciAm,
+   AUTHOR = "J. R. Koza and M. A. Keane and M. J. Streeter",
+   YEAR = 2003,
+   TITLE = "Evolving Inventions",
+   JOURNAL = "Scientific American",
+   PAGES = "52--59",
+   VOLUME = 288,
+   ISSUE = "February"
+}
+
+
+@ARTICLE{BKBrown:1997,
+    AUTHOR = "B. N. Kholodenko and J. B. Hoek and H. V. Westerhoff and G. C. Brown",
+    TITLE = "Quantification of information transfer via cellular signal transduction pathways",
+    VOLUME = 414,
+    JOURNAL = "FEBS Letters",
+    YEAR = 1997,
+    PAGES = "430--434"
+}
+
+@ARTICLE{Brown1997,
+    AUTHOR = "G. C. Brown and J. B. Hoek and B. N. Kholodenko",
+    TITLE = "Why do protein kinase cascades have more than one level?",
+    JOURNAL = "Trends Biochem Sci.",
+    YEAR = 1997,
+    VOLUME = 22,
+    PAGES = "288"
+}
+
+@ARTICLE{KholodenkoSauro1994,
+   AUTHOR = "B. N. Kholodenko and H. M. Sauro and H. V. Westerhoff",
+   TITLE = "Control by enzymes, coenzymes and conserved moieties. A generalisation of the connectivity theorem of metabolic control analysis.",
+   JOURNAL = "Eur J Biochem.",
+   YEAR = 1994,
+   VOLUME = 225,
+   PAGES = "179--86"
+}
+
+
+@ARTICLE{KholodenkoTIBS1997,
+   AUTHOR = "J. B. Hoek and B. N. Kholodenko",
+   TITLE = "Why do protein kinase cascades have more than one level?",
+   JOURNAL = "Trends Biochem Sci.",
+   YEAR = 1997,
+   VOLUME = 22,
+   PAGES = "288--288"
+}
+
+@ARTICLE{Kholodenko1999,
+   JOURNAL = "J Biol Chem.",
+   YEAR = 1999,
+   VOLUME = 274,
+   PAGES = "30169--81",
+   TITLE = "Quantification of short term signaling by the epidermal growth factor receptor.",
+   AUTHOR = "B. N. Kholodenko and O. V. Demin and G. Moehren and J. B. Hoek"
+}
+
+@ARTICLE{BKoholodenko:2000,
+       AUTHOR = "B. N. Kholodenko",
+       TITLE = "Negative feedback and ultrasensitivity can bring about oscillations in the mitogen-activted protein kinase cascades",
+       VOLUME = 267,
+       JOURNAL = "Eur. J. Biochem",
+       PAGES = "1583--1588",
+       YEAR = 2000
+}
+
+
+@ARTICLE{KholodenkoPNAS2002,
+   AUTHOR = "B. N. Kholodenko and A. Kiyatkin and F. J. Bruggeman and E. Sontag and H. V. Westerhoff and J. B Hoek",
+   TITLE = "Untangling the wires: a strategy to trace functional interactions in signaling and gene networks.",
+   JOURNAL = "Proc Natl Acad Sci U S A.",
+   YEAR = 2002,
+   VOLUME = 99,
+   PAGES = "12841--6"
+}
+
+
+@ARTICLE{Klamt2002,
+  AUTHOR = "S. Klamt and S. Schuster and E. D. Gilles",
+  TITLE = "Calculability analysis in underdetermined metabolic networks illustrated by a model of the central metabolism in purple nonsulfur bacteria.",
+  JOURNAL = "Biotechnol Bioeng.",
+  YEAR = 2002,
+  VOLUME = 77,
+  PAGES = "734--51"
+}
+
+
+@ARTICLE{Klamt2003,
+   AUTHOR = "S. Klamt and J. Stelling and M. Ginkel M and E. D. Gilles",
+   TITLE = "FluxAnalyzer: exploring structure, pathways, and flux distributions in metabolic networks on interactive flux maps.",
+   JOURNAL = "Bioinformatics",
+   YEAR = 2003,
+   VOLUME = 19,
+   PAGES = "261--9"
+}
+
+
+@ARTICLE{Ko83,
+        AUTHOR = "M. Kohn",
+        TITLE = "Computer Simulation of Metabolism in Palmitate-Perfused
+                 Rat Heart. {III}. Sensitivity Analysis.",
+        JOURNAL = "Ann. of Biomed. Eng.",
+        YEAR = 1983,
+        VOLUME = 11,
+        PAGES = "533--549"  }
+
+@ARTICLE{Ko86,
+        AUTHOR = "J. M. Kootsey",
+        TITLE = "Future Directions in Computer Simulation.",
+        JOURNAL = "Bull. Math. Biol.",
+        YEAR = 1986,
+        VOLUME = 48,
+        PAGES = "405--415"  }
+
+@ARTICLE{KKFMF86,
+         AUTHOR = "J. M. Kootsey and M. C. Kohn and M. D. Feezor and G. R. Mitchell and P. R. Fletcher",
+         TITLE = "SCoP: an interactive simulation control program for micro-
+                  and minicomputers",
+         JOURNAL = "Bull. Math. Biol.",
+         VOLUME = 48,
+         YEAR = 1986,
+         PAGES = "427--441"}
+
+@ARTICLE{Kub76,
+      AUTHOR = "M. Kubicek",
+      TITLE = "Algorithm 502. Dependence of solution of nonlinear systems
+               on a parameter.",
+      JOURNAL = "ACM Trans. on Math. Software",
+      YEAR = 1976,
+      VOLUME = 2,
+      PAGES = "98--107"}
+
+@BOOK{Kub83,
+      AUTHOR = "M. Kubicek and M.  Marek",
+      TITLE = "Computational Methods in Bifurcation Theory and Dissipative Structures.",
+      YEAR = 1983,
+      SERIES = "Springer Series in Computational Physics",
+      PUBLISHER = "Springer-Verlag"}
+
+@BOOK{TTLCookbook,
+   TITLE = "TTL Cookbook",
+   AUTHOR = "D.E. Lancaster and D. Lancaster",
+   PUBLISHER = "Sams",
+   YEAR = 1980
+}
+
+
+@ARTICLE{LauffenburgerModules,
+    AUTHOR = "D. A. Lauffenburger",
+    TITLE = "Cell signaling pathways as control modules: complexity for simplicity?",
+    JOURNAL = "Proc Natl Acad Sci U S A.",
+    YEAR = 2000,
+    VOLUME = 97,
+    PAGES = "5031--3"
+}
+
+
+@ARTICLE{LaurentTIBS1999,
+   AUTHOR = "M. Laurent and N. Kellershohn",
+   TITLE = "Multistability: a major means of differentiation and evolution in biological systems",
+   VOLUME = 24,
+   YEAR = 1999,
+   JOURNAL = "TIBS",
+   PAGES = "418--422"
+}
+
+
+@ARTICLE{Le87,
+        AUTHOR = "J. Leiser and J.J. Blum",
+        JOURNAL = "Cell Biophysics",
+        VOLUME = 11,
+        Pages = "123--138",
+        YEAR = 1985}
+
+@ARTICLE{Lisman1986,
+   AUTHOR = "J. E. Lisman",
+   TITLE = "A mechanism for memory storage insensitive to molecular turnover: A bistable autophosphorylating kinase",
+   JOURNAL = "Proc. Natl. Acad. Sci.",
+   VOLUME = 82,
+   YEAR = 1985,
+   PAGES = "3055--3057"
+}
+
+
+@ARTICLE{LRM91,
+        AUTHOR = "T. Letellier and C. Reder and J.-P. Mazat",
+        TITLE = "CONTROL: software for the analysis of the control of
+                 metabolic pathways",
+        JOURNAL = "Comp. Appl. Biosci.",
+        YEAR = 1991,
+        VOLUME = 7,
+        PAGES = "383--390"}
+
+@ARTICLE{Levine1966,
+    AUTHOR = "S. M. Levine",
+    TITLE = "Enzyme Amplifier Kinetics",
+    JOURNAL = "Science",
+    YEAR = 1966,
+    VOLUME = 152,
+    PAGES = "651--653"
+}
+
+
+@ARTICLE{VCELL,
+   AUTHOR = "L. M. Loew and J. C. Schaff",
+   TITLE = "The Virtual Cell: a software environment for computational cell biology.",
+   JOURNAL = "Trends Biotechnol.",
+   YEAR = 2001,
+   VOLUME = 19,
+   PAGES = "401--6"
+}
+
+
+@ARTICLE{McAdamsArkin1998,
+   JOURNAL = "Annu Rev Biophys Biomol Struct",
+   YEAR = 1998,
+   VOLUME = 27,
+   PAGES = "199--224",
+   TITLE = "Simulation of prokaryotic genetic circuits.",
+   AUTHOR = "H. H. McAdams and A. Arkin"
+}
+
+@ARTICLE{McAdamsTrendsGenetics,
+    AUTHOR = "H. H. McAdams and A. Arkin",
+    TITLE = "It's a noisy business! Genetic regulation at the nanomolar scale.",
+    JOURNAL = "Trends in Genetics",
+    YEAR = 1999,
+    VOLUME = 15,
+    PAGES = "65--9"
+}
+
+@ARTICLE{Ma72,
+        AUTHOR = "T. E. Mansour",
+        JOURNAL = "Curr. Topics Cell Reg.",
+        TITLE = "",
+        VOLUME = 5,
+        PAGES = "1--46",
+        YEAR = 1972}
+
+@ARTICLE{Marshall,
+    AUTHOR = "C. J. Marshall",
+    TITLE = "MAP kinase kinase kinase, MAP kinase kinase and MAP kinase",
+    JOURNAL = "Curr. Opin. Genet. Dev.",
+    YEAR = 1994,
+    VOLUME = 4,
+    PAGES = "82--9" }
+
+@ARTICLE{Ma86,
+    AUTHOR = "Mazat, J.-P. and Jean-Bart, E. Rigoulet, M. and Gu\'{e}rin, B.",
+    TITLE = "Control of oxidative  phosphorylations in yeast mitochondria.
+  Role of the  phosphate carrier.",
+    JOURNAL = "Biochim. Biophys. Acta",
+    VOLUME = 849 ,
+    PAGES = "7--15 ",
+    YEAR = 1986 }
+
+@BOOK{MR88,
+    TITLE = "Le contr\^{o}le du m\'{e}tabolisme",
+    BOOKTITLE = "Le contr\^{o}le du m\'{e}tabolisme",
+    EDITOR = "Mazat, J.P. and Reder C.",
+    PUBLISHER = "Universit\'{e} de Bordeaux {II}, Bordeaux.",
+    YEAR = 1988 }
+
+@ARTICLE{MR87,
+        AUTHOR = "W. Meiske and J. G. Reich",
+        TITLE = "Mathematical Description of the Control of Steady-States in
+                 Metabolic Systems,",
+        YEAR = 1987,
+        JOURNAL = "Syst. Anal. Model. Simul.",
+        VOLUME = 4,
+        PAGES = "423--435"}
+
+@ARTICLE{MTSK90,
+        AUTHOR = "E. Melendez-Hevia and N. V. Torres and J. Sicilia and
+                            H. Kacser",
+        TITLE = "Control analysis of transition times in metabolic systems.",
+        JOURNAL = "Biochem. J.",
+        YEAR = 1990,
+        VOLUME = 265,
+        PAGES = "195--202"  }
+
+@ARTICLE{Gepasi:1993,
+        AUTHOR = "P. Mendes",
+        TITLE = "GEPASI: A software package for modelling the dynamics, steady states and control of biochemical and other systems.",
+        JOURNAL = "Comput. Applic. Biosci.",
+        VOLUME = 9,
+        PAGES = "563--571",
+        YEAR = 1993}
+
+
+@ARTICLE{Moehren2002,
+   AUTHOR = "G. Moehren and N. Markevich and O. Demin and A. Kiyatkin and I. Goryanin and J. B. Hoek and B. N. Kholodenko",
+   TITLE = "Temperature dependence of the epidermal growth factor receptor signaling network can be accounted for by a kinetic model.",
+   JOURNAL = "Biochemistry",
+   YEAR = 2002,
+   VOLUME = 41,
+   PAGES = "306--20"
+}
+
+
+@ARTICLE{Mendes2002,
+    AUTHOR = "P. Brazhnik and A. de la Fuente and P. Mendes",
+    TITLE = "Gene networks: how to put the function in genomics.",
+    JOURNAL = "Trends Biotechnol.",
+    YEAR = 2002,
+    VOLUME = 20,
+    PAGES = "467--72"
+}
+
+
+@ARTICLE{ManningTIBS,
+   TITLE = "Evolution of protein kinase signaling from yeast to man",
+   JOURNAL = "TIBS",
+   YEAR = 2002,
+   PAGES = "514--520",
+   AUTHOR = "G. Manning and G. D. Plowman and T. Hunter and S. Sudarsanam",
+   VOLUME = 27
+}
+
+@ARTICLE{ManningScience2000,
+   TITLE = "The Protein Kinase Complement of the Human Genome",
+   AUTHOR = "G. Manning and D. B. Whyte and R. Martinez and T. Hunter and S. Sudarsanam",
+   YEAR = 2000,
+   JOURNAL = "Science",
+   PAGES = "1912--1934",
+   VOLUME = 298
+}
+
+
+@BOOK{MBGF90,
+         AUTHOR = "P. Mendes and J. M. Barreto and A. V. Gomes and A. P. Freire",
+         TITLE = "Methodology for simulation of metabolic pathways and calculation of
+                  control coefficients",
+         BOOKTITLE = "Control of Metabolic Processes",
+         PUBLISHER = "Plenum Press, New York",
+         YEAR = 1990,
+         EDITOR = "A. Cornish-Bowden and M. L. Cardenas",
+         SERIES = "NATO ASI Series",
+         CHAPTER = 16,
+         PAGES = "221--224"}
+
+@ARTICLE{Mindell,
+    AUTHOR = "D. Mindell",
+    TITLE = "Opening Black's Box",
+    JOURNAL = "Technology and Culture",
+    VOLUME = 14,
+    YEAR = 2000,
+    PAGES = "405--434"
+}
+
+@ARTICLE{Morales1967,
+   AUTHOR = "M. Morales and D. McKay",
+   YEAR = 1967,
+   TITLE = "Biochemical Oscillations in controlled systems",
+   JOURNAL = "Biophys. J.",
+   VOLUME = 7,
+   PAGES = "621--625"
+}
+
+@ARTICLE{MB87,
+    AUTHOR = "Murphy, M. P. and Brand, M. D.",
+    TITLE = "The control of electron flux through cytochrome oxidase.",
+    JOURNAL = "Biochem. J.",
+    VOLUME =243  ,
+    PAGES = " 499--505 ",
+    YEAR = 1987 }
+
+@ARTICLE{Ne66,
+        AUTHOR = "E. A. Newsholme and A. H. Underwood",
+        TITLE = "",
+        JOURNAL = "Biochem. J.",
+        VOLUME = 99,
+        PAGES = "24C-26C",
+        YEAR = 1966}
+
+@ARTICLE{Ne67,
+        AUTHOR = "E. A. Newsholme and W. Gevers",
+        TITLE = "",
+        JOURNAL = "Vitamins and Hormones",
+        VOLUME = 25,
+        PAGES = "1-87",
+        YEAR = 1967}
+
+@BOOK{NS73 ,
+    AUTHOR = "E. A. Newsholme and C. Start",
+    TITLE = "Regulation in metabolism.",
+    PUBLISHER = " Wiley and Sons",
+    ADDRESS = "London" ,
+    YEAR = 1973 }
+
+@ARTICLE{NC76,
+    AUTHOR = "Newsholme, E. A. and Crabtree, B.",
+    TITLE = "Substrate cycles in metabolic regulation and heat generation.",
+    JOURNAL = "Biochem. Soc. Symp.",
+    VOLUME = 41 ,
+    PAGES = "61-109 ",
+    YEAR = 1976 }
+
+@ARTICLE{NC81 ,
+    AUTHOR = "E. A. Newsholme and B. Crabtree",
+    TITLE = "Flux generating and regulatory steps in metabolic control.",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME = 6 ,
+    PAGES = "53--56",
+    YEAR = 1981 }
+
+@ARTICLE{NCC84,
+    AUTHOR = "Newsholme, E. A. and Challiss, R. A. J. and Crabtree, B.",
+    TITLE = "Substrate cycles: their role in improving sensitivity in
+ metabolic control.",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME = 9 ,
+    PAGES = "277--280 ",
+    YEAR = 1984 }
+
+
+@ARTICLE{Ok80,
+   AUTHOR = "M. Okamoto and A. Katsurayama and M. Tsukiji and Y. Aso and K. Hayashi",
+   TITLE = "Dynamic behavior of enzymatic system realizing two-factor model.",
+   JOURNAL = "J. Theor. Biol.",
+   YEAR = 1980,
+   VOLUME = 83,
+   PAGES = "1--16"
+}
+
+
+@ARTICLE{Ok83,
+    AUTHOR = "M. Okamoto and K. Hayashi",
+    TITLE = "Dynmaic behaviour of cyclic enzyme systems.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 104 ,
+    PAGES = "591--598",
+    YEAR = 1983}
+
+
+@ARTICLE{Ok87,
+    AUTHOR = "M. Okamoto and T. Sakai and K. Hayashi",
+    TITLE = {Switching mechanisms of a cyclic enzyme system: role as a ``chemical diode''},
+    JOURNAL = "Biosystems",
+    VOLUME = 21,
+    PAGES = "1--11",
+    YEAR = 1987
+}
+
+@ARTICLE{Ok88,
+   Title = "Biochemical Switching Device - Monocyclic Enzyme-System",
+   AUTHOR = "M. Okamoto and T. Sakai and K. Hayashi",
+   JOURNAL = "Biotechnology And Bioengineering",
+   VOLUME = 32,
+   PAGES = "527--537",
+   YEAR = 1988
+}
+
+
+@ARTICLE{Ok89,
+   AUTHOR = "M. Okamoto And T. Sakai And K. Hayashi",
+   TITLE = "Biochemical Switching Device - How to turn on (off) the Switch",
+   JOURNAL = "Biosystems",
+   VOLUME = 22,
+   PAGES = "155--162",
+   YEAR = 1989
+}
+
+@MISC{Olson2002,
+   AUTHOR = "M. Olson and U. Ogbuji",
+   TITLE = "The {Python} Web services developer: Messaging technologies compared.",
+   HOWPUBLISHED = "http://www-106.ibm.com/developerworks/webservices/library/ws-pyth9/",
+   YEAR = 2002
+}
+
+
+@BOOK{Peer2Peer,
+   TITLE = "Peer-to-Peer : Harnessing the Power of Disruptive Technologies",
+   YEAR = 2001,
+   PUBLISHER = "O'Reilly \& Associates",
+   AUTHOR = "A. Oram"
+}
+
+
+@ARTICLE{Ot76,
+    AUTHOR = "Ottaway, J. H.",
+    TITLE = "Control points in the citric acid cycle.",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 4 ,
+    PAGES = "371--376",
+    YEAR = 1976 }
+
+@ARTICLE{Othmer1976,
+   AUTHOR = "H. H. Othmer",
+   TITLE = "The quantitative dynamics of a class of biochemical control circuits",
+   VOLUME = 37,
+   JOURNAL = "J. Math. Biol/",
+   PAGES = "53--78",
+   YEAR = 1976
+}
+
+@INCOLLECTION{OM80,
+        AUTHOR = "J. H. Ottaway and C. L. McMinn",
+        TITLE = "Control Points in the Citric acid Cycle.",
+        BOOKTITLE = "Enzyme Regulation and Mechanism of Action.",
+        PUBLISHER = "Pergamon Press, Oxford and New York.",
+        YEAR = 1980,
+        EDITOR = "P. Mildner and B. Ries",
+        VOLUME = 60,
+        SERIES = "FEBS Series",
+        PAGES = "69--82"   }
+
+
+@ARTICLE{PW73,
+        AUTHOR = "D. J. M. Park and B. E Wright",
+        TITLE = "METASIM, A General Purpose Metabolic Simulator for
+                Studying Cellular Transformations.",
+        JOURNAL = "Comput. Progm. Biomed.",
+        YEAR = 1973,
+        VOLUME = 3,
+        PAGES = "10--26"   }
+
+@ARTICLE{Papin2003TIBS,
+    AUTHOR = "J. A. Papin and N. D. Price and S. J. Wiback and D. A. Fell and B. O. Palsson",
+    TITLE = "Metabolic pathways in the post-genome era.",
+    JOURNAL = "Trends Biochem Sci",
+    YEAR = 2003,
+    VOLUME = 28,
+    PAGES = "250--8"
+}
+
+
+@ARTICLE{Pa74a,
+        AUTHOR = "D. J. M. Park",
+        TITLE = "The Hierarchical Structure of Metabolic Networks and the
+                 Construction of Efficient Metabolic Simulators.",
+        JOURNAL = "J. Theor. Biol.",
+        YEAR = 1974,
+        VOLUME = 46,
+        PAGES = "31-74"   }
+
+@ARTICLE{Pa74b,
+        AUTHOR = "D. J. M. Park",
+        TITLE = "An Algorithm for Detecting Non-steady State Moieties
+                 in Steady State Subnetworks.",
+        JOURNAL = "J. Theor. Biol.",
+        YEAR = 1974,
+        VOLUME = 48,
+        PAGES = "125--131"  }
+
+@ARTICLE{Petz83,
+         AUTHOR = "L. R. Petzold",
+         TITLE = "Automatic selection of methods for solving
+             stiff and nonstiff systems of ordinary differential equations.",
+         JOURNAL = "SIAM J. Sci. Stat. Comput.",
+         VOLUME = 4,
+         YEAR = 1983,
+         PAGES = "136--148"}
+
+@ARTICLE{Metatool:1999,
+       AUTHOR = "T. Pfeiffer and I. Sanchez-Valdenebro and J. C. Nuno and F. Montero and S. Schuster",
+       TITLE = "METATOOL: For Studying Metabolic Networks",
+       JOURNAL = "Bioinformatics",
+       VOLUME = 15,
+       YEAR = 1999,
+       PAGES = "251--257" }
+
+
+@MISC{physiome:2001,
+       AUTHOR = "Physiome Sciences Inc.",
+        TITLE = "Company Page",
+ HOWPUBLISHED = "Provider of customizable computer-based models of cells, organs and systems,
+                 {\tt http://www.physiome.com}",
+         YEAR = 2001
+}
+
+@ARTICLE{Poolman2003,
+   AUTHOR = "M. G. Poolman and D. A. Fell and C. A. Raines",
+   TITLE = "Elementary modes analysis of photosynthate metabolism in the chloroplast stroma.",
+   JOURNAL = "Eur. J. Biochem",
+   YEAR = 2003,
+   VOLUME = 270,
+   PAGES = "430--439"
+}
+
+
+@ARTICLE{YeastGraded,
+    AUTHOR = "M. A. Poritz and S. Malmstrom and M.K-H. Kim and P. J. Rossmeissl and A. Kamb",
+    TITLE = "Graded Mode of Transcriptional Induction in Yeast Pheromone Signaling Revealed by Single-Cell Analysis",
+    JOURNAL = "Yeast",
+    YEAR = 2001,
+    VOLUME = 18,
+    PAGES = "1331-1338"
+}
+
+@INCOLLECTION{Po85,
+    AUTHOR = "J. W. Porteous",
+    TITLE = "Enzyme catalysed fluxes in metabolic systems.",
+    BOOKTITLE = "Circulation, Respiration and Metabolism",
+    EDITOR = "R. Gilles",
+    PUBLISHER = "Springer-Verlag, Berlin",
+    YEAR = 1985 }
+
+@INCOLLECTION{Po70,
+        AUTHOR = "M. J. D. Powell",
+        TITLE = "A Hybrid Method for Non-linear Algebraic Equations.",
+        BOOKTITLE = "Numerical Methods for Non-linear Algebraic Equations.",
+        PUBLISHER = "Gordon and Breach, London",
+        YEAR = 1970,
+        EDITOR = "P. Rabinowitz"    }
+
+@BOOK{Pr88,
+    AUTHOR = "W. H. Press and B. P. Flannery and S. A. Teukolsky and
+                W. T. Vetterling",
+    TITLE = "Numerical Recipies in C. The Art of Scientific Computing.",
+    PUBLISHER = "Cambridge University Press, Cambridge",
+    YEAR = 1988  }
+
+@ARTICLE{Price03,
+    AUTHOR = "N. D. Price and J. A. Papin and C. H. Schilling and B. O. Palsson",
+    JOURNAL = "Trends in Biotechnology",
+    TITLE = "Genome-scale microbial in silico models: the constraints-based approach",
+    VOLUME = 21,
+    PAGES = "162--169",
+    YEAR = 2003
+}
+
+@ARTICLE{Pring67a,
+        AUTHOR = "M. Pring",
+        JOURNAL = "J. Theor. Biol.",
+        TITLE = "The simulation and analysis by digital computer of
+                 biochemical systems. I. The choice of integration method.",
+        VOLUME = 17,
+        PAGES = "421--429",
+        YEAR = 1967}
+
+@ARTICLE{Pring67b,
+        AUTHOR = "M. Pring",
+        JOURNAL = "J. Theor. Biol.",
+        TITLE = "The simulation and analysis by digital computer of
+                 biochemical systems. II. Curve fitting procedure.",
+        VOLUME = 17,
+        PAGES = "430--435",
+        YEAR = 1967}
+
+@ARTICLE{Pring67c,
+        AUTHOR = "M. Pring",
+        JOURNAL = "J. Theor. Biol.",
+        TITLE = "The simulation and analysis by digital computer of
+                 biochemical systems. III. Generator programming.",
+        VOLUME = 17,
+        PAGES = "436--440",
+        YEAR = 1967}
+
+@ARTICLE{Pritchard2002,
+   AUTHOR = "L. Pritchard and D. K Kell",
+   YEAR = 2002,
+   TITLE = "Schemes of Flux Control in a Model of Saccharomyces cerevisiae Glycolysis",
+   JOURNAL = "Eur. J. Biochem",
+   VOLUME = 269,
+   PAGES = "3894--3904"
+}
+
+@ARTICLE{Pr85,
+        AUTHOR = "F. Przybylski and A. Otto and K. Nissler and W. Schellenberger
+        and E. Hofmann",
+        JOURNAL = "Biochim. Biophys. Acta",
+        TITLE = "",
+        VOLUME = 831,
+        PAGES = "350--352",
+        YEAR = 1985}
+
+@ARTICLE{Ra85,
+        AUTHOR = "M. Rabkin and J. J. Blum",
+        TITLE = "",
+        JOURNAL = "Biochem. J.",
+        VOLUME = 255,
+        PAGES = "761--786",
+        YEAR = 1985}
+
+@ARTICLE{Rohwer1996,
+     TITLE = "How to Recognize Monofunctional Units in a Metabolic System",
+     JOURNAL = "J. Theor. Biol",
+     VOLUME = 179,
+     YEAR = 1996,
+     PAGES = "213--228",
+     AUTHOR = "J. M. Rohwer and S. Schuster and H. V. Westerhoff"
+}
+
+@ARTICLE{RHJR74,
+    AUTHOR = "Rapoport, T. A. and Heinrich, R. and Jacobasch, G. and Rapoport, S.",
+    TITLE = "A linear steady state treatment of enzymatic chains.",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME = 42 ,
+    PAGES = "107--120 ",
+    YEAR = 1974 }
+
+@ARTICLE{RH75,
+    AUTHOR = "Rapoport, T. A. and Heinrich, R.",
+    TITLE = "Mathematical analysis of multienzyme systems. 1.
+Modelling of the glycolysis of human erythrocytes.",
+    JOURNAL = "Biosystems",
+    VOLUME = 7 ,
+    PAGES = "120--129 ",
+    YEAR = 1975 }
+
+@ARTICLE{RHR76,
+    AUTHOR = "Rapoport, T. A. and Heinrich, R. and Rapoport, S. M.",
+    TITLE = "The regulatory principles of glycolysis in erythrocytes
+{\em in vivo} and {\em in vitro}.",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 154 ,
+    PAGES = "449--469",
+    YEAR = 1976 }
+
+@TECHREPORT{Re86,
+    AUTHOR = "Reder, C.",
+    TITLE = "Mimodr\^{a}me math\'{e}matique sur les syst\`{e}mes
+biochimiques.",
+    NUMBER =  8608,
+    INSTITUTION= "U.E.R. de Math\'{e}matiques et d'Informatique,
+Universit\'{e} de Bordeaux I.",
+    YEAR = 1986 }
+
+@ARTICLE{Re88a,
+        AUTHOR = "C. Reder",
+        TITLE = "Metabolic Control Theory: A Structural Approach.",
+        JOURNAL = "J. Theor. Biol.",
+        YEAR = 1988,
+        VOLUME = 135,
+        PAGES = "175--201"   }
+
+@ARTICLE{RederM88,
+    AUTHOR = "C. Reder and J.-P. Mazat",
+    TITLE = "Aspects geometriques de la th\'{e}orie du contr\^{o}le du
+             m\'{e}tabolisme in:
+    Le contr\^{o}le du m\'{e}tabolisme",
+    JOURNAL = "eds Universite de Bordeaux II. Bordeaux.",
+    YEAR = 1988 }
+
+@ARTICLE{RP84,
+        AUTHOR = "D. M. Regen and S. J. Pilkis",
+        JOURNAL = "J. Theor. Biol.",
+        TITLE = "Sensitivity of pathway rates to activities of substrate
+        cycle enzymes: application to gluconeogenesis and glycolysis.",
+        VOLUME = 111,
+        PAGES = "635--658",
+        YEAR = 1984}
+
+@BOOK{Re81,
+        AUTHOR = "J. G. Reich and E. E. Selkov",
+        TITLE = "Energy metabolism of the cell",
+        PUBLISHER = "Academic Press",
+        ADDRESS = "London",
+        YEAR = 1981}
+
+@ARTICLE{RBG75,
+    AUTHOR = "Richter, O. and Betz, A. and Giersch, C.",
+    TITLE = "The response of oscillating glycolysis to perturbations in
+the {NAD/NADH} system: a comparison between experiments and a computer model.",
+    JOURNAL = "Biosystems",
+    VOLUME = 7 ,
+    PAGES = "137--146",
+    YEAR = 1975 }
+
+@ARTICLE{RaoArkin2001,
+     AUTHOR = "C. V. Rao and A. Arkin",
+     TITLE = "Control Motifs for Intracellular Regulatory Networks",
+     JOURNAL = "Annu. Rev. Biomed. Eng",
+     YEAR = 2001,
+     VOLUME = 3,
+     PAGES = "391--419"
+}
+
+
+@ARTICLE{RaoNature2002,
+   AUTHOR = "R. Rao, D. M Wolf and A. P. Arkin",
+   TITLE = "Control, exploitation and tolerance of intracellular noise",
+   JOURNAL = "Nature",
+   VOLUME = 420,
+   PAGES = "231--237",
+   YEAR = 2002
+   }
+
+
+@ARTICLE{RayanShapiro2003,
+   TITLE = "Temporal And Spatial Regulation In Prokaryotic Cell Cycle Progression And Development",
+   AUTHOR = "K. R. Ryan +and L. Shapiro",
+   JOURNAL = "Annual Review of Biochemistry",
+   YEAR = 2003,
+   VOLUME = 72,
+   PAGES = "367--394"
+}
+
+
+@ARTICLE{Ravasz2002,
+    AUTHOR = "E. Ravasz and A. L. Somera and D. A. Mongru and Z. N. Oltvai and A.-L. Barabasi",
+    TITLE = "Hierarchical Organization of Modularity in Metabolic Networks",
+    JOURNAL = "Science",
+    YEAR = 2002,
+    VOLUME = 297,
+    PAGES = "1551--1555"
+}
+
+
+@BOOK{SparseMatrix,
+      AUTHOR = "Y. Saad",
+      TITLE = "Iterative Methods for Sparse Linear Systems, Second Edition",
+      PUBLISHER = "Society for Industrial \& Applied Mathematics",
+      YEAR = 2003
+}
+
+
+@ARTICLE{SKP86,
+    AUTHOR = "M. Salter and R. G. Knowles and C. I. Pogson",
+    TITLE = "Quantification of the importance of individual steps in the control of aromatic amino acid metabolism.",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 234,
+    PAGES = "635--647",
+    YEAR = 1986 }
+
+
+@INPROCEEDINGS{Samatova,
+   AUTHOR = "N. F. Samatova and A. Geist and G. Ostrouchov and A. Melechko",
+   TITLE = "Parallel Out-of-core Algorithm for Genome-Scale Enumeration of Metabolic Systemic Pathways",
+   EDITOR = "S. Alurur and D. A. Bader",
+   BOOKTITLE = "Second IEEE International Workshop on High Performance Computational Biology",
+   PUBLISHER = "HiCOMB 2003",
+   YEAR = 2003,
+}
+
+@PHDTHESIS{Sa86,
+        AUTHOR = "H. M. Sauro",
+        TITLE = "Control Analysis and Simulation of Metabolism",
+        SCHOOL = "Oxford Polytechnic",
+        YEAR = 1986 }
+
+@ARTICLE{SaF87,
+    AUTHOR = "H. M. Sauro and D. A. Fell",
+    TITLE = "The role of cooperativity in metabolism.",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 15,
+    PAGES = "234-235",
+    YEAR = 1987}
+
+@ARTICLE{SSF87,
+         AUTHOR = "H. M. Sauro and J. R. Small and D. A. Fell",
+         TITLE = "Metabolic Control and its Analysis: Extensions to the
+                  theory and matrix method.",
+         JOURNAL = "Eur. J. Biochem.",
+         YEAR = 1987,
+         VOLUME = 165,
+         PAGES = "215--221"  }
+
+@INCOLLECTION{Sauro90a,
+         AUTHOR = "H. M. Sauro",
+         TITLE = "Quantification of metabolic regulation by effectors.",
+         BOOKTITLE = "Control of Metabolic Processes",
+         PUBLISHER = "Plenum Press, New York",
+         YEAR = 1990,
+         EDITOR = "A. Cornish-Bowden and M. L. C\'{a}rdenas",
+         SERIES = "NATO ASI Series",
+         CHAPTER = 17,
+         PAGES = "225--230"  }
+
+@ARTICLE{SK90,
+        AUTHOR = "H. M. Sauro and H. Kacser",
+        TITLE = "Enzyme-enzyme interaction and control analysis.
+             2. The case of non-independence: heterologous associations.",
+        JOURNAL = "Eur. J. Biochem.",
+        YEAR = 1990,
+        VOLUME = 187,
+        PAGES = "493--500"}
+
+@ARTICLE{SauroF91,
+        AUTHOR = "H. M. Sauro and D. A. Fell",
+        TITLE = "SCAMP: A metabolic simulator and control analysis program.",
+        JOURNAL = "Mathl. Comput. Modelling",
+        YEAR = 1991,
+        VOLUME = 15,
+        PAGES = "15--28"}
+
+@INPROCEEDINGS{SauroBTK93,
+       EDITOR = "S. Schuster and M. Rigoulet and R Ouhabi and J-P Mazat",
+       BOOKTITLE = "Modern Trends in Biothermokinetics",
+       TITLE = "A Biochemical NAND Gate and Assorted Circuits",
+       AUTHOR = "H. M. Sauro",
+       PUBLISHER = "Plenum Press, New York and London",
+       YEAR = 1993,
+       PAGES = "133--140"
+}
+
+@ARTICLE{SauroBarrett,
+               AUTHOR = "H. M. SAURO and J. BARRETT",
+               TITLE = "in vitro Control Analysis of Metabolic Pathways; experimental and analytical developments.",
+               JOURNAL = "Molecular and Cellular Biochemistry",
+               YEAR = 1995,
+               VOLUME = 145,
+               PAGES = "141--150" }
+
+
+@ARTICLE{Sauro1994,
+      AUTHOR = "H. M. Sauro",
+      TITLE = "Moiety-conserved cycles and metabolic control analysis: problems in sequestration and metabolic channelling",
+      JOURNAL = "BioSystems",
+      VOLUME = 33,
+      YEAR = 1994,
+      PAGES = "15--28"}
+
+
+@INCOLLECTION{sauro:2000,
+    AUTHOR = {H.~M. Sauro},
+    TITLE = {Jarnac: A System for Interactive Metabolic Analysis},
+    BOOKTITLE = {Animating the Cellular Map: Proceedings of the 9th International Meeting on {BioThermoKinetics}},
+    EDITOR = {J-H.~S. Hofmeyr and J.~M. Rohwer and J.~L. Snoep},
+    YEAR = 2000,
+    PUBLISHER = {Stellenbosch University Press},
+    ISBN = {ISBN 0-7972-0776-7} }
+
+@INCOLLECTION{SauroMAPK:2001,
+    AUTHOR = "H. M. Sauro",
+    TITLE = "A rationale for the 'design' of the MAP kinase pathway",
+    BOOKTITLE = "Second International Conference on Systems Biology",
+    YEAR = 2001,
+    EDITOR = "T-M. Yi and M. Hucka",
+    PUBLISHER = "Caltech, Pasadena",
+    PAGES = "13; http://www.sys.bio.org" }
+
+@ARTICLE{Sa69a,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Biochemical systems analysis: I. Some mathematical
+properties of the rate law for the component enzyme reactions.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 25,
+    PAGES = "365-369",
+    YEAR = 1969 }
+
+@ARTICLE{Sa69b ,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Biochemical systems analysis: {II}. The steady state solutions
+for an n-pool system using a power-law approximation.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 25 ,
+    PAGES = "370--379",
+    YEAR = 1969 }
+
+@ARTICLE{Sa69c ,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Biochemical systems analysis: {III}. Dynamic solutions
+using a power-law approximation.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 26,
+    PAGES = "215--226 ",
+    YEAR = 1969 }
+
+@ARTICLE{Sa71a,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Concepts relating the behaviour of biochemical systems to
+their underlying molecular properties.",
+    JOURNAL = "Arch. Biochem. Biophys.",
+    VOLUME = 145 ,
+    PAGES = "612--621",
+    YEAR = 1971 }
+
+@ARTICLE{Sa71b,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Parameter sensitivity as a criterion for evaluating and
+comparing the performance of biochemical systems.",
+    JOURNAL = "Nature",
+    VOLUME = 229,
+    PAGES = "542--544",
+    YEAR = 1971 }
+
+@ARTICLE{SaCurrTop72,
+    AUTHOR = "M. A. Savageau",
+    YEAR = 1972,
+    TITLE = "The behaviour of intact biochemical control systems",
+    JOURNAL = "Curr. Topics Cell. Reg.",
+    VOLUME = 6,
+    PAGES = "63--130"
+}
+
+@ARTICLE{Sa74,
+    AUTHOR = "M. A. Savageau",
+    YEAR = 1974,
+    TITLE = "Optimal design of feedback control by inhibition: Steady-state considerations",
+    JOURNAL = "J. Mol. Evol.",
+    VOLUME = 4,
+    PAGES = "139--156"
+}
+
+
+@BOOK{Sa76,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Biochemical systems analysis:
+a study of function and design in molecular biology",
+    PUBLISHER = "Addison-Wesley, Reading, Mass.",
+    YEAR = 1976 }
+
+@ARTICLE{Sa79,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Growth of complex systems can be related to the properties
+of their underlying determinants.",
+    JOURNAL = "Proc. Natl. Acad. Sci. USA",
+    VOLUME = 11 ,
+    PAGES = "5413--5417",
+    YEAR = 1979 }
+
+@ARTICLE{Sa83,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Mathematics of organisationally complex systems.",
+    JOURNAL = "Biomed. Biochim. Acta",
+    VOLUME = 44 ,
+    PAGES = "839--844 ",
+    YEAR = 1983 }
+
+@ARTICLE{Sa87,
+    AUTHOR = "M. A. Savageau",
+    TITLE = "Control of metabolism: where is the theory?",
+    JOURNAL = "Trends Biochem. Sci.",
+    VOLUME = 12 ,
+    PAGES = "219--220 ",
+    YEAR = 1987 }
+
+@ARTICLE{SV82,
+    AUTHOR = "Savageau, M. A. and Voit, E. O.",
+    TITLE = "Power-law approach to modelling biological systems. I.
+Theory.",
+    JOURNAL = "J. Ferment. Technol.",
+    VOLUME = 60,
+    PAGES = "221--228 ",
+    YEAR = 1982 }
+
+@ARTICLE{SVI87a,
+    AUTHOR = "Savageau, M. A. and Voit, E. O. and Irvine, D. H.",
+    TITLE = "Biochemical Systems Theory and Metabolic Control Theory: 1. Fundamental similarities and differences.",
+    JOURNAL = "Math. Biosci.",
+    VOLUME = 86,
+    PAGES = "127--145 ",
+    YEAR = 1987 }
+
+@ARTICLE{SVI87b ,
+    AUTHOR = "Savageau, M. A. and Voit, E. O. and Irvine, D. H.",
+    TITLE = "Biochemical Systems Theory and Metabolic Control Theory:
+2. The role of summation and connectivity relationships.",
+    JOURNAL = "Math. Biosci.",
+    VOLUME = 86 ,
+    PAGES = "147--169",
+    YEAR = 1987 }
+
+@ARTICLE{Sch81,
+        AUTHOR = "E. van Schaftingen and M.-F. Jett and L. Hu\'{e} and H.-G. Hers",
+        JOURNAL = "Proc. Natl. Acad. Sci. USA",
+        TITLE = "",
+        VOLUME = 78,
+        PAGES = "3483--3486",
+        YEAR = 1981}
+
+@ARTICLE{SEH78,
+        AUTHOR = "W. Schellenberger and K. Eschrich and E. Hofmann",
+        TITLE = "Dynamic properties of {\em in vitro} enzyme systems
+                 containing phosphofructokinase",
+        JOURNAL = "Acta biol. med. germ.",
+        YEAR = 1978,
+        VOLUME = 37,
+        PAGES = "1425--1441"  }
+
+@ARTICLE{SchusterHofer:1991,
+        AUTHOR = "S. Schuster and T. Hofer",
+        TITLE = "Determining all extreme semi-positive conservation relations in chemical reaction systems: a test criterion for conservativity",
+        JOURNAL = "J. Chem. Soc. Faraday Trans.",
+        VOLUME = 87,
+        YEAR = 1991,
+        PAGES = "2561--2566" }
+
+@ARTICLE{SchusterHilgetag:1995,
+        AUTHOR = "S. Schuster and C. Hilgetag",
+        JOURNAL = "J. Phys. Chem.",
+        TITLE = "What Information about the Conserved-Moiety Structure of Chemical Reaction Systems Can be Derived from Their Stoichiometry?",
+        VOLUME = 99,
+        YEAR = 1995,
+        PAGES = "8017--8023" }
+
+@ARTICLE{Sch89,
+        AUTHOR = "S. Schuster and R. Schuster",
+        JOURNAL = "Mathemtaical Chemistry",
+        TITLE = "A generalisation of {W}egscheider's condition.
+Implications for properties of steady states and for quasi-steady
+state approximation.",
+        VOLUME = 3,
+        PAGES = "25--42",
+        YEAR = 1989}
+
+
+@ARTICLE{Schuster1991,
+     AUTHOR = "S. Schuster and R. Schuster",
+     TITLE = "Detecting Strictly Detailed Balanced Subnetworks in Open Chemical Reaction Networks",
+     JOURNAL = "J. Math. Chem.",
+     VOLUME = 6,
+     YEAR = 1991,
+     PAGES = "17--40"
+}
+
+
+@ARTICLE{Schuster:2002,
+        AUTHOR = "S. Schuster and C. Hilgetag and J.H. Woods and D.A. Fell",
+        TITLE = "Reaction routes in biochemical reaction systems: Algebraic properties, validated calculation procedure and example from nucleotide metabolism",
+        JOURNAL = "J. Math. Biol",
+        VOLUME = 45,
+        YEAR = 2002,
+        PAGES = "153--181" }
+
+
+@ARTICLE{Segall1986,
+   JOURNAL = "Proc Natl Acad Sci USA",
+   YEAR = 1986,
+   VOLUME = 83,
+   PAGES = "8987--91",
+   TITLE = "Temporal comparisons in bacterial chemotaxis",
+   AUTHOR = "J. E. Segall and S. M Block and H. C. Berg"
+}
+
+
+@ARTICLE{Se76,
+        AUTHOR = "E. E. Selkov and S. N. Dynik",
+        TITLE = "Hysteresis, alternative steady states and oscillations in
+           an open futile cycle containing a substrate-inhibited reaction",
+        JOURNAL = "Biochemistry USSR",
+        NOTE = "English translation of Biokimiya",
+        VOLUME = 41,
+        PAGES = "1365--1370",
+        YEAR = 1976}
+
+
+@ARTICLE{Birgit2002,
+   AUTHOR = "B. Schoeberl and C. Eichler-Jonsson and E. D. Gilles and G. Muller",
+   TITLE = "Computational modeling of the dynamics of the MAP kinase cascade activated by surface and internalized EGF receptors.",
+   JOURNAL = "Nat Biotechnol",
+   YEAR = 2002,
+   VOLUME =20,
+   PAGES = "370--5"
+}
+
+
+@ARTICLE{Cellerator,
+   AUTHOR = "B. E. Shapiro and A. Levchenko and E. M. Meyerowitz and B. J. Wold and E. D. Mjolsness",
+   TITLE = "Cellerator: extending a computer algebra system to include biochemical arrows for signal transduction simulations.",
+   JOURNAL = "Bioinformatics",
+   YEAR = 2003,
+   VOLUME = 19,
+   PAGES = "677--8"
+}
+
+
+
+@ARTICLE{ShaTysonPNAS2003,
+    AUTHOR = "W. Sha and J. Moore and K. Chen and A. D. Lassaletta and C-S. Yi and J. J. Tyson and J. C. Sible",
+    TITLE = "From the Cover: Hysteresis drives cell-cycle transitions in Xenopus laevis egg extracts",
+    JOURNAL = "Proc. Natl. Acad. Sci. U.S.A.",
+    YEAR = 2003,
+    VOLUME = 100,
+    PAGES = "975--980"
+}
+
+@BOOK{Si82,
+        EDITOR = "H. Sies",
+        TITLE = "Metabolic compartmentation",
+        BOOKTITLE = "Metabolic compartmentation",
+        PUBLISHER = "Academic Press",
+        ADDRESS = "London",
+        YEAR = 1982}
+
+@ARTICLE{Schilling:2000,
+        AUTHOR = "C. H. Schilling and D. Letscher and B. O. Palsson",
+        TITLE = "Theory for the Systemic Definition of Metabolic Pathways and their use in Interpreting Metabolic Function from a Pathway-Oriented Perspective",
+        JOURNAL = "J. theor. Biol",
+        VOLUME = 203,
+        YEAR = 2000,
+        PAGES = "229--248" }
+
+@ARTICLE{Seno1978,
+    TITLE = "Instability and Oscillatory Behavior of Membrane-Chemical Reaction Systems",
+    AUTHOR = "M. Seno and K. Iwamoto and K. Sawada",
+    JOURNAL = "J. theor. biol.",
+    VOLUME = 72,
+    PAGES = "577--588",
+    YEAR = 1978
+}
+
+
+@PHDTHESIS{Sm88,
+        AUTHOR = "J. R. Small",
+        TITLE = "Theoretical aspects of metabolic control",
+        SCHOOL = "Oxford Polytechnic",
+        YEAR =1988,
+        }
+
+@ARTICLE{SF87,
+    AUTHOR = "Small, J.R. and Fell, D.A.",
+    TITLE = "Responses of metabolic systems:
+ application of control analysis to yeast",
+    JOURNAL = "Biochem. Soc. Trans.",
+    VOLUME = 12,
+    PAGES = 238,
+    YEAR = 1987}
+
+@ARTICLE{SF89 ,
+    AUTHOR = "Small, J. R. and Fell, D. A.",
+    TITLE = "The matrix method of control analysis: its validity for
+complex pathway structures.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 136 ,
+    PAGES = "181--197",
+    YEAR = 1989 }
+
+@ARTICLE{SF90a,
+    AUTHOR = "Small, J. R. and Fell, D. A.",
+    TITLE = "Covalent modification and metabolic control analysis:
+ modification to the theorems and their application to metabolic systems
+containing covalently-modified enzymes.",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME = 191,
+    PAGES = "405--411",
+    YEAR = 1990}
+
+@ARTICLE{SF90b,
+    AUTHOR = "Small, J. R. and Fell, D. A.",
+    TITLE = "Metabolic control analysis : sensitivity
+ of control coefficients to elasticities.",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME = 191,
+    PAGES = "413--420",
+    YEAR = 1990}
+
+
+@ARTICLE{Smolen2000,
+    JOURNAL = "Bull Math Biol.",
+    YEAR = 2000,
+    VOLUME = 62,
+    PAGES = "247--92",
+    TITLE = "Modeling transcriptional control in gene networks--methods, recent results, and future directions.",
+    AUTHOR = "P. Smolen and D. A. Baxter and J. H. Byrne"
+}
+
+@ARTICLE{Sm69,
+        AUTHOR = "R. E. Smith and B. A. Horwitz",
+        JOURNAL = "Physiol. Rev.",
+        VOLUME = 49,
+        PAGES = "330--425",
+        YEAR = 1969}
+
+@ARTICLE{SF90,
+    AUTHOR = "K. Snell and D. A. Fell",
+    TITLE = "Metabolic control analysis of
+ mammalian serine metabolism.",
+    JOURNAL = "Adv. Enzyme Reg.",
+    VOLUME = 30,
+    PAGES = "13--32",
+    YEAR = 1990}
+
+
+@MISC{SOAPRef,
+   AUTHOR = "Don Box and David Ehnebuske and Gopal Kakivayat and Andrew Layman and Noah Mendelsohn and
+Henrik Frystyk Nielsen and Satish Thatte and Dave Winer",
+    TITLE = "Simple Object Access Protocol ({SOAP}) 1.1: {W3C} note 08 {May} 2000",
+    HOWPUBLISHED = "http://www.w3.org/TR/SOAP/",
+    YEAR = 2000
+}
+
+@ARTICLE{So86,
+        AUTHOR = "A. Sorribas and R. Bartrons",
+        JOURNAL = "Eur. J. Biochem.",
+        TITLE = "Theoretical analysis of the flux control properties of
+          a substrate cycle.",
+        VOLUME = 158,
+        PAGES = "107--115",
+        YEAR = 1986}
+
+@BOOK{Soroka1954,
+   AUTHOR = "W. W. Soroka",
+   YEAR = 1954,
+   TITLE = "Analog Methods in Computation and Simulation",
+   PUBLISHER = "McGraw-Hill Book Company Inc"
+}
+
+@BOOK{SG76,
+    AUTHOR = "F. H. Speckhart and W. L. Green",
+    TITLE = "A Guide to Using CSMP--The Continuous Systems Modelling Program.",
+    PUBLISHER = "Prentice-Hall, Englewood Cliffs, N.J.",
+    YEAR = 1976  }
+
+
+@ARTICLE{Shvartsman2002,
+   JOURNAL = "Development",
+   YEAR = 2002,
+   VOLUME = 129,
+   PAGES = "2577--89",
+   TITLE = "Modeling and computational analysis of EGF receptor-mediated cell communication in Drosophila oogenesis.",
+   AUTHOR = "S. Y. Shvartsman and C. B. Muratov and D. A. Lauffenburger"
+}
+
+
+@ARTICLE{Stark2003,
+   TITLe = "From the top down: towards a predictive biology of signaling networks",
+   AUTHOR = "J. Stark and R. Callard and M. Hubank",
+   JOURNAL = "Trends in Biotechnology",
+   YEAR = 2003,
+   VOLUME = 21,
+   PAGES = "290--293"
+}
+
+
+@INCOLLECTION{St70,
+        CROSSREF = "enzymes",
+        AUTHOR = "E. R. Stadtman",
+        TITLE="Mechanisms of enzyme regulation in metabolism.",
+        VOLUME = 1,
+        PAGES = "397-459"}
+
+@ARTICLE{SB78,
+    AUTHOR = "Stein, R. B. and Blum, J. J.",
+    TITLE = "On the analysis of futile cycles in metabolism.",
+    JOURNAL = "J. Theor. Biol.",
+    VOLUME = 72,
+    PAGES = "487-522 ",
+    YEAR = 1978 }
+
+@ARTICLE{St63,
+        AUTHOR="D. Steinberg",
+        TITLE = "",
+        JOURNAL = "Biochem. Soc. Symp.",
+        VOLUME = 24,
+        PAGES = "111-143",
+        YEAR = 1963}
+
+@BOOK{Stephanopoulos:Book,
+    AUTHOR = "G. Stephanopoulos and A. Aristidou and J. Nielsen",
+    TITLE = "Metabolic Engineering",
+    PUBLISHER = "Academic Press",
+    YEAR = 1998}
+
+@BOOK{Strang1976,
+    AUTHOR = "G. Strang",
+    TITLE = "Linear Algebra and Its Applications",
+    PUBLISHER = "Academic Press",
+    YEAR = 1976}
+
+@BOOK{Strang1988,
+    AUTHOR = "G. Strang",
+    TITLE = "Linear Algebra and Its Applications",
+    PUBLISHER = "International Thomson Publishing",
+    EDITION = "Third",
+    YEAR = 1988}
+
+
+@ARTICLE{St89,
+    AUTHOR = "M. Stitt",
+    TITLE = "Control analysis of photosynthetic sucrose synthesis: assignment
+            of elasticity coefficients and flux-control coefficients to the
+            cytosolic fructose 1,6-bisphosphatase and sucrose phosphate
+            synthase.",
+    JOURNAL = "Phil. Trans. R. Soc( Lond. B",
+    YEAR = 1989,
+    VOLUME = 323,
+    PAGES = "327--338" }
+
+@BOOK{TLA90,
+    AUTHOR = "A. M. Tenenbaum and Y. Langsam and M. J. Augenstein",
+    TITLE = "Data structures using C",
+    PUBLISHER = "Prentice-Hall International, Englewood Cliffs, NJ.",
+    YEAR = 1990}
+
+@ARTICLE{TR81a ,
+    AUTHOR = "Y. Termonia and J. Ross",
+    TITLE = "Oscillations and control features in glycolysis: numerical
+analysis of a comprehensive model.",
+    JOURNAL = "Proc. Natl. Acad. Sci. USA ",
+    VOLUME = 78 ,
+    PAGES = "2952--2956",
+    YEAR = 1981 }
+
+@ARTICLE{TR81b ,
+    AUTHOR = "Y. Termonia and J. Ross",
+    TITLE = "Oscillations and control features in glycolysis:
+analysis of resonance effects.",
+    JOURNAL = "Proc. Natl. Acad. Sci. USA ",
+    VOLUME = 78 ,
+    PAGES = "3563--3566 ",
+    YEAR = 1981 }
+
+@ARTICLE{Teusink:2000,
+     AUTHOR = "B. Teusink and J. Passarge and K.A. Reijenga and E. Esgalhado and C.C. van der Weijden and M. Schepper and M.C. Walsh and B.M. Bakker and K. van Dam and H.V. Westerhoff and J.L. Snoep",
+     TITLE = "Can yeast glycolysis by understood in terms of in vitro kinetics of the constituent enzymes? Testing biochemistry",
+     JOUNRAL = "Eur. J. Biochem",
+     VOLUME = 267,
+     YEAR = 2000,
+     PAGES = "5313-5329"}
+
+@ARTICLE{TK85,
+    AUTHOR = "Thorburn, D. R. and Kuchel, P. W.",
+    TITLE = "Regulation of the human erythrocyte hexose monophosphate
+shunt under conditions of oxidative stress",
+    JOURNAL = "Eur. J. Biochem. ",
+    VOLUME = 150,
+    PAGES = "371--386",
+    YEAR = 1985 }
+
+
+@ARTICLE{ECELL,
+   AUTHOR = "M. Tomita and K. Hashimoto and K. Takahashi and T. S. Shimizu and Y. Matsuzaki and Miyoshi F, Saito K and S. Tanida and K. Yugi and J. C. Venter and C. A Hutchison",
+   TITLE = "E-CELL: software environment for whole-cell simulation.",
+   JOURNAL = "Bioinformatics",
+   YEAR = 1999,
+   VOLUME = 15,
+   PAGES = "72--84"
+}
+
+
+@ARTICLE{To86,
+    AUTHOR = "Torres, N. V. and Mateo, F. and Melendez-Hevia, E. and Kacser, H.",
+    TITLE = "Kinetics of metabolic pathways. ",
+    JOURNAL = "Biochem. J.",
+    VOLUME = 234 ,
+    PAGES = "169--174 ",
+    YEAR = 1986 }
+
+
+@ARTICLE{TysonNatReview2001,
+   AUTHOR = "J. J. Tyson and K. Chen and B. Novak",
+   JOURNAL = "Nature Reviews Molecular Cell Biology",
+   VOLUME = 2,
+   PAGES = "908--916",
+   YEAR = 2001,
+   TITLE = "Network Dynamics And Cell Physiology"
+}
+
+@ARTICLE{TysonBioessay2002,
+   AUTHOR = "J. J. Tyson and A. Csikasz-Nagy and B. Novak",
+   TITLE = "The dynamics of cell cycle regulation",
+   YEAR = 2002,
+   JOURNAL = "BioEssays",
+   PAGES = "1095--1109",
+   VOLUME = 24
+}
+
+
+@ARTICLE{TysonCell2003,
+    AUTHOR = "J. J Tyson and K. C. Chen and B. Novak",
+    TITLE = "Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and signaling pathways in the cell",
+    JOURNAL = "Current Opinion in Cell Biology",
+    YEAR = 2003,
+    VOLUME = 15,
+    ISSUE = 2,
+    PAGES = "221--231"
+}
+
+@ARTICLE{Uy79,
+        AUTHOR = "K. Uyeda",
+        JOURNAL = "Adv. Enzymol.",
+        TITLE = " ",
+        VOLUME = 48,
+        PAGES = "194--244",
+        YEAR = 1979}
+
+@ARTICLE{Visser:2002,
+   AUTHOR = "D. Visser and J.J. Heijnen",
+   TITLE = "The Mathematics of Metabolic Control Analysis Revisited",
+   JOURNAL = "Metabolic Engineering",
+   VOLUME = 4,
+   YEAR = 2002,
+   PAGES = "114--123" }
+
+@ARTICLE{VS82,
+    AUTHOR = "E. O. Voit and M. A. Savageau",
+    TITLE = "Power-Law Approach to Modelling Biological Systems.
+    \verb%III%. Methods of Analysis.",
+    JOURNAL = "J. Ferment. Technol.",
+    YEAR = 1982,
+    VOLUME = 60,
+    PAGES = "233--241"  }
+
+@ARTICLE{Vo87,
+    AUTHOR = "E. O. Voit",
+    TITLE = "Control in perspective.",
+    JOURNAL = "Trends Biochem. Sci. ",
+    VOLUME = 12 ,
+    PAGES = "221",
+    YEAR = 1987 }
+
+@ARTICLE{VS87,
+    AUTHOR = "E. O. Voit and M. A. Savageau",
+    TITLE = "Accuracy of alternative representations for integrated
+biochemical systems. ",
+    JOURNAL = "Biochemistry",
+    VOLUME = 26 ,
+    PAGES = "6869--6880",
+    YEAR = 1987 }
+
+@BOOK{Voit:Book,
+    AUTHOR = "E. O. Voit",
+    TITLE = "Computational Analysis of Biochemical Systems",
+    PUBLISHER = "Cambridge University Press",
+    YEAR = 2000}
+
+
+@ARTICLE{Wa84a,
+    AUTHOR = "Wanders, R. J. A. and van Roermund, C. W. T. and Meijer, A. J.",
+    TITLE = "Analysis of the control of citrulline synthesis in isolated
+rat liver  mitochondria.",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME = 142 ,
+    PAGES = "247--254 ",
+    YEAR = 1984 }
+
+@ARTICLE{Wa84b,
+    AUTHOR = "Wanders, R. J. A. and Groen, A. K. and van Roermund, C. W. T.
+ and Tager, J. M.",
+    TITLE = "Factors determining the relative contribution of the
+adenine-nucleotide translocator and the ADP generating system to
+the control of ox. phos.",
+    JOURNAL = "Eur. J. Biochem.",
+    VOLUME = 142 ,
+    PAGES = "417--424",
+    YEAR = 1984 }
+
+@ARTICLE{We84a,
+    AUTHOR = "Westerhoff, H. V. and Groen, A. K. and Wanders, R. J. A.",
+    TITLE = "Modern theories of metabolic control and their application. ",
+    JOURNAL = "Biosci. Rep.",
+    VOLUME = 4 ,
+    PAGES = "1--22",
+    YEAR = 1984 }
+
+@ARTICLE{We84b,
+    AUTHOR = "Westerhoff, H. V. and Chen, Y.-D.",
+    TITLE = "How do enzyme activities control metabolite concentrations? ",
+    JOURNAL = "Eur. J. Biochem. ",
+    VOLUME =  142,
+    PAGES = "425--430",
+    YEAR = 1984 }
+
+@ARTICLE{Thron1996,
+   AUTHOR = "C. D. Thron",
+   TITLE = "A model for a bistable biochemical trigger of mitosis",
+   JOURNAL = "Biophysical Chemistry",
+   VOLUME = 57,
+   YEAR = 1996,
+   PAGES = "239--251"
+}
+
+@ARTICLE{Thar2003,
+   AUTHOR = "R. Thar and M. Kuhl",
+   TITLE = "Bacteria are not too small for spatial sensing of chemical gradients: An experimental evidence",
+   JOURNAL = "Proc. Acad. Natl. Sci",
+   YEAR = 2003,
+   VOLUME = 100,
+   PAGES = "5748--5753"
+}
+
+
+@ARTICLE{Wald1965,
+   AUTHOR = "G. Wald",
+   TITLE = "Visual Excitation and Blodd Clotting",
+   YEAR = 1965,
+   JOURNAL = "Science",
+   PAGES = "1028--1030",
+   VOLUME = 150
+}
+
+
+@ARTICLE{TIBSWest_HK,
+   AUTHOR = "A. H. West and Ann M. Stock",
+   TITLE = "Histidine kinases and response regulator proteins in two-compartment signaling systems",
+   JOURNAL = "TIBS",
+   VOLUME = 26,
+   PAGES = "369--376",
+   YEAR = 2001
+}
+
+
+@ARTICLE{Tyson1978,
+   AUTHOR = "J. Tyson and H. G. Othmer",
+   TITLE = "The dynamics of feedback control circuits in biochemical pathways",
+   JOURNAL = "Progress in Theoretical Biology (R. Rosen \& F.M. Snell, Eds.)",
+   VOLUME = 5,
+   YEAR = 1978,
+   PAGES = "1--62"
+}
+
+
+@ARTICLE{Widmann1999,
+   AUTHOR = "C. Widmann and S. Gibson and M. B. Jarpe and G. L. Johnson",
+   TITLE = "Mitogen-activated protein kinase: conservation of a three-kinase module from yeast to human.",
+   JOURNAL = "Physiol Rev.",
+   YEAR = 1999,
+   VOLUMER = 79,
+   PAGES = "143--80"
+}
+
+
+@ARTICLE{Wiley2003,
+   AUTHOR = "H. S. Wiley and S. Y. Shvartsman and D. A. Lauffenburger",
+   TITLE = "Computational modeling of the EGF-receptor system: a paradigm for systems biology.",
+   JOURNAL = "Trends Cell Biol.",
+   YEAR = 2003,
+   VOLUME = 13,
+   PAGES = "43--50"
+}
+
+@ARTICLE{WK87,
+    AUTHOR = "Westerhoff, H. V. and Kell, D. B.",
+    TITLE = "Matrix method for determining steps most  rate-limiting  to
+flux in biotechnological  processes.",
+    JOURNAL = "Biotechnol. Bioeng.",
+    VOLUME = 30 ,
+    PAGES = "101-107",
+    YEAR = 1987 }
+
+@BOOK{FunctionsBook,
+   TITLE = "Function Circuits: Design and Applications",
+   AUTHOR = "Y. J. Wong and W. E. Ott",
+   YEAR = 1976,
+   PUBLISHER = "McGraw-Hill Book Company"
+}
+
+
+@ARTICLE{Wo86,
+    AUTHOR = "Woodrow, I. E.",
+    TITLE = "Control of the rate of photosynthetic carbon dioxide fixation",
+    JOURNAL = "Biochim. Biophys. Acta ",
+    VOLUME = 851 ,
+    PAGES = "181-192",
+    YEAR = 1986 }
+
+@UNPUBLISHED{Wo90,
+         AUTHOR = "J. Woods",
+         TITLE = "Strategies in Genetic Engineering",
+         NOTE = "Honours Dissertation, University of Edinburgh.",
+         YEAR = 1990  }
+
+@MISC{XMLRPCRef,
+    AUTHOR = "D. Winer",
+    TITLE = "{XML-RPC}",
+    HOWPUBLISHED = "http://www.xmlrpc.com/spec/",
+    YEAR = 2001
+}
+
+
+@ARTICLE{WolfArkin2002,
+   AUTHOR = "D. M. Wolf and A. P. Arkin",
+   JOURNAL = "OMICS",
+   YEAR = 2002,
+   VOLUME = 6,
+   PAGES = "91--114",
+   TITLE = "Fifteen minutes of fim: control of type 1 pili expression in E. coli."
+}
+
+@ARTICLE{WolfArkin2003,
+   AUTHOR = "D. M. Wolf and A. P. Arkin",
+   TITLE = "Motifs, modules and games in bacteria.",
+   VOLUME = 6,
+   JOURNAL = "Current Opinion in Microbiology",
+   YEAR = 2003,
+   PAGES = "125--34"
+}
+
+
+@ARTICLE{OncogeneZimmermann,
+   TITLE = "MEK1 mediates a positive feedback on Raf-1 activity independently of Ras and Src",
+   AUTHOR = "S. Zimmermann and C. Rommel and A. Ziogas and J. Lovric and K. Moeling and G. Radziwill",
+   YEAR = 1997,
+   JOURNAL = "Oncogene",
+   VOLUME = 15,
+   PAGES = "1503--1511"
+}
+
+@ARTICLE{CurrentBiolDispatch,
+   AUTHOR = "F. van Drogen and M. Peter",
+   TITLE = "MAP Kinase Cascades: Scaffolding Signal Specificity",
+   VOLUME = 12,
+   PAGES = "R53--R55",
+   YEAR = 2002,
+   JOURNAL = "Current Biology"
+}
+
+
+@ARTICLE{Umbarger1956,
+   AUTHOR = "H. E. Umbarger",
+   YEAR = 1956,
+   TITLE = "Evidence for a Negative-Feedback Mechanism in the Biosynthesis of Leucine",
+   JOURNAL = "Science",
+   VOLUME = 123,
+   PAGES = "848"
+}
+
+@ARTICLE{Yates1956,
+   AUTHOR = "R. A. Yates and A. B. Pardee",
+   YEAR = 1956,
+   TITLE = "Control of Pyrimidine Biosynthesis in Escherichia coli by a Feed-Back Mechanism",
+   JOURNAL = "J. Biol. Chem.",
+   VOLUME = 221,
+   PAGES = "757--770"
+}
+
+@ARTICLE{YiDoyle2000,
+   JOURNAL = "Proc. Natl. Acad. Sci. USA.",
+   YEAR = 2000,
+   VOLUME = 97,
+   PAGES = "4649-–4653",
+   TITLE = "Robust perfect adaptation in bacterial chemotaxis through integral feedback control",
+   AUTHOR = "T. Yi and Y. Huang and M. I. Simon and J. Doyle"
+}
+
+
+@ARTICLE{Yildirim2003,
+   TITLE = "Feedback Regulation in the Lactose Operon: A Mathematical Modeling Study and Comparison with Experimental Data",
+   YEAR = 2003,
+   AUTHOR = "N. Yildirim and M. C. Mackey",
+   VOLUME = 84,
+   JOURNAL = "Biophys. J.",
+   PAGES = "2841--2851"
+}

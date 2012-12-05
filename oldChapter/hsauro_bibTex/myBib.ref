@@ -1,0 +1,3681 @@
+%L AlonLetter2002
+%A S. S Shen-Orr
+%A R. Milo
+%A S. Mangan
+%A U. Alon
+%D 2002
+%T Network motifs in the transcriptional regulation network of Escherichia coli
+%J Nature Genetics
+%V 31
+%P 64--68
+
+%L ASK
+%A L. Acerenza
+%A H. M. Sauro
+%A H. Kacser
+%D 1989
+%T Control Analysis of time-dependent metabolic systems.
+%J J. Theor. Biol.
+%V 137
+%P 423--444
+
+%L AG79
+%A Achs, M. J.
+%A Garfinkel, D.
+%D 1979
+%T Metabolism of totally ischemic excised dog heart. 1. Construction of a
+computer model.
+%J Am. J. Physiol.
+%V 237
+%P R318--326
+
+%L Al90
+%A K. R. Albe
+%A M. H. Butler
+%A B. E. Wright
+%D 1990
+%T Cellular Concentrations of enzymes and their substrates
+%J J. Theor. Biol.
+%V 143
+%P 163--195
+
+%L AlmArkin2003
+%A E. Alm
+%A A. Arkin
+%D 2003
+%T Biological Networks
+%J Current Opinion in Structural Biology
+%V 13
+%P 193--202
+
+%L Anad:Review
+%A A. R. Asthagiri
+%A D. A. Lauffenburger
+%D 2000
+%T Bioengineering Models Of Cell Signaling
+%J Annu. Rev. Biomed. Eng.
+%V 2
+%P 31--53
+
+%L AMD
+%A AMD
+%D 2003
+%T AMD Corporation
+
+%L Anad:2001
+%A A. R. Asthagiri
+%A D. A. Lauffenburger
+%D 2001
+%T A computational study of feedback effects on signal dynamics in a
+mitogen-activated protein kinase (MAPK) pathway model.
+%J Biotechnology Progress
+%V 17
+%P 227--239
+
+%L Alves2000
+%A R. Alves
+%A M. A. Savageau
+%D 2000
+%T Effect of Overall Feedback Inhibition in Unbranched Biosynthetic Pathways
+%J Biophys J
+%V 79
+%P 2290--2304
+
+%L Aris65
+%A R. Aris
+%D 1965
+%T Prolegomena to the Rational Analysis of Systems of Chemical Reactions
+%J Arch. Rational Mech. Anal
+%V 19
+%P 81--99
+
+%L ArabidopsisSequence
+%A The-Arabidopsis-Initiative
+%D 2000
+%T Analysis of the genome sequence of the flowering plant Arabidopsis thaliana
+%J Nature
+%V 408
+%P 796--815
+
+%L ArkinRoss1994
+%A A. Arkin
+%A J. Ross
+%D 1994
+%T Computational functions in biochemical reaction networks
+%J Biophys J.
+%V 67
+%P 560--78
+
+%L ArkinLambda1998
+%A A. Arkin
+%A J. Ross
+%A H. H. McAdams
+%D 1998
+%T Stochastic kinetic analysis of developmental pathway bifurcation in phage
+lambda-infected Escherichia coli cells.
+%J Genetics
+%V 149
+%P 1633--48
+
+%L BhallaReview:2003
+%A U. S. Bhalla
+%D 2003
+%T Understanding complex signaling networks through models and metaphors
+%J Prog. Biophys Mol. Biol
+%V 81
+%P 45--65
+
+%L Bakker:1999
+%A B. M. Bakker
+%A P. A. M. Michels
+%A F. R. Opperdoes
+%A H.V. Westerhoff
+%D 1999
+%T What controls glycloysis in bloodstream form {\em Trypanosoma brucei}
+%J J. Biol. Chem.
+%V 274
+%P 14551-14559
+
+%L Bakker:2000
+%A B. M. Bakker
+%A H. V. Westerhoff
+%A F. R. Opperdoes
+%A P. A. M. Michels
+%D 2000
+%T Metabolic control analysis of glycolysis in trypanosomes as an approach to
+improve selectivity and effectiveness of drugs
+%J Mol. Biochem. Parasitology
+%V 106
+%P 1-10
+
+%L Banuett:1998
+%A F. Banuett
+%D 1998
+%T Signaling in the Yeasts: An Informational Cascade with Links to the
+Filamentous Fungi
+%J Microbiology and Molecular Biology Reviews
+%V 62
+%P 249--274
+
+%L Ba89
+%A J. M. Baranyi
+%A J. J. Blum
+%D 1989
+%J Biochem. J.
+%V 258
+%P 121--140
+
+%L Ba69
+%A T.E. Barman
+%D 1969
+%T Enzyme Handbook.
+%I Springer Verlag.
+%C Berlin, Heidelberg, \& New York.
+
+%L Berg1977
+%A H. C. Berg
+%A E. M. Purcell
+%D 1977
+%T Physics of chemoreception
+%J Biophys J.
+%V 20
+%P 193--219
+
+%L BhallaRam
+%A U. Bhalla
+%A P. Ram
+%A R. Iyengar
+%D 2002
+%T MAP kinase phosphatase as a locus of flexibility in a mitogen-activated
+protein kinase signaling network
+%J Science
+%V 297
+%P 1018--23
+
+%L BhallaPBMB
+%A U. S. Bhalla
+%D 2003
+%T Understanding complex signaling networks through models and metaphors
+%J Prog. Biophys. Molec. Biol
+%V 81
+%P 45--65
+
+%L Bennett1
+%A J. P. Bennett
+%D 1990
+%T Introduction to Compiling Techniques.
+%I McGraw--Hill Book Company, Maidenhead
+
+%L BecskeiNegFeedback2000
+%A A. Becskei
+%A L. Serrano
+%D 2000
+%T Engineering stability in gene networks by autoregulation
+%J Nature
+%V 405
+%P 590--593
+
+%L biospice
+%A {BioSPICE}
+%D 2001
+%T Home Page
+
+%L blackhist
+%A H. S. Black
+%D 1977
+%T Inventing the negative feedback amplifier
+%J IEEE spectrum, December
+%V 14
+%P 55--60
+
+%L Nils2001
+%A N. Bl\"uthgen
+%A H. Herzel
+%E R. Gauges, C. van Gend, U. Kummer
+%D 2001
+%T MAP-Kinase-Cascade: Switch, Amplifier or Feedback Controller
+%B 2nd Workshop on Computation of Biochemical Pathways and Genetic Networks
+%P 55--62
+%I Berlin: Logos Verlag
+
+%L Bo81
+%A Bohnensack, R.
+%D 1981
+%T Control of energy transformation in mitochondria: analysis by a quantitative
+model.
+%J Biochim. Biophys. Acta
+%V 634
+%P 203-227
+
+%L enzymes
+%E P. D. Boyer
+%D 1970
+%T The enzymes, Third edition
+%B The enzymes
+%I Academic Press
+%C New York
+
+%L Bolouri2002
+%A H. Bolouri
+%A E. H. Davidson
+%D 2002
+%T Modeling transciptional regulatory networks
+%J BioEssays
+%V 24
+%P 1118--1129
+
+%L Bourret2002
+%A R. B. Bourret
+%A A. M Stock
+%D 2002
+%T Molecular information processing: lessons from bacterial chemotaxis.
+%J J Biol Chem.
+%V 277
+%P 9625--8
+
+%L BagowskiFerrell2003
+%A C. P. Bagowski
+%A J. Besser
+%A C. R. Frey
+%A J. E. Ferrell
+%D 2003
+%T The JNK Cascade as a Biochemical Switch in Mammalian Cells. Ultrasensitive
+and All-or-None Responses.
+%J Current Biology
+%V 13
+%P 315--20
+
+%L Bray1990
+%A D. Bray
+%D 1990
+%T Intracellular signaling as a parallel distributed process
+%J J. Theor. Biol.
+%V 143
+%P 215–231
+
+%L Bray1995
+%A D. Bray
+%D 1995
+%T Protein molecules as computational elements in living cells
+%J Nature
+%V 376
+%P 307-–312
+
+%L Brightman:2000
+%A F. A. Brightman
+%A D. A. Fell
+%D 2000
+%T Differential feedback regulation of the MAPK cascade underlies the
+quantitative differences in EGF and NGF signaling in PC12 cells
+%J FEBS Letters
+%V 482
+%P 169--174
+
+%L Bruggeman2002
+%A F. J. Bruggeman
+%A H. V. Westerhoff
+%A J. B. Hoek
+%A B. N. Kholodenko
+%D 2002
+%T Modular response analysis of cellular regulatory networks.
+%J J. Theor Biol.
+%V 218
+%P 507--20
+
+%L BFR78
+%A R. L. Burden
+%A J. D. Faires
+%A A. C. Reynolds
+%D 1978
+%T Numerical Analysis., Second edition
+%I Prindle, Weber \& Schmidt Boston, Massachusetts
+
+%L Bu71
+%A Burns, J. A.
+%D 1971
+%T Studies on Complex Enzyme Systems
+%O url: http://www.cds.caltech.edu/~hsauro/Burns/jimBurns.pdf
+%I University of Edinburgh
+%R Ph.D. thesis.
+
+%L Bu85
+%A Burns, J. A.
+%A Cornish-Bowden, A.
+%A Groen, A. K.
+%A Heinrich, R.
+%A H. Kacser
+%A J. W. Porteous
+%A S. M. Rapoport
+%A T. A. Rapoport
+%A J. W. Stucki
+%A J. M. Tager
+%A R. J. A. Wanders
+%A H. V. Westerhoff
+%D 1985
+%T Control analysis of metabolic systems.
+%J Trends Biochem. Sci.
+%V 10
+%P 16
+
+%L Ca59
+%A G. F. Cahill
+%A J. Ashmore
+%A A. E. Renold
+%A A. B. Hastings
+%D 1959
+%J Am. J. Med.
+%V 24
+%P 264--?
+
+%L Cardenas:1989
+%A M. L. C\'ardenas
+%A A. Cornish-Bowden
+%D 1989
+%T Characteristics necessary for an interconvertible enzyme cascade to generate
+a highly sensitive response to an effector.
+%J Biochem J
+%V 257
+%P 339–-345
+
+%L Ca89-2
+%A M. Cascante
+%A R. Franco
+%A E. I. Canela
+%D 1989
+%T Use of implict methods from general sensitivity theory to develop a
+systematic approach to metabolic control.
+%J Math Biosci.
+%V 92
+%O In press.
+
+%L Chass:2001
+%A C. Chassagnole
+%A Ra\"{\i}s, B.
+%A E. Quentin
+%A D. A. Fell
+%A J.-P. Mazat
+%D 2001
+%T An integrated study of threonine-pathway enzyme kinetics in {\em Escherichia
+coli}.
+%J Biochem. J
+%V 356
+%P 415-423
+
+%L CC72
+%A A. R. Curtis
+%A E. M. Chance
+%E H. C. Hemker
+%E B. Hess
+%D 1972
+%T Numerical methods for simulation and optimization.
+%B Analysis and Simulation of Biochemical Systems
+%S FEBS Symposium, $8^{th}$ meeting
+%P 39--57
+%I North-Holland, Amsterdam
+
+%L CHG62
+%A B. Chance
+%A J. J. Higgins
+%A D. Garfinkel
+%D 1962
+%T Analogue and digital computer representations of biochemical processes.
+%J Proc. Fedn. Am. Socs. exp. Biol.
+%V 21
+%P 75--86
+
+%L CCJK77
+%A E. M. Chance
+%A A. R. Curtis
+%A I. P. Jones
+%A C. R. Kirby
+%D 1977
+%T FACSIMILE: a computer program for flow and chemistry simulation, and general
+initial value problems.
+%O AERE-R8775, HMSO London
+
+%L CW86
+%A Y-D. Chen
+%A H. V. Westerhoff
+%D 1986
+%T How do Inhibitors and Modifiers of Individual Enzymes Affect Steady-state
+Fluxes and Concentrations in Metabolic Systems?
+%J Math. Model.
+%V 7
+%P 1173--1180
+
+%L Chang:2001
+%A L. Chang
+%A M. Karin
+%D 2001
+%T Mammalian MAP kinase signaling cascades
+%J Nature
+%V 410
+%P 37--40
+
+%L StadtmanChock:1977a
+%A P. B. Chock
+%A E. R. Stadtman
+%D 1977
+%T Superiority of interconvertible enzyme cascades in metabolic regulation:
+analysis of monocyclic systems.
+%J Proc. Natl. Acad. Sci. U.S.A.
+%V 74
+%P 2761-–2765
+
+%L StadtmanChock:1977b
+%A P. B. Chock
+%A E. R. Stadtman
+%D 1977
+%T Superiority of interconvertible enzyme cascades in metabolite regulation:
+analysis of multicyclic systems.
+%J Proc. Natl. Acad. Sci. U.S.A.
+%V 74
+%P 2766--70
+
+%L Clarke80
+%A B. L. Clarke
+%D 1980
+%T Stability of complex reaction networks.
+%S Adv. Chem. Phys
+%V 42
+%P 1--213
+%I Wiley, New York
+
+%L Cl74
+%A M. G. Clark
+%A N. M. Kneer
+%A A. L. Bosch
+%A H. A. Lardy
+%D 1974
+%J J. Biol. Chem
+%V 249
+%P 5695--5703
+
+%L Cinquin2002
+%A O. Cinquin
+%A J. Demongeot
+%D 2002
+%T Roles of positive and negative feedback in biological systems.
+%J C R Biol.
+%V 325
+%P 1085--1095
+
+%L Co79
+%A A. Cornish-Bowden
+%D 1979
+%T Fundamentals of Enzyme Kinetics.
+%I Butterworth
+%C London
+
+%L Co89
+%A A. Cornish-Bowden
+%D 1989
+%T Metabolic control theory and Biochemical Systems Theory: different
+objectives, different assumptions, different results.
+%J J. Theor. Biol.
+%V 136
+%P 365--377
+
+%L CB90
+%E A. Cornish-Bowden
+%E M. L. C\'ardenas
+%D 1990
+%T Control of Metabolic Processes
+%B Control of Metabolic Processes
+%S NATO ASI Series
+%I Plenum Press, New York
+
+%L CBH91
+%A A. Cornish-Bowden
+%A J.-H. S. Hofmeyr
+%D 1991
+%T MetaModel: a program for modelling and control analysis of metabolic pathways
+on the IBM PC and compatibles.
+%J Comp. Appl. Biosci.
+%V 7
+%P 89--93
+
+%L Cornish2000
+%A A. Cornish-Bowden
+%A R. Eisenthal
+%E A. Cornish-Bowden
+%E M. L. Cardenas
+%D 2000
+%T Computer simulation as a tool for studying metabolism and drug design
+%B Technological and Medical Implications of Metabolic Control Analysis
+%P 165-–172
+%I Kluwer Academic Publishers, Dordrecht, The Netherlands
+
+%L AthelHof2002
+%A A. Cornish-Bowden
+%A J.-H. S. Hofmeyr
+%D 2002
+%T The Role of Stoichiometric Analysis in Studies of Metabolism: An Example
+%J J. theor. Biol
+%V 216
+%P 179--191
+
+%L CORBARef
+%A OMG
+%D 2001
+%T {CORBA} Specication
+
+%L Cr76
+%A B. Crabtree
+%D 1976
+%T Theoretical considerations of the sensitivity conferred by substrate cycles
+in vivo.
+%J Biochem. Soc. Trans.
+%V 4
+%P 999-1002
+
+%L CN78
+%A B. Crabtree
+%A E.A. Newsholme
+%D 1978
+%T Sensitivity of a near-equilibrium reaction in a metabolic pathway to changes
+in substrate concentration
+%J Eur. J. Biochem.
+%V 89
+%P 19-22
+
+%L CN85
+%A B. Crabtree
+%A E.A. Newsholme
+%D 1985
+%T A quantitative approach to metabolic control.
+%J Curr. Top. Cell. Reg.
+%V 25
+%P 21--76
+
+%L CN87
+%A B. Crabtree
+%A E.A. Newsholme
+%D 1987
+%T A systematic approach to describing and analysing metabolic control systems.
+%J Trends Biochem. Sci.
+%V 12
+%P 4--12
+
+%L CN87b
+%A B. Crabtree
+%A E.A. Newsholme
+%D 1987
+%T The derivation and interpretation of control coefficients
+%J Biochem. J.
+%V 247
+%P 113--120
+
+%L De85
+%A R.F. Derr
+%D 1985
+%T Modern metabolic control theory. {I}. Fundamental theorems
+%J Biochemical Archives
+%V 1
+%P 239--247
+
+%L De86
+%A R.F. Derr
+%D 1986
+%T Modern metabolic control theory. {II}. Determination of flux control
+coefficients.
+%J Biochemical Archives
+%V 2
+%P 31--44
+
+%L DecrolyPNAS1982
+%A O. Decroly
+%A A. Goldbeter
+%D 1982
+%T Birhythmicity, chaos, and other patterns of temporal self-organization in a
+multiply regulated biochemical system.
+%J Proc Natl Acad Sci U S A.
+%V 79
+%P 6917--6921
+
+%L De87
+%A R.F Derr
+%A R.E. Derr
+%D 1987
+%T Control of flux by isozymes and alternate enzymes.
+%J Biochem. Arch.
+%V 3
+%P 453--464
+
+%L Do81
+%A E. J. Doedel
+%D 1981
+%T Auto: a program for the automatic bifurcation analysis of autonomous systems.
+%B Proc. Manitoba Conf. Num. Math. Comput., 10th, Winnipeg, Canada
+%O [Congressus Numeratium, 30:265--284]
+
+%L DDH87
+%A Dykhuizen, D. E.
+%A Dean, A. M.
+%A Hartl, D. L.
+%D 1987
+%T Metabolic flux and fitness.
+%J Genetics
+%V 115
+%P 25--31
+
+%L Edel70
+%A B. Edelstein
+%D 1970
+%T A biochemical model with multiple steady states.
+%J J, Theor. Biol.
+%V 29
+%P 57--62
+
+%L Edwards:2000
+%A J. S. Edwards
+%A B. O. Palsson
+%D 2000
+%T Metabolic flux balance analysis and the in silico analysis of
+{\em Escherichia coli} K-12 gene deletions
+%V 1
+%P 1
+
+%L Edwards2000a
+%A J.S. Edwards
+%A B.O. Palsson
+%D 2000
+%T The Escherichia coli MG1655 in silico metabolic genotype: Its definition,
+characteristics, and capabilities
+%J PNAS
+%V 97
+%P 5528--5533
+
+%L Famili2003
+%A I. Famili
+%A B. O. Palsson
+%D 2003
+%T The convex basis of the left null space of the stoichiometric matrix leads to
+the definition of metabolically meaningful pools.
+%J Biophys J.
+%V 85
+%P 16--26
+
+%L Elowitz2000
+%A M. B Elowitz
+%A S Leibler
+%D 2000
+%T A synthetic oscillatory network of transcriptional regulators
+%J Nature
+%V 403
+%P 335--338
+
+%L Endy2001
+%A D. Endy
+%A R. Brent
+%D 2001
+%T Modeling Cellular Behavior.
+%J Nature
+%V 409
+%P 391--395
+
+%L entelos:2001
+%A Entelos
+%D 2001
+%T Company Page
+
+%L ESH80
+%A K. Eschrich
+%A W. Scellenberger
+%A E. Hofmann
+%D 1980
+%T In vitro demonstration of alternate stationary states in an open enzyme
+system containing phosphofructokinase.
+%J Arch. Biochem. Biophys.
+%V 205
+%P 114--121
+
+%L ESH83
+%A K. Eschrich
+%A W. Schellenberger
+%A E. Hofmann
+%D 1983
+%T Sustained Oscillations in a Reconstituted Enzyme System Containing
+Phosphofructokinase and Fructose 1,6-Bisphosphatase.
+%J Arch. Biochem. Biophys.
+%V 222
+%P 657--660
+
+%L ESH90
+%A K. Eschrich
+%A W. Schellenberger
+%A E. Hofmann
+%D 1990
+%T A Hysteretic Cycle In Glucose-6-Phosphate Metabolism Observed In A Cell-Free
+Yeast Extract
+%J European Journal Of Biochemistry
+%V 188
+%P 697--703
+
+%L Falke1997
+%A J. J. Falke
+%A R. B. Bass
+%A S. L Butler
+%A S. A. Chervitz
+%A M. A. Danielson
+%D 1997
+%T The Two-Component Singaling Pathway of Batercial Chemotaxis
+%J Annu. Rev. Cell Dev. Biol
+%V 13
+%P 457--512
+
+%L Feinberg89
+%A M. Feinberg
+%D 1989
+%T Necessary and Suffficient Conditions for detailed Balancing in mass action
+systems of arbitrary complexity
+%J Chem. Eng. Sci.
+%V 44
+%P 1819-1827
+
+%L Ferrell:1996
+%A C. F. Huang
+%A J. E. Ferrell
+%D 1996
+%T Ultrasensitivity in the mitogen-activated protein kinase cascade
+%J Proc. Natl. Acad. Sci
+%V 93
+%P 10078--10083
+
+%L FerrellTIBS1996
+%A J. E. Ferrell
+%D 1996
+%T Tripping the switch fantastic: how a protein kinase cascade can convert
+graded inputs into switch-like outputs
+%J Trends in Biochemical Sciences
+%V 21
+%P 460--466
+
+%L Ferrell:1997
+%A J. E. Ferrell
+%D 1997
+%T How responses get more switch-like as you move down a protein kinase cascade.
+%J Trends Biochem Sci.
+%V 22
+%P 288--9
+
+%L Ferrell:2002
+%A J. E. Ferrell
+%D 2002
+%T Self-perpetuating states in signal transduction: positive feedback,
+double-negative feedback and bistability
+%J Current Opinion in Cell Biology
+%V 14
+%P 140--148
+
+%L Ferrell:2001
+%A C. P. Bagowski
+%A J. E. Ferrell, Jr.
+%D 2001
+%T Bistability in the JNK cascade
+%V 11
+%P 1176--1182
+
+%L FerrellScience1998
+%A J. E. Ferrell
+%A E. M. Machleder
+%D 1998
+%T The Biochemical Basis of an All-or-None Cell Fate Switch in Xenopus Oocytes
+%J Science
+%V 280
+%P 895--898
+
+%L FerrellBioEssays1999
+%A J. E. Jr. Ferrell
+%D 1999
+%T Building a cellular switch: more lessons from a good egg
+%J BioEssays
+%V 21
+%P 866--870
+
+%L Ferrell2002
+%A J. E. Ferrell, Jr
+%D 2002
+%T Self-perpetuating states in signal transduction: positive feedback,
+double-negative feedback and bistability
+%J Current Opinion in Cell Biology
+%V 14
+%P 140-148
+
+%L Fe84
+%A D.A. Fell
+%D 1984
+%T Phosphofructokinase and glycolytic flux.
+%J Trends Biochem. Sci.
+%V 9
+%P 515-516
+
+%L FS85
+%A D. A. Fell
+%A H. M. Sauro
+%D 1985
+%T Metabolic Control Analysis: Additional relationships between elasticities and
+control coefficients
+%J Eur. J. Biochem.
+%V 148
+%P 555--561
+
+%L FS85b
+%A D. A. Fell
+%A H. M. Sauro
+%D 1985
+%T Substrate cycles: do they really cause amplification?
+%J Biochem. Soc. Trans.
+%V 13
+%P 762--763
+
+%L FSa86
+%A D. A. Fell
+%A H. M. Sauro
+%D 1986
+%T Non-equilibrium / equilibrium reactions: which controls?
+%J Biochem. Soc. Trans.
+%V 14
+%P 624--625
+
+%L FSm86b
+%A D.A. Fell
+%A J.R. Small
+%D 1986
+%T Theoretical aspects of covalent modification in metabolic control.
+%J Biochem. Soc. Trans.
+%V 14
+%P 623--624
+
+%L FSm86a
+%A D. A. Fell
+%A J. R. Small
+%D 1986
+%T Fat synthesis in adipose tissue: an examination of stoichiometric
+constraints.
+%J Biochem. J.
+%V 238
+%P 781--786
+
+%L Fe87
+%A D. A. Fell
+%D 1987
+%T A sensitivity issue.
+%J Trends Biochem. Sci.
+%V 12
+%P 217--218
+
+%L FSS88
+%A D. A. Fell
+%A H. M. Sauro
+%A J. . Small
+%T Le calcul des coefficients de contr\^ole par l'alg\`ebre matricielle.
+
+%L FSS90
+%A D.A. Fell
+%A H. M. Sauro
+%A J. . Small
+%E A. Cornish-Bowden
+%E M. L. C\'ardenas
+%D 1990
+%T Control coefficients and the matrix method.
+%B Control of Metabolic Processes
+%S NATO ASI Series
+%P 139--148
+%I Plenum Press, New York
+
+%L FS90
+%A D. A. Fell
+%A H. M. Sauro
+%D 1990
+%T Metabolic Control Analysis: the effects of high enzyme concentrations.
+%J Eur. J. Biochem.
+%V 192
+%P 183--187
+
+%L SCAMPFS90
+%A D. A. Fell
+%A H. M. Sauro
+%D 1990
+%T Metabolic Control Analysis by Computer: Progress and prospects.
+%J Biomed. Biochim. Acta
+%V 8/9
+%P 811--816
+
+%L Fe88
+%A D.A. Fell
+%A K. Snell
+%D 1988
+%T Control analysis of mammalian serine biosynthesis.
+%J Biochem. J.
+%V 256
+%P 97--101
+
+%L Fell:Book
+%A D.A. Fell
+%D 1997
+%T Understanding the Control of Metabolism
+%I Portland Press.
+%C London
+
+%L FTBPDK81
+%A H. J. Flint
+%A R. W. Tateson
+%A I. B. Bartelmess
+%A D. J. Porteous
+%A W. D. Donochie
+%A H. Kacser
+%D 1981
+%T Control of flux in the arginine pathway of {\em {N}eurospora crassa.}
+%J Biochem. J.
+%V 200
+%P 231--246
+
+%L Ford1985
+%A B. J. Ford
+%D 1985
+%T Single lens, the story of the simple microscope
+%P 49--50
+%I Harper \& Row, Publishers, New York
+
+%L GardnerNegFeedbackComment
+%A T. S. Gardner
+%A J. J. Collins
+%D 2000
+%T Neutralizing noise in gene networks
+%J Nature
+%V 405
+%P 520--521
+
+%L GardnerNature2000
+%A T. S. Gardner
+%A C. R. Cantor
+%A J. J. Collins
+%D 2000
+%T Construction of a genetic toggle switch in Escherichia coli
+%J Nature
+%V 403
+%P 339--342
+
+%L GH64
+%A D. Garfinkel
+%A B. Hess
+%D 1964
+%T Metabolic Control Mechanisms {VII}. A detailed computer model of the
+glycolytic pathway in Ascites cells.
+%J J. Biol. Chem
+%V 239
+%P 971--983
+
+%L Ga68
+%A D. Garfinkel
+%D 1968
+%T A Machine-Independent Language for the Simulation of Complex Chemical and
+Biochemical Systems.
+%J Comput. Biomed. Res.
+%V 2
+%P 31--44
+
+%L Ga71
+%A D. Garfinkel
+%D 1971
+%T Simulation of the Krebs Cycle and Closely Related Metabolism in Perfused Rat
+Liver. II Properties of the model.
+%J Comput. Biomed. Res.
+%V 4
+%P 18--42
+
+%L Ga81
+%A D. Garfinkel
+%D 1981
+%T Computer modelling of metabolic pathways
+%J Trends Biochem. Sci.
+%V 6
+%P 69--71
+
+%L Garrington1999
+%A T. P. Garrington
+%A G. L. Johnson
+%D 1999
+%T Organization and regulation of mitogen-activated protein kinase signaling
+pathways.
+%J Curr Opin Cell Biol.
+%V 11
+%P 211--8
+
+%L Gear
+%A C. W. Gear
+%D 1971
+%T Numerical Initial Value Problems in Ordinary Differential Equations.
+%I Prentice-Hall, Inc. Englewood Cliffs, New Jersey
+
+%L GNS:2003
+%A GNS
+%D 2003
+%T Gene Network Sciences: Company Web Page
+
+%L Gi88a
+%A C. Giersch
+%D 1988
+%T Control analysis of metabolic networks: 1. homogeneous functions and the
+summation theorem for control coefficients.
+%J Eur. J. Biochem
+%V 174
+%P 509-513
+
+%L Gi88b
+%A C. Giersch
+%D 1988
+%T Control analysis of metabolic networks: 2. total differentials and general
+formulation of the connectivity relations.
+%J Eur. J. Biochem.
+%V 174
+%P 515--519
+
+%L Gi88c
+%A C. Giersch
+%D 1988
+%T Control analysis of biochemical pathways.
+%J J. Theor. Biol.
+%V 134
+%P 451--462
+
+%L GDKosh81
+%A A. Goldbeter
+%A D. E. Koshland
+%D 1981
+%T An amplified sensitivity arising from covalent modification in biological
+systems
+%J Proc. Natl. Acad. Sci
+%V 78
+%P 6840--6844
+
+%L GD83
+%A A. Goldbeter
+%A O. Decroly
+%D 1983
+%T Temporal self-organization in biochemical systems: periodic behaviour vs.
+chaos.
+%J Amer. J. Physiol
+%V 245
+%P R478--R483
+
+%L Goldbeter:1984
+%A A. Goldbeter
+%A D. E. Koshland
+%D 1984
+%T Ultrasensitivity in biochemical systems controlled by covalent modification.
+Interplay between zero-order and multistep effects.
+%J J. Biol. Chem.
+%V 259
+%P 14441--7
+
+%L MAPKBook2002
+%A B. D. Gomperts
+%A I. M. Mramer
+%A P. E. R. Tatham
+%D 2002
+%T Signal Transduction
+%I Academic Press
+
+%L Gonze2001
+%A D. Gonze
+%A A. Goldbeter
+%D 2001
+%T A model for a network of phosphorylation-dephosphorylation cycles displaying
+the dynamics of dominoes and clocks.
+%J J. Theor. Biol.
+%V 210
+%P 167--86
+
+%L Gr84
+%A A. . Groen
+%D 1984
+%T Quantification of control in studies on intermediary metabolism.
+%I University of Amsterdam
+%R Ph.D. thesis.
+
+%L Gr83
+%A A. K. Groen
+%A R. C. Vervoorn
+%A R. Van der Meer
+%A J. M. Tager
+%D 1983
+%T Control of gluconeogenesis in rat liver cells. 1. Kinetics of the individual
+enzymes and the effects of glucagon.
+%J J. Biol. Chem.
+%V 258
+%P 14346--14353
+
+%L Gr86
+%A Groen, A. K.
+%A van Roermund, C. W. T. Vervoorn, R. C.
+%A Tager, J. M.
+%D 1986
+%T Control of gluconeogenesis in rat liver cells.
+%J Biochem. J.
+%V 237
+%P 379--389
+
+%L Gr82
+%A Groen, A. K.
+%A Wanders, R. J. A.
+%A Westerhoff, H. V.
+%A van der Meer, R.
+%A Tager, J. M.
+%D 1982
+%T Quantification of the contribution of various steps to the control of
+mitochondrial respiration.
+%J J. Biol. Chem.
+%V 257
+%P 2754--2757
+
+%L Grossman1995
+%A A. D. Grossman
+%D 1995
+%T Genetic Networks Controlling the Initiation of Sporulation and the
+Development of Genetic Competence in Bacillus Subtilus
+%J Annual Reviews in Genetics
+%V 29
+%P 477--508
+
+%L HastyReview2001
+%A J. Hasty
+%A D. McMillen
+%A F. Isaacs
+%A J. J. Collins
+%D 2001
+%T Computational Studies of Gene Regulatory Networks: in Numero Molecular
+Biology
+%J Nature Reviews: Genetics
+%V 2
+%P 268--279
+
+%L Hasty2002
+%A J. Hasty
+%A D. McMillen
+%A J. J. Collins
+%D 2002
+%T Engineered gene circuits
+%J Nature
+%V 420
+%P 224--30
+
+%L Hjelmfelt1991
+%A A. Hjelmfelt
+%A E. D. Weinberger
+%A J. Ross
+%D 1991
+%T Chemical implementation of neural networks and Turing machines
+%J Proc. natl. Acad. Sci
+%V 88
+%P 10983--10987
+
+%L Hjelmfelt1992
+%A A. Hjelmfelt
+%A E. D. Weinberger
+%A J. Ross
+%D 1992
+%T Chemical implementation of finite-state machines
+%J Proc. natl. Acad. Sci
+%V 89
+%P 383--387
+
+%L HazzalinGraded
+%A C. Hazzalin
+%A L. C. Mahadevan
+%D 2002
+%T MAPK-Regulated Transciption: A Continuously Variable Gene Switch?
+%J Nature Reviews: Molecular Cell Biology
+%V 3
+%P 30--40
+
+%L Hecker2001
+%A M. Hecker
+%A U. Volker
+%D 2001
+%T General stress response of Bacillus subtilis and other bacteria.
+%J Adv Microb Physiol.
+%V 44
+%P 35--91
+
+%L ArtOfElectronics
+%A P. Horowitz
+%A H. Winfield
+%D 1990
+%T The Art of Electronics
+%I Cambridge University Press
+
+%L Horn72
+%A F. Horn
+%A R. Jackson
+%D 1972
+%T General Mass Action Kinetics
+%J Arch. Rational Mech. Anal
+%V 47
+%P 81--116
+
+%L HR74a
+%A R. Heinrich
+%A T. A. Rapoport
+%D 1974
+%T A Linear Steady-state Treatment of Enzymatic Chains; General Properties,
+Control and Effector Strength
+%J Eur. J. Biochem.
+%V 42
+%P 89--95
+
+%L HR74b
+%A R. Heinrich
+%A T. A. Rapoport
+%D 1974
+%T A Linear Steady State Treatment of Enzymatic Chains. Critique of the
+Crossover Theorem and a General Procedure to Identify Interaction Sites with an
+Effector.
+%J Eur. J. Biochem.
+%V 42
+%P 97--105
+
+%L HRR77
+%A R. Heinrich
+%A S. M. Rapoport
+%A T. A. Rapoport
+%D 1977
+%T Metabolic regulation and mathematical models.
+%J Prog. Biophys. Molec. Biol.
+%V 32
+%P 1--82
+
+%L Schuster:Book
+%A R. Heinrich
+%A S Schuster
+%D 1996
+%T The Regulation of Cellular Systems
+%I Chapman and Hall
+
+%L Schuster:2000
+%A S. Schuster
+%A D. A. Fell
+%A T. Dandekar
+%D 2000
+%T A general definition of metabolic pathways useful for systematic organization
+and analysis of complex metabolic networks
+%J Nature Biotechnlogy
+%V 18
+%P 326--332
+
+%L Heijden1984a
+%A R. T. J. M. van der Heijden
+%A J. J Heijnen
+%A C. Hellinga
+%A B. Romein
+%A K. Ch. A. M. Luyben
+%D 1994
+%T Linear constraint relations in biochemical reaction systems: I.
+Classification of the calculability and the balancebility of conversion rates
+%J Biotechnol. Bioeng.
+%V 43
+%P 3-–10
+
+%L He87
+%A J.-F. Hervagault
+%A S. Canu
+%D 1987
+%T Bistability and irreversible transitions in a simple substrate cycle
+%J J. Theor. Biol.
+%V 127
+%P 439-449
+
+%L He89
+%A J.-F. Hervagault
+%A A. Cimino
+%D 1989
+%T Dynamic behaviours of an open substrate cycle: a graphical approach
+%J J. Theor. Biol.
+%V 140
+%P 399-416
+
+%L He68
+%A B. Hess
+%A A. Boiteux
+%A J. Kruger
+%D 1968
+%T Cooperation of glycolytic enzymes.
+%J Adv. Enzyme Reg.
+%V 7
+%P 149--167
+
+%L Hi63
+%A J. Higgins
+%D 1963
+%T Analysis of sequential reactions.
+%J Ann. N. Y. Acad. Sci.
+%V 108
+%P 305--321
+
+%L HIND83
+%A A. C. Hindmarsh
+%D 1983
+%T ODEPACK, a systematized collection of ode solvers in scientific computing.
+%P 55--64
+%I North-Holland, Amsterdam
+
+%L Ho86a
+%A J.-H. S. Hofmeyr
+%D 1986
+%T Studies in steady state modelling and control analysis of metabolic systems.
+%I University of Stellenbosch.
+%R Ph.D. thesis.
+
+%L Ho86b
+%A J.-H. S. Hofmeyr
+%D 1986
+%T Steady state modelling of metabolic pathways: a guide for the prespective
+simulator.
+%J Comp. Appl. Biosci.
+%V 2
+%P 5--11
+
+%L HM86
+%A J.-H. S. Hofmeyr
+%A K. J. van der Merwe
+%D 1986
+%T METAMOD: software for steady-state modelling and control analysis of
+metabolic pathways on the BBC microcomputer.
+%J Comp. Appl. Biosci.
+%V 2
+%P 243--249
+
+%L HKM86
+%A J.-H. S. Hofmeyr
+%A H. Kacser
+%A K. J. van der Merwe
+%D 1986
+%T Metabolic Control Analysis of Moiety-Conserved Cycles
+%J Eur. J. Biochem.
+%V 155
+%P 631--641
+
+%L hofmeyr-nutshell
+%A J.-H. S. Hofmeyr
+%D 2001
+%T Metabolic Control Analysis in a Nutshell
+%B Proceedings of the Second International Conference on Systems Biology
+%I Caltech
+
+%L HofmeyrModularity
+%A J.-H.S. Hofmeyr
+%A H. V. Westerhoff
+%D 2001
+%T Building the Cellular Puzzle: Control in Multi-level Reaction Networks
+%J J.Theor. Biol
+%V 208
+%P 261--285
+
+%L Holstein1994
+%A H. Holstein
+%A C.P. Greenshaw
+%E Hans V. Westerhoff
+%D 1994
+%T A Numerical Treatment of Metabolic Control Models
+%B Biothermokinetics
+%P 293--299
+%I Intercept Ltd, Andover
+
+%L hedley:2001
+%A W. J. Hedley
+%A N. R. Melanie
+%A D.~P. Bullivant
+%A P. F. Nielson
+%D 2001
+%T A Short Introduction to {CellML}
+%J Phil. Trans. Roy. Soc. London A
+%V 359
+%P 1073--1089
+
+%L hedley:2001b
+%A W. J. Hedley
+%A N. R. Melanie
+%A D. Bullivant
+%A A. Cuellar
+%A Yi Ge
+%A M. Grehlinger
+%A K. Jim
+%A S. Lett
+%A D. Nickerson
+%A P. Nielsen
+%A H. Yu
+%D 2001
+%T {CellML} Specification
+
+%L Ho84
+%A M. Holmes
+%A A. Crespo Armas
+%A J. Mowbray
+%D 1984
+%T 
+%J FEBS Lett.
+%V 177
+%P 231--236
+
+%L HJB85
+%A H-G. Holzhutter
+%A G. Jacobasch
+%A A. Bisdorff
+%D 1985
+%T Mathematical modelling of metabolic pathways affected by an enzyme
+deficiency.
+%J Eur. J. Biochem.
+%V 149
+%P 101--111
+
+%L Ho88
+%A M. D. Houslay
+%D 1988
+%T Microfile: Into {STELLAR} Space.
+%J Trends in Biochemical Sciences.
+%V 13
+%P 234--235
+
+%L hucka:2001
+%A M. Hucka
+%A A. Finney
+%A H.~M. Sauro
+%A H. Bolouri
+%D 2001
+%T {Systems Biology Markup Language} ({SBML}) {L}evel 1: Structures and
+Facilities for Basic Model Definitions
+
+%L hucka:2002d
+%A M. Hucka
+%A A. Finney
+%A H.~M. Sauro
+%A H. Bolouri
+%A J.~C. Doyle
+%A H. Kitano
+%A A.~P. Arkin
+%A B.~J. Bornstein
+%A D. Bray
+%A A. Cornish-Bowden
+%A A.~A. Cuellar
+%A S. Dronov
+%A E.~D. Gilles
+%A M. Ginkel
+%A V. Gor
+%A I.~I. Goryanin
+%A W.~J. Hedley
+%A T.~C. Hodgman
+%A J.-H. Hofmeyr
+%A P.~J. Hunter
+%A N.~S. Juty
+%A J.~L. Kasberger
+%A A. Kremling
+%A U. Kummer
+%A N. Le~Nov\`ere
+%A L.~M. Loew
+%A D. Lucio
+%A P. Mendes
+%A E.~D. Mjolsness
+%A Y. Nakayama
+%A M.~R. Nelson
+%A P.~F. Nielsen
+%A T. Sakurada
+%A J.~C. Schaff
+%A B.~E. Shapiro
+%A T.~S. Shimizu
+%A H.~D. Spence
+%A J. Stelling
+%A K. Takahashi
+%A M. Tomita
+%A J. Wagner
+%A J. Wang
+%D 2003
+%T The {Systems Biology Markup Language} ({SBML}): A Medium for Representation
+and Exchange of Biochemical Network Models
+%J Boinformatics
+%V 19
+%P 524-531
+
+%L HuckaSBW2002
+%A H. M. Hucka
+%A A. Finney
+%A H. M. Sauro
+%A H. Bolouri
+%A J. Doyle
+%A H. Kitano
+%D 2002
+%T The {ERATO Systems Biology Workbench}: enabling interaction and exchange
+between software tools for computational biology.
+%B Pac Symp Biocomput.
+%P 450--461
+%I World Scientific Pub Co
+
+%L Hu82
+%A L. Hue
+%T Futile cycles and regulation of metabolism.
+%P 71-97
+
+%L Hunting1974
+%A A. Hunting
+%D 1974
+%T Limit-cycles in enzyme-systems with nonlinear negative feedback
+%J Biophys. Struct. Mech.
+%V 1
+%P 47--54
+
+%L Ill72
+%A J. A. Illingworth
+%E H. C. Hemker
+%E B. Hess
+%D 1972
+%T Computer simulation studies on the control mechanism of yeast isocitrate
+dehydrogenase
+%B Analysis and Simulation of Biochemical Systems
+%S FEBS Symposium, $8^{th}$ meeting
+%P 345--359
+%I North-Holland, Amsterdam
+
+%L Ingalls2002
+%A B. P. Ingalls
+%A H. M. Sauro
+%D 2002
+%T Sensitivity Analysis of Stoichiometric Networks: An Extension of Metabolic
+Control Analysis to Non-equilibrium Trajectories
+%J J. theor. Biol
+%V 0
+%P 0--0
+
+%L Intel
+%A Intel
+%D 2003
+%T Intel Corporation
+
+%L Ir88
+%A D. H. Irvine
+%D 1988
+%T S--Systems. Efficient solution of nonlinear models expressed in S--System
+canonical form
+%J Math. Comput. Modelling.
+%V 11
+%P 123--128
+
+%L JP90
+%A A. Joshi
+%A B. O. Palsson
+%D 1990
+%T Metabolic Dynamics in the Human Red Cell. Part IV-Data Prediction and Some
+Model Computations
+%J J. Theor. Biol
+%V 142
+%P 69--85
+
+%L JungOpAmps
+%A W. G. Jung
+%D 1986
+%T IC Op-Amp Cookbook
+%I Prentice Hall PTR; 3rd edition
+
+%L KB73
+%A H. Kacser
+%A J. A. Burns
+%E D. D. Davies
+%D 1973
+%T The Control of Flux
+%B Rate Control of Biological Processes
+%S Symp. Soc. Exp. Biol.
+%V 27
+%P 65--104
+%I Cambridge University Press
+
+%L Ka83
+%A H. Kacser
+%D 1983
+%T The control of enzyme systems in vivo: elasticity of the steady state.
+%J Biochem. Soc. Trans.
+%V 11
+%P 35--40
+
+%L KB79
+%A H. Kacser
+%A J.A. Burns
+%D 1979
+%T Molecular democracy: who shares the controls?
+%J Biochem. Soc. Trans.
+%V 7
+%P 1149--1160.
+
+%L KP87a
+%A H. Kacser
+%A J. W. Porteous
+%D 1987
+%T Control of Metabolism: what do we have to measure?
+%J Trends in Biochemical Sciences
+%V 12
+%P 5--14
+
+%L KP87b
+%A H. Kacser
+%A J.W. Porteous
+%D 1987
+%T Reply to {S}avageau.
+%J Trends Biochem. Sci.
+%V 12
+%P 222--223
+
+%L KSA90
+%A H. Kacser
+%A H. M. Sauro
+%A L. Acerenza
+%D 1990
+%T Enzyme-enzyme interaction and control analysis. 1. The case of
+non-additivity: monomer-oligomer associations.
+%J Eur. J. Biochem.
+%V 187
+%P 481--491
+
+%L KSA90a
+%A H. Kacser
+%A H. M. Sauro
+%A L. Acerenza
+%E A. Cornish-Bowden
+%E M. L. C\'ardenas
+%D 1990
+%T Control Analysis of Systems with Enzyme-Enzyme Interactions
+%B Control of Metabolic Processes, chap. 20
+%S NATO ASI Series
+%P 251--257
+%I Plenum Press, New York
+
+%L Kahn:1991
+%A D. Kahn
+%A H. V. Westerhoff
+%D 1991
+%T Control Theory of Regulatory Cascades
+%J J. Theor. Biol.
+%V 153
+%P 255--285
+
+%L Ka76
+%A J. Katz
+%A R. Rognstad
+%D 1976
+%J Curr. Top. Cell. Reg.
+%V 10
+%P 237-289
+
+%L KKW79
+%A Kelly, P. J.
+%A Kelleher, J. K.
+%A Wright, B. E.
+%D 1979
+%T Glycogen phosphorylase from Dictyostelium: a kinetic analysis by computer
+simulation.
+%J Biosystems
+%V 11
+%P 55--63
+
+%L Kyriakis2001
+%A J. M. Kyriakis
+%A J. Avruch
+%D 2002
+%T Mammalian Mitogen-Activated Protein Kinase Signal Transduction Pathways
+Activated by Stress and Inflamation
+%J Physiological Reviews
+%V 81
+%P 807--869
+
+%L Kn81
+%A D. E. Knuth
+%D 1981
+%T Seminumerical algorithms, Second edition
+%S The art of computer programming
+%V 2
+%I Addison-Wesley
+%C Reading
+
+%L KozaBookIII
+%A J. R. Koza
+%A F. H. Bennett III
+%A H. F. Bennett
+%A D. Andre
+%D 1999
+%T Genetic Programming III: Automatic Programming and Automatic Circuit
+Synthesis
+%I Morgan Kaufmann
+
+%L KozaSciAm
+%A J. R. Koza
+%A M. A. Keane
+%A M. J. Streeter
+%D 2003
+%T Evolving Inventions
+%J Scientific American
+%V 288
+%P 52--59
+
+%L BKBrown:1997
+%A B. N. Kholodenko
+%A J. B. Hoek
+%A H. V. Westerhoff
+%A G. C. Brown
+%D 1997
+%T Quantification of information transfer via cellular signal transduction
+pathways
+%J FEBS Letters
+%V 414
+%P 430--434
+
+%L Brown1997
+%A G. C. Brown
+%A J. B. Hoek
+%A B. N. Kholodenko
+%D 1997
+%T Why do protein kinase cascades have more than one level?
+%J Trends Biochem Sci.
+%V 22
+%P 288
+
+%L KholodenkoSauro1994
+%A B. N. Kholodenko
+%A H. M. Sauro
+%A H. V. Westerhoff
+%D 1994
+%T Control by enzymes, coenzymes and conserved moieties. A generalisation of the
+connectivity theorem of metabolic control analysis.
+%J Eur J Biochem.
+%V 225
+%P 179--86
+
+%L KholodenkoTIBS1997
+%A J. B. Hoek
+%A B. N. Kholodenko
+%D 1997
+%T Why do protein kinase cascades have more than one level?
+%J Trends Biochem Sci.
+%V 22
+%P 288--288
+
+%L Kholodenko1999
+%A B. N. Kholodenko
+%A O. V. Demin
+%A G. Moehren
+%A J. B. Hoek
+%D 1999
+%T Quantification of short term signaling by the epidermal growth factor
+receptor.
+%J J Biol Chem.
+%V 274
+%P 30169--81
+
+%L BKoholodenko:2000
+%A B. N. Kholodenko
+%D 2000
+%T Negative feedback and ultrasensitivity can bring about oscillations in the
+mitogen-activted protein kinase cascades
+%J Eur. J. Biochem
+%V 267
+%P 1583--1588
+
+%L KholodenkoPNAS2002
+%A B. N. Kholodenko
+%A A. Kiyatkin
+%A F. J. Bruggeman
+%A E. Sontag
+%A H. V. Westerhoff
+%A J. B Hoek
+%D 2002
+%T Untangling the wires: a strategy to trace functional interactions in
+signaling and gene networks.
+%J Proc Natl Acad Sci U S A.
+%V 99
+%P 12841--6
+
+%L Klamt2002
+%A S. Klamt
+%A S. Schuster
+%A E. D. Gilles
+%D 2002
+%T Calculability analysis in underdetermined metabolic networks illustrated by a
+model of the central metabolism in purple nonsulfur bacteria.
+%J Biotechnol Bioeng.
+%V 77
+%P 734--51
+
+%L Klamt2003
+%A S. Klamt
+%A J. Stelling
+%A M. Ginkel M
+%A E. D. Gilles
+%D 2003
+%T FluxAnalyzer: exploring structure, pathways, and flux distributions in
+metabolic networks on interactive flux maps.
+%J Bioinformatics
+%V 19
+%P 261--9
+
+%L Ko83
+%A M. Kohn
+%D 1983
+%T Computer Simulation of Metabolism in Palmitate-Perfused Rat Heart. {III}.
+Sensitivity Analysis.
+%J Ann. of Biomed. Eng.
+%V 11
+%P 533--549
+
+%L Ko86
+%A J. M. Kootsey
+%D 1986
+%T Future Directions in Computer Simulation.
+%J Bull. Math. Biol.
+%V 48
+%P 405--415
+
+%L KKFMF86
+%A J. M. Kootsey
+%A M. C. Kohn
+%A M. D. Feezor
+%A G. R. Mitchell
+%A P. R. Fletcher
+%D 1986
+%T SCoP: an interactive simulation control program for micro- and minicomputers
+%J Bull. Math. Biol.
+%V 48
+%P 427--441
+
+%L Kub76
+%A M. Kubicek
+%D 1976
+%T Algorithm 502. Dependence of solution of nonlinear systems on a parameter.
+%J ACM Trans. on Math. Software
+%V 2
+%P 98--107
+
+%L Kub83
+%A M. Kubicek
+%A M. Marek
+%D 1983
+%T Computational Methods in Bifurcation Theory and Dissipative Structures.
+%S Springer Series in Computational Physics
+%I Springer-Verlag
+
+%L TTLCookbook
+%A D.E. Lancaster
+%A D. Lancaster
+%D 1980
+%T TTL Cookbook
+%I Sams
+
+%L LauffenburgerModules
+%A D. A. Lauffenburger
+%D 2000
+%T Cell signaling pathways as control modules: complexity for simplicity?
+%J Proc Natl Acad Sci U S A.
+%V 97
+%P 5031--3
+
+%L LaurentTIBS1999
+%A M. Laurent
+%A N. Kellershohn
+%D 1999
+%T Multistability: a major means of differentiation and evolution in biological
+systems
+%J TIBS
+%V 24
+%P 418--422
+
+%L FixARadio
+%A Y. Lazebnik
+%D 2002
+%T Can a biologist fix a radio?—Or, what I learned while studying apoptosis
+%J Cancer Cell
+%V 2
+%P 179--182
+
+%L Le87
+%A J. Leiser
+%A J.J. Blum
+%D 1985
+%J Cell Biophysics
+%V 11
+%P 123--138
+
+%L Lisman1986
+%A J. E. Lisman
+%D 1985
+%T A mechanism for memory storage insensitive to molecular turnover: A bistable
+autophosphorylating kinase
+%J Proc. Natl. Acad. Sci.
+%V 82
+%P 3055--3057
+
+%L LRM91
+%A T. Letellier
+%A C. Reder
+%A J.-P. Mazat
+%D 1991
+%T CONTROL: software for the analysis of the control of metabolic pathways
+%J Comp. Appl. Biosci.
+%V 7
+%P 383--390
+
+%L Levine1966
+%A S. M. Levine
+%D 1966
+%T Enzyme Amplifier Kinetics
+%J Science
+%V 152
+%P 651--653
+
+%L VCELL
+%A L. M. Loew
+%A J. C. Schaff
+%D 2001
+%T The Virtual Cell: a software environment for computational cell biology.
+%J Trends Biotechnol.
+%V 19
+%P 401--6
+
+%L McAdamsArkin1998
+%A H. H. McAdams
+%A A. Arkin
+%D 1998
+%T Simulation of prokaryotic genetic circuits.
+%J Annu Rev Biophys Biomol Struct
+%V 27
+%P 199--224
+
+%L McAdamsTrendsGenetics
+%A H. H. McAdams
+%A A. Arkin
+%D 1999
+%T It's a noisy business! Genetic regulation at the nanomolar scale.
+%J Trends in Genetics
+%V 15
+%P 65--9
+
+%L Ma72
+%A T. E. Mansour
+%D 1972
+%J Curr. Topics Cell Reg.
+%V 5
+%P 1--46
+
+%L Marshall
+%A C. J. Marshall
+%D 1994
+%T MAP kinase kinase kinase, MAP kinase kinase and MAP kinase
+%J Curr. Opin. Genet. Dev.
+%V 4
+%P 82--9
+
+%L Ma86
+%A Mazat, J.-P.
+%A Jean-Bart, E. Rigoulet, M.
+%A Gu\'erin, B.
+%D 1986
+%T Control of oxidative phosphorylations in yeast mitochondria. Role of the
+phosphate carrier.
+%J Biochim. Biophys. Acta
+%V 849
+%P 7--15
+
+%L MR88
+%E Mazat, J.P.
+%E Reder C.
+%D 1988
+%T Le contr\^ole du m\'etabolisme
+%B Le contr\^ole du m\'etabolisme
+%I Universit\'e de Bordeaux {II}, Bordeaux.
+
+%L MR87
+%A W. Meiske
+%A J. G. Reich
+%D 1987
+%T Mathematical Description of the Control of Steady-States in Metabolic
+Systems,
+%J Syst. Anal. Model. Simul.
+%V 4
+%P 423--435
+
+%L MTSK90
+%A E. Melendez-Hevia
+%A N. V. Torres
+%A J. Sicilia
+%A H. Kacser
+%D 1990
+%T Control analysis of transition times in metabolic systems.
+%J Biochem. J.
+%V 265
+%P 195--202
+
+%L Gepasi:1993
+%A P. Mendes
+%D 1993
+%T GEPASI: A software package for modelling the dynamics, steady states and
+control of biochemical and other systems.
+%J Comput. Applic. Biosci.
+%V 9
+%P 563--571
+
+%L Lee2002
+%A T. I. Lee
+%A N. J. Rinaldi
+%A F. Robert
+%A D. T. Odom
+%A Z. Bar-Joseph
+%A G. K. Gerber
+%A N. M. Hannett
+%A C. T. Harbison
+%A C. M. Thompson
+%A I. Simon
+%A J. Zeitlinger
+%A E. G. Jennings
+%A H. L. Murray
+%A D. B. Gordon
+%A B. Ren
+%A J. J. Wy
+%D 2002
+%T Transcriptional regulatory networks in Saccharomyces cerevisiae.
+%J Science
+%V 298
+%P 799--804
+
+%L Moehren2002
+%A G. Moehren
+%A N. Markevich
+%A O. Demin
+%A A. Kiyatkin
+%A I. Goryanin
+%A J. B. Hoek
+%A B. N. Kholodenko
+%D 2002
+%T Temperature dependence of the epidermal growth factor receptor signaling
+network can be accounted for by a kinetic model.
+%J Biochemistry
+%V 41
+%P 306--20
+
+%L Mendes2002
+%A P. Brazhnik
+%A A. de la Fuente
+%A P. Mendes
+%D 2002
+%T Gene networks: how to put the function in genomics.
+%J Trends Biotechnol.
+%V 20
+%P 467--72
+
+%L ManningTIBS
+%A G. Manning
+%A G. D. Plowman
+%A T. Hunter
+%A S. Sudarsanam
+%D 2002
+%T Evolution of protein kinase signaling from yeast to man
+%J TIBS
+%V 27
+%P 514--520
+
+%L ManningScience2000
+%A G. Manning
+%A D. B. Whyte
+%A R. Martinez
+%A T. Hunter
+%A S. Sudarsanam
+%D 2000
+%T The Protein Kinase Complement of the Human Genome
+%J Science
+%V 298
+%P 1912--1934
+
+%L MBGF90
+%A P. Mendes
+%A J. M. Barreto
+%A A. V. Gomes
+%A A. P. Freire
+%E A. Cornish-Bowden
+%E M. L. Cardenas
+%D 1990
+%T Methodology for simulation of metabolic pathways and calculation of control
+coefficients, chap. 16
+%B Control of Metabolic Processes
+%S NATO ASI Series
+%P 221--224
+%I Plenum Press, New York
+
+%L Mindell
+%A D. Mindell
+%D 2000
+%T Opening Black's Box
+%J Technology and Culture
+%V 14
+%P 405--434
+
+%L Milo2002
+%A R. Milo
+%A S. Shen-Orr
+%A S. Itzkovitz
+%A N. Kashtan
+%A D. Chklovskii
+%A U. Alon
+%D 2002
+%T Network motifs: simple building blocks of complex networks.
+%J Science
+%V 298
+%P 824--7
+
+%L Morales1967
+%A M. Morales
+%A D. McKay
+%D 1967
+%T Biochemical Oscillations in controlled systems
+%J Biophys. J.
+%V 7
+%P 621--625
+
+%L MB87
+%A Murphy, M. P.
+%A Brand, M. D.
+%D 1987
+%T The control of electron flux through cytochrome oxidase.
+%J Biochem. J.
+%V 243
+%P 499--505
+
+%L Ne66
+%A E. A. Newsholme
+%A A. H. Underwood
+%D 1966
+%J Biochem. J.
+%V 99
+%P 24C-26C
+
+%L Ne67
+%A E. A. Newsholme
+%A W. Gevers
+%D 1967
+%J Vitamins and Hormones
+%V 25
+%P 1-87
+
+%L NS73
+%A E. A. Newsholme
+%A C. Start
+%D 1973
+%T Regulation in metabolism.
+%I Wiley and Sons
+%C London
+
+%L NC76
+%A Newsholme, E. A.
+%A Crabtree, B.
+%D 1976
+%T Substrate cycles in metabolic regulation and heat generation.
+%J Biochem. Soc. Symp.
+%V 41
+%P 61-109
+
+%L NC81
+%A E. A. Newsholme
+%A B. Crabtree
+%D 1981
+%T Flux generating and regulatory steps in metabolic control.
+%J Trends Biochem. Sci.
+%V 6
+%P 53--56
+
+%L NCC84
+%A Newsholme, E. A.
+%A Challiss, R. A. J.
+%A Crabtree, B.
+%D 1984
+%T Substrate cycles: their role in improving sensitivity in metabolic control.
+%J Trends Biochem. Sci.
+%V 9
+%P 277--280
+
+%L Ok80
+%A M. Okamoto
+%A A. Katsurayama
+%A M. Tsukiji
+%A Y. Aso
+%A K. Hayashi
+%D 1980
+%T Dynamic behavior of enzymatic system realizing two-factor model.
+%J J. Theor. Biol.
+%V 83
+%P 1--16
+
+%L Ok83
+%A M. Okamoto
+%A K. Hayashi
+%D 1983
+%T Dynmaic behaviour of cyclic enzyme systems.
+%J J. Theor. Biol.
+%V 104
+%P 591--598
+
+%L Ok87
+%A M. Okamoto
+%A T. Sakai
+%A K. Hayashi
+%D 1987
+%T Switching mechanisms of a cyclic enzyme system: role as a ``chemical diode''
+%J Biosystems
+%V 21
+%P 1--11
+
+%L Ok88
+%A M. Okamoto
+%A T. Sakai
+%A K. Hayashi
+%D 1988
+%T Biochemical Switching Device - Monocyclic Enzyme-System
+%J Biotechnology And Bioengineering
+%V 32
+%P 527--537
+
+%L Ok89
+%A M. Okamoto
+%A T. Sakai
+%A K. Hayashi
+%D 1989
+%T Biochemical Switching Device - How to turn on (off) the Switch
+%J Biosystems
+%V 22
+%P 155--162
+
+%L OltvaiScience2002
+%A Z. N. Oltvai
+%A A. L. Barabasi
+%D 2002
+%T Life's complexity pyramid
+%J Science
+%V 298
+%P 763--4
+
+%L Olson2002
+%A M. Olson
+%A U. Ogbuji
+%D 2002
+%T The {Python} Web services developer: Messaging technologies compared.
+
+%L Peer2Peer
+%A A. Oram
+%D 2001
+%T Peer-to-Peer : Harnessing the Power of Disruptive Technologies
+%I O'Reilly \& Associates
+
+%L Ot76
+%A Ottaway, J. H.
+%D 1976
+%T Control points in the citric acid cycle.
+%J Biochem. Soc. Trans.
+%V 4
+%P 371--376
+
+%L Othmer1976
+%A H. H. Othmer
+%D 1976
+%T The quantitative dynamics of a class of biochemical control circuits
+%J J. Math. Biol/
+%V 37
+%P 53--78
+
+%L OM80
+%A J. H. Ottaway
+%A C. L. McMinn
+%E P. Mildner
+%E B. Ries
+%D 1980
+%T Control Points in the Citric acid Cycle.
+%B Enzyme Regulation and Mechanism of Action.
+%S FEBS Series
+%V 60
+%P 69--82
+%I Pergamon Press, Oxford and New York.
+
+%L PW73
+%A D. J. M. Park
+%A B. E Wright
+%D 1973
+%T METASIM, A General Purpose Metabolic Simulator for Studying Cellular
+Transformations.
+%J Comput. Progm. Biomed.
+%V 3
+%P 10--26
+
+%L Papin2003TIBS
+%A J. A. Papin
+%A N. D. Price
+%A S. J. Wiback
+%A D. A. Fell
+%A B. O. Palsson
+%D 2003
+%T Metabolic pathways in the post-genome era.
+%J Trends Biochem Sci
+%V 28
+%P 250--8
+
+%L Pa74a
+%A D. J. M. Park
+%D 1974
+%T The Hierarchical Structure of Metabolic Networks and the Construction of
+Efficient Metabolic Simulators.
+%J J. Theor. Biol.
+%V 46
+%P 31-74
+
+%L Pa74b
+%A D. J. M. Park
+%D 1974
+%T An Algorithm for Detecting Non-steady State Moieties in Steady State
+Subnetworks.
+%J J. Theor. Biol.
+%V 48
+%P 125--131
+
+%L Petz83
+%A L. R. Petzold
+%D 1983
+%T Automatic selection of methods for solving stiff and nonstiff systems of
+ordinary differential equations.
+%J SIAM J. Sci. Stat. Comput.
+%V 4
+%P 136--148
+
+%L Metatool:1999
+%A T. Pfeiffer
+%A I. Sanchez-Valdenebro
+%A J. C. Nuno
+%A F. Montero
+%A S. Schuster
+%D 1999
+%T METATOOL: For Studying Metabolic Networks
+%J Bioinformatics
+%V 15
+%P 251--257
+
+%L physiome:2001
+%A Physiome Sciences Inc.
+%D 2001
+%T Company Page
+
+%L Poolman2003
+%A M. G. Poolman
+%A D. A. Fell
+%A C. A. Raines
+%D 2003
+%T Elementary modes analysis of photosynthate metabolism in the chloroplast
+stroma.
+%J Eur. J. Biochem
+%V 270
+%P 430--439
+
+%L YeastGraded
+%A M. A. Poritz
+%A S. Malmstrom
+%A M.K-H. Kim
+%A P. J. Rossmeissl
+%A A. Kamb
+%D 2001
+%T Graded Mode of Transcriptional Induction in Yeast Pheromone Signaling
+Revealed by Single-Cell Analysis
+%J Yeast
+%V 18
+%P 1331-1338
+
+%L Po85
+%A J. W. Porteous
+%E R. Gilles
+%D 1985
+%T Enzyme catalysed fluxes in metabolic systems.
+%B Circulation, Respiration and Metabolism
+%I Springer-Verlag, Berlin
+
+%L Po70
+%A M. J. D. Powell
+%E P. Rabinowitz
+%D 1970
+%T A Hybrid Method for Non-linear Algebraic Equations.
+%B Numerical Methods for Non-linear Algebraic Equations.
+%I Gordon and Breach, London
+
+%L Pr88
+%A W. H. Press
+%A B. P. Flannery
+%A S. A. Teukolsky
+%A W. T. Vetterling
+%D 1988
+%T Numerical Recipies in C. The Art of Scientific Computing.
+%I Cambridge University Press, Cambridge
+
+%L Price03
+%A N. D. Price
+%A J. A. Papin
+%A C. H. Schilling
+%A B. O. Palsson
+%D 2003
+%T Genome-scale microbial in silico models: the constraints-based approach
+%J Trends in Biotechnology
+%V 21
+%P 162--169
+
+%L Pring67a
+%A M. Pring
+%D 1967
+%T The simulation and analysis by digital computer of biochemical systems. I.
+The choice of integration method.
+%J J. Theor. Biol.
+%V 17
+%P 421--429
+
+%L Pring67b
+%A M. Pring
+%D 1967
+%T The simulation and analysis by digital computer of biochemical systems. II.
+Curve fitting procedure.
+%J J. Theor. Biol.
+%V 17
+%P 430--435
+
+%L Pring67c
+%A M. Pring
+%D 1967
+%T The simulation and analysis by digital computer of biochemical systems. III.
+Generator programming.
+%J J. Theor. Biol.
+%V 17
+%P 436--440
+
+%L Pritchard2002
+%A L. Pritchard
+%A D. K Kell
+%D 2002
+%T Schemes of Flux Control in a Model of Saccharomyces cerevisiae Glycolysis
+%J Eur. J. Biochem
+%V 269
+%P 3894--3904
+
+%L Pr85
+%A F. Przybylski
+%A A. Otto
+%A K. Nissler
+%A W. Schellenberger
+%A E. Hofmann
+%D 1985
+%J Biochim. Biophys. Acta
+%V 831
+%P 350--352
+
+%L Ra85
+%A M. Rabkin
+%A J. J. Blum
+%D 1985
+%J Biochem. J.
+%V 255
+%P 761--786
+
+%L Rohwer1996
+%A J. M. Rohwer
+%A S. Schuster
+%A H. V. Westerhoff
+%D 1996
+%T How to Recognize Monofunctional Units in a Metabolic System
+%J J. Theor. Biol
+%V 179
+%P 213--228
+
+%L RHJR74
+%A Rapoport, T. A.
+%A Heinrich, R.
+%A Jacobasch, G.
+%A Rapoport, S.
+%D 1974
+%T A linear steady state treatment of enzymatic chains.
+%J Eur. J. Biochem.
+%V 42
+%P 107--120
+
+%L RH75
+%A Rapoport, T. A.
+%A Heinrich, R.
+%D 1975
+%T Mathematical analysis of multienzyme systems. 1. Modelling of the glycolysis
+of human erythrocytes.
+%J Biosystems
+%V 7
+%P 120--129
+
+%L RHR76
+%A Rapoport, T. A.
+%A Heinrich, R.
+%A Rapoport, S. M.
+%D 1976
+%T The regulatory principles of glycolysis in erythrocytes {\em in vivo} and
+{\em in vitro}.
+%J Biochem. J.
+%V 154
+%P 449--469
+
+%L Re86
+%A Reder, C.
+%D 1986
+%T Mimodr\^ame math\'ematique sur les syst\`emes biochimiques.
+%N 8608
+%I U.E.R. de Math\'ematiques et d'Informatique, Universit\'e de Bordeaux I.
+
+%L Re88a
+%A C. Reder
+%D 1988
+%T Metabolic Control Theory: A Structural Approach.
+%J J. Theor. Biol.
+%V 135
+%P 175--201
+
+%L RederM88
+%A C. Reder
+%A J.-P. Mazat
+%D 1988
+%T Aspects geometriques de la th\'eorie du contr\^ole du m\'etabolisme in: Le
+contr\^ole du m\'etabolisme
+%J eds Universite de Bordeaux II. Bordeaux.
+
+%L RP84
+%A D. M. Regen
+%A S. J. Pilkis
+%D 1984
+%T Sensitivity of pathway rates to activities of substrate cycle enzymes:
+application to gluconeogenesis and glycolysis.
+%J J. Theor. Biol.
+%V 111
+%P 635--658
+
+%L Re81
+%A J. G. Reich
+%A E. E. Selkov
+%D 1981
+%T Energy metabolism of the cell
+%I Academic Press
+%C London
+
+%L RBG75
+%A Richter, O.
+%A Betz, A.
+%A Giersch, C.
+%D 1975
+%T The response of oscillating glycolysis to perturbations in the {NAD/NADH}
+system: a comparison between experiments and a computer model.
+%J Biosystems
+%V 7
+%P 137--146
+
+%L RaoArkin2001
+%A C. V. Rao
+%A A. Arkin
+%D 2001
+%T Control Motifs for Intracellular Regulatory Networks
+%J Annu. Rev. Biomed. Eng
+%V 3
+%P 391--419
+
+%L RaoNature2002
+%A R. Rao, D. M Wolf
+%A A. P. Arkin
+%D 2002
+%T Control, exploitation and tolerance of intracellular noise
+%J Nature
+%V 420
+%P 231--237
+
+%L RayanShapiro2003
+%A K. R. Ryan +and L. Shapiro
+%D 2003
+%T Temporal And Spatial Regulation In Prokaryotic Cell Cycle Progression And
+Development
+%J Annual Review of Biochemistry
+%V 72
+%P 367--394
+
+%L Ravasz2002
+%A E. Ravasz
+%A A. L. Somera
+%A D. A. Mongru
+%A Z. N. Oltvai
+%A A.-L. Barabasi
+%D 2002
+%T Hierarchical Organization of Modularity in Metabolic Networks
+%J Science
+%V 297
+%P 1551--1555
+
+%L SparseMatrix
+%A Y. Saad
+%D 2003
+%T Iterative Methods for Sparse Linear Systems, Second Edition
+%I Society for Industrial \& Applied Mathematics
+
+%L SKP86
+%A M. Salter
+%A R. G. Knowles
+%A C. I. Pogson
+%D 1986
+%T Quantification of the importance of individual steps in the control of
+aromatic amino acid metabolism.
+%J Biochem. J.
+%V 234
+%P 635--647
+
+%L Samatova
+%A N. F. Samatova
+%A A. Geist
+%A G. Ostrouchov
+%A A. Melechko
+%E S. Alurur
+%E D. A. Bader
+%D 2003
+%T Parallel Out-of-core Algorithm for Genome-Scale Enumeration of Metabolic
+Systemic Pathways
+%B Second IEEE International Workshop on High Performance Computational Biology
+%I HiCOMB 2003
+
+%L Sa86
+%A H. M. Sauro
+%D 1986
+%T Control Analysis and Simulation of Metabolism
+%I Oxford Polytechnic
+%R Ph.D. thesis.
+
+%L SaF87
+%A H. M. Sauro
+%A D. A. Fell
+%D 1987
+%T The role of cooperativity in metabolism.
+%J Biochem. Soc. Trans.
+%V 15
+%P 234-235
+
+%L SSF87
+%A H. M. Sauro
+%A J. R. Small
+%A D. A. Fell
+%D 1987
+%T Metabolic Control and its Analysis: Extensions to the theory and matrix
+method.
+%J Eur. J. Biochem.
+%V 165
+%P 215--221
+
+%L Sauro90a
+%A H. M. Sauro
+%E A. Cornish-Bowden
+%E M. L. C\'ardenas
+%D 1990
+%T Quantification of metabolic regulation by effectors.
+%B Control of Metabolic Processes, chap. 17
+%S NATO ASI Series
+%P 225--230
+%I Plenum Press, New York
+
+%L SK90
+%A H. M. Sauro
+%A H. Kacser
+%D 1990
+%T Enzyme-enzyme interaction and control analysis. 2. The case of
+non-independence: heterologous associations.
+%J Eur. J. Biochem.
+%V 187
+%P 493--500
+
+%L SauroF91
+%A H. M. Sauro
+%A D. A. Fell
+%D 1991
+%T SCAMP: A metabolic simulator and control analysis program.
+%J Mathl. Comput. Modelling
+%V 15
+%P 15--28
+
+%L SauroBTK93
+%A H. M. Sauro
+%E S. Schuster
+%E M. Rigoulet
+%E R Ouhabi
+%E J-P Mazat
+%D 1993
+%T A Biochemical NAND Gate and Assorted Circuits
+%B Modern Trends in Biothermokinetics
+%P 133--140
+%I Plenum Press, New York and London
+
+%L SauroBarrett
+%A H. M. SAURO
+%A J. BARRETT
+%D 1995
+%T in vitro Control Analysis of Metabolic Pathways; experimental and analytical
+developments.
+%J Molecular and Cellular Biochemistry
+%V 145
+%P 141--150
+
+%L Sauro1994
+%A H. M. Sauro
+%D 1994
+%T Moiety-conserved cycles and metabolic control analysis: problems in
+sequestration and metabolic channelling
+%J BioSystems
+%V 33
+%P 15--28
+
+%L sauro:2000
+%A H.~M. Sauro
+%E J-H.~S. Hofmeyr
+%E J.~M. Rohwer
+%E J.~L. Snoep
+%D 2000
+%T Jarnac: A System for Interactive Metabolic Analysis
+%B Animating the Cellular Map: Proceedings of the 9th International Meeting on
+{BioThermoKinetics}
+%I Stellenbosch University Press
+
+%L SauroMAPK:2001
+%A H. M. Sauro
+%E T-M. Yi
+%E M. Hucka
+%D 2001
+%T A rationale for the 'design' of the MAP kinase pathway
+%B Second International Conference on Systems Biology
+%P 13; http://www.sys.bio.org
+%I Caltech, Pasadena
+
+%L Sa69a
+%A M. A. Savageau
+%D 1969
+%T Biochemical systems analysis: I. Some mathematical properties of the rate law
+for the component enzyme reactions.
+%J J. Theor. Biol.
+%V 25
+%P 365-369
+
+%L Sa69b
+%A M. A. Savageau
+%D 1969
+%T Biochemical systems analysis: {II}. The steady state solutions for an n-pool
+system using a power-law approximation.
+%J J. Theor. Biol.
+%V 25
+%P 370--379
+
+%L Sa69c
+%A M. A. Savageau
+%D 1969
+%T Biochemical systems analysis: {III}. Dynamic solutions using a power-law
+approximation.
+%J J. Theor. Biol.
+%V 26
+%P 215--226
+
+%L Sa71a
+%A M. A. Savageau
+%D 1971
+%T Concepts relating the behaviour of biochemical systems to their underlying
+molecular properties.
+%J Arch. Biochem. Biophys.
+%V 145
+%P 612--621
+
+%L Sa71b
+%A M. A. Savageau
+%D 1971
+%T Parameter sensitivity as a criterion for evaluating and comparing the
+performance of biochemical systems.
+%J Nature
+%V 229
+%P 542--544
+
+%L SaCurrTop72
+%A M. A. Savageau
+%D 1972
+%T The behaviour of intact biochemical control systems
+%J Curr. Topics Cell. Reg.
+%V 6
+%P 63--130
+
+%L Sa74
+%A M. A. Savageau
+%D 1974
+%T Optimal design of feedback control by inhibition: Steady-state considerations
+%J J. Mol. Evol.
+%V 4
+%P 139--156
+
+%L Sa76
+%A M. A. Savageau
+%D 1976
+%T Biochemical systems analysis: a study of function and design in molecular
+biology
+%I Addison-Wesley, Reading, Mass.
+
+%L Sa79
+%A M. A. Savageau
+%D 1979
+%T Growth of complex systems can be related to the properties of their
+underlying determinants.
+%J Proc. Natl. Acad. Sci. USA
+%V 11
+%P 5413--5417
+
+%L Sa83
+%A M. A. Savageau
+%D 1983
+%T Mathematics of organisationally complex systems.
+%J Biomed. Biochim. Acta
+%V 44
+%P 839--844
+
+%L Sa87
+%A M. A. Savageau
+%D 1987
+%T Control of metabolism: where is the theory?
+%J Trends Biochem. Sci.
+%V 12
+%P 219--220
+
+%L SV82
+%A Savageau, M. A.
+%A Voit, E. O.
+%D 1982
+%T Power-law approach to modelling biological systems. I. Theory.
+%J J. Ferment. Technol.
+%V 60
+%P 221--228
+
+%L SVI87a
+%A Savageau, M. A.
+%A Voit, E. O.
+%A Irvine, D. H.
+%D 1987
+%T Biochemical Systems Theory and Metabolic Control Theory: 1. Fundamental
+similarities and differences.
+%J Math. Biosci.
+%V 86
+%P 127--145
+
+%L SVI87b
+%A Savageau, M. A.
+%A Voit, E. O.
+%A Irvine, D. H.
+%D 1987
+%T Biochemical Systems Theory and Metabolic Control Theory: 2. The role of
+summation and connectivity relationships.
+%J Math. Biosci.
+%V 86
+%P 147--169
+
+%L Sch81
+%A E. van Schaftingen
+%A M.-F. Jett
+%A L. Hu\'e
+%A H.-G. Hers
+%D 1981
+%J Proc. Natl. Acad. Sci. USA
+%V 78
+%P 3483--3486
+
+%L SEH78
+%A W. Schellenberger
+%A K. Eschrich
+%A E. Hofmann
+%D 1978
+%T Dynamic properties of {\em in vitro} enzyme systems containing
+phosphofructokinase
+%J Acta biol. med. germ.
+%V 37
+%P 1425--1441
+
+%L SchusterHofer:1991
+%A S. Schuster
+%A T. Hofer
+%D 1991
+%T Determining all extreme semi-positive conservation relations in chemical
+reaction systems: a test criterion for conservativity
+%J J. Chem. Soc. Faraday Trans.
+%V 87
+%P 2561--2566
+
+%L SchusterHilgetag:1995
+%A S. Schuster
+%A C. Hilgetag
+%D 1995
+%T What Information about the Conserved-Moiety Structure of Chemical Reaction
+Systems Can be Derived from Their Stoichiometry?
+%J J. Phys. Chem.
+%V 99
+%P 8017--8023
+
+%L Sch89
+%A S. Schuster
+%A R. Schuster
+%D 1989
+%T A generalisation of {W}egscheider's condition. Implications for properties of
+steady states and for quasi-steady state approximation.
+%J Mathemtaical Chemistry
+%V 3
+%P 25--42
+
+%L Schuster1991
+%A S. Schuster
+%A R. Schuster
+%D 1991
+%T Detecting Strictly Detailed Balanced Subnetworks in Open Chemical Reaction
+Networks
+%J J. Math. Chem.
+%V 6
+%P 17--40
+
+%L Schuster:2002
+%A S. Schuster
+%A C. Hilgetag
+%A J.H. Woods
+%A D.A. Fell
+%D 2002
+%T Reaction routes in biochemical reaction systems: Algebraic properties,
+validated calculation procedure and example from nucleotide metabolism
+%J J. Math. Biol
+%V 45
+%P 153--181
+
+%L Segall1986
+%A J. E. Segall
+%A S. M Block
+%A H. C. Berg
+%D 1986
+%T Temporal comparisons in bacterial chemotaxis
+%J Proc Natl Acad Sci USA
+%V 83
+%P 8987--91
+
+%L Se76
+%A E. E. Selkov
+%A S. N. Dynik
+%D 1976
+%T Hysteresis, alternative steady states and oscillations in an open futile
+cycle containing a substrate-inhibited reaction
+%J Biochemistry USSR
+%V 41
+%P 1365--1370
+%O English translation of Biokimiya
+
+%L Birgit2002
+%A B. Schoeberl
+%A C. Eichler-Jonsson
+%A E. D. Gilles
+%A G. Muller
+%D 2002
+%T Computational modeling of the dynamics of the MAP kinase cascade activated by
+surface and internalized EGF receptors.
+%J Nat Biotechnol
+%V 20
+%P 370--5
+
+%L Cellerator
+%A B. E. Shapiro
+%A A. Levchenko
+%A E. M. Meyerowitz
+%A B. J. Wold
+%A E. D. Mjolsness
+%D 2003
+%T Cellerator: extending a computer algebra system to include biochemical arrows
+for signal transduction simulations.
+%J Bioinformatics
+%V 19
+%P 677--8
+
+%L ShaTysonPNAS2003
+%A W. Sha
+%A J. Moore
+%A K. Chen
+%A A. D. Lassaletta
+%A C-S. Yi
+%A J. J. Tyson
+%A J. C. Sible
+%D 2003
+%T From the Cover: Hysteresis drives cell-cycle transitions in Xenopus laevis
+egg extracts
+%J Proc. Natl. Acad. Sci. U.S.A.
+%V 100
+%P 975--980
+
+%L Si82
+%E H. Sies
+%D 1982
+%T Metabolic compartmentation
+%B Metabolic compartmentation
+%I Academic Press
+%C London
+
+%L Schilling:2000
+%A C. H. Schilling
+%A D. Letscher
+%A B. O. Palsson
+%D 2000
+%T Theory for the Systemic Definition of Metabolic Pathways and their use in
+Interpreting Metabolic Function from a Pathway-Oriented Perspective
+%J J. theor. Biol
+%V 203
+%P 229--248
+
+%L Seno1978
+%A M. Seno
+%A K. Iwamoto
+%A K. Sawada
+%D 1978
+%T Instability and Oscillatory Behavior of Membrane-Chemical Reaction Systems
+%J J. theor. biol.
+%V 72
+%P 577--588
+
+%L Sm88
+%A J. R. Small
+%D 1988
+%T Theoretical aspects of metabolic control
+%I Oxford Polytechnic
+%R Ph.D. thesis.
+
+%L SF87
+%A Small, J.R.
+%A Fell, D.A.
+%D 1987
+%T Responses of metabolic systems: application of control analysis to yeast
+%J Biochem. Soc. Trans.
+%V 12
+%P 238
+
+%L SF89
+%A Small, J. R.
+%A Fell, D. A.
+%D 1989
+%T The matrix method of control analysis: its validity for complex pathway
+structures.
+%J J. Theor. Biol.
+%V 136
+%P 181--197
+
+%L SF90a
+%A Small, J. R.
+%A Fell, D. A.
+%D 1990
+%T Covalent modification and metabolic control analysis: modification to the
+theorems and their application to metabolic systems containing
+covalently-modified enzymes.
+%J Eur. J. Biochem.
+%V 191
+%P 405--411
+
+%L SF90b
+%A Small, J. R.
+%A Fell, D. A.
+%D 1990
+%T Metabolic control analysis : sensitivity of control coefficients to
+elasticities.
+%J Eur. J. Biochem.
+%V 191
+%P 413--420
+
+%L Smolen2000
+%A P. Smolen
+%A D. A. Baxter
+%A J. H. Byrne
+%D 2000
+%T Modeling transcriptional control in gene networks--methods, recent results,
+and future directions.
+%J Bull Math Biol.
+%V 62
+%P 247--92
+
+%L Smolen1998
+%A P. Smolen
+%A D. A. Baxter
+%A J. H. Byrne
+%D 1998
+%T Frequency selectivity, multistability, and oscillations emerge from models of
+genetic regulatory systems.
+%J Am J Physiol.
+%V 274
+%P C531--42
+
+%L SmolenReview
+%A P. Smolen
+%A D. A. Baxter
+%A J. H. Byrne
+%D 2000
+%T Mathematical modeling of gene networks.
+%J Neuron
+%V 26
+%P 567--80
+
+%L SmolenLongReview
+%A P. Smolen
+%A D. A. Baxter
+%A J, H. Byrnec
+%D 2000
+%T Modeling Transcriptional Control in Gene Networks—Methods
+%J Bulletin of Mathematical Biology
+%V 62
+%P 247-–292
+
+%L Sm69
+%A R. E. Smith
+%A B. A. Horwitz
+%D 1969
+%J Physiol. Rev.
+%V 49
+%P 330--425
+
+%L SF90
+%A K. Snell
+%A D. A. Fell
+%D 1990
+%T Metabolic control analysis of mammalian serine metabolism.
+%J Adv. Enzyme Reg.
+%V 30
+%P 13--32
+
+%L SOAPRef
+%A Don Box
+%A David Ehnebuske
+%A Gopal Kakivayat
+%A Andrew Layman
+%A Noah Mendelsohn
+%A Henrik Frystyk Nielsen
+%A Satish Thatte
+%A Dave Winer
+%D 2000
+%T Simple Object Access Protocol ({SOAP}) 1.1: {W3C} note 08 {May} 2000
+
+%L So86
+%A A. Sorribas
+%A R. Bartrons
+%D 1986
+%T Theoretical analysis of the flux control properties of a substrate cycle.
+%J Eur. J. Biochem.
+%V 158
+%P 107--115
+
+%L Soroka1954
+%A W. W. Soroka
+%D 1954
+%T Analog Methods in Computation and Simulation
+%I McGraw-Hill Book Company Inc
+
+%L SG76
+%A F. H. Speckhart
+%A W. L. Green
+%D 1976
+%T A Guide to Using CSMP--The Continuous Systems Modelling Program.
+%I Prentice-Hall, Englewood Cliffs, N.J.
+
+%L Shvartsman2002
+%A S. Y. Shvartsman
+%A C. B. Muratov
+%A D. A. Lauffenburger
+%D 2002
+%T Modeling and computational analysis of EGF receptor-mediated cell
+communication in Drosophila oogenesis.
+%J Development
+%V 129
+%P 2577--89
+
+%L Stark2003
+%A J. Stark
+%A R. Callard
+%A M. Hubank
+%D 2003
+%T From the top down: towards a predictive biology of signaling networks
+%J Trends in Biotechnology
+%V 21
+%P 290--293
+
+%L St70
+%A E. R. Stadtman
+%T Mechanisms of enzyme regulation in metabolism.
+%V 1
+%P 397-459
+
+%L SB78
+%A Stein, R. B.
+%A Blum, J. J.
+%D 1978
+%T On the analysis of futile cycles in metabolism.
+%J J. Theor. Biol.
+%V 72
+%P 487-522
+
+%L St63
+%A D. Steinberg
+%D 1963
+%J Biochem. Soc. Symp.
+%V 24
+%P 111-143
+
+%L Stephanopoulos:Book
+%A G. Stephanopoulos
+%A A. Aristidou
+%A J. Nielsen
+%D 1998
+%T Metabolic Engineering
+%I Academic Press
+
+%L Strang1976
+%A G. Strang
+%D 1976
+%T Linear Algebra and Its Applications
+%I Academic Press
+
+%L Strang1988
+%A G. Strang
+%D 1988
+%T Linear Algebra and Its Applications, Third edition
+%I International Thomson Publishing
+
+%L St89
+%A M. Stitt
+%D 1989
+%T Control analysis of photosynthetic sucrose synthesis: assignment of
+elasticity coefficients and flux-control coefficients to the cytosolic fructose
+1,6-bisphosphatase and sucrose phosphate synthase.
+%J Phil. Trans. R. Soc( Lond. B
+%V 323
+%P 327--338
+
+%L TLA90
+%A A. M. Tenenbaum
+%A Y. Langsam
+%A M. J. Augenstein
+%D 1990
+%T Data structures using C
+%I Prentice-Hall International, Englewood Cliffs, NJ.
+
+%L TR81a
+%A Y. Termonia
+%A J. Ross
+%D 1981
+%T Oscillations and control features in glycolysis: numerical analysis of a
+comprehensive model.
+%J Proc. Natl. Acad. Sci. USA
+%V 78
+%P 2952--2956
+
+%L TR81b
+%A Y. Termonia
+%A J. Ross
+%D 1981
+%T Oscillations and control features in glycolysis: analysis of resonance
+effects.
+%J Proc. Natl. Acad. Sci. USA
+%V 78
+%P 3563--3566
+
+%L Teusink:2000
+%A B. Teusink
+%A J. Passarge
+%A K.A. Reijenga
+%A E. Esgalhado
+%A C.C. van der Weijden
+%A M. Schepper
+%A M.C. Walsh
+%A B.M. Bakker
+%A K. van Dam
+%A H.V. Westerhoff
+%A J.L. Snoep
+%D 2000
+%T Can yeast glycolysis by understood in terms of in vitro kinetics of the
+constituent enzymes? Testing biochemistry
+%V 267
+%P 5313-5329
+
+%L TK85
+%A Thorburn, D. R.
+%A Kuchel, P. W.
+%D 1985
+%T Regulation of the human erythrocyte hexose monophosphate shunt under
+conditions of oxidative stress
+%J Eur. J. Biochem.
+%V 150
+%P 371--386
+
+%L ECELL
+%A M. Tomita
+%A K. Hashimoto
+%A K. Takahashi
+%A T. S. Shimizu
+%A Y. Matsuzaki
+%A Miyoshi F, Saito K
+%A S. Tanida
+%A K. Yugi
+%A J. C. Venter
+%A C. A Hutchison
+%D 1999
+%T E-CELL: software environment for whole-cell simulation.
+%J Bioinformatics
+%V 15
+%P 72--84
+
+%L To86
+%A Torres, N. V.
+%A Mateo, F.
+%A Melendez-Hevia, E.
+%A Kacser, H.
+%D 1986
+%T Kinetics of metabolic pathways.
+%J Biochem. J.
+%V 234
+%P 169--174
+
+%L TysonNatReview2001
+%A J. J. Tyson
+%A K. Chen
+%A B. Novak
+%D 2001
+%T Network Dynamics And Cell Physiology
+%J Nature Reviews Molecular Cell Biology
+%V 2
+%P 908--916
+
+%L TysonBioessay2002
+%A J. J. Tyson
+%A A. Csikasz-Nagy
+%A B. Novak
+%D 2002
+%T The dynamics of cell cycle regulation
+%J BioEssays
+%V 24
+%P 1095--1109
+
+%L TysonCell2003
+%A J. J Tyson
+%A K. C. Chen
+%A B. Novak
+%D 2003
+%T Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and signaling
+pathways in the cell
+%J Current Opinion in Cell Biology
+%V 15
+%P 221--231
+
+%L Uy79
+%A K. Uyeda
+%D 1979
+%T 
+%J Adv. Enzymol.
+%V 48
+%P 194--244
+
+%L Visser:2002
+%A D. Visser
+%A J.J. Heijnen
+%D 2002
+%T The Mathematics of Metabolic Control Analysis Revisited
+%J Metabolic Engineering
+%V 4
+%P 114--123
+
+%L VS82
+%A E. O. Voit
+%A M. A. Savageau
+%D 1982
+%T Power-Law Approach to Modelling Biological Systems. \verb%III%. Methods of
+Analysis.
+%J J. Ferment. Technol.
+%V 60
+%P 233--241
+
+%L Vo87
+%A E. O. Voit
+%D 1987
+%T Control in perspective.
+%J Trends Biochem. Sci.
+%V 12
+%P 221
+
+%L VS87
+%A E. O. Voit
+%A M. A. Savageau
+%D 1987
+%T Accuracy of alternative representations for integrated biochemical systems.
+%J Biochemistry
+%V 26
+%P 6869--6880
+
+%L Voit:Book
+%A E. O. Voit
+%D 2000
+%T Computational Analysis of Biochemical Systems
+%I Cambridge University Press
+
+%L Wa84a
+%A Wanders, R. J. A.
+%A van Roermund, C. W. T.
+%A Meijer, A. J.
+%D 1984
+%T Analysis of the control of citrulline synthesis in isolated rat liver
+mitochondria.
+%J Eur. J. Biochem.
+%V 142
+%P 247--254
+
+%L Wa84b
+%A Wanders, R. J. A.
+%A Groen, A. K.
+%A van Roermund, C. W. T.
+%A Tager, J. M.
+%D 1984
+%T Factors determining the relative contribution of the adenine-nucleotide
+translocator and the ADP generating system to the control of ox. phos.
+%J Eur. J. Biochem.
+%V 142
+%P 417--424
+
+%L We84a
+%A Westerhoff, H. V.
+%A Groen, A. K.
+%A Wanders, R. J. A.
+%D 1984
+%T Modern theories of metabolic control and their application.
+%J Biosci. Rep.
+%V 4
+%P 1--22
+
+%L We84b
+%A Westerhoff, H. V.
+%A Chen, Y.-D.
+%D 1984
+%T How do enzyme activities control metabolite concentrations?
+%J Eur. J. Biochem.
+%V 142
+%P 425--430
+
+%L Thron1996
+%A C. D. Thron
+%D 1996
+%T A model for a bistable biochemical trigger of mitosis
+%J Biophysical Chemistry
+%V 57
+%P 239--251
+
+%L Thar2003
+%A R. Thar
+%A M. Kuhl
+%D 2003
+%T Bacteria are not too small for spatial sensing of chemical gradients: An
+experimental evidence
+%J Proc. Acad. Natl. Sci
+%V 100
+%P 5748--5753
+
+%L Wald1965
+%A G. Wald
+%D 1965
+%T Visual Excitation and Blodd Clotting
+%J Science
+%V 150
+%P 1028--1030
+
+%L TIBSWest_HK
+%A A. H. West
+%A Ann M. Stock
+%D 2001
+%T Histidine kinases and response regulator proteins in two-compartment
+signaling systems
+%J TIBS
+%V 26
+%P 369--376
+
+%L Tyson1978
+%A J. Tyson
+%A H. G. Othmer
+%D 1978
+%T The dynamics of feedback control circuits in biochemical pathways
+%J Progress in Theoretical Biology (R. Rosen \& F.M. Snell, Eds.)
+%V 5
+%P 1--62
+
+%L Widmann1999
+%A C. Widmann
+%A S. Gibson
+%A M. B. Jarpe
+%A G. L. Johnson
+%D 1999
+%T Mitogen-activated protein kinase: conservation of a three-kinase module from
+yeast to human.
+%J Physiol Rev.
+%P 143--80
+
+%L Wiley2003
+%A H. S. Wiley
+%A S. Y. Shvartsman
+%A D. A. Lauffenburger
+%D 2003
+%T Computational modeling of the EGF-receptor system: a paradigm for systems
+biology.
+%J Trends Cell Biol.
+%V 13
+%P 43--50
+
+%L WK87
+%A Westerhoff, H. V.
+%A Kell, D. B.
+%D 1987
+%T Matrix method for determining steps most rate-limiting to flux in
+biotechnological processes.
+%J Biotechnol. Bioeng.
+%V 30
+%P 101-107
+
+%L FunctionsBook
+%A Y. J. Wong
+%A W. E. Ott
+%D 1976
+%T Function Circuits: Design and Applications
+%I McGraw-Hill Book Company
+
+%L Wo86
+%A Woodrow, I. E.
+%D 1986
+%T Control of the rate of photosynthetic carbon dioxide fixation
+%J Biochim. Biophys. Acta
+%V 851
+%P 181-192
+
+%L Wo90
+%A J. Woods
+%D 1990
+%T Strategies in Genetic Engineering
+%O Honours Dissertation, University of Edinburgh.
+
+%L XMLRPCRef
+%A D. Winer
+%D 2001
+%T {XML-RPC}
+
+%L WolfArkin2002
+%A D. M. Wolf
+%A A. P. Arkin
+%D 2002
+%T Fifteen minutes of fim: control of type 1 pili expression in E. coli.
+%J OMICS
+%V 6
+%P 91--114
+
+%L WolfArkin2003
+%A D. M. Wolf
+%A A. P. Arkin
+%D 2003
+%T Motifs, modules and games in bacteria.
+%J Current Opinion in Microbiology
+%V 6
+%P 125--34
+
+%L OncogeneZimmermann
+%A S. Zimmermann
+%A C. Rommel
+%A A. Ziogas
+%A J. Lovric
+%A K. Moeling
+%A G. Radziwill
+%D 1997
+%T MEK1 mediates a positive feedback on Raf-1 activity independently of Ras and
+Src
+%J Oncogene
+%V 15
+%P 1503--1511
+
+%L CurrentBiolDispatch
+%A F. van Drogen
+%A M. Peter
+%D 2002
+%T MAP Kinase Cascades: Scaffolding Signal Specificity
+%J Current Biology
+%V 12
+%P R53--R55
+
+%L Umbarger1956
+%A H. E. Umbarger
+%D 1956
+%T Evidence for a Negative-Feedback Mechanism in the Biosynthesis of Leucine
+%J Science
+%V 123
+%P 848
+
+%L Yates1956
+%A R. A. Yates
+%A A. B. Pardee
+%D 1956
+%T Control of Pyrimidine Biosynthesis in Escherichia coli by a Feed-Back
+Mechanism
+%J J. Biol. Chem.
+%V 221
+%P 757--770
+
+%L YiDoyle2000
+%A T. Yi
+%A Y. Huang
+%A M. I. Simon
+%A J. Doyle
+%D 2000
+%T Robust perfect adaptation in bacterial chemotaxis through integral feedback
+control
+%J Proc. Natl. Acad. Sci. USA.
+%V 97
+%P 4649-–4653
+
+%L Yildirim2003
+%A N. Yildirim
+%A M. C. Mackey
+%D 2003
+%T Feedback Regulation in the Lactose Operon: A Mathematical Modeling Study and
+Comparison with Experimental Data
+%J Biophys. J.
+%V 84
+%P 2841--2851
+
