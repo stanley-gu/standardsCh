@@ -1,0 +1,7 @@
+#!/bin/bash
+echo Making book chapter 
+mkdir -p chapter
+pandoc chapter.md -o ./chapter/chapter.html --biblio refs.bib
+pandoc chapter.md -o ./chapter/chapter.pdf --biblio refs.bib
+pandoc chapter.md -o ./chapter/chapter.tex --biblio refs.bib -s -S
+
