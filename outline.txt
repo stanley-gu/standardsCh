@@ -7,11 +7,11 @@ I.  Introduction
 I.  Quantitative approaches
     A.  Quantitative models based on differential equations
         1.  IUPS Physiome Project
-        2.  Virtual Physiological Human
-        3.  Virtual Physiological Rat
+        1.  Virtual Physiological Human
+        1.  Virtual Physiological Rat
     A.  Quantitative models based on data-driven network inference
         1.  DREAM
-        2.  Sage Bionetworks
+        1.  Sage Bionetworks
     
 I.  Standards
     A.  Data knowledge and management
@@ -47,7 +47,6 @@ I.  Standards
         1.  JSim
         1.  JWS Online
         1.  PAYAO
-    A.  Related standards
     A.  Future considerations
 
 I.  Platforms 
