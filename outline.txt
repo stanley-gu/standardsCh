@@ -34,7 +34,6 @@ I.  Standards
     A.  Simulation
         1.  SED-ML
         1.  SBRML  
-    A.  Future considerations
     A.  Other standards
         1.  Visualization of models
             a.  SGBN
@@ -49,7 +48,7 @@ I.  Standards
         1.  JWS Online
         1.  PAYAO
     A.  Related standards
-    A.  [More Ideas](http://sbml.org/SBML_Software_Guide)
+    A.  Future considerations
 
 I.  Platforms 
     A.  Modeling
@@ -67,11 +66,13 @@ I.  Platforms
         1.  CycSim
     A.  Commercial
         1.  MATLAB SimBiology
-    A.  [More Ideas](http://sbml.org/SBML_Software_Guide)
 
 I.  Applications
     A.  Model analysis
     A.  Model fitting and validation
+    A.  Table of applications
+    A.  JDesigner
+    A.  Jarnac
 
 I.  Conclusions
 -  Acknowledgements
