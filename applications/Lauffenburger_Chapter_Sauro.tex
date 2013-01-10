@@ -1,0 +1,1409 @@
+\documentclass[12pt]{article}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{boxedminipage}
+\usepackage[round,authoryear]{natbib}
+\onehalfspacing
+\allowdisplaybreaks[1]
+
+\parindent=0pt
+\parskip=4pt
+
+\textheight     9in \topmargin      0.0in
+\voffset -0.25in
+
+\title{Software Tools for Systems Biology}
+\author{Herbert M.\ Sauro and Frank T.\ Bergmann \\ \\ Department of Bioengineering, \\ University of Washington, Seattle, 98195-5061, WA}
+
+\newcommand{\bgamma}{\mbox{\boldmath $\Gamma$}}
+\newcommand{\bL}{\mbox{\boldmath $L$}}
+\newcommand{\bT}{\mbox{\boldmath $T$}}
+\newcommand{\bI}{\mbox{\boldmath $I$}}
+\newcommand{\bM}{\mbox{\boldmath $M$}}
+\newcommand{\bN}{\mbox{\boldmath $N$}}
+\newcommand{\bE}{\mbox{\boldmath $E$}}
+\newcommand{\bA}{\mbox{\boldmath $A$}}
+\newcommand{\bB}{\mbox{\boldmath $B$}}
+\newcommand{\bs}{\mbox{\boldmath $s$}}
+\newcommand{\bK}{\mbox{\boldmath $K$}}
+\newcommand{\bP}{\mbox{\boldmath $P$}}
+\newcommand{\bR}{\mbox{\boldmath $R$}}
+\newcommand{\bJ}{\mbox{\boldmath $J$}}
+\newcommand{\bp}{\mbox{\boldmath $p$}}
+\newcommand{\bx}{\mbox{\boldmath $x$}}
+\newcommand{\bU}{\mbox{\boldmath $U$}}
+\newcommand{\bV}{\mbox{\boldmath $V$}}
+\newcommand{\bH}{\mbox{\boldmath $H$}}
+\newcommand{\bZero}{\mbox{\boldmath $0$}}
+\newcommand{\bLo}{\mbox{\boldmath $L_0$}}
+\newcommand{\bNo}{\mbox{\boldmath $N_0$}}
+\newcommand{\bNr}{\mbox{\boldmath $N_R$}}
+\newcommand{\bSi}{\mbox{\boldmath $S_i$}}
+\newcommand{\bSd}{\mbox{\boldmath $S_d$}}
+\newcommand{\bdSi}{\mbox{\boldmath $dS_i$}}
+\newcommand{\bdSd}{\mbox{\boldmath $dS_d$}}
+\newcommand{\bS}{\mbox{\boldmath $S$}}
+\newcommand{\bdS}{\mbox{\boldmath $dS$}}
+\newcommand{\bds}{\mbox{\boldmath $ds$}}
+
+\newcommand{\bdx}{\mbox{\boldmath $dx$}}
+\newcommand{\bxi}{\mbox{\boldmath $x_i$}}
+\newcommand{\bxd}{\mbox{\boldmath $x_d$}}
+\newcommand{\bdxi}{\mbox{\boldmath $dx_i$}}
+\newcommand{\bdxd}{\mbox{\boldmath $dx_d$}}
+
+\newcommand{\bu}{\mbox{\boldmath $u$}}
+\newcommand{\bdt}{\mbox{\boldmath $dt$}}
+\newcommand{\bdvds}{\frac{\partial \bv}{\partial \bs}}
+\newcommand{\bdvdp}{\frac{\partial \bv}{\partial \bp}}
+\newcommand{\bdSdt}{\mbox{$\displaystyle \frac{\bdS}{\bdt}$}}
+\newcommand{\bdSidt}{\mbox{$\displaystyle \frac{\bdS_i}{\bdt}$}}
+\newcommand{\bv}{\mbox{\boldmath $v$}}
+\newcommand{\el}[2]{\varepsilon^{#1}_{#2}}
+\newcommand{\uel}[2]{\widetilde{\varepsilon^{#1}_{#2}}}
+
+\begin{document}
+\maketitle
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\section*{Abstract}
+
+Probably one of the most characteristic features of a living system is its continual propensity to change as it juggles the demands of survival with the need to replicate. Internally these changes are manifest by changes in metabolite, protein and gene activities. Such changes have become increasingly obvious to experimentalists with the advent of quantitative high-throughput technologies. Given the complexity of cellular networks it is no surprise that researchers have also turned to computer simulation
+and the development of more theory based approaches to augment and assist in the development of a fully quantitative understanding of cellular dynamics. In this chapter we highlight some of the software tools and emerging standards for representing, simulating and analyzing cellular networks. The chapter will not be concerned with tools for managing high throughput data or analyzing genome scale data using bioinformatic approaches.
+
+Abbreviations:
+
+SBML: Systems Biology Markup Language \\
+CellML: Cellular Markup Language \\
+SBW: Systems Biology Workbench \\
+MCA: Metabolic Control Analysis \\
+FBA: Flux Balance Analysis \\
+VCell: Virtual Cell \\
+API: Application Programming Interface \\
+XML: Extensible Markup Language \\
+SOSLib: SBML ODE Solver Library \\
+ODE: Ordinary Differential Equation \\
+PDE: Partial Differential Equation \\
+
+
+\pagebreak
+
+\section{Introduction}
+
+The use of simulation and theoretical studies in cellular and
+molecular biology has a long, if uneven, tradition spanning almost
+seventy years~\citep{Wright1934}. With the recent advent of
+high-throughput technologies, interest in using more quantitative
+approaches to enhance our understanding of cellular dynamics has
+increased dramatically~\citep{TysonNatReview2001,neves:2002,GevaZatorsky:2006,Kholodenko:2006}.
+As part of this trend there has been a significant rise in the availability of computer
+software to help us model, simulate and analyze dynamic models of
+cellular processes. In this chapter we will briefly survey the
+available simulation software for systems biology. In addition we
+will also briefly discuss model databases, model exchange standards,
+ontologies and computational approaches that are relevant to the
+study of dynamics in biochemical networks. We will not be concerned with software tools for managing high throughput data or analyzing genome scale data using bioinformatic approaches.
+
+%Cellular networks are by nature highly dynamic structures where proteins, metabolites and expression levels constantly %change and adjust to internal and external influences. Due to the large number of components and nonlinear nature of the %interactions, the experimental study of network dynamics is often augmented with simulation and mathematical analysis .
+
+Simulating biochemical networks has a long history dating back to at
+least the 1940s~\citep{chance:1943}. The earliest simulations relied on
+building either mechanical or electrical analogs of biochemical
+networks. It was only in the late 1950s, with the advent of digital
+computers and the development of specialized software tools~\citep{Ga68} that the ability to simulate biochemical networks became more widely available. In the intervening years up to 1980, a
+handful of other software applications were developed~\citep{Burns1969,Bu71,PW73}
+to help the small community of modelers. In more recent years, particularly
+since the early 1990s, there has been a significant increase in interest in
+modeling biochemical processes and a wide range of tools is now
+available to the budding systems biologist. Many tools have been
+developed by practicing scientists and are therefore available for
+free (often in the form of open source) while others are commercial
+such as SimBiology from MathWorks (\url{http://www.mathworks.com/}, 2006).
+
+Given the recent explosion in interest in quantitative
+biology~\citep{Klipp:2005,AlonBook}, the number and variety of tools and
+approaches has likewise risen. In order to make the coverage more
+manageable we will restrict our discussion to software that is aimed
+at modeling systems based on differential equations or stochastic
+chemical kinetics. We will not therefore be concerned software for modeling Boolean models, agent based models or models that use process calculi. For a discussion of
+these models and related software the reader is referred to the
+recent review by Fisher and Henzinger~\citep{Fisher2007} and~\cite{Degenring:2004}.
+
+Moreover we will largely confine ourselves to dynamic models which means that we will not discuss at any length software that is designed to study the structural properties of networks other than in a few notable cases. In particular software used to build and compute flux balance models~\citep{FSm86a,Kauffman:2003,Papin:2006,PalssonBook:2007} or software for building isotopomer models~\citep{Wiechert:2001,Schwender:2008} will not be covered in detail even though such analyses are crucial to the metabolic engineering community.
+
+Finally we will also not discuss tools that specialize in simulating spatial models or neurophysiology systems. For the former the interested reader should consult the following references for more information on this topic~\citep{ECELL,Ander:2004,Broderick:2005,Hattne:2005,Coggan:2005,Lemerle:2005,Sanford:2006}.
+For simulating neural systems the reader can consult~\citep{Neuron:1993,NeuronBook:2006,Genesis:1998,kinetikit:2002}.
+Although this might seem like a long list of exclusions, we are
+still left with over one hundred tools that focus on simulating
+non-spatial, deterministic or stochastic based models.
+
+\subsection{The Problem}
+
+The software discussed in this chapter is concerned with
+analyzing two particular types of problem. One is the classical
+problem of solving systems of differential equations that describe the deterministic
+evolution of molecular species concentrations in time. These systems
+are generally written in the form:
+%
+\begin{equation}
+\frac{\bdx}{\bdt} = \bN\ \bv (\bx (\bp), \bp) \label{eq:system}
+\end{equation}
+%
+where $\bx$ is the vector of species concentrations, $\bN$ the
+stoichiometry matrix, $\bv$ the rate vector and $\bp$ the vector of
+parameters. Often, the system of equations is overdetermined due to
+the presence of conserved moieties~\cite{Re81} and the equation is then
+reexpressed in the form:
+%
+{ \addtolength{\jot}{6pt}
+\begin{eqnarray}
+  \bxd &=& \bLo \bxi + \bT \nonumber \\
+  \frac{d\bx}{dt} &=& \bNr\ \bv (\bx (\bp), \bp) \label{eq:general}
+\end{eqnarray} }
+%
+where $\bxi$ is the vector of independent species, $\bxd$ is the
+vector of dependent species, $\bT$ is the vector of conserved mass
+totals, $\bNr$ is the reduced stoichiometry matrix and $\bLo$ is
+part of the Link matrix~\citep{Re88a,SauroIngalls:2004}. If the
+system (\ref{eq:system}) is overdetermined then it is highly
+advisable to eliminate the redundant equations. There are a number
+of reasons for this, the most obvious being the reduction in the
+size of the model that accompanies the elimination. A more important
+reason is that the Jacobian matrix, a fundamental quantity in
+dynamical theory, is singular~\citep{Ravi:2006} in an over-determined
+system. This in turn makes many important numerical methods
+unstable. Many simulators fail to carry out this important stage.
+
+The second problem of interest is the realization of the master
+equation~\citep{Wilkinson:Book}. This equation describes the time
+evolution of the concentration probabilities. However, since we need
+one time evolution equation for every particle state in the system, the
+system of equations becomes unwieldy very rapidly as the system size
+increases. Instead modelers employ the exact stochastic simulation
+(SSA,~\citet{Gill:1976}) algorithm (and it variants) developed by
+Gillespie. Equation~(\ref{eq:stochastic}) summarizes this approach
+where $j$ indicates which reaction will fire and at what time in the
+future ($\tau$).
+%
+\begin{equation}
+p (\tau, j\ |\ \bx, t) = a_j(\bx)\ e^{-a_o(\bx)\ \tau} \label{eq:stochastic}
+\end{equation}
+%
+$t$ is the current time, $\tau$ is the time to the next
+reaction, $\bx$ is the species vector, $a_j$ is the propensity function of reaction $j$ and $a_o$
+the sum of all propensity functions. On its own, the SSA only
+generates a single trajectory or realization. In order to glean
+statistics on the model dynamics many repeated runs must be made
+using this equation. As with the deterministic case, the system is
+overdetermined and it is possible to reduce the work load by solving
+explicitly for the independent species only.
+
+A third approach to modeling, which is intermediate between~(\ref{eq:system}) and~(\ref{eq:stochastic}), is to employ the Langevin equation, that is a stochastic differential equation~\citep{StochasticDiff:2001}. A stochastic differential equation can be constructed by appending a noise term to the deterministic formulation (\ref{eq:system}), however very few tools currently provide facilities to solve
+stochastic differential equation which is unfortunate~\citep{Adalsteinsson:2004,ChickarmaneP53:2007}.
+
+Further information on modeling intracellular noise can be found in
+the excellent review by~\citet{RaoNature2002}.
+
+\subsection{The Need for Software}
+
+The first question one might ask is why develop specialized software
+to model biochemical networks? Given the availability of both
+generic commercial and freely available tools for numerical analysis
+one might ask if there is such a need. There are probably at least
+two reasons why researchers develop their own specialized tools for
+modeling biochemical systems. The first reason is that specialized
+tools reduce the errors that occur when transcribing a reaction
+scheme (that is a biological representation) into the mathematical
+formalism ready for simulation. Deriving the math equation by hand is often a frequent source of error (especially in published papers) particularly in large models. The second important reason is that developing software offers an opportunity to codify and develop new numerical algorithms or new theoretical approaches that are specific
+to problems found in systems biology. Such examples include
+incorporating metabolic control analysis, MCA, ~\citep{KB73,SaCurrTop72}
+into software (which is the reason why one of us developed
+simulation software in the first place) or developing more efficient
+methods for network analysis~\citep{Ravi:2006}. Although it is
+possible to carry many analyzes in tools such as Matlab, Mathematica
+or SciLab, the process tends to be more tedious and error prone and
+certain analyses are unavailable to the user without applying considerable
+effort.
+
+\subsection{Functionality}
+
+Given the long history of provision of software in modeling
+biochemical networks, we believe there is a minimum level of
+functionality that any newly developed or existing tool should have.
+Foremost is the ability to convert a biological description, that is
+a set of biochemical reactions and corresponding rate laws, into a
+set of differential equations. The input format for the model can be
+in the form of SBML (Systems Biology Markup
+Language, \citep{hucka:2002d} or CellML~\citep{hedley:2001b} - (Cell Markup Language), see
+section 4 for details - or it can be in the form of a human readable
+text format which can be more easily edited and, if necessary,
+converted later into SBML or CellML for export. Tools such as the
+Systems Biology Workbench (SBW, see section 2.7 for details) provide
+facilities for converting SBML to simple human readable text files
+which can be edited and loaded into the simulation tool.
+
+Once a model has been converted into a set of appropriate
+differential equations, the solutions can be easily generated from
+widely available numerical integration routines. The US Department of Energy in
+particular has developed a very useful series of sophisticated
+libraries, including SUNDIALS~\citep{CVODE:2005} and
+ODEPACK~\citep{HIND83}. These libraries are quite straight forward to
+incorporate into software and can be used to solve even some of the
+most complex problems.
+
+Together with generating a solution, some means to save simulation
+results is obviously needed and in a format that can be loaded by
+widely available tools such as Gnuplot~\citep{williams:1998} or Excel (\url{microsoft.com}). The final minimum
+requirement is some way to modify parameters and initial conditions
+to allow a user to repeat runs although such functionality could
+simply involve editing the model in a text file and rerunning the
+model.
+
+What was just described is essentially the functionality of some of
+the earliest simulators dating back to the 1950s. Clearly, any
+simulator developed today should exceed these requirements.
+
+Beyond the minimum requirements there are a whole host of other
+desirable capabilities, these include: model reduction by way of
+conservation laws, steady state determination, sensitivity analysis
+(via MCA is possible), frequency analysis, bifurcation discovery and
+analysis, structural analysis, and finally optimization and
+parameter fitting. In addition to these, other capabilities such as
+access to a model database (particularly the BioModels Database~\cite{BioModels:2006}. see section 5),
+the availability of a variety of model editors (visual, text and
+GUI) and finally some way to generate camera ready copy of network
+diagrams for publication purposes would also be desirable.
+
+\section{A Brief Survey of Commonly Used Tools}
+
+In the last ten years or so, numerous software applications have
+been written to support modeling of biochemical processes. The
+variety of software is huge even within the restricted scope of this
+discussion. Almost every computer language has been used at one time
+or another to build simulation software. Some applications work on
+single operating platforms, others work across multiple platforms;
+some are trivial to install, while others require considerable
+persuasive efforts to make them work. There is also a wide variety
+of user interfaces such as graphical user interfaces incorporating
+menus, buttons, lists etc., network design interfaces that allow
+users to draw a pathway on the screen and text based scripts that
+enable users to control and define a computer model very precisely.
+Finally, application capabilities vary enormously, some attempt to
+be broad offering many different capabilities, others choose to
+specialize in one particular area. Some of the tools are
+extensible, that is new functionality can be added by a user either
+through scripting languages or by writing small plugin applications.
+Most have some form of reference documentation, including tutorials
+to help users get started.
+
+A visit to the software guide at the SBML.org web site will reveal
+over one hundred different tools for modeling or working with biochemical networks.
+The majority of these have been developed in the last eight years or
+so. However, although there appears to be a large number of
+offerings, many are not actively developed and have become orphaned
+software. In this chapter we will only focus on those tools which
+are actively developed and have an excellent chance of being
+supported in the future.
+
+We will focus initially one some tools we use ourselves. We
+sometimes use these tools because our software may lack certain
+features we need. More often we also use these tools to compare
+simulation results.
+
+Before continuing we would also like to mention
+three legacy simulators which have influenced the development of
+most modern applications, these include Gepasi~\citep{Gepasi:1993},
+METAMOD~\citep{HM86} and SCAMP~\citep{SauroF91,SauroScamp:1993}. All
+three were developed in the 1980s and in some cases continue to be
+used.
+
+All the tools we will describe can import SBML, and all, with the exception of JSim, can export
+SBML, however JSim can also import CellML.
+Both SBML and CellML are established model exchange standards which
+we will discuss in more detail in a later section. All the tools we
+will describe are currently maintained and have an active user
+community. Most of the tools run on multiple platforms (Windows,
+Linux, Mac) and most, with the exception of one or two, are open
+source though under varying licenses.
+
+Given that we are also developers of simulation tools it would be
+unfair for us to provide a detailed comparison of the different
+applications, instead we refer interested readers to recent
+independent reviews by Alves~\citep{Alves:2006},
+Manninen~\citep{Manninen:2006} and Vacheva~\citep{VachevaE:2006} and
+two comparison web sites, one maintained by the VCell group at
+\url{http://ntcnp.org/twiki/bin/view/VCell/SBMLFeatureToolMatrix}
+and another by our own group at
+\url{http://www.sys-bio.org/sbwWiki/compare}. The feature matrix at
+the VCell site is a user contributed table that lists the
+capabilities of each tool. In contrast, the comparison site at
+sys-bio.org does not attempt to make statements about particular
+capabilities instead it runs each registered tool through every
+model in the BioModels Database (over 170 models) and compares the
+results. From such results, a developer or user can judge the
+capabilities of a particular software tool without any bias from
+ourselves.
+
+Although not on the list, we should mention the use of Matlab as an
+excellent numerical and data analysis application in systems
+biology. Matlab is an application which we ourselves have frequently
+used for complex data analysis. MathWorks also supplies a specialized
+tool box called SimBiology which offers many useful capabilities.
+
+All these tools that we will now describe are capable of basic
+simulation, that is solving differential equations or simulating a
+stochastic model, what makes them stand out is what they add in
+addition to this basic functionality.
+
+
+%Other tools that are particularly important, though do require further development, are bifurcation analysis %software. Bifurcation analysis, the study of model behavior as a function of parameters is probably one of the %most important analysis methods available and we include in this list XPP and
+%Oscill8 as good candidates. Other tools that we use include Copasi and PySCeS~\cite{Pysces2005} for testing %purposes, both these tools are developed by long stand-ing researchers in the field and we consider their tools to %be reliable. For most of our work we use SBW, with Jarnac and JDesigner being the most important tools in
+%this category. Every research group will have their favorites and our own particular choices are biased according %to our own interests and needs.
+
+%\medskip
+%\begin{table}
+%\label{table:Apps}
+%\begin{tabular}{ll}
+%\rowcolor[gray]{0.8}\color{black}
+%Application & Description \\ \\
+%Copasi & This is an excellent tool with a very wide range \\
+%       & of capabilities. If uses a menu/dialog based \\
+%       & user interface. It is open source and is \\
+%       & cross-platform~\cite{Copasi2006}. \\
+%       & \\
+%Jarnac/JDesigner & Jarnac is a script based application, \\
+%      & JDesigner is a visual design tool which can use \\
+%      & Jarnac via SBW to carry out simulations. The simulation \\
+%      & capabilities of Jarnac are quite extensive, offering \\
+%      & both ODE and stochastic simulation - Open Source, \\
+%      & Windows, Linux \cite{sauro:2000,Sauro:Omics}. \\
+%      & \\
+%JSim & JSim is Matlab like application that allows users to \\
+%       & \\
+%     & describe models mathematically. It's unique capability \\
+%     & is unit checking to ensure dimensional consistency \\
+%     & \\
+%PySCeS & This is a very complete ODE based simulation \\
+%       & environment built around the scripting language \\
+%       & Python - Open Source, multiplatform \\
+%       & \cite{Pysces2005}. \\
+%       & \\
+%       & \\
+%VCell  & A very mature server based application that is \\
+%       & specialized to build and simulate large scale \\
+%       & spatial (PDE) models - Open Source, multiplatform \\
+%       & \cite{VCELL}. \\
+%\hline
+%\end{tabular}
+%\caption{Mature and Easily Accessible Tools for Modeling Cellular Networks.}\label{tbl:Tools}
+%\end{table}
+
+\subsection{COPASI}
+
+Pedro Mendes wrote one of the earliest PC simulators which he called
+Gepasi \citep{Gepasi:1993}. COPASI~\citep{Copasi2006} is essentially a rewrite of
+Gepasi, that comes in two versions: a graphical user interface and a
+command line version. The command line version is designed for batch
+jobs where a graphical user interface is unnecessary and where runs
+can be carried out without human supervision. COPASI uses its own
+file format to store models, however like all the tools discussed
+here, it can import and export SBML. One of its undoubted strengths
+is optimization and parameter fitting which it inherited from its
+predecessor. It has an unique ability to optimize on a great variety
+of different criteria including metrics such as eigenvalues,
+transient times etc. This makes COPASI extremely flexible for
+optimization problems. Installation is very simple and entails using
+a one-click installer. Although the source code to COPASI is
+available and can be freely used for research purposes in academia,
+owing to the way in which the development of COPASI was funded there
+are restrictions on commercial use.
+
+The graphical user interface is based on a menu/dialog approach,
+much like its immediate predecessor, Gepasi. COPASI has
+capabilities to simulate deterministic as well as stochastic models
+and includes a wide range of analyzes. It correctly takes into
+account conservation laws and has very good support for metabolic
+control analysis amongst other things. COPASI is without doubt one
+of the better simulators available. Although the user interface is
+graphical, it does, due to its particular design, require some effort
+to master but with the availability of the COPASI the source code,
+there is the opportunity to provide alternative user interfaces.. Finally there is a
+version that has an SBW interface (Systems Biology Workbench) which
+allows SBW enabled tools access to COPASI's functionality (currently available at \url{sys-bio.org}).
+
+\subsection{Jarnac}
+
+Jarnac~\citep{sauro:2000} is a rapid prototyping script based tool
+that was developed as a successor to SCAMP~\citep{SauroF91}. It is
+distributed as part of the Systems Biology Workbench which makes
+installation a on-click affair. Jarnac was developed in the late
+1990s before the advent of portable GUI toolkits which explains why
+it only runs under Windows although it runs well under Wine
+(Windows emulator) thus permitting it to run under Linux. Visually,
+Jarnac has two main windows, a console where commands can be issued
+and results returned and an editor where control scripts and models
+can be developed. The application also has a plotting window which
+is used when graphing commands are issued.
+
+Jarnac implements two languages, a biochemical
+descriptive language which allows users to enter models as reaction
+schemes (similar to a SCAMP script) and a second language, the
+model control language which is a full featured scripting language
+that can be used to manipulate and analyze a model. The main
+advantage of Jarnac over other tools is that models can be very
+rapidly built and modeled. From our experience with using many
+simulation tools over the years, Jarnac probably offers the fastest
+development time for model building of any tool. Models can also be
+imported or exported as SBML. Like COPASI and PySCeS, Jarnac offers
+many analysis capabilities including extensive support for metabolic
+control analysis, structural analysis of networks and stochastic
+simulation. It has no explicit support for parameter fitting but
+this is easily remedied by transferring a model directly to a tool
+such as COPASI via SBW.
+
+\subsection{JSim}
+
+JSim~\citep{JSim:2003} is a Java-based simulation system for building
+quantitative numeric models and analyzing them with respect to
+experimental reference data. JSim can either be used from a web
+browser or downloaded to a desktop machine. JSim's primary focus
+is physiology and biomedicine, however its computational abilities
+are quite general and applicable to a wide range of scientific
+domains. JSim models may intermix ODEs, PDEs, implicit equations,
+integrals, summations, discrete events and procedural code as
+appropriate. One of JSim's strengths which makes it standout from
+other simulators is its careful attention to dimensional analysis.
+Users can thus specify units for all terms in a model and JSim will
+then carry out an automatic check to ensure that the specified units
+are consistent with the model. In addition JSim can automatically
+insert conversion factors for compatible physical units. JSim is one
+of the few modeling programs that can import SBML as well as CellML
+formats.
+
+JSim's modeling language is mathematically orientated and thus may not be suited to all users, however the authors also define a more biologically orientated language called BCL which allows users to specify models in a more biological orientated manner.
+
+\subsection{MathSBML}
+
+MathSBML~\citep{Shapiro:2004} is an open-source package for working with SBML models in Mathematica. It provides facilities for reading SBML models, converting them to systems of ordinary differential equations for simulation and plotting in Mathematica, and translating the models to other formats. MathSBML is one of the few simulators to support differential/algebraic equations that may present themselves in models. For Mathematica users, MathSBML is a good choice.
+
+\subsection{PySCeS}
+
+PySCeS~\citep{Pysces2005} is probably the best Python based simulator
+currently available. Although users interact with PySCeS via Python
+scripts, many of the underlying numerical capabilities are provided
+by well established C/C++ or FORTRAN based numerical libraries. It
+was written by a team well seasoned in biochemical modeling and as a
+result the software is reliable and comprehensive. As a portable
+free scripting tool for systems biology, PySCeS is currently one of
+the best. The only major element missing is parameter optimization
+but such functionality can be added through additional Python
+scripting. As with COPASI and Jarnac, PySCeS correctly handles
+conservation laws and has very extensive support for metabolic
+control analysis including extensive structural analysis
+capabilities. PySCeS is also one of the few tools to have some
+limited support for bifurcation analysis. Installation on Windows is
+very straight forward with a single click install. Although the
+current version of PySCeS is mainly concerned with deterministic
+simulations, there are plans to add stochastic capabilities in
+collaboration with the University of Newcastle, UK. There are a
+number of other Python based simulators including
+sloppyCell~\citep{SloppyCell:2007}, Scrumpy~\citep{Poolman:2006}, ByoDyn~(\url{http://cbbl.imim.es:8080/ByoDyn}) and PyLESS (\url{http://sysbio.molgen.mpg.de/pyless/}) which specializes
+in model reduction. PySCeS however is the most mature and comprehensive of these.
+
+\subsection{SBToolbox$^2$}
+
+This is a very extensive Matlab tool box developed by Henning
+Schmidt \citep{Henning:2006}. The tool box has a wide range of
+capabilities. One of it unique features is the ability to interact
+with XPPAUT~\citep{XPPAUT:2002} by generating the XPP files and
+launching XPPAUT. For a Matlab user the SBToolbox$^2$ is a
+particularly useful tool to have available.
+
+\subsection{Systems Biology Workbench}
+
+The Systems Biology Workbench~\citep{Sauro:Omics,BergmannCP:2006},
+unlike other tools described in this chapter is not a simulation
+resource itself, it is instead an open source framework for
+connecting heterogeneous software applications. SBW is made up of
+two kinds of components:
+
+\begin{itemize}
+\item Modules: These are the applications that a user would use. There is available a broad collection of
+model editing, model simulation and model analysis tools.
+\item Framework: The software framework that allows developers to cross programming language boundaries and
+connect application modules to form new applications.
+\end{itemize}
+
+Modules in SBW can be written in a wide variety of languages
+including C/C++, Java, .NET, Delphi, Matlab, Python and Perl. Each
+module will expose application programming interfaces that allow
+other application modules access to their functionality.
+
+One of the core modules in SBW is the simulation module, roadRunner.
+roadRunner is implemented using the C\# programming language and
+exploits the ability of .NET to generate model code on the fly and
+subsequent compilation and optimization by the .NET framework. This
+approach leads to the generation of very fast simulation times.
+Numerical analysis is provided by the CVODE~\citep{CVODE:2005}
+integrator and the NLEQ
+library~(\url{http://www.zib.de/Numerik/numsoft/NewtonLib/}) for
+steady state computations. RoadRunner is available on the Windows
+platforms through the .NET framework and on POSIX systems through
+the mono project~(\url{http://www.mono-project.com}). roadRunner
+relies on several SBW modules for the reading of SBML and for
+conservation analysis, resulting in a smaller set of ODEs to solve
+but also the ability to generate non-singular Jacobian matrices
+which is required for steady state evaluation and other analyses. In
+addition to simulation and steady state evaluation, roadRunner also
+incorporates a full set of routines to compute sensitivities (i.e.\
+Metabolic Control Analysis), frequency analysis, various structural
+metrics from the stoichiometry matrix and a basic continuation
+algorithm based on arc length~\citep{Kub76,Kub83}. RoadRunner is also the backend simulator for the
+online simulation tools at \url{sys-bio.org}.
+
+\subsection{VCell}
+
+The Virtual Cell~\citep[VCell,][]{Schaff:1997,VCell:2002,VCell2003} is
+a client/server based tool that specializes in three-dimensional
+cell simulations. It is unique in that it provides a framework for
+not only modeling biochemical networks but also
+electrophysiological, and transport phenomena while at the same time
+considering the subcellular localization of the molecules that take
+part in them. This localization can take the form of a
+three-dimensional arbitrarily shaped cell, where the molecular
+species might be heterogeneously distributed. In addition, the
+geometry of the cell, including the locations and shapes of
+subcellular organelles, can be imported directly from microscope
+images. VCell is written in Java but has numerical analysis carried
+out by C/C++ and FORTRAN coded software to improve performance.
+Currently, modeling must be carried out using the client/server
+model which necessitates a connection to the internet. In addition
+models are generally stored on the VCell remote server rather than
+the clients desktop. This operating model is not always agreeable to
+users and as a result the VCell team are reorganizing the software
+so that it can also be run as a stand-alone application on a
+researchers machine. Recently the VCell team has incorporated the
+BioNetGen~\citep{Blinov:2004} network generator which allows models
+to be specified in a rule based manner. VCell is also one of the few
+tools that can both import and export SBML and CellML. This feature
+could in principle be used to translate between SBML and CellML models.
+
+\subsection{Visual Editors}
+
+Tools that allow users to draw pathways on a screen and turn them into simulatable models seem to be fairly rare. We confine our attention here to tools that are specifically designed to assist in simulation rather than pathway annotation. Examples of the later include the Edinburgh Pathway Editor~\citep{EdinPathway:2006}, cytoscape~\citep{Shannon:2003}, BioUML~\citep{kolpakov:2004} and BioTapestry~\citep{longabaugh:2005} but many others exist. We mention the later tools specifically because they have some simulation capability but their strengths lie elsewhere. A very complete review of non-simulation based network viewers can be found in~\citet{Suderman:2007}.
+
+Probably one of the first visual editors to be written for
+simulation was a Mac based tool called
+KineCyte~\citep{Cook:1997,Cook:2001} by Dan Cook and around the same
+time JDesigner~\citep{BergmannCP:2006} was developed by Sauro for the
+Windows platform. Other tools include applications such as
+SimWiz~\citep{Rost:2004}, CADLive~\citep{Kurata:2007} and
+Cellware~\citep{Dhar:2004}, although unfortunately Cellware does not
+appear to be under development any longer. The three main visual
+design tools still supported and geared towards simulation are
+JDesigner, ProMoT~\citep{Ginkel:2003} and CellDesigner~\citep{Kitano:2005:Nat-Biotechnol}.
+
+\subsubsection{JDesigner}
+
+JDesigner~\citep{Sauro:Omics,BergmannCP:2006} is open source (BSD
+licence) and runs under Windows. It requires SBW to enable
+simulation capabilities. With SBW, models can be constructed using
+JDesigner and seamlessly transferred to other tools such as COPASI
+or any other SBW enabled tools. Unlike CellDesigner, JDesigner takes
+a minimal approach to representing networks. CellDesigner has twelve
+node types (plus variants) and six different transition types.
+JDesigner in contrast has one node type, one generic reaction type
+and two regulatory types. All networks can be constructed from these
+four basic types. This minimal approach reflects the fact that the
+underlying models are the same regardless of the molecules or
+reaction types. Thus protein network models and metabolic models are
+indistinguishable at the mathematical level. Although JDesigner has
+only a limited number of types, nodes, reactions and membranes can
+be modified visually to change colors, shapes etc. Moreover, nodes
+can be decorated with covalent sites and multimeric structures.
+JDesigner uses fully adjustable multi-bezier arcs to generate
+reactions and regulatory arcs and has a variety of export formats
+that allow camera-ready copy to be generated for publications.
+Models are stored in native SBML with specific open access annotations to store
+the visual information.
+
+\subsubsection{CellDesigner}
+
+CellDesigner~\citep{Kitano:2005:Nat-Biotechnol}, developed by Akira
+Funahashi in the Kitano group, is a popular close-source but
+cross-platform Java based tool. Like JDesigner it also needs
+external support to enable simulation, which can include SBW or
+SOSLib (\citep{Machne:2006}, see section 2.13.2). One of the main
+strengths of CellDesigner is its visually appealing graphical
+representation which has made CellDesigner a popular tool. Its
+other strength, though still under development, is the availability
+of a plug-in architecture which in principle will allow other
+third-party programmers to develop add-ons to the
+tool~\citep{andreas:2008}. One potential drawback of CellDesigner is
+that the format that the tool uses to store the models is
+undocumented so that only CellDesigner is capable of reading and
+writing the models. Only one other tool, the visual layout tool in
+SBW can read CellDesigner models and that was accomplished by
+reverse engineering the CellDesigner format. With the advent of the
+Systems Biology Graphical Notation it is hoped that tool writers
+will move towards a community agreed and open format for
+representing biochemical networks (See later section for more
+details).
+
+\subsubsection{Commercial Visual Design Tools}
+
+There are also some commercial pathway editors including Cell
+Illustrator~(\url{http://www.cellillustrator.com}), SimBiology from
+MathWorks and an interesting contribution from Gene Network
+Sciences~(\url{http://www.gnsbiotech.com/}) which utilized a visual
+language called DCL (Diagrammatic cell language) which unfortunately
+was patented and thereby sealed its future and in any case seems no
+longer to be available.
+
+\subsection{CellML based Applications}
+
+Although SBML is by and large one of the more popular exchange
+formats, CellML is also an important standard particularly among
+cell physiologists, where models combine biochemical network models
+with transport and electrophysiological behavior. For this reason
+most applications developed with CellML import and export
+capabilities tend to be geared towards physiological modeling and
+often do no to support SBML. Hybrid applications such as VCell and
+JSim try to support both formats with varying degrees of success
+since the formats are not generally compatible.
+
+We have already mentioned JSim as an application that can import
+CellML models. In addition to JSim there are a number of prominent
+simulators in this category. The most important of these include,
+Andre's CellML Tools, COR~\citep{Garny:2003}, PCEnv and
+VCell~\citep{VCell2003}. All these tools can import {\em and} export
+CellML.
+
+Andre's CellML tools include a series of utilities to browse CellML
+models and carry out basic simulations. COR, another important
+CellML based tool, is a Windows application developed by Alan Garny
+at Oxford University in the UK and was probably the first simulator
+to support CellML. COR uses an interesting scripting language to
+describe a model which means users do not need to know the
+intricacies of CellML. The language incorporates facilities to allow
+a user to specify units, much like the facilities found in JSim. COR
+also supports high speed simulation capabilities through runtime
+compilation. Installation is very simple and uses a one-click
+installer.
+
+PCEnv is a tool that is being development by the CellML team at
+Auckland. It incorporates a basic simulator permitting users to
+generate time course simulations, change parameters and generate new
+models. Model generation is GUI based where a user builds a tree
+representing the various components of the model. In addition to the
+GUI interface there is also a JavaScript interface which offers some
+control over the output and simulation. Installation is very simple
+and uses a one-click installer. Tools such as COR and PCEnv are
+under very active development and it is hoped that in the future
+they will offer many of the facilities that are currently available
+in other systems biology simulation tools.
+
+\subsection{Other Tools of Interest}
+
+We list here some other tools that we have not mentioned but are
+notable for one reason or another. Not all of these tools appear to
+be actively developed but may experience continued developed in the
+future. Most if not all of these tools support SBML import and
+export. All these tools are worth looking at, some implement
+particular functions very well. In the descriptions only a brief
+hint is given concerning their capabilities and the reader is
+strongly urged to investigate them further if some particular
+functionality is of interest.
+
+\begin{description}
+%
+\item[BioNetGen:] BioNetGen~\citep{Blinov:2004} is a tool for automatically generating
+mathematical models of biological systems from user-specified rules
+for biomolecular interactions, particularly signaling pathways.
+Rules are specified in a script based language from which the
+reaction scheme is generated and subsequently the mathematical
+model. There are not many tools that operate on a rule based approach ({\em cf.} little b,
+\url{http://www.littleb.org/}) but all of them take a particular and fairly radical view of
+biology that assumes that all interactions are potentially
+significant of which there may be many thousands in a given model
+depending on the specified rules.
+%
+\item[Cellerator/xCellerator:] This is part of the SIGMOID project~\citep{Sigmoid:2005}
+at Caltech and Irvine although its origins are earlier. It is a
+Mathematica based tool designed to facilitate biological modeling
+via automated equation generation. Two notable features of this tool
+include the ability to embed arrow-based chemical notation directly
+into Mathematica scripts and support for multicellular models. Model
+analysis is fairly basic, confined largely to generating time course
+simulations. The other Mathematica tool,
+MathSBML~\citep{Shapiro:2004} has much more extensive analysis
+capabilities.
+%
+\item[E-Cell:] The E-Cell~\citep{ECELL} simulation environment is an
+object-oriented software suite for modeling, simulation, and
+analysis of large scale complex systems such as biological cells. It
+has been in development since 1996 and can, in the latest version,
+be accessed via Python. For some reason E-Cell has never gained the popularity that perhaps is should have.
+Early versions suffered from a difficult to use user interface which
+most likely slowed its acceptance by the community and model interchange support has been weak which also hampered its acceptance by the wider community.
+%
+\item[JigCell:] JigCell~\citep{VassJigCell:2004} is a modeling tool
+developed by the Tyson group who are well known for their cell cycle
+models~\citep{TysonBioessay2002}. Many tools are deigned by
+programmers rather than modelers but JigCell is one of those few
+tools that was written specifically by a well established modeling
+group to fit models to data and test the models against numerous
+experimental results. The system works in a similar way to
+regression testing in software design where the computational model
+is repeatedly tested as the model evolves or new
+experimental data is made available. This enables the generation of
+robust and more reliable models. As part of this goal, JigCell also
+supports parameter estimation and the ability to maintain an
+ensemble of models. The unique functionality provided by JigCell reflects the
+fact that the authors are modelers rather than just software developers.
+%
+\item[ProMoT:] ProMoT~\citep{Ginkel:2003} stands for process modeling tool and
+originated from the process engineering community but has since
+evolved to encompass biochemical modeling. Currently it only runs
+well on Linux but plans have been made to make a Windows version. It
+is notable for its ability to model differential-algebraic equations
+and is one of the few tools to provide visual support for dealing
+with model libraries, modules and hierarchical models.
+%
+\item[Oscill8:] Oscill8~(\url{http://oscill8.sf.net/}) is a
+bifurcation analysis tool developed by the Emery Conrad at the Tyson
+group. It runs well on the Windows platform and takes XPP scripts as
+input. Oscill8 represents one of the few bifurcation packages with a
+modern GUI interface. SBW supplies a special SBML to XPP translator
+that is designed to work with Oscill8. Although the XPPAUT site also
+provides an SBML to XPP translator this is unsuitable for many
+biochemical models because it doesn't take into consideration
+conservation laws in the models which renders the Jacobian singular
+and thereby unsuitable for the AUTO numerical algorithms.
+
+\item[PottersWheel:] This is a very comprehensive parameter
+fitting tool~\citep{PottersWheel:2008} that works well with the
+SBToolBox$^2$~\citep{Henning:2006} but can also be used alone. In a
+number of cases it is better than COPASI's capabilities particularly
+in the area of generating nonlinear confidence limits on parameter
+fits and analyzing the resulting fit. The experimental data input
+formats are also very flexible. The tool provides out of the box a
+number of optimization algorithms including Genetic and simulated
+annealing approaches. For a Matlab user interested in doing
+parameter fitting properly, this tool is a serious contender
+especially since the built-in optimization methods in Matlab itself
+are not sufficiently robust for fitting biochemical models. A
+further advantage of this tool is that is comes with copious
+documentation. PottersWheel combined with the SBToolbox$^2$ is a
+powerful mix.
+%
+\item[R Packages:] There is currently limited support for dynamic modeling in R, but this is changing. Given
+the growing interest in using R in biological research it would not
+be surprising if further work is done in this area. Currently the
+two tools that are of interest include SBMLR package by Tomas
+Radivoyevitch and a more modern version by Michael Lawrence called
+R-SBML. Modeling is however in all cases limited to simple time
+course simulations. Both packages use the ODEPACK library for
+integrating the ODEs which arguably is superior to CVODE from
+SUNDIALS due to ODEPACK's ability to switch integration modes during
+the integration.
+%
+\item[SBML-PET:] SBML-PET~\citep{Zi:2006} is a Systems Biology Markup
+Language (SBML) based Parameter Estimation Tool. Of interest is that
+the tool supports not only event handling in SBML but also uses the
+stochastic ranking evolution strategy (SRES,~\citet{SRES:2007}) for
+fitting, which is arguably one of the best fitting strategies to
+use~\citep{Moles:2003}.
+%
+\item[SBMLToolbox:] This is a Matlab tool box developed by the Caltech SBML
+team~\citep{Keating:2006}. Its primary function is to load and save
+SBML in to Matlab data structures. It uses the built-in Matlab
+functions to carry out simulations. Its importance lies in it's
+careful adherence to the SBML specifications. Other Matlab related tools add functionality to this toolbox.
+%
+\item[SloppyCell:] This is a Python based tool developed at Cornell~\citep{SloppyCell:2007},
+it has some significant capabilities in parameter fitting related to
+estimating confidence limits in fitted models. For a Python based
+tool that supports parameter fitting this is probably the most
+mature although the supplied optimization methods are limited in
+scope (Levenberg-Marquardt~\citep{levenberg:1944,marquardt:1963} and Nelder and Mead~\citep{nelder:1965}). It does support ensemble model fitting which is very useful and is probably it's
+main Raison d'etre. It does not however compare with PySCeS in other
+areas. If additional fitting methods, for example, a stochastic
+ranking evolution strategy (SRES,~\citet{SRES:2007}), were included, a
+combination of sloppyCell and PySCeS would be extremely powerful.
+%
+\item[XPPAUT:] Although XPP~\citep{XPPAUT:2002} is not a tool that
+was written specifically for the systems biology community,  its
+
+great utility is its extensive support for bifurcation analysis, a
+largely neglected field in the software development community
+particulary in systems biology. XPP gains its computational
+capabilities from a well established software library called
+AUTO~\citep{Do81}. Although it is possible to use AUTO on its own,
+XPP adds a user interface to make it easier to use. Although very
+capable, XPP's user interface is however not very modern by current
+standards and does take a little getting used to. Running XPP on
+Windows is awkward and XPP is really meant to be run on the
+Linux/Unix platform. For an easier tool, but perhaps with more
+limited capability, Oscill8 is a good choice for the Windows user.
+For Python users there is an interesting tool called
+PyDSTool~\citep{SloppyCell:2007} (inspired by the original
+DSTool~\citep{DSTool:1992}) although users must derive the
+differential equations themselves and installation is by no means
+trivial. However it may be possible to modify the tool for the
+systems biology community.
+\end{description}
+
+\subsection{Commercial Tools}
+
+There is a small but growing list of commercial titles available in the market. The most prominent of these include Berkeley Madonna, Jacobian, SimBiology from MathWorks and Terranode. We should also mention SimPheny from Genomatica even though it is not a dynamic simulation package but because it is a well established tool for flux balance analysis. For a non-commercial flux balance tool see~\citep{Klamt:2007} - note that this tool requires a commercial copy of Matlab to operate. All these tools can export SBML with the exception of Berkeley Madonna although COPASI can export Berkeley Madonna files. The one real issue with commercial tools is the lack of transparency with regard to the numerical algorithms they employ and the impossibility of changing the methods when necessary. MathWorks to its credit has documentation on the methods they use but the code itself is not visible to the researcher. This is a significant problem for a research based community, less so perhaps for a cooperate funded project. It is of course a difficult issue to reconcile for commercial vendors since the underlying numerical methods are often the source of value in the product.
+
+\subsection{Dedicated Libraries}
+
+Up to now we have focused on describing enduser applications where a user would download an installer and in a very short time be ready to start defining a model and running a simulation. As mentioned previously there are a huge number of such tools available, though sadly many are started but left unfinished. In addition many tools reinvent basic functionality over and over again wasting considerable human intellect and time. In this section we would like to describe a small but growing list of software libraries dedicated to dynamic simulation in systems biology and targeted at developers of new software. These libraries are cross-platform and most significantly cross-language solutions to common computational and data management problems in systems biology. They enable developers to create new applications from existing well tested and documented solutions and enable developers to focus on novel functionality rather than spending most of their effort on reinventing well understood themes. Furthermore, from a historical perspective, good, well tested software libraries tend to survive the turmoils of funding cycles and researcher turnover whereas enduser applications tend not to.
+
+
+\subsubsection{libSBML}
+
+LibSBML~\citep{libSBML:2008} is a very useful software library
+provided by the SBML team that can be used to read and write SBML.
+The success of SBML over competing standards can be ascribed in part
+to libSBML. The software library is based around a C/C++ core, with
+wrappers provided for many programming languages. Furthermore the
+library is available for Windows and POSIX operating systems where a
+C based API is exposed and thus can be linked to virtually any other
+computer language with relative ease. With an abundance of
+documentation and examples, software developers can readily use
+libSBML for their SBML support.
+
+By using libSBML a developer can focus on how to interpret
+computational models rather than concerning themselves with the
+mechanics of reading and writing SBML. At of the time of writing,
+libSBML has released version 3. This version has new features
+including the ability to validate the model, such as unit
+consistency checking, or checks on whether the model assignment
+expressions are over determined. LibSBML also provides support for
+MIRIAM compatible annotations~\citep{miriam}. LibSBML is very well
+developed library that sets a high standard for the development of
+other software libraries in the systems biology community.
+
+
+\subsubsection{SOSLib}
+
+The SBML ODE Solver Library~\citep{Machne:2006} or SOSlib, is a
+simulation library that can be linked against any application using
+the C programming language. At the core, SOSlib uses the SUNDIALS
+suite~\citep{CVODE:2005} and libSBML. Like most SBML capable
+simulators it does not deal with models using delayed differential
+equations and algebraic equations. On the other hand SOSlib is one
+of the few simulators that can handle events reasonably well.
+Supporting SBML events has proved to be a difficult undertaking for
+many developers because of the numerical difficulties that they
+generate. Very few ODE integrators support event detection and as a
+result only very few simulators (such as SOSLib and roadRunner) are
+capable of correctly handling them.
+
+SOSlib can be run in two modes, in the interpreted mode, SOSlib will
+use the abstract syntax trees of libSBML to evaluate the kinetic
+laws and other equations. The use of the abstract syntax tree also
+permits SOSLib to invoke symbolic evaluation when computing the
+elements of the Jacobian matrix (a techniques also employed by
+SCAMP~\citep{SauroF91,SauroScamp:1993}). The second mode is where the
+right hand side of every ODE is compiled, using either GCC on POSIX
+environments or tcc (\url{http://fabrice.bellard.free.fr/tcc/}) on
+Windows. This allows SOSLib to generate fast simulation times.
+SOSlib however has one significant drawback which is its inability
+to remove dependent variables from the model. If this deficiency
+could be corrected, SOSLib would be a much more useful library to
+the community.
+
+\subsubsection{libStructural}
+
+The libStructural library is a software library for conservation and
+structural analysis of stoichiometric networks and is written in
+C/C++ for cross platform portability (\url{http://sys-bio.org/libStructural}).
+
+One of the initial steps in a simulation (deterministic or
+stochastic) is to consider the stoichiometric structure of a model.
+This is carried out for a number of reasons, first it allows model
+reduction to take place and permits faster simulation times,
+secondly it allows users to study the structural characteristics of
+the model, such as flux and moiety conservation. The flux
+constraints can be further used to establish linear programming
+models for flux balance analysis~\citep{FSm86a,PalssonBook:2007} and also as an aid to constructing the isotopomers dynamic models used in isotopic measurements of fluxes~\citep{Wiechert:2001,Schwender:2008}. The library provides over sixty API calls that gives information on various stoichiometric properties such as the kernel, link,
+dependent and independent flux and species matrices. In addition the
+library exposes some useful functionality from the LAPACK
+library~\citep{Lapack:1999}. The library can also be built
+against libSBML so that models in standard SBML can be analyzed
+otherwise the library accepts raw stoichiometry matrices. The
+library is fully documented and tested against the very large models
+from the Palsson group~\citep{Price03} and over twenty smaller test models.
+
+
+\section{Dedicated Tools for Stochastic Simulation}
+
+Stochastic simulation has received much attention in the last ten to
+twenty years owing to the realization that continuous models are not
+always an appropriate description of what is, at the molecular
+level, a fundamentally discrete process. The development of
+practical algorithms for stochastic simulated owes its origin to a
+series of classical papers published by Gillespie in the 1970s.
+Gillespie's approach yielded an algorithm that was extremely
+straight forward to implement in software but was largely unknown
+until the early 1990s in biology. Two of the first papers to utilize
+Gillespie's approach in biology are Kraus~\citep{Kraus:1992} and
+Moniz-Barreto~\citep{MonizBarreto:1993}. However it was probably the
+paper by Arkin et al.~\citep{ArkinLambda1998} that convinced many of
+the importance of stochastic dynamics in biology. In the intervening
+years there has been an explosion in interest in stochastic
+dynamics, attracting researchers from many diverse
+fields~\citep{PiCalc:2003,Wilkinson:Book,Ullah:2007}.
+
+Together with modeling efforts there have been developments in software particulary
+in relation to making the basic Gillespie method more efficient. An
+excellent and highly readable review of the current state of
+numerical methods is given by~\citep{Gillespie:2007}. Here we will
+briefly review some of the software available for stochastic
+simulation, we will not consider hybrid methods which combine
+discrete with continuous modeling since the methods are still
+under development (see~\citep{Salis:2006} for details), however a
+brief review is given in~\citep{Ullah:2007}. We will also not
+consider here spatial-stochastic modeling tools such as
+MCell~\citep{MCell:2001}.
+
+Unlike deterministic models where a single run provides all the
+information on the trajectory, the Gillespie method only generates
+one of a very large number of possible realizations. Ideally
+stochastic simulators should support ensemble simulations so that
+statistics can be collected on the behavior of the model. Many
+simulators do not provide for this facility and presumably expect
+the user to manually make the necessary repeats (which ideally
+should run into tens of thousands of runs). Only a few simulators
+support ensemble runs (e.g.\ COPASI) but only one software
+tool~\citep
+{RoaSauro:2007} computes a wide range of statistics for
+analyzing stochastic models.
+
+As with differential equation based models, there is a test suite
+available that allows developers of stochastic simulators to
+evaluate their efforts (See section 6). The test suite was developed
+and is maintained by the Wilkinson group at Newcastle,
+England~\citep{Evans:2007}. An example of how the test suite can be
+used is given in~\citet{RoaSauro:2007}.
+
+As for software, there are a number of tools that support stochastic
+simulation, many of these include the tools we have described in
+previous sections, for example, COPASI and Jarnac. SBW also
+incorporates a number of stochastic solvers, including a high speed
+solver written using .NET. Other more specific tools that focus
+exclusively on stochastic simulation include
+BioNetS~\citep{Adalsteinsson:2004} which is a Mac based tool (a
+version with a Java frontend also exists for Windows and Linux) that
+incorporates a number of stochastic related solvers including
+Gillespie and a capability to solve Langevin equations. This later
+ability is rare and makes BioNetS a very useful tool for this kind
+of work.
+
+Two other well known applications, include Dizzy and StochSim.
+Dizzy~\citep{Ramsey:2005} is a Java based  application that was
+developed by Stephen Ramsey at the Institute of Systems Biology in
+Seattle and incorporates a number of stochastic methods. It is
+capable of reading SBML level 1 and has an SBW programmatic
+interface. StochSim~\citep{LeNovere:2001} was developed in the 1990's at
+Cambridge University, UK by Carl Firth in Bray's group and subsequently developed further by Le~Nov{\`e}re and Shimizu. It uses a slightly different method to the Gillespie approach which according
+to the authors scales better when a system contains molecules that
+can exist in multiple states. In addition later versions have
+provision for spatial simulation in two dimensions. One significant
+difference is that StochSim uses a fixed time step whose size will
+determine the accuracy of the algorithm. In contrast, the Gillespie
+SSA method uses an exact approach where the step size of computed as
+part of the algorithm itself. Subsequent variants of SSA such as
+tau-leaping are also however approximate and for detailed
+statistical analysis of stochastic run, such approximate methods
+should probably be avoided.
+
+Other examples of stochastic simulators include
+Cyto-Sim~\citep{Sedwards:2007} from the Microsoft Trento group
+written in Java and ESS from the University of
+Tennessee~\citep{cox:2003}. Cyto-Sim incorporates an interesting and
+easy to learn script language for describing biochemical networks.
+ESS and its descendants are notable for implementing probably the
+worlds fastest stochastic simulation software.
+
+Finally, there currently exists one software library, StochKit, that
+is dedicated to implementing a wide variety of Gillespie based
+approaches~\citep{StochKit:2007} and is being being developed by the Petzold group in Santa Barbara, USA. StochKit is a C++ based library and therefore can in principle only be linked easily to other C++ applications. A mundane but more useful C based API (Application Programming Interface) would make the library much more portable to other software languages. In addition StochKit currently lacks many of the advanced analysis methods that a stochastic solver would need for practical use. Finally, support for Windows appears to be very limited which makes the library essentially a Linux based tool. StochKit is a promising start but has someway to go before it reaches the usability and portability of libraries such as SUNDIALS~\citep{CVODE:2005} or ODEPACK~\cite{HIND83}. The Tennessee group that developed ESS~\citep{cox:2003} is developing a very high performance C based solution that will incorporate many advanced features such as support for discrete events and ensemble simulations. In addition there are dedicated hardware solutions to stochastic simulation which involve the use of field programmable gate arrays and other technology to build what could potentially be very high speed simulation engines~\citep{peterson:2002,mccollum:2003,yoshimi2004}.
+
+
+\section{Standards}
+
+With the surge in the number of incompatible simulation tools since
+the year 2000, it was realized by at least two communities that some
+form of standardization for model exchange was necessary. The two
+standards that emerged, include CellML and SBML. CellML is primarily
+a notation for representing biochemical models in a strict
+mathematical form, as a result it is in principle completely
+general. SBML on the other hand uses a biologically inspired
+notation to represent networks from which a mathematical model can
+be generated. Each has its strengths and weaknesses, SBML has a
+simpler structure compared to CellML, as a result there is more
+software support for SBML. Most software tools at the present time
+support import and export of SBML. Both standards have very active
+communities with intra cellular models being primarily the domain of
+SBML and physiological models for CellML.
+
+\subsection{CellML}
+
+CellML~\citep{hedley:2001b,LloydCellML2004} represents cellular models using a
+mathematical description. In addition, CellML represents entities
+using a component based approach where relationships between
+components are represented by connections. The literal translation
+of the mathematics however goes much further, in fact the
+representation that CellML uses is very reminiscent of the way an
+engineer might wire up an analog computer to solve the equations
+(though without specifying the integrators). As a result CellML is
+very general and in principal could probably represent any system
+that has a mathematical description. CellML is also very precise in
+that every item in a model is defined explicitly. However, the
+generality and explicit nature of CellML also results in increased
+complexity especially for software developers.
+
+Another key aspect of CellML is its provision for metadata support.
+The metadata can be used to provide a context for a model, such as
+the author name, when it was created and what additional documents
+are available for it's description. CellML uses standard XML based
+metadata containers such as RDF and within RDF the Dublin Core.
+CellML metadata, such as BioPAX
+(\url{http://www.biopax.org},~\citet{BioPax:2007}), is how biological
+information can be introduced into a CellML model.
+
+The CellML team has amassed a very large suite (hundreds) of
+models(\url{www.cellml.org/models/},~\citet{Lloyd:2008}) which
+provides many real examples of CellML syntax. This is an extremely
+useful resource for the community.
+
+\subsection{SBML}
+
+Whereas CellML attempts to be highly comprehensive, SBML was
+designed to meet the immediate needs of the modeling community and
+is therefore more focused on a particular problem set. One result of
+this is that the standard is simpler compared to CellML although
+more recent revisions add new functionality so that the difference
+in complexity between CellML and SBML is becoming less significant.
+Like CellML, SBML is based on XML, however unlike CellML, it takes a
+different approach to representing cellular models. The way SBML
+represents models, closely maps the way existing modeling packages
+represent models. Whereas CellML represents models mathematically,
+SBML represent models as a list of chemical transformations. Since
+every process in a biological cell can ultimately be broken down
+into one or more chemical transformations this was a natural
+representation to use. However SBML does not have generalized
+elements such as components and connections, SBML employs specific
+elements to represent spatial compartments, molecular species and
+chemical transformations. In addition to these, SBML also has
+provision for rules which can be used to represent constraints,
+derived values and general math which for one reason or another
+cannot be transformed into a chemical scheme.
+
+SBML, like any standard, evolves with time~\citep{Finney2003}. Major
+revisions of the standard are captured in levels, while minor
+modifications and clarifications are captured in versions. An
+example of a major change within the standard would be the use of
+MathML in level two of SBML, whereas level one encoded infix strings
+to denote reaction rates and rules. A minor change on the other hand
+would for example be the introduction of semantic annotations that
+can be added to SBML level two version three, whereas this was not
+possible in a supported fashion in earlier versions (see
+section~\ref{sec:SBO}). As of this writing, SBML level three is
+still in development. With level three the standard will develop in
+an extensible manner. This means there will be a set of core
+features that must be supported around which additional features,
+such as spatial modeling, can be included.
+
+There has been little effort to develop methods to inter-convert
+between SBML and CellML, however Schilstra from the UK developed a
+tool called CellML2SBML~\citep{Schilstra:2006} that allows users to
+convert CellML based models into SBML. It is also possible to use
+tools such as VCell to inter-convert between these two standards.
+
+
+\subsection{Other Related Standards}
+
+\subsubsection{Graphical Layout}
+
+Graphical modeling applications~\citep{BergmannCP:2006} routinely
+enhance computational models by layout annotations. Recently the
+SBML community has decided on a common standard on how to embed the
+layout information within SBML. The layout
+extension~\citep{Guages2006} allows a model to store the size and
+dimension of all model elements, along with textual annotations and
+reactions. Originally the intention was to embed the layout
+extension in a model annotation for level 2 versions of SBML but
+with the upcoming level 3 the layout extension will be added to the
+SBML as a first-class construct. LibSBML has been modified to
+provide access to all elements of the Layout Extension. Also several
+reference implementations exist \citep{BergmannCP:2006,Deckard2007}.
+
+Whereas the layout extension is concerned with representing simple
+elements, the Systems Biology Graphical Notation (SBGN)
+(\url{http://sbgn.org}) aims to standardize the visual language of
+computational models unambiguously. While this standard is still in
+development and strictly speaking independent of the SBML effort,
+experience in other fields such as electrical engineering has
+demonstrated the essential need for standardizing the visual
+notation for representing models in diagrammatic form.
+
+\subsubsection{MIRIAM}
+
+Model Definition Languages such as SBML and CellML target the
+exchange of models. They aim to pass on the quantitative
+computational models from one software tool to another. However
+these description formats do not concern themselves with semantic
+annotations. Both SBML and CellML have launched efforts to remedy
+this problem. Both communities agreed on the Minimum Information
+Requested In the Annotation of biochemical Models
+(MIRIAM,~\citet{miriam}). These annotations aim to further the
+confidence in quantitative biochemical models, making it easier and
+more precise to search for particular biochemical models, enabling
+researchers to identify biological phenomena captured by a
+biochemical model and perhaps most importantly to facilitate model
+reuse and model composition.
+
+In order to call a model MIRIAM compliant, the model has to be encoded in a standard format, such as SBML. Furthermore it needs to be tied to a reference description, describing the properties and results that can be obtained from the model. Parameters of the computational model have to be provided so that the model can be loaded into a simulation environment where the results can be reproduced. Other information that has to be provided is a name for the model, the creator of the model the date and time of the last modification as well as a statement about the terms of distribution.
+
+
+\subsubsection{SBO -- Systems Biology Ontology}\label{sec:SBO}
+
+In order to assign meaning to model constituents an ontology
+specific to Systems Biology has been developed: The Systems Biology
+Ontology (SBO, \url{http://www.ebi.ac.uk/sbo/}). The ontology consists of five controlled vocabularies and two relationships: is-part-of and is-a.
+Qualifying model participants, say as enzyme, macromolecule,
+metabolite or small species such as an ion will make it easier to
+generate meaning from the model. It will make the generation of
+standard visual notations such as SBGN possible. Moreover it
+presents a solution on how to interpret the model computationally,
+as the SBO allows tagging a model as continuous, discrete or logical
+model. One could even go a step further, making kinetic interactions
+in a model obsolete, by just referencing that the rate law is one
+specified by an ontology identifier (e.g.: tagging a reaction as
+following Henri-Michaelis Menten enzyme kinetics and specifying the
+parameters). The SBO is community driven and new terms or
+modifications to the existing onotology can be requested by the
+community.
+
+\subsection{Other Ontologies}
+
+The most recent developments in CellML and particularly the SBML
+communities revolve around the creation of ontologies and refining
+the exchange semantics. Apart from classifying model constituents
+with an appropriate ontology, one of the current areas of interest
+is describing the dynamical behavior of a model. The ``Terminology
+for the Description of Dynamics`` (TEDDY,
+\url{http://www.ebi.ac.uk/compneur-srv/teddy/}) provides a rich
+ontology to describe and quantify what kind of behavior a
+computational model is able to exhibit (e.g.: the characteristics of
+a model could describe bifurcation behavior where the functionality
+of a model could be described as featuring oscillations or switch
+behavior). However knowing that a model exhibits interesting
+behavior is not enough: more information is needed in order to
+recreate that behavior. The ``Minimum Information About a Simulation
+Experiment'' (MIASE, \url{http://www.ebi.ac.uk/compneur-srv/miase/}) project focuses in
+this problem. MIASE will help to describe the simulation algorithms
+and the simulation tool used along with all needed parameter
+settings. In order to do so it will use the Kinetic Algorithm
+Ontology (KiSAO) that relates simulation algorithms and methods to
+each other. As these ontologies are still currently under
+devlopment, it will be interesting to see how they progress and are
+taken up by the community.
+
+Lastly we should mention BioPAX~\citep{BioPax:2007}, Biological Pathway Exchange. BioPAX is an XML based format that will act as a bridge between different
+pathway databases and data. In relation to modeling software, BioPAX
+may offer a means to embed rich annotation data into an SBML or
+CellML model. Some of this capability is being addressed to a
+limited extend by the new ontologies being developed at EBI in
+Cambridge, UK. However, BioPAX, given it role to allow a common
+exchange of biological data between pathway database, may offer a
+useful complementary way to bind data to computational models.
+
+\subsection{Human Readable Formats}
+
+SBML and CellML are examples of formats that use XML to represent
+information. One advantage to using XML is that there is much
+software available to assist in reading and manipulating XML based
+data. However, XML is not suited for human consumption but is
+designed strictly to be read by computer software. In order for
+humans to build and read models, human readable formats are
+required, often these are text based but sometimes they are graphical. In relation to text based formats, there has been a long tradition to using human readable formats for representing
+biochemical models, starting with BIOSSIM~\citep{Garfinkel:1970}.
+Other examples of early human readable formats include work by
+Park~\citep{PW73} and Burns~\citep{Bu71} to cite but a few. In more
+recent years simulators such as SCAMP~\citep{SauroF91} and
+METAMOD~\citep{HM86}  also introduced human readable formats to
+define models. Both software tools were developed in later years into Jarnac and PySCeS respectively.
+
+Other formats of interest include composable languages developed by
+James McCollum at the University of Miami, Sauro and
+Bergmann~\citep{BergmannShortHand} at the University of Washington
+and Michael Pederson at the University of
+Edinburgh~\citep{Pederson:LBS:2008}. Blinov, Faeder, Goldstein and
+Hlavacek developed BioNetGen~\citep{Blinov:2004} which is a rule
+based format for representing systems with multiple states,
+Cyto-Sim, which we have mentioned previously, incorporates an
+interesting human readable language for representing biochemical
+systems. The SBML community~\citep{SBMLShortHand} has also developed
+a human readable script called SBML-shorthand. This notation maps
+directly on to SBML but is much easier to hand write compared to
+SBML (as are all these human readable formats). The shorthand is
+also much less verbose and uses infix to represent expressions
+rather than MathML. Finally we should mention a lisp based language
+called little b~(\url{http://www.littleb.org/}) being developed at
+Harvard University. The aim of little b is to allow biologists to
+build models quickly and easily from shared parts.
+
+\section{Databases}
+
+Along with the standardization of model representation there has
+been an obvious desire to create model repositories where models
+published in journals can be stored and retrieved. There are at the
+present time, five repositories with varying degrees of quality and
+usability. Probably the most promising is the UK based searchable ,
+BioModels Database, which at the current time (July 2008) holds over
+one hundred and seventy fully curated and working models that can be
+downloaded in standard SBML as well as other formats. BioModels also
+has the great benefit of providing programmatic access to its
+database via web services which allows any software program to
+access the database seamlessly across the internet. Models stored in
+the BioModels Database are curated, meaning that models will
+reproduce the original's authors intention. In addition, the models
+are liberally annotated so that model components can be referenced
+from other database sources.
+
+Another large database has been assembled by the CellML community~\cite{Lloyd:2008}
+which has over three hundred models stored in CellML format. From their site it is possible in principle to convert the CellML into standard C code for compilation in to a working model.
+
+The JSim group at the University of Washington has a large database of physiological models~\url{http://nsr.bioeng.washington.edu/Models/} stored in the mathematical language used by the JSim simulation application. These models can only be read by JSim and currently there is no simply way to translate these to any of the common exchange formats though this is likely to change in the future.
+
+Another small but very useful database is the JWS online database
+developed by Brett Olivier and Jacky Snoep~\citep{olivier:2004} which
+has almost eighty fully working models. JWS allows export in both
+SBML and the script format PySCeS which can be easily translated to
+other formats such as Jarnac script. JWS is arguably one of the
+first databases of models although physiological models such as
+those supported by JSim have been available for longer. Many if not
+all the models on JWS have also been ported to the BioModels
+Database and vice versa.
+
+Another database, DOQCS~\url{http://doqcs.ncbs.res.in/}focuses on signaling networks which contains
+over two hundred models. Models in DOQCS can only be downloaded
+however in Genesis format~\citep{kinetikit:2002} which limits the portability to other
+frameworks. Recently the DOQCS database has been merged with the
+BioModels Database.
+
+Finally there is a major NIH sponsored database called
+Sigmoid~\citep{Sigmoid:2005} which currently has about twenty models.
+The focus of the Sigmoid project however appears to be
+infrastructure rather than curation which explains the limited
+number of available models. Access to the database is limited to the
+model explorer tool SME (\url{www.sigmoid.org}), thus access from other applications may not
+be possible. In addition models can only be accessed from the web
+interface using Cellerator format which limits portability to other
+frameworks. Work on Sigmoid is ongoing and no doubt changes will
+occur in the future to make it more open.
+
+\section{Test Suites}
+
+An important need in the simulation community is some means to
+compare and test simulation codes. Currently there are available a
+number of test suites expressed in SBML. One is provided by Andrew
+Finney~(\url{http://sbml.org/wiki/Semantic_Test_Suite}) which
+provides various tests for deterministic models and another by Evans
+Evans, Gillespie and Wilkinson.,~\citep{Evans:2007} which represents a stochastic test suite.
+Currently the deterministic test suite is undergoing a redesign
+because it has significant issues related to numerical stability.
+The stochastic test suite has recently gone through a second
+iteration and is an extremely useful resource. Another suite of
+models that can be used for testing is the BioModels Database of
+models. Although test results are not available, it is possible to
+use the database models for comparison purposes as has been done by
+Bergmann~(\url{http://www.sys-bio.org/sbwWiki/compare},\citep{bergmann:2008}).
+The comparison site gives detailed side-by-side information on how
+different simulators solve a given SBML model. Overall agreement of
+the simulation packages appears to be high.
+
+The CellML team in Auckland are in the process of developing a test
+suite for CellML which should aid considerably in testing CellML
+compliant applications.
+
+
+\section{Future Prospects}
+
+In surveying the development of software in systems biology we see a
+vibrant and sometimes innovative community with a very wide range of
+tools to satisfy all manner of users. There are still some areas
+that are lacking, most notably bifurcation analysis and model
+composition. There are some very notable tools for bifurcation
+analysis but they have been written more for general use than
+specifically for systems biology (Oscill8 being a notable
+exception). User interface design is still somewhat primitive in
+these bifurcation tools and there is much opportunity for innovation
+in this area particularly with respect to interactive bifurcation
+analysis. The second area that is lacking is model composition ({\em
+cf.} ProMoT). As models become more common place, there is a growing
+desire to be able to take models and combine them easily. Currently
+this is not possible without considerable effort. Model composition
+is not a simple problem to solve however as there are many issues to
+consider including unit consistency and interface protocols. The
+benefits would be significant however, and with the rise of
+synthetic biology there is even more reason to develop the idea.
+
+\subsection{Reusable Software Libraries}
+
+One of the issues that has plagued software development in systems
+biology is chronic reinvention. Many tools, particularly the tools
+listed at SBML.org carry out similar functions at their core
+(solving ODEs, computing steady states, sensitivities etc). The fact
+that each tool reimplements the same functionality is arguably a
+waste of resources and it would be of great benefit to the community
+if some of the core functionality could be released in the form of
+reusable software libraries. There are many benefits to such an
+approach including, improved testing, documentation,
+maintainability, and extensibility. Unless there are strong reasons
+to do so, very few developers now write their own stiff ODE solver
+or SBML reader. There are already some useful libraries in the community such as
+libSBML, SUNDIALS, ODEPACK, LAPACK etc. These libraries are
+successful for a number of reasons, they are well documented, open,
+and most importantly, they are written in languages (C and FORTRAN)
+that make it easy to interface them to other programming languages.
+Libraries that are written in other languages, such as Java or C++,
+or where a C interface is not exposed, tend to be less successful.
+We have seen some efforts to develop additional libraries, most
+notably SOSLib and StochKit, but these are still under development
+and lack some critical functionality (SOSLib lacks the ability to
+remove dependent species) or ease of integration in the case of
+StochKit. These issues will no doubt be resolved in the future and
+will then allow developers to focus on other areas of interest such
+as user interface design and the development of new analysis
+approaches.
+
+\section*{Acknowledgements}
+
+We would like to acknowledge the generous support from a number of
+funding agencies including the US Department of Energy GTL program,
+and the NIH (1R01GM081070-01). We would also like to acknowledge the
+many useful discussions we have had over the years with our colleagues in the
+software and computational systems biology community, in particular we would like to acknowledge Athel Cornish-Bowden, David Fell, Jannie Hofmeyr, Mike Hucka and Pedro Mendes,
+
+\bibliography{SauroBib}
+%\bibliographystyle{plainnat}
+%\bibliographystyle{acm}
+\bibliographystyle{apa}
+
+
+\end{document}
