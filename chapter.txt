@@ -1,5 +1,13 @@
 % Standards, Platforms, and Applications
-% Herbert Sauro[^1]
+% Stanley Gu [^stanleyInfo]
+  Herbert Sauro[^herbertInfo]
+
+[^stanleyInfo]: stanleyg@uw.edu
+
+[^herbertInfo]: Address for Correspondence: Herbert M Sauro, Keck Graduate
+    Institute, 535 Watson Drive, Claremont, USA, 91711 Phone: (909) 607
+    0377 Fax: (909) 607 8086 e-mail: hsauro@kgi.edu, web page
+    www.sys-bio.org
 
 \newcommand{\bgamma}{\mbox{\boldmath $\Gamma$}}
 \newcommand{\bL}{\mbox{\boldmath $L$}}
@@ -65,13 +73,15 @@ to give a physiological explanation for the occurrence of genetic
 dominance and recessivity [@Wright1934]. Wright argued that the
 explanation for the origin of dominance lay with the properties of
 catalytic networks, and laid out an initial mathematical theory which
-described the properties of enzyme networks[^2]. In the 1940’s, as the
+described the properties of enzyme networks[^wrightWork]. In the 1940’s, as the
 first digital computers were being built, pioneering individuals such as
 Garfinkel, Higgins and Chance began investigating the possibility of
 modelling the subtle behavior of biochemical pathways. Even before the
 advent of the digital computer, the same group had been using using
 analog computers to model simple biochemical pathways for almost 15
 years [@Ga61; @Hi59; @Chance1943].
+
+[^wrightWork]: This early work later became significant during the development of metabolic control analysis [@KB81]
 
 Since the work of the pioneers in the 1950’s, there have been many small
 groups that have continued this line of inquiry and that together laid
@@ -200,13 +210,6 @@ Stochastic:
 
 * * * * *
 
-[^1]: Address for Correspondence: Herbert M Sauro, Keck Graduate
-    Institute, 535 Watson Drive, Claremont, USA, 91711 Phone: (909) 607
-    0377 Fax: (909) 607 8086 e-mail: hsauro@kgi.edu, web page
-    www.sys-bio.org
-
-[^2]: This early work later became significant during the development of
-    metabolic control analysis [@KB81]
 
 ### Quantitative Models Based on Differential Equations
 
@@ -214,7 +217,9 @@ It is probably fair to say that most of the successful models to be
 found in the literature are based on ordinary differential equations.
 Many researchers will express these models using the following equation:
 
-$\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)$ \label{eq:system}
+\center{ $\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)$ \label{eq:system} }
+
+This is referencing my equation system \ref{eq:system}.
 
 where $\bS$ is the vector of molecular species concentrations, $\bN$,
 the stoichiometry matrix; $\bv$ the rate vector and $\bp$ a vector of
