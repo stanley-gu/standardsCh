@@ -127,7 +127,7 @@ There is a wide range of mathematical representations that one can use
 to build quantitative models, the choice of approach depending on the
 type of biological question, the accessibility of experimental data and
 the tractability of the mathematics. A short list of modelling
-representations is given in Figure 1. Probably the most successful and
+representations is given in Figure \ref{Figure:jdesigner}. Probably the most successful and
 widely used kind of model are those based on differential equations
 (both ordinary and partial). These models assume a continuum of
 concentrations and rates. In reality of course, cellular systems are
@@ -276,8 +276,6 @@ Although mathematically, reaction based models are given by equations
 with expressing models in the form of a reaction scheme. For example,
 the following describes part of glycolysis:
 
-[h] [figure:script]
-
       Glucose-6-P -> Fructose-6-Phosphate
       Fructose-6-Phosphate + ATP -> Fructose-1-6-Bisphosphate + ADP
       Fructose-1-6-Bisphosphate -> DHAP + GAP
@@ -418,7 +416,7 @@ In recent years, particulary since the sequencing of the human genome,
 there has been an ever increasing list of wide ranging cellular models
 published in the literature. Each author has a particular notation that
 they use to publish the model. Some authors will publish the model as a
-reaction scheme, much like the notation given in Figure 2. Others will
+reaction scheme, much like the notation given in Figure \ref{Figure:sbw}. Others will
 itemize the actual mathematical representation in the form of a list of
 differential equations. Some authors do not publish the model at all but
 provide the model as supplementary information. Until recently, there
@@ -502,7 +500,7 @@ representing cellular models. The way SBML represents models closely
 maps the way existing modelling packages represent models. Whereas
 CellML represents models as a mathematical wiring diagram, SBML
 represent models as a list of chemical transformations much like the
-example indicated in Figure 2. Since every process in a biological cells
+example indicated in Figure \ref{Figure:sbw}. Since every process in a biological cells
 can ultimately be broken down into one or more chemical transformations
 this was the natural representation to use. However SBML does not have
 generalized elements such as components and connections, SBML employs
@@ -655,9 +653,7 @@ diagrams similar to the notation found in many molecular biology text
 books. CellDesigner and JDesigner connect to the Systems Biology
 Workbench (SBW) for simulation support.
 
-[h] [Figure:JDesigner]
-
-![image](JDesigner1.eps)
+![Example of JDesigner's visual format\label{Figure:jdesigner}](JDesigner1.eps)
 
 Finally, there is a proposal from a commercial company called Gene
 Network Sciences which has devised a derivative of the Kohn notation
@@ -808,9 +804,14 @@ hence the programming model had to be simple. Finally, there were very
 few open source equivalents to the SBW broker and many of them were
 incompatible with each other.
 
-[h] [Figure:SBwFig]
-
-![image](sbwFig.eps)
+![The Systems Biology Workbench (SBW) is a dynamic open-source
+distributed system. Client modules can attach and detach at runtime.
+Client modules can be written in a variety of languages,
+including, C/C++, Java, Delphi, FORTRAN, Python, Perl, Matlab, any .NET language.
+Data is exchanged between modules via binary messages which can include any combination
+of bytes, integers, floating point, complex numbers, strings, arrays and lists. 
+Currently the available modules include, simulators, model editors, SBML manipulation, 
+math library, frequency analyzer, bifurcation discover and analysis modules, structural analysis modules and others. Further details to be found at <www.sys-bio.org>\label{Figure:sbw}](sbwFig.eps)
 
 An SBW module (the client) provides one or more interfaces or services.
 Each service provides one or more methods. Modules register the services
@@ -892,13 +893,9 @@ Applications
 ============
 
 In recent years there has been a proliferation of software applications
-for the systems biology community (See Figure [Apps:Graph]).
+for the systems biology community (See Figure \ref{figure:apps}).
 
-[h]
-
-![image](ToolsPerYear.pdf)
-
-[Apps:Graph]
+![The Release of Software Tools for Computational Systems Biology over Time. Note the spike in the last five years.\label{figure:apps}](ToolsPerYear.pdf)
 
 On the whole, many of these applications provide very similar
 functionality. The distinguishing feature among them is how easy they
@@ -916,7 +913,7 @@ The original intention in this section was to list as many of the
 applications as possible together with their capabilities but given the
 large number now available it soon became clear that this task would be
 too great. Instead I refer the reader to the recent paper by Hucka et.
-al. (2004) where the authors describe almost forty applications. An even
+al. (2004) where the authors describe almost forty applications. An even
 larger list can be found at the sbml.org web site.
 
 There are some applications however that are worth mentioning
@@ -926,39 +923,42 @@ a reasonably large user base and offer facilities that are either unique
 or well done. I have not mentioned any stochastic simulators in Table 1
 because many of these are still immature.
 
-[table:Apps]
+* * * *
 
-ll
+**Application and Description**
 
-Application & Description\
-\
-VCell & A very mature server based application that is specialized\
-& to build and simulate large scale spatial (PDE) models\
-& - Open Source, multiplatform [@VCELL].\
-&\
-Gepasi & This is a forms based application which has been maintained\
-& for many years by a dedicated author, the tool is\
-& particularly adapt at carrying out optimizations of ODE\
-& based models to data - Closed source, Windows, Linux\
-& [@Gepasi:1993].\
-&\
-WinSCAMP & A script based GUI application, which like Gepasi has a\
-& long tradition. Specialized for time course, steady state and\
-& metabolic control analysis of ODE based models.\
-& - Source available upon request, multiplatform\
-& [@SauroF91; @SauroScamp93]\
-&\
-Pysces & This is a very complete ODE based simulation environment\
-& built around the scripting language Python\
-& - Open Source, multiplatform [@Pysces2004].\
-&\
-Jarnac/JDesigner & Jarnac is a script based application, JDesigner\
-& (See Figure 3) is a visual design tool which can use Jarnac\
-& via SBW to carry out simulations. The simulation capabilities\
-& of Jarnac are quite extensive, offering both ODE and stochastic\
-& simulation - Open Source, Windows, Linux\
-& [@sauro:2000; @Sauro:Omics].\
-&\
+VCell: 
+:   A very mature server based application that is specialized
+    to build and simulate large scale spatial (PDE) models - Open Source, multiplatform [@VCELL].
+
+Gepasi: 
+:   This is a forms based application which has been maintained
+    for many years by a dedicated author, the tool is
+    particularly adapt at carrying out optimizations of ODE
+    based models to data - Closed source, Windows, Linux
+    [@Gepasi:1993].
+
+WinSCAMP: 
+:   A script based GUI application, which like Gepasi has a
+    long tradition. Specialized for time course, steady state and
+    metabolic control analysis of ODE based models.
+    - Source available upon request, multiplatform
+    [@SauroF91; @SauroScamp93]
+
+Pysces:
+:   This is a very complete ODE based simulation environment
+    built around the scripting language Python
+    - Open Source, multiplatform [@Pysces2004].
+
+Jarnac/JDesigner:
+:   Jarnac is a script based application, JDesigner
+    (See Figure 3) is a visual design tool which can use Jarnac
+    via SBW to carry out simulations. The simulation capabilities
+    of Jarnac are quite extensive, offering both ODE and stochastic
+    simulation - Open Source, Windows, Linux
+    [@sauro:2000; @Sauro:Omics].
+
+* * * *
 
 There are also more general purpose tools available, both commercial and
 open-source which are worth considering. Probably the most well known
@@ -1003,42 +1003,40 @@ for analyzing models. Without these techniques, a model will often be as
 difficult to understand as the real system it attempts to model; the
 application of these techniques is therefore important.
 
-[h] [table:techniques]
+* * * * 
 
-ll
+**Approach and Description**
 
-Approach & Description\
-\
-Connectionist Theory & Connectivity studies are centered around the
-search for\
-& patterns in the way cellular networks are physically\
-& connected. [@BarabasiReview2004]\
-&\
-Structural Analysis & There are a wide range of useful techniques which
-focus\
-& on the properties of the networks that depend on the\
-& mass conservation properties of networks. These\
-& include, conservation analysis, flux balance and\
-& elementary mode analysis [@Schuster:Book].\
-&\
-Cellular Control Analysis & CCA (also known as metabolic control
-analysis)\
-& is a powerful technique for analyzing the\
-& propagation of perturbations through a network.\
-& There exists a very large literature describing\
-& applications and theory [@Fell:Book].\
-&\
-Frequency Analysis & Closely related to CCA is the analysis of how
-signals\
-& propagate through a network\
-& [@Ingalls2004; @RaoSauroArkin].\
-&\
-Bifurcation Analysis & Bifurcation analysis is concerned with the study\
-& of how the qualitative behavior of steady state\
-& solutions change with changes in the\
-& model parameters [@TysonNatReview2001].\
-\
+Connectionist Theory:
+:   Connectivity studies are centered around the
+    search for patterns in the way cellular networks are physically
+    connected. [@BarabasiReview2004]
 
+Structural Analysis:
+:   There are a wide range of useful techniques which
+    focus on the properties of the networks that depend on the
+    mass conservation properties of networks. These
+    include, conservation analysis, flux balance and
+    elementary mode analysis [@Schuster:Book].
+
+Cellular Control Analysis:
+:   CCA (also known as metabolic control analysis)
+    is a powerful technique for analyzing the
+    propagation of perturbations through a network.
+    There exists a very large literature describing
+    applications and theory [@Fell:Book].
+
+Frequency Analysis: 
+:   Closely related to CCA is the analysis of how signals
+    propagate through a network [@Ingalls2004; @RaoSauroArkin].
+
+Bifurcation Analysis: 
+:   Bifurcation analysis is concerned with the study
+    of how the qualitative behavior of steady state
+    solutions change with changes in the
+    model parameters [@TysonNatReview2001].
+
+* * * *
 All these techniques are extremely useful in gaining insight into how a
 model operates. The connectionist and structural analyses focus on the
 network properties of the model, that is they do not explicitly consider
@@ -1150,24 +1148,28 @@ Recommended Resources
 Four web sources which are of interest to readers of this chapter
 include:
 
-<\bf http://www.cellml.org> This is the main CellML site. It has a very
-rich set of models expressed in CellML including specifications for the
-standard and pointers to software toolkits.
+<http://www.cellml.org> 
+:   This is the main CellML site. It has a very
+    rich set of models expressed in CellML including specifications for the
+    standard and pointers to software toolkits.
 
-<\bf http://www.sbml.org> This is the main SBML site. The site as ample
-documentation, examples illustrating how SBML is and should be used. In
-addition is has a rich set of software tools, in particular libSBML,
-which allows developers to easily add SBML support to their tools.
+<http://www.sbml.org> 
+:   This is the main SBML site. The site as ample
+    documentation, examples illustrating how SBML is and should be used. In
+    addition is has a rich set of software tools, in particular libSBML,
+    which allows developers to easily add SBML support to their tools.
 
-<\bf http://www.sys-bio.org> This is the main SBW (Systems Biology
-Workbench) site. The latest versions for SBW, developer documentation,
-example models, screen shots, user guides can be obtained from this
-site. A link to the main sourceforge site is given where all the source
-code for SBW is made available.
+<http://www.sys-bio.org> 
+:   This is the main SBW (Systems Biology
+    Workbench) site. The latest versions for SBW, developer documentation,
+    example models, screen shots, user guides can be obtained from this
+    site. A link to the main sourceforge site is given where all the source
+    code for SBW is made available.
 
-<\bf http://www.biospice.org> This is the main BioSPICE site. This site
-includes a description of BioSPICE and the large number of tools now
-available for the BioSPICE dashboard (including SBW itself).
+<http://www.biospice.org>
+:   This is the main BioSPICE site. This site
+    includes a description of BioSPICE and the large number of tools now
+    available for the BioSPICE dashboard (including SBW itself).
 
 Acknowledgements
 ================
