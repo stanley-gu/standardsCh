@@ -1,0 +1,91 @@
+\documentclass[]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{Pandoc with citeproc-hs}
+
+\begin{itemize}
+\item
+  {[}@nonexistent{]}
+\item
+  @nonexistent
+\item
+  Doe (2005) says blah.
+\item
+  Doe (2005, 30) says blah.
+\item
+  Doe (2005, 30, with suffix) says blah.
+\item
+  Doe (2005; 2006, 30; see also Doe and Roe 2007) says blah.
+\item
+  In a note.\footnote{A citation without locators (Doe and Roe 2007).}
+\item
+  A citation group (see Doe 2005, 34--35; also Doe and Roe 2007, chap.
+  3).
+\item
+  Another one (see Doe 2005, 34--35).
+\item
+  And another one in a note.\footnote{Some citations (see Doe 2006,
+    chap. 3; Doe and Roe 2007; Doe 2005).}
+\item
+  Citation with a suffix and locator (Doe 2005, 33, 35--37, and nowhere
+  else).
+\item
+  Citation with suffix only (Doe 2005 and nowhere else).
+\item
+  Now some modifiers.\footnote{Like a citation without author: (2005),
+    and now Doe with a locator (2006, 44).}
+\item
+  With some markup (\emph{see} Doe 2005, 32).
+\end{itemize}
+
+\section{References}
+
+Doe, John. 2005. \emph{First Book}. Cambridge: Cambridge University
+Press.
+
+-{}-{}-. 2006. Article. \emph{Journal of Generic Studies} 6: 33--34.
+
+Doe, John, and Jenny Roe. 2007. Why Water Is Wet. In \emph{Third Book},
+ed. Sam Smith. Oxford: Oxford University Press.
+
+\end{document}

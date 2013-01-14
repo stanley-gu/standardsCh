@@ -1,0 +1,41 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Gepasi1993}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mendes}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MP1}
+  \strng{fullhash}{MP1}
+  \field{sortinit}{M}
+  \field{pages}{563\bibrangedash 571}
+  \field{title}{GEPASI: A software package for modelling the dynamics, steady
+  states and control of biochemical and other systems.}
+  \field{volume}{9}
+  \field{journaltitle}{Comput. Applic. Biosci.}
+  \field{year}{1993}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

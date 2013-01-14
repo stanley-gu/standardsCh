@@ -1,0 +1,5 @@
+% My test pandoc-ument
+
+I want to reference this: \cite{Gepasi1993}
+
+# References
