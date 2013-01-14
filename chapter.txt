@@ -55,14 +55,14 @@ Introduction
 
 Although Computational Systems Biology may seem to be a recent field of
 endeavor, its origins can be traced as far back as the 1920s and 30s
-\cite{Wright1929}. During this period it was already believed by some
+[@Wright1929]. During this period it was already believed by some
 that genes were responsible in some way for specifying enzymes. It was
 also around this time that glycolysis, the first metabolic pathway, was
 being elucidated and the beginnings of the idea that enzymes formed
 linked sequences called pathways. It is even more remarkable therefore
 that given the infancy of these concepts, Sewell Wright should attempt
 to give a physiological explanation for the occurrence of genetic
-dominance and recessivity \cite{Wright1934}. Wright argued that the
+dominance and recessivity [@Wright1934]. Wright argued that the
 explanation for the origin of dominance lay with the properties of
 catalytic networks, and laid out an initial mathematical theory which
 described the properties of enzyme networks[^2]. In the 1940’s, as the
@@ -71,7 +71,7 @@ Garfinkel, Higgins and Chance began investigating the possibility of
 modelling the subtle behavior of biochemical pathways. Even before the
 advent of the digital computer, the same group had been using using
 analog computers to model simple biochemical pathways for almost 15
-years \cite{Ga61,Hi59,Chance1943}.
+years [@Ga61; @Hi59; @Chance1943].
 
 Since the work of the pioneers in the 1950’s, there have been many small
 groups that have continued this line of inquiry and that together laid
@@ -153,7 +153,7 @@ differential equations and to a lesser extent stochastic equations.
 
 Boolean:
 :   One of the simplest possible modelling techniques is to represent a
-    network using Boolean logic \cite{DeJong2002}. This approach has
+    network using Boolean logic [@DeJong2002]. This approach has
     been used to model gene networks.
 
 Ordinary differential equations (ODEs):
@@ -206,7 +206,7 @@ Stochastic:
     www.sys-bio.org
 
 [^2]: This early work later became significant during the development of
-    metabolic control analysis \cite{KB81}
+    metabolic control analysis [@KB81]
 
 ### Quantitative Models Based on Differential Equations
 
@@ -223,7 +223,7 @@ cellular networks have an additional property that is particularly
 characteristic of biological networks, this is the presence of so-called
 moiety conserved cycles. Depending on the time-scale of a study, there
 will be molecular subgroups conserved during the evolution of a network,
-these are termed *conserved moieties* \cite{Re81}. The total amount of a
+these are termed *conserved moieties* [@Re81]. The total amount of a
 particular moiety in a network is time invariant and is determined
 solely by the initial conditions imposed on the system[^3].
 
@@ -241,7 +241,7 @@ of conserved cycles in the network. If there aren’t any conserved cycles
 in a model then the dependent set is empty and the size of the
 independent set equals the number of molecular species in the model. For
 details on how to compute $\bSd$ and $\bSi$ the reader should consult
-\cite{Sauro:ICycles2004} or refer to Box 1 in this chapter. In many
+[@Sauro:ICycles2004] or refer to Box 1 in this chapter. In many
 cases it is vital that this separation into dependent and independent
 species be made. For simple time course simulations the separation is
 not so important, but for most other analyses it is critical and for
@@ -267,7 +267,7 @@ the vector of dependent species, $\bLo$ the link matrix, $\bT$ the total
 mass vector, $\bNr$ the reduced stoichiometry matrix, $\bv$ the rate
 vector and $\bp$ the vector of parameters. Equation (2) constitutes the
 most general expression of an ODE based temporal model
-\cite{hofmeyr-nutshell,Schuster:Book}. The symbolism used in equation
+[@hofmeyr-nutshell; @Schuster:Book]. The symbolism used in equation
 (2) is the standard notation used by many in the Systems Biology
 community.
 
@@ -288,7 +288,7 @@ forward however to convert this representation to the representation
 give by equation ([eq:general]). However, many software tools will
 permit users to enter models as a list of reactions and then
 automatically generate the mathematical model
-\cite{SauroF91,sauro:2000,Sauro:Omics}.
+[@SauroF91; @sauro:2000; @Sauro:Omics].
 
 \setlength\fboxsep{18pt}
 \begin{boxedminipage}[hbp]{14cm}
@@ -430,16 +430,16 @@ As a result of this obvious shortcoming, a number of groups set out to
 gather community support to develop a standard that model developers
 would be happy to use. There was an early effort in 1998 by the BTK
 (BioThermoKinetics) group to standardize on a practical format for
-exchanging models between Gepasi \cite{Gepasi:1993} and SCAMP
-\cite{SauroF91}, both tools were widely used at the time. Around the
+exchanging models between Gepasi [@Gepasi:1993] and SCAMP
+[@SauroF91], both tools were widely used at the time. Around the
 same time, bioengineers at the University of Auckland began
-investigating the role that XML \cite{harold:2001} could play in
+investigating the role that XML [@harold:2001] could play in
 defining a standard for exchanging computational models in order to
 reduce errors that appeared frequently in published models. From the
-Auckland team emerged CellML \cite{LloydCellML2004}. Members from the
+Auckland team emerged CellML [@LloydCellML2004]. Members from the
 BTK group subsequently took their experience and contributed
 significantly to the other major model exchange standard, called SBML
-\cite{hucka:2002d}. SBML was developed in 2000 at Caltech, Pasadena as a
+[@hucka:2002d]. SBML was developed in 2000 at Caltech, Pasadena as a
 result of funding received from the Japanese ERATO program. Both CellML
 and SBML are today viewed as the main standards for exchanging cellular
 network models. There are however fundamental differences between the
@@ -448,7 +448,7 @@ approaches that CellML and SBML take in the way models are represented.
 CellML
 ------
 
-CellML \cite{LloydCellML2004} represents cellular models using a
+CellML [@LloydCellML2004] represents cellular models using a
 mathematical description similar to equation ([eq:system]). In addition,
 CellML represents entities using a component based approach where
 relationships between components are represented by connections. In many
@@ -483,7 +483,7 @@ useful resource for the community.
 Owing to the complexity of CellML, one unfortunate side effect is that
 there are very few tools which can read and write CellML. As far as the
 author is aware there are only two third-party tools that can read and
-write CellML, these are VCell \cite{VCELL} and COR \cite{COR2003}. The
+write CellML, these are VCell [@VCELL] and COR [@COR2003]. The
 CellML team have recently (2004, http://cellml.sourceforge.net/) began
 to provide their own software tools to third-party developers. The delay
 in providing such tools to the community is probably one reason why
@@ -583,7 +583,7 @@ stand-alone applications, however, a number of database vendors have
 also decided to provide export of SBML as an option, examples include
 reactome, stke and sigpath.
 
-A related standard that has been proposed by \cite{MFAML2004} is for the
+A related standard that has been proposed by [@MFAML2004] is for the
 storage of flux balance models. The proposed format is very similar to
 SBML but has the additional feature of storing the flux balance
 objective function.
@@ -602,7 +602,7 @@ efforts for defining a quantitative microarray format is maturing
 More pressing from a modelling perspective is that there is currently no
 agreed way to merge smaller sub-models into larger models (composition).
 One of the few groups to have considered composition is Ginkel and
-Kremling \cite{Promot2000}. They have examined possible extensions to
+Kremling [@Promot2000]. They have examined possible extensions to
 SBML to allow SBML to represent sub-models and models composed of
 sub-models. Additional issues include distinguishing different kinds of
 models, particularly ODE and stochastic models, currently there is no
@@ -627,8 +627,8 @@ For many users, the ability to visualize models and to build models
 using visual tools is an important feature. There are currently a number
 of visualization formats that are in common use. One of the most
 comprehensive and freely available formats is the molecular interaction
-maps developed by Kohn \cite{Kohn1999} and more recently by Mirit
-Aladjem \cite{Kohn2004}. The Kohn format emerged from the need to
+maps developed by Kohn [@Kohn1999] and more recently by Mirit
+Aladjem [@Kohn2004]. The Kohn format emerged from the need to
 represent complex signaling networks in a compact way. Unlike metabolic
 networks, signalling networks can be extremely complex with multiple
 protein states and interactions and therefore an alternative and more
@@ -637,17 +637,17 @@ software for manipulating Kohn maps and no means to convert Kohn maps to
 SBML or any other standard. Hopefully this will change in the future.
 
 An early computer based visual notation was proposed by Cook
-\cite{Cook2001} who developed a notation called BioD. This notation has
+[@Cook2001] who developed a notation called BioD. This notation has
 been implemented in a commercial software package called KineCyte
 (http://www.rainbio.com/Software.html).
 
-Another proposal has been put forward by Kitano \cite{Kitano2003}. This
+Another proposal has been put forward by Kitano [@Kitano2003]. This
 is a more traditional approach where different molecular entities (such
 as proteins, ions, transporters etc.) have particular pictorial
 representations. The software tool called cellDesigner
-\cite{CellDesigner2003} implements this proposed format.
+[@CellDesigner2003] implements this proposed format.
 
-One of the first visualization tools, JDesigner \cite{Sauro:Omics} also
+One of the first visualization tools, JDesigner [@Sauro:Omics] also
 implements a traditional way to depict networks (see Figure 3) using a
 pictorial representation to indicate substances and reactions. JDesigner
 also employs bezier curves to represent arcs in an attempt to make the
@@ -669,11 +669,11 @@ general scientific community is not certain at this time.
 In addition to visualization approaches and the use of XML to represent
 models, there has been a long tradition in the field to describe models
 using human readable text based formats. Indeed the very first simulator
-BIOSSIM, \cite{Ga68}, allowed a user to describe a model using a list of
+BIOSSIM, [@Ga68], allowed a user to describe a model using a list of
 reaction schemes. Variants of this have been employed by a number of
-simulators since, including, SCAMP \cite{SauroF91}, Jarnac
-\cite{sauro:2000}, E-Cell \cite{ECELL} and more recently Pysces
-\cite{Pysces2005}. Being able to represent models in a human readable
+simulators since, including, SCAMP [@SauroF91], Jarnac
+[@sauro:2000], E-Cell [@ECELL] and more recently Pysces
+[@Pysces2004]. Being able to represent models in a human readable
 format offers many advantages, including, conciseness, easily understood
 and manipulated using a simple editor, flexible, portable and above all
 extremely easy to include commenting and annotation.
@@ -709,7 +709,7 @@ there is also the need to consider data that is used to build the
 models. Most models are built by laboriously searching the literature
 and carrying out additional experiments as necessary to fill in gaps in
 the data. This has proved to be an extremely effective method to
-building reliable models \cite{TysonNatReview2001,TysonBioessay2002}.
+building reliable models [@TysonNatReview2001; @TysonBioessay2002].
 However, Many inexperienced researches in Systems Biology feel that
 high-throughput data is the answer to the needs of the modelling
 community. Unfortunately much of the high-throughput data that is
@@ -746,14 +746,14 @@ tool (called YADS - yet another differential equation solver). I believe
 it is not too unfair to suggest that in many cases our software
 capability today in systems biology is only marginally better than the
 first systems biology simulation package ever written (BIOSSIM) by David
-Garfinkel around 1960 \cite{Ga68}. In many cases even the user
+Garfinkel around 1960 [@Ga68]. In many cases even the user
 interfaces are only marginally better. There are of course exceptions to
-this, VCell \cite{VCELL} in particular comes to mind as well as tools
-such as Gepasi \cite{Gepasi:1993} and Jarnac/JDesigner
-\cite{Sauro:Omics}. VCell is particularly suited to spatial modelling,
+this, VCell [@VCELL] in particular comes to mind as well as tools
+such as Gepasi [@Gepasi:1993] and Jarnac/JDesigner
+[@Sauro:Omics]. VCell is particularly suited to spatial modelling,
 Gepasi is well known for it’s GUI user interface, the selection of
 optimization methods and it’s ability to fit data to models, Jarnac was
-until very recently (See Pysces \cite{Pysces2005}) the only script based
+until very recently (See Pysces [@Pysces2004]) the only script based
 programmable modelling tool which has a fairly complete set of tools for
 the analysis of time dependent ODEs and stochastic systems and finally
 JDesigner because it was the first visual design model tool.
@@ -934,30 +934,30 @@ Application & Description\
 \
 VCell & A very mature server based application that is specialized\
 & to build and simulate large scale spatial (PDE) models\
-& - Open Source, multiplatform \cite{VCELL}.\
+& - Open Source, multiplatform [@VCELL].\
 &\
 Gepasi & This is a forms based application which has been maintained\
 & for many years by a dedicated author, the tool is\
 & particularly adapt at carrying out optimizations of ODE\
 & based models to data - Closed source, Windows, Linux\
-& \cite{Gepasi:1993}.\
+& [@Gepasi:1993].\
 &\
 WinSCAMP & A script based GUI application, which like Gepasi has a\
 & long tradition. Specialized for time course, steady state and\
 & metabolic control analysis of ODE based models.\
 & - Source available upon request, multiplatform\
-& \cite{SauroF91,SauroScamp93}\
+& [@SauroF91; @SauroScamp93]\
 &\
 Pysces & This is a very complete ODE based simulation environment\
 & built around the scripting language Python\
-& - Open Source, multiplatform \cite{Pysces2005}.\
+& - Open Source, multiplatform [@Pysces2004].\
 &\
 Jarnac/JDesigner & Jarnac is a script based application, JDesigner\
 & (See Figure 3) is a visual design tool which can use Jarnac\
 & via SBW to carry out simulations. The simulation capabilities\
 & of Jarnac are quite extensive, offering both ODE and stochastic\
 & simulation - Open Source, Windows, Linux\
-& \cite{sauro:2000,Sauro:Omics}.\
+& [@sauro:2000; @Sauro:Omics].\
 &\
 
 There are also more general purpose tools available, both commercial and
@@ -1012,31 +1012,31 @@ Approach & Description\
 Connectionist Theory & Connectivity studies are centered around the
 search for\
 & patterns in the way cellular networks are physically\
-& connected. \cite{BarabasiReview2004}\
+& connected. [@BarabasiReview2004]\
 &\
 Structural Analysis & There are a wide range of useful techniques which
 focus\
 & on the properties of the networks that depend on the\
 & mass conservation properties of networks. These\
 & include, conservation analysis, flux balance and\
-& elementary mode analysis \cite{Schuster:Book}.\
+& elementary mode analysis [@Schuster:Book].\
 &\
 Cellular Control Analysis & CCA (also known as metabolic control
 analysis)\
 & is a powerful technique for analyzing the\
 & propagation of perturbations through a network.\
 & There exists a very large literature describing\
-& applications and theory \cite{Fell:Book}.\
+& applications and theory [@Fell:Book].\
 &\
 Frequency Analysis & Closely related to CCA is the analysis of how
 signals\
 & propagate through a network\
-& \cite{Ingalls2004,RaoSauroArkin}.\
+& [@Ingalls2004; @RaoSauroArkin].\
 &\
 Bifurcation Analysis & Bifurcation analysis is concerned with the study\
 & of how the qualitative behavior of steady state\
 & solutions change with changes in the\
-& model parameters \cite{TysonNatReview2001}.\
+& model parameters [@TysonNatReview2001].\
 \
 
 All these techniques are extremely useful in gaining insight into how a
@@ -1046,7 +1046,7 @@ the dynamics of the model but on how the network connectivity sets the
 stage for generating the dynamics of the model. The last three
 techniques, CCA, frequency analysis and bifurcation analysis focus on
 the dynamical aspects of a model and are crucial to gaining a deep
-insight into the model \cite{Bakker:1997,TysonNatReview2001}.
+insight into the model [@Bakker:1997; @TysonNatReview2001].
 
 Model Fitting and Validation
 ----------------------------
@@ -1088,7 +1088,7 @@ of computation time. Such a computation can be easily setup using SBW. A
 single node on the cluster would act as the primary optimizer; this node
 in turn would farms out the time consuming simulation computations to
 the remaining nodes on the computer. For very large models, Grid
-computing \cite{GridComputing:Abbas} may be very appropriate for solving
+computing [@GridComputing:Abbas] may be very appropriate for solving
 this kind of problem.
 
 Future Prospects and Conclusion
@@ -1125,7 +1125,7 @@ independent species. Further more, hybrid methods combining continuous
 and stochastic methods is a pressing need at the current time. Many
 biological systems interface noisy sensory apparatus (e.g. ligand
 binding to the surface of a cell membrane) to internal continuous analog
-networks \cite{SauroReview:2004}. In addition to the core solvers, we
+networks [@SauroReview:2004]. In addition to the core solvers, we
 also need scalable analysis tools, particularly bifurcation analysis
 tools and sensitivity analysis tools. On the model validation front,
 much remains to be done, particularly the relationship between model

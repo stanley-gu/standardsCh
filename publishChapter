@@ -2,8 +2,8 @@
 echo Making book chapter 
 mkdir -p chapter
 pandoc  --biblio refs.bib --mathjax -s chapter.txt -o ./chapter/chapter.html
-pandoc --biblatex --biblio refs.bib --csl chicago-author-date.csl -H chapterHeader.tex chapter.txt -o ./chapter/chapter.pdf
-pandoc --biblatex --biblio refs.bib --csl chicago-author-date.csl -s -S -H chapterHeader.tex chapter.txt -o ./chapter/chapter.tex 
+pandoc --biblio refs.bib --csl chicago-author-date.csl -H chapterHeader.tex chapter.txt -o ./chapter/chapter.pdf
+pandoc --biblio refs.bib --csl chicago-author-date.csl -s -S -H chapterHeader.tex chapter.txt -o ./chapter/chapter.tex 
 
 
 
