@@ -149,8 +149,6 @@ models.
 In this chapter I will be exclusively concerned with models based on
 differential equations and to a lesser extent stochastic equations.
 
-[table:mathTechniques]
-
 * * * * *
 
 Boolean:
@@ -216,7 +214,7 @@ It is probably fair to say that most of the successful models to be
 found in the literature are based on ordinary differential equations.
 Many researchers will express these models using the following equation:
 
-$$\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp) \label{eq:system}$$
+$\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)$ \label{eq:system}
 
 where $\bS$ is the vector of molecular species concentrations, $\bN$,
 the stoichiometry matrix; $\bv$ the rate vector and $\bp$ a vector of
@@ -258,7 +256,7 @@ time course simulations, the separation is also useful because it
 enables the number of differential equations to be reduced in number and
 thereby improve computational efficiency.
 
-Equation ([eq:system]) is therefore better expressed as:
+Equation \ref{eq:system} is therefore better expressed as:
 
 $$\begin{aligned}
   \bSd &=& \bLo \bSi + \bT \nonumber \\
@@ -292,21 +290,45 @@ permit users to enter models as a list of reactions and then
 automatically generate the mathematical model
 \cite{SauroF91,sauro:2000,Sauro:Omics}.
 
-[hbp]14cm **Box 1. Reaction Network** Consider the simple reaction
+\setlength\fboxsep{18pt}
+\begin{boxedminipage}[hbp]{14cm}
+{\bfseries Box 1. Reaction Network} Consider the simple reaction
 network shown on the left below:
 
-[t]6cm
+\begin{minipage}[t]{6cm}
+\begin{picture}(60,95)(-60,-50)\thicklines
+%
+\put(18,20){$v_2$}
+\qbezier(0,0)(20,20),(40,0) \put(42,-1){\vector(4,-3){2}}
+%
+\put(16,-46){$v_3$}
+\qbezier(0,-20)(20,-40),(40,-20) \put(0,-19){\vector(-3,4){2}}
+%
+\put(-9,-12){$ES$}
+\put(40,-13){$E$}
+\put(65,23){$S_1$}
+\put(65,-48){$S_2$}
+\put(69,16){\vector(0,-1){48}}
+\put(72,-8){$v_1$}
+%
+% Lower arm
+\qbezier(62,-45)(20,-40),(0,-20)
+% Upper arm
+\qbezier(18,10)(26,8),(60,25) \put(61,25){\vector(2,1){2}}
+%
+\end{picture}
+\end{minipage}
+\begin{minipage}[t]{6cm}
+\begin{picture}(60,85)(-40,-35)\thicklines
+  % Vertical arrows
+  \put(-9, 24){$ES$}
+  \put(-9, 8){$S_1$}
+  \put(-9, -11){$S_2$}
+  \put(-9, -26){$E$}
 
-(60,95)(-60,-50)(18,20)$v_2$ (0,0)(20,20),(40,0) (42,-1)(4,-3)2
-(16,-46)$v_3$ (0,-20)(20,-40),(40,-20) (0,-19)(-3,4)2 (-9,-12)$ES$
-(40,-13)$E$ (65,23)$S_1$ (65,-48)$S_2$ (69,16)(0,-1)48 (72,-8)$v_1$
-(62,-45)(20,-40),(0,-20) (18,10)(26,8),(60,25) (61,25)(2,1)2
-
-[t]6cm
-
-(60,85)(-40,-35) (-9, 24)$ES$ (-9, 8)$S_1$ (-9, -11)$S_2$ (-9, -26)$E$
-
-(26,40)$v_1$ (46,40)$v_2$ (68,40)$v_3$
+  \put(26,40){$v_1$}
+  \put(46,40){$v_2$}
+  \put(68,40){$v_3$}
 
 $\begin{array}{cc}
         \left[
@@ -318,22 +340,28 @@ $\begin{array}{cc}
          \end{array}
         \right]
    \end{array}$
+\end{picture}
+\end{minipage}
 
-The **stoichiometry matrix** for this network is shown to the right.
-This network possesses two conserved cycles given by the constraints:
-$S_1 + S_2 + ES = T_1$ and $E + ES = T_2$. The set of independent
-species includes: $\{ES, S_1\}$ and the set of dependent species
-$\{E, S_2 \}$.
+\vspace{12pt} The {\bfseries stoichiometry matrix} for this
+network is shown to the right. This network possesses two
+conserved cycles given by the constraints: $S_1 + S_2 + ES = T_1$
+and $E + ES = T_2$. The set of independent species includes:
+$\{ES, S_1\}$ and the set of dependent species $\{E, S_2 \}$.
 
+\bigskip
 The $\bLo$ matrix can be shown to be:
 
-$$\bLo = \left[ \begin{array}{rr}
+\hspace{2cm} $$ \bLo = \left[ \begin{array}{rr}
   -1 & -1 \\
   -1 & 0 \\
-\end{array}  \right]$$ The complete set of equations for this model is
-therefore:
+\end{array}  \right]$$ \hfill
+%
+\linebreak
+The complete set of equations for this model is therefore:
 
-$$\left[ \begin{array}{l}
+$$
+\left[ \begin{array}{l}
   S_2 \\
   E \\
 \end{array} \right] =
@@ -352,7 +380,8 @@ $$\left[ \begin{array}{l}
   T_1 \\
   T_2 \\
 \end{array}
-\right]$$ $$\left[
+\right]$$
+$$\left[
 \begin{array}{l}
   dES/dt \\
   dS_1/dt \\
@@ -370,10 +399,11 @@ $$\left[ \begin{array}{l}
   v_2 \\
   v_3 \\
 \end{array}
-\right]$$ Note that even though there appears to be four variables in
-this system, there are in fact only two independent variables,
-$\{ES, S_1\}$, and hence only two differential equations and two linear
-constraints.
+\right]$$ Note that even though there appears to be four variables
+in this system, there are in fact only two independent variables, $\{ES, S_1\}$,
+and hence only two differential equations and two linear constraints.
+
+\end{boxedminipage}
 
 [^3]: There are rare cases when a ‘conservation’ relationship arises out
     of a non-moiety cycle. This does not affect the mathematics but only
@@ -1151,3 +1181,6 @@ their initial work on the Systems Biology Workbench and in more recent
 years the tremendous programming work done by Frank Bergmann and the
 critical support given by Sri Paladugu and Vijay Chickarmane to the
 development of novel computational methods in Systems Biology.
+
+
+# References
