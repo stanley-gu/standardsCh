@@ -1,0 +1,17 @@
+Abstract 
+========
+
+The understanding of complex and dynamic biological networks is a large and
+important challenge in biomedical science that requires the aid of software.
+Over the years, many tools have been created by different research groups to
+answer specific scientific questions in the field of systems biology. A
+fundamental part of the scientific process is the ability to reproduce the work
+of others, improve upon the body of work, and disemminate those findings to the
+greater community. Thus, it is important for different scientists using
+different scientific software tools to be able to intercommunicate. This
+chapter describes the current and rising standards in systems biology that
+facilitate data knowledge management and physiological model exchange. In
+addition, software platforms that implement these standards and enables the
+reuse of software code is discussed. Finally, the range of possible
+computational applications is described, highlighting the most commonly used
+and emerging tools in the field. 
