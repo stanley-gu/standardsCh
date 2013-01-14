@@ -1,1 +1,0 @@
-watch( '(.*)\.txt') {system ("./publishChapter")}

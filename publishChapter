@@ -5,11 +5,8 @@ pandoc  --biblio refs.bib --mathjax -s chapter.txt -o ./chapter/chapter.html
 pandoc --biblio refs.bib --csl chicago-author-date.csl -H chapterHeader.tex chapter.txt -o ./chapter/chapter.pdf
 pandoc --biblio refs.bib --csl chicago-author-date.csl -s -S -H chapterHeader.tex chapter.txt -o ./chapter/chapter.tex 
 
-
-
-pandoc test.txt --biblatex --biblio test.bib --csl chicago-author-date.csl -o ./test/test.pdf
-
 : <<'END'
+pandoc test.txt --biblatex --biblio test.bib --csl chicago-author-date.csl -o ./test/test.pdf
 pandoc --biblatex -s -S test.txt  --bibliography=test.bib --csl chicago-author-date.csl -o ./test/test.tex
 cp test.bib test/test.bib
 cd test
