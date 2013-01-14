@@ -1,7 +1,21 @@
 #!/bin/bash
 echo Making book chapter 
 mkdir -p chapter
-pandoc chapter.md -o ./chapter/chapter.html --biblio refs.bib
-pandoc chapter.md -o ./chapter/chapter.pdf --biblio refs.bib
-pandoc chapter.md -o ./chapter/chapter.tex --biblio refs.bib -s -S
+pandoc  --biblio refs.bib --mathjax -s chapter.txt -o ./chapter/chapter.html
+pandoc --biblatex --biblio refs.bib --csl chicago-author-date.csl -H chapterHeader.tex chapter.txt -o ./chapter/chapter.pdf
+pandoc --biblatex --biblio refs.bib --csl chicago-author-date.csl -s -S -H chapterHeader.tex chapter.txt -o ./chapter/chapter.tex 
 
+
+
+pandoc test.txt --biblatex --biblio test.bib --csl chicago-author-date.csl -o ./test/test.pdf
+
+: <<'END'
+pandoc --biblatex -s -S test.txt  --bibliography=test.bib --csl chicago-author-date.csl -o ./test/test.tex
+cp test.bib test/test.bib
+cd test
+latex test.tex
+bibtex test
+latex test.tex
+pdflatex test
+cd ..
+END
