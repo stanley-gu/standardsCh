@@ -1,5 +1,7 @@
 #! /bin/bash
-for file in *.txt
+ext=*.md
+newext=.txt
+for file in $ext
 do
-  mv "$file" "${file%.txt}.md"
+  mv "$file" "${file%$ext}$newext"
 done
