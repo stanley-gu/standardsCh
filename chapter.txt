@@ -51,7 +51,7 @@ years is the development of model interchange standards that permit
 biologists to easily exchange dynamical models between different
 software tools. In this chapter two chief model exchange standards, SBML
 and CellML are described. In addition, the development of extensible
-software frameworks, including SBW, BioSPICE and BioUML are discussed
+software frameworks, including SBW and BioUML are discussed
 and the role they might play in stimulating the development of new tools
 and approaches. Finally, the range of possible computational
 applications is described, highlighting the rich set of tools that is
@@ -415,7 +415,7 @@ and hence only two differential equations and two linear constraints.
 
 #### Virtual Physiological Rat
 
-### Quantitative models based on data-driven network inference
+### Quantitative Models Based on Data-Driven Network Inference
 
 #### DREAM
 
@@ -597,8 +597,8 @@ model variants can be efficiently stored.
 Both SBML and CellML have been taken up by many software developers and
 implemented in their software. SBML in particular is being used in over
 75 software projects. In addition, SBML is the official model
-interchange format for the BioSPICE project <www.biospice.org>, the SBW
-project <www.sys-bio.org>, the international *E. coli* alliance and the
+interchange format for the SBW
+project <www.sys-bio.org>, the international *E. coli* alliance, and the
 receptor tyrosine kinase consortium. Much of the SBML support is in
 stand-alone applications, however, a number of database vendors have
 also decided to provide export of SBML as an option, examples include
@@ -619,13 +619,13 @@ objective function.
 
 ### SBRML
 
-### Other Standards
+## Other Standards
 
 Apart from using XML to define an interchange format, there are two
 other mediums for representing models, these include, human readable
 text based formats and visual formats.
 
-#### Visualization of Models
+### Visualization of Models
 
 For many users, the ability to visualize models and to build models
 using visual tools is an important feature. There are currently a number
@@ -651,6 +651,8 @@ as proteins, ions, transporters etc.) have particular pictorial
 representations. The software tool called cellDesigner
 [@CellDesigner2003] implements this proposed format.
 
+#### JDesigner
+
 One of the first visualization tools, JDesigner [@Sauro:Omics] also
 implements a traditional way to depict networks (see Figure 3) using a
 pictorial representation to indicate substances and reactions. JDesigner
@@ -666,7 +668,11 @@ Network Sciences which has devised a derivative of the Kohn notation
 called DCL. However this notation is proprietary and it’s utility to the
 general scientific community is not certain at this time.
 
-#### Human Readable Formats
+#### Systems Biology Graphical Notation (SBGN)
+
+### Human Readable Formats
+
+#### Jarnac
 
 In addition to visualization approaches and the use of XML to represent
 models, there has been a long tradition in the field to describe models
@@ -680,7 +686,9 @@ format offers many advantages, including, conciseness, easily understood
 and manipulated using a simple editor, flexible, portable and above all
 extremely easy to include commenting and annotation.
 
-#### High-throughput Data
+#### Pysces
+
+### High-throughput Data
 
 CellML and SBML are the primary formats used to store interchangeable
 dynamic models. Apart from the particular details on the model itself
@@ -771,6 +779,8 @@ technology offer no assistance in this task.
 
 # Platforms
 
+## Modeling
+
 Much of the current software development in the systems biology
 community concentrates on the development of stand-alone applications.
 Most of these tools are not easily extensible and many of them offer
@@ -807,10 +817,9 @@ build on existing code which in turn leads to new and interesting
 software tools. In this section I will describe three such environments,
 SBW, BioSPICE and BioUML. All three environments are open source.
 
-SBW - Systems Biology Workbench
--------------------------------
+### Systems Biology Workbench SBW
 
-The SBW (Sauro et. al., 2004) is an extensible software framework that
+SBW (Sauro et. al., 2004) is an extensible software framework that
 is both platform and language independent. Its primary purpose is to
 encourage code reuse among members of the systems biology community.
 Developers can run SBW on Linux, Windows or Mac OS and can develop
@@ -865,7 +874,7 @@ support for multiple languages there is also the facility to
 automatically generate web services from any SBW module (Frank Bergmann,
 personal communication).
 
-### Messaging Protocols
+#### Messaging Protocols
 
 At the heart of SBW is the messaging protocol used to exchange
 information between the different modules. For efficiency reasons,
@@ -883,32 +892,13 @@ Since SBW message passing is based on TCP/IP sockets it is straight
 forward to run SBW across the internet or more significantly across
 computational nodes on a supercomputer cluster.
 
-## BioSPICE
+### JSim
 
-BioSPICE (<www.biospice.org>) is a DARPA funded effort to develop an
-open source framework and tool-set for modelling dynamic cellular
-network functions. The central component of BioSPICE is the dashboard
-which is used to construct work-flows between BioSPICE enabled
-applications. Both SBW and the dashboard encourage code reuse although
-in different ways. In the dashboard, code reuse is through the
-construction of work flows, in SBW code reuse is via programmatic
-interfaces and a plugable runtime architecture. The unit components in
-SBW tends to be more fine grained compared to BioSPICE modules. For
-example, SBW provides modules such as SBML support, frequency analysis,
-simulation methods, bifurcation analysis, which can be tied together at
-runtime to give the impression of a single application. The BioSPICE
-dashboard on the other hand allows the user to construct fixed
-work-flows prior to a run. The workflow configurations cannot be changed
-during runtime. In addition, where as SBW connects modules via interface
-specifications, the dashboard connects modules via data types. The
-BioSPICE dashboard is based on the Java netbeans application which makes
-it highly Java centric and interaction with applications written in
-other languages, though not impossible, non-trivial. It is possible to
-easily connect SBW modules to the dashboard (via the SBW Java interface)
-which greatly increases the flexibility of the dashboard combining the
-advantages of a work-flow approach to the free-flow approach of SBW.
+### Cell Designer
 
-## BioUML
+### VCell
+
+### BioUML
 
 BioUML (<www.biouml.org>), developed by Fedor Kolpakov and his team, is
 a Java framework based around eclipse and targeted at the systems
@@ -924,6 +914,24 @@ to write all code in Java is limiting and some means to permit
 alternative language bindings would be useful. Recently the BioUML team
 developed a SBW interface, which permits access to plugins that are
 written in many different languages.
+
+## Simulation 
+
+### Road Runner
+
+### COPASI
+
+## Online Platforms
+
+### JWSOnline
+
+### SBW
+
+### CycSim
+
+## Commercial
+
+### MATLAB SimBiology
 
 # Applications
 
@@ -1196,11 +1204,6 @@ include:
     example models, screen shots, user guides can be obtained from this
     site. A link to the main sourceforge site is given where all the source
     code for SBW is made available.
-
-<http://www.biospice.org>
-:   This is the main BioSPICE site. This site
-    includes a description of BioSPICE and the large number of tools now
-    available for the BioSPICE dashboard (including SBW itself).
 
 # Acknowledgements
 
