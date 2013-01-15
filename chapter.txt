@@ -41,8 +41,7 @@
 \newcommand{\bv}{\mbox{\boldmath $v$}}
 \newcommand{\bp}{\mbox{\boldmath $p$}}
 
-Summary
-=======
+# Summary
 
 With the sequencing of the human genome, it has become apparent that
 Systems Biology, the understanding of cellular networks through
@@ -58,8 +57,7 @@ and approaches. Finally, the range of possible computational
 applications is described, highlighting the rich set of tools that is
 emerging as systems biology becomes a mainstream science.
 
-Introduction
-============
+# Introduction
 
 Although Computational Systems Biology may seem to be a recent field of
 endeavor, its origins can be traced as far back as the 1920s and 30s
@@ -91,8 +89,7 @@ noted that there is a large body of literature, particularly in the
 Journal of Theoretical Biology, dating back fifty years that many
 newcomers to the field will find useful to consider.
 
-What is Systems Biology?
-------------------------
+## What is Systems Biology?
 
 There are many conflicting opinions today on what exactly systems
 biology is. Historically the answer seems clear. The chief aim of
@@ -112,8 +109,7 @@ Systems Biology is the natural progression of classical molecular
 biology from a descriptive to a quantitative science and is concerned
 with the dynamic response of biological networks.
 
-Statement Of Problem
---------------------
+## Statement Of Problem
 
 Building models is not an entirely new approach to biology. If one
 examines any text book on molecular biology or biochemistry, virtually
@@ -130,8 +126,7 @@ nature have much better predictive value compared to qualitative models,
 but their real usefulness stems from the capacity to carry out precise
 reasoning with them.
 
-Quantitative Approaches
-=======================
+## Quantitative Approaches
 
 There is a wide range of mathematical representations that one can use
 to build quantitative models, the choice of approach depending on the
@@ -190,7 +185,7 @@ Differential-algebraic equations (DAEs):
     solution of the ODEs. Such a situation is often termed a DAE system.
     The simplest constraints are mass conservation constraints, however
     these are linear and can be handled efficiently and easily using
-    simple assignment equations (see equation [eq:general]). DAE solvers
+    simple assignment equations (see equation (@eqGeneral)). DAE solvers
     need only be used when the constraints are nonlinear.
 
 Partial differential equations (PDEs):
@@ -217,9 +212,9 @@ It is probably fair to say that most of the successful models to be
 found in the literature are based on ordinary differential equations.
 Many researchers will express these models using the following equation:
 
-\center{ $\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)$ \label{eq:system} }
-
-This is referencing my equation system \ref{eq:system}.
+(@eqSystem) \begin{center} 
+    $\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)$
+    \end{center}
 
 where $\bS$ is the vector of molecular species concentrations, $\bN$,
 the stoichiometry matrix; $\bv$ the rate vector and $\bp$ a vector of
@@ -230,7 +225,7 @@ moiety conserved cycles. Depending on the time-scale of a study, there
 will be molecular subgroups conserved during the evolution of a network,
 these are termed *conserved moieties* [@Re81]. The total amount of a
 particular moiety in a network is time invariant and is determined
-solely by the initial conditions imposed on the system[^3].
+solely by the initial conditions imposed on the system[^conservation].
 
 In metabolism, conserved cycles act as common conveyers of energy (ATP)
 or reducing power (NAD); in signaling pathways they occur as protein
@@ -261,23 +256,23 @@ time course simulations, the separation is also useful because it
 enables the number of differential equations to be reduced in number and
 thereby improve computational efficiency.
 
-Equation \ref{eq:system} is therefore better expressed as:
+Equation (@eqSystem) is therefore better expressed as:
 
-$$\begin{aligned}
-  \bSd &=& \bLo \bSi + \bT \nonumber \\
-  \bdSidt &=& \bNr \bv (\bSi (p), \bSd, \bp) \label{eq:general}\end{aligned}$$
+(@eqGeneral)$$\begin{aligned}
+    \bSd &=& \bLo \bSi + \bT \nonumber \\
+    \bdSidt &=& \bNr \bv (\bSi (p), \bSd, \bp) \end{aligned}$$
 
 In these equations, $\bSi$ is the vector of independent species, $\bSd$,
 the vector of dependent species, $\bLo$ the link matrix, $\bT$ the total
 mass vector, $\bNr$ the reduced stoichiometry matrix, $\bv$ the rate
-vector and $\bp$ the vector of parameters. Equation (2) constitutes the
+vector and $\bp$ the vector of parameters. Equation (@eqGeneral) constitutes the
 most general expression of an ODE based temporal model
 [@hofmeyr-nutshell; @Schuster:Book]. The symbolism used in equation
-(2) is the standard notation used by many in the Systems Biology
+(@eqGeneral) is the standard notation used by many in the Systems Biology
 community.
 
 Although mathematically, reaction based models are given by equations
-([eq:system]) and ([eq:general]), many researchers are more familiar
+(@eqSystem) and (@eqGeneral), many researchers are more familiar
 with expressing models in the form of a reaction scheme. For example,
 the following describes part of glycolysis:
 
@@ -288,7 +283,7 @@ the following describes part of glycolysis:
 For brevity, the rates laws that accompany each reaction have been left
 out. Such notation is well understood by biologists. It is not straight
 forward however to convert this representation to the representation
-give by equation ([eq:general]). However, many software tools will
+give by equation (@eqGeneral). However, many software tools will
 permit users to enter models as a list of reactions and then
 automatically generate the mathematical model
 [@SauroF91; @sauro:2000; @Sauro:Omics].
@@ -408,14 +403,39 @@ and hence only two differential equations and two linear constraints.
 
 \end{boxedminipage}
 
-[^3]: There are rare cases when a ‘conservation’ relationship arises out
+[^conservation]: There are rare cases when a ‘conservation’ relationship arises out
     of a non-moiety cycle. This does not affect the mathematics but only
     the physical interpretation of the relationship. For example, A
     $\rightarrow$ B + C; B + C $\rightarrow$ D has the conservation,
-    $B - C =\mbox{constant}$,
+    $B - C =\mbox{constant}$.
 
-Standards
-=========
+#### IUPS Physiome Project
+
+#### Virtual Physiological Human
+
+#### Virtual Physiological Rat
+
+### Quantitative models based on data-driven network inference
+
+#### DREAM
+
+#### Sage Bionetworks
+
+# Standards
+
+## Minimum Information
+
+### MIRIAM, Minimum Information Required in the Annotation of Models
+
+### MIASE, Minimum Information About a Simulation Experiment
+
+## Ontologies
+
+### Open Biomedical Ontologies (OBO)
+
+#### Systems Biology Ontology (SBO)
+
+## Physiological Models
 
 In recent years, particulary since the sequencing of the human genome,
 there has been an ever increasing list of wide ranging cellular models
@@ -448,11 +468,10 @@ and SBML are today viewed as the main standards for exchanging cellular
 network models. There are however fundamental differences between the
 approaches that CellML and SBML take in the way models are represented.
 
-CellML
-------
+### CellML
 
 CellML [@LloydCellML2004] represents cellular models using a
-mathematical description similar to equation ([eq:system]). In addition,
+mathematical description similar to equation (@eqGeneral). In addition,
 CellML represents entities using a component based approach where
 relationships between components are represented by connections. In many
 ways CellML represents a literal translation of the mathematical
@@ -464,7 +483,7 @@ engineer might wire up an analog computer to solve the equations (though
 without specifying the integrators). As a result CellML is very general
 and in principal could probably represent any system that has a
 mathematical description (and not just the kind indicated by equation
-(1)). CellML is also very precise in that every item in a model is
+(@eqSystem)). CellML is also very precise in that every item in a model is
 defined explicitly. However, the generality and explicit nature of
 CellML also results in increased complexity especially for software
 developers. Another side effect of the increased complexity is that
@@ -493,8 +512,7 @@ in providing such tools to the community is probably one reason why
 CellML (given it’s complexity) has not proved so popular relative to
 SBML which I will discuss next.
 
-SBML
-----
+### SBML
 
 Whereas CellML attempts to be highly comprehensive, SBML was designed to
 meet the immediate needs of the modelling community and is therefore
@@ -516,7 +534,7 @@ values and general math which for one reason or another cannot be
 transformed into a chemical scheme. Like CellML, the dependent and
 independent species are implied.
 
-### SBML Development Tools
+#### SBML Development Tools
 
 Early on in the development of SBML, the original authors decided to
 provide software tools almost immediately for the community. Since XML
@@ -532,7 +550,7 @@ since developed a comprehensive cross platform tool
 toolkit to use (libSBML). libSBML was developed in C/C++ for maximum
 portability.
 
-### Extensibility
+#### Extensibility
 
 It was realized early on by the authors of SBML that as systems biology
 developed there would be pressure from the community to make additional
@@ -551,7 +569,7 @@ to be made part of SBML. It makes the process of SBML evolution more
 transparent and permits users to be more involved in the development of
 SBML.
 
-### Practical Considerations
+#### Practical Considerations
 
 While CellML is very general, SBML is more specific, as result, the
 storage requirement for SBML is much less. It takes on average roughly
@@ -574,7 +592,7 @@ model this clearly would generate huge amounts of XML based data. One of
 the things that has yet to be addressed by either standard is the how
 model variants can be efficiently stored.
 
-### Usage
+#### Usage
 
 Both SBML and CellML have been taken up by many software developers and
 implemented in their software. SBML in particular is being used in over
@@ -591,40 +609,23 @@ storage of flux balance models. The proposed format is very similar to
 SBML but has the additional feature of storing the flux balance
 objective function.
 
-Future Considerations
----------------------
+### MML
 
-The development of standards for systems biology is still at a very
-early stage. I have not for example considered the problem of
-standardizing the formats for the experimental data that will be
-required for modelling. For example, there are no current standards for
-representing *quantitative* proteomic or metabolomic data, though
-efforts for defining a quantitative microarray format is maturing
-(<www.mged.org>).
+### NeuroML
 
-More pressing from a modelling perspective is that there is currently no
-agreed way to merge smaller sub-models into larger models (composition).
-One of the few groups to have considered composition is Ginkel and
-Kremling [@Promot2000]. They have examined possible extensions to
-SBML to allow SBML to represent sub-models and models composed of
-sub-models. Additional issues include distinguishing different kinds of
-models, particularly ODE and stochastic models, currently there is no
-means to identify the kind of model an SBML file represents other than
-to use specific annotations. One unfortunate side-effect of using XML is
-the temptation to omit a detailed semantic specification. XML is often
-vaunted as a desirable technology because it is easily parsed, however,
-parsing and syntax checking is a very easy task to implement, the real
-difficulty comes when semantic checks are required and current XML
-technology offer no assistance in this task.
+## Simulation
 
-Other Standards
----------------
+### SED-ML
+
+### SBRML
+
+### Other Standards
 
 Apart from using XML to define an interchange format, there are two
 other mediums for representing models, these include, human readable
 text based formats and visual formats.
 
-### Visualization of Models
+#### Visualization of Models
 
 For many users, the ability to visualize models and to build models
 using visual tools is an important feature. There are currently a number
@@ -665,7 +666,7 @@ Network Sciences which has devised a derivative of the Kohn notation
 called DCL. However this notation is proprietary and it’s utility to the
 general scientific community is not certain at this time.
 
-### Human Readable Formats
+#### Human Readable Formats
 
 In addition to visualization approaches and the use of XML to represent
 models, there has been a long tradition in the field to describe models
@@ -679,30 +680,7 @@ format offers many advantages, including, conciseness, easily understood
 and manipulated using a simple editor, flexible, portable and above all
 extremely easy to include commenting and annotation.
 
-Model Databases
----------------
-
-At the time of writing there are, surprisingly, no model databases
-currently in existence. There are databases for almost every other kind
-of biological information except dynamic information. This is even more
-surprising since dynamic behavior is probably *the* key feature of
-biological systems.
-
-There are a number of sites which include simple lists of models, for
-example the CellML Repository, but there are no searchable databases.
-Although such databases would be of great advantage to the community,
-the funding agencies have so far been reluctant to provide support.
-Instead a number of groups, including the original SBML group and the
-SBW group are instead developing model databases as part of other
-projects. In particular the Department of Energy through their GTL
-program are funding a small project to develop a database for microbial
-models. What features of a database might be useful? Probably one of the
-most useful features for such a database (apart from the obvious ability
-to query the database for particular models, organisms etc) would be the
-ability to deliver models in different computationally ready formats.
-
-Other Related Standards
------------------------
+#### High-throughput Data
 
 CellML and SBML are the primary formats used to store interchangeable
 dynamic models. Apart from the particular details on the model itself
@@ -735,8 +713,63 @@ BioPAX. The BioPAX group proposes to embed BioPAX elements onto SBML or
 cellML for unambiguous identification of substances (metabolites,
 enzymes) and reactions.
 
-Platforms
-=========
+
+## Model Databases
+
+At the time of writing there are, surprisingly, no model databases
+currently in existence. There are databases for almost every other kind
+of biological information except dynamic information. This is even more
+surprising since dynamic behavior is probably *the* key feature of
+biological systems.
+
+There are a number of sites which include simple lists of models, for
+example the CellML Repository, but there are no searchable databases.
+Although such databases would be of great advantage to the community,
+the funding agencies have so far been reluctant to provide support.
+Instead a number of groups, including the original SBML group and the
+SBW group are instead developing model databases as part of other
+projects. In particular the Department of Energy through their GTL
+program are funding a small project to develop a database for microbial
+models. What features of a database might be useful? Probably one of the
+most useful features for such a database (apart from the obvious ability
+to query the database for particular models, organisms etc) would be the
+ability to deliver models in different computationally ready formats.
+
+### BioModels
+
+### JSim
+
+### JWS Online
+
+### PAYAO
+
+
+## Future Considerations
+
+The development of standards for systems biology is still at a very
+early stage. I have not for example considered the problem of
+standardizing the formats for the experimental data that will be
+required for modelling. For example, there are no current standards for
+representing *quantitative* proteomic or metabolomic data, though
+efforts for defining a quantitative microarray format is maturing
+(<www.mged.org>).
+
+More pressing from a modelling perspective is that there is currently no
+agreed way to merge smaller sub-models into larger models (composition).
+One of the few groups to have considered composition is Ginkel and
+Kremling [@Promot2000]. They have examined possible extensions to
+SBML to allow SBML to represent sub-models and models composed of
+sub-models. Additional issues include distinguishing different kinds of
+models, particularly ODE and stochastic models, currently there is no
+means to identify the kind of model an SBML file represents other than
+to use specific annotations. One unfortunate side-effect of using XML is
+the temptation to omit a detailed semantic specification. XML is often
+vaunted as a desirable technology because it is easily parsed, however,
+parsing and syntax checking is a very easy task to implement, the real
+difficulty comes when semantic checks are required and current XML
+technology offer no assistance in this task.
+
+# Platforms
 
 Much of the current software development in the systems biology
 community concentrates on the development of stand-alone applications.
@@ -850,8 +883,7 @@ Since SBW message passing is based on TCP/IP sockets it is straight
 forward to run SBW across the internet or more significantly across
 computational nodes on a supercomputer cluster.
 
-BioSPICE
---------
+## BioSPICE
 
 BioSPICE (<www.biospice.org>) is a DARPA funded effort to develop an
 open source framework and tool-set for modelling dynamic cellular
@@ -876,8 +908,7 @@ easily connect SBW modules to the dashboard (via the SBW Java interface)
 which greatly increases the flexibility of the dashboard combining the
 advantages of a work-flow approach to the free-flow approach of SBW.
 
-BioUML
-------
+## BioUML
 
 BioUML (<www.biouml.org>), developed by Fedor Kolpakov and his team, is
 a Java framework based around eclipse and targeted at the systems
@@ -894,8 +925,7 @@ alternative language bindings would be useful. Recently the BioUML team
 developed a SBW interface, which permits access to plugins that are
 written in many different languages.
 
-Applications
-============
+# Applications
 
 In recent years there has been a proliferation of software applications
 for the systems biology community (See Figure \ref{figure:apps}).
@@ -989,8 +1019,7 @@ cellular networks. The most well known include Gene Networks Sciences,
 Berkeley Madonna and Teranode (These can easily be located on the web by
 using a reliable search engine).
 
-Model Analysis
---------------
+## Model Analysis
 
 As a user, one of the most important aspects that I consider is the
 range of techniques that are available for analyzing the model. The
@@ -1051,8 +1080,7 @@ techniques, CCA, frequency analysis and bifurcation analysis focus on
 the dynamical aspects of a model and are crucial to gaining a deep
 insight into the model [@Bakker:1997; @TysonNatReview2001].
 
-Model Fitting and Validation
-----------------------------
+## Model Fitting and Validation
 
 An important activity in systems biology modelling is the need to fit
 experimental data to models. There isn’t sufficient space to cover to
@@ -1094,8 +1122,7 @@ the remaining nodes on the computer. For very large models, Grid
 computing [@GridComputing:Abbas] may be very appropriate for solving
 this kind of problem.
 
-Future Prospects and Conclusion
-===============================
+# Future Prospects and Conclusion
 
 The Systems Biology field has been developing rapidly in recent years
 but much remains to be done. One of the most useful developments must
@@ -1147,8 +1174,7 @@ candidate for large cluster machines. In fact, one wonders whether this
 is the application for systems biology which could benefit from Grid
 computing.
 
-Recommended Resources
-=====================
+# Recommended Resources
 
 Four web sources which are of interest to readers of this chapter
 include:
@@ -1176,8 +1202,7 @@ include:
     includes a description of BioSPICE and the large number of tools now
     available for the BioSPICE dashboard (including SBW itself).
 
-Acknowledgements
-================
+# Acknowledgements
 
 I would first like to acknowledge the generous support from the Japan
 Science and Technology Agency, DARPA (BAA01-26 Bio-Computation) and the
