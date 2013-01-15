@@ -659,7 +659,7 @@ diagrams similar to the notation found in many molecular biology text
 books. CellDesigner and JDesigner connect to the Systems Biology
 Workbench (SBW) for simulation support.
 
-![Example of JDesigner's visual format\label{Figure:jdesigner}](JDesigner1.eps)
+![Example of JDesigner's visual format\label{Figure:jdesigner}](images/JDesigner1.eps)
 
 Finally, there is a proposal from a commercial company called Gene
 Network Sciences which has devised a derivative of the Kohn notation
@@ -849,7 +849,7 @@ including, C/C++, Java, Delphi, FORTRAN, Python, Perl, Matlab, any .NET language
 Data is exchanged between modules via binary messages which can include any combination
 of bytes, integers, floating point, complex numbers, strings, arrays and lists. 
 Currently the available modules include, simulators, model editors, SBML manipulation, 
-math library, frequency analyzer, bifurcation discover and analysis modules, structural analysis modules and others. Further details to be found at <www.sys-bio.org>\label{Figure:sbw}](sbwFig.eps)
+math library, frequency analyzer, bifurcation discover and analysis modules, structural analysis modules and others. Further details to be found at <www.sys-bio.org>\label{Figure:sbw}](images/sbwFig.eps)
 
 An SBW module (the client) provides one or more interfaces or services.
 Each service provides one or more methods. Modules register the services
@@ -930,7 +930,7 @@ written in many different languages.
 In recent years there has been a proliferation of software applications
 for the systems biology community (See Figure \ref{figure:apps}).
 
-![The Release of Software Tools for Computational Systems Biology over Time. Note the spike in the last five years.\label{figure:apps}](ToolsPerYear.pdf)
+![The Release of Software Tools for Computational Systems Biology over Time. Note the spike in the last five years.\label{figure:apps}](images/ToolsPerYear.pdf)
 
 On the whole, many of these applications provide very similar
 functionality. The distinguishing feature among them is how easy they
