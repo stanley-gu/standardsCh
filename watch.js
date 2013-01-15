@@ -20,7 +20,7 @@ watchr.watch({
         change: function(changeType, filePath, fileCurrentStat, filePreviousStat) {
             console.log('a change event occured:', arguments);
 
-            if (filePath.indexOf('.txt') > -1) {
+            if (filePath.indexOf('.txt') > -1 || filePath.indexOf('publishChapter') > -1) {
 
                 child = exec('./publishChapter',
 
