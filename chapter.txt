@@ -3,11 +3,7 @@
   Herbert Sauro[^herbertInfo]
 
 [^stanleyInfo]: stanleyg@uw.edu
-
-[^herbertInfo]: Address for Correspondence: Herbert M Sauro, Keck Graduate
-    Institute, 535 Watson Drive, Claremont, USA, 91711 Phone: (909) 607
-    0377 Fax: (909) 607 8086 e-mail: hsauro@kgi.edu, web page
-    www.sys-bio.org
+[^herbertInfo]: hsauro@uw.edu
 
 \newcommand{\bgamma}{\mbox{\boldmath $\Gamma$}}
 \newcommand{\bL}{\mbox{\boldmath $L$}}
@@ -258,9 +254,12 @@ thereby improve computational efficiency.
 
 Equation (@eqSystem) is therefore better expressed as:
 
-(@eqGeneral)$$\begin{aligned}
+(@eqGeneral) \begin{center}
+    $\begin{aligned} 
     \bSd &=& \bLo \bSi + \bT \nonumber \\
-    \bdSidt &=& \bNr \bv (\bSi (p), \bSd, \bp) \end{aligned}$$
+    \bdSidt &=& \bNr \bv (\bSi (p), \bSd, \bp) 
+    \end{aligned}$
+    \end{center}
 
 In these equations, $\bSi$ is the vector of independent species, $\bSd$,
 the vector of dependent species, $\bLo$ the link matrix, $\bT$ the total
@@ -425,9 +424,9 @@ and hence only two differential equations and two linear constraints.
 
 ## Minimum Information
 
-### MIRIAM, Minimum Information Required in the Annotation of Models
+### Minimum Information Required in the Annotation of Models (MIRIAM)
 
-### MIASE, Minimum Information About a Simulation Experiment
+### Minimum Information About a Simulation Experiment (MIASE)
 
 ## Ontologies
 
@@ -468,51 +467,7 @@ and SBML are today viewed as the main standards for exchanging cellular
 network models. There are however fundamental differences between the
 approaches that CellML and SBML take in the way models are represented.
 
-### CellML
-
-CellML [@LloydCellML2004] represents cellular models using a
-mathematical description similar to equation (@eqGeneral). In addition,
-CellML represents entities using a component based approach where
-relationships between components are represented by connections. In many
-ways CellML represents a literal translation of the mathematical
-equations, except that the relationship between dependent and
-independent species is implied rather then explicit. The literal
-translation of the mathematics however goes much further, in fact the
-representation that CellML uses is very reminiscent of the way an
-engineer might wire up an analog computer to solve the equations (though
-without specifying the integrators). As a result CellML is very general
-and in principal could probably represent any system that has a
-mathematical description (and not just the kind indicated by equation
-(@eqSystem)). CellML is also very precise in that every item in a model is
-defined explicitly. However, the generality and explicit nature of
-CellML also results in increased complexity especially for software
-developers. Another side effect of the increased complexity is that
-models that are represented using CellML tend to be quite large. On
-average, my own analysis of a sample from the CellML repository
-<www.cellml.org/examples/repository/> indicates that each reaction in a
-model requires about 5Kbytes of storage.
-
-Another key aspect of CellML is its provision for metadata support. The
-metadata can be used to provide a context for a model, such as the
-author name, when it was created and what additional documents are
-available for it’s description. CellML uses standard XML based metadata
-containers such as RDF and within RDF the Dublin Core.
-
-The CellML team has amassed a very large suite (hundreds) of models
-which provides many real examples of CellML syntax. This is an extremely
-useful resource for the community.
-
-Owing to the complexity of CellML, one unfortunate side effect is that
-there are very few tools which can read and write CellML. As far as the
-author is aware there are only two third-party tools that can read and
-write CellML, these are VCell [@VCELL] and COR [@COR2003]. The
-CellML team have recently (2004, http://cellml.sourceforge.net/) began
-to provide their own software tools to third-party developers. The delay
-in providing such tools to the community is probably one reason why
-CellML (given it’s complexity) has not proved so popular relative to
-SBML which I will discuss next.
-
-### SBML
+### Systems Biology Markup Language (SBML)
 
 Whereas CellML attempts to be highly comprehensive, SBML was designed to
 meet the immediate needs of the modelling community and is therefore
@@ -609,15 +564,61 @@ storage of flux balance models. The proposed format is very similar to
 SBML but has the additional feature of storing the flux balance
 objective function.
 
-### MML
+### CellML
+
+CellML [@LloydCellML2004] represents cellular models using a
+mathematical description similar to equation (@eqGeneral). In addition,
+CellML represents entities using a component based approach where
+relationships between components are represented by connections. In many
+ways CellML represents a literal translation of the mathematical
+equations, except that the relationship between dependent and
+independent species is implied rather then explicit. The literal
+translation of the mathematics however goes much further, in fact the
+representation that CellML uses is very reminiscent of the way an
+engineer might wire up an analog computer to solve the equations (though
+without specifying the integrators). As a result CellML is very general
+and in principal could probably represent any system that has a
+mathematical description (and not just the kind indicated by equation
+(@eqSystem)). CellML is also very precise in that every item in a model is
+defined explicitly. However, the generality and explicit nature of
+CellML also results in increased complexity especially for software
+developers. Another side effect of the increased complexity is that
+models that are represented using CellML tend to be quite large. On
+average, my own analysis of a sample from the CellML repository
+<www.cellml.org/examples/repository/> indicates that each reaction in a
+model requires about 5Kbytes of storage.
+
+Another key aspect of CellML is its provision for metadata support. The
+metadata can be used to provide a context for a model, such as the
+author name, when it was created and what additional documents are
+available for it’s description. CellML uses standard XML based metadata
+containers such as RDF and within RDF the Dublin Core.
+
+The CellML team has amassed a very large suite (hundreds) of models
+which provides many real examples of CellML syntax. This is an extremely
+useful resource for the community.
+
+Owing to the complexity of CellML, one unfortunate side effect is that
+there are very few tools which can read and write CellML. As far as the
+author is aware there are only two third-party tools that can read and
+write CellML, these are VCell [@VCELL] and COR [@COR2003]. The
+CellML team have recently (2004, http://cellml.sourceforge.net/) began
+to provide their own software tools to third-party developers. The delay
+in providing such tools to the community is probably one reason why
+CellML (given it’s complexity) has not proved so popular relative to
+SBML which I will discuss next.
+
+### Mathematical Modeling Language (MML)
+
+MML is a text-based format that is the primary form of model representations in the JSim platform. MML models are 
 
 ### NeuroML
 
 ## Simulation
 
-### SED-ML
+### Simulation Experiment Description Markup Language (SED-ML)
 
-### SBRML
+### Systems Biology Results Markup Language (SBRML)
 
 ## Other Standards
 
@@ -749,7 +750,7 @@ ability to deliver models in different computationally ready formats.
 
 ### JWS Online
 
-### PAYAO
+### Payao
 
 
 ## Future Considerations

@@ -1,11 +1,19 @@
 #!/bin/bash
 echo Making book chapter 
 mkdir -p chapter
-pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc --mathjax -s -o ./chapter/chapter.html
-pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -H chapterHeader.tex -o ./chapter/chapter.pdf
-pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -s -S -H chapterHeader.tex -o ./chapter/chapter.tex 
+pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -N --mathjax -s -o ./chapter/chapter.html
+pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -N -s -S -H chapterHeader.tex -o ./chapter/chapter.tex 
+pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -N -H chapterHeader.tex -o ./chapter/chapter.pdf
 
 : <<'END'
+# Make pdf with latex
+cp -r images chapter
+cd chapter
+latex chapter.tex
+pdflatex chapter
+cd ..
+
+
 pandoc test.txt --biblatex --biblio test.bib --csl chicago-author-date.csl -o ./test/test.pdf
 pandoc --biblatex -s -S test.txt  --bibliography=test.bib --csl chicago-author-date.csl -o ./test/test.tex
 cp test.bib test/test.bib
