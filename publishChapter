@@ -2,7 +2,7 @@
 echo Making book chapter 
 mkdir -p chapter
 pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -N --mathjax -s -o ./chapter/chapter.html
-pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -N -s -S -H chapterHeader.tex -o ./chapter/chapter.tex 
+pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc --biblatex -N -s -S -H chapterHeader.tex -o ./chapter/chapter.tex 
 pandoc chapter.txt --biblio bib/refs.bib --csl csl/chicago-author-date.csl --toc -N -H chapterHeader.tex -o ./chapter/chapter.pdf
 
 : <<'END'
