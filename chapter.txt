@@ -610,11 +610,21 @@ SBML which I will discuss next.
 
 ### Mathematical Modeling Language (MML)
 
-MML is a text-based format that is the primary form of model representations in the JSim platform. MML models are 
+MML is a text-based format that is the primary form of model representations in the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML, MML uses its own a C-styled language for model declaration. MML models are often expressed generally in terms of mathematical equations -- any mixture of ordinary and partial differential equations, implicit equations, integrations, discrete events, and even external programming code, such as Java, C, or MATLAB. One feature that sets MML apart from other model languages is its awareness of physical units when run through JSim's MML compiler [@chizeck2009]. 
 
 ### NeuroML
 
+Paralleling efforts in SBML and CellML in molecular pathway and cell physiology modeling, NeuroML provides a common data format for defining and exchanging descriptions of neuronal cell networks [@goddard:2001]. Level 1 (MorphML), Level 2 (ChannelML), and Level 3 (NetworkML) describe neuronal systems to different levels of biological granularity. 
+
+A number of software of packages are written to work with NeuroML,  NEURON, GENESIS, MOOSE, NEST, and PSICS 
+
+A recent comparison of the  (including the reconstruction of 3D structure )compared simulators [@gleeson2010]
+
+Furthermore, in the future there may be further merging of standards. There are recent efforts to convert NeuroML into SBML, which would allow NeuroML models and modelers access to the vast library of SBML compliant software tools [@keating2012encoding].
+
 ## Simulation
+
+The share and reuse of biological models are primary challenges in the field of computational biology. While the previous discussed model exchange formats address issues of reproducing the structural components of the model, there are still missing elements in the computational procedure to unambiguously generate or reproduce relevant simulation results. MIRAIM does not require that these relevant simulation results, nor the process of obtaining them how to obtain them. Thus, it is crucial to also provide 
 
 ### Simulation Experiment Description Markup Language (SED-ML)
 
@@ -929,6 +939,12 @@ written in many different languages.
 ### SBW
 
 ### CycSim
+
+### Web Applications
+
+#### `snap`
+
+#### SBML to MATLAB Translator
 
 ## Commercial
 
