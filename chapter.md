@@ -411,11 +411,9 @@ B + C $\rightarrow$ D has the conservation, $B - C =\mbox{constant}$.
 
 # Standards
 
-A standard is defined as a uniform set of specifications for some or all aspects of an activity or product that encourages cooperation and interoperation. Ideally, it should be clearly and unambiguously defined and as easy as possible to interpret and implement. In the modern world, standards have been applied to everything from light bulbs, PDFs (portable document formats), railroad track gauges and video formats to mobile phones, pharmaceutical purity and even bits of bathroom plumbing.
+A standard is defined as a uniform set of specifications for some or all aspects of an activity or product that encourages cooperation and interoperation. Ideally, it should be clearly and unambiguously defined and as easy as possible to interpret and implement. In the modern world, standards have been applied to everything from light bulbs, PDFs (portable document formats), railroad track gauges and video formats to mobile phones, pharmaceutical purity and even bits of bathroom plumbing. In the realm of systems biology, desire to facilitate interoperability and reuse computational models and data was the the impetus for developing standard electronic annotations and representations. 
 
-In the biological realm, the impetus for the current wave of data-reporting standards has primarily come from those interested in exploiting meta analysis and cross-comparisons of large data sets to provide new insights and guide new experimental directions. Ultimately, it is hoped that harmonization of data annotation will facilitate interoperability between genomic, proteomic and metabolomic data sources, enabling the modeling of comprehensive interaction networks and the elucidation of emergent system-wide properties.
-
-The discussion 
+Standards development for [@brazma2001minimum]
 
 One group of researchers that has been particularly forward-thinking in standards development is the DNA microarray community. In the early years of array technology, researchers struggled to harmonize the output of different platforms, identify the ancillary information needed to interpret results and even define the necessary data to enable reproduction of results. As a response, the Microarray Gene Expression Data Society (MGED) drew up the Minimum Information About a Microarray Experiment (MIAME) specification (Nat. Genet. 29, 365–371, 2001), which in many respects has become the prototype for subsequent data-reporting guidelines in biology.
 
