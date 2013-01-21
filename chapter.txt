@@ -3,7 +3,13 @@
   Herbert Sauro[^herbertInfo]
 
 [^stanleyInfo]: stanleyg@uw.edu
+  University of Washington
+  Department of Bioengineering
+  Seattle, WA USA
 [^herbertInfo]: hsauro@uw.edu
+  University of Washington
+  Department of Bioengineering
+  Seattle, WA USA
 
 \newcommand{\bgamma}{\mbox{\boldmath $\Gamma$}}
 \newcommand{\bL}{\mbox{\boldmath $L$}}
@@ -404,6 +410,30 @@ B + C $\rightarrow$ D has the conservation, $B - C =\mbox{constant}$.
 #### Sage Bionetworks
 
 # Standards
+
+A standard is defined as a uniform set of specifications for some or all aspects of an activity or product that encourages cooperation and interoperation. Ideally, it should be clearly and unambiguously defined and as easy as possible to interpret and implement. In the modern world, standards have been applied to everything from light bulbs, PDFs (portable document formats), railroad track gauges and video formats to mobile phones, pharmaceutical purity and even bits of bathroom plumbing.
+
+In the biological realm, the impetus for the current wave of data-reporting standards has primarily come from those interested in exploiting meta analysis and cross-comparisons of large data sets to provide new insights and guide new experimental directions. Ultimately, it is hoped that harmonization of data annotation will facilitate interoperability between genomic, proteomic and metabolomic data sources, enabling the modeling of comprehensive interaction networks and the elucidation of emergent system-wide properties.
+
+The discussion 
+
+One group of researchers that has been particularly forward-thinking in standards development is the DNA microarray community. In the early years of array technology, researchers struggled to harmonize the output of different platforms, identify the ancillary information needed to interpret results and even define the necessary data to enable reproduction of results. As a response, the Microarray Gene Expression Data Society (MGED) drew up the Minimum Information About a Microarray Experiment (MIAME) specification (Nat. Genet. 29, 365–371, 2001), which in many respects has become the prototype for subsequent data-reporting guidelines in biology.
+
+MIAME is now being joined by a plethora of 'minimum information' reporting standards initiatives that cover just about every large-scale technology under the biological sun. There is the Proteomics Standards Initiative's MIAPE (Minimal Information About a Proteomics Experiment), MGED's MIS-FISHIE (Minimal Information Specification for In Situ Hybridization and Immunohistochemistry Experiments), not to mention similar specifications for RNA interference (RNAi) experiments (MIARE), metabolomics studies (SMRS; ArMET), flow cytometry approaches (MI-FACE) and even cellular (MIACA) and enzyme activity assays (STRENDA).
+
+[@naturebiotechnology2006]
+
+One of the most daunting aspects of using genomic technologies—including microarray, proteomic, metabolomic, and other approaches—is the sheer quantity of data that they produce. With thousands of biologically relevant molecules surveyed across (increasingly) large numbers of samples, interpretation of the data requires the use of computational approaches. And while many researchers thought that storing the data could simply build on our experiences with genome sequencing, it quickly became apparent that if one was to make sense of the results from any analysis, there was a need to store much more complex ancillary data than would be necessary for genome sequence. In 1999, as microarrays were establishing themselves as a truly viable technology, the Microarray Gene Expression Data Society (MGED; http://www.mged.org) arranged to define the critical information necessary to effectively analyze a microarray experiment and to describe a means of encoding that information. Through a series of discussions between interested parties, public presentations, and working group meetings, what emerged were the Minimal Information About a Microarray Experiment (MIAME) (Brazma et al, 2001; Ball et al, 2002, 2004) and MAGE-ML (Spellman et al, 2002), an XML-based markup language used for describing a microarray experiment.
+
+The early success of MIAME and its widespread adoption by scientific journals also exposed some of its weaknesses, including the need to develop domain-specific extensions of MIAME to capture information about the experimental design and sample characteristics necessary for interpreting data coming, for example, from toxicology experiments (MIAME-Tox; Sansone et al, 2005) and extensions to other domains such as in situ hybridizations (MISFISHIE, the Minimum Information Specification For In Situ Hybridization and Immunohistochemistry Experiments; http://scgap.systemsbiology.net/sta
+ndards/misfishie). In fact, the MGED subgroup on Reporting Structure for Biological Investigations Working Groups (RSBI WGs; http://www.mged.org/Workgroups/rsbi/
+rsbi.html) is looking at ways to extend MIAME to a wide range of other areas.
+
+The principles underlying MIAME, particularly the need to clearly describe an experiment and report the variables necessary for data analysis, have resonated beyond the microarray community. For example, the metabolomics/metabonomics community/communities (I am not going to decide which is right, and by not doing so invite the scorn of all rather than one group or the other) are moving toward standardization and reporting of metabolic analyses (Lindon et al, 2005) and practitioners of proteomics have at least two XML-based standards for reporting proteomics from which to choose, HUP-ML (Hermjakob et al, 2004) and AGML (Stanislaus et al, 2004), as well as guidance through the Minimum Information About a Proteomics Experiment (MIAPE) (Orchard et al, 2004).
+
+A recent paper by Novère et al extends the reporting standards notion beyond the experimental world, to the description of quantitative models of biochemical systems and attempts to reconcile some of the various standards that have evolved. The Minimum Information Requested In the Annotation of biochemical Models (MIRIAM) standard proposed by this group is an attempt to bring together CellML (Lloyd et al, 2004) and SBML (Finney and Hucka, 2003; Hucka et al, 2003) and to gain acceptance from databases that archive models to provide access to these in a standard machine-readable format. This is an ambitious, but important, goal as systems biology hopes to produce quantitative models of cells and cellular processes. However, unless these models, which can become quite complex, are easily testable and comparable, they will ultimately be of little value. This is an important first step in helping to establish modeling and the value it will bring to developing a predictive biology, but the ultimate impact will depend on how widely the standard is adopted and how many software tools are developed to facilitate its use.
+
+[@quackenbush2006standardizing]
 
 To fully understand the context, methods, data and conclusions that pertain to an experiment, one must have access to a range of background information. However, the current diversity of experimental designs and analytical techniques complicates the discovery and evaluation of experimental data; furthermore, the increasing rate of production of those data compounds the problem. Community opinion increasingly favors that a regularized set of the available metadata ('data about the data') pertaining to an experiment1, 2 be associated with the results, making explicit both the biological and methodological contexts. Many journals and funding agencies now require that authors reporting microarray-based transcriptomics experiments comply with the Minimum Information about a Microarray Experiment (MIAME) checklist3 as a prerequisite for publication4, 5, 6, 7. Similarly, minimum information guidelines for reporting proteomics experiments and describing systems biology models are gaining broader support in their respective database communities8, 9; and progress is being made toward the standardization of the reporting of clinical trials in the medical literature10. Such minimum information checklists promote transparency in experimental reporting, enhance accessibility to data and support effective quality assessment, increasing the general value of a body of work (and the competitiveness of the originators).
 
