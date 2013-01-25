@@ -699,6 +699,32 @@ rules which can be used to represent constraints, derived values and general
 math which for one reason or another cannot be transformed into a chemical
 scheme. Like CellML, the dependent and independent species are implied.
 
+The development of SBML is stratified in order to organize architectural changes
+and versioning. Major editions of SBML are termed Levels and represent
+substantial changes to the composition and structure of the language. Models
+defined in lower Levels of SBML can always be represented in higher Levels,
+though some translation may be necessary. The converse (from higher Level to
+lower Level) is sometimes also possible, though not guaranteed. The Levels
+remain distinct; a valid SBML Level 1 document is not a valid SBML Level 2
+document. Minor revisions of SBML are termed Versions and constitute changes
+within a level to correct, adjust, and refine language features. Finally,
+specification documents inevitably require minor editorial changes as its users
+discover errors and ambiguities. Such problems are corrected in new Releases of
+a given SBML specification.
+
+The latest generation of SBML, which is Level 3, is modular in the sense of
+having a defined core set of features and optional packages adding features on
+top of the core. This modular approach means that models can declare which
+feature-sets they use, and likewise, software tools can declare which packages
+they support. It also means that the development of SBML Level 3 can proceed in
+a modular fashion. The development process for Level 3 is designed around this
+concept. SBML Level 3 package development is today an ongoing activity, with
+packages being created to extend SBML in many areas that its core functionality
+does not directly support. Examples include models whose species have structure
+and/or state variables, models with spatially nonhomogeneous compartments and
+spatially dependent processes, and models in which species and processes refer
+to qualitative entities and processes rather than quantitative ones.
+
 #### SBML Development Tools
 
 Early on in the development of SBML, the original authors decided to provide
@@ -931,11 +957,12 @@ called cellDesigner [@CellDesigner2003] implements this proposed format.
 #### JDesigner
 
 One of the first visualization tools, JDesigner [@Sauro:Omics] also implements a
-traditional way to depict networks (see Figure 3) using a pictorial
-representation to indicate substances and reactions. JDesigner also employs
-Bezier curves to represent arcs in an attempt to make the diagrams similar to
-the notation found in many molecular biology text books. CellDesigner and
-JDesigner connect to the Systems Biology Workbench (SBW) for simulation support.
+traditional way to depict networks (see Figure \ref{Figure:jdesigner}) using a
+pictorial representation to indicate substances and reactions. JDesigner also
+employs Bezier curves to represent arcs in an attempt to make the diagrams
+similar to the notation found in many molecular biology text books. CellDesigner
+and JDesigner connect to the Systems Biology Workbench (SBW) for simulation
+support.
 
 ![Example of JDesigner's visual
 format\label{Figure:jdesigner}](images/JDesigner1.eps)
@@ -996,15 +1023,40 @@ modulatory arcs, and node decorations.
 
 [@le2009systems]
 
-The Biological Connection Markup Language (BCML) is a format to describe,
-annotate and visualize pathways. BCML is able to store multiple information,
-permitting a selective view of the pathway as it exists and/or behave in
-specific organisms, tissues and cells. Furthermore, BCML can be automatically
-converted into data formats suitable for analysis and into a fully SBGN-
-compliant graphical representation, making it an important tool that can be used
-by both computational biologists and wet lab scientists.
+
+SBGN-ML and libSBGN
+
+
+Efficient integration of the SBGN standard into the research cycle requires adoption by visualization and modeling software. Encouragingly, a growing number of pathway tools (see http://sbgn.org/SBGN_Software) offer some form of SBGN compatibility. However, current software implementations of SBGN are often incomplete and sometimes incorrect. This is not surprising: as SBGN covers a broad spectrum of biological phenomena, complete and accurate implementation of the full SBGN specifications represents a complex, error-prone and time-consuming task for individual tool developers. This development step could be simplified, and redundant implementation efforts avoided, by accurately translating the full SBGN specifications into a single software library, available freely for any tool developer to reuse in their own project. Moreover, the maps produced by any given tool usually cannot be reused in another tool, because SBGN only defines how biological information should be visualized, but not how the maps should be stored electronically. Related community standards for exchanging pathway knowledge, namely BioPAX (Demir et al., 2010) and SBML (Hucka et al., 2003), have proved insufficient for this role (more on this topic in Section 4). Therefore, we observed a second need, for a dedicated, standardized SBGN file format.
+
+Following these observations, we started a community effort with two goals: to encourage the adoption of SBGN by facilitating its implementation in pathway tools, and to increase interoperability between SBGN-compatible software. This has resulted in a file format called SBGN-ML and a software library called LibSBGN. Each of these two components will be explained separately in the next sections.
+
+SBGN-ML is a dedicated lightweight XML-based file format describing the overall geometry of SBGN maps, while also preserving their underlying biological meaning. SBGN-ML is designed to fulfill two basic requirements:
+
+easy to draw (as a machine) and read (as a human) and
+
+easy to interpret (as a machine).
+
+The first set of requirement deals with the graphical aspect of SBGN. It means it should be easy to render a SBGN-ML file to the screen. Therefore, the format stores all necessary information, such as coordinates, to draw the map faithfully, so that rendering tools do not have to perform any complex calculations. Incidentally, this implies the layout of the whole SBGN map has to be expressed explicitly: the size and position of each graphical object and the path of each arc. Various efforts have shown that generating a layout for heterogeneous biological pathways is a computationally hard problem, so a good layout is always worth preserving, if only from a computational perspective. Besides, the choice of a specific layout by the author of a map is often driven by concerns related to aesthetics, readability or to reinforce ideas of chronology or proximity. This information might be lost with automated layouts. Layout conventions predate SBGN, and are not part of any standard, but they nonetheless play a large role in making it easier for other human beings to understand the biological system being described.
+
+The second requirement encompasses two perpendicular characteristics of SBGN as a language: semantics and syntax. Beyond the picture itself, the format should capture the biological meaning of an SBGN map. Therefore, SBGN-ML specifies the nature of graphical elements (glyphs), following the SBGN terminology (e.g., macromolecule, process, etc.). For example, we can distinguish between a ‘logic arc’ and a ‘consumption arc’ even though they have the same visual appearance. Supporting tools refer to this terminology and draw the glyph according to the SBGN specifications. In terms of syntax, SBGN-ML encodes information on relationships between the various SBGN objects: the glyphs at both ends of an arc, the components of a complex, the members of a compartment and the ‘decorations’ (such as unit of information and state variable) belonging to specific glyphs and arcs. This semantic and syntactic information is essential to a number of automated tasks, such as map validation, or network analysis (as the topology of the underlying biological network can be inferred from the various relationships encoded by the format).
 
 [@le2010report]
+
+A software library called LibSBGN complements the file format. It consists of two parallel implementations in Java and C++. The libraries share the same object model, so that algorithms operating on it can be easily translated to different programming languages.
+
+The primary goal of LibSBGN is to simplify the work for developers of existing pathway tools. To reach this goal we followed three design principles. First, we avoided tool-specific implementation details. Implementation artifacts that are specific for one bioinformatics tool would impose difficulties for adoption by others. We sought input from several tool developers into the LibSBGN effort early on.
+
+Second, we do not want to force the use of a single rendering implementation (meaning the software routine that translates from memory objects to screen or graphic format). Early in the development of LibSBGN, it became clear that for most pathway drawing tools, the rendering engine is an integral part that is not easily replaced by a common library. The typical usage scenario is therefore to let LibSBGN handle input and output, but to translate to the application's own object model, and display using the application's own rendering engine. Enforcing a common rendering library would hamper adoption of LibSBGN. We instead opted to build a render comparison pipeline to ensure consistency between various renderers (this pipeline is described in more detail in Section 3.2).
+
+Third, we wish to provide optimal libraries for each development environment. For both the C++ and Java versions, code is automatically generated based on the XML Schema definition (XSD). The method of generating code from XSD has reduced the effort needed to keep the Java and C++ versions synchronized during development. The generated Java code plus helper classes form a pure Java library. The alternative possibility, to create a single C++ library and a Java wrapper around that, is not preferable because it complicates multi-platform installation and testing. Our experience with a related project, LibSBML (Bornstein et al., 2008), is that the community has a need for a pure Java library in spite of existing Java bindings for C++, which has led to the development of the pure Java JSBML (Dräger et al., 2011) as an alternative. Although both LibSBML and JSBML are successful projects, the maintenance of two similar projects in different languages is costly in terms of developer time. By generating native libraries for both environments automatically, we hope to avoid that extra cost.
+
+[@van2012software]
+
+
+
+
+
 
 ### Human Readable Formats
 
@@ -1049,7 +1101,27 @@ utilities.
 
 [@Pysces2004]
 
+
 #### SBML Shorthand
+
+
+SBML-shorthand provides a shorthand notation for SBML that is much easier for humans to read and write than full SBML. The full specification for SBML-shorthand and a conversion tool is available at the authors' website.
+
+The library also includes the SBML-shorthand to SBML and SBML to SBML-shorthand Python conversion tools. These are useful for rapidly building and editing models destined for SBML encoding. They are particularly well-suited to building SBML models designed for discrete stochastic simulation.
+
+It isn't really meant as a complete alternative to GUI model-building tools. It is just a useful tool for rapid building of essential model structure. Once the basics are defined, you can translate to SBML and load up in the GUI tool of your choice.
+
+[@gillespie2006tools]
+
+
+#### Antimony
+
+Antimony is unique in that it combines the relative simplicity of languages like Jarnac, PySCeS, and SBML-shorthand with the modularity of languages like little-b and ProMoT's MDL, without requiring that the modeler learn a programming language like Python or Lisp. GEC does the same, though it focuses on one particular problem domain. The libAntimony library will allow Antimony-formatted files to be read by other software packages like PySCeS, allowing them to benefit from Antimony's modularity without having to implement it directly. The Antimony/SBML converters further extend Antimony's usefulness by allowing users to convert their modules into a ‘flattened’ form for use in their SBML-compliant software.
+
+A cross-platform library ‘libAntimony’ is available to parse and convert Antimony-formatted text files, written in Bison and C++ with language bindings for C, and supported on Linux, Windows, and MacOS X. It uses libSBML (Bornstein et al., 2008) to convert modules to and from the SBML format. Stand-alone programs are also provided that translate SBML models to Antimony, and translate ‘flattened’ Antimony models to SBML.
+
+[@smith2009antimony]
+
 
 ### High-throughput Data
 
@@ -1072,6 +1144,8 @@ becomes more important, it is very likely that the utility of high-throughput
 data will become much more significant. When this happens a proposed standard,
 called BioPAX (<www.biopax.org>) will most likely contribute.
 
+#### BioPax
+
 BioPAX (Biological Pathway Exchange) is another proposed standard based on XML.
 BioPAX aims to integrate many of the incompatible pathway related databases
 (such as BioCYC, BIND, WIT, aMAZE, KEGG and others) so that data from any one of
@@ -1080,6 +1154,12 @@ extract data from many of the pathway databases and integrate the data directly
 into SBML (or CellML) via BioPAX. The BioPAX group proposes to embed BioPAX
 elements onto SBML or cellML for unambiguous identification of substances
 (metabolites, enzymes) and reactions.
+
+Biological Pathway Exchange (BioPAX) is a standard language to represent biological pathways at the molecular and cellular level and to facilitate the exchange of pathway data. The rapid growth of the volume of pathway data has spurred the development of databases and computational tools to aid interpretation; however, use of these data is hampered by the current fragmentation of pathway information across many databases with incompatible formats. BioPAX, which was created through a community process, solves this problem by making pathway data substantially easier to collect, index, interpret and share. BioPAX can represent metabolic and signaling pathways, molecular and genetic interactions and gene regulation networks. Using BioPAX, millions of interactions, organized into thousands of pathways, from many organisms are available from a growing number of databases. This large amount of pathway data in a computable form will support visualization, analysis and biological discovery.
+
+
+[@demir2010biopax]
+[@stromback2005representations]
 
 ## Model Databases
 
@@ -1479,6 +1559,19 @@ et al., 2009) compliant CellDesigner (Funahashi et al., 2008) graphical
 notation. Curation data on Payao can be easily reintegrated into the original
 model via CellDesigner.
 
+### ArrayExpress
+
+ArrayExpress is a public database for high throughput functional genomics data. ArrayExpress consists of two parts—the ArrayExpress Repository, which is a MIAME supportive public archive of microarray data, and the ArrayExpress Data Warehouse, which is a database of gene expression profiles selected from the repository and consistently re-annotated. Archived experiments can be queried by experiment attributes, such as keywords, species, array platform, authors, journals or accession numbers. Gene expression profiles can be queried by gene names and properties, such as Gene Ontology terms and gene expression profiles can be visualized. ArrayExpress is a rapidly growing database, currently it contains data from >50 000 hybridizations and >1 500 000 individual expression profiles. ArrayExpress supports community standards, including MIAME, MAGE-ML and more recently the proposal for a spreadsheet based data exchange format: MAGE-TAB. Availability: www.ebi.ac.uk/arrayexpress.
+
+The ArrayExpress Archive is a database of functional genomics experiments including gene expression where you can query and download data collected to MIAME and MINSEQE standards. Gene Expression Atlas contains a subset of curated and re-annotated Archive data which can be queried for individual gene expression under different biological conditions across experiments.
+
+(<http://www.ebi.ac.uk/arrayexpress/>)
+
+
+[@parkinson2007arrayexpress]
+
+[@rayner2006simple]
+
 2 PLATFORM
 
 Payao consists of the server application, client user interface and database.
@@ -1545,7 +1638,7 @@ function serves as the discussion space.
 
 [@matsuoka2010payao]
 
-## Future Considerations
+## Conclusions
 
 The development of standards for systems biology is still at a very early stage.
 I have not for example considered the problem of standardizing the formats for
@@ -1567,6 +1660,9 @@ often vaunted as a desirable technology because it is easily parsed, however,
 parsing and syntax checking is a very easy task to implement, the real
 difficulty comes when semantic checks are required and current XML technology
 offer no assistance in this task.
+
+
+
 
 # Platforms
 
@@ -1680,7 +1776,9 @@ point, complex numbers, strings, arrays and lists.  Currently the available
 modules include, simulators, model editors, SBML manipulation, math library,
 frequency analyzer, bifurcation discover and analysis modules, structural
 analysis modules and others. Further details to be found at
-<www.sys-bio.org>\label{Figure:sbw}](images/sbwFig.eps)
+<www.sys-bio.org>
+
+\label{Figure:sbw}](images/sbwFig.eps)
 
 An SBW module (the client) provides one or more interfaces or services.  Each
 service provides one or more methods. Modules register the services they provide
