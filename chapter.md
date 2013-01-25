@@ -1,5 +1,5 @@
 % Standards, Platforms, and Applications
-% Stanley Gu [^stanleyInfo]
+% 	Stanley Gu [^stanleyInfo]
 	Herbert Sauro[^herbertInfo]
 
 [^stanleyInfo]: stanleyg@uw.edu
@@ -417,7 +417,7 @@ enable reproduction of results. Through discussions between interested members
 of the community, public presentations, and workshop meetings, the Microarray
 Gene Expression Data Society (MGED) outlined the Minimum Information About a
 Microarray Experiment (MIAME) specification and Microarray Gene Expression
-Markup Language (MAGE-ML) [@brazma2001minimum], [@spellman2002design]. In many
+Markup Language (MAGE-ML) [@brazma2001minimum;@spellman2002design]. In many
 ways, this precedent has become the prototype for subsequent data annotation
 guidelines in systems biology [@quackenbush2006standardizing].
 
@@ -807,7 +807,8 @@ additional feature of storing the flux balance objective function.
 ### CellML
 
 CellML [@LloydCellML2004] represents cellular models using a mathematical
-description similar to equation (@eqGeneral). In addition, CellML represents
+description similar to equation (@eqGeneral). CellML also has provisions for
+metadata annotations to allow MIRIAM compliance. In addition, CellML represents
 entities using a component based approach where relationships between components
 are represented by connections. In many ways CellML represents a literal
 translation of the mathematical equations, except that the relationship between
@@ -824,16 +825,6 @@ developers. Another side effect of the increased complexity is that models that
 are represented using CellML tend to be quite large. On average, my own analysis
 of a sample from the CellML repository (<www.cellml.org/examples/repository/>)
 indicates that each reaction in a model requires about 5 kilobytes of storage.
-
-Another key aspect of CellML is its provision for metadata support. The metadata
-can be used to provide a context for a model, such as the author name, when it
-was created and what additional documents are available for its description.
-CellML uses standard XML based metadata containers such as RDF and within RDF
-the Dublin Core.
-
-The CellML team has amassed a very large suite (hundreds) of models which
-provides many real examples of CellML syntax. This is an extremely useful
-resource for the community [@beard2009cellml].
 
 Owing to the complexity of CellML, one unfortunate side effect is that there are
 very few tools which can read and write CellML. As far as the author is aware
@@ -1131,7 +1122,7 @@ need to consider data that is used to build the models. Most models are built by
 laboriously searching the literature and carrying out additional experiments as
 necessary to fill in gaps in the data. This has proved to be an extremely
 effective method to building reliable models [@TysonNatReview2001;
-@TysonBioessay2002].  However, Many inexperienced researches in Systems Biology
+@TysonBioessay2002].  However, Many inexperienced researcher in Systems Biology
 feel that high-throughput data is the answer to the needs of the modeling
 community. Unfortunately much of the high-throughput data that is currently
 available is not appropriate. Much of the high-throughput data is very noisy and
@@ -1155,7 +1146,20 @@ into SBML (or CellML) via BioPAX. The BioPAX group proposes to embed BioPAX
 elements onto SBML or cellML for unambiguous identification of substances
 (metabolites, enzymes) and reactions.
 
-Biological Pathway Exchange (BioPAX) is a standard language to represent biological pathways at the molecular and cellular level and to facilitate the exchange of pathway data. The rapid growth of the volume of pathway data has spurred the development of databases and computational tools to aid interpretation; however, use of these data is hampered by the current fragmentation of pathway information across many databases with incompatible formats. BioPAX, which was created through a community process, solves this problem by making pathway data substantially easier to collect, index, interpret and share. BioPAX can represent metabolic and signaling pathways, molecular and genetic interactions and gene regulation networks. Using BioPAX, millions of interactions, organized into thousands of pathways, from many organisms are available from a growing number of databases. This large amount of pathway data in a computable form will support visualization, analysis and biological discovery.
+Biological Pathway Exchange (BioPAX) is a standard language to represent
+biological pathways at the molecular and cellular level and to facilitate the
+exchange of pathway data. The rapid growth of the volume of pathway data has
+spurred the development of databases and computational tools to aid
+interpretation; however, use of these data is hampered by the current
+fragmentation of pathway information across many databases with incompatible
+formats. BioPAX, which was created through a community process, solves this
+problem by making pathway data substantially easier to collect, index, interpret
+and share. BioPAX can represent metabolic and signaling pathways, molecular and
+genetic interactions and gene regulation networks. Using BioPAX, millions of
+interactions, organized into thousands of pathways, from many organisms are
+available from a growing number of databases. This large amount of pathway data
+in a computable form will support visualization, analysis and biological
+discovery.
 
 
 [@demir2010biopax]
@@ -1175,6 +1179,8 @@ will eliminate many of the errors introduced into the model during the
 publication process.
 
 ### BioModels
+
+923 models, about half curated. 
 
 BioModels Database (<http://www.ebi.ac.uk/biomodels/>), part of the
 international initiative BioModels.net, provides access to published, peer-
@@ -1286,19 +1292,15 @@ effective search strategies.
 
 ### CellML Repository
 
-The CellML Model Repository (<http://www.cellml.org/models>) is a similar effort,
-containing biochemical pathway models that have been described in peer-review
-publications, expressed in SBML. Similarly, JWS Online
-(Olivier and Snoep, 2004) is a repository of kinetic models describing
-biological systems, and ModelDB (Hines et al., 2004) is a database which stores
-published models in the field of computational neuroscience.
-
-CellML (Lloyd et al., 2004) and the CellML Model Repository are part of the IUPS
-Physiome Project (Hunter and Nielsen, 2005) effort to create a virtual
-physiological human. The explicit representation of modularity, together with
-the flexible nature of the CellML language which allows the description of a
-diverse range of cellular and subcellular systems, are two essential features of
-CellML with regards to its role in the Physiome Project.
+The CellML Model Repository (<http://www.cellml.org/models>) is a similar
+effort, which contains hundreds of biochemical pathway models that have been
+described in peer- review publications.[@beard2009cellml]. CellML and the CellML
+Model Repository are part of the IUPS Physiome Project effort to create a
+virtual physiological human [@hunter2005integration]. The explicit
+representation of modularity, together with the flexible nature of the CellML
+language which allows the description of a diverse range of cellular and
+subcellular systems, are two essential features of CellML with regards to its
+role in the Physiome Project.
 
 Initially the CellML Model Repository started out as a set of examples to
 illustrate how the language could be applied to describe various biological
@@ -1311,59 +1313,14 @@ processes taken from the peer-reviewed literature. In contrast with other
 databases, such as BioModels, JWS and ModelDB, which focus on specific areas
 such as systems biology pathway models or computational neuroscience, the CellML
 Model Repository contains models describing a wide range of biological
-processes, including: signal transduction pathways, metabolic pathways, elec-
-trophysiology, immunology, the cell cycle, muscle contraction and mechanical
+processes, including: signal transduction pathways, metabolic pathways,
+electrophysiology, immunology, the cell cycle, muscle contraction and mechanical
 models and constitutive laws. This wide scope exemplifies CellML's ability to
 describe much of the biochemistry, electrophysiology and mechanics of the
 intracellular environment. Lumped parameter models dealing with systems
 physiology (e.g. blood pressure control, fluid retention, electrolyte balance,
-endocrine function, etc.) are also within the scope of CellML.
-
-Currently, of the 330 models in the CellML Model Repository, approximately half
-have been curated to some degree. A star system signifies the curation status of
-a CellML model. No stars indicate the model has yet to be curated (level 0); one
-star denotes the CellML model is consistent with the published paper (level 1);
-two stars imply the CellML model has been checked for typographical errors, unit
-consistency, completeness (i.e. there are no missing parameters or equations),
-overconstraints and finally, and arguably most importantly, the CellML model is
-capable of reproducing the published results (level 2). If a CellML model has
-three stars it is known to satisfy physical constraints such as conservation of
-mass, momentum, charge, etc. At this level the curation is conducted by a domain
-expert (level 3).
-
-From experience, we have found that levels 1 and 2 can be mutually exclusive.
-Frequently, the errors introduced into the model during the publication process
-require us to correct minor typographical errors or unit inconsistencies, and/or
-contact the original model author to request missing parameter values or
-equations.
-
-The process of model curation involves the following sequence of actions:
-
-The CellML model is loaded into an editing and simulation environment such as
-the Physiome CellML Environment (PCEnv) or Cellular Open Resource (COR). Any
-obvious typographical errors and unit inconsistencies are corrected, which is
-facilitated by a series of error messages and validation prompts generated by
-the software, and the rendering of the MathML equations in an easily readable
-format.
-
-Assuming the model is able to be run, we then compare the simulation output with
-the results in the published paper. This typically involves comparing the
-graphical results with the published figures.
-
-If we cannot get the CellML model to run, or the simulation output disagrees
-with the published results, we then attempt to contact the original model
-author(s) and seek their advice and, where possible, obtain the original model
-code, which may be in a wide range of different programming languages.
-
-We aim to complete the curation of all the models in the CellML repository,
-ideally to the level that they replicate the results in the published paper
-(level 2), however we acknowledge this will not be possible for all models.
-According to the dynamic, growing nature of the CellML Model Repository, we have
-designed it with the concept of community curation in mind, so that groups of
-expert modelers with vested interests in particular models are able to
-collaborate on their curation.
-
-[@lloyd2008cellml]
+endocrine function, etc.) are also within the scope of CellML
+[@lloyd2008cellml].
 
 ### Physiome Repository
 
@@ -1394,7 +1351,7 @@ Workspaces, distributed version control systems and model revision history All
 the files related to a particular model are stored together in PMR2 within a
 defined workspace, which can be regarded as a folder. The implementation of
 workspaces uses a distributed version control system (DVCS) called Mercurial
-(O'Sullivan, 2007). By providing version tracking, this system ensures that
+[@o2007distributed]. By providing version tracking, this system ensures that
 users within a group cannot accidentally overwrite or purge changes of other
 users. Furthermore, each change made to a model, or its associated files, is
 recorded as a single changeset: a time-stamped, informative comment from an
@@ -1411,106 +1368,27 @@ of the workspace with the model and related files they are working on. This
 allows each individual collaborator to work and commit changes to their local
 copy, creating new changesets which may then be shared between themselves, or
 pushed to a centralized repository when their work is ready to be reviewed or
-released.
-
-The access control and presentational layer of PMR2 is managed by Plone (Aspeli,
-2007), a Content Management System. The access control features of Plone allow
-authorized users to manage permissions for other users, such as allowing a user
-to view a private workspace, push changesets, create exposures and update
-workflow states such as expiring exposures.
-
-PMR2 is accessible to the end user over a web interface. Exposure pages in a
-PMR2 based repository can be accessed simply by entering the URL of the
-repository into a web browser. PMR2 has been used to create the CellML Model
-Repository, which currently contains over 500 CellML models and can be viewed at
-http://models.cellml.org/. Modelers will need to use a Mercurial client to
-create local clones of existing workspaces.
-
-[@yu2011physiome]
+released [@yu2011physiome].
 
 ### JWS Online
 
-JWS Online aims to provide a service to the Systems Biology community by 1)
-giving access to a database of curated models of biological systems, and 2)
-allowing the users to run these models in a web browser via an easy to use
-interface, and 3) helping in reviewing of manuscripts containing kinetic models.
-JWS Online is linked to a number or research initiatives: SysMO-DB, The Virtual
-Liver, and UniCellSys, and universities and research institutes: Stellenbosch
-University, Vrije Universiteit Amsterdam, Manchester University and the Centre
-for Plant Integrative Biology. In addition JWS Online is an important component
-of an ambitious research initiative: The Silicon Cell.
-
-JWS Online is a repository of kinetic models, describing biological systems,
-which can be interactively run and interrogated over the Internet. It is
-implemented using a clientserver strategy where the clients, in the form of web
-browser based Java applets, act as a graphical interface to the model servers,
-which perform the required numerical computations. Availability: The JWS Online
-website is publicly accessible at http://jjj.biochem.sun.ac.za/ with mirrors at
-http://www.jjj.bio. vu.nl/ and http://jjj.vbi.vt.edu/ Contact: jls@sun.ac.za
-OVERVIEW Kinetic models are powerful tools for describing and understanding the
-behaviour of complex cellular systems. Since the 1960s and especially in the
-last decade a large number of these models have been constructed and today form
-the basis for projects such as the Silicon Cell, SiC!
-(http://www.siliconcell.net/). However, key problems are often encountered by
-biologists who would like to study these models. For example, no central model
-database exists for kinetic models, making it difcult to nd all the relevant
-information needed to build and study published models. Even when models are
-publicly available they often require a specic software environment to run in.
-This environment typically includes software that might be either operating
-system dependent, expensive to obtain or difficult to set up and maintain. New
-initiatives, such as the one by the System Biology Markup Language (SBML)
-working group (<http://www.sbml.org/>), are beginning to address the problem of
-model interchange by creating a standard language for describing biochemical
-reaction networks. Using SBML, modelers may easily exchange models between
-compatible applications such as Gepasi (Mendes, 1997) or Jarnac (Sauro, 2000).
-Currently, only a limited number of models are available in the SBML format. A
-need, therefore, exists for both a central repository of kinetic models as well
-as a freely accessible, platform-independent and user-friendly modelling
-interface that allows these models to be run using the Internet
-
-On visiting the JWS Online sites, which are freely available from a growing
-number of international locations, the database page contains all the currently
-available online models. These range in type from those built with realistic
-parametersso-called silicon cell models typically obtained from literature, e.g.
-Helfert et al. (2001)to core models useful for teaching purposes. The database
-page also contains links to any relevant bibliographic information and we have
-established a collaboration with the SBML working group to make SBML versions of
-the models in the database available for download. Once requested from the
-database, the model page is displayed, as shown in Figure 1. It consists of two
-main sections: the client applet Figure 1a and its metabolic reaction scheme
-Figure 1b. The applet acts as a graphical interface to the server and three
-types of analyses are available: a time simulation, steady-state analysis and
-metabolic-control analysis. The model parameters may easily be changed by
-setting their values in an input table situated on the left-hand side of the
-applet. The type of analysis to be performed may be selected using the tabbed
-panel on the applets right-hand side. Each analysis type has various suboptions
-that become available on its selection. The time simulation allows either
-selected metabolite concentrations or enzyme rates to be output as required.
-Metabolic control analysis (MCA) is used to study the control properties of the
-system at steady state (Kacser and Burns, 1973). The steady-state solution of
-the system may be calculated as well as various structural properties of the
-system (such as the K and L matrices) (Hofmeyr, 2001), elasticities and control
-coefcients. If the mouse cursor is moved over an enzyme on the reaction scheme,
-the selected steps rate equation is displayed in the lower window (Fig. 1c). All
-results are returned to the applet and displayed individually as shown in Figure
-1d and e.
-
-[@olivier2004web]
+JWS Online (<http://jjj.biochem.sun.ac.za/>) is a repository of kinetic models,
+describing biological systems, which can be interactively run and interrogated
+over the Internet. At the time of this writing, JWS Online contains 131 models,
+downloadable to SBML, while also providing a web browser interface to a
+simulation server [@olivier2004web].
 
 ### Payao
 
-Summary: Payao is a community-based, collaborative web service platform for
-gene-regulatory and biochemical pathway model curation. The system combines Web
-2.0 technologies and online model visualization functions to enable a
-collaborative community to annotate and curate biological models. Payao reads
-the models in Systems Biology Markup Language format, displays them with
+Payao (<http://www.payaologue.org>) is a community-based, collaborative web
+service platform for gene-regulatory and biochemical pathway model curation. The
+system combines Web 2.0 technologies and online model visualization functions to
+enable a collaborative community to annotate and curate biological models. Payao
+reads the models in Systems Biology Markup Language format, displays them with
 CellDesigner, a process diagram editor, which complies with the Systems Biology
 Graphical Notation, and provides an interface for model enrichment (adding tags
-and comments to the models) for the access-controlled community members.
-
-Availability and implementation: Freely available for model curation service at
-http://www.payaologue.org. Web site implemented in Seaser Framework 2.0 with
-S2Flex2, MySQL 5.0 and Tomcat 5.5, with all major browsers supported.
+and comments to the models) for the access-controlled community members
+[@matsuoka2010payao].
 
 Creating an extensive model of gene-regulatory and biochemical networks with the
 latest data is a painstaking task. Curation is essential to creating an accurate
@@ -1522,147 +1400,60 @@ Panther Pathways and many pathway editors are available (Bauer-Mehren et al.,
 for modelers and researchers in the community to contribute to the collaborative
 model building and curation process.
 
-WikiPathways (Pico et al., 2008) is an effort for such a collaborative platform
-in the Wiki style. While the Wiki system has its strength in collaborative
-editing and version tracking, it does not provide access control or explicit
-community tagging mechanisms. In a community-driven model enrichment
-environment, it is effective to differentiate privileges to special interest
-group (SIG) members for curation activitiescommenting on existing tags, adding
-tags to models, annotating individual component inside a model and validating
-the annotations. In view of the complexity of biological pathways and the
-expertise of biologists in different areas, a community platform for biology
-requires an exquisite balance of federated resource sharing and quality control
-of information by a SIG of experts in the particular pathway or process. An
-access control privilege system allows the community to share and disseminate
-the knowledge, while enabling a dedicated SIG to maintain high-quality, curated
-information.
+Payao aims to become a biological knowledge aggregating system, which enable a
+community to work on the same models simultaneously, insert tags as pop-up
+balloon to the parts of the model, exchange comments, record the discussions and
+eventually update the models accurately and concurrently.
 
-To provide such a curation framework, we have developed a system called Payao.
-The system is named after a fish aggregating device, an artificial floating raft
-where fish congregate and popular in Okinawa/Philippine area. Payao aims to
-become a biological knowledge aggregating system, which enable a community to
-work on the same models simultaneously, insert tags as pop-up balloon to the
-parts of the model, exchange comments, record the discussions and eventually
-update the models accurately and concurrently.
-
-The current workflow for pathway curation has two phases working in a cyclical
-manner, as shown in Figure 1: pathway editing using biological pathway editors
-(CellDesigner) and community-driven pathway enrichment and knowledge sharing.
-Payao serves for enrichment phase of the curation. Payao is a web-based
-platform, providing an interface for adding tags and comments to the components
-(such as Species, Reactions and specified area) of the model, as well as
-community management functionality. The information on the users and tag data is
-stored in a relational database (RDBMS) on the server. Payao adopts community
-standards, accepting Systems Biology Markup Language (SBML; Hucka et al., 2003)
-format models and displays them in Systems Biology Graphical Notation (Le Novere
-et al., 2009) compliant CellDesigner (Funahashi et al., 2008) graphical
-notation. Curation data on Payao can be easily reintegrated into the original
-model via CellDesigner.
+Payao is a spiritual successor to WikiPathways (<http://www.wikipathways.org/>),
+a similar effort for such a collaborative platform, but in the Wiki style. While
+the Wiki system has its strength in collaborative editing and version tracking,
+it does not provide access control or explicit community tagging mechanisms. In
+a community-driven model enrichment environment, it is effective to
+differentiate privileges to special interest group (SIG) members for curation
+activities commenting on existing tags, adding tags to models, annotating
+individual component inside a model and validating the annotations. In view of
+the complexity of biological pathways and the expertise of biologists in
+different areas, a community platform for biology requires an exquisite balance
+of federated resource sharing and quality control of information by a SIG of
+experts in the particular pathway or process. An access control privilege system
+allows the community to share and disseminate the knowledge, while enabling a
+dedicated SIG to maintain high- quality, curated information
+[@pico2008wikipathways].
 
 ### ArrayExpress
 
-ArrayExpress is a public database for high throughput functional genomics data. ArrayExpress consists of two parts—the ArrayExpress Repository, which is a MIAME supportive public archive of microarray data, and the ArrayExpress Data Warehouse, which is a database of gene expression profiles selected from the repository and consistently re-annotated. Archived experiments can be queried by experiment attributes, such as keywords, species, array platform, authors, journals or accession numbers. Gene expression profiles can be queried by gene names and properties, such as Gene Ontology terms and gene expression profiles can be visualized. ArrayExpress is a rapidly growing database, currently it contains data from >50 000 hybridizations and >1 500 000 individual expression profiles. ArrayExpress supports community standards, including MIAME, MAGE-ML and more recently the proposal for a spreadsheet based data exchange format: MAGE-TAB. Availability: www.ebi.ac.uk/arrayexpress.
+ArrayExpress (<http://www.ebi.ac.uk/arrayexpress>) is a public database for high
+throughput functional genomics data. ArrayExpress consists of two parts—the
+ArrayExpress Repository, which is a MIAME supportive public archive of
+microarray data, and the ArrayExpress Data Warehouse, which is a database of
+gene expression profiles selected from the repository and consistently re-
+annotated. Archived experiments can be queried by experiment attributes, such as
+keywords, species, array platform, authors, journals or accession numbers. Gene
+expression profiles can be queried by gene names and properties, such as Gene
+Ontology terms and gene expression profiles can be visualized. ArrayExpress is a
+rapidly growing database, currently it contains data from >50,000 hybridizations
+and >1,500,000 individual expression profiles. 
 
-The ArrayExpress Archive is a database of functional genomics experiments including gene expression where you can query and download data collected to MIAME and MINSEQE standards. Gene Expression Atlas contains a subset of curated and re-annotated Archive data which can be queried for individual gene expression under different biological conditions across experiments.
+The ArrayExpress Archive is a database of functional genomics experiments
+including gene expression where you can query and download data collected to
+MIAME and MINSEQE standards. Gene Expression Atlas contains a subset of curated
+and re-annotated Archive data which can be queried for individual gene
+expression under different biological conditions across experiments
+[@parkinson2007arrayexpress;@rayner2006simple].
 
-(<http://www.ebi.ac.uk/arrayexpress/>)
+## Future Considerations
 
-
-[@parkinson2007arrayexpress]
-
-[@rayner2006simple]
-
-2 PLATFORM
-
-Payao consists of the server application, client user interface and database.
-The server application has been implemented in Java on Seaser Framework 2.0 with
-S2Flex2. Tomcat 5.5 was used as the servlet container to build the web
-application. The client user interface has been implemented in ActionScript on
-Flex framework 2.0.1, which allows us to build a Rich Internet Application to
-visualize SBML models. The server communicates with the client via the Action
-Message Format (AMF3) protocol on S2Flex2, which enables us to translate between
-Java Objects in Seaser and Action Script Object in Flex. The server can handle
-CellDesigner models including SBML models and the visual information using
-CellDesigner API ver.4.0. It parses SBML files sent from client to create
-CellDesigner models, and provides the information as CellDesigner Plugin
-classes. The client application receives the model information and draws the
-model. MySQL 5.0 is used to store information on user, model and tags/comments
-in the database.
-
-As Payao accepts pathway models stored in SBML format and uses CellDesigner APIs
-for visualization, the most suitable SBML editor for Payao is CellDesigner. In
-SBML format, models can capture details of biochemical process descriptions, not
-only proteinprotein interactions. Adopting SBML format enables the models to be
-easily used as the base of computational data analysis or simulation of dynamic
-behaviors. The Payao platform enriches the model curation process by providing a
-host of features for user management, tagging and model updates [detailed are
-available for reference in (Payao User guide, 2009)].
-
-3.1 Community management Forming a community is an important step for curation.
-Different expertise groups can contribute variety of information to the model.
-As web-based Payao can be accessible from all physical locations, it enables
-experts across the world to communicate in a collaborative curation effort.
-
-Community is formed around a pathway model. It is the model owner who sets
-access control over the registered model. In the Payao system, access controls
-can be set by specifying the privileges to individuals as well as to user
-categories, such as guest, login user and model user (who are invited to access
-the model by the model owner). This enables a user to stage the curation
-process, initiate the curation within a small group (e.g. SIG) and then switch
-the access control of the model for public viewing.
-
-3.2 Model management The model owner registers and manages the SBML model. Upon
-registration, the model owner specifies the basic model information including,
-thumbnail image, references and copyright. The owner sets the access privilege
-to the user in three levels (browsing, adding tags, adding comments) by user
-categories or by individual users. The registered models can be sorted by
-Register Date and by Popularity. Popularity is measured by the activity level
-(number of tags and comments) and ranked in the list. All the registered models
-are listed with the thumbnails in the top screen in the right panel (Fig. 2).
-Registered models are stored in the database.
-
-3.3 Community tagging and commenting The tagging on the visually represented
-pathways is a characteristic of Payao, which makes the curators easy to grasp
-the nature of the pathway while discussing on the specific component of the
-pathways. Like Google Maps, tags are displayed in a bubble form attached to the
-items (Species, Reactions or any specified area), and click to expand and
-display the content of the information in the tag. Tags can specifically be
-keywords, links, PubMed IDs as well as free text, as shown in Figure 3. A TagSet
-groups a set of tags and can be color coded for ease of viewing. User-defined
-TagSets also allow access control features (browsing, editing and editing tags)
-to be set by a user, in the same way as for model access privilege settings.
-Thus, a user can set permissions to a My Tagset, which hides comments and tags
-from the community members. Inside the tag, comments can be added in the free
-text format. While tags anchor the points for annotation in the model, comments
-function serves as the discussion space.
-
-[@matsuoka2010payao]
-
-## Conclusions
-
-The development of standards for systems biology is still at a very early stage.
-I have not for example considered the problem of standardizing the formats for
-the experimental data that will be required for modelling. For example, there
-are no current standards for representing *quantitative* proteomic or
-metabolomic data, though efforts for defining a quantitative microarray format
-is maturing (<www.mged.org>).
-
-More pressing from a modelling perspective is that there is currently no agreed
-way to merge smaller sub-models into larger models (composition).  One of the
-few groups to have considered composition is Ginkel and Kremling [@Promot2000].
-They have examined possible extensions to SBML to allow SBML to represent
-sub-models and models composed of sub-models. Additional issues include
-distinguishing different kinds of models, particularly ODE and stochastic
-models, currently there is no means to identify the kind of model an SBML file
-represents other than to use specific annotations. One unfortunate side-effect
-of using XML is the temptation to omit a detailed semantic specification. XML is
-often vaunted as a desirable technology because it is easily parsed, however,
-parsing and syntax checking is a very easy task to implement, the real
-difficulty comes when semantic checks are required and current XML technology
-offer no assistance in this task.
-
-
-
+With the success of Minimum Information guidelines and standardized
+representations of biological models, quantitative modeling has surged in
+popularity. However, the ever-growing number of published dynamic models
+published also presents a significant challenge in terms of model reuse and
+integration. While there is currently no agreed upon way to merge smaller sub-
+models into larger models, MIRIAM and MIASE annotations enable model composition
+software to make use of the semantic information and enable algorithms parse
+through models, or parts of models, of interest to the user. Recent efforts in
+this arena include semanticSBML [@krause2010annotation], SemSim
+[@neal2009advances], and the SBML Reaction Finder [@neal2012sbml].
 
 # Platforms
 
@@ -1735,7 +1526,7 @@ to new and interesting software tools. In this section I will describe three
 such environments, SBW, BioSPICE and BioUML. All three environments are open
 source.
 
-### Systems Biology Workbench SBW
+### Systems Biology Workbench (SBW)
 
 SBW (Sauro et. al., 2004) is an extensible software framework that is both
 platform and language independent. Its primary purpose is to encourage code
@@ -1776,9 +1567,7 @@ point, complex numbers, strings, arrays and lists.  Currently the available
 modules include, simulators, model editors, SBML manipulation, math library,
 frequency analyzer, bifurcation discover and analysis modules, structural
 analysis modules and others. Further details to be found at
-<www.sys-bio.org>
-
-\label{Figure:sbw}](images/sbwFig.eps)
+<http://www.sys-bio.org>.\label{Figure:sbw}](images/sbwFig.eps)
 
 An SBW module (the client) provides one or more interfaces or services.  Each
 service provides one or more methods. Modules register the services they provide
@@ -1831,111 +1620,14 @@ JSim's capabilities are more advanced than previous NSR software systems SIMCON
 code, binaries (for Windows, Macintosh and Linux) and documentation  are
 available free for non-commercial use at http://physiome.org/.
 
-### Cell Designer
+### CellDesigner
 
-[@funahashi2003celldesigner]
-
-[@funahashi2008celldesigner]
-
-Systems biology is characterized by synergistic integration of theory,
-computational modeling, and experiments [1]. Identification of the logic and
-dynamics of gene-regulatory and biochemical networks is a major challenge of
-systems biology. From the view of computational modeling, a model is used to
-understand the dynamics of biological phenomena. The model consists of molecules
-and reactions that represents gene regulatory and biochemical network (such as
-transcription, translation, proteinprotein interaction, enzymatic reaction,
-etc.), and contains a mathematical equation for each reaction. So that the model
-contains mathematical equations inside, it would be possible to simulate the
-dynamics of the model and compare the simulation results with their experiments;
-even more, it would be possible to tune the parameters in the model to fit with
-the experimental results. This workflow is important to understand unknown
-function or structure of biological phenomena, so development of software
-infrastructure to support this workflow is essential for systems biology
-research. While the software infrastructure is one of the most crucial
-components in systems biology research, there has been almost no common
-infrastructure or standard to enable integration of computational resources. For
-example, researchers built their model with their specific application or inside
-their simulator as a source code so that it was difficult to port their model to
-be used on other applications. Since there was no gold-standard software for
-systems biology research, at that time, researchers had to use multiple
-applications to solve their problem. They had to switch their software to run
-simulations, analyze the model, and fit parameters with their experimental
-results. To solve this problem, the Systems Biology Markup Language 1 (SBML)
-[2], [3] and the Systems Biology Workbench 2 (SBW) have been developed [4]. SBML
-is an open, Extensible Markup Language (XML)-based format for representing
-biochemical reaction networks, which enables researchers to share their model
-between different software applications, while SBW is a modular, broker-based
-message-passing framework for simplified intercommunication between
-applications. Rapid acceptance of this standard is proved by the fact that more
-than 110 simulation and analysis software packages already support SBML or are
-in the process of supporting the standard.
-
-We believe that the standardized technologies, such as SBML, SBW, and Systems
-Biology Graphical Notation (SBGNa graphical notation for network diagrams of
-biological models), play a critical role as the software platform to tackle this
-challenge. As an approach, we have developed CellDesigner [5], a process diagram
-editor for gene-regulatory and biochemical networks. CellDesigner currently
-supports model creation, simulation, and database integrationthose features are
-significant for users willing to create their model from scratch.
-
-The current version (3.5.2, as of June 2008) of CellDesigner has the following
-features:
-
-representation of biochemical semantics; detailed description of state
-transition of proteins; SBML compliant (SBML Level-1 and Level-2 Version-1);
-integration with SBW-enabled simulation/analysis modules; integration with
-native simulation library (SBML ODE Solver [6]); database connectivity; platform
-independent. The aim of developing CellDesigner is to supply a process diagram
-editor utilizing standardized technology (SBML and SBGN in this case) for every
-computing platform, so that it could confer benefits to as many users as
-possible. By using the standardized technology, any model can be easily ported
-to other applications, thereby reducing the cost to create a specific model from
-scratch. The main standardized features that CellDesigner supports are
-summarized as graphical notation, model description, and application integration
-environment. The standard for graphical notation plays an important role for
-efficient and accurate dissemination of knowledge [7], and these standards for
-model description enhance the portability of models among various software tools
-and aid human readability. Similarly, the standard for application integration
-environment will help software developers to provide the ability for their
-applications to communicate with other tools.
-
-A. Symbols/Expressions and SBGN
-
-CellDesigner supports graphical notation and listing of symbols based on a
-proposal by our group [7]. While we have proposed our original notation system,
-graphical notation has now been developed as an international community based
-activities called SBGN.3 So far, several graphical notation systems already have
-been proposed [8], [9], [10], [11], [12]. The goal of SBGN is to design a
-graphical notation system expressing sufficient information in more visible and
-more unambiguous way, as we proposed [7]. We expect that these features will
-become part of the standardized technology in systems biology field. The key
-components of SBGN are:
-
-to allow representation of diverse biological objects and interactions; to be
-semantically and visually unambiguous; to be able to incorporate other
-notations; to allow software tools to convert a graphically represented model
-into mathematical formulas for analysis and simulation; to have software support
-to draw diagrams; to make the notation scheme of SBGN freely available. To
-accomplish the above requirements for the notation, we first decided to define a
-notation by using a process diagram [7]. The notation graphically represents
-state transitions of the molecules involved. In the process diagram
-representation, each node represents the state of the molecules and complex, and
-each arrow represents state transitions among the states of a molecule. In the
-conventional entity-relationship diagrams, an arrow generally represents
-activation of the molecule. However, this confuses the semantics of the diagram,
-as well as limits possible molecular processes that can be represented [7]. A
-process diagram represents a more intuitive way for model definition than
-entity-relationship diagrams. One of the reasons is that the process diagram
-could be explicitly represented as a temporal sequence of events whereas an
-entity-relationship cannot. For example, in a process of mitosis-promoting
-factor (MPF) activation in cell cycle, Wee1 phosphorylates residues of Cdc2
-(Cell Division Cycle 2), is one of the components of MPF (Fig. 1). However, MPF
-is not yet activated by this phosphorylation. If we use an arrow for activation,
-we cannot properly represent the case. In the process diagram, on the other
-hand, whether a molecule is active or not is represented as a state of the node
-instead of an arrow symbol for activation. Promoting and inhibition of catalysis
-are represented as a modifier of state transition using a circle-headed line and
-a bar-headed line, respectively.
+CellDesigner (<http://www.celldesigner.org/>) is a structured diagram editor for
+drawing gene-regulatory and biochemical networks. Networks are drawn based on
+the process diagram, with graphical notation system that influenced the
+development of SBGN, and are stored using the Systems Biology Markup Language
+(SBML), a standard for representing models of biochemical and gene-regulatory
+networks. CellDesigner supports simulation and parameter scanning through a selection of different simulation engines, SBML ODE Solver, Copasi, or SBW [@funahashi2003celldesigner;@funahashi2008celldesigner].
 
 ### BioUML
 
@@ -1954,33 +1646,6 @@ which permits access to plugins that are written in many different languages.
 
 ## Simulation 
 
-### Road Runner
-
-RoadRunner (Bergmann and Sauro, 2006) and SBML ODE Solver (Machn et al., 2006).
-This process was largely possible through the use of the Systems Biology
-Workbench (SBW) (Bergmann and Sauro, 2006), a resource sharing framework that
-allows applications to share functionality with each other. Jarnac and
-Roadrunner are already included with an SBW installation. Emery Conrad enabled
-Ocill8 for use in the SBW framework. For the comparison we wrapped COPASI and
-SBML ODE Solver to be available for use within SBW. [@bergmann2008comparing]
-
-
-roadRunner: In an effort to create a fully SBML compliant simulator we next
-focused on creating roadRunner.  Instead of interpreting model equations,
-roadRunner will  compile the model equations dynamically, which results in  much
-improved performance  when compared with traditional simulators. RoadRunner uses
-the integrator CVODE  and NLEQ (ZIB 2003) for steady state analysis. To further
-speed up the simulation, the model is separated into a system of independent and
-dependent variables. This separation process is described in detail in
-(Vallabhajosyula et al.  2006). Again, roadRunner has been written completely in
-C#. Provided that CVODE and NLEQ are available for a  given operating system,
-roadRunner will run on that operating system. Thus, all major operating systems
-are supported
-
-[@bergmann2006sbw]
-
-### COPASI
-
 Simulation and modeling is becoming one of the standard approaches to understand
 complex biochemical processes. Therefore, there is a growing need for software
 tools that allow access to diverse simulation and modeling methods as well as
@@ -1989,39 +1654,41 @@ compatible, e.g. via file standards, platform independent and user friendly to
 avoid time-consuming conversions and learning procedures. In addition, the
 software should be actively maintained and updated by its authors.
 
+### Road Runner
+
+RoadRunner is a powerful and portable simulation engine that is used in SBW, a
+resource sharing framework that allows applications to share functionality with
+each other [@bergmann2006sbw]. Jarnac and Roadrunner are already included with
+an SBW installation. COPASI and SBML ODE Solver may also be used as simulation
+engines alongside RoadRunner within SBW [@bergmann2008comparing].
+
+Instead of interpreting model equations, roadRunner will  compiles the model
+equations dynamically, which results in  much improved performance when compared
+with traditional simulators. RoadRunner uses the integrator CVODE and NLEQ for
+steady state analysis [@cohen1996cvode], . To further speed up the simulation,
+the model is separated into a system of independent and dependent variables.
+This separation process is described in detail in
+[@vallabhajosyula2006conservation]. Thus, all major operating systems are
+supported given that roadRunner only depends on CVODE and NLEQ being available
+on the platform.
+
+### COPASI
+
 COPASI is a stand-alone program that can be used through two different
 executable versions: a graphical user interface (CopasiUI) and a command line
-version (CopasiSE) that only contains the calculation engine. CopasiSE is
-intended for situations in which the user is not expected to interact with the
-software. The following use cases are examples of situations in which it would
-be used: (i) when third-party programs manipulate COPASI files, call CopasiSE to
-produce results, and then inspect and continue generating other COPASI files
-depending on results; (ii) to run simulations in the background, which is useful
-when the run takes a long time; (iii) as a simulation engine for specialized
-front-ends that may be created by others. Essentially, CopasiSE allows much
-flexibility of execution and control, with the penalty that this version can
-only run numerical procedures, not edit models. CopasiUI, on the other hand, is
-the complete version of the program and is the one that we expect users to run
-most often. CopasiUI provides a full graphical user interface (GUI), including
-functions for creating and editing models and plotting results. In terms of
-execution of the numerical procedures (simulation, optimization, etc.) the two
-versions are essentially equal, except that CopasiUI may be slightly slower when
-producing graphical output. In practice the two executables share the same
-source code and are expected to produce exactly the same results.
-
+version (CopasiSE) that only contains the calculation engine. 
 
 COPASI's native file format is based on XML and documentation of its schema is
 available so that other tools can write (or read) it. COPASI can also read
-Gepasi files, providing backwards compatibility with its predecessor. Finally
-and as explained below in more detail COPASI is able to import SBML either level
-1 or level 2, and thus it can obtain models from many sources, such as other
-simulators, model databases, pathway databases and so on (see
-http://www.sbml.org). To store the complete model information, including task
-settings and output definitions, COPASI uses its own file format. Models can
-also be exported in SBML and the program can write the ordinary differential
-equations in plain C files (ready to be included in other C/C++ programs) and in
-Berkeley Madonna's format (<http://www.berkeleymadonna.com>), a popular program
-for nonlinear dynamics which does not import SBML.
+Gepasi files, providing backwards compatibility with its predecessor. Finally,
+COPASI is able to import SBML and may obtain models from the large number of
+SBML data sources, such as other simulators, model databases, pathway databases
+and so on. To store the complete model information, including task settings and
+output definitions, COPASI uses its own file format. Models can also be exported
+in SBML and the program can write the ordinary differential equations in plain C
+files (ready to be included in other C/C++ programs) and in Berkeley Madonna's
+format (<http://www.berkeleymadonna.com>), a popular program for nonlinear
+dynamics which does not import SBML.
 
 COPASI can also output results of its various functions in two ways: report
 files and plots. The user can define report files containing any number of
@@ -2106,33 +1773,23 @@ Solutions, MML Widget).
 For reliable and fast computation COPASI uses standard numerical libraries:
 LAPACK (Anderson et al., 1999) for linear algebra, BLAS (Lawson et al.,1979) for
 matrix and vector operations, and LSODA (Petzold, 1983) from ODEPACK (Hindmarsh,
-1983) for integration of ODEs. There are optimized versions of LAPACK and BLAS
-for the major hardware and operating system that we have used to build the
-binary versions, providing COPASI with a little extra performance. For example,
-the Intel BLAS version uses special features of Pentium processors, whereas the
-Apple BLAS version uses the AltiVec unit of the PowerPC processors.
+1983) for integration of ODEs.
 
 [@hoops2006copasi]
 
 ## Online Platforms
 
-### JWSOnline
-
-### SBW
-
 ### CycSim
 
-Summary: CycSim is a web application dedicated to in silico experiments with
-genome-scale metabolic models coupled to the exploration of knowledge from
-BioCyc and KEGG. Specifically, CycSim supports the design of knockout
-experiments: simulation of growth phenotypes of single or multiple gene
-deletions mutants on specified media, comparison of these predictions with
-experimental phenotypes and direct visualization of both on metabolic maps. The
-web interface is designed for simplicity, putting constraint-based modelling
-techniques within easier reach of biologists. CycSim also functions as an online
-repository of genome-scale metabolic models.
-
-Availability: http://www.genoscope.cns.fr/cycsim
+CycSim (<http://www.genoscope.cns.fr/cycsim>) is a web application dedicated to
+in silico experiments with genome-scale metabolic models coupled to the
+exploration of knowledge from BioCyc and KEGG. Specifically, CycSim supports the
+design of knockout experiments: simulation of growth phenotypes of single or
+multiple gene deletions mutants on specified media, comparison of these
+predictions with experimental phenotypes and direct visualization of both on
+metabolic maps. The web interface is designed for simplicity, putting
+constraint-based modelling techniques within easier reach of biologists. CycSim
+also functions as an online repository of genome-scale metabolic models.
 
 Constraint-based modelling (Price et al., 2004) is a framework, simple and
 abstract enough to allow tractable modelling of metabolism at genome-scale,
@@ -2196,11 +1853,11 @@ levels. You can investigate system dynamics and guide experimentation using
 parameter sweeps and sensitivity analysis. You can also use single subject or
 population data to estimate model parameters.
 
-Graphical editor for PK/PD and systems biology modeling Ordinary differential
-equations (ODEs) and stochastic solvers for pharmacokinetic models. The package
-includes parameter estimation techniques for single subject and population data,
-including nonlinear mixed-effects models, sensitivity analysis and parameter
-sweeps to investigate how parameters affect system dynamics.
+The graphical editor for PK/PD and systems biology modeling Ordinary
+differential equations (ODEs) and stochastic solvers for pharmacokinetic models.
+The package includes parameter estimation techniques for single subject and
+population data, including nonlinear mixed-effects models, sensitivity analysis
+and parameter sweeps to investigate how parameters affect system dynamics.
 
 SimBiology lets you represent a model of a biological or a pharmacological
 mechanism just as you would draw it on a piece of paper. Using a reaction
@@ -2255,35 +1912,40 @@ immature.
 
 **Application and Description**
 
-VCell: :   A very mature server based application that is specialized to build
-and simulate large scale spatial (PDE) models - Open Source, multiplatform
-[@VCELL].
+VCell: 
+:	A very mature server based application that is specialized to build
+	and simulate large scale spatial (PDE) models - Open Source, multiplatform
+	[@VCELL].
 
-Gepasi: :   This is a forms based application which has been maintained for many
-years by a dedicated author, the tool is particularly adapt at carrying out
-optimizations of ODE based models to data - Closed source, Windows, Linux
-[@Gepasi:1993].
+Gepasi: 
+:	This is a forms based application which has been maintained for many
+	years by a dedicated author, the tool is particularly adapt at carrying out
+	optimizations of ODE based models to data - Closed source, Windows, Linux
+	[@Gepasi:1993].
 
-WinSCAMP: :   A script based GUI application, which like Gepasi has a long
-tradition. Specialized for time course, steady state and metabolic control
-analysis of ODE based models.
+WinSCAMP: 
+:	A script based GUI application, which like Gepasi has a long
+	tradition. Specialized for time course, steady state and metabolic control
+	analysis of ODE based models.
 		- Source available upon request, multiplatform [@SauroF91; @SauroScamp93]
 
-Pysces: :   This is a very complete ODE based simulation environment built
-around the scripting language Python
+Pysces: 
+:	This is a very complete ODE based simulation environment built
+	around the scripting language Python
 		- Open Source, multiplatform [@Pysces2004].
 
-Jarnac/JDesigner: :   Jarnac is a script based application, JDesigner (See
-Figure 3) is a visual design tool which can use Jarnac via SBW to carry out
-simulations. The simulation capabilities of Jarnac are quite extensive, offering
-both ODE and stochastic simulation - Open Source, Windows, Linux [@sauro:2000;
-@Sauro:Omics].
+Jarnac/JDesigner: 
+:	Jarnac is a script based application, JDesigner (See
+	Figure 3) is a visual design tool which can use Jarnac via SBW to carry out
+	simulations. The simulation capabilities of Jarnac are quite extensive, 
+	offering both ODE and stochastic simulation - Open Source, Windows, Linux 
+	[@sauro:2000; @Sauro:Omics].
 
 * * * *
 
 There are also more general purpose tools available, both commercial and
 open-source which are worth considering. Probably the most well known commercial
-tool is Matlab (<www.mathworks.com>). Although Matlab is an excellent
+tool is Matlab (<http://www.mathworks.com>). Although Matlab is an excellent
 prototyping tool if suffers from poor performance when simulating systems larger
 than about thirty species if the model is not specified in the correct way. In
 fact a number of the open-source tools are orders of magnitude faster than
@@ -2315,7 +1977,7 @@ understand how the structure of the model leads it to behave the way it does. In
 order to answer these kinds of questions one needs techniques that can
 interrogate the model in a variety of different ways.
 
-Table 2 lists some of the most important techniques that are available for
+The table below lists some of the most important techniques that are available for
 analyzing models. Without these techniques, a model will often be as difficult
 to understand as the real system it attempts to model; the application of these
 techniques is therefore important.
@@ -2387,7 +2049,7 @@ information is crucial to determine the validity of the model and can be used to
 design additional experiments to either refute the model or increase the
 precision of the model parameters. As a result of these requirements, computing
 a global optimization can take a considerable time. For example, in a recent
-study, Vijay Chickarmane (unpublished) estimated that the time required to fit a
+study, Vijay Chickarmane estimated that the time required to fit a
 model of approximately three hundred parameters would be of the order of seven
 years on a normal desktop computer. Luckily, global optimization can be easily
 parallelized given a suitable optimizer (for example a genetic algorithm based
@@ -2452,19 +2114,22 @@ could benefit from Grid computing.
 
 Four web sources which are of interest to readers of this chapter include:
 
-<http://www.cellml.org> :   This is the main CellML site. It has a very rich set
-of models expressed in CellML including specifications for the standard and
-pointers to software toolkits.
+<http://www.cellml.org> :
+:	This is the main CellML site. It has a very rich set
+	of models expressed in CellML including specifications for the standard and
+	pointers to software toolkits.
 
-<http://www.sbml.org> :   This is the main SBML site. The site as ample
-documentation, examples illustrating how SBML is and should be used. In addition
-is has a rich set of software tools, in particular libSBML, which allows
-developers to easily add SBML support to their tools.
+<http://www.sbml.org> :
+:	This is the main SBML site. The site as ample
+	documentation, examples illustrating how SBML is and should be used. In addition
+	is has a rich set of software tools, in particular libSBML, which allows
+	developers to easily add SBML support to their tools.
 
-<http://www.sys-bio.org> :   This is the main SBW (Systems Biology Workbench)
-site. The latest versions for SBW, developer documentation, example models,
-screen shots, user guides can be obtained from this site. A link to the main
-sourceforge site is given where all the source code for SBW is made available.
+<http://www.sys-bio.org> :
+:	This is the main SBW (Systems Biology Workbench)
+	site. The latest versions for SBW, developer documentation, example models,
+	screen shots, user guides can be obtained from this site. A link to the main
+	sourceforge site is given where all the source code for SBW is made available.
 
 # Acknowledgements
 
@@ -2476,6 +2141,5 @@ Andrew Finney and Hamid Bolouri for their initial work on the Systems Biology
 Workbench and in more recent years the tremendous programming work done by Frank
 Bergmann and the critical support given by Sri Paladugu and Vijay Chickarmane to
 the development of novel computational methods in Systems Biology.
-
 
 # References
