@@ -260,8 +260,8 @@ Although mathematically, reaction based models are given by equations
 models in the form of a reaction scheme. For example, the following describes
 part of glycolysis:
 
-			Glucose-6-P -> Fructose-6-Phosphate Fructose-6-Phosphate + ATP ->
-			Fructose-1-6-Bisphosphate + ADP Fructose-1-6-Bisphosphate -> DHAP + GAP
+(@scheme)	`Glucose-6-P -> Fructose-6-Phosphate Fructose-6-Phosphate + ATP ->`
+			`Fructose-1-6-Bisphosphate + ADP Fructose-1-6-Bisphosphate -> DHAP + GAP`
 
 For brevity, the rates laws that accompany each reaction have been left out.
 Such notation is well understood by biologists. It is not straight forward
@@ -428,7 +428,7 @@ practically every major biotechnological field [@naturebiotechnology2006]. The
 Minimum Reporting Guidelines for Biological and Biomedical Investigations
 (MIBBI) project has arisen as a comprehensive source of these reporting
 "checklists" @taylor2008promoting]. MIBBI maintains a web-based and freely
-accessible resource for minimum information standards (http://www.mibbi.org/),
+accessible resource for minimum information standards (<http://www.mibbi.org/>),
 providing access to extant checklists (and to complementary data formats,
 controlled vocabularies, tools and databases), thereby enhancing both
 transparency and accessibility of experimental results to the wider bioscience
@@ -564,36 +564,42 @@ computational modeling and simulation of biological processes
 
 ## Ontologies
 
- The MIRIAM guidelines state that a model's constituents must be umambiguously
+The MIRIAM guidelines state that a model's constituents must be unambiguously
 annotated. The value of any kind of data is greatly enhanced when it exists in a
 form that allows it to be integrated with other data. Thus, a common language is
 necessary for different models that may describe the same physical entity or
 biological process. One approach to integration is through the annotation of
-multiple bodies of data using common controlled and structured vocabularies or "ontologies".
+multiple bodies of data using common controlled and structured vocabularies or
+"ontologies".
 
-One of the most successful examples of the use of a biomedical ontology, measured by both the number of users and its reach across different subdomains is the Gene Ontology (GO), which defines specific genes across different species. GO terms have been used in millions of annotations relating to gene products described in protein databases such as UnitProt and Ensembl [@smith2005relations].
+One of the most successful examples of the use of a biomedical ontology,
+measured by both the number of users and its reach across different subdomains
+is the Gene Ontology (GO), which defines specific gene products across different
+species. All terms are organized in a hierarchical structure, where there are
+three main branches, biological processe, celular component, or molecular
+function, and the leaves are proteins. GO terms have been used in millions of
+annotations relating to gene products described in protein databases such as
+UnitProt and Ensembl [@smith2005relations].
 
 ### Open Biomedical Ontologies (OBO)
 
-Unfortunately, the success of this approach has led to dizzying number of different ontologies, the sheer number which may create an obstacle to integration. OBO was created in 2001 to address this issue by serving as an umbrella body for the developers of life-science ontologies. OBO applies the key principles underlying the success of the GO,
-namely, that ontologies be open, orthogonal, instantiated in a well-specified
-syntax and designed to share a common space of identifiers. Ontologies must be
-open in the sense that they and the bodies of data described in their terms
-should be available for use without any constraint or license and so be
-applicable to new purposes without restriction. They are also receptive to
-modification as a result of community debate. They must be orthogonal to ensure
-additivity of annotations and to bring the benefits of modular development. They
-must be syntactically in good order to support algorithmic processing. And they
-must employ a common system of identifiers to enable backward compatibility with
-legacy annotations as the ontologies evolve.
+Unfortunately, the success of this approach has led to dizzying number of
+different ontologies, the sheer number which may create an obstacle to
+integration. OBO was created in 2001 to address this issue by serving as an
+umbrella body for the developers of life-science ontologies. OBO applies the key
+principles led to the success of GO, such as having ontologies that are *open*
+and *orthogonal*. Onotologies within OBO are *open* in the sense that its usage
+should be available without any constraints or licenses, and new applications
+may build upon OBO without restriction. Ontologies within OBO are *orthogonal*
+such that vocabulary is non-overlapping with other ontologies.
 
 OBO now comprises over 60 ontologies, and its role as an ontology information
 resource is supported by the NIH Roadmap National Center for Biomedical Ontology
-(NCBO) through BioPortal (http://bioportal.bioontology.org/)
+(NCBO) through BioPortal (<http://bioportal.bioontology.org/>)
 [@noy2009bioportal]. At the same time, the developers of a subset of OBO
-ontologies have initiated the OBO Foundry, a collaborative experiment based on
-the voluntary acceptance by its participants of an evolving set of principles
-(available at http://obofoundry.org) that extend those of the original OBO by
+ontologies have initiated the OBO Foundry (<http://obofoundry.org>), a
+collaborative experiment based on the voluntary acceptance by its participants
+of an evolving set of principles  that extend those of the original OBO by
 requiring in addition that ontologies (i) be developed in a collaborative
 effort, (ii) use common relations that are unambiguously defined, (iii) provide
 procedures for user feedback and for identifying successive versions and (iv)
@@ -603,11 +609,11 @@ components, for example, should not include terms like 'database' or 'integer')
 
 #### Systems Biology Ontology (SBO)
 
-One of the goals of the Systems Biology Ontology (SBO, http://www.ebi.ac.uk/sbo/
-webcite) is to facilitate the immediate identification of the relation between a
-model component and the model structure. SBO is currently made up of four
-different vocabularies. Within a vocabulary, the terms are related by "is a"
-inheritances, which represent sub-classing.
+SBO (<http://www.ebi.ac.uk/sbo/>) is one member of the OBO family of ontologies.
+One of the goals of SBO, is to facilitate the immediate identification of the
+relation between a systems biology model component and the model structure. SBO
+is currently made up of four different vocabularies. Within a vocabulary, the
+terms are related by "is a" inheritances, which represent sub-classing.
 
 1. A classification of rate laws. This CV is a taxonomy of kinetic rate equations. Examples of terms in this CV are "mass action kinetic", "Henri-Michaelis-Menten kinetics", "Hill function" etc. Note that although taking the same mathematical form, the rate-laws "Henri-Michaelis-Menten", "Van Slyke" and "Briggs-Haldane", being based on different assumptions, will be represented by different terms. This will help a user to choose the adequate conversion to elementary steps if needed.
 
@@ -619,7 +625,7 @@ inheritances, which represent sub-classing.
 
 The annotation of model components with SBO terms will be an essential step to
 reach MIRIAM-compliance. Not only such an annotation will be important to
-understand and to programmatically analyse models, it will also power the search
+understand and to programmatically analyze models, it will also power the search
 strategies used by the databases of models, and in particular BioModels
 Database. The use of SBO terms within SBML will allow to a limited extend to get
 rid of the explicit mathematics in the model itself, but to download the
@@ -637,44 +643,43 @@ foundry [@courtot2011controlled].
 
 ## Physiological Models
 
-In recent years, particularly since the sequencing of the human genome, there
-has been an ever increasing list of wide ranging cellular models published in
-the literature. Each author has a particular notation that they use to publish
-the model. Some authors will publish the model as a reaction scheme, much like
-the notation given in Figure \ref{Figure:sbw}. Others will itemize the actual
-mathematical representation in the form of a list of differential equations.
-Some authors do not publish the model at all but provide the model as
+In these following sections, the most popular and influential standards for
+encoding and exchanging physiological models will be discussed. The relative
+merits of each format will be surveyed and compared. But first, why are model
+standards useful?
+
+Since the sequencing of the human genome, there has been an ever increasing list
+of wide ranging cellular models published in the literature. For most of
+scientific publishing history, each author has a particular notation that they
+use to publish the model. Some authors will publish the model as a reaction
+scheme (@scheme), much like the notation given in scheme. Others will itemize
+the actual mathematical representation in the form of a list of differential
+equations. Some authors do not publish the model at all but provide the model as
 supplementary information. Until recently, there has been no way to publish
 models in a standard format. Without a standard format it has proved very
-difficult if not impossible in many cases to use published models without
-considerable effort.
+difficult if not impossible in many cases to implement and use published models
+without considerable effort.
 
-As a result of this obvious shortcoming, a number of groups set out to gather
+Thus, as a result of this serious issue, a number of groups set out to gather
 community support to develop a standard that model developers would be happy to
 use. There was an early effort in 1998 by the BTK (BioThermoKinetics) group to
 standardize on a practical format for exchanging models between Gepasi
 [@Gepasi:1993] and SCAMP [@SauroF91], both tools were widely used at the time.
 Around the same time, bioengineers at the University of Auckland began
-investigating the role that XML [@harold:2001] could play in defining a standard
-for exchanging computational models in order to reduce errors that appeared
-frequently in published models. From the Auckland team emerged CellML
-[@LloydCellML2004]. Members from the BTK group subsequently took their
-experience and contributed significantly to the other major model exchange
-standard, called SBML [@hucka:2002d]. SBML was developed in 2000 at Caltech,
-Pasadena as a result of funding received from the Japanese ERATO program. Both
-CellML and SBML are today viewed as the main standards for exchanging cellular
-network models. There are however fundamental differences between the
-approaches that CellML and SBML take in the way models are represented.
-
-Both CellML and SBML are based on Extensible Markup Language (XML)
-[@bray1997extensible]. XML is a popular choice for model exchange languages
-because:
-
-#. XML is easily transmitted through the Internet (much like HTML).
-#. There are a large number of software tools and libraries for parsing XML.
-#. XML documents are human legible, reasonably clear, and easy to modify.
+investigating the role that Extensible Markup Language (XML) [@harold:2001]
+could play in defining a standard for exchanging computational models in order
+to reduce errors that appeared frequently in published models. From the Auckland
+team emerged CellML [@LloydCellML2004]. Members from the BTK group subsequently
+took their experience and contributed significantly to the other major model
+exchange standard, called SBML [@hucka:2002d].
 
 ### Systems Biology Markup Language (SBML)
+
+SBML was developed in 2000 at Caltech, Pasadena as a result of funding received
+from the Japanese ERATO program. Both CellML and SBML are today viewed as the
+main standards for exchanging cellular network models. There are however
+fundamental differences between the approaches that CellML and SBML take in the
+way models are represented.
 
 Whereas CellML attempts to be highly comprehensive, SBML was designed to meet
 the immediate needs of the modeling community and is therefore more focused on
@@ -713,7 +718,7 @@ since developed a comprehensive cross platform tool
 It was realized early on by the authors of SBML that as systems biology
 developed there would be pressure from the community to make additional
 functionality available in SBML. To address this issue, SBML has a formal means
-for adding extensions in the form of the so-called annotations. There now exist
+for adding extensions in the form of *annotations*. There now exist
 a number of annotations that are used by software developers. Some of these
 address issues such as providing visualization information to allow software
 tools to render the model in some meaningful way (two examples of these will be
@@ -735,27 +740,39 @@ transformations in raw binary format where there is minimal extraneous syntax.
 Some readers may feel that with todays cheap storage technologies, that
 discussions on storage requirements is unnecessary. Indeed for small models it
 is not an issue.  However, in future very large models are likely to be
-developed. There is, for example a serious attempt (www.physiome.org) now
+developed. There is, for example a serious attempt (<www.physiome.org>) now
 underway to model in the long term entire organs and even whole organisms. The
 amount of information in these cases is huge and the question of efficient
 storage is not so trivial. Obviously XML is highly compressible and large models
 can be stored in this way. However, inefficient storage also increases the time
-taken to manipulate the models. Furthermore, in a modelling environment, model
+taken to manipulate the models. Furthermore, in a modeling environment, model
 authors tend to generate hundreds of variants while developing the model. For a
 large model this clearly would generate huge amounts of XML based data. One of
 the things that has yet to be addressed by either standard is the how model
 variants can be efficiently stored.
 
+XML is a popular choice for model exchange languages
+because [@bray1997extensible]:
+
+#. XML is easily transmitted through the Internet (much like HTML).
+#. There are a large number of software tools and libraries for parsing XML.
+#. XML documents are human legible, reasonably clear, and easy to modify.
+
 #### Usage
+
+Over the past decade, SBML has become the *de facto* standard for systems
+biology models. As of this writing, 251 different software packages are
+officially listed on the SBML Software Guide
+(<http://sbml.org/SBML_Software_Guide>).
 
 Both SBML and CellML have been taken up by many software developers and
 implemented in their software. SBML in particular is being used in over 75
 software projects. In addition, SBML is the official model interchange format
-for the SBW project <www.sys-bio.org>, the international *E. coli* alliance, and
-the receptor tyrosine kinase consortium. Much of the SBML support is in stand-
-alone applications, however, a number of database vendors have also decided to
-provide export of SBML as an option, examples include reactome, stke and
-sigpath.
+for the SBW project (<www.sys-bio.org>), the international *E. coli* alliance,
+and the receptor tyrosine kinase consortium. Much of the SBML support is in
+standalone applications, however, a number of database vendors have also
+decided to provide export of SBML as an option, examples include reactome, stke
+and sigpath.
 
 A related standard that has been proposed by [@MFAML2004] is for the storage of
 flux balance models. The proposed format is very similar to SBML but has the
@@ -779,8 +796,8 @@ item in a model is defined explicitly. However, the generality and explicit
 nature of CellML also results in increased complexity especially for software
 developers. Another side effect of the increased complexity is that models that
 are represented using CellML tend to be quite large. On average, my own analysis
-of a sample from the CellML repository <www.cellml.org/examples/repository/>
-indicates that each reaction in a model requires about 5Kbytes of storage.
+of a sample from the CellML repository (<www.cellml.org/examples/repository/>)
+indicates that each reaction in a model requires about 5 kilobytes of storage.
 
 Another key aspect of CellML is its provision for metadata support. The metadata
 can be used to provide a context for a model, such as the author name, when it
@@ -795,11 +812,11 @@ resource for the community [@beard2009cellml].
 Owing to the complexity of CellML, one unfortunate side effect is that there are
 very few tools which can read and write CellML. As far as the author is aware
 there are only two third-party tools that can read and write CellML, these are
-VCell [@VCELL] and COR [@COR2003]. The CellML team have recently (2004,
-http://cellml.sourceforge.net/) began to provide their own software tools to
-third-party developers. The delay in providing such tools to the community is
-probably one reason why CellML (given its complexity) has not proved so popular
-relative to SBML which I will discuss next.
+VCell [@VCELL] and COR [@COR2003]. The CellML team
+<http://cellml.sourceforge.net/>) also provides their own software tools to
+third-party developers, including the CellML API (<http://cellml-
+api.sourceforge.net/>), which is a library much like libSBML that allows
+software developers to read and write CellML models.
 
 ### Mathematical Modeling Language (MML)
 
@@ -833,6 +850,8 @@ and modelers access to the vast library of SBML compliant software tools
 [@keating2012encoding].
 
 ## Simulation
+
+Even with 
 
 The share and reuse of biological models are primary challenges in the field of
 computational biology. While the previous discussed model exchange formats
@@ -902,7 +921,7 @@ standard. Hopefully this will change in the future.
 An early computer based visual notation was proposed by Cook [@Cook2001] who
 developed a notation called BioD. This notation has been implemented in a
 commercial software package called KineCyte
-(http://www.rainbio.com/Software.html).
+(<http://www.rainbio.com/Software.html>).
 
 Another proposal has been put forward by Kitano [@Kitano2003]. This is a more
 traditional approach where different molecular entities (such as proteins, ions,
@@ -1005,11 +1024,11 @@ commenting and annotation.
 #### Pysces
 
 PySCeS is a console based application written in the Python
-(http://www.python.org) programming language that runs on both Microsoft Windows
+(<http://www.python.org>) programming language that runs on both Microsoft Windows
 (2000/XP) and Linux. It runs as either a single user application on Windows or a
 multi-user application under Linux. PySCeS makes use of the Scientific Libraries
 for Python (SciPy), a large collection of mathematical algorithms for science
-and engineering applications (http://www.scipy.org). Some of the advantages of
+and engineering applications (<http://www.scipy.org>). Some of the advantages of
 using Python with SciPy are as follows. Python is scripted, with all the object
 oriented features of a modern programming language, and includes automatic
 memory management and garbage collection. It is well suited to act as a glue for
@@ -1030,6 +1049,8 @@ utilities.
 
 [@Pysces2004]
 
+#### SBML Shorthand
+
 ### High-throughput Data
 
 CellML and SBML are the primary formats used to store interchangeable dynamic
@@ -1049,7 +1070,7 @@ not been a single dynamic model that has been constructed as a result of high-
 throughput data. As systems biology and the construction of dynamic models
 becomes more important, it is very likely that the utility of high-throughput
 data will become much more significant. When this happens a proposed standard,
-called BioPAX (www.biopax.org) will most likely contribute.
+called BioPAX (<www.biopax.org>) will most likely contribute.
 
 BioPAX (Biological Pathway Exchange) is another proposed standard based on XML.
 BioPAX aims to integrate many of the incompatible pathway related databases
@@ -1075,12 +1096,12 @@ publication process.
 
 ### BioModels
 
-BioModels Database (<http://www.ebi.ac.uk/biomodels/>), part of the international
-initiative BioModels.net, provides access to published, peer-reviewed,
-quantitative models of biochemical and cellular systems. Each model is carefully
-curated to verify that it corresponds to the reference publication and gives the
-proper numerical results. Curators also annotate the components of the models
-with terms from controlled vocabularies and links to other relevant data
+BioModels Database (<http://www.ebi.ac.uk/biomodels/>), part of the
+international initiative BioModels.net, provides access to published, peer-
+reviewed, quantitative models of biochemical and cellular systems. Each model is
+carefully curated to verify that it corresponds to the reference publication and
+gives the proper numerical results. Curators also annotate the components of the
+models with terms from controlled vocabularies and links to other relevant data
 resources. This allows the users to search accurately for the models they need.
 The models can currently be retrieved in the SBML format, and import/export
 facilities are being developed to extend the spectrum of formats supported by
@@ -1169,7 +1190,7 @@ database for annotation.
 In order to be confident in reusing an encoded model, one should be able to
 trace its origin, and the people who were involved in its inception. The
 following information is therefore added to the model: (i) either a PubMed
-identifier (<http://www.pubmed.gov>) or a DOI (http://www.doi.org) or an URL that
+identifier (<http://www.pubmed.gov>) or a DOI (<http://www.doi.org>) or an URL that
 permits identifying the peer-review article describing the model; (ii) name and
 contact details of the individuals who actually contributed to the encoding of
 the model in its present form; (iii) name and contact of the the person who
@@ -1185,7 +1206,7 @@ effective search strategies.
 
 ### CellML Repository
 
-The CellML Model Repository (http://www.cellml.org/models) is a similar effort,
+The CellML Model Repository (<http://www.cellml.org/models>) is a similar effort,
 containing biochemical pathway models that have been described in peer-review
 publications, expressed in SBML. Similarly, JWS Online
 (Olivier and Snoep, 2004) is a repository of kinetic models describing
@@ -1356,11 +1377,11 @@ database exists for kinetic models, making it difcult to nd all the relevant
 information needed to build and study published models. Even when models are
 publicly available they often require a specic software environment to run in.
 This environment typically includes software that might be either operating
-system dependent, expensive to obtain or difcult to set up and maintain. New
+system dependent, expensive to obtain or difficult to set up and maintain. New
 initiatives, such as the one by the System Biology Markup Language (SBML)
-working group (http://www.sbml.org/), are beginning to address the problem of
+working group (<http://www.sbml.org/>), are beginning to address the problem of
 model interchange by creating a standard language for describing biochemical
-reaction networks. Using SBML, modellers may easily exchange models between
+reaction networks. Using SBML, modelers may easily exchange models between
 compatible applications such as Gepasi (Mendes, 1997) or Jarnac (Sauro, 2000).
 Currently, only a limited number of models are available in the SBML format. A
 need, therefore, exists for both a central repository of kinetic models as well
@@ -1407,15 +1428,56 @@ CellDesigner, a process diagram editor, which complies with the Systems Biology
 Graphical Notation, and provides an interface for model enrichment (adding tags
 and comments to the models) for the access-controlled community members.
 
-Availability and implementation: Freely available for model curation service at http://www.payaologue.org. Web site implemented in Seaser Framework 2.0 with S2Flex2, MySQL 5.0 and Tomcat 5.5, with all major browsers supported.
+Availability and implementation: Freely available for model curation service at
+http://www.payaologue.org. Web site implemented in Seaser Framework 2.0 with
+S2Flex2, MySQL 5.0 and Tomcat 5.5, with all major browsers supported.
 
-Creating an extensive model of gene-regulatory and biochemical networks with the latest data is a painstaking task. Curation is essential to creating an accurate model. Yet as science and technology advances rapidly, once curated models soon become out-of-date and need to be revised constantly. Many pathways and networks are now available online via pathway databases, such as Reactome, BioModels.net, Panther Pathways and many pathway editors are available (Bauer-Mehren et al., 2009). What is needed is a framework to facilitate tracking and update mechanism for modelers and researchers in the community to contribute to the collaborative model building and curation process.
+Creating an extensive model of gene-regulatory and biochemical networks with the
+latest data is a painstaking task. Curation is essential to creating an accurate
+model. Yet as science and technology advances rapidly, once curated models soon
+become out-of-date and need to be revised constantly. Many pathways and networks
+are now available online via pathway databases, such as Reactome, BioModels.net,
+Panther Pathways and many pathway editors are available (Bauer-Mehren et al.,
+2009). What is needed is a framework to facilitate tracking and update mechanism
+for modelers and researchers in the community to contribute to the collaborative
+model building and curation process.
 
-WikiPathways (Pico et al., 2008) is an effort for such a collaborative platform in the Wiki style. While the Wiki system has its strength in collaborative editing and version tracking, it does not provide access control or explicit community tagging mechanisms. In a community-driven model enrichment environment, it is effective to differentiate privileges to special interest group (SIG) members for curation activitiescommenting on existing tags, adding tags to models, annotating individual component inside a model and validating the annotations. In view of the complexity of biological pathways and the expertise of biologists in different areas, a community platform for biology requires an exquisite balance of federated resource sharing and quality control of information by a SIG of experts in the particular pathway or process. An access control privilege system allows the community to share and disseminate the knowledge, while enabling a dedicated SIG to maintain high-quality, curated information.
+WikiPathways (Pico et al., 2008) is an effort for such a collaborative platform
+in the Wiki style. While the Wiki system has its strength in collaborative
+editing and version tracking, it does not provide access control or explicit
+community tagging mechanisms. In a community-driven model enrichment
+environment, it is effective to differentiate privileges to special interest
+group (SIG) members for curation activitiescommenting on existing tags, adding
+tags to models, annotating individual component inside a model and validating
+the annotations. In view of the complexity of biological pathways and the
+expertise of biologists in different areas, a community platform for biology
+requires an exquisite balance of federated resource sharing and quality control
+of information by a SIG of experts in the particular pathway or process. An
+access control privilege system allows the community to share and disseminate
+the knowledge, while enabling a dedicated SIG to maintain high-quality, curated
+information.
 
-To provide such a curation framework, we have developed a system called Payao. The system is named after a fish aggregating device, an artificial floating raft where fish congregate and popular in Okinawa/Philippine area. Payao aims to become a biological knowledge aggregating system, which enable a community to work on the same models simultaneously, insert tags as pop-up balloon to the parts of the model, exchange comments, record the discussions and eventually update the models accurately and concurrently.
+To provide such a curation framework, we have developed a system called Payao.
+The system is named after a fish aggregating device, an artificial floating raft
+where fish congregate and popular in Okinawa/Philippine area. Payao aims to
+become a biological knowledge aggregating system, which enable a community to
+work on the same models simultaneously, insert tags as pop-up balloon to the
+parts of the model, exchange comments, record the discussions and eventually
+update the models accurately and concurrently.
 
-The current workflow for pathway curation has two phases working in a cyclical manner, as shown in Figure 1: pathway editing using biological pathway editors (CellDesigner) and community-driven pathway enrichment and knowledge sharing. Payao serves for enrichment phase of the curation. Payao is a web-based platform, providing an interface for adding tags and comments to the components (such as Species, Reactions and specified area) of the model, as well as community management functionality. The information on the users and tag data is stored in a relational database (RDBMS) on the server. Payao adopts community standards, accepting Systems Biology Markup Language (SBML; Hucka et al., 2003) format models and displays them in Systems Biology Graphical Notation (Le Novere et al., 2009) compliant CellDesigner (Funahashi et al., 2008) graphical notation. Curation data on Payao can be easily reintegrated into the original model via CellDesigner.
+The current workflow for pathway curation has two phases working in a cyclical
+manner, as shown in Figure 1: pathway editing using biological pathway editors
+(CellDesigner) and community-driven pathway enrichment and knowledge sharing.
+Payao serves for enrichment phase of the curation. Payao is a web-based
+platform, providing an interface for adding tags and comments to the components
+(such as Species, Reactions and specified area) of the model, as well as
+community management functionality. The information on the users and tag data is
+stored in a relational database (RDBMS) on the server. Payao adopts community
+standards, accepting Systems Biology Markup Language (SBML; Hucka et al., 2003)
+format models and displays them in Systems Biology Graphical Notation (Le Novere
+et al., 2009) compliant CellDesigner (Funahashi et al., 2008) graphical
+notation. Curation data on Payao can be easily reintegrated into the original
+model via CellDesigner.
 
 2 PLATFORM
 
@@ -1448,13 +1510,38 @@ Different expertise groups can contribute variety of information to the model.
 As web-based Payao can be accessible from all physical locations, it enables
 experts across the world to communicate in a collaborative curation effort.
 
-Community is formed around a pathway model. It is the model owner who sets access control over the registered model. In the Payao system, access controls can be set by specifying the privileges to individuals as well as to user categories, such as guest, login user and model user (who are invited to access the model by the model owner). This enables a user to stage the curation process, initiate the curation within a small group (e.g. SIG) and then switch the access control of the model for public viewing.
+Community is formed around a pathway model. It is the model owner who sets
+access control over the registered model. In the Payao system, access controls
+can be set by specifying the privileges to individuals as well as to user
+categories, such as guest, login user and model user (who are invited to access
+the model by the model owner). This enables a user to stage the curation
+process, initiate the curation within a small group (e.g. SIG) and then switch
+the access control of the model for public viewing.
 
-3.2 Model management
-The model owner registers and manages the SBML model. Upon registration, the model owner specifies the basic model information including, thumbnail image, references and copyright. The owner sets the access privilege to the user in three levels (browsing, adding tags, adding comments) by user categories or by individual users. The registered models can be sorted by Register Date and by Popularity. Popularity is measured by the activity level (number of tags and comments) and ranked in the list. All the registered models are listed with the thumbnails in the top screen in the right panel (Fig. 2). Registered models are stored in the database.
+3.2 Model management The model owner registers and manages the SBML model. Upon
+registration, the model owner specifies the basic model information including,
+thumbnail image, references and copyright. The owner sets the access privilege
+to the user in three levels (browsing, adding tags, adding comments) by user
+categories or by individual users. The registered models can be sorted by
+Register Date and by Popularity. Popularity is measured by the activity level
+(number of tags and comments) and ranked in the list. All the registered models
+are listed with the thumbnails in the top screen in the right panel (Fig. 2).
+Registered models are stored in the database.
 
-3.3 Community tagging and commenting
-The tagging on the visually represented pathways is a characteristic of Payao, which makes the curators easy to grasp the nature of the pathway while discussing on the specific component of the pathways. Like Google Maps, tags are displayed in a bubble form attached to the items (Species, Reactions or any specified area), and click to expand and display the content of the information in the tag. Tags can specifically be keywords, links, PubMed IDs as well as free text, as shown in Figure 3. A TagSet groups a set of tags and can be color coded for ease of viewing. User-defined TagSets also allow access control features (browsing, editing and editing tags) to be set by a user, in the same way as for model access privilege settings. Thus, a user can set permissions to a My Tagset, which hides comments and tags from the community members. Inside the tag, comments can be added in the free text format. While tags anchor the points for annotation in the model, comments function serves as the discussion space.
+3.3 Community tagging and commenting The tagging on the visually represented
+pathways is a characteristic of Payao, which makes the curators easy to grasp
+the nature of the pathway while discussing on the specific component of the
+pathways. Like Google Maps, tags are displayed in a bubble form attached to the
+items (Species, Reactions or any specified area), and click to expand and
+display the content of the information in the tag. Tags can specifically be
+keywords, links, PubMed IDs as well as free text, as shown in Figure 3. A TagSet
+groups a set of tags and can be color coded for ease of viewing. User-defined
+TagSets also allow access control features (browsing, editing and editing tags)
+to be set by a user, in the same way as for model access privilege settings.
+Thus, a user can set permissions to a My Tagset, which hides comments and tags
+from the community members. Inside the tag, comments can be added in the free
+text format. While tags anchor the points for annotation in the model, comments
+function serves as the discussion space.
 
 [@matsuoka2010payao]
 
@@ -1835,7 +1922,7 @@ http://www.sbml.org). To store the complete model information, including task
 settings and output definitions, COPASI uses its own file format. Models can
 also be exported in SBML and the program can write the ordinary differential
 equations in plain C files (ready to be included in other C/C++ programs) and in
-Berkeley Madonna's format (http://www.berkeleymadonna.com), a popular program
+Berkeley Madonna's format (<http://www.berkeleymadonna.com>), a popular program
 for nonlinear dynamics which does not import SBML.
 
 COPASI can also output results of its various functions in two ways: report
