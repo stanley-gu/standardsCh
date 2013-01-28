@@ -1721,6 +1721,12 @@ LAPACK (Anderson et al., 1999) for linear algebra, BLAS (Lawson et al.,1979) for
 matrix and vector operations, and LSODA (Petzold, 1983) from ODEPACK (Hindmarsh,
 1983) for integration of ODEs.
 
+#### CopasiUI
+
+#### SimpleCopasi
+
+(<http://code.google.com/p/copasi-simple-api/>)
+
 [@hoops2006copasi]
 
 
