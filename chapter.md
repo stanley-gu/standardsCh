@@ -1608,12 +1608,7 @@ important as it allows developers to build on existing code which in turn leads
 to new and interesting software tools.
 
 
-
-
-
-
-
-## Simulation Libraries
+## Simulation Engines
 
 Simulation and modeling is becoming one of the standard approaches to understand
 complex biochemical processes. Therefore, there is a growing need for software
@@ -1622,24 +1617,6 @@ support for the usage of these methods. These software libraries should be
 compatible, e.g. via file standards, platform independent and user friendly to
 avoid time-consuming conversions and learning procedures. In addition, the
 software should be actively maintained and updated by its authors.
-
-### RoadRunner
-
-RoadRunner is a powerful and portable simulation engine that is used in SBW, a
-resource sharing framework that allows applications to share functionality with
-each other [@bergmann2006sbw]. Jarnac and Roadrunner are already included with
-an SBW installation. COPASI and SBML ODE Solver may also be used as simulation
-engines alongside RoadRunner within SBW [@bergmann2008comparing].
-
-Instead of interpreting model equations, roadRunner will  compiles the model
-equations dynamically, which results in  much improved performance when compared
-with traditional simulators. RoadRunner uses the integrator CVODE and NLEQ for
-steady state analysis [@cohen1996cvode], . To further speed up the simulation,
-the model is separated into a system of independent and dependent variables.
-This separation process is described in detail in
-[@vallabhajosyula2006conservation]. Thus, all major operating systems are
-supported given that roadRunner only depends on CVODE and NLEQ being available
-on the platform.
 
 ### COPASI
 
@@ -1745,6 +1722,26 @@ matrix and vector operations, and LSODA (Petzold, 1983) from ODEPACK (Hindmarsh,
 1983) for integration of ODEs.
 
 [@hoops2006copasi]
+
+
+### RoadRunner
+
+RoadRunner is a powerful and portable simulation engine that is used in SBW, a
+resource sharing framework that allows applications to share functionality with
+each other [@bergmann2006sbw]. Jarnac and Roadrunner are already included with
+an SBW installation. COPASI and SBML ODE Solver may also be used as simulation
+engines alongside RoadRunner within SBW [@bergmann2008comparing].
+
+Instead of interpreting model equations, roadRunner will  compiles the model
+equations dynamically, which results in  much improved performance when compared
+with traditional simulators. RoadRunner uses the integrator CVODE and NLEQ for
+steady state analysis [@cohen1996cvode], . To further speed up the simulation,
+the model is separated into a system of independent and dependent variables.
+This separation process is described in detail in
+[@vallabhajosyula2006conservation]. Thus, all major operating systems are
+supported given that roadRunner only depends on CVODE and NLEQ being available
+on the platform.
+
 
 
 ## Commercial
