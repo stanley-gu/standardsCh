@@ -1623,12 +1623,12 @@ development of SBGN, and are stored using the Systems Biology Markup Language
 (SBML), a standard for representing models of biochemical and gene-regulatory
 networks. CellDesigner supports simulation and parameter scanning through a selection of different simulation engines, SBML ODE Solver, Copasi, or SBW [@funahashi2003celldesigner;@funahashi2008celldesigner].
 
-## Simulation 
+## Simulation Engines
 
 Simulation and modeling is becoming one of the standard approaches to understand
 complex biochemical processes. Therefore, there is a growing need for software
 tools that allow access to diverse simulation and modeling methods as well as
-support for the usage of these methods. These software tools should be
+support for the usage of these methods. These software libraries should be
 compatible, e.g. via file standards, platform independent and user friendly to
 avoid time-consuming conversions and learning procedures. In addition, the
 software should be actively maintained and updated by its authors.
