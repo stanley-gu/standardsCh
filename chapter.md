@@ -712,6 +712,23 @@ specification documents inevitably require minor editorial changes as its users
 discover errors and ambiguities. Such problems are corrected in new Releases of
 a given SBML specification.
 
+#### Extensibility
+
+It was realized early on by the authors of SBML that as systems biology
+developed there would be pressure from the community to make additional
+functionality available in SBML. To address this issue, SBML has a formal means
+for adding extensions in the form of *annotations*. There now exist
+a number of annotations that are used by software developers. Some of these
+address issues such as providing visualization information to allow software
+tools to render the model in some meaningful way (two examples of these will be
+given in a later section). Other extensions provide a means to store information
+necessary for flux balance analysis or to provide information for stochastic
+simulations. Ultimately some of the extensions will most likely be folded into
+the official SBML standard. This mechanism, a sort of Darwinian evolution,
+permits the most important and popular requests to be made part of SBML. It
+makes the process of SBML evolution more transparent and permits users to be
+more involved in the development of SBML.
+
 The latest generation of SBML, which is Level 3, is modular in the sense of
 having a defined core set of features and optional packages adding features on
 top of the core. This modular approach means that models can declare which
@@ -739,22 +756,7 @@ since developed a comprehensive cross platform tool
 (<http://sbml.sourceforge.org>) which is now the recommended SBML toolkit to use
 (libSBML). libSBML was developed in C/C++ for maximum portability.
 
-#### Extensibility
 
-It was realized early on by the authors of SBML that as systems biology
-developed there would be pressure from the community to make additional
-functionality available in SBML. To address this issue, SBML has a formal means
-for adding extensions in the form of *annotations*. There now exist
-a number of annotations that are used by software developers. Some of these
-address issues such as providing visualization information to allow software
-tools to render the model in some meaningful way (two examples of these will be
-given in a later section). Other extensions provide a means to store information
-necessary for flux balance analysis or to provide information for stochastic
-simulations. Ultimately some of the extensions will most likely be folded into
-the official SBML standard. This mechanism, a sort of Darwinian evolution,
-permits the most important and popular requests to be made part of SBML. It
-makes the process of SBML evolution more transparent and permits users to be
-more involved in the development of SBML.
 
 #### Practical Considerations
 
@@ -835,16 +837,7 @@ third-party developers, including the CellML API (<http://cellml-
 api.sourceforge.net/>), which is a library much like libSBML that allows
 software developers to read and write CellML models.
 
-### Mathematical Modeling Language (MML)
 
-MML is a text-based format that is the primary form of model representations in
-the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML,
-MML uses its own a C-styled language for model declaration. MML models are often
-expressed generally in terms of mathematical equations -- any mixture of
-ordinary and partial differential equations, implicit equations, integrations,
-discrete events, and even external programming code, such as Java, C, or MATLAB.
-One feature that sets MML apart from other model languages is its awareness of
-physical units when run through JSim's MML compiler [@chizeck2009].
 
 ### NeuroML
 
@@ -914,6 +907,8 @@ that generate simulation results. This means SED-ML could be used for a detailed
 description of the specific operations that led to the data in SBRML. One way to
 achieve this might be the inclusion of an SED-ML container in an SBRML file in
 similar way to SBML container in ‘model’ element of SBRML [@dada2010sbrml].
+
+### Numerical Markup Language (NuML)
 
 ## Other Standards
 
@@ -1014,6 +1009,8 @@ modulatory arcs, and node decorations.
 
 
 SBGN-ML and libSBGN
+
+cySBGN [@goncalves2013cysbgn]
 
 
 Efficient integration of the SBGN standard into the research cycle requires adoption by visualization and modeling software. Encouragingly, a growing number of pathway tools (see http://sbgn.org/SBGN_Software) offer some form of SBGN compatibility. However, current software implementations of SBGN are often incomplete and sometimes incorrect. This is not surprising: as SBGN covers a broad spectrum of biological phenomena, complete and accurate implementation of the full SBGN specifications represents a complex, error-prone and time-consuming task for individual tool developers. This development step could be simplified, and redundant implementation efforts avoided, by accurately translating the full SBGN specifications into a single software library, available freely for any tool developer to reuse in their own project. Moreover, the maps produced by any given tool usually cannot be reused in another tool, because SBGN only defines how biological information should be visualized, but not how the maps should be stored electronically. Related community standards for exchanging pathway knowledge, namely BioPAX (Demir et al., 2010) and SBML (Hucka et al., 2003), have proved insufficient for this role (more on this topic in Section 4). Therefore, we observed a second need, for a dedicated, standardized SBGN file format.
@@ -1419,27 +1416,6 @@ allows the community to share and disseminate the knowledge, while enabling a
 dedicated SIG to maintain high- quality, curated information
 [@pico2008wikipathways].
 
-### ArrayExpress
-
-ArrayExpress (<http://www.ebi.ac.uk/arrayexpress>) is a public database for high
-throughput functional genomics data. ArrayExpress consists of two parts—the
-ArrayExpress Repository, which is a MIAME supportive public archive of
-microarray data, and the ArrayExpress Data Warehouse, which is a database of
-gene expression profiles selected from the repository and consistently re-
-annotated. Archived experiments can be queried by experiment attributes, such as
-keywords, species, array platform, authors, journals or accession numbers. Gene
-expression profiles can be queried by gene names and properties, such as Gene
-Ontology terms and gene expression profiles can be visualized. ArrayExpress is a
-rapidly growing database, currently it contains data from >50,000 hybridizations
-and >1,500,000 individual expression profiles. 
-
-The ArrayExpress Archive is a database of functional genomics experiments
-including gene expression where you can query and download data collected to
-MIAME and MINSEQE standards. Gene Expression Atlas contains a subset of curated
-and re-annotated Archive data which can be queried for individual gene
-expression under different biological conditions across experiments
-[@parkinson2007arrayexpress;@rayner2006simple].
-
 ## Future Considerations
 
 With the success of Minimum Information guidelines and standardized
@@ -1613,6 +1589,15 @@ JSim's capabilities are more advanced than previous NSR software systems SIMCON
 [3], for simulation control, and XSIM [4] for X-terminal operation. JSim source
 code, binaries (for Windows, Macintosh and Linux) and documentation  are
 available free for non-commercial use at <http://physiome.org/>.
+
+MML is a text-based format that is the primary form of model representations in
+the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML,
+MML uses its own a C-styled language for model declaration. MML models are often
+expressed generally in terms of mathematical equations -- any mixture of
+ordinary and partial differential equations, implicit equations, integrations,
+discrete events, and even external programming code, such as Java, C, or MATLAB.
+One feature that sets MML apart from other model languages is its awareness of
+physical units when run through JSim's MML compiler [@chizeck2009].
 
 ### CellDesigner
 
