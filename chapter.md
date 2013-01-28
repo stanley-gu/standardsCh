@@ -37,6 +37,14 @@
 \newcommand{\bv}{\mbox{\boldmath $v$}}
 \newcommand{\bp}{\mbox{\boldmath $p$}}
 
+[![Standards](images/standards.png)](images/standards.png)
+
+\newpage
+\tableofcontents
+\newpage
+
+
+
 # Summary
 
 With the sequencing of the human genome, it has become apparent that Systems
@@ -51,6 +59,7 @@ role they might play in stimulating the development of new tools and approaches.
 Finally, the range of possible computational applications is described,
 highlighting the rich set of tools that is emerging as systems biology becomes a
 mainstream science.
+
 
 # Introduction
 
@@ -742,6 +751,8 @@ and/or state variables, models with spatially nonhomogeneous compartments and
 spatially dependent processes, and models in which species and processes refer
 to qualitative entities and processes rather than quantitative ones.
 
+[@hucka2010systems]
+
 #### SBML Development Tools
 
 Early on in the development of SBML, the original authors decided to provide
@@ -910,13 +921,11 @@ similar way to SBML container in ‘model’ element of SBRML [@dada2010sbrml].
 
 ### Numerical Markup Language (NuML)
 
-## Other Standards
 
-Apart from using XML to define an interchange format, there are two other
-mediums for representing models, these include, human readable text based
-formats and visual formats.
+## Visualization
 
-### Visualization of Models
+### Systems Biology Graphical Notation (SBGN)
+
 
 For many users, the ability to visualize models and to build models using visual
 tools is an important feature. There are currently a number of visualization
@@ -938,25 +947,6 @@ traditional approach where different molecular entities (such as proteins, ions,
 transporters etc.) have particular pictorial representations. The software tool
 called cellDesigner [@CellDesigner2003] implements this proposed format.
 
-#### JDesigner
-
-One of the first visualization tools, JDesigner [@Sauro:Omics] also implements a
-traditional way to depict networks (see Figure \ref{Figure:jdesigner}) using a
-pictorial representation to indicate substances and reactions. JDesigner also
-employs Bezier curves to represent arcs in an attempt to make the diagrams
-similar to the notation found in many molecular biology text books. CellDesigner
-and JDesigner connect to the Systems Biology Workbench (SBW) for simulation
-support.
-
-![Example of JDesigner's visual
-format\label{Figure:jdesigner}](images/JDesigner1.eps)
-
-Finally, there is a proposal from a commercial company called Gene Network
-Sciences which has devised a derivative of the Kohn notation called DCL. However
-this notation is proprietary and its utility to the general scientific
-community is not certain at this time.
-
-#### Systems Biology Graphical Notation (SBGN)
 
 Circuit diagrams and Unified Modeling Language diagrams are just two examples of
 standard visual languages that help accelerate work by promoting regularity,
@@ -1039,10 +1029,13 @@ Third, we wish to provide optimal libraries for each development environment. Fo
 
 [@van2012software]
 
+## Other Standards
 
 
 
-
+Apart from using XML to define an interchange format, there are two other
+mediums for representing models, these include, human readable text based
+formats and visual formats.
 
 ### Human Readable Formats
 
@@ -1131,6 +1124,8 @@ data will become much more significant. When this happens a proposed standard,
 called BioPAX (<www.biopax.org>) will most likely contribute.
 
 #### BioPax
+
+(<http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>)
 
 BioPAX (Biological Pathway Exchange) is another proposed standard based on XML.
 BioPAX aims to integrate many of the incompatible pathway related databases
@@ -1472,6 +1467,26 @@ ordinary and partial differential equations, implicit equations, integrations,
 discrete events, and even external programming code, such as Java, C, or MATLAB.
 One feature that sets MML apart from other model languages is its awareness of
 physical units when run through JSim's MML compiler [@chizeck2009].
+
+
+### JDesigner
+
+One of the first visualization tools, JDesigner [@Sauro:Omics] also implements a
+traditional way to depict networks (see Figure \ref{Figure:jdesigner}) using a
+pictorial representation to indicate substances and reactions. JDesigner also
+employs Bezier curves to represent arcs in an attempt to make the diagrams
+similar to the notation found in many molecular biology text books. CellDesigner
+and JDesigner connect to the Systems Biology Workbench (SBW) for simulation
+support.
+
+![Example of JDesigner's visual
+format\label{Figure:jdesigner}](images/JDesigner1.eps)
+
+Finally, there is a proposal from a commercial company called Gene Network
+Sciences which has devised a derivative of the Kohn notation called DCL. However
+this notation is proprietary and its utility to the general scientific
+community is not certain at this time.
+
 
 ### Systems Biology Workbench (SBW)
 
