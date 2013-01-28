@@ -1433,70 +1433,45 @@ this arena include semanticSBML [@krause2010annotation], SemSim
 
 ## Modeling
 
-### VCell
+### CellDesigner
 
-Much of the current software development in the systems biology community
-concentrates on the development of stand-alone applications.  Most of these
-tools are not easily extensible and many of them offer nearly identical
-functionality. One of the problems that currently plagues systems biology is the
-continual reinvention of the same kind of tool (called YADS - yet another
-differential equation solver). I believe it is not too unfair to suggest that in
-many cases our software capability today in systems biology is only marginally
-better than the first systems biology simulation package ever written (BIOSSIM)
-by David Garfinkel around 1960 [@Ga68]. In many cases even the user interfaces
-are only marginally better. There are of course exceptions to this, VCell
-[@VCELL] in particular comes to mind as well as tools such as Gepasi
-[@Gepasi:1993] and Jarnac/JDesigner [@Sauro:Omics]. VCell is particularly suited
-to spatial modelling, Gepasi is well known for its GUI user interface, the
-selection of optimization methods and its ability to fit data to models, Jarnac
-was until very recently (See Pysces [@Pysces2004]) the only script based
-programmable modelling tool which has a fairly complete set of tools for the
-analysis of time dependent ODEs and stochastic systems and finally JDesigner
-because it was the first visual design model tool.
+CellDesigner (<http://www.celldesigner.org/>) is a structured diagram editor for
+drawing gene-regulatory and biochemical networks. Networks are drawn based on
+the process diagram, with graphical notation system that influenced the
+development of SBGN, and are stored using the Systems Biology Markup Language
+(SBML), a standard for representing models of biochemical and gene-regulatory
+networks. CellDesigner supports simulation and parameter scanning through a selection of different simulation engines, SBML ODE Solver, Copasi, or SBW [@funahashi2003celldesigner;@funahashi2008celldesigner].
 
+### JSim
 
-[@moraru2008virtual]
+JSim [@raymond03] is a Java-based simulation system for building quantitative
+numeric models and  analyzing them with respect to experimental reference data.
+JSim was developed primarily for generating model solutions for use in designing
+experiments and analyzing data in physiological and biochemical studies, but its
+computational engine is general and equally applicable to  solving equations in
+physics, chemistry, and mechanics. JSim has been under development at the
+National Simulation Resource for Mass Transport and Metabolism (NSR) since 1999.
+JSim uses a model specification language, MML (for Mathematical Modeling
+Language) which supports ordinary and partial differential equations, implicit
+equations, integrals, summations, discrete events, and allows calls to external
+procedures. JSim's compiler translates MML into Java code in which the numeric
+results are calculated. Within the JSim graphical user interface (GUI) users
+adjust parameter values, initiate model runs, plot data, and perform behavioral
+analysis, sensitivity analysis, parameter optimization for curve fitting.
+Alternatively one can use JSim's command line interfaces (jsbatch and jsfim).
+JSim's capabilities are more advanced than previous NSR software systems SIMCON
+[3], for simulation control, and XSIM [4] for X-terminal operation. JSim source
+code, binaries (for Windows, Macintosh and Linux) and documentation  are
+available free for non-commercial use at <http://physiome.org/>.
 
-The Virtual Cell (VCell; http://vcell.org/) is a problem solving environment,
-built on a central database, for analysis, modelling and simulation of cell
-biological processes. VCell integrates a growing range of molecular mechanisms,
-including reaction kinetics, diffusion, ow, membrane transport, lateral membrane
-diffusion and electrophysiology, and can associate these with geometries derived
-from experimental microscope images. It has been developed and deployed as a
-web-based, distributed, client server system, with more than a thousand world-
-wide users. VCell provides a separation of layers (core technologies and
-abstractions) representing biological models, physical mechanisms, geometry,
-mathematical models and numerical methods. This separation claries the impact of
-modelling decisions, assumptions and approximations. The result is a physically
-consistent, mathematically rigorous, spatial modelling and simulation framework.
-Users create biological models and VCell will automatically (i) generate the
-appropriate mathematical encoding for running a simulation and (ii) generate and
-compile the appropriate computer code. Both deterministic and stochastic
-algorithms are supported for describing and running non-spatial simulations; a
-full partial differential equation solver using the nite volume numerical
-algorithm is available for reactiondiffusionadvection simulations in complex
-cell geometries including 3D geometries derived from microscope images. Using
-the VCell database, models and model components can be reused and updated, as
-well as privately shared among collaborating groups, or published. Exchange of
-models with other tools is possible via import/export of SBML, CellML and MatLab
-formats. Furthermore, curation of models is facilitated by external database
-binding mechanisms for unique identication of components and by standardised
-annotations compliant with the MIRIAM standard. VCell is now open source, with
-its native model encoding language (VCML) being a public specication, which
-stands as the basis for a new generation of more customised, experiment-centric
-modelling tools using a new plug-in based platform.
-
-The reason for the repetitive nature of software in systems biology is that
-almost each and every group engaged in computational systems biology writes
-their own simulation package. Given the time constraints on the project, the
-software will only reach a level of maturity that is often equivalent to
-BIOSSIM. As a result, the provision of software does not appear to advance.
-
-A number of groups have recognized this problem and instead of developing single
-isolated applications, they have chosen to develop a software infrastructure
-that permits and encourages extensibility and code reuse. The later is extremely
-important as it allows developers to build on existing code which in turn leads
-to new and interesting software tools.
+MML is a text-based format that is the primary form of model representations in
+the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML,
+MML uses its own a C-styled language for model declaration. MML models are often
+expressed generally in terms of mathematical equations -- any mixture of
+ordinary and partial differential equations, implicit equations, integrations,
+discrete events, and even external programming code, such as Java, C, or MATLAB.
+One feature that sets MML apart from other model languages is its awareness of
+physical units when run through JSim's MML compiler [@chizeck2009].
 
 ### Systems Biology Workbench (SBW)
 
@@ -1568,47 +1543,77 @@ Since SBW message passing is based on TCP/IP sockets it is straight forward to
 run SBW across the internet or more significantly across computational nodes on
 a supercomputer cluster.
 
-### JSim
+### VCell
 
-JSim [@raymond03] is a Java-based simulation system for building quantitative
-numeric models and  analyzing them with respect to experimental reference data.
-JSim was developed primarily for generating model solutions for use in designing
-experiments and analyzing data in physiological and biochemical studies, but its
-computational engine is general and equally applicable to  solving equations in
-physics, chemistry, and mechanics. JSim has been under development at the
-National Simulation Resource for Mass Transport and Metabolism (NSR) since 1999.
-JSim uses a model specification language, MML (for Mathematical Modeling
-Language) which supports ordinary and partial differential equations, implicit
-equations, integrals, summations, discrete events, and allows calls to external
-procedures. JSim's compiler translates MML into Java code in which the numeric
-results are calculated. Within the JSim graphical user interface (GUI) users
-adjust parameter values, initiate model runs, plot data, and perform behavioral
-analysis, sensitivity analysis, parameter optimization for curve fitting.
-Alternatively one can use JSim's command line interfaces (jsbatch and jsfim).
-JSim's capabilities are more advanced than previous NSR software systems SIMCON
-[3], for simulation control, and XSIM [4] for X-terminal operation. JSim source
-code, binaries (for Windows, Macintosh and Linux) and documentation  are
-available free for non-commercial use at <http://physiome.org/>.
+Much of the current software development in the systems biology community
+concentrates on the development of stand-alone applications.  Most of these
+tools are not easily extensible and many of them offer nearly identical
+functionality. One of the problems that currently plagues systems biology is the
+continual reinvention of the same kind of tool (called YADS - yet another
+differential equation solver). I believe it is not too unfair to suggest that in
+many cases our software capability today in systems biology is only marginally
+better than the first systems biology simulation package ever written (BIOSSIM)
+by David Garfinkel around 1960 [@Ga68]. In many cases even the user interfaces
+are only marginally better. There are of course exceptions to this, VCell
+[@VCELL] in particular comes to mind as well as tools such as Gepasi
+[@Gepasi:1993] and Jarnac/JDesigner [@Sauro:Omics]. VCell is particularly suited
+to spatial modelling, Gepasi is well known for its GUI user interface, the
+selection of optimization methods and its ability to fit data to models, Jarnac
+was until very recently (See Pysces [@Pysces2004]) the only script based
+programmable modelling tool which has a fairly complete set of tools for the
+analysis of time dependent ODEs and stochastic systems and finally JDesigner
+because it was the first visual design model tool.
 
-MML is a text-based format that is the primary form of model representations in
-the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML,
-MML uses its own a C-styled language for model declaration. MML models are often
-expressed generally in terms of mathematical equations -- any mixture of
-ordinary and partial differential equations, implicit equations, integrations,
-discrete events, and even external programming code, such as Java, C, or MATLAB.
-One feature that sets MML apart from other model languages is its awareness of
-physical units when run through JSim's MML compiler [@chizeck2009].
+[@moraru2008virtual]
 
-### CellDesigner
+The Virtual Cell (VCell; http://vcell.org/) is a problem solving environment,
+built on a central database, for analysis, modelling and simulation of cell
+biological processes. VCell integrates a growing range of molecular mechanisms,
+including reaction kinetics, diffusion, ow, membrane transport, lateral membrane
+diffusion and electrophysiology, and can associate these with geometries derived
+from experimental microscope images. It has been developed and deployed as a
+web-based, distributed, client server system, with more than a thousand world-
+wide users. VCell provides a separation of layers (core technologies and
+abstractions) representing biological models, physical mechanisms, geometry,
+mathematical models and numerical methods. This separation claries the impact of
+modelling decisions, assumptions and approximations. The result is a physically
+consistent, mathematically rigorous, spatial modelling and simulation framework.
+Users create biological models and VCell will automatically (i) generate the
+appropriate mathematical encoding for running a simulation and (ii) generate and
+compile the appropriate computer code. Both deterministic and stochastic
+algorithms are supported for describing and running non-spatial simulations; a
+full partial differential equation solver using the nite volume numerical
+algorithm is available for reactiondiffusionadvection simulations in complex
+cell geometries including 3D geometries derived from microscope images. Using
+the VCell database, models and model components can be reused and updated, as
+well as privately shared among collaborating groups, or published. Exchange of
+models with other tools is possible via import/export of SBML, CellML and MatLab
+formats. Furthermore, curation of models is facilitated by external database
+binding mechanisms for unique identication of components and by standardised
+annotations compliant with the MIRIAM standard. VCell is now open source, with
+its native model encoding language (VCML) being a public specication, which
+stands as the basis for a new generation of more customised, experiment-centric
+modelling tools using a new plug-in based platform.
 
-CellDesigner (<http://www.celldesigner.org/>) is a structured diagram editor for
-drawing gene-regulatory and biochemical networks. Networks are drawn based on
-the process diagram, with graphical notation system that influenced the
-development of SBGN, and are stored using the Systems Biology Markup Language
-(SBML), a standard for representing models of biochemical and gene-regulatory
-networks. CellDesigner supports simulation and parameter scanning through a selection of different simulation engines, SBML ODE Solver, Copasi, or SBW [@funahashi2003celldesigner;@funahashi2008celldesigner].
+The reason for the repetitive nature of software in systems biology is that
+almost each and every group engaged in computational systems biology writes
+their own simulation package. Given the time constraints on the project, the
+software will only reach a level of maturity that is often equivalent to
+BIOSSIM. As a result, the provision of software does not appear to advance.
 
-## Simulation Engines
+A number of groups have recognized this problem and instead of developing single
+isolated applications, they have chosen to develop a software infrastructure
+that permits and encourages extensibility and code reuse. The later is extremely
+important as it allows developers to build on existing code which in turn leads
+to new and interesting software tools.
+
+
+
+
+
+
+
+## Simulation Libraries
 
 Simulation and modeling is becoming one of the standard approaches to understand
 complex biochemical processes. Therefore, there is a growing need for software
@@ -1618,7 +1623,7 @@ compatible, e.g. via file standards, platform independent and user friendly to
 avoid time-consuming conversions and learning procedures. In addition, the
 software should be actively maintained and updated by its authors.
 
-### Road Runner
+### RoadRunner
 
 RoadRunner is a powerful and portable simulation engine that is used in SBW, a
 resource sharing framework that allows applications to share functionality with
@@ -1741,61 +1746,6 @@ matrix and vector operations, and LSODA (Petzold, 1983) from ODEPACK (Hindmarsh,
 
 [@hoops2006copasi]
 
-## Online Platforms
-
-### CycSim
-
-CycSim (<http://www.genoscope.cns.fr/cycsim>) is a web application dedicated to
-in silico experiments with genome-scale metabolic models coupled to the
-exploration of knowledge from BioCyc and KEGG. Specifically, CycSim supports the
-design of knockout experiments: simulation of growth phenotypes of single or
-multiple gene deletions mutants on specified media, comparison of these
-predictions with experimental phenotypes and direct visualization of both on
-metabolic maps. The web interface is designed for simplicity, putting
-constraint-based modelling techniques within easier reach of biologists. CycSim
-also functions as an online repository of genome-scale metabolic models.
-
-Constraint-based modelling (Price et al., 2004) is a framework, simple and
-abstract enough to allow tractable modelling of metabolism at genome-scale,
-providing direct insights into the genotypephenotype relationship. Constraint-
-based models (CBM) consist of a stoichiometric representation of the whole-cell
-metabolism together with a set of constraints on reaction fluxes. A wide variety
-of computational methods have been developed for this framework to characterize
-metabolic capabilities, help to discover new reactions, simulate scenarios of
-metabolic evolution or design experimental strategies to investigate metabolic
-behaviours (Feist and Palsson, 2008).
-
-A few simulation tools (Becker et al., 2007; Beste et al., 2007; Lee et al.,
-2003; Sympheny, www.genomatica.com) and model repositories (Le Novre et al.,
-2006; BiGG, unpublished data, http://bigg.ucsd.edu) have been proposed to the
-growing community of CBM users. These software tools have been limited in their
-usefulness to biologists for several reasons. First, most are either commercial,
-or add-ons to commercial platforms (e.g. MATLAB, http://www.mathworks.com).
-Next, they are typically directed at users with a background in modelling.
-Lastly, these tools are not designed to explore the biochemical and genomic
-knowledge underlying the metabolic models. Currently, the most convenient tools
-to reconstruct metabolic networks from genome annotation are databases of
-reference pathways such as BioCyc (Karp et al., 2005) and KEGG (Kanehisa et al.,
-2008). These databases provide descriptive and queriable views of the genetic
-and biochemical components of metabolism, but do not support modelling,
-simulation or prediction.
-
-To address these shortcomings, we introduce CycSim, a web platform which
-supports in silico experiments with a variety of metabolic models, puts both the
-design and the results of these experiments in the visual context of reference
-pathways databases and allows confrontation with experimental data.
-
-Predictions: CycSim supports in silico experiments with metabolic models. Each
-experiment consists in selecting a wild-type strain, choosing one or several
-genetic perturbations (e.g. knockout), and picking a set of growth media. Growth
-phenotype predictions are then generated for all (mutant, medium) pairs. These
-predictions can be compared against experimental growth phenotypes when
-available (Fig. 1). Two prediction methods are implemented: flux balance
-analysis and metabolites producibility check (Feist and Palsson, 2008). For any
-given (mutant, medium) pair, CycSim can also compute a flux distribution that is
-compatible with the model constraints and the objective function.
-
-[@le2009cycsim]
 
 ## Commercial
 
