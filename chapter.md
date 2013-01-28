@@ -46,7 +46,7 @@ indicative trends to emerge in recent years is the development of model
 interchange standards that permit biologists to easily exchange dynamical models
 between different software tools. In this chapter two chief model exchange
 standards, SBML and CellML are described. In addition, the development of
-extensible software frameworks, including SBW and BioUML are discussed and the
+extensible software frameworks, including SBW, are discussed and the
 role they might play in stimulating the development of new tools and approaches.
 Finally, the range of possible computational applications is described,
 highlighting the rich set of tools that is emerging as systems biology becomes a
@@ -1522,9 +1522,7 @@ A number of groups have recognized this problem and instead of developing single
 isolated applications, they have chosen to develop a software infrastructure
 that permits and encourages extensibility and code reuse. The later is extremely
 important as it allows developers to build on existing code which in turn leads
-to new and interesting software tools. In this section I will describe three
-such environments, SBW, BioSPICE and BioUML. All three environments are open
-source.
+to new and interesting software tools.
 
 ### Systems Biology Workbench (SBW)
 
@@ -1535,9 +1533,7 @@ Linux, Windows or Mac OS and can develop software in a variety of different
 languages including C/C++, Java, Delphi, FORTRAN, Matlab, Perl, Python and any
 .NET language (e.g. Visual Basic or C\#). The SBW was originally developed in
 parallel with SBML (Systems Biology Markup Language) as part of the Symbiotic
-Systems Project ERATO project at Caltech, Pasadena (Subsequent development was
-supported by DARPA through the BioSPICE program and development is now focused
-at the Keck Graduate Institute).
+Systems Project ERATO project at Caltech, Pasadena.
 
 The central component of SBW is the broker, which is responsible for
 coordinating interactions among the different resources connected to it.  These
@@ -1628,21 +1624,6 @@ the process diagram, with graphical notation system that influenced the
 development of SBGN, and are stored using the Systems Biology Markup Language
 (SBML), a standard for representing models of biochemical and gene-regulatory
 networks. CellDesigner supports simulation and parameter scanning through a selection of different simulation engines, SBML ODE Solver, Copasi, or SBW [@funahashi2003celldesigner;@funahashi2008celldesigner].
-
-### BioUML
-
-BioUML (<www.biouml.org>), developed by Fedor Kolpakov and his team, is a Java
-framework based around eclipse and targeted at the systems biology community.
-The authors state that the utility of BioUML covers access to databases with
-experimental data, tools for formalized description of biological systems
-structure and functioning, as well as tools for their visualization and
-simulations. BioUML is at an early stage of development but the central idea is
-of a plugable environment where plugins written in Java are used to extend the
-functionality of the framework. Much work remains to make the BioUML usable for
-the average biologists but the idea is interesting although the requirement to
-write all code in Java is limiting and some means to permit alternative language
-bindings would be useful. Recently the BioUML team developed a SBW interface,
-which permits access to plugins that are written in many different languages.
 
 ## Simulation 
 
@@ -2081,26 +2062,26 @@ development of tools for systems biology. However, much of what is being
 developed is repetitious and little true advancement is being made. This is
 probably do to the large number of new comers to the field who are inexperienced
 and inevitably repeat what has gone before. A number of solutions exist to solve
-this problem, one is to develop extensible frameworks such as SBW, BioSPICE or
-BioUML, the other is to develop a suite of open-source libraries which can carry
-out specific functionality. An example of this is libSBML being developed by the
-SBML team. This library, written in C/C++ for maximum portability, enables other
-developers to concentrate on simulation capability rather than waste unnecessary
-effort developing their own SBML parser. In terms of other possible libraries,
-examples include, open-source Gillespie based stochastic solvers and ODE
-solvers. In both cases there is also the need to develop scalable and robust
-methods for computing the dependent and independent species. Further more,
-hybrid methods combining continuous and stochastic methods is a pressing need at
-the current time. Many biological systems interface noisy sensory apparatus
-(e.g. ligand binding to the surface of a cell membrane) to internal continuous
-analog networks [@SauroReview:2004]. In addition to the core solvers, we also
-need scalable analysis tools, particularly bifurcation analysis tools and
-sensitivity analysis tools. On the model validation front, much remains to be
-done, particularly the relationship between model validation and how this can
-direct future experimentation. This leads on to the development of new methods
-and algorithms for analyzing the complex networks in particular methods should
-be developed to modularize large networks since understanding an entire network
-is virtually impossible with out some recourse to a hierarchical modularization.
+this problem, one is to develop extensible frameworks such as SBW, the other is
+to develop a suite of open-source libraries which can carry out specific
+functionality. An example of this is libSBML being developed by the SBML team.
+This library, written in C/C++ for maximum portability, enables other developers
+to concentrate on simulation capability rather than waste unnecessary effort
+developing their own SBML parser. In terms of other possible libraries, examples
+include, open-source Gillespie based stochastic solvers and ODE solvers. In both
+cases there is also the need to develop scalable and robust methods for
+computing the dependent and independent species. Further more, hybrid methods
+combining continuous and stochastic methods is a pressing need at the current
+time. Many biological systems interface noisy sensory apparatus (e.g. ligand
+binding to the surface of a cell membrane) to internal continuous analog
+networks [@SauroReview:2004]. In addition to the core solvers, we also need
+scalable analysis tools, particularly bifurcation analysis tools and sensitivity
+analysis tools. On the model validation front, much remains to be done,
+particularly the relationship between model validation and how this can direct
+future experimentation. This leads on to the development of new methods and
+algorithms for analyzing the complex networks in particular methods should be
+developed to modularize large networks since understanding an entire network is
+virtually impossible with out some recourse to a hierarchical modularization.
 
 Finally, the role of high performance computing in systems biology is still very
 novel. In fact there appear to be very few applications to date of high
