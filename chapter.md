@@ -936,9 +936,7 @@ manipulating Kohn maps and no means to convert Kohn maps to SBML or any other
 standard. Hopefully this will change in the future.
 
 An early computer based visual notation was proposed by Cook [@Cook2001] who
-developed a notation called BioD. This notation has been implemented in a
-commercial software package called KineCyte
-(<http://www.rainbio.com/Software.html>).
+developed a notation called BioD.
 
 Another proposal has been put forward by Kitano [@Kitano2003]. This is a more
 traditional approach where different molecular entities (such as proteins, ions,
