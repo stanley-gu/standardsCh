@@ -1618,7 +1618,7 @@ Alternatively one can use JSim's command line interfaces (jsbatch and jsfim).
 JSim's capabilities are more advanced than previous NSR software systems SIMCON
 [3], for simulation control, and XSIM [4] for X-terminal operation. JSim source
 code, binaries (for Windows, Macintosh and Linux) and documentation  are
-available free for non-commercial use at http://physiome.org/.
+available free for non-commercial use at <http://physiome.org/>.
 
 ### CellDesigner
 
