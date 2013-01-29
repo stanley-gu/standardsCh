@@ -931,8 +931,8 @@ be discussed later in this chapter, implemented this proposed format.
 
 SBGN (<http://www.sbgn.org/>) has arisen in recent years as one of the most
 widely supported and comprehensive visual languages, developed by a community of
-biochemists, modelers and computer scientists [@le2009systems]. SBGN consists of three
-complementary languages: process diagram, entity relationship diagram and
+biochemists, modelers and computer scientists [@le2009systems]. SBGN consists of
+three complementary languages: process diagram, entity relationship diagram and
 activity flow diagram. Together they enable scientists to represent networks of
 biochemical interactions in a standard, unambiguous way. The success of SBGN
 will foster efficient and accurate representation, visualization, storage,
@@ -948,60 +948,29 @@ activity flow diagram depicts only the cascade of activity, thus making the
 notation similar to the reduced representations often used in the current
 literature to describe signaling pathways and gene regulatory networks.
 
+
+
 #### SBGN-ML
 
+SBGN only defines how biological information should be visualized, but not how
+the mapping should be stored electronically. SBGN-ML
+(<http://www.sbgn.org/LibSBGN/Exchange_Format>) is a dedicated file format to
+allow the efficient integration of SBGN into the research workflow
+[@le2010report]. Thus, SBGN-ML can be used to store and transfer the information
+necessary for software to faithfully render the corresponding SBGN map. The
+software library libSBGN (<http://www.sbgn.org/SBGN_Software/LibSBGN>)
+complements the file format. It consists of two parallel implementations in Java
+and C++, which can be easily translated to different programming languages
+[@van2012software].
 
-
-Efficient integration of the SBGN standard into the research cycle requires
-adoption by visualization and modeling software. Encouragingly, a growing number
-of pathway tools (see <http://sbgn.org/SBGN_Software>) offer some form of SBGN
-compatibility. However, current software implementations of SBGN are often
-incomplete and sometimes incorrect. This is not surprising: as SBGN covers a
-broad spectrum of biological phenomena, complete and accurate implementation of
-the full SBGN specifications represents a complex, error-prone and time-
-consuming task for individual tool developers. This development step could be
-simplified, and redundant implementation efforts avoided, by accurately
-translating the full SBGN specifications into a single software library,
-available freely for any tool developer to reuse in their own project. Moreover,
-the maps produced by any given tool usually cannot be reused in another tool,
-because SBGN only defines how biological information should be visualized, but
-not how the maps should be stored electronically. Related community standards
-for exchanging pathway knowledge, namely BioPAX (Demir et al., 2010) and SBML
-(Hucka et al., 2003), have proved insufficient for this role (more on this topic
-in Section 4). Therefore, we observed a second need, for a dedicated,
-standardized SBGN file format.
-
-Following these observations, we started a community effort with two goals: to
-encourage the adoption of SBGN by facilitating its implementation in pathway
-tools, and to increase interoperability between SBGN-compatible software. This
-has resulted in a file format called SBGN-ML and a software library called
-LibSBGN. Each of these two components will be explained separately in the next
-sections.
-
-SBGN-ML is a dedicated lightweight XML-based file format describing the overall
-geometry of SBGN maps, while also preserving their underlying biological
-meaning. 
-
-The first set of requirement deals with the graphical aspect of SBGN. It means it should be easy to render a SBGN-ML file to the screen. Therefore, the format stores all necessary information, such as coordinates, to draw the map faithfully, so that rendering tools do not have to perform any complex calculations. Incidentally, this implies the layout of the whole SBGN map has to be expressed explicitly: the size and position of each graphical object and the path of each arc. Various efforts have shown that generating a layout for heterogeneous biological pathways is a computationally hard problem, so a good layout is always worth preserving, if only from a computational perspective. Besides, the choice of a specific layout by the author of a map is often driven by concerns related to aesthetics, readability or to reinforce ideas of chronology or proximity. This information might be lost with automated layouts. Layout conventions predate SBGN, and are not part of any standard, but they nonetheless play a large role in making it easier for other human beings to understand the biological system being described.
-
-The second requirement encompasses two perpendicular characteristics of SBGN as a language: semantics and syntax. Beyond the picture itself, the format should capture the biological meaning of an SBGN map. Therefore, SBGN-ML specifies the nature of graphical elements (glyphs), following the SBGN terminology (e.g., macromolecule, process, etc.). For example, we can distinguish between a ‘logic arc’ and a ‘consumption arc’ even though they have the same visual appearance. Supporting tools refer to this terminology and draw the glyph according to the SBGN specifications. In terms of syntax, SBGN-ML encodes information on relationships between the various SBGN objects: the glyphs at both ends of an arc, the components of a complex, the members of a compartment and the ‘decorations’ (such as unit of information and state variable) belonging to specific glyphs and arcs. This semantic and syntactic information is essential to a number of automated tasks, such as map validation, or network analysis (as the topology of the underlying biological network can be inferred from the various relationships encoded by the format).
-
-[@le2010report]
-
-
-#### libSBGN
-
-A software library called LibSBGN complements the file format. It consists of two parallel implementations in Java and C++. The libraries share the same object model, so that algorithms operating on it can be easily translated to different programming languages.
-
-The primary goal of LibSBGN is to simplify the work for developers of existing pathway tools. To reach this goal we followed three design principles. First, we avoided tool-specific implementation details. Implementation artifacts that are specific for one bioinformatics tool would impose difficulties for adoption by others. We sought input from several tool developers into the LibSBGN effort early on.
-
-Second, we do not want to force the use of a single rendering implementation (meaning the software routine that translates from memory objects to screen or graphic format). Early in the development of LibSBGN, it became clear that for most pathway drawing tools, the rendering engine is an integral part that is not easily replaced by a common library. The typical usage scenario is therefore to let LibSBGN handle input and output, but to translate to the application's own object model, and display using the application's own rendering engine. Enforcing a common rendering library would hamper adoption of LibSBGN. We instead opted to build a render comparison pipeline to ensure consistency between various renderers (this pipeline is described in more detail in Section 3.2).
-
-Third, we wish to provide optimal libraries for each development environment. For both the C++ and Java versions, code is automatically generated based on the XML Schema definition (XSD). The method of generating code from XSD has reduced the effort needed to keep the Java and C++ versions synchronized during development. The generated Java code plus helper classes form a pure Java library. The alternative possibility, to create a single C++ library and a Java wrapper around that, is not preferable because it complicates multi-platform installation and testing. Our experience with a related project, LibSBML (Bornstein et al., 2008), is that the community has a need for a pure Java library in spite of existing Java bindings for C++, which has led to the development of the pure Java JSBML (Dräger et al., 2011) as an alternative. Although both LibSBML and JSBML are successful projects, the maintenance of two similar projects in different languages is costly in terms of developer time. By generating native libraries for both environments automatically, we hope to avoid that extra cost.
-
-[@van2012software]
-
-cySBGN [@goncalves2013cysbgn]
+The plugin cySBGN
+[<http://www.ebi.ac.uk/saezrodriguez/cysbgn/>;@goncalves2013cysbgn], through use
+of libSBGN and SBGN-ML allows SBGN diagrams to be imported, modified, and
+analyzed within Cytoscape (<http://www.cytoscape.org/>), a popular network
+visualizer. Coupled with the cySBML
+[<http://sourceforge.net/projects/cysbml/>;@konig2012cysbml] plugin, which
+allows SBML models to be imported into Cytoscape, SBGN maps can be generated
+from SBML models directly.
 
 ## Other Standards
 
