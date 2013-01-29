@@ -1362,49 +1362,6 @@ over the Internet. At the time of this writing, JWS Online contains 131 models,
 downloadable to SBML, while also providing a web browser interface to a
 simulation server [@olivier2004web].
 
-### Payao
-
-Payao (<http://www.payaologue.org>) is a community-based, collaborative web
-service platform for gene-regulatory and biochemical pathway model curation. The
-system combines Web 2.0 technologies and online model visualization functions to
-enable a collaborative community to annotate and curate biological models. Payao
-reads the models in Systems Biology Markup Language format, displays them with
-CellDesigner, a process diagram editor, which complies with the Systems Biology
-Graphical Notation, and provides an interface for model enrichment (adding tags
-and comments to the models) for the access-controlled community members
-[@matsuoka2010payao].
-
-Creating an extensive model of gene-regulatory and biochemical networks with the
-latest data is a painstaking task. Curation is essential to creating an accurate
-model. Yet as science and technology advances rapidly, once curated models soon
-become out-of-date and need to be revised constantly. Many pathways and networks
-are now available online via pathway databases, such as Reactome, BioModels.net,
-Panther Pathways and many pathway editors are available (Bauer-Mehren et al.,
-2009). What is needed is a framework to facilitate tracking and update mechanism
-for modelers and researchers in the community to contribute to the collaborative
-model building and curation process.
-
-Payao aims to become a biological knowledge aggregating system, which enable a
-community to work on the same models simultaneously, insert tags as pop-up
-balloon to the parts of the model, exchange comments, record the discussions and
-eventually update the models accurately and concurrently.
-
-Payao is a spiritual successor to WikiPathways (<http://www.wikipathways.org/>),
-a similar effort for such a collaborative platform, but in the Wiki style. While
-the Wiki system has its strength in collaborative editing and version tracking,
-it does not provide access control or explicit community tagging mechanisms. In
-a community-driven model enrichment environment, it is effective to
-differentiate privileges to special interest group (SIG) members for curation
-activities commenting on existing tags, adding tags to models, annotating
-individual component inside a model and validating the annotations. In view of
-the complexity of biological pathways and the expertise of biologists in
-different areas, a community platform for biology requires an exquisite balance
-of federated resource sharing and quality control of information by a SIG of
-experts in the particular pathway or process. An access control privilege system
-allows the community to share and disseminate the knowledge, while enabling a
-dedicated SIG to maintain high- quality, curated information
-[@pico2008wikipathways].
-
 ## Future Considerations
 
 With the success of Minimum Information guidelines and standardized
