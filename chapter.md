@@ -812,10 +812,6 @@ standalone applications, however, a number of database vendors have also
 decided to provide export of SBML as an option, examples include reactome, stke
 and sigpath.
 
-A related standard that has been proposed by [@MFAML2004] is for the storage of
-flux balance models. The proposed format is very similar to SBML but has the
-additional feature of storing the flux balance objective function.
-
 ### CellML
 
 CellML [@LloydCellML2004] represents cellular models using a mathematical
