@@ -1090,28 +1090,19 @@ endocrine function, etc.) are also within the scope of CellML.
 
 ### Physiome Repository
 
-From its creation in 2000 until June 2009, the CellML model repository
-represented a relatively simple storage facility for CellML model files.
-Although all the models in the repository were freely accessible to the public,
-there was no mechanism in place to promote the sharing of models with their
-revision history intact. Furthermore, collaboration between several researchers
-is often required during the development of a model. Collaboration on a model
-can be greatly simplified by a tool which records the change history of a model,
-and makes that history available to other collaborators. Finally, once a model
-is ready to be published, it must be indexed and presented so that it can be
-easily searched for and viewed, thereby avoiding unnecessary duplication of
-modeling efforts. Since it was not possible to extend the original repository
-software to support these more advanced usage requirements, a complete rewrite
-was required, and the Physiome Model Repository 2 (PMR2) was created. 
-
-Unlike the previous version of the CellML model repository, PMR2 is file format
-agnostic, meaning that it has no restrictions on what it can store. For example,
-SBML1 and FieldML (Christie et al., 2009) models can be stored alongside models
-in CellML and other formats. However, in order to properly handle (display,
-edit, etc.) these, there is a need to implement plugins for each different
-format. In addition to the model files, it is possible to upload additional
-supplementary data with a model, including images, software-specific information
-and even the original experimental data on which the model is based.
+The CellML model repository represents a relatively simple storage facility for
+CellML models.Although all the models in the repository were freely accessible
+to the public, there was no mechanism in place to promote the sharing of models
+with their revision history intact. Furthermore, collaboration between several
+researchers is often required during the development of a model. Collaboration
+on a model can be greatly simplified by a tool which records the change history
+of a model, and makes that history available to other collaborators. Finally,
+once a model is ready to be published, it must be indexed and presented so that
+it can be easily searched for and viewed, thereby avoiding unnecessary
+duplication of modeling efforts. Since it was not possible to extend the
+original repository software to support these more advanced usage requirements,
+a complete rewrite was required, and the Physiome Model Repository 2 (PMR2) was
+created [@yu2011physiome].
 
 Workspaces, distributed version control systems and model revision history All
 the files related to a particular model are stored together in PMR2 within a
@@ -1120,21 +1111,12 @@ workspaces uses a distributed version control system (DVCS) called Mercurial
 [@o2007distributed]. By providing version tracking, this system ensures that
 users within a group cannot accidentally overwrite or purge changes of other
 users. Furthermore, each change made to a model, or its associated files, is
-recorded as a single changeset: a time-stamped, informative comment from an
-identifiable user, which describes the changes they have made. As model files
+recorded as a single change with a time-stamped, informative comment from an
+identifiable user describing the changes they have made. As model files
 are progressively altered, the changesets preserve the history of model
 development. Finally, even if two users simultaneously change the same model
 file, distinct changesets allow their work to be later merged in a controlled
 manner.
-
-Another advantage associated with using a DVCS is that it allows users to
-collaborate directly with each other, independent of a centralized online
-repository, as collaborators of any particular model will have a complete clone
-of the workspace with the model and related files they are working on. This
-allows each individual collaborator to work and commit changes to their local
-copy, creating new changesets which may then be shared between themselves, or
-pushed to a centralized repository when their work is ready to be reviewed or
-released [@yu2011physiome].
 
 ### JWS Online
 
@@ -1163,8 +1145,6 @@ this arena include semanticSBML [@krause2010annotation], SemSim
 
 The first systems biology simulation package, BIOSIM, was written in the 1960s
 [@Ga68]. Since then, m
-
-
 
 ### CellDesigner
 
