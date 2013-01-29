@@ -1075,15 +1075,9 @@ representation of modularity, together with the flexible nature of the CellML
 language which allows the description of a diverse range of cellular and
 subcellular systems [@lloyd2008cellml].
 
-Initially the CellML Model Repository started out as a set of examples to
-illustrate how the language could be applied to describe various biological
-processes, and to test its features as the language evolved. Later, once the
-CellML 1.0 specification was stabilized, the CellML repository became a
-collection of CellML descriptions of models drawn from peer-reviewed journal
-publications. The CellML Model Repository has since undergone significant
-growth, with over 330 freely available, quantitative models of biological
-processes taken from the peer-reviewed literature. In contrast with other
-databases, such as BioModels, JWS and ModelDB, which focus on specific areas
+The CellML Model Repository contains over 330 freely available, quantitative
+models of biological processes taken from the peer-reviewed literature. In
+contrast with other databases, such as BioModels, which focus on specific areas
 such as systems biology pathway models or computational neuroscience, the CellML
 Model Repository contains models describing a wide range of biological
 processes, including: signal transduction pathways, metabolic pathways,
@@ -1092,8 +1086,7 @@ models and constitutive laws. This wide scope exemplifies CellML's ability to
 describe much of the biochemistry, electrophysiology and mechanics of the
 intracellular environment. Lumped parameter models dealing with systems
 physiology (e.g. blood pressure control, fluid retention, electrolyte balance,
-endocrine function, etc.) are also within the scope of CellML
-
+endocrine function, etc.) are also within the scope of CellML.
 
 ### Physiome Repository
 
