@@ -740,7 +740,8 @@ more involved in the development of SBML.
 
 The latest generation of SBML, which is Level 3, is modular in the sense of
 having a defined core set of features and optional packages adding features on
-top of the core. This modular approach means that models can declare which
+top of the core (<http://sbml.org/Documents/Specifications#SBML_Level_3_Packages>). 
+This modular approach means that models can declare which
 feature-sets they use, and likewise, software tools can declare which packages
 they support. It also means that the development of SBML Level 3 can proceed in
 a modular fashion. The development process for Level 3 is designed around this
