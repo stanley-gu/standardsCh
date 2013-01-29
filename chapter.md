@@ -1637,115 +1637,37 @@ software should be actively maintained and updated by its authors.
 
 ### COPASI
 
-COPASI is a stand-alone program that can be used through two different
-executable versions: a graphical user interface (CopasiUI) and a command line
-version (CopasiSE) that only contains the calculation engine. 
+Pedro Mendes wrote one of the earliest PC simulators which he called Gepasi
+[@Gepasi:1993]. COPASI [@hoops2006copasi] is essentially a rewrite of
+Gepasi, that comes in two versions: a graphical user interface and a command
+line version. The command line version is designed for batch jobs where a
+graphical user interface is unnecessary and where runs can be carried out
+without human supervision. COPASI uses its own file format to store models,
+however like all the tools discussed here, it can import and export SBML. One of
+its undoubted strengths is optimization and parameter fitting which it inherited
+from its predecessor. It has an unique ability to optimize on a great variety of
+different criteria including metrics such as eigenvalues, transient times etc.
+This makes COPASI extremely flexible for optimization problems. Installation is
+very simple and entails using a one-click installer. Although the source code to
+COPASI is available and can be freely used for research purposes in academia,
+owing to the way in which the development of COPASI was funded there are
+restrictions on commercial use.
 
-COPASI's native file format is based on XML and documentation of its schema is
-available so that other tools can write (or read) it. COPASI can also read
-Gepasi files, providing backwards compatibility with its predecessor. Finally,
-COPASI is able to import SBML and may obtain models from the large number of
-SBML data sources, such as other simulators, model databases, pathway databases
-and so on. To store the complete model information, including task settings and
-output definitions, COPASI uses its own file format. Models can also be exported
-in SBML and the program can write the ordinary differential equations in plain C
-files (ready to be included in other C/C++ programs) and in Berkeley Madonna's
-format (<http://www.berkeleymadonna.com>), a popular program for nonlinear
-dynamics which does not import SBML.
-
-COPASI can also output results of its various functions in two ways: report
-files and plots. The user can define report files containing any number of
-simulation results, parameters and other model items; this is done through an
-interface where all these items are organized in a hierarchy. In addition, the
-software has a number of predefined report formats that cover most of the common
-use cases. Results of operations are also presented directly in the user
-interface, in table format, which can be saved to tab-delimited files easily.
-Examples of such tables presented directly are time courses, the Jacobian
-matrix, matrices of control coefficients, etc. Tab-delimited files can also be
-saved directly from the plot window. Plotting support is built-in and plots,
-such as reports, can be defined in very flexible ways. COPASI supports xy line
-plots and distribution histograms (a feature not commonly found in simulators,
-Fig. 2), scales can be linear or log-transformed, and the plot window allows
-zooming and panning.
-
-COPASI calculates time courses using a deterministic or a stochastic framework,
-depending on the user preference. For deterministic solutions, the LSODA
-integrator is used (Petzold, 1983), whereas for stochastic solutions the
-GibsonBruck version (Gibson and Bruck, 2000) of the Gillespie method (Gillespie,
-1976) is applied (Fig. 2). In addition, a hybrid method that we developed is
-also available and described below. The user can easily switch between these
-methods by choosing from a drop-down list. COPASI can automatically convert
-chemical kinetic rate laws into their appropriate discrete stochastic
-equivalents, although this feature can be disabled when desired. Generally, for
-not too small particle numbers, the propensity of a reaction (the differential
-probability that a reaction event will happen in the next small time interval)
-is proportional to the reaction rate, which is given by the kinetic function of
-the reaction. This has been shown for mass action kinetics (Gillespie, 1976) and
-is at least approximately true under certain conditions for other kinetic types,
-such as MichaelisMenten (see discussion below). For very small particle numbers,
-however, this relation does not necessarily hold. Consider, for example, a
-second-order mass action reaction (2SP). Its forward reaction rate is
-proportional to the square of the number of substrate particles. On the other
-hand the probability of a reaction event, calculated from the probability that
-two substrate particles meet (Gillespie, 1976), is proportional to , where NS is
-the number of particles of the substrate. When presented with a model that was
-written for the deterministic simulation paradigm, COPASI can automatically do
-the conversion from N2 to N*(N1), thus enabling a transparent switch from
-deterministic to stochastic simulation.
-
-Another basic simulation function is the calculation of steady states, which is
-carried out by a combination of the damped Newton method and forward or backward
-integration (using LSODA). The steady state can also be characterized with
-linear stability analysis (Stucki, 1978) and metabolic control analysis (Fell,
-1996).
-
-COPASI is equipped with a number of diverse optimization algorithms that can be
-used to minimize or maximize any variable of the model, following the scheme
-proposed by Mendes and Kell (1998). Two algorithms are based on estimating
-derivatives of the objective function, steepest descent and LevenbergMarquardt
-(Levenberg, 1944; Marquardt, 1963; Goldfeld et al., 1966); a direct search
-algorithm, which is based on geometric concepts, the HookeJeeves method (Hooke
-and Jeeves, 1961); four evolutionary algorithms, evolutionary programming (Fogel
-et al., 1992), genetic algorithm [a version with floating point encoding;
-Michalewicz (1994)], evolution strategy with stochastic ranking (SRES; Runarsson
-and Yao, 2000) and a genetic algorithm with stochastic ranking; finally, there
-is also a simple random search algorithm.
-
-The optimization algorithms are also used for estimating parameter values that
-best fit a set of data provided by the user. To this end, COPASI reproduces the
-functionality of Gepasi (Mendes and Kell, 1998) and exceeds it by allowing
-mixtures of time course and steady-state data to be used simultaneously (Gepasi
-could only deal with one of these types of data at a time).
-
-The software is available for the following operating systems: Microsoft Windows
-(Windows 98 and above), Linux, Mac OS X (PowerPC, runs also on Intel) and Sun
-Microsystems Solaris (version 8 and above on SPARC). This cross platform
-portability has been achieved by adhering to the ANSI C++ standard and relying
-on toolkits and libraries that are available on the major operating systems.
-
-The GUI was constructed based on the QT toolkit (Trolltech, Inc., Oslo), which
-is the essential portability layer (i.e. produces different OS versions from the
-same source code). This results in a program that has the expected look and feel
-of the underlying operating system. Since the users are provided with an
-interface following the same style and layout as other applications on their
-computer the usability is greatly enhanced. In addition support libraries for QT
-are available, which allow us to provide convenient plotting of results (Qwt
-project, http://qwt.sf.net) and rendering of mathematical expressions (QT
-Solutions, MML Widget).
-
-For reliable and fast computation COPASI uses standard numerical libraries:
-LAPACK (Anderson et al., 1999) for linear algebra, BLAS (Lawson et al.,1979) for
-matrix and vector operations, and LSODA (Petzold, 1983) from ODEPACK (Hindmarsh,
-1983) for integration of ODEs.
-
-#### CopasiUI
+The graphical user interface is based on a menu/dialog approach, much like its
+immediate predecessor, Gepasi. COPASI has capabilities to simulate deterministic
+as well as stochastic models and includes a wide range of analyzes. It correctly
+takes into account conservation laws and has very good support for metabolic
+control analysis amongst other things. COPASI is without doubt one of the better
+simulators available. Although the user interface is graphical, it does, due to
+its particular design, require some effort to master but with the availability
+of the COPASI the source code, there is the opportunity to provide alternative
+user interfaces.. Finally there is a version that has an SBW interface (Systems
+Biology Workbench) which allows SBW enabled tools access to COPASI's
+functionality (currently available at <http://sys-bio.org/>).
 
 #### SimpleCopasi
 
 (<http://code.google.com/p/copasi-simple-api/>)
-
-[@hoops2006copasi]
-
 
 ### RoadRunner
 
@@ -1764,8 +1686,6 @@ This separation process is described in detail in
 [@vallabhajosyula2006conservation]. Thus, all major operating systems are
 supported given that roadRunner only depends on CVODE and NLEQ being available
 on the platform.
-
-
 
 ## Commercial
 
