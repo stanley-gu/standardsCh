@@ -1667,7 +1667,12 @@ functionality (currently available at <http://sys-bio.org/>).
 
 #### SimpleCopasi
 
-(<http://code.google.com/p/copasi-simple-api/>)
+SimpleCopasi (<http://code.google.com/p/copasi-simple-api/>) is a C interface to
+the C++ Copasi library. The core functionality of reading, writing, simulating,
+and numerical analysis of SBML models is retained from Copasi. In addition,
+Antimony scripts can be used to load models. The structural library
+(<http://libstruct.sourceforge.net/>) is also included within this
+library for analyzing the stoichiometric networks.
 
 ### RoadRunner
 
@@ -1680,7 +1685,7 @@ engines alongside RoadRunner within SBW [@bergmann2008comparing].
 Instead of interpreting model equations, roadRunner will  compiles the model
 equations dynamically, which results in  much improved performance when compared
 with traditional simulators. RoadRunner uses the integrator CVODE and NLEQ for
-steady state analysis [@cohen1996cvode], . To further speed up the simulation,
+steady state analysis [@cohen1996cvode]. To further speed up the simulation,
 the model is separated into a system of independent and dependent variables.
 This separation process is described in detail in
 [@vallabhajosyula2006conservation]. Thus, all major operating systems are
