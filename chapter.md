@@ -1715,43 +1715,6 @@ circumvent the need to install any software, and not be limited by the local
 computer hardware power by performing computationally intensive calculations on
 a remote server.
 
-## Software Sustainability
-
-any different software for biological modeling have been
-written, however, a majority of them have become deprecated and no longer
-actively developed.
-
-Much of the current software development in the systems biology community
-concentrates on the development of stand-alone applications.  Most of these
-tools are not easily extensible and many of them offer nearly identical
-functionality. One of the problems that currently plagues systems biology is the
-continual reinvention of the same kind of tool (called YADS - yet another
-differential equation solver). I believe it is not too unfair to suggest that in
-many cases our software capability today in systems biology is only marginally
-better than the first systems biology simulation package ever written (BIOSSIM)
-by David Garfinkel around 1960 [@Ga68]. In many cases even the user interfaces
-are only marginally better. There are of course exceptions to this, VCell
-[@VCELL] in particular comes to mind as well as tools such as Gepasi
-[@Gepasi:1993] and Jarnac/JDesigner [@Sauro:Omics]. VCell is particularly suited
-to spatial modeling, Gepasi is well known for its GUI user interface, the
-selection of optimization methods and its ability to fit data to models, Jarnac
-was until very recently (See Pysces [@Pysces2004]) the only script based
-programmable modelling tool which has a fairly complete set of tools for the
-analysis of time dependent ODEs and stochastic systems and finally JDesigner
-because it was the first visual design model tool.
-
-The reason for the repetitive nature of software in systems biology is that
-almost each and every group engaged in computational systems biology writes
-their own simulation package. Given the time constraints on the project, the
-software will only reach a level of maturity that is often equivalent to
-BIOSSIM. As a result, the provision of software does not appear to advance.
-
-A number of groups have recognized this problem and instead of developing single
-isolated applications, they have chosen to develop a software infrastructure
-that permits and encourages extensibility and code reuse. The later is extremely
-important as it allows developers to build on existing code which in turn leads
-to new and interesting software tools.
-
 # Applications
 
 In recent years there has been a proliferation of software applications for the
