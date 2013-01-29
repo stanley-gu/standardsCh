@@ -922,6 +922,8 @@ similar way to SBML container in ‘model’ element of SBRML [@dada2010sbrml].
 ### Numerical Markup Language (NuML)
 
 
+
+
 ## Visualization
 
 ### Systems Biology Graphical Notation (SBGN)
@@ -1769,42 +1771,19 @@ on the platform.
 
 ### MATLAB SimBiology
 
-SimBiology provides a graphical environment and programmatic tools to model,
-simulate, and analyze dynamic systems, focusing on
-pharmacokinetic/pharmacodynamic (PK/PD) and systems biology applications. It
-provides a block diagram editor for building models, or you can create models
-programmatically using the MATLAB language. SimBiology includes a library of
-common PK models, which you can customize and integrate with mechanistic systems
-biology models.
+MATLAB (<http://www.mathworks.com/products/matlab/>) is one of the most widely
+used numerical platforms in science and engineering. MATLAB contains an
+excellent numerical and data analysis methods useful for systems biology. In
+addition, MathWorks offers a specialized toolbox called SimBiology which offers
+many useful capabilities.
 
-A variety of model exploration techniques let you identify optimal dosing
-schedules and putative drug targets in cellular pathways. SimBiology uses
-ordinary differential equations (ODEs) and stochastic solvers to simulate the
-time course profile of drug exposure, drug efficacy, and enzyme and metabolite
-levels. You can investigate system dynamics and guide experimentation using
-parameter sweeps and sensitivity analysis. You can also use single subject or
-population data to estimate model parameters.
-
-The graphical editor for PK/PD and systems biology modeling Ordinary
-differential equations (ODEs) and stochastic solvers for pharmacokinetic models.
-The package includes parameter estimation techniques for single subject and
-population data, including nonlinear mixed-effects models, sensitivity analysis
-and parameter sweeps to investigate how parameters affect system dynamics.
-
-SimBiology lets you represent a model of a biological or a pharmacological
-mechanism just as you would draw it on a piece of paper. Using a reaction
-network modeling approach, SimBiology lets you model drug pharmacokinetics and
-pharmacodynamics (PK/PD), biological systems, and chemical reaction kinetics.
-
-SimBiology automatically constructs the ODEs based on the model structure and
-the math underlying individual interactions, providing an alternative to an ODE-
-based representation of the model.
-
-You can create models using a block diagram editor or programmatically. You can
-also import models from a built-in library of PK models or a Systems Biology
-Markup Language (SBML) file.
-
-[@simbiology]
+SimBiology (<http://www.mathworks.com/products/simbiology/>, @simbiology)
+provides graphical and programmatic tools to model, simulate, and analyze
+dynamic biological systems. SimBiology also includes a library of common
+pharmacokinetic/pharmacodynamic models. Users may use a graphical block diagram
+editor for building models, or directly import existing SBML models. Models
+within SimBiology can then use MATLAB's extensive set of built-in ODE and
+stocastic solvers for simulation.
 
 # Applications
 
