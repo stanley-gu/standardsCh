@@ -1589,7 +1589,7 @@ algorithm is available for reactiondiffusionadvection simulations in complex
 cell geometries including 3D geometries derived from microscope images. Using
 the VCell database, models and model components can be reused and updated, as
 well as privately shared among collaborating groups, or published. Exchange of
-models with other tools is possible via import/export of SBML, CellML and MatLab
+models with other tools is possible via import/export of SBML, CellML and MATLAB
 formats. Furthermore, curation of models is facilitated by external database
 binding mechanisms for unique identication of components and by standardised
 annotations compliant with the MIRIAM standard. VCell is now open source, with
