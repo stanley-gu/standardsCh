@@ -767,8 +767,6 @@ since developed a comprehensive cross platform tool
 (<http://sbml.sourceforge.org>) which is now the recommended SBML toolkit to use
 (libSBML). libSBML was developed in C/C++ for maximum portability.
 
-
-
 #### Practical Considerations
 
 While CellML is very general, SBML is more specific, as result, the storage
@@ -790,8 +788,8 @@ large model this clearly would generate huge amounts of XML based data. One of
 the things that has yet to be addressed by either standard is the how model
 variants can be efficiently stored.
 
-XML is a popular choice for model exchange languages
-because [@bray1997extensible]:
+XML is a popular choice for model exchange languages because
+[@bray1997extensible]:
 
 #. XML is easily transmitted through the Internet (much like HTML).
 #. There are a large number of software tools and libraries for parsing XML.
@@ -840,14 +838,11 @@ of a sample from the CellML repository (<www.cellml.org/examples/repository/>)
 indicates that each reaction in a model requires about 5 kilobytes of storage.
 
 Owing to the complexity of CellML, one unfortunate side effect is that there are
-very few tools which can read and write CellML. As far as the author is aware
-there are only two third-party tools that can read and write CellML, these are
-VCell [@VCELL] and COR [@COR2003]. The CellML team
-<http://cellml.sourceforge.net/>) also provides their own software tools to
-third-party developers, including the CellML API (<http://cellml-
+substantially fewer tools which can read and write CellML compared to SBML. The
+CellML team <http://cellml.sourceforge.net/>) also provides their own software
+tools to third-party developers, including the CellML API (<http://cellml-
 api.sourceforge.net/>), which is a library much like libSBML that allows
 software developers to read and write CellML models.
-
 
 
 ### NeuroML
@@ -865,14 +860,11 @@ environments were successfully able to reproduce the same model simulation
 (including a reconstruction of the 3D structure of a neural pathway), using
 NeuroML as the exchange format [@gleeson2010].
 
-Furthermore, in the future there may be further merging of standards. There are
-recent efforts to convert NeuroML into SBML, which would allow NeuroML models
-and modelers access to the vast library of SBML compliant software tools
+There are recent efforts to convert NeuroML into SBML, which may allow NeuroML
+models and modelers access to the vast library of SBML compliant software tools
 [@keating2012encoding].
 
 ## Simulation
-
-Even with 
 
 The share and reuse of biological models are primary challenges in the field of
 computational biology. While the previous discussed model exchange formats
@@ -1430,6 +1422,11 @@ this arena include semanticSBML [@krause2010annotation], SemSim
 
 ## Modeling
 
+The first systems biology simulation package, BIOSIM, was written in the 1960s
+[@Ga68]. Since then, m
+
+
+
 ### CellDesigner
 
 CellDesigner (<http://www.celldesigner.org/>) is a structured diagram editor for
@@ -1437,7 +1434,9 @@ drawing gene-regulatory and biochemical networks. Networks are drawn based on
 the process diagram, with graphical notation system that influenced the
 development of SBGN, and are stored using the Systems Biology Markup Language
 (SBML), a standard for representing models of biochemical and gene-regulatory
-networks. CellDesigner supports simulation and parameter scanning through a selection of different simulation engines, SBML ODE Solver, Copasi, or SBW [@funahashi2003celldesigner;@funahashi2008celldesigner].
+networks. CellDesigner supports simulation and parameter scanning through a
+selection of different simulation engines, SBML ODE Solver, Copasi, or SBW
+[@funahashi2003celldesigner;@funahashi2008celldesigner].
 
 ### JSim
 
@@ -1541,7 +1540,7 @@ One of the key advantages of SBW is its language and OS neutrality. At a stroke
 this eliminates the irrational language and operating systems wars that often
 plague software development. In addition to providing support for multiple
 languages there is also the facility to automatically generate web services from
-any SBW module (Frank Bergmann, personal communication).
+any SBW module.
 
 #### Messaging Protocols
 
@@ -1562,28 +1561,14 @@ a supercomputer cluster.
 
 ### VCell
 
-Much of the current software development in the systems biology community
-concentrates on the development of stand-alone applications.  Most of these
-tools are not easily extensible and many of them offer nearly identical
-functionality. One of the problems that currently plagues systems biology is the
-continual reinvention of the same kind of tool (called YADS - yet another
-differential equation solver). I believe it is not too unfair to suggest that in
-many cases our software capability today in systems biology is only marginally
-better than the first systems biology simulation package ever written (BIOSSIM)
-by David Garfinkel around 1960 [@Ga68]. In many cases even the user interfaces
-are only marginally better. There are of course exceptions to this, VCell
-[@VCELL] in particular comes to mind as well as tools such as Gepasi
-[@Gepasi:1993] and Jarnac/JDesigner [@Sauro:Omics]. VCell is particularly suited
-to spatial modelling, Gepasi is well known for its GUI user interface, the
-selection of optimization methods and its ability to fit data to models, Jarnac
-was until very recently (See Pysces [@Pysces2004]) the only script based
-programmable modelling tool which has a fairly complete set of tools for the
-analysis of time dependent ODEs and stochastic systems and finally JDesigner
-because it was the first visual design model tool.
+The Virtual Cell (VCell; <http://vcell.org/>) 
+
+VCell is particularly suited
+to spatial modeling
 
 [@moraru2008virtual]
 
-The Virtual Cell (VCell; http://vcell.org/) is a problem solving environment,
+The Virtual Cell (VCell; <http://vcell.org/>) is a problem solving environment,
 built on a central database, for analysis, modelling and simulation of cell
 biological processes. VCell integrates a growing range of molecular mechanisms,
 including reaction kinetics, diffusion, ow, membrane transport, lateral membrane
@@ -1611,19 +1596,6 @@ annotations compliant with the MIRIAM standard. VCell is now open source, with
 its native model encoding language (VCML) being a public specication, which
 stands as the basis for a new generation of more customised, experiment-centric
 modelling tools using a new plug-in based platform.
-
-The reason for the repetitive nature of software in systems biology is that
-almost each and every group engaged in computational systems biology writes
-their own simulation package. Given the time constraints on the project, the
-software will only reach a level of maturity that is often equivalent to
-BIOSSIM. As a result, the provision of software does not appear to advance.
-
-A number of groups have recognized this problem and instead of developing single
-isolated applications, they have chosen to develop a software infrastructure
-that permits and encourages extensibility and code reuse. The later is extremely
-important as it allows developers to build on existing code which in turn leads
-to new and interesting software tools.
-
 
 ## Simulation Engines
 
@@ -1692,23 +1664,94 @@ This separation process is described in detail in
 supported given that roadRunner only depends on CVODE and NLEQ being available
 on the platform.
 
-## Commercial
-
-### MATLAB SimBiology
+## MATLAB
 
 MATLAB (<http://www.mathworks.com/products/matlab/>) is one of the most widely
 used numerical platforms in science and engineering. MATLAB contains an
-excellent numerical and data analysis methods useful for systems biology. In
-addition, MathWorks offers a specialized toolbox called SimBiology which offers
-many useful capabilities.
+excellent numerical and data analysis methods useful for systems biology. Many
+add-ons, referred to as "toolboxes" are available commercially or open-source to
+extend the functionality of MATLAB.
 
-SimBiology (<http://www.mathworks.com/products/simbiology/>, @simbiology)
-provides graphical and programmatic tools to model, simulate, and analyze
-dynamic biological systems. SimBiology also includes a library of common
-pharmacokinetic/pharmacodynamic models. Users may use a graphical block diagram
-editor for building models, or directly import existing SBML models. Models
-within SimBiology can then use MATLAB's extensive set of built-in ODE and
-stocastic solvers for simulation.
+### SimBiology
+
+MathWorks offers a specialized toolbox called SimBiology
+(<http://www.mathworks.com/products/simbiology/>, @simbiology) which offers many
+useful capabilities. SimBiology provides graphical and programmatic tools to
+model, simulate, and analyze dynamic biological systems. SimBiology also
+includes a library of common pharmacokinetic/pharmacodynamic models. Users may
+use a graphical block diagram editor for building models, or directly import
+existing SBML models. Models within SimBiology can then use MATLAB's powerful
+scripting interface and extensive set of built-in ODE and stochastic solvers for
+simulation.
+
+### Systems Biology Toolbox (SBToolBox2) and PottersWheel
+
+SBToolBox2 (<http://www.sbtoolbox2.org/main.php>) is a very extensive, open-
+source, MATLAB tool box developed by Henning Schmidt [@schmidt2006systems]. The
+tool box has a wide range of capabilities. In addition, PottersWheel
+[@maiwald2008dynamical], is a very comprehensive parameter fitting tool that
+works well with the SBToolBox2 but can also be used alone. In a number of cases
+it is better than COPASI's capabilities particularly in the area of generating
+nonlinear confidence limits on parameter fits and analyzing the resulting fit.
+The experimental data input formats are also very flexible. The tool provides a
+number of optimization algorithms including genetic and simulated annealing
+approaches.
+
+### SBML to MATLAB Translation
+
+It is also possible to export SBML models into MATLAB scripts without the need
+for any additional toolboxes. SBML2MATLAB (<http://stanley-
+gu.github.com/sbml2matlab/>) is a cross-platform tool for performing such
+conversions. The SBML model structures and mathematics are mapped to MATLAB
+functions and structures, allowing users to easily manipulate the models through
+additional MATLAB scripting. SBML2MATLAB has also been integrated as a
+standalone web application (<http://stanley-gu.github.com/node- sbml2matlab/>)
+that provides a user friendly interface for using SBML2MATLAB without any need
+for installing software.
+
+In addition, an web application for viewing, editing, and simulating SBML models
+is also actively being developed (<http://stanley-gu.github.com/snap/>), which
+would allow modelers work on any platform that supports a web browser,
+circumvent the need to install any software, and not be limited by the local
+computer hardware power by performing computationally intensive calculations on
+a remote server.
+
+## Software Sustainability
+
+any different software for biological modeling have been
+written, however, a majority of them have become deprecated and no longer
+actively developed.
+
+Much of the current software development in the systems biology community
+concentrates on the development of stand-alone applications.  Most of these
+tools are not easily extensible and many of them offer nearly identical
+functionality. One of the problems that currently plagues systems biology is the
+continual reinvention of the same kind of tool (called YADS - yet another
+differential equation solver). I believe it is not too unfair to suggest that in
+many cases our software capability today in systems biology is only marginally
+better than the first systems biology simulation package ever written (BIOSSIM)
+by David Garfinkel around 1960 [@Ga68]. In many cases even the user interfaces
+are only marginally better. There are of course exceptions to this, VCell
+[@VCELL] in particular comes to mind as well as tools such as Gepasi
+[@Gepasi:1993] and Jarnac/JDesigner [@Sauro:Omics]. VCell is particularly suited
+to spatial modeling, Gepasi is well known for its GUI user interface, the
+selection of optimization methods and its ability to fit data to models, Jarnac
+was until very recently (See Pysces [@Pysces2004]) the only script based
+programmable modelling tool which has a fairly complete set of tools for the
+analysis of time dependent ODEs and stochastic systems and finally JDesigner
+because it was the first visual design model tool.
+
+The reason for the repetitive nature of software in systems biology is that
+almost each and every group engaged in computational systems biology writes
+their own simulation package. Given the time constraints on the project, the
+software will only reach a level of maturity that is often equivalent to
+BIOSSIM. As a result, the provision of software does not appear to advance.
+
+A number of groups have recognized this problem and instead of developing single
+isolated applications, they have chosen to develop a software infrastructure
+that permits and encourages extensibility and code reuse. The later is extremely
+important as it allows developers to build on existing code which in turn leads
+to new and interesting software tools.
 
 # Applications
 
@@ -1716,7 +1759,6 @@ In recent years there has been a proliferation of software applications for the
 systems biology community (See Figure \ref{figure:apps}).
 
 ![The Release of Software Tools for Computational Systems Biology over Time.
-Note the spike in the last five
 years.\label{figure:apps}](images/ToolsPerYear.pdf)
 
 On the whole, many of these applications provide very similar functionality. The
@@ -1732,10 +1774,12 @@ available.
 
 The original intention in this section was to list as many of the applications
 as possible together with their capabilities but given the large number now
-available it soon became clear that this task would be too great. Instead I
-refer the reader to the recent paper by Hucka et.  al. (2004) where the authors
-describe almost forty applications. An even larger list can be found at the
-sbml.org web site.
+available it soon became clear that this task would be too great. However,
+fortunately the SBML consortium provides a very comprehensive overview of
+different software applications and their main features, located here:
+<http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>.
+
+However, several applications will be mentioned here 
 
 There are some applications however that are worth mentioning specifically
 because they have some special characteristic. Table 1 lists a number of
@@ -1744,62 +1788,41 @@ base and offer facilities that are either unique or well done. I have not
 mentioned any stochastic simulators in Table 1 because many of these are still
 immature.
 
+
 * * * *
 
 **Application and Description**
 
-VCell: 
-:	A very mature server based application that is specialized to build
-	and simulate large scale spatial (PDE) models - Open Source, multiplatform
-	[@VCELL].
-
 Gepasi: 
 :	This is a forms based application which has been maintained for many
 	years by a dedicated author, the tool is particularly adapt at carrying out
-	optimizations of ODE based models to data - Closed source, Windows, Linux
-	[@Gepasi:1993].
-
-WinSCAMP: 
-:	A script based GUI application, which like Gepasi has a long
-	tradition. Specialized for time course, steady state and metabolic control
-	analysis of ODE based models.
-		- Source available upon request, multiplatform [@SauroF91; @SauroScamp93]
-
-Pysces: 
-:	This is a very complete ODE based simulation environment built
-	around the scripting language Python
-		- Open Source, multiplatform [@Pysces2004].
+	optimizations of ODE based models to data 
+		- Closed source; Windows [@Gepasi:1993].
 
 Jarnac/JDesigner: 
 :	Jarnac is a script based application, JDesigner (See
 	Figure 3) is a visual design tool which can use Jarnac via SBW to carry out
 	simulations. The simulation capabilities of Jarnac are quite extensive, 
-	offering both ODE and stochastic simulation - Open Source, Windows, Linux 
-	[@sauro:2000; @Sauro:Omics].
+	offering both ODE and stochastic simulation 
+		- Open Source; Windows [@sauro:2000; @Sauro:Omics].
+
+Pysces: 
+:	This is a very complete ODE based simulation environment built
+	around the scripting language Python.
+		- Open Source; Windows, Linux, OS X [@Pysces2004].
+
+WinSCAMP: 
+:	A script based GUI application, which like Gepasi has a long
+	tradition. Specialized for time course, steady state and metabolic control
+	analysis of ODE based models.
+		- Source available upon request; Windows [@SauroF91; @SauroScamp93]
+
+VCell: 
+:	A very mature server based application that is specialized to build
+	and simulate large scale spatial (PDE) models.
+		- Open Source; Windows, Linux, OS X [@VCELL].
 
 * * * *
-
-There are also more general purpose tools available, both commercial and
-open-source which are worth considering. Probably the most well known commercial
-tool is Matlab (<http://www.mathworks.com>). Although Matlab is an excellent
-prototyping tool if suffers from poor performance when simulating systems larger
-than about thirty species if the model is not specified in the correct way. In
-fact a number of the open-source tools are orders of magnitude faster than
-Matlab. This stems from the fact that Matlab is a general purpose tool whereas
-the open-source tools are specialists and are therefore more heavily optimized
-for their specific application. The commercial tools require a high degree of
-programming skill because they do not have facilities for representing models in
-a way familiar to most biologists, instead users are required to derive the
-differential equations explicitly. Platforms, such as SBW make available
-translators from SBML to a variety of formats including Matlab, and in a number
-of cases, users employ tools such as JDesigner to maintain the model, but use a
-translator to generate Matlab (or any other supported format such as C or Java).
-
-In addition to generic commercial modelling tools there are also now available a
-number of commercial tools specifically geared for modelling cellular networks.
-The most well known include Gene Networks Sciences, Berkeley Madonna and
-Teranode (These can easily be located on the web by using a reliable search
-engine).
 
 ## Model Analysis
 
@@ -1948,7 +1971,7 @@ could benefit from Grid computing.
 
 # Recommended Resources
 
-Four web sources which are of interest to readers of this chapter include:
+Three main web sources which are of interest to readers of this chapter include:
 
 <http://www.cellml.org> :
 :	This is the main CellML site. It has a very rich set
