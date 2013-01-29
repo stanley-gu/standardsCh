@@ -1280,41 +1280,26 @@ a supercomputer cluster.
 
 ### VCell
 
-The Virtual Cell (VCell; <http://vcell.org/>) 
-
-VCell is particularly suited
-to spatial modeling
-
-[@moraru2008virtual]
-
-The Virtual Cell (VCell; <http://vcell.org/>) is a problem solving environment,
-built on a central database, for analysis, modelling and simulation of cell
-biological processes. VCell integrates a growing range of molecular mechanisms,
-including reaction kinetics, diffusion, ow, membrane transport, lateral membrane
-diffusion and electrophysiology, and can associate these with geometries derived
-from experimental microscope images. It has been developed and deployed as a
-web-based, distributed, client server system, with more than a thousand world-
-wide users. VCell provides a separation of layers (core technologies and
-abstractions) representing biological models, physical mechanisms, geometry,
-mathematical models and numerical methods. This separation clarifies the impact of
-modeling decisions, assumptions and approximations. The result is a physically
-consistent, mathematically rigorous, spatial modeling and simulation framework.
-Users create biological models and VCell will automatically (i) generate the
-appropriate mathematical encoding for running a simulation and (ii) generate and
-compile the appropriate computer code. Both deterministic and stochastic
-algorithms are supported for describing and running non-spatial simulations; a
-full partial differential equation solver using the finite volume numerical
-algorithm is available for reaction-diffusion-advection simulations in complex
-cell geometries including 3D geometries derived from microscope images. Using
-the VCell database, models and model components can be reused and updated, as
-well as privately shared among collaborating groups, or published. Exchange of
-models with other tools is possible via import/export of SBML, CellML and MATLAB
-formats. Furthermore, curation of models is facilitated by external database
-binding mechanisms for unique identification of components and by standardized
-annotations compliant with the MIRIAM standard. VCell is now open source, with
-its native model encoding language (VCML) being a public specification, which
-stands as the basis for a new generation of more customized, experiment-centric
-modelling tools using a new plug-in based platform.
+The Virtual Cell (VCell; <http://vcell.org/>) is a client/server based tool that
+specializes in three-dimensional cell simulations [@VCELL;moraru2008virtual]. It
+is unique in that it provides a framework for not only modeling biochemical
+networks but also electrophysiological, and transport phenomena while at the
+same time considering the subcellular localization of the molecules that take
+part in them. This localization can take the form of a three-dimensional
+arbitrarily shaped cell, where the molecular species might be heterogeneously
+distributed. In addition, the geometry of the cell, including the locations and
+shapes of subcellular organelles, can be imported directly from microscope
+images. VCell is written in Java but has numerical analysis carried out by C/C++
+and FORTRAN coded software to improve performance. Currently, modeling must be
+carried out using the client/server model which necessitates a connection to the
+internet. In addition models are generally stored on the VCell remote server
+rather than the clients desktop. This operating model is not always agreeable to
+users and as a result the VCell team are reorganizing the software so that it
+can also be run as a stand-alone application on a researchers machine. The VCell
+team has incorporated the BioNetGen [@blinov2004bionetgen] network generator
+which allows models to be specified in a rule based manner. VCell is also one of
+the few tools that can both import and export SBML and CellML. This feature
+could in principle be used to translate between SBML and CellML models.
 
 ## Simulation Engines
 
