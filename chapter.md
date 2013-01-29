@@ -185,7 +185,7 @@ Differential-algebraic equations (DAEs):
 
 Partial differential equations (PDEs):
 :   Whereas simple ODEs model well stirred reactors, PDEs can be used
-		model heterogenous spatial models.
+		model heterogeneous spatial models.
 
 Stochastic:
 :   At the molecular level concentrations are discrete, but as long as
@@ -193,7 +193,7 @@ Stochastic:
 		model is perfectly adequate. When concentrations fall below
 		approximately one hundred molecules in the volume considered (e.g.
 		the cell or compartment) one has to consider using stochastic
-		modelling. The great disadvantage in this approach is that one
+		modeling. The great disadvantage in this approach is that one
 		looses almost all the analytical methods that are available for
 		continuous models, as a result stochastic models are much more
 		difficult to interpret.
@@ -220,7 +220,7 @@ evolution of a network, these are termed *conserved moieties* [@Re81]. The total
 amount of a particular moiety in a network is time invariant and is determined
 solely by the initial conditions imposed on the system[^conservation].
 
-In metabolism, conserved cycles act as common conveyers of energy (ATP) or
+In metabolism, conserved cycles act as common conveyors of energy (ATP) or
 reducing power (NAD); in signaling pathways they occur as protein
 phosphorylation states while in genetic networks, they occur as bound and
 unbound protein states to DNA. These conserved cycles will often have a profound
@@ -230,7 +230,7 @@ considered in computational models.
 From the full set of molecular species in a model, it is customary to divide the
 set into two groups, the dependent ($\bSd$) and independent set ($\bSi$). This
 division is dependent entirely on the number and kind of conserved cycles in the
-network. If there arent any conserved cycles in a model then the dependent set
+network. If there aren't any conserved cycles in a model then the dependent set
 is empty and the size of the independent set equals the number of molecular
 species in the model. For details on how to compute $\bSd$ and $\bSi$ the reader
 should consult [@Sauro:ICycles2004] or refer to Box 1 in this chapter. In many
@@ -497,7 +497,7 @@ Reference correspondence:
 Attribution annotation:
 
 :	The model has to be named.
-:	A citation to the reference description must be provided (complete citation, unique identifier, unambigous URL). The citation should identify the authors of the model.
+:	A citation to the reference description must be provided (complete citation, unique identifier, unambiguous URL). The citation should identify the authors of the model.
 :	The name and contact information for model creators must be provided.
 :	The date and time of model creation and last modification should be specified. A history is useful but not required.
 :	The model should be linked to a precise statement about the terms of it's distribution. MIRIAM does not require “freedom of use” or “no cost”.
@@ -509,7 +509,7 @@ External resource annotation:
 :	The annotation should be written as a Uniform Resource Identifier (URI).
 :	The identifier should be considered within the context of the framework of the collection.
 :	Collection namespace and identifier are be combined into a single URI, such as: http://identifiers.org/collection/identifier. For example: http://identifiers.org/uniprot/P62158.
-:	Qualifiers (optional) should refine the link between the model constitutent and the piece of knowledge: “has a”, “is version of”, “is homolog to”, etc.
+:	Qualifiers (optional) should refine the link between the model constituent and the piece of knowledge: “has a”, “is version of”, “is homolog to”, etc.
 :	The community has to agree upon a set of standard valid URIs. A database and the associated API (Web Services) have been developed at the EBI to provide the generation and interpretation of URIs.
 
 MIRIAM applies to a broad range of quantitative models that can be simulated
@@ -585,7 +585,7 @@ One of the most successful examples of the use of a biomedical ontology,
 measured by both the number of users and its reach across different subdomains
 is the Gene Ontology (GO), which defines specific gene products across different
 species. All terms are organized in a hierarchical structure, where there are
-three main branches, biological processe, celular component, or molecular
+three main branches, biological process, cellular component, or molecular
 function, and the leaves are proteins. GO terms have been used in millions of
 annotations relating to gene products described in protein databases such as
 UnitProt and Ensembl [@smith2005relations].
@@ -630,7 +630,7 @@ terms are related by "is a" inheritances, which represent sub-classing.
 
 3. A CV for parameter roles in quantitative models. This CV includes terms such as "forward unimolecular rate constant", "Hill coefficient", "Michaelis constant" etc.
 
-4. A list of modelling framework, that precises how to interpret a mathematical expression, such as "deterministic", "stochastic", "boolean" etc.
+4. A list of modeling framework, that precises how to interpret a mathematical expression, such as "deterministic", "stochastic", "boolean" etc.
 
 The annotation of model components with SBO terms will be an essential step to
 reach MIRIAM-compliance. Not only such an annotation will be important to
@@ -747,7 +747,7 @@ a modular fashion. The development process for Level 3 is designed around this
 concept. SBML Level 3 package development is today an ongoing activity, with
 packages being created to extend SBML in many areas that its core functionality
 does not directly support. Examples include models whose species have structure
-and/or state variables, models with spatially nonhomogeneous compartments and
+and/or state variables, models with spatially non-homogeneous compartments and
 spatially dependent processes, and models in which species and processes refer
 to qualitative entities and processes rather than quantitative ones.
 
@@ -1191,7 +1191,7 @@ Some general repositories of quantitative models have been made available, such
 as the CellML repository CellML repository (
 <http://www.cellml.org/examples/repository/index.html> JWS Online (6) and the
 former SBML repository. In addition specialist repositories include SenseLab
-ModelDB (7), the Database of Quantitative Cellular Signalling (DOCQS) (8) and
+ModelDB (7), the Database of Quantitative Cellular Signaling (DOCQS) (8) and
 SigPath (9). However no general public resource existed that allowed the user to
 browse, search and retrieve annotated models
 
@@ -1318,7 +1318,7 @@ can be greatly simplified by a tool which records the change history of a model,
 and makes that history available to other collaborators. Finally, once a model
 is ready to be published, it must be indexed and presented so that it can be
 easily searched for and viewed, thereby avoiding unnecessary duplication of
-modelling efforts. Since it was not possible to extend the original repository
+modeling efforts. Since it was not possible to extend the original repository
 software to support these more advanced usage requirements, a complete rewrite
 was required, and the Physiome Model Repository 2 (PMR2) was created. 
 
@@ -1496,7 +1496,7 @@ platform and language independent. Its primary purpose is to encourage code
 reuse among members of the systems biology community.  Developers can run SBW on
 Linux, Windows or Mac OS and can develop software in a variety of different
 languages including C/C++, Java, Delphi, FORTRAN, MATLAB, Perl, Python and any
-.NET language (e.g. Visual Basic or C\#). The SBW was originally developed in
+.NET language (e.g. Visual Basic or C#). The SBW was originally developed in
 parallel with SBML (Systems Biology Markup Language) as part of the Symbiotic
 Systems Project ERATO project at Caltech, Pasadena.
 
@@ -1577,24 +1577,24 @@ from experimental microscope images. It has been developed and deployed as a
 web-based, distributed, client server system, with more than a thousand world-
 wide users. VCell provides a separation of layers (core technologies and
 abstractions) representing biological models, physical mechanisms, geometry,
-mathematical models and numerical methods. This separation claries the impact of
-modelling decisions, assumptions and approximations. The result is a physically
-consistent, mathematically rigorous, spatial modelling and simulation framework.
+mathematical models and numerical methods. This separation clarifies the impact of
+modeling decisions, assumptions and approximations. The result is a physically
+consistent, mathematically rigorous, spatial modeling and simulation framework.
 Users create biological models and VCell will automatically (i) generate the
 appropriate mathematical encoding for running a simulation and (ii) generate and
 compile the appropriate computer code. Both deterministic and stochastic
 algorithms are supported for describing and running non-spatial simulations; a
-full partial differential equation solver using the nite volume numerical
-algorithm is available for reactiondiffusionadvection simulations in complex
+full partial differential equation solver using the finite volume numerical
+algorithm is available for reaction-diffusion-advection simulations in complex
 cell geometries including 3D geometries derived from microscope images. Using
 the VCell database, models and model components can be reused and updated, as
 well as privately shared among collaborating groups, or published. Exchange of
 models with other tools is possible via import/export of SBML, CellML and MATLAB
 formats. Furthermore, curation of models is facilitated by external database
-binding mechanisms for unique identication of components and by standardised
+binding mechanisms for unique identification of components and by standardized
 annotations compliant with the MIRIAM standard. VCell is now open source, with
-its native model encoding language (VCML) being a public specication, which
-stands as the basis for a new generation of more customised, experiment-centric
+its native model encoding language (VCML) being a public specification, which
+stands as the basis for a new generation of more customized, experiment-centric
 modelling tools using a new plug-in based platform.
 
 ## Simulation Engines
@@ -1847,8 +1847,8 @@ to gaining a deep insight into the model [@Bakker:1997; @TysonNatReview2001].
 
 ## Model Fitting and Validation
 
-An important activity in systems biology modelling is the need to fit
-experimental data to models. There isnt sufficient space to cover to any great
+An important activity in systems biology modeling is the need to fit
+experimental data to models. There isn't sufficient space to cover to any great
 detail this topic but as time series data from microarray, proteomic and
 metabolomic data becomes more readily available the need to fit models to
 experimental data will become more acute. There are a number of issues related
@@ -1892,10 +1892,10 @@ the development of standards such as SBML and CellML.  Indeed the most recent of
 a long list of new systems biology journals, (Molecular Systems Biology) has
 stipulated that SBML is the preferred format for contributing models, hopefully
 other journals will follow.  However, one aspect that still remains to be dealt
-with is to formalize the sematic rules for SBML. At the moment there is no
+with is to formalize the semantic rules for SBML. At the moment there is no
 guarantee that models written by different tools can be interchanged. If one
 focuses on the core specification in SBML that this is generally not an issue
-but it is vital that sematic validators be developed for SBML.
+but it is vital that semantic validators be developed for SBML.
 
 The other area that has received a lot of attention in recent years is the
 development of tools for systems biology. However, much of what is being
@@ -1952,7 +1952,7 @@ Three main web sources which are of interest to readers of this chapter include:
 	screen shots, user guides can be obtained from this site. A link to the main
 	sourceforge site is given where all the source code for SBW is made available.
 
-# Acknowledgements
+# Acknowledgments
 
 I would first like to acknowledge the generous support from the Japan Science
 and Technology Agency, DARPA (BAA01-26 Bio-Computation) and the US Department of
