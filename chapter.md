@@ -948,8 +948,6 @@ activity flow diagram depicts only the cascade of activity, thus making the
 notation similar to the reduced representations often used in the current
 literature to describe signaling pathways and gene regulatory networks.
 
-
-
 #### SBGN-ML
 
 SBGN only defines how biological information should be visualized, but not how
@@ -1053,115 +1051,18 @@ publication process.
 
 ### BioModels
 
-923 models, about half curated. 
-
-BioModels Database (<http://www.ebi.ac.uk/biomodels/>), part of the
-international initiative BioModels.net, provides access to published, peer-
-reviewed, quantitative models of biochemical and cellular systems. Each model is
-carefully curated to verify that it corresponds to the reference publication and
-gives the proper numerical results. Curators also annotate the components of the
-models with terms from controlled vocabularies and links to other relevant data
-resources. This allows the users to search accurately for the models they need.
-The models can currently be retrieved in the SBML format, and import/export
-facilities are being developed to extend the spectrum of formats supported by
-the resource [@le2006biomodels].
-
-The number of quantitative models trying to explain various aspects of the
-cellular machinery is increasing at a steady pace, thanks in part to the rising
-popularity of systems biology (1). However, as for all types of knowledge, such
-models will only be as useful as their access and reuse is easy for all
-scientists. A first step was to define standard descriptions to encode
-quantitative models in machine-readable formats. Example of such formats are
-CellML (2) and the Systems Biology Markup Language (SBML) (3,4). The biomedical
-community now needs public integrated resources, where authors can deposit, in
-controlled formats, the models they describe in scientific publications.
-
-Some general repositories of quantitative models have been made available, such
-as the CellML repository CellML repository (
-<http://www.cellml.org/examples/repository/index.html> JWS Online (6) and the
-former SBML repository. In addition specialist repositories include SenseLab
-ModelDB (7), the Database of Quantitative Cellular Signaling (DOCQS) (8) and
-SigPath (9). However no general public resource existed that allowed the user to
-browse, search and retrieve annotated models
-
-Here we present BioModels Database, developed as part of the BioModels.net
-initiative (<http://www.biomodels.net/>). BioModels.net is a collaboration
-between the SBML Team (USA), the EMBL-EBI (UK), the Systems Biology Group of the
-Keck Graduate Institute (USA), the Systems Biology Institute (Japan) and JWS
-Online at Stellenbosch University (South Africa). Its aims are as follows: (i)
-to define agreed-upon standards for model curation, (ii) to define agreed-upon
-vocabularies for annotating models with connections to biological data resources
-and (iii) to provide a free, centralized, publicly accessible database of
-annotated, computational models in SBML and other structured formats.
-
-BioModels Database is an annotated resource of quantitative models of biomedical
-interest. Models are carefully curated to verify their correspondence to their
-source articles. They are also extensively annotated, with (i) terms from
-controlled vocabularies, such as disease codes and Gene Ontology terms and (ii)
-links to other data resources, such as sequence or pathway databases.
-Researchers in the biomedical and life science communities can then search and
-retrieve models related to a particular disease, biological process or molecular
-complex.
-
-Models can be submitted by anyone to the curation pipeline of the database
-(Figure 1). At present, BioModels Database aims to store and annotate models
-that can be encoded with SBML. CellML models are also accepted. These model
-formats are synonymous with models that can be integrated or iterated forwards
-in time, such as ordinary differential equation models. Although we are aware
-that this means we can cover only a restricted part of the modeling field, we
-make this our initial focus for the following reason: (i) since a crucial part
-of the curation process is the verification that the models produce numerical
-results similar to the ones described in the reference article, iterative
-simulations over ranges of parameter values and perturbation of simulations at
-equilibrium are mandatory and (ii) a very large number of such models have
-already been published, and the pace of their publication is increasing
-steadily. As a consequence, they are sufficient to consume all the curation
-workforce we have, and we can envision to gather in the near future.
-
-To be accepted in BioModels Database, a model must be compliant with MIRIAM. One
-of the requirements of MIRIAM is that a model has to be associated with a
-reference description that provides directly, or through references, the
-structure of the model, the necessary quantitative parameters and presents the
-results of numerical analysis of the model. BioModels Database further refines
-the notion of reference description, by considering only models described in the
-peer-reviewed scientific literature.
-
-A series of automated tasks are performed by the pipeline prior to human
-intervention:
-
-* Verification that the file is well-formed XML.
-* If necessary, conversion to the latest version of SBML.
-* Verification of the syntax of SBML.
-* Series of consistency checks, enforcing the validity of the model.
-
-If any of those steps is not completed, a member of the distributed team of
-curators can reject the model, or instead correct it and resubmit it to the
-pipeline. The last and most important step, of the curation process, is
-verifying that when instantiated in a simulation, the model provides results
-corresponding to the reference scientific article. Curators do not normally
-challenge the biological relevance of the models, and assume the peer-review
-process already filtered out unsuitable contributions. However, in specific
-cases, curators can spot mistakes in an article and, with the agreement of the
-authors, modify the model accordingly. Once the model is verified to be valid
-SBML, and to correspond well to the article, it is accepted in the production
-database for annotation.
-
-In order to be confident in reusing an encoded model, one should be able to
-trace its origin, and the people who were involved in its inception. The
-following information is therefore added to the model: (i) either a PubMed
-identifier (<http://www.pubmed.gov>) or a DOI (<http://www.doi.org>) or an URL that
-permits identifying the peer-review article describing the model; (ii) name and
-contact details of the individuals who actually contributed to the encoding of
-the model in its present form; (iii) name and contact of the the person who
-finally entered the model in the production database and who should be contacted
-if there is a problem with the encoding of the model or the annotation.
-
-In addition, model components are annotated with references to relevant
-resources, such as terms from controlled vocabularies (Taxonomy, Gene Ontology,
-ChEBI, etc.) and links to other databases (UniProt, KEGG, Reactome, etc.). This
-annotation is a crucial feature of BioModels Database in that it permits the
-unambiguous identification of molecular species or reactions and enables
-effective search strategies.
+BioModels Database (<http://www.ebi.ac.uk/biomodels/>) is one largest open-
+access databases in Systems Biology. Part of the international initiative
+BioModels.net, BioModels provides access to peer-reviewed and published models
+[@le2006biomodels]. Each model is manually curated by the database maintainers
+to verify that it corresponds to the reference publication and gives the expected
+numerical results. Curators also annotate the components of the models with
+terms from controlled vocabularies (Taxonomy, Gene Ontology, ChEBI, etc.) and
+links to other databases (UniProt, KEGG, Reactome, etc.). This annotation is a
+crucial feature of BioModels Database in that it permits the unambiguous
+identification of molecular species or reactions and enables effective search
+algorithms. Upon this writing, 923 SBML models are available on the database,
+roughly half of which are curated.
 
 ### CellML Repository
 
@@ -1172,8 +1073,7 @@ Model Repository are part of the IUPS Physiome Project effort to create a
 virtual physiological human [@hunter2005integration]. The explicit
 representation of modularity, together with the flexible nature of the CellML
 language which allows the description of a diverse range of cellular and
-subcellular systems, are two essential features of CellML with regards to its
-role in the Physiome Project.
+subcellular systems [@lloyd2008cellml].
 
 Initially the CellML Model Repository started out as a set of examples to
 illustrate how the language could be applied to describe various biological
@@ -1193,7 +1093,7 @@ describe much of the biochemistry, electrophysiology and mechanics of the
 intracellular environment. Lumped parameter models dealing with systems
 physiology (e.g. blood pressure control, fluid retention, electrolyte balance,
 endocrine function, etc.) are also within the scope of CellML
-[@lloyd2008cellml].
+
 
 ### Physiome Repository
 
