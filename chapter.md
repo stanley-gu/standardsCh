@@ -569,7 +569,7 @@ simulation experiment represents the intention of the original authors.
 Following MIASE guidelines will thus improve the quality of scientific
 reporting, and will also allow collaborative, more distributed efforts in
 computational modeling and simulation of biological processes
-[@waltemath2011minimum]
+[@waltemath2011minimum].
 
 ## Ontologies
 
@@ -740,17 +740,18 @@ more involved in the development of SBML.
 
 The latest generation of SBML, which is Level 3, is modular in the sense of
 having a defined core set of features and optional packages adding features on
-top of the core (<http://sbml.org/Documents/Specifications#SBML_Level_3_Packages>). 
-This modular approach means that models can declare which
-feature-sets they use, and likewise, software tools can declare which packages
-they support. It also means that the development of SBML Level 3 can proceed in
-a modular fashion. The development process for Level 3 is designed around this
-concept. SBML Level 3 package development is today an ongoing activity, with
-packages being created to extend SBML in many areas that its core functionality
-does not directly support. Examples include models whose species have structure
-and/or state variables, models with spatially non-homogeneous compartments and
-spatially dependent processes, and models in which species and processes refer
-to qualitative entities and processes rather than quantitative ones.
+top of the core
+(<http://sbml.org/Documents/Specifications#SBML_Level_3_Packages>). This
+modular approach means that models can declare which feature-sets they use, and
+likewise, software tools can declare which packages they support. It also means
+that the development of SBML Level 3 can proceed in a modular fashion. The
+development process for Level 3 is designed around this concept. SBML Level 3
+package development is today an ongoing activity, with packages being created to
+extend SBML in many areas that its core functionality does not directly support.
+Examples include models whose species have structure and/or state variables,
+models with spatially non-homogeneous compartments and spatially dependent
+processes, and models in which species and processes refer to qualitative
+entities and processes rather than quantitative ones.
 
 [@hucka2010systems]
 
@@ -803,8 +804,8 @@ implemented in their software. Over the past decade, SBML has become the *de
 facto* standard for systems biology models. As of this writing, 251 different
 software packages are officially listed on the SBML Software Guide
 (<http://sbml.org/SBML_Software_Guide>). In addition, SBML is the official model
-interchange format for the SBW project (<www.sys-bio.org>), the international
-*E. coli* alliance, and the receptor tyrosine kinase consortium.
+interchange format for the SBW project (<http://sys-bio.org/>), the
+international *E. coli* alliance, and the receptor tyrosine kinase consortium.
 
 ### CellML
 
@@ -834,7 +835,6 @@ CellML team <http://cellml.sourceforge.net/>) also provides their own software
 tools to third-party developers, including the CellML API (<http://cellml-
 api.sourceforge.net/>), which is a library much like libSBML that allows
 software developers to read and write CellML models.
-
 
 ### NeuroML
 
@@ -1347,8 +1347,8 @@ SimpleCopasi (<http://code.google.com/p/copasi-simple-api/>) is a C interface to
 the C++ Copasi library. The core functionality of reading, writing, simulating,
 and numerical analysis of SBML models is retained from Copasi. In addition,
 Antimony scripts can be used to load models. The structural library
-(<http://libstruct.sourceforge.net/>) is also included within this
-library for analyzing the stoichiometric networks.
+(<http://libstruct.sourceforge.net/>) is also included within this library for
+analyzing the stoichiometric networks.
 
 ### RoadRunner
 
@@ -1361,12 +1361,11 @@ engines alongside RoadRunner within SBW [@bergmann2008comparing].
 Instead of interpreting model equations, roadRunner will  compiles the model
 equations dynamically, which results in  much improved performance when compared
 with traditional simulators. RoadRunner uses the integrator CVODE and NLEQ for
-steady state analysis [@cohen1996cvode]. To further speed up the simulation,
-the model is separated into a system of independent and dependent variables.
-This separation process is described in detail in
-[@vallabhajosyula2006conservation]. Thus, all major operating systems are
-supported given that roadRunner only depends on CVODE and NLEQ being available
-on the platform.
+steady state analysis [@cohen1996cvode]. To further speed up the simulation, the
+model is separated into a system of independent and dependent variables. This
+separation process is described in detail in [@vallabhajosyula2006conservation].
+Thus, all major operating systems are supported given that roadRunner only
+depends on CVODE and NLEQ being available on the platform.
 
 ## MATLAB
 
@@ -1404,7 +1403,8 @@ approaches.
 ### SBML to MATLAB Translation
 
 It is also possible to export SBML models into MATLAB scripts without the need
-for any additional toolboxes. SBML2MATLAB (<http://stanley-gu.github.com/sbml2matlab/>) is a cross-platform tool for performing such
+for any additional toolboxes. SBML2MATLAB (<http://stanley-gu.github.com/sbml2matlab/>) 
+is a cross-platform tool for performing such
 conversions. The SBML model structures and mathematics are mapped to MATLAB
 functions and structures, allowing users to easily manipulate the models through
 additional MATLAB scripting. SBML2MATLAB has also been integrated as a
@@ -1445,15 +1445,9 @@ fortunately the SBML consortium provides a very comprehensive overview of
 different software applications and their main features, located here:
 <http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>.
 
-However, several applications will be mentioned here 
-
-There are some applications however that are worth mentioning specifically
-because they have some special characteristic. Table 1 lists a number of
-applications which are being actively maintained, have a reasonably large user
-base and offer facilities that are either unique or well done. I have not
-mentioned any stochastic simulators in Table 1 because many of these are still
-immature.
-
+However, a few select applications will be mentioned here due to their
+significant impact on the community, unique features, and were previously
+referred to in the text.
 
 * * * *
 
@@ -1502,10 +1496,10 @@ understand how the structure of the model leads it to behave the way it does. In
 order to answer these kinds of questions one needs techniques that can
 interrogate the model in a variety of different ways.
 
-The table below lists some of the most important techniques that are available for
-analyzing models. Without these techniques, a model will often be as difficult
-to understand as the real system it attempts to model; the application of these
-techniques is therefore important.
+The table below lists some of the most important techniques that are available
+for analyzing models. Without these techniques, a model will often be as
+difficult to understand as the real system it attempts to model; the application
+of these techniques is therefore important.
 
 * * * * 
 
@@ -1540,7 +1534,8 @@ Bifurcation Analysis:
 		solutions change with changes in the
 		model parameters [@TysonNatReview2001].
 
-* * * *
+* * * * 
+
 All these techniques are extremely useful in gaining insight into how a model
 operates. The connectionist and structural analyses focus on the network
 properties of the model, that is they do not explicitly consider the dynamics of
