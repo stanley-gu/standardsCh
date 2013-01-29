@@ -1495,7 +1495,7 @@ SBW (Sauro et. al., 2004) is an extensible software framework that is both
 platform and language independent. Its primary purpose is to encourage code
 reuse among members of the systems biology community.  Developers can run SBW on
 Linux, Windows or Mac OS and can develop software in a variety of different
-languages including C/C++, Java, Delphi, FORTRAN, Matlab, Perl, Python and any
+languages including C/C++, Java, Delphi, FORTRAN, MATLAB, Perl, Python and any
 .NET language (e.g. Visual Basic or C\#). The SBW was originally developed in
 parallel with SBML (Systems Biology Markup Language) as part of the Symbiotic
 Systems Project ERATO project at Caltech, Pasadena.
@@ -1522,7 +1522,7 @@ incompatible with each other.
 ![The Systems Biology Workbench (SBW) is a dynamic open-source distributed
 system. Client modules can attach and detach at runtime.  Client modules can be
 written in a variety of languages, including, C/C++, Java, Delphi, FORTRAN,
-Python, Perl, Matlab, any .NET language.  Data is exchanged between modules via
+Python, Perl, MATLAB, any .NET language.  Data is exchanged between modules via
 binary messages which can include any combination of bytes, integers, floating
 point, complex numbers, strings, arrays and lists.  Currently the available
 modules include, simulators, model editors, SBML manipulation, math library,
@@ -1758,30 +1758,30 @@ immature.
 Gepasi: 
 :	This is a forms based application which has been maintained for many
 	years by a dedicated author, the tool is particularly adapt at carrying out
-	optimizations of ODE based models to data 
+	optimizations of ODE based models to data  
 		- Closed source; Windows [@Gepasi:1993].
 
 Jarnac/JDesigner: 
 :	Jarnac is a script based application, JDesigner (See
 	Figure 3) is a visual design tool which can use Jarnac via SBW to carry out
 	simulations. The simulation capabilities of Jarnac are quite extensive, 
-	offering both ODE and stochastic simulation 
+	offering both ODE and stochastic simulation  
 		- Open Source; Windows [@sauro:2000; @Sauro:Omics].
 
 Pysces: 
 :	This is a very complete ODE based simulation environment built
-	around the scripting language Python.
+	around the scripting language Python.  
 		- Open Source; Windows, Linux, OS X [@Pysces2004].
 
 WinSCAMP: 
 :	A script based GUI application, which like Gepasi has a long
 	tradition. Specialized for time course, steady state and metabolic control
-	analysis of ODE based models.
+	analysis of ODE based models.  
 		- Source available upon request; Windows [@SauroF91; @SauroScamp93]
 
 VCell: 
 :	A very mature server based application that is specialized to build
-	and simulate large scale spatial (PDE) models.
+	and simulate large scale spatial (PDE) models.  
 		- Open Source; Windows, Linux, OS X [@VCELL].
 
 * * * *
