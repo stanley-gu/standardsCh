@@ -798,19 +798,13 @@ XML is a popular choice for model exchange languages because
 
 #### Usage
 
-Over the past decade, SBML has become the *de facto* standard for systems
-biology models. As of this writing, 251 different software packages are
-officially listed on the SBML Software Guide
-(<http://sbml.org/SBML_Software_Guide>).
-
 Both SBML and CellML have been taken up by many software developers and
-implemented in their software. SBML in particular is being used in over 75
-software projects. In addition, SBML is the official model interchange format
-for the SBW project (<www.sys-bio.org>), the international *E. coli* alliance,
-and the receptor tyrosine kinase consortium. Much of the SBML support is in
-standalone applications, however, a number of database vendors have also
-decided to provide export of SBML as an option, examples include reactome, stke
-and sigpath.
+implemented in their software. Over the past decade, SBML has become the *de
+facto* standard for systems biology models. As of this writing, 251 different
+software packages are officially listed on the SBML Software Guide
+(<http://sbml.org/SBML_Software_Guide>). In addition, SBML is the official model
+interchange format for the SBW project (<www.sys-bio.org>), the international
+*E. coli* alliance, and the receptor tyrosine kinase consortium.
 
 ### CellML
 
@@ -873,32 +867,29 @@ them. Thus, it is crucial to also provide [@waltemath2011minimum]
 
 ### Simulation Experiment Description Markup Language (SED-ML)
 
-SED-ML is an XML format that enables the storage and exchange of part of the
-information required to implement the MIASE guidelines. It covers information
-about the simulation settings, including information about the models, changes
-on them, simulation settings applied to the models and output definitions. SED-
-ML is independent of the formats used to encode the models  as long as they are
-expressed in XML, and it is independent of the software tools used to run the
-simulations. Several test implementations are being developed to benchmark SED-
-ML on simple cases, and pave the way to a more complete support of MIASE
-[@kohn2008sed]. The share and reuse of biochemical models have become two of the
-main issues in the field of Computational Systems Biology. The community
-believes that providing detailed information about simulation recipes will
-highly improve the efficient use of existing models, encoded in widely accept
-formats of model structure, such as SBML and CellML.
+SED-ML (<http://sed-ml.org/>) is an XML format that enables the storage and
+exchange of part of the information required to implement the MIASE guidelines.
+It covers information about the simulation settings, including information about
+the models, changes on them, simulation settings applied to the models and
+output definitions. SED- ML is independent of the formats used to encode the
+models  as long as they are expressed in XML, and it is independent of the
+software tools used to run the simulations. Several test implementations are
+being developed to benchmark SED- ML on simple cases, and pave the way to a more
+complete support of MIASE [@kohn2008sed]. The share and reuse of biochemical
+models have become two of the main issues in the field of Computational Systems
+Biology. The community believes that providing detailed information about
+simulation recipes will highly improve the efficient use of existing models,
+encoded in widely accept formats of model structure, such as SBML and CellML.
 
 ### Systems Biology Results Markup Language (SBRML)
 
-SBRML is an XML-based language that associates a model with several datasets.
-Each dataset is represented as a series of values associated with model
-variables, and their corresponding parameter values. SBRML provides a flexible
-way of indexing the results to model parameter values, which supports both
-spreadsheet-like data and multidimensional data cubes. SBRML may be used in
-applications such as enzyme kinetics, microarray gene expression and various
-types of simulation results.
-
-Availability and Implementation: The XML Schema file for SBRML is available at
-http://www.comp-sys-bio.org/SBRML under the Academic Free License (AFL) v3.0.
+SBRML (<http://www.comp-sys-bio.org/SBRML>) is an XML-based language that
+associates a model with several datasets. Each dataset is represented as a
+series of values associated with model variables, and their corresponding
+parameter values. SBRML provides a flexible way of indexing the results to model
+parameter values, which supports both spreadsheet-like data and multidimensional
+data cubes. SBRML may be used in applications such as enzyme kinetics,
+microarray gene expression and various types of simulation results.
 
 SBRML and SED-ML are also complementary. While the main purpose of SBRML is to
 encode the simulation results and/or experimental data and all context in which
@@ -910,34 +901,10 @@ similar way to SBML container in ‘model’ element of SBRML [@dada2010sbrml].
 
 ### Numerical Markup Language (NuML)
 
-
-
+NuML (<http://code.google.com/p/numl/>) aims to standardize the exchange of
+numerical results, and is planned to be used by SED-ML and SBRML.
 
 ## Visualization
-
-### Systems Biology Graphical Notation (SBGN)
-
-
-For many users, the ability to visualize models and to build models using visual
-tools is an important feature. There are currently a number of visualization
-formats that are in common use. One of the most comprehensive and freely
-available formats is the molecular interaction maps developed by Kohn
-[@Kohn1999] and more recently by Mirit Aladjem [@Kohn2004]. The Kohn format
-emerged from the need to represent complex signaling networks in a compact way.
-Unlike metabolic networks, signaling networks can be extremely complex with
-multiple protein states and interactions and therefore an alternative and more
-concise approach is desirable. At the time of writing there is no software for
-manipulating Kohn maps and no means to convert Kohn maps to SBML or any other
-standard. Hopefully this will change in the future.
-
-An early computer based visual notation was proposed by Cook [@Cook2001] who
-developed a notation called BioD.
-
-Another proposal has been put forward by Kitano [@Kitano2003]. This is a more
-traditional approach where different molecular entities (such as proteins, ions,
-transporters etc.) have particular pictorial representations. The software tool
-called cellDesigner [@CellDesigner2003] implements this proposed format.
-
 
 Circuit diagrams and Unified Modeling Language diagrams are just two examples of
 standard visual languages that help accelerate work by promoting regularity,
@@ -945,12 +912,29 @@ removing ambiguity and enabling software tool support for communication of
 complex information. Ironically, despite having one of the highest ratios of
 graphical to textual information, biology still lacks standard graphical
 notations. The recent deluge of biological knowledge makes addressing this
-deficit a pressing concern. Toward this goal, we present the Systems Biology
-Graphical Notation (SBGN), a visual language developed by a community of
-biochemists, modelers and computer scientists. SBGN consists of three
+deficit a pressing concern. For many users, the ability to visualize models and
+to build models using visual tools is an important feature. There are currently
+a number of visualization formats that are in common use. One of the earliest,
+most comprehensive, and freely available formats is the molecular interaction
+maps developed by Kohn [@Kohn1999] and more recently by Mirit Aladjem
+[@Kohn2004]. The Kohn format emerged from the need to represent complex
+signaling networks in a compact way. Unlike metabolic networks, signaling
+networks can be extremely complex with multiple protein states and interactions
+and therefore an alternative and more concise approach is desirable.
+
+Kitano [@Kitano2003] took a traditional approach where different molecular
+entities (such as proteins, ions, transporters etc.) have particular pictorial
+representations. The software tool CellDesigner [@CellDesigner2003], which will
+be discussed later in this chapter, implemented this proposed format.
+
+### Systems Biology Graphical Notation (SBGN)
+
+SBGN (<http://www.sbgn.org/>) has arisen in recent years as one of the most
+widely supported and comprehensive visual languages, developed by a community of
+biochemists, modelers and computer scientists [@le2009systems]. SBGN consists of three
 complementary languages: process diagram, entity relationship diagram and
 activity flow diagram. Together they enable scientists to represent networks of
-biochemical interactions in a standard, unambiguous way. We believe that SBGN
+biochemical interactions in a standard, unambiguous way. The success of SBGN
 will foster efficient and accurate representation, visualization, storage,
 exchange and reuse of information on all kinds of biological knowledge, from
 gene regulation, to metabolism, to cellular signaling.
@@ -958,57 +942,54 @@ gene regulation, to metabolism, to cellular signaling.
 SBGN defines three orthogonal and complementary types of diagrams that can be
 seen as three alternative projections of the underlying more complex biological
 information. The process diagram draws its inspiration from process-style
-notations, borrowing ideas from the work of CellDesigner28 and EPE22. By
-contrast, the entity relationship diagram is based to a large extent on Kohn's
-MIM notation18, 19. The SBGN activity flow diagram depicts only the cascade of
-activity, thus making the notation similar to the reduced representations often
-used in the current literature to describe signaling pathways and gene
-regulatory networks. In Figure 2, we illustrate the three views applied to a
-very simple example. The characteristics of the SBGN languages are summarized in
-Table 2.
+notations, borrowing ideas from the work of Kitano. By contrast, the entity
+relationship diagram is based to a large extent on Kohn's notation. The SBGN
+activity flow diagram depicts only the cascade of activity, thus making the
+notation similar to the reduced representations often used in the current
+literature to describe signaling pathways and gene regulatory networks.
 
-The idea of having three diagram types naturally begs the question of whether
-they could be merged into one, at least in paper form. The answer is no, for at
-least two reasons. First, a single diagram type would bring us back to the
-problem of dealing with unreasonable numbers of interactions as described above.
-Second, each SBGN language reflects fundamental differences in the underlying
-formal description of the phenomena. The meanings are so different that merging
-diagram types would compromise their representational robustness.
-
-Having multiple visual languages is not uncommon in engineering (consider, for
-example, block diagrams and circuit diagrams in electronics, UML class, state
-sequence and deployment diagrams in software engineering), and this supports the
-idea that having three sublanguages in SBGN will be manageable in practice. In
-SBGN, the sharing of symbols representing identical concepts further reduces the
-differences between the three languages to differences in syntax and semantics.
-We believe that this, combined with careful design, will mitigate some of the
-difficulties of learning SBGN. However, it is to be noted that the clean
-orthogonality of the languages makes their overlap very limited, mostly to
-modulatory arcs, and node decorations.
-
-[@le2009systems]
+#### SBGN-ML
 
 
-SBGN-ML and libSBGN
 
-cySBGN [@goncalves2013cysbgn]
+Efficient integration of the SBGN standard into the research cycle requires
+adoption by visualization and modeling software. Encouragingly, a growing number
+of pathway tools (see <http://sbgn.org/SBGN_Software>) offer some form of SBGN
+compatibility. However, current software implementations of SBGN are often
+incomplete and sometimes incorrect. This is not surprising: as SBGN covers a
+broad spectrum of biological phenomena, complete and accurate implementation of
+the full SBGN specifications represents a complex, error-prone and time-
+consuming task for individual tool developers. This development step could be
+simplified, and redundant implementation efforts avoided, by accurately
+translating the full SBGN specifications into a single software library,
+available freely for any tool developer to reuse in their own project. Moreover,
+the maps produced by any given tool usually cannot be reused in another tool,
+because SBGN only defines how biological information should be visualized, but
+not how the maps should be stored electronically. Related community standards
+for exchanging pathway knowledge, namely BioPAX (Demir et al., 2010) and SBML
+(Hucka et al., 2003), have proved insufficient for this role (more on this topic
+in Section 4). Therefore, we observed a second need, for a dedicated,
+standardized SBGN file format.
 
+Following these observations, we started a community effort with two goals: to
+encourage the adoption of SBGN by facilitating its implementation in pathway
+tools, and to increase interoperability between SBGN-compatible software. This
+has resulted in a file format called SBGN-ML and a software library called
+LibSBGN. Each of these two components will be explained separately in the next
+sections.
 
-Efficient integration of the SBGN standard into the research cycle requires adoption by visualization and modeling software. Encouragingly, a growing number of pathway tools (see http://sbgn.org/SBGN_Software) offer some form of SBGN compatibility. However, current software implementations of SBGN are often incomplete and sometimes incorrect. This is not surprising: as SBGN covers a broad spectrum of biological phenomena, complete and accurate implementation of the full SBGN specifications represents a complex, error-prone and time-consuming task for individual tool developers. This development step could be simplified, and redundant implementation efforts avoided, by accurately translating the full SBGN specifications into a single software library, available freely for any tool developer to reuse in their own project. Moreover, the maps produced by any given tool usually cannot be reused in another tool, because SBGN only defines how biological information should be visualized, but not how the maps should be stored electronically. Related community standards for exchanging pathway knowledge, namely BioPAX (Demir et al., 2010) and SBML (Hucka et al., 2003), have proved insufficient for this role (more on this topic in Section 4). Therefore, we observed a second need, for a dedicated, standardized SBGN file format.
-
-Following these observations, we started a community effort with two goals: to encourage the adoption of SBGN by facilitating its implementation in pathway tools, and to increase interoperability between SBGN-compatible software. This has resulted in a file format called SBGN-ML and a software library called LibSBGN. Each of these two components will be explained separately in the next sections.
-
-SBGN-ML is a dedicated lightweight XML-based file format describing the overall geometry of SBGN maps, while also preserving their underlying biological meaning. SBGN-ML is designed to fulfill two basic requirements:
-
-easy to draw (as a machine) and read (as a human) and
-
-easy to interpret (as a machine).
+SBGN-ML is a dedicated lightweight XML-based file format describing the overall
+geometry of SBGN maps, while also preserving their underlying biological
+meaning. 
 
 The first set of requirement deals with the graphical aspect of SBGN. It means it should be easy to render a SBGN-ML file to the screen. Therefore, the format stores all necessary information, such as coordinates, to draw the map faithfully, so that rendering tools do not have to perform any complex calculations. Incidentally, this implies the layout of the whole SBGN map has to be expressed explicitly: the size and position of each graphical object and the path of each arc. Various efforts have shown that generating a layout for heterogeneous biological pathways is a computationally hard problem, so a good layout is always worth preserving, if only from a computational perspective. Besides, the choice of a specific layout by the author of a map is often driven by concerns related to aesthetics, readability or to reinforce ideas of chronology or proximity. This information might be lost with automated layouts. Layout conventions predate SBGN, and are not part of any standard, but they nonetheless play a large role in making it easier for other human beings to understand the biological system being described.
 
 The second requirement encompasses two perpendicular characteristics of SBGN as a language: semantics and syntax. Beyond the picture itself, the format should capture the biological meaning of an SBGN map. Therefore, SBGN-ML specifies the nature of graphical elements (glyphs), following the SBGN terminology (e.g., macromolecule, process, etc.). For example, we can distinguish between a ‘logic arc’ and a ‘consumption arc’ even though they have the same visual appearance. Supporting tools refer to this terminology and draw the glyph according to the SBGN specifications. In terms of syntax, SBGN-ML encodes information on relationships between the various SBGN objects: the glyphs at both ends of an arc, the components of a complex, the members of a compartment and the ‘decorations’ (such as unit of information and state variable) belonging to specific glyphs and arcs. This semantic and syntactic information is essential to a number of automated tasks, such as map validation, or network analysis (as the topology of the underlying biological network can be inferred from the various relationships encoded by the format).
 
 [@le2010report]
+
+
+#### libSBGN
 
 A software library called LibSBGN complements the file format. It consists of two parallel implementations in Java and C++. The libraries share the same object model, so that algorithms operating on it can be easily translated to different programming languages.
 
@@ -1020,9 +1001,9 @@ Third, we wish to provide optimal libraries for each development environment. Fo
 
 [@van2012software]
 
+cySBGN [@goncalves2013cysbgn]
+
 ## Other Standards
-
-
 
 Apart from using XML to define an interchange format, there are two other
 mediums for representing models, these include, human readable text based
@@ -1046,105 +1027,47 @@ commenting and annotation.
 #### Pysces
 
 PySCeS is a console based application written in the Python
-(<http://www.python.org>) programming language that runs on both Microsoft Windows
-(2000/XP) and Linux. It runs as either a single user application on Windows or a
-multi-user application under Linux. PySCeS makes use of the Scientific Libraries
-for Python (SciPy), a large collection of mathematical algorithms for science
-and engineering applications (<http://www.scipy.org>). Some of the advantages of
-using Python with SciPy are as follows. Python is scripted, with all the object
-oriented features of a modern programming language, and includes automatic
-memory management and garbage collection. It is well suited to act as a glue for
-applications that interface with libraries compiled in other languages such as
-C, C++ and Fortran. Both Python and SciPy are freely available and run on a wide
-variety of operating systems.
+(<http://www.python.org>) programming language that runs on all major computing
+platforms [@Pysces2004]. Although users interact with PySCeS via Python scripts,
+many of the underlying numerical capabilities are provided by well established
+C/C++ or FORTRAN based numerical libraries through the SciPy package
+[@olivier2002modelling]. While it is possible to build models directly in Python
+using SciPy, Pysces was written by team experienced with biochemical modeling to
+provide a high-level modeling interface that saves the modeler from needing to
+work with low level numerical algorithms.
 
-It is, of course, possible to build models directly using only Python with SciPy
-[@olivier2002modelling]]. Although entirely possibly, this approach does require
-considerable skill in both numerical analysis and computer programming. PySCeS
-has been developed to provide a high-level modeling interface that utilities and
-extends the low level capabilities provided by Python and SciPy, making it
-unnecessary for the modeler to work with advanced programming techniques or low
-level numerical algorithms. Once a working Python/SciPy environment is available
-(installation details for various operating systems are available from the SciPy
-web-site) PysCeS may be installed using the standard Python distribution
-utilities.
+#### SBML-Shorthand
 
-[@Pysces2004]
-
-
-#### SBML Shorthand
-
-
-SBML-shorthand provides a shorthand notation for SBML that is much easier for humans to read and write than full SBML. The full specification for SBML-shorthand and a conversion tool is available at the authors' website.
-
-The library also includes the SBML-shorthand to SBML and SBML to SBML-shorthand Python conversion tools. These are useful for rapidly building and editing models destined for SBML encoding. They are particularly well-suited to building SBML models designed for discrete stochastic simulation.
-
-It isn't really meant as a complete alternative to GUI model-building tools. It is just a useful tool for rapid building of essential model structure. Once the basics are defined, you can translate to SBML and load up in the GUI tool of your choice.
-
-[@gillespie2006tools]
-
+The SBML community has also developed a human readable script called SBML-
+shorthand [@gillespie2006tools]. This notation maps directly on to SBML but is
+much easier to hand write compared to SBML. The shorthand is also much less
+verbose and uses infix to represent expressions rather than MathML.
 
 #### Antimony
 
-Antimony is unique in that it combines the relative simplicity of languages like Jarnac, PySCeS, and SBML-shorthand with the modularity of languages like little-b and ProMoT's MDL, without requiring that the modeler learn a programming language like Python or Lisp. GEC does the same, though it focuses on one particular problem domain. The libAntimony library will allow Antimony-formatted files to be read by other software packages like PySCeS, allowing them to benefit from Antimony's modularity without having to implement it directly. The Antimony/SBML converters further extend Antimony's usefulness by allowing users to convert their modules into a ‘flattened’ form for use in their SBML-compliant software.
+Antimony is a more recent scripting language that combines the relative
+simplicity of languages like Jarnac, PySCeS, and SBML-shorthand with the
+modularity of languages like little-b (<http://www.littleb.org/>), without
+forcing the modeler learn a general programming language [@smith2009antimony].
+Antimony- formatted files may be read by other software packages, like PySCes
+using the libAntimony library. Furthermore, Antimony to SBML converters extend
+Antimony's usefulness by allowing users to convert their modules into a form
+usable with the vast number of SBML-compliant software.
 
-A cross-platform library ‘libAntimony’ is available to parse and convert Antimony-formatted text files, written in Bison and C++ with language bindings for C, and supported on Linux, Windows, and MacOS X. It uses libSBML (Bornstein et al., 2008) to convert modules to and from the SBML format. Stand-alone programs are also provided that translate SBML models to Antimony, and translate ‘flattened’ Antimony models to SBML.
+### Biological Pathway Exchange (BioPAX)
 
-[@smith2009antimony]
-
-
-### High-throughput Data
-
-CellML and SBML are the primary formats used to store interchangeable dynamic
-models. Apart from the particular details on the model itself there is also the
-need to consider data that is used to build the models. Most models are built by
-laboriously searching the literature and carrying out additional experiments as
-necessary to fill in gaps in the data. This has proved to be an extremely
-effective method to building reliable models [@TysonNatReview2001;
-@TysonBioessay2002].  However, Many inexperienced researcher in Systems Biology
-feel that high-throughput data is the answer to the needs of the modeling
-community. Unfortunately much of the high-throughput data that is currently
-available is not appropriate. Much of the high-throughput data is very noisy and
-is probably more suitable for building qualitative models. More importantly, the
-bulk of high-throughput data is not generated with dynamic model building in
-mind and therefore is often not appropriate for this purpose. To date there has
-not been a single dynamic model that has been constructed as a result of high-
-throughput data. As systems biology and the construction of dynamic models
-becomes more important, it is very likely that the utility of high-throughput
-data will become much more significant. When this happens a proposed standard,
-called BioPAX (<www.biopax.org>) will most likely contribute.
-
-#### BioPax
-
-(<http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>)
-
-BioPAX (Biological Pathway Exchange) is another proposed standard based on XML.
+BioPAX (<http://www.biopax.org/>) is another proposed standard based on XML.
 BioPAX aims to integrate many of the incompatible pathway related databases
 (such as BioCYC, BIND, WIT, aMAZE, KEGG and others) so that data from any one of
 these databases can be easily interchanged. In future it should be possible to
 extract data from many of the pathway databases and integrate the data directly
 into SBML (or CellML) via BioPAX. The BioPAX group proposes to embed BioPAX
 elements onto SBML or cellML for unambiguous identification of substances
-(metabolites, enzymes) and reactions.
+(metabolites, enzymes) and reactions
+[@demir2010biopax;@stromback2005representations]. However, it is possible for to
+convert, or map, from SBML to BioPAX (see  
+<http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>).
 
-Biological Pathway Exchange (BioPAX) is a standard language to represent
-biological pathways at the molecular and cellular level and to facilitate the
-exchange of pathway data. The rapid growth of the volume of pathway data has
-spurred the development of databases and computational tools to aid
-interpretation; however, use of these data is hampered by the current
-fragmentation of pathway information across many databases with incompatible
-formats. BioPAX, which was created through a community process, solves this
-problem by making pathway data substantially easier to collect, index, interpret
-and share. BioPAX can represent metabolic and signaling pathways, molecular and
-genetic interactions and gene regulation networks. Using BioPAX, millions of
-interactions, organized into thousands of pathways, from many organisms are
-available from a growing number of databases. This large amount of pathway data
-in a computable form will support visualization, analysis and biological
-discovery.
-
-
-[@demir2010biopax]
-[@stromback2005representations]
 
 ## Model Databases
 
