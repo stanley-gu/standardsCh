@@ -408,22 +408,23 @@ developing standard digital annotations and representations.
 
 ## Minimum Information (MI)
 
-Standards development for systems biology reached its first major milestone at
-the turn of the millennium, with the sequencing of the human genome and the rise
-of DNA microarray technology. Given the increasingly large and complex
+At the turn of the millennium, with the sequencing of the human genome and the
+rise of DNA microarray technologies, standards development for systems biology
+reached its first major milestone Given increasingly large and complex
 experiments, involving numerous biological samples and different experimental
 conditions, researchers within the DNA microarray quickly realized that if one
 was to make sense of the results from any analysis, a new way of storing and
-retrieving this complex information was needed. Forward-thinking scientists
-struggled to harmonize the output of different platforms, identify the ancillary
-information needed to interpret results and even define the necessary data to
-enable reproduction of results. Through discussions between interested members
-of the community, public presentations, and workshop meetings, the Microarray
-Gene Expression Data Society (MGED) outlined the Minimum Information About a
+retrieving this complex information was needed. Scientists struggled to
+coordinate the outputs of different software platforms, identify the ancillary
+information needed to interpret results, and define the data necessary to enable
+reproduction of results. Through discussions between interested members of the
+community, public presentations, and workshop meetings, the Microarray Gene
+Expression Data Society (MGED) outlined the Minimum Information About a
 Microarray Experiment (MIAME) specification and Microarray Gene Expression
-Markup Language (MAGE-ML) [@brazma2001minimum;@spellman2002design]. In many
-ways, this precedent has become the prototype for subsequent data annotation
-guidelines in systems biology [@quackenbush2006standardizing].
+Markup Language (MAGE-ML) [@brazma2001minimum;@spellman2002design]. As we will
+discuss in the following sections, in many ways, this has become the prototype
+for subsequent data annotation guidelines in systems biology
+[@quackenbush2006standardizing].
 
 The early success of MIAME and its widespread adoption led to the development of
 many domain-specific extensions and variations. MIAME is now accompanied with a
