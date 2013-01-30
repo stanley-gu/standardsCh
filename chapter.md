@@ -256,7 +256,7 @@ In these equations, $\bSi$ is the vector of independent species, $\bSd$, the
 vector of dependent species, $\bLo$ the link matrix, $\bT$ the total mass
 vector, $\bNr$ the reduced stoichiometry matrix, $\bv$ the rate vector and $\bp$
 the vector of parameters. Equation (@eqGeneral) constitutes the most general
-expression of an ODE based temporal model [@hofmeyr-nutshell; @Schuster:Book].
+expression of an ODE based temporal model [@hofmeyr-nutshell,@Schuster:Book].
 The symbolism used in equation (@eqGeneral) is the standard notation used by
 many in the Systems Biology community.
 
@@ -397,14 +397,13 @@ B + C $\rightarrow$ D has the conservation, $B - C =\mbox{constant}$.
 
 # Standards
 
-A standard is defined as a uniform set of specifications for some or all aspects
-of an activity or product that encourages cooperation and interoperation.
-Ideally, it should be clearly and unambiguously defined and as easy as possible
-to interpret and implement. In the modern world, standards have been applied to
-everything from light bulbs, PDFs (portable document formats), railroad track
-gages and video formats to mobile phones, pharmaceutical purity and even bits
-of bathroom plumbing. In the realm of systems biology, desire to facilitate
-interoperability and reuse computational models and data was the the impetus for
+A standard is defined as a uniform set of specifications applied toward an
+activity or product that encourages interoperation and cooperation.  Ideally, a
+standard is clearly and unambiguously defined and while remaining easy to
+interpret and implement. In the modern world, standards have been applied to
+nearly everything from electronics cables and audio formats to paper sizes and
+telephone numbers. In the field of systems biology, desire to facilitate
+interoperability and reuse computational models and data was the impetus for
 developing standard electronic annotations and representations.
 
 ## Minimum Information (MI)
