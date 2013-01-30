@@ -125,8 +125,7 @@ usefulness stems from the capacity to carry out precise reasoning with them.
 There is a wide range of mathematical representations that one can use to build
 quantitative models, the choice of approach depending on the type of biological
 question, the accessibility of experimental data and the tractability of the
-mathematics. A short list of modeling representations is given in Figure
-\ref{Figure:jdesigner}. Probably the most successful and widely used kind of
+mathematics. Probably the most successful and widely used kind of
 model are those based on differential equations (both ordinary and partial).
 These models assume a continuum of concentrations and rates. In reality of
 course, cellular systems are discrete at the molecular level, however, since the
@@ -142,10 +141,11 @@ understand the dynamics of stochastic systems. There are other approaches, which
 include boolean, Bayesian, formal logic and connectivity studies but these have
 yet to show any overwhelming advantage over continuum based models.
 
-In this chapter I will be exclusively concerned with models based on
+In this chapter I will be primarily concerned with models based on
 differential equations and to a lesser extent stochastic equations.
 
 * * * * *
+**List of Modeling Representations**
 
 Boolean:
 :   One of the simplest possible modeling techniques is to represent a
