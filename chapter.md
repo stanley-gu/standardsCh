@@ -43,8 +43,6 @@
 \tableofcontents
 \newpage
 
-
-
 # Summary
 
 With the sequencing of the human genome, it has become apparent that Systems
@@ -59,7 +57,6 @@ role they might play in stimulating the development of new tools and approaches.
 Finally, the range of possible computational applications is described,
 highlighting the rich set of tools that is emerging as systems biology becomes a
 mainstream science.
-
 
 # Introduction
 
@@ -581,6 +578,22 @@ biological process. One approach to integration is through the annotation of
 multiple bodies of data using common controlled and structured vocabularies or
 "ontologies".
 
+The MIRIAM guidelines also state that annotations must be in the form of a
+standard set of URIs that reference the namespace and identifier. Originally,
+the scheme for MIRIAM URIs were only provided in the form of Uniform Resource
+Names. For example, `urn:miriam:ec-code:1.1.1.1` refers to the enzyme alcohol
+dehydrogenase in the enzyme class collection, and `urn:miriam:taxonomy:9606`
+refers to the species *Homo Sapiens* in the taxonomy of living species.
+However, URNs are not directly resolvable by the web browser and require the
+use of a URI lookup service, such as the one provided by the MIRIAM Registry. A
+newly introduced URL-based scheme, with the prefix <http://identifiers.org>
+allowed MIRIAM URIs to be mapped directly to resolvable URL links. From the
+previous example, alcohol dehydrogenase is identified with
+<http://identifiers.org/ec-code/1.1.1.1> and *Homo Sapiens* is identified
+with <http://identifiers.org/taxonomy/9606> [@juty2012identifiers].
+
+Onotologies 
+
 One of the most successful examples of the use of a biomedical ontology,
 measured by both the number of users and its reach across different subdomains
 is the Gene Ontology (GO), which defines specific gene products across different
@@ -616,7 +629,7 @@ have a clearly bounded subject-matter (so that an ontology devoted to cell
 components, for example, should not include terms like 'database' or 'integer')
 [@smith2007obo].
 
-#### Systems Biology Ontology (SBO)
+### Systems Biology Ontology (SBO)
 
 SBO (<http://www.ebi.ac.uk/sbo/>) is one member of the OBO family of ontologies.
 One of the goals of SBO, is to facilitate the immediate identification of the
@@ -640,15 +653,16 @@ Database. The use of SBO terms within SBML will allow to a limited extend to get
 rid of the explicit mathematics in the model itself, but to download the
 adequate rate-law instead [@le2006model].
 
-Together, SBO, the Kinetic Simulation Algorithm Ontology (KiSAO) and the
-Terminology for the Description of Dynamics (TEDDY) provide stable and perennial
-identifiers, referencing machine-readable, software-interpretable, regulated
-terms. These ontologies define semantics for the aspects of models, which
-correspond to the three steps of the modeling and simulation process. SBO is a
-well-established software tool, KiSAO gathers increasing community support and
-TEDDY is as yet in its infancy, being primarily a research project. All three
-ontologies aim to fill specific niches in the concept space covered by the OBO
-foundry [@courtot2011controlled].
+#### Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics (TEDDY)
+
+Together, SBO, KiSAO, and TEDDY provide stable and perennial identifiers,
+referencing machine-readable, software-interpretable, regulated terms. These
+ontologies define semantics for the aspects of models, which correspond to the
+three steps of the modeling and simulation process. SBO is a well-established
+software tool, KiSAO gathers increasing community support and TEDDY is as yet
+in its infancy, being primarily a research project. All three ontologies aim to
+fill specific niches in the concept space covered by the OBO foundry
+[@courtot2011controlled].
 
 ## Physiological Models
 
@@ -826,15 +840,15 @@ item in a model is defined explicitly. However, the generality and explicit
 nature of CellML also results in increased complexity especially for software
 developers. Another side effect of the increased complexity is that models that
 are represented using CellML tend to be quite large. On average, my own analysis
-of a sample from the CellML repository (<www.cellml.org/examples/repository/>)
+of a sample from the CellML repository (<http://models.cellml.org/cellml>)
 indicates that each reaction in a model requires about 5 kilobytes of storage.
 
 Owing to the complexity of CellML, one unfortunate side effect is that there are
 substantially fewer tools which can read and write CellML compared to SBML. The
 CellML team <http://cellml.sourceforge.net/>) also provides their own software
-tools to third-party developers, including the CellML API (<http://cellml-
-api.sourceforge.net/>), which is a library much like libSBML that allows
-software developers to read and write CellML models.
+tools to third-party developers, including the CellML API 
+(<http://cellml-api.sourceforge.net/>), which is a library much like libSBML 
+that allows software developers to read and write CellML models.
 
 ### NeuroML
 
@@ -962,11 +976,11 @@ and C++, which can be easily translated to different programming languages
 [@van2012software].
 
 The plugin cySBGN
-[<http://www.ebi.ac.uk/saezrodriguez/cysbgn/>;@goncalves2013cysbgn], through use
+[<http://www.ebi.ac.uk/saezrodriguez/cysbgn/>,@goncalves2013cysbgn], through use
 of libSBGN and SBGN-ML allows SBGN diagrams to be imported, modified, and
 analyzed within Cytoscape (<http://www.cytoscape.org/>), a popular network
 visualizer. Coupled with the cySBML
-[<http://sourceforge.net/projects/cysbml/>;@konig2012cysbml] plugin, which
+[<http://sourceforge.net/projects/cysbml/>,@konig2012cysbml] plugin, which
 allows SBML models to be imported into Cytoscape, SBGN maps can be generated
 from SBML models directly.
 
@@ -1281,7 +1295,7 @@ a supercomputer cluster.
 ### VCell
 
 The Virtual Cell (VCell; <http://vcell.org/>) is a client/server based tool that
-specializes in three-dimensional cell simulations [@VCELL;moraru2008virtual]. It
+specializes in three-dimensional cell simulations [@VCELL,@moraru2008virtual]. It
 is unique in that it provides a framework for not only modeling biochemical
 networks but also electrophysiological, and transport phenomena while at the
 same time considering the subcellular localization of the molecules that take
