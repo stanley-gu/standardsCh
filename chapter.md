@@ -402,9 +402,9 @@ activity or product that encourages interoperation and cooperation.  Ideally, a
 standard is clearly and unambiguously defined and while remaining easy to
 interpret and implement. In the modern world, standards have been applied to
 nearly everything from electronics cables and audio formats to paper sizes and
-telephone numbers. In the field of systems biology, desire to facilitate
-interoperability and reuse computational models and data was the impetus for
-developing standard electronic annotations and representations.
+telephone numbers. In the field of systems biology, the desire to facilitate
+interoperability and reuse computational models and data was the motivation for
+developing standard digital annotations and representations.
 
 ## Minimum Information (MI)
 
