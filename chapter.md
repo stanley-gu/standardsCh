@@ -427,9 +427,9 @@ for subsequent data annotation guidelines in systems biology
 [@quackenbush2006standardizing].
 
 The early success of MIAME and its widespread adoption led to the development of
-many domain-specific extensions and variations. MIAME is now accompanied with a
-myriad of "minimum information" reporting standards initiatives that cover
-practically every major biotechnological field [@naturebiotechnology2006]. The
+many domain-specific extensions and variations. MIAME is now accompanied by a
+myriad of "minimum information" reporting standards groups that cover
+practically every corner of the biomedical field [@naturebiotechnology2006]. The
 Minimum Reporting Guidelines for Biological and Biomedical Investigations
 (MIBBI) project has arisen as a comprehensive source of these reporting
 "checklists" @taylor2008promoting]. MIBBI maintains a web-based and freely
@@ -551,8 +551,7 @@ the experiment must be provided.
 *	If a simulation step is performed using a computer program for which source-code is not available, all information needed to reproduce the simulation, and not only repeat it, must be provided, including the algorithms used by the original software and any information necessary to implement them, such as the discretization and integration methods.
 *	If it is known that a simulation step will produce different results when performed in a different simulation environment or on a different computational platform, an explanation of how the model has to be run with the specified environment/platform in order to achieve the purpose of the experiment must be given.
 
-All information necessary to obtain the desired numerical results must \
-be provided.
+All information necessary to obtain the desired numerical results must be provided.
 
 *	All post-processing steps applied on the raw numerical results of simulation steps in order to generate the final results have to be described in detail. That includes the identification of data to process, the order in which changes were applied, and also the nature of changes.
 *	If the expected insights depend on the relation between different results, such as a plot of one against another, the results to be compared have to be specified.
