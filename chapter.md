@@ -576,20 +576,6 @@ biological process. One approach to integration is through the annotation of
 multiple bodies of data using common controlled and structured vocabularies or
 "ontologies".
 
-The MIRIAM guidelines also state that annotations must be in the form of a
-standard set of URIs that reference the namespace and identifier. Originally,
-the scheme for MIRIAM URIs were only provided in the form of Uniform Resource
-Names. For example, `urn:miriam:ec-code:1.1.1.1` refers to the enzyme alcohol
-dehydrogenase in the enzyme class collection, and `urn:miriam:taxonomy:9606`
-refers to the species *Homo Sapiens* in the taxonomy of living species.
-However, URNs are not directly resolvable by the web browser and require the
-use of a URI lookup service, such as the one provided by the MIRIAM Registry. A
-newly introduced URL-based scheme, with the prefix <http://identifiers.org>
-allowed MIRIAM URIs to be mapped directly to resolvable URL links. From the
-previous example, alcohol dehydrogenase is identified with
-<http://identifiers.org/ec-code/1.1.1.1> and *Homo Sapiens* is identified
-with <http://identifiers.org/taxonomy/9606> [@juty2012identifiers].
-
 One of the most successful examples of the use of a biomedical ontology,
 measured by both the number of users and its reach across different subdomains
 is the Gene Ontology (GO), which defines specific gene products across different
