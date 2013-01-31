@@ -590,16 +590,25 @@ previous example, alcohol dehydrogenase is identified with
 <http://identifiers.org/ec-code/1.1.1.1> and *Homo Sapiens* is identified
 with <http://identifiers.org/taxonomy/9606> [@juty2012identifiers].
 
-Onotologies 
-
 One of the most successful examples of the use of a biomedical ontology,
 measured by both the number of users and its reach across different subdomains
 is the Gene Ontology (GO), which defines specific gene products across different
 species. All terms are organized in a hierarchical structure, where there are
-three main branches, biological process, cellular component, or molecular
-function, and the leaves are proteins. GO terms have been used in millions of
+three main branches: biological process, cellular component, or molecular
+functions. GO terms have been used in millions of
 annotations relating to gene products described in protein databases such as
 UnitProt and Ensembl [@smith2005relations].
+
+Table: External Resources in Annotation of SBML Model (ontologies in **bold**)
+
+Model Tag       External Resource
+------------    -------------------------
+model           Submitter, Creator, publication, **GO**, **KEGG**, 
+                Reactome
+compartment     **GO**
+species         **ChEBI**, **Ensembl**, **GO**, **UniPro**, **InterPro**
+reaction        **GO**, 
+
 
 ### Open Biomedical Ontologies (OBO)
 
@@ -644,12 +653,13 @@ terms are related by "is a" inheritances, which represent sub-classing.
 4. A list of modeling framework, that precises how to interpret a mathematical expression, such as "deterministic", "stochastic", "boolean" etc.
 
 The annotation of model components with SBO terms will be an essential step to
-reach MIRIAM-compliance. Not only such an annotation will be important to
-understand and to programmatically analyze models, it will also power the search
-strategies used by the databases of models, and in particular BioModels
-Database. The use of SBO terms within SBML will allow to a limited extend to get
-rid of the explicit mathematics in the model itself, but to download the
-adequate rate-law instead [@le2006model].
+reach MIRIAM-compliance. Annotation of SBML models with SBO terms is done
+through element attributes, rather than within the `annotation` element. Not
+only such an annotation will be important to understand and to programmatically
+analyze models, it will also power the search strategies used by the databases
+of models, and in particular BioModels Database. The use of SBO terms within
+SBML will allow to a limited extend to get rid of the explicit mathematics in
+the model itself, but to download the adequate rate-law instead [@le2006model].
 
 #### Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics (TEDDY)
 
@@ -669,15 +679,15 @@ encoding and exchanging physiological models will be discussed. The relative
 merits of each format will be surveyed and compared. But first, why are model
 standards useful?
 
-Since the sequencing of the human genome, there has been an ever increasing list
-of wide ranging cellular models published in the literature. For most of
-scientific publishing history, each author has a particular notation that they
-use to publish the model. Some authors will publish the model as a reaction
-scheme (@scheme), much like the notation given in scheme. Others will itemize
-the actual mathematical representation in the form of a list of differential
-equations. Some authors do not publish the model at all but provide the model as
-supplementary information. Until recently, there has been no way to publish
-models in a standard format. Without a standard format it has proved very
+Over the years, there has been an ever increasing list of wide ranging cellular
+models published in the literature. For most of scientific publishing history,
+each author has a particular notation that they use to publish the model. Some
+authors will publish the model as a reaction scheme, see equation (@scheme),
+much like the notation given in scheme. Others will itemize the actual
+mathematical representation in the form of a list of differential equations.
+Some authors do not publish the model at all but provide the model as
+supplementary information.  Until recently, there has been no way to publish
+models in a standard format.  Without a standard format it has proved very
 difficult if not impossible in many cases to implement and use published models
 without considerable effort.
 
