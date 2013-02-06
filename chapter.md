@@ -1155,6 +1155,13 @@ this arena include semanticSBML [@krause2010annotation], SemSim
 The first systems biology simulation package, BIOSIM, was written in the 1960s
 [@Ga68]. Since then, m
 
+We cover modeling and not flux balance analysis, for that see
+[@copeland2012computational]
+
+Since it is not possible to cover all the modeling tools available, we are just
+going to highlight ones that have some unique features to take note of.
+
+
 ### CellDesigner
 
 CellDesigner (<http://www.celldesigner.org/>) is a structured diagram editor for
@@ -1216,6 +1223,9 @@ Sciences which has devised a derivative of the Kohn notation called DCL. However
 this notation is proprietary and its utility to the general scientific
 community is not certain at this time.
 
+### Systems Biology Software Infrastructure (SBSI)
+(<http://www.sbsi.ed.ac.uk/>)
+[@adams2013sbsi]
 
 ### Systems Biology Workbench (SBW)
 
@@ -1310,6 +1320,32 @@ which allows models to be specified in a rule based manner. VCell is also one of
 the few tools that can both import and export SBML and CellML. This feature
 could in principle be used to translate between SBML and CellML models.
 
+### Other Modeling Tools
+
+(<http://bionetgen.org/index.php/Main_Page>)
+
+#### iBioSim
+(<http://www.async.ece.utah.edu/iBioSim/>)
+[@myers2009ibiosim]
+
+
+#### JigCell
+(<http://jigcell.cs.vt.edu/>)
+
+stochastic simulation
+batch running in spreadsheet format
+
+[@vass2004jigcell, @vass2006jigcell]
+
+#### ProMoT
+ProMoT is the Process Modeling Tool, a software for the construction and manipulation of complex technical and biological systems. ProMoT has its origins in process engineering. Together with the simulation environment Diana it provides capabilities for the development of dynamic models based on differential-algebraic equations, and their simulation and further analysis.
+For the application in Systems Biology key features of ProMoT are the development of modular models, the use of specialized modeling-libraries, and the support for model-exchange via the international standard SBML.
+Of specific importance for successful work in interdisciplinary teams is the availability of graphical methods for model editing and exploration, because this defines a common language for direct communication about models without the need for in-depth mathematical knowledge. ProMoT already implements graphical tools for both the implementation, and the exploration and visualization of models.
+ProMoT has being used as a modeling tool not only for the setup of dynamic models, but also for the visual construction of Boolean models that can be analyzed with CellNetAnalyzer.
+(<http://www.mpi-magdeburg.mpg.de/projects/promot>)
+[@mirschel2009promot]
+
+
 ## Simulation Engines
 
 Simulation and modeling is becoming one of the standard approaches to understand
@@ -1362,8 +1398,22 @@ analyzing the stoichiometric networks.
 ### LibSBMLSim
 
 LibSBMLSim (<http://fun.bio.keio.ac.jp/software/libsbmlsim/>) is a relatively
-newer simulation library, which is written in C, available with multiple
-language bindings, and available on Unix and Windows based operating systems.
+newer simulation library and available on Unix and Windows based operating
+systems. It features a number of explicit and implicit ODE solvers and a
+relatively straightforward interface for producing simulation results from an
+SBML input file. However, compared to the other simulators in this chapter that
+have been around longer, the API contains fewer features. As of this writing,
+there are no functions for steady state analysis (useful for flux balance
+analysis) and single time step simulations (useful for real-time and interactive
+simulations).
+
+LibSBMLSim is written in C which makes it "portable" in the sense that it is
+relatively easy to port to a wide variety of different programming languages and
+environments through the use of the SWIG software tool (<http://swig.org/>).
+Indeed, this feature of C to serve as a least common denominator of sorts is an
+attractive reason systems biology software developers to program in to expand
+the reach of their software to a user base that runs numerous different
+computing environments.
 
 ### RoadRunner
 
@@ -1381,6 +1431,9 @@ model is separated into a system of independent and dependent variables. This
 separation process is described in detail in [@vallabhajosyula2006conservation].
 Thus, all major operating systems are supported given that RoadRunner only
 depends on CVODE and NLEQ being available on the platform.
+
+### SBMLSimulator
+(<http://www.cogsys.cs.uni-tuebingen.de/software/SBMLsimulator/>)
 
 ## MATLAB
 
@@ -1415,17 +1468,20 @@ The experimental data input formats are also very flexible. The tool provides a
 number of optimization algorithms including genetic and simulated annealing
 approaches.
 
+### SBMLToolbox
+(<http://sbml.org/Software/SBMLToolbox>)
+
 ### SBML to MATLAB Translation
 
 It is also possible to export SBML models into MATLAB scripts without the need
-for any additional toolboxes. SBML2MATLAB (<http://stanley-gu.github.com/sbml2matlab/>) 
-is a cross-platform tool for performing such
-conversions. The SBML model structures and mathematics are mapped to MATLAB
-functions and structures, allowing users to easily manipulate the models through
-additional MATLAB scripting. SBML2MATLAB has also been integrated as a
-standalone web application (<http://stanley-gu.github.com/node-sbml2matlab/>)
-that provides a user friendly interface for using SBML2MATLAB without any need
-for installing software.
+for any additional toolboxes. SBML2MATLAB
+(<http://stanley-gu.github.com/sbml2matlab/>) is a cross-platform tool for
+performing such conversions. The SBML model structures and mathematics are
+mapped to MATLAB functions and structures, allowing users to easily manipulate
+the models through additional MATLAB scripting. SBML2MATLAB has also been
+integrated as a standalone web application
+(<http://stanley-gu.github.com/node-sbml2matlab/>) that provides a user friendly
+interface for using SBML2MATLAB without any need for installing software.
 
 In addition, a web application for viewing, editing, and simulating SBML models
 is also actively being developed (<http://stanley-gu.github.com/snap/>), which
