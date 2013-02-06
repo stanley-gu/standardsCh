@@ -1,5 +1,5 @@
 % Standards, Platforms, and Applications
-% 	Stanley Gu [^stanleyInfo]
+%	Stanley Gu [^stanleyInfo]
 	Herbert Sauro[^herbertInfo]
 
 [^stanleyInfo]: stanleyg@uw.edu
@@ -1341,63 +1341,67 @@ the few tools that can both import and export SBML and CellML. This feature
 could in principle be used to translate between SBML and CellML models.
 
 ### Other Modeling Tools
-* * * *
 
-**Application and Description**
+#### BioNetGen: 
+Description
+-
+- <http://bionetgen.org/index.php/Main_Page>
 
-Gepasi: 
-:	This is a forms based application which has been maintained for many
-	years by a dedicated author, the tool is particularly adept at carrying out
-	optimizations of ODE based models to data  
-		- Closed source; Windows [@Gepasi:1993].
+#### Gepasi
+This is a forms based application which has been maintained for many
+years by a dedicated author, the tool is particularly adept at carrying out
+optimizations of ODE based models to data  
+	- Closed source; Windows [@Gepasi:1993].
+	- <http://www.gepasi.org/> 
 
-PySCeS: 
-:	This is a very complete ODE based simulation environment built
-	around the scripting language Python.  
-		- Open Source; Windows, Linux, OS X [@Pysces2004].
+#### iBioSim: 
+Description
+	- [@myers2009ibiosim]
+	- (<http://www.async.ece.utah.edu/iBioSim/>)
 
-WinSCAMP: 
-:	A script based GUI application, which like Gepasi has a long
-	tradition. Specialized for time course, steady state and metabolic control
-	analysis of ODE based models.  
-		- Source available upon request; Windows [@SauroF91; @SauroScamp93]
-
-VCell: 
-:	A very mature server based application that is specialized to build
-	and simulate large scale spatial (PDE) models.  
-		- Open Source; Windows, Linux, OS X [@VCELL].
-
-* * * *
-
-
-### Systems Biology Software Infrastructure (SBSI)
-(<http://www.sbsi.ed.ac.uk/>)
-[@adams2013sbsi]
-
-#### BioNetGen
-(<http://bionetgen.org/index.php/Main_Page>)
-
-#### iBioSim
-(<http://www.async.ece.utah.edu/iBioSim/>)
-[@myers2009ibiosim]
-
-
-#### JigCell
-(<http://jigcell.cs.vt.edu/>)
-
+#### JigCell: 
 stochastic simulation
 batch running in spreadsheet format
+- [@vass2004jigcell, @vass2006jigcell]
+- <http://jigcell.cs.vt.edu/>
 
-[@vass2004jigcell, @vass2006jigcell]
+#### ProMot: 
+Description
+- [@mirschel2009promot]
+- <http://www.mpi-magdeburg.mpg.de/projects/promot>
+
+#### PySCeS: 
+This is a very complete ODE based simulation environment built
+around the scripting language Python.  
+- Open Source; Windows, Linux, OS X 
+- [@Pysces2004]
+
+#### SBSI: 
+Description
+- [@adams2013sbsi]
+- <http://www.sbsi.ed.ac.uk/>
+
+#### WinSCAMP: 
+A script based GUI application, which like Gepasi has a long
+tradition. Specialized for time course, steady state and metabolic control
+analysis of ODE based models.  
+	- Source available upon request; Windows 
+	- [@SauroF91; @SauroScamp93]
+        - <http://sbw.kgi.edu/software/winscamp.htm>
+
+#### VCell: 
+A very mature server based application that is specialized to build
+and simulate large scale spatial (PDE) models.  
+	- Open Source; Windows, Linux, OS X 
+	- [@VCELL]
+
+* * * *
 
 #### ProMoT
 ProMoT is the Process Modeling Tool, a software for the construction and manipulation of complex technical and biological systems. ProMoT has its origins in process engineering. Together with the simulation environment Diana it provides capabilities for the development of dynamic models based on differential-algebraic equations, and their simulation and further analysis.
 For the application in Systems Biology key features of ProMoT are the development of modular models, the use of specialized modeling-libraries, and the support for model-exchange via the international standard SBML.
 Of specific importance for successful work in interdisciplinary teams is the availability of graphical methods for model editing and exploration, because this defines a common language for direct communication about models without the need for in-depth mathematical knowledge. ProMoT already implements graphical tools for both the implementation, and the exploration and visualization of models.
 ProMoT has being used as a modeling tool not only for the setup of dynamic models, but also for the visual construction of Boolean models that can be analyzed with CellNetAnalyzer.
-(<http://www.mpi-magdeburg.mpg.de/projects/promot>)
-[@mirschel2009promot]
-
 
 ## Simulation Engines
 
