@@ -51,7 +51,7 @@ becoming an important part of research for mainstream biologists. One of the
 indicative trends to emerge in recent years is the development of model
 interchange standards that permit biologists to easily exchange dynamical models
 between different software tools. This chapter describes the current and rising
-standards in systems biology that facilitate data knowledge management and
+standards in systems biology that facilitate knowledge management and
 physiological model exchange. In addition, software platforms that implement
 these standards and enables the reuse of software code is discussed. Finally,
 the range of possible computational applications is described, highlighting the
@@ -1358,6 +1358,12 @@ and numerical analysis of SBML models is retained from Copasi. In addition,
 Antimony scripts can be used to load models. The structural library
 (<http://libstruct.sourceforge.net/>) is also included within this library for
 analyzing the stoichiometric networks.
+
+### LibSBMLSim
+
+LibSBMLSim (<http://fun.bio.keio.ac.jp/software/libsbmlsim/>) is a relatively
+newer simulation library, which is written in C, available with multiple
+language bindings, and available on Unix and Windows based operating systems.
 
 ### RoadRunner
 
