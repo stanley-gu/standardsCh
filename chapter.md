@@ -1151,22 +1151,31 @@ this arena include semanticSBML [@krause2010annotation], SemSim
 
 # Platforms
 
-## Modeling
+This section will focus on the different modeling and simulation platforms that
+are available, which implement the systems biology standards highlighted in the
+previous section.
 
 The first systems biology simulation package, BIOSIM, was written in the 1960s
-[@Ga68]. Since then, m
+[@Ga68]. Especially in recent years, there has been a boom of software
+applications for the systems biology community (Figure \ref{figure:apps}).
+While, most software projects have ended development over the years, for a
+variety of reasons, such as lack of funding or maintainers, there are still far
+too many different modeling platforms to possibly be covered in this chapter.
+Thus, in this section will highlight specific software tools that have had a
+significant impact on the communit, or some
+unique features that set them aside.
 
-We cover modeling and not flux balance analysis, for that see
-[@copeland2012computational]
-
-Since it is not possible to cover all the modeling tools available, we are just
-going to highlight ones that have some unique features to take note of.
-
-In recent years there has been a proliferation of software applications for the
-systems biology community (See Figure \ref{figure:apps}).
+Furthermore, discussion will be focused specifically on modeling and simulation
+tools, and not more advanced analytical techniques, such as metabolic flux
+balance analysis. For more detailed discussion on flux balance software, please
+refer to a recent review [@copeland2012computational] and a very comprehensive
+listing of SBML compatible software provided by the SBML consortium
+(<http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>).
 
 ![The Release of Software Tools for Computational Systems Biology over Time.
 years.\label{figure:apps}](images/ToolsPerYear.pdf)
+
+## Modeling
 
 On the whole, many of these applications provide very similar functionality. The
 distinguishing feature among them is how easy they are to install and use. The
@@ -1178,19 +1187,6 @@ author has lost interest or funding has stopped. It is important therefore that
 what ever tool one uses, that the ability to export and import a recognized
 standard (or at least a documented format) such as SBML and/or CellML be
 available.
-
-The original intention in this section was to list as many of the applications
-as possible together with their capabilities but given the large number now
-available it soon became clear that this task would be too great. However,
-fortunately the SBML consortium provides a very comprehensive overview of
-different software applications and their main features, located here:
-<http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>.
-
-However, a few select applications will be mentioned here due to their
-significant impact on the community, unique features, and were previously
-referred to in the text.
-
-
 
 ### CellDesigner
 
