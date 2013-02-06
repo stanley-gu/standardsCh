@@ -59,7 +59,7 @@ most commonly used and emerging tools in the field.
 
 # Introduction
 
-Although Computational Systems Biology may seem to be a recent field of
+Although computational systems biology may seem to be a recent field of
 endeavor, its origins can be traced as far back as the 1920s and 30s
 [@Wright1929]. During this period it was already believed by some that genes
 were responsible in some way for specifying enzymes. It was also around this
@@ -74,7 +74,7 @@ the properties of enzyme networks[^wrightWork]. In the 1940s, as the first
 digital computers were being built, pioneering individuals such as Garfinkel,
 Higgins and Chance began investigating the possibility of modeling the subtle
 behavior of biochemical pathways. Even before the advent of the digital
-computer, the same group had been using using analog computers to model simple
+computer, the same group had been using analog computers to model simple
 biochemical pathways for almost 15 years [@Ga61; @Hi59; @Chance1943].
 
 [^wrightWork]: This early work later became significant during the development
@@ -94,14 +94,14 @@ Historically the answer seems clear. The chief aim of systems biology is to
 understand how individual proteins, metabolites and genes contribute
 quantitatively to the phenotypic response. Lee Hood, president of the Institute
 of Systems Biology in Seattle, US, defines it similarly as "the identification
-of the elements in a system and the analysis of their interrelationships so as
-to explain the emergent properties of the system". Even so, some believe systems
+of the elements in a system and the analysis of their interrelationships to
+explain the emergent properties of the system". Even so, some believe systems
 biology to be concerned with the collection of high-throughput data while others
 consider the elucidation of protein-protein networks and gene networks to be its
 hallmark. Certainly, both are vital prerequisites for understanding systems but
 neither alone can offer great *insight* into how networks operate dynamically.
 
-Systems Biology is the natural progression of classical molecular biology from a
+Systems biology is the natural progression of classical molecular biology from a
 descriptive to a quantitative science and is concerned with the dynamic response
 of biological networks.
 
@@ -134,7 +134,7 @@ very good.  When the number of molecules drops to below a certain threshold the
 continuum model can break down and in these cases one must revert to stochastic
 simulation. The disadvantage of a stochastic simulation is that all the
 analytical methods available for continuous models no longer apply. One should
-therefore only use stochastic simulation if it is absolutely necessary and not
+therefore only use stochastic simulation if it is necessary and not
 in cases where an ODE based model adequately describes the data. This problem
 highlights the need to develop a new set of mathematical approaches in order to
 understand the dynamics of stochastic systems. There are other approaches, which
@@ -206,7 +206,7 @@ express these models using the following equation:
 		$\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)$
 		\end{center}
 
-where $\bS$ is the vector of molecular species concentrations, $\bN$, the
+Where $\bS$ is the vector of molecular species concentrations, $\bN$, the
 stoichiometry matrix; $\bv$ the rate vector and $\bp$ a vector of parameters
 which can influence the evolution of the system. Real cellular networks have an
 additional property that is particularly characteristic of biological networks,
@@ -258,7 +258,7 @@ vector, $\bNr$ the reduced stoichiometry matrix, $\bv$ the rate vector and $\bp$
 the vector of parameters. Equation (@eqGeneral) constitutes the most general
 expression of an ODE based temporal model [@hofmeyr-nutshell,@Schuster:Book].
 The symbolism used in equation (@eqGeneral) is the standard notation used by
-many in the Systems Biology community.
+many in the systems biology community.
 
 Although mathematically, reaction based models are given by equations
 (@eqSystem) and (@eqGeneral), many researchers are more familiar with expressing
@@ -504,7 +504,7 @@ External resource annotation:
 :	The referenced information should be described using a triplet {collection, identifier, qualifier}:
 :	The annotation should be written as a Uniform Resource Identifier (URI).
 :	The identifier should be considered within the context of the framework of the collection.
-:	Collection namespace and identifier are be combined into a single URI, such as: http://identifiers.org/collection/identifier. For example: http://identifiers.org/uniprot/P62158.
+:	Collection namespace and identifier are combined into a single URI, such as: http://identifiers.org/collection/identifier. For example: http://identifiers.org/uniprot/P62158.
 :	Qualifiers (optional) should refine the link between the model constituent and the piece of knowledge: “has a”, “is version of”, “is homolog to”, etc.
 :	The community has to agree upon a set of standard valid URIs. A database and the associated API (Web Services) have been developed at the EBI to provide the generation and interpretation of URIs.
 
@@ -824,11 +824,11 @@ metadata annotations to allow MIRIAM compliance. In addition, CellML represents
 entities using a component based approach where relationships between components
 are represented by connections. In many ways CellML represents a literal
 translation of the mathematical equations, except that the relationship between
-dependent and independent species is implied rather then explicit. The literal
+dependent and independent species is implied rather than explicit. The literal
 translation of the mathematics however goes much further, in fact the
 representation that CellML uses is very reminiscent of the way an engineer might
 wire up an analog computer to solve the equations (though without specifying the
-integrators). As a result CellML is very general and in principal could probably
+integrators). As a result CellML is very general and in principle could probably
 represent any system that has a mathematical description (and not just the kind
 indicated by equation (@eqSystem)). CellML is also very precise in that every
 item in a model is defined explicitly. However, the generality and explicit
@@ -840,7 +840,7 @@ indicates that each reaction in a model requires about 5 kilobytes of storage.
 
 Owing to the complexity of CellML, one unfortunate side effect is that there are
 substantially fewer tools which can read and write CellML compared to SBML. The
-CellML team <http://cellml.sourceforge.net/>) also provides their own software
+CellML team (<http://cellml.sourceforge.net/>) also provides their own software
 tools to third-party developers, including the CellML API 
 (<http://cellml-api.sourceforge.net/>), which is a library much like libSBML 
 that allows software developers to read and write CellML models.
@@ -1041,7 +1041,7 @@ into SBML (or CellML) via BioPAX. The BioPAX group proposes to embed BioPAX
 elements onto SBML or cellML for unambiguous identification of substances
 (metabolites, enzymes) and reactions
 [@demir2010biopax;@stromback2005representations]. However, it is possible for to
-convert, or map, from SBML to BioPAX (see  
+convert, or map, from SBML to BioPAX (
 <http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>).
 
 
@@ -1061,7 +1061,7 @@ publication process.
 ### BioModels
 
 BioModels Database (<http://www.ebi.ac.uk/biomodels/>) is one largest open-
-access databases in Systems Biology. Part of the international initiative
+access databases in systems biology. Part of the international initiative
 BioModels.net, BioModels provides access to peer-reviewed and published models
 [@le2006biomodels]. Each model is manually curated by the database maintainers
 to verify that it corresponds to the reference publication and gives the expected
@@ -1330,7 +1330,7 @@ graphical user interface is unnecessary and where runs can be carried out
 without human supervision. COPASI uses its own file format to store models,
 however like all the tools discussed here, it can import and export SBML. One of
 its undoubted strengths is optimization and parameter fitting which it inherited
-from its predecessor. It has an unique ability to optimize on a great variety of
+from its predecessor. It has a unique ability to optimize on a great variety of
 different criteria including metrics such as eigenvalues, transient times etc.
 This makes COPASI extremely flexible for optimization problems. Installation is
 very simple and entails using a one-click installer. Although the source code to
@@ -1346,7 +1346,7 @@ control analysis amongst other things. COPASI is without doubt one of the better
 simulators available. Although the user interface is graphical, it does, due to
 its particular design, require some effort to master but with the availability
 of the COPASI the source code, there is the opportunity to provide alternative
-user interfaces.. Finally there is a version that has an SBW interface (Systems
+user interfaces. Finally there is a version that has an SBW interface (Systems
 Biology Workbench) which allows SBW enabled tools access to COPASI's
 functionality (currently available at <http://sys-bio.org/>).
 
@@ -1373,13 +1373,13 @@ each other [@bergmann2006sbw]. Jarnac and Roadrunner are already included with
 an SBW installation. COPASI and SBML ODE Solver may also be used as simulation
 engines alongside RoadRunner within SBW [@bergmann2008comparing].
 
-Instead of interpreting model equations, roadRunner will  compiles the model
+Instead of interpreting model equations, RoadRunner compiles the model
 equations dynamically, which results in  much improved performance when compared
 with traditional simulators. RoadRunner uses the integrator CVODE and NLEQ for
 steady state analysis [@cohen1996cvode]. To further speed up the simulation, the
 model is separated into a system of independent and dependent variables. This
 separation process is described in detail in [@vallabhajosyula2006conservation].
-Thus, all major operating systems are supported given that roadRunner only
+Thus, all major operating systems are supported given that RoadRunner only
 depends on CVODE and NLEQ being available on the platform.
 
 ## MATLAB
@@ -1427,7 +1427,7 @@ standalone web application (<http://stanley-gu.github.com/node-sbml2matlab/>)
 that provides a user friendly interface for using SBML2MATLAB without any need
 for installing software.
 
-In addition, an web application for viewing, editing, and simulating SBML models
+In addition, a web application for viewing, editing, and simulating SBML models
 is also actively being developed (<http://stanley-gu.github.com/snap/>), which
 would allow modelers work on any platform that supports a web browser,
 circumvent the need to install any software, and not be limited by the local
@@ -1470,7 +1470,7 @@ referred to in the text.
 
 Gepasi: 
 :	This is a forms based application which has been maintained for many
-	years by a dedicated author, the tool is particularly adapt at carrying out
+	years by a dedicated author, the tool is particularly adept at carrying out
 	optimizations of ODE based models to data  
 		- Closed source; Windows [@Gepasi:1993].
 
@@ -1593,17 +1593,17 @@ cluster machine. Chickarmane estimates that using a one thousand node cluster,
 the optimization of a three hundred parameter model can be reduced to
 approximately two days of computation time. Such a computation can be easily
 setup using SBW. A single node on the cluster would act as the primary
-optimizer; this node in turn would farms out the time consuming simulation
+optimizer; this node in turn would farm out the time consuming simulation
 computations to the remaining nodes on the computer. For very large models, Grid
 computing [@GridComputing:Abbas] may be very appropriate for solving this kind
 of problem.
 
 # Future Prospects and Conclusion
 
-The Systems Biology field has been developing rapidly in recent years but much
+The systems biology field has been developing rapidly in recent years but much
 remains to be done. One of the most useful developments must undoubtedly go to
 the development of standards such as SBML and CellML.  Indeed the most recent of
-a long list of new systems biology journals, (Molecular Systems Biology) has
+a long list of new systems biology journals, Molecular Systems Biology, has
 stipulated that SBML is the preferred format for contributing models, hopefully
 other journals will follow.  However, one aspect that still remains to be dealt
 with is to formalize the semantic rules for SBML. At the moment there is no
@@ -1614,7 +1614,7 @@ but it is vital that semantic validators be developed for SBML.
 The other area that has received a lot of attention in recent years is the
 development of tools for systems biology. However, much of what is being
 developed is repetitious and little true advancement is being made. This is
-probably do to the large number of new comers to the field who are inexperienced
+probably due to the large number of new comers to the field who are inexperienced
 and inevitably repeat what has gone before. A number of solutions exist to solve
 this problem, one is to develop extensible frameworks such as SBW, the other is
 to develop a suite of open-source libraries which can carry out specific
@@ -1635,7 +1635,7 @@ particularly the relationship between model validation and how this can direct
 future experimentation. This leads on to the development of new methods and
 algorithms for analyzing the complex networks in particular methods should be
 developed to modularize large networks since understanding an entire network is
-virtually impossible with out some recourse to a hierarchical modularization.
+virtually impossible without some recourse to a hierarchical modularization.
 
 Finally, the role of high performance computing in systems biology is still very
 novel. In fact there appear to be very few applications to date of high
