@@ -641,11 +641,12 @@ terms are related by "is a" inheritances, which represent sub-classing.
 The annotation of model components with SBO terms will be an essential step to
 reach MIRIAM-compliance. Annotation of SBML models with SBO terms is done
 through element attributes, rather than within the `annotation` element. Not
-only such an annotation will be important to understand and to programmatically
-analyze models, it will also power the search strategies used by the databases
-of models, and in particular BioModels Database. The use of SBO terms within
-SBML will allow to a limited extend to get rid of the explicit mathematics in
-the model itself, but to download the adequate rate-law instead [@le2006model].
+only will such annotations will be important to understand and programmatically
+analyze models, it will also power the search algorithms used by the databases
+of models. The use of SBO terms within SBML will also allow, to a limited
+extent, the ability to remove the explicit mathematics in the model itself, and
+enable the online downloading of appropriate kinetic equations instead
+[@le2006model].
 
 #### Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics (TEDDY)
 
@@ -993,13 +994,13 @@ there has been a long tradition in the field to describe models using human
 readable text based formats. Indeed the very first simulator BIOSSIM, [@Ga68],
 allowed a user to describe a model using a list of reaction schemes. Variants of
 this have been employed by a number of simulators since, including, SCAMP
-[@SauroF91], Jarnac [@sauro:2000], E-Cell [@ECELL] and more recently Pysces
+[@SauroF91], Jarnac [@sauro:2000], E-Cell [@ECELL] and more recently PySCeS
 [@Pysces2004]. Being able to represent models in a human readable format offers
 many advantages, including, conciseness, easily understood and manipulated using
 a simple editor, flexible, portable and above all extremely easy to include
 commenting and annotation.
 
-#### Pysces
+#### PySCeS
 
 PySCeS is a console based application written in the Python
 (<http://www.python.org>) programming language that runs on all major computing
@@ -1007,7 +1008,7 @@ platforms [@Pysces2004]. Although users interact with PySCeS via Python scripts,
 many of the underlying numerical capabilities are provided by well established
 C/C++ or FORTRAN based numerical libraries through the SciPy package
 [@olivier2002modelling]. While it is possible to build models directly in Python
-using SciPy, Pysces was written by team experienced with biochemical modeling to
+using SciPy, PySCeS was written by team experienced with biochemical modeling to
 provide a high-level modeling interface that saves the modeler from needing to
 work with low level numerical algorithms.
 
@@ -1024,7 +1025,7 @@ Antimony is a more recent scripting language that combines the relative
 simplicity of languages like Jarnac, PySCeS, and SBML-shorthand with the
 modularity of languages like little-b (<http://www.littleb.org/>), without
 forcing the modeler learn a general programming language [@smith2009antimony].
-Antimony- formatted files may be read by other software packages, like PySCes
+Antimony- formatted files may be read by other software packages, like PySCeS
 using the libAntimony library. Furthermore, Antimony to SBML converters extend
 Antimony's usefulness by allowing users to convert their modules into a form
 usable with the vast number of SBML-compliant software.
@@ -1474,7 +1475,7 @@ Jarnac/JDesigner:
 	offering both ODE and stochastic simulation  
 		- Open Source; Windows [@sauro:2000; @Sauro:Omics].
 
-Pysces: 
+PySCeS: 
 :	This is a very complete ODE based simulation environment built
 	around the scripting language Python.  
 		- Open Source; Windows, Linux, OS X [@Pysces2004].
