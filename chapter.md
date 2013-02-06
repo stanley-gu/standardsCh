@@ -648,7 +648,8 @@ extent, the ability to remove the explicit mathematics in the model itself, and
 enable the online downloading of appropriate kinetic equations instead
 [@le2006model].
 
-#### Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics (TEDDY)
+#### Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics
+(TEDDY)
 
 Together, SBO, KiSAO, and TEDDY provide stable and perennial identifiers,
 referencing machine-readable, software-interpretable, regulated terms. These
@@ -1161,6 +1162,35 @@ We cover modeling and not flux balance analysis, for that see
 Since it is not possible to cover all the modeling tools available, we are just
 going to highlight ones that have some unique features to take note of.
 
+In recent years there has been a proliferation of software applications for the
+systems biology community (See Figure \ref{figure:apps}).
+
+![The Release of Software Tools for Computational Systems Biology over Time.
+years.\label{figure:apps}](images/ToolsPerYear.pdf)
+
+On the whole, many of these applications provide very similar functionality. The
+distinguishing feature among them is how easy they are to install and use. The
+more mature applications tend to be easier to install and have a much richer
+repertoire of functionality. Many of the applications are simple wrappers around
+standard ODE or Gillespie solvers and provide a simple means to load models and
+run time courses.  Some of the applications fall by the wayside because the
+author has lost interest or funding has stopped. It is important therefore that
+what ever tool one uses, that the ability to export and import a recognized
+standard (or at least a documented format) such as SBML and/or CellML be
+available.
+
+The original intention in this section was to list as many of the applications
+as possible together with their capabilities but given the large number now
+available it soon became clear that this task would be too great. However,
+fortunately the SBML consortium provides a very comprehensive overview of
+different software applications and their main features, located here:
+<http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>.
+
+However, a few select applications will be mentioned here due to their
+significant impact on the community, unique features, and were previously
+referred to in the text.
+
+
 
 ### CellDesigner
 
@@ -1205,27 +1235,21 @@ One feature that sets MML apart from other model languages is its awareness of
 physical units when run through JSim's MML compiler [@chizeck2009].
 
 
-### JDesigner
+### JDesigner and Jarnac
 
-One of the first visualization tools, JDesigner [@Sauro:Omics] also implements a
+One of the first visualization tools, JDesigner [@Sauro:Omics] implements a
 traditional way to depict networks (see Figure \ref{Figure:jdesigner}) using a
 pictorial representation to indicate substances and reactions. JDesigner also
 employs Bezier curves to represent arcs in an attempt to make the diagrams
-similar to the notation found in many molecular biology text books. CellDesigner
-and JDesigner connect to the Systems Biology Workbench (SBW) for simulation
-support.
+similar to the notation found in many molecular biology text books. JDesigner
+can use Jarnac's extensive simulation capabilities (both ODE and stochastic) via
+SBW.
+
+Both JDesigner and Jarnac are open source, and available on Windows
+[@sauro:2000; @Sauro:Omics].
 
 ![Example of JDesigner's visual
 format\label{Figure:jdesigner}](images/JDesigner1.eps)
-
-Finally, there is a proposal from a commercial company called Gene Network
-Sciences which has devised a derivative of the Kohn notation called DCL. However
-this notation is proprietary and its utility to the general scientific
-community is not certain at this time.
-
-### Systems Biology Software Infrastructure (SBSI)
-(<http://www.sbsi.ed.ac.uk/>)
-[@adams2013sbsi]
 
 ### Systems Biology Workbench (SBW)
 
@@ -1321,7 +1345,40 @@ the few tools that can both import and export SBML and CellML. This feature
 could in principle be used to translate between SBML and CellML models.
 
 ### Other Modeling Tools
+* * * *
 
+**Application and Description**
+
+Gepasi: 
+:	This is a forms based application which has been maintained for many
+	years by a dedicated author, the tool is particularly adept at carrying out
+	optimizations of ODE based models to data  
+		- Closed source; Windows [@Gepasi:1993].
+
+PySCeS: 
+:	This is a very complete ODE based simulation environment built
+	around the scripting language Python.  
+		- Open Source; Windows, Linux, OS X [@Pysces2004].
+
+WinSCAMP: 
+:	A script based GUI application, which like Gepasi has a long
+	tradition. Specialized for time course, steady state and metabolic control
+	analysis of ODE based models.  
+		- Source available upon request; Windows [@SauroF91; @SauroScamp93]
+
+VCell: 
+:	A very mature server based application that is specialized to build
+	and simulate large scale spatial (PDE) models.  
+		- Open Source; Windows, Linux, OS X [@VCELL].
+
+* * * *
+
+
+### Systems Biology Software Infrastructure (SBSI)
+(<http://www.sbsi.ed.ac.uk/>)
+[@adams2013sbsi]
+
+#### BioNetGen
 (<http://bionetgen.org/index.php/Main_Page>)
 
 #### iBioSim
@@ -1492,69 +1549,6 @@ a remote server.
 
 # Applications
 
-In recent years there has been a proliferation of software applications for the
-systems biology community (See Figure \ref{figure:apps}).
-
-![The Release of Software Tools for Computational Systems Biology over Time.
-years.\label{figure:apps}](images/ToolsPerYear.pdf)
-
-On the whole, many of these applications provide very similar functionality. The
-distinguishing feature among them is how easy they are to install and use. The
-more mature applications tend to be easier to install and have a much richer
-repertoire of functionality. Many of the applications are simple wrappers around
-standard ODE or Gillespie solvers and provide a simple means to load models and
-run time courses.  Some of the applications fall by the wayside because the
-author has lost interest or funding has stopped. It is important therefore that
-what ever tool one uses, that the ability to export and import a recognized
-standard (or at least a documented format) such as SBML and/or CellML be
-available.
-
-The original intention in this section was to list as many of the applications
-as possible together with their capabilities but given the large number now
-available it soon became clear that this task would be too great. However,
-fortunately the SBML consortium provides a very comprehensive overview of
-different software applications and their main features, located here:
-<http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>.
-
-However, a few select applications will be mentioned here due to their
-significant impact on the community, unique features, and were previously
-referred to in the text.
-
-* * * *
-
-**Application and Description**
-
-Gepasi: 
-:	This is a forms based application which has been maintained for many
-	years by a dedicated author, the tool is particularly adept at carrying out
-	optimizations of ODE based models to data  
-		- Closed source; Windows [@Gepasi:1993].
-
-Jarnac/JDesigner: 
-:	Jarnac is a script based application, JDesigner (See
-	Figure 3) is a visual design tool which can use Jarnac via SBW to carry out
-	simulations. The simulation capabilities of Jarnac are quite extensive, 
-	offering both ODE and stochastic simulation  
-		- Open Source; Windows [@sauro:2000; @Sauro:Omics].
-
-PySCeS: 
-:	This is a very complete ODE based simulation environment built
-	around the scripting language Python.  
-		- Open Source; Windows, Linux, OS X [@Pysces2004].
-
-WinSCAMP: 
-:	A script based GUI application, which like Gepasi has a long
-	tradition. Specialized for time course, steady state and metabolic control
-	analysis of ODE based models.  
-		- Source available upon request; Windows [@SauroF91; @SauroScamp93]
-
-VCell: 
-:	A very mature server based application that is specialized to build
-	and simulate large scale spatial (PDE) models.  
-		- Open Source; Windows, Linux, OS X [@VCELL].
-
-* * * *
-
 ## Model Analysis
 
 As a user, one of the most important aspects that I consider is the range of
@@ -1572,7 +1566,7 @@ for analyzing models. Without these techniques, a model will often be as
 difficult to understand as the real system it attempts to model; the application
 of these techniques is therefore important.
 
-* * * * 
+* * * *
 
 **Approach and Description**
 
@@ -1605,7 +1599,7 @@ Bifurcation Analysis:
 		solutions change with changes in the
 		model parameters [@TysonNatReview2001].
 
-* * * * 
+* * * *
 
 All these techniques are extremely useful in gaining insight into how a model
 operates. The connectionist and structural analyses focus on the network
