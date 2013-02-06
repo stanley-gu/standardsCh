@@ -1342,66 +1342,76 @@ could in principle be used to translate between SBML and CellML models.
 
 ### Other Modeling Tools
 
-#### BioNetGen: 
-Description
--
-- <http://bionetgen.org/index.php/Main_Page>
+#### BioNetGen
+Tool for rule-based, domain-oriented modeling. Originally, it was
+developed to study the problem of combinatorial complexity of signal
+transduction systems, such as antibody receptor binding 
+
+- Open source; Linux, Mac OS, Microsoft Windows
+- <http://bionetgen.org/index.php/Main_Page> [@blinov2004bionetgen]
 
 #### Gepasi
 This is a forms based application which has been maintained for many
 years by a dedicated author, the tool is particularly adept at carrying out
-optimizations of ODE based models to data  
-	- Closed source; Windows [@Gepasi:1993].
-	- <http://www.gepasi.org/> 
+optimizations of ODE based models to data 
 
-#### iBioSim: 
-Description
-	- [@myers2009ibiosim]
-	- (<http://www.async.ece.utah.edu/iBioSim/>)
+- Closed source; Microsoft Windows
+- <http://www.gepasi.org/> [@Gepasi:1993]
 
-#### JigCell: 
-stochastic simulation
-batch running in spreadsheet format
-- [@vass2004jigcell, @vass2006jigcell]
-- <http://jigcell.cs.vt.edu/>
+#### iBioSim
+Tool for the design and analysis of synthetic genetic circuits, including
+a project management system, graphical user interface, and stochastic simulator.
 
-#### ProMot: 
-Description
-- [@mirschel2009promot]
-- <http://www.mpi-magdeburg.mpg.de/projects/promot>
+- Open source; Linux, Mac OS, Microsoft Windows
+- (<http://www.async.ece.utah.edu/iBioSim/>) [@myers2009ibiosim]
 
-#### PySCeS: 
-This is a very complete ODE based simulation environment built
-around the scripting language Python.  
-- Open Source; Windows, Linux, OS X 
-- [@Pysces2004]
+#### JigCell
+JigCell is a set of computational tools with user-friendly interfaces developed
+for studying complex biochemical regulatory systems in general and the cell
+cycle control system in particular. For example, The JigCell Model Builder
+(JCMB) aides the modeler in defining a system to be modeled using SBML with a
+novel spreadsheet interface, allowing a large amount of data to be displayed in
+an organized manner. The JigCell Run Manager (JCRM) allows a user to specify a
+set of specifications for simulation runs using a spreadsheet interface. JigCell
+Aggregation Connector has been designed to define models in terms of components,
+for the purpose of being combined in a larger model. JigCell also aims in
+parameter estimation. A parameter estimator (PET, Parameter Estimation Toolkit)
+takes a biological model, experimental data, and the relationship between the
+model and data. Using this information the parameter estimator uses numerical
+tools to vary the parameters to the model looking for the parameters that best
+fit the experimental data.
 
-#### SBSI: 
-Description
-- [@adams2013sbsi]
-- <http://www.sbsi.ed.ac.uk/>
+- Closed source; Linux, Mac OS, Microsoft Windows
+- <http://jigcell.cs.vt.edu/> [@vass2004jigcell, @vass2006jigcell]
 
-#### WinSCAMP: 
+#### ProMot
+The process modeling tool ProMoT is a software for the set-up and manipulation
+of models of complex technical or biological systems. Key features are the
+support of modular models, modeling libraries for different application areas,
+efficient and robust numerical algorithms, a own modeling language MDL and
+advanced graphical support. Dynamic models can contain DAE and discrete events
+for simulation in DIVA, Diana or MATLAB. Logical (Boolean) models are exported
+to CellNetAnalyzer.
+
+- Open source; Linux, Microsoft Windows
+- <http://www.mpi-magdeburg.mpg.de/projects/promot> [@mirschel2009promot]
+
+#### SBSI
+SBSI provides high performance fitting of model parameters to experimental data,
+with especial focus on models with oscillatory components. Additionally SBSI
+provides a modelling environment for the Bio-PEPA and Kappa languages, as well
+as standard model editing and simulation capabilities
+
+- Open source; Linux, Mac OS, Microsoft Windows
+- <http://www.sbsi.ed.ac.uk/> [@adams2013sbsi]
+
+#### WinSCAMP
 A script based GUI application, which like Gepasi has a long
 tradition. Specialized for time course, steady state and metabolic control
 analysis of ODE based models.  
-	- Source available upon request; Windows 
-	- [@SauroF91; @SauroScamp93]
-        - <http://sbw.kgi.edu/software/winscamp.htm>
 
-#### VCell: 
-A very mature server based application that is specialized to build
-and simulate large scale spatial (PDE) models.  
-	- Open Source; Windows, Linux, OS X 
-	- [@VCELL]
-
-* * * *
-
-#### ProMoT
-ProMoT is the Process Modeling Tool, a software for the construction and manipulation of complex technical and biological systems. ProMoT has its origins in process engineering. Together with the simulation environment Diana it provides capabilities for the development of dynamic models based on differential-algebraic equations, and their simulation and further analysis.
-For the application in Systems Biology key features of ProMoT are the development of modular models, the use of specialized modeling-libraries, and the support for model-exchange via the international standard SBML.
-Of specific importance for successful work in interdisciplinary teams is the availability of graphical methods for model editing and exploration, because this defines a common language for direct communication about models without the need for in-depth mathematical knowledge. ProMoT already implements graphical tools for both the implementation, and the exploration and visualization of models.
-ProMoT has being used as a modeling tool not only for the setup of dynamic models, but also for the visual construction of Boolean models that can be analyzed with CellNetAnalyzer.
+- Source available upon request; Windows
+- <http://sbw.kgi.edu/software/winscamp.htm> [@SauroF91, @SauroScamp93]
 
 ## Simulation Engines
 
