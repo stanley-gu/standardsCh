@@ -1247,16 +1247,27 @@ Both JDesigner and Jarnac are open source, and available on Windows
 ![Example of JDesigner's visual
 format\label{Figure:jdesigner}](images/JDesigner1.eps)
 
+### PySCeS
+
+While PySCeS has already been mentioned earlier as a human readable format for
+expressing biological models, the software package warrants mention again as a
+full-fledged modeling platform that can be used interactively and as a library.
+along with its scripted model description language, PySCeS is SBML compatible,
+and provides a full set of simulation tools, including stoichiometric,
+simulation, steady state, metabolic control, and Eigen analysis. Two and
+three-dimensional graphing is also made available through utilizing additional
+Python libraries.
+
 ### Systems Biology Workbench (SBW)
 
-SBW (Sauro et. al., 2004) is an extensible software framework that is both
+SBW [@bergmann2006sbw] is an extensible software framework that is both
 platform and language independent. Its primary purpose is to encourage code
 reuse among members of the systems biology community.  Developers can run SBW on
 Linux, Windows or Mac OS and can develop software in a variety of different
 languages including C/C++, Java, Delphi, FORTRAN, MATLAB, Perl, Python and any
 .NET language (e.g. Visual Basic or C#). The SBW was originally developed in
-parallel with SBML (Systems Biology Markup Language) as part of the Symbiotic
-Systems Project ERATO project at Caltech, Pasadena.
+parallel with SBML  as part of the Symbiotic Systems Project ERATO project at
+Caltech, Pasadena.
 
 The central component of SBW is the broker, which is responsible for
 coordinating interactions among the different resources connected to it.  These
