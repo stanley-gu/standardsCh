@@ -612,32 +612,6 @@ have a clearly bounded subject-matter (so that an ontology devoted to cell
 components, for example, should not include terms like 'database' or 'integer')
 [@smith2007obo].
 
-### Systems Biology Ontology (SBO)
-
-SBO (<http://www.ebi.ac.uk/sbo/>) is one member of the OBO family of ontologies.
-One of the goals of SBO, is to facilitate the immediate identification of the
-relation between a systems biology model component and the model structure. SBO
-is currently made up of four different vocabularies. Within a vocabulary, the
-terms are related by "is a" inheritances, which represent sub-classing.
-
-1. A classification of rate laws. This CV is a taxonomy of kinetic rate equations. Examples of terms in this CV are "mass action kinetic", "Henri-Michaelis-Menten kinetics", "Hill function" etc. Note that although taking the same mathematical form, the rate-laws "Henri-Michaelis-Menten", "Van Slyke" and "Briggs-Haldane", being based on different assumptions, will be represented by different terms. This will help a user to choose the adequate conversion to elementary steps if needed.
-
-2. A taxonomy of the roles of reaction participants, including the following terms: "catalyst", "substrate", "competitive inhibitor", "non-competitive inhibitor" etc.
-
-3. A CV for parameter roles in quantitative models. This CV includes terms such as "forward unimolecular rate constant", "Hill coefficient", "Michaelis constant" etc.
-
-4. A list of modeling framework, that precises how to interpret a mathematical expression, such as "deterministic", "stochastic", "boolean" etc.
-
-The annotation of model components with SBO terms will be an essential step to
-reach MIRIAM-compliance. Annotation of SBML models with SBO terms is done
-through element attributes, rather than within the `annotation` element. Not
-only will such annotations will be important to understand and programmatically
-analyze models, it will also power the search algorithms used by the databases
-of models. The use of SBO terms within SBML will also allow, to a limited
-extent, the ability to remove the explicit mathematics in the model itself, and
-enable the online downloading of appropriate kinetic equations instead
-.
-
 ### Model Annotations
 
 One of the ways that modelers directly interact with ontologies is through the
