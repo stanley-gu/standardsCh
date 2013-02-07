@@ -1196,7 +1196,7 @@ the process diagram, with graphical notation system that influenced the
 development of SBGN, and are stored using the Systems Biology Markup Language
 (SBML), a standard for representing models of biochemical and gene-regulatory
 networks. CellDesigner supports simulation and parameter scanning through a
-selection of different simulation engines, SBML ODE Solver, Copasi, or SBW
+selection of different simulation engines, SBML ODE Solver, COPASI, or SBW
 [@funahashi2003celldesigner;@funahashi2008celldesigner].
 
 ### JSim
@@ -1460,11 +1460,11 @@ user interfaces. Finally there is a version that has an SBW interface (Systems
 Biology Workbench) which allows SBW enabled tools access to COPASI's
 functionality (currently available at <http://sys-bio.org/>).
 
-#### SimpleCopasi
+#### SimpleCOPASI
 
-SimpleCopasi (<http://code.google.com/p/copasi-simple-api/>) is a C interface to
-the C++ Copasi library. The core functionality of reading, writing, simulating,
-and numerical analysis of SBML models is retained from Copasi. In addition,
+SimpleCOPASI (<http://code.google.com/p/copasi-simple-api/>) is a C interface to
+the C++ COPASI library. The core functionality of reading, writing, simulating,
+and numerical analysis of SBML models is retained from COPASI. In addition,
 Antimony scripts can be used to load models. The structural library
 (<http://libstruct.sourceforge.net/>) is also included within this library for
 analyzing the stoichiometric networks.
