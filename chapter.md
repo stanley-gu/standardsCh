@@ -695,8 +695,8 @@ indicated by equation (@eqSystem)). CellML is also very precise in that every
 item in a model is defined explicitly. However, the generality and explicit
 nature of CellML also results in increased complexity especially for software
 developers. Another side effect of the increased complexity is that models that
-are represented using CellML tend to be quite large. On average, my own analysis
-of a sample from the CellML repository (<http://models.cellml.org/cellml>)
+are represented using CellML tend to be quite large. On average, 
+a sample from the CellML repository (<http://models.cellml.org/cellml>)
 indicates that each reaction in a model requires about 5 kilobytes of storage.
 
 Owing to the complexity of CellML, one unfortunate side effect is that there are
@@ -708,7 +708,7 @@ that allows software developers to read and write CellML models.
 
 ### Systems Biology Markup Language (SBML)
 
-SBML was developed in 2000 at Caltech, Pasadena as a result of funding received
+SBML was developed in 2000 at Caltech, Pasadena, as a result of funding received
 from the Japanese ERATO program. Both CellML and SBML are today viewed as the
 main standards for exchanging cellular network models. There are however
 fundamental differences between the approaches that CellML and SBML take in the
@@ -775,9 +775,7 @@ extend SBML in many areas that its core functionality does not directly support.
 Examples include models whose species have structure and/or state variables,
 models with spatially non-homogeneous compartments and spatially dependent
 processes, and models in which species and processes refer to qualitative
-entities and processes rather than quantitative ones.
-
-[@hucka2010systems]
+entities and processes rather than quantitative ones [@hucka2010systems].
 
 #### SBML Development Tools
 
@@ -797,9 +795,9 @@ different languages, for maximum portability.
 #### Practical Considerations
 
 Whereas CellML is very general, SBML is more specific, as result, the storage
-requirement for SBML is much less. It takes on average roughly 1.5Kbytes to
-store a single chemical transformation in SBML Level 2 (compared to 5K for
-CellML). Interestingly it only takes roughly 50 to 100 bytes to store single
+requirement for SBML is much less. It takes on average roughly 1.5 kilobytes to
+store a single chemical transformation in SBML Level 2 (compared to 5 kilobytes
+for CellML). Interestingly it only takes roughly 50 to 100 bytes to store single
 transformations in raw binary format where there is minimal extraneous syntax.
 Some readers may feel that with todays cheap storage technologies, that
 discussions on storage requirements is unnecessary. Indeed for small models it
