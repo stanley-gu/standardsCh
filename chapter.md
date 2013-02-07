@@ -777,7 +777,7 @@ users. Today this library is still used by a number of tools including Gepasi,
 Jarnac and JDesigner. With the growing popularity of SBML, the community has
 since developed a comprehensive cross platform tool
 (<http://sbml.sourceforge.org>) which is now the recommended SBML toolkit to use
-(libSBML). libSBML was developed in C/C++ for maximum portability.
+(libSBML). LibSBML was developed in C/C++ for maximum portability.
 
 #### Practical Considerations
 
@@ -1416,13 +1416,19 @@ analysis of ODE based models.
 
 ## Simulation Engines
 
-Simulation and modeling is becoming one of the standard approaches to understand
+Simulation and modeling is one of the standard approaches to understanding
 complex biochemical processes. Therefore, there is a growing need for software
 tools that allow access to diverse simulation and modeling methods as well as
 support for the usage of these methods. These software libraries should be
 compatible, e.g. via file standards, platform independent and user friendly to
 avoid time-consuming conversions and learning procedures. In addition, the
 software should be actively maintained and updated by its authors.
+
+This section will cover some of the most widely used, open source, simulation
+libraries that many modeling platforms depend on for computation. These
+libraries all support the simulation of SBML models, and have been validated
+against an online suite of SBML test cases provided by the SBML consortium
+(<http://sbml.org/Facilities/Online_SBML_Test_Suite>).
 
 ### COPASI
 
@@ -1501,7 +1507,14 @@ Thus, all major operating systems are supported given that RoadRunner only
 depends on CVODE and NLEQ being available on the platform.
 
 ### SBMLSimulator
-(<http://www.cogsys.cs.uni-tuebingen.de/software/SBMLsimulator/>)
+
+SBMLsimulator (<http://www.cogsys.cs.uni-tuebingen.de/software/SBMLsimulator/>)
+is a simulation library and accompanying GUI that is implemented in Java. In
+particular, the Java developer community benefits greatly from Java
+software to ease the ability to implement third party dependencies. Analogous to
+the way COPASI and RoadRunner are built from libSBML (C/C++), SBMLsimulator
+depends on JSBML, an SBML document manipulation library written entirely in
+Java (<http://sbml.org/Software/JSBML>) [@drager2011jsbml].
 
 ## MATLAB
 
@@ -1559,6 +1572,8 @@ computer hardware power by performing computationally intensive calculations on
 a remote server.
 
 # Applications
+
+This section will cover some of the 
 
 ## Model Analysis
 
