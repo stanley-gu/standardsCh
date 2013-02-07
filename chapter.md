@@ -403,8 +403,8 @@ standard is clearly and unambiguously defined and while remaining easy to
 interpret and implement. In the modern world, standards have been applied to
 nearly everything from electronics cables and audio formats to paper sizes and
 telephone numbers. In the field of systems biology, the desire to facilitate
-interoperability and reuse computational models and data was the motivation for
-developing standard digital annotations and representations.
+interoperability and reuse of computational models and data was the motivation
+for developing standardized digital annotations and representations.
 
 ## Minimum Information (MI)
 
@@ -432,51 +432,44 @@ myriad of "minimum information" reporting standards groups that cover
 practically every corner of the biomedical field [@naturebiotechnology2006]. The
 Minimum Reporting Guidelines for Biological and Biomedical Investigations
 (MIBBI) project has arisen as a comprehensive source of these reporting
-"checklists" @taylor2008promoting]. MIBBI maintains a web-based and freely
+"checklists" [@taylor2008promoting]. MIBBI maintains a web-based and freely
 accessible resource for minimum information standards (<http://www.mibbi.org/>),
-providing access to extant checklists (and to complementary data formats,
-controlled vocabularies, tools and databases), thereby enhancing both
+providing access to existing checklists, complementary data formats, controlled
+vocabularies, tools, and databases. This resource thereby enhances both
 transparency and accessibility of experimental results to the wider bioscience
 community.
 
 ### Minimum Information Required in the Annotation of Models (MIRIAM)
 
 Extending beyond the laboratory, the Minimum Information Requested In the
-Annotation of biochemical Models (MIRIAM) standard was developed by Novère et
-al. [@le2006model] for describing quantitative models of biochemical systems and
-bring together the new standards in computational systems biology, SBML and
-CellML (discussed later in this chapter). By unifying different modeling
-sub-domain standards under the same requisites, thus ensuring that models are
-easily testable, reproducible, and comparable, the utility of quantitative
-modeling may be enhanced for the benefit of biomedical research. However, the
-ultimate impact of these standards depends on their adoption throughout the
-community and the number of software tools that are developed to facilitate its
-use.
+Annotation of biochemical Models (MIRIAM) standard was developed for describing
+quantitative models of biochemical systems and bring together the new standards
+in computational systems biology, SBML and CellML (both are which discussed
+later in this chapter) [@le2006model]. By unifying different modeling sub-domain
+standards under the same requisites, and thus ensuring that models are easily
+testable, reproducible, and comparable, the utility of quantitative modeling may
+be enhanced for the benefit of biomedical research. However, the ultimate impact
+of these standards depends on their adoption throughout the community and the
+number of software tools that are developed to facilitate its use.
 
-The MIRIAM Guidelines are an effort to standardize upon the essential, minimal
-set of information that is sufficient to annotate a model in such a way as to
-enable its reuse. This includes a means to identify the model itself, the
-components of which it is composed, and formalizes a means by which unambiguous
-annotation of components should be encoded. This is essential to allow
-collaborative working by different groups which may not be spatially co-located,
-and facilitates model sharing and reuse by the general modeling community.
-These guidelines can be implemented in any structured format used to encode
-computational models [@novere2005minimum].
+The MIRIAM Guidelines are an effort to standardize the essential, minimal set of
+information that is sufficient to annotate a model in such a way as to
+facilitate its reuse. This includes the ability to identify the model itself,
+the components of which it is composed, and a means by which unambiguous
+annotation of components should be encoded. This is essential to allowing
+collaborative work by different groups, which may be geographically separated by
+vastly different locations, and facilitates model sharing and reuse by the
+general modeling community. MIRIAM can be implemented in any structured format
+used to encode computational models [@novere2005minimum].
 
-Many encoded models available in scientific publications or on the
-Internet are not in a standard format. Of those that are encoded in a standard
-format, it turns out that most actually fail compliance tests developed for
-these standards. Failures occur for a variety of reasons, ranging from minor
-syntactic errors to significant conceptual problems, including the incorrect
-specification of units. Even deeper semantic inaccuracies can lie in the
-structure of the model itself. Finally, there is no standard naming scheme for
-the model constituents, so the precise identification of constituents depends on
-the associated documentation and annotation. Most models available today are not
-annotated, and as a result, users are faced with such things as a reaction 'X'
-between the constituents 'A' and 'B,' producing 'C' and modulated by 'M.' As a
-consequence, models frequently have to be re-encoded in order to be reused, a
-process that in practice is often performed by a different person from the
-original author.
+A challenge that MIRIAM faces is that encoded models in scientific publications
+or online are not in a standard format. And, of those that are encoded in a
+standard format, many actually fail compliance and validation tests developed
+for the standards. Failures may occur for a variety of reasons, ranging from
+minor syntactic errors to significant conceptual problems. Further semantic
+inaccuracies may lie within the model structure. With models that are not
+annotated, users are faced with ambiguous reaction specifications, such as
+species 'A' and 'B' producing 'C'.
 
 Thus, to address these quality issues, MIRIAM comprises of the following
 guidelines:
