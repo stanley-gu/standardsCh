@@ -141,7 +141,7 @@ understand the dynamics of stochastic systems. There are other approaches, which
 include boolean, Bayesian, formal logic and connectivity studies but these have
 yet to show any overwhelming advantage over continuum based models.
 
-In this chapter I will be primarily concerned with models based on
+This chapter will be primarily concerned with models based on
 differential equations and to a lesser extent stochastic equations.
 
 * * * * *
@@ -398,7 +398,7 @@ B + C $\rightarrow$ D has the conservation, $B - C =\mbox{constant}$.
 # Standards
 
 A standard is defined as a uniform set of specifications applied toward an
-activity or product that encourages interoperation and cooperation.  Ideally, a
+activity or product that encourages interoperation and cooperation. Ideally, a
 standard is clearly and unambiguously defined and while remaining easy to
 interpret and implement. In the modern world, standards have been applied to
 nearly everything from electronics cables and audio formats to paper sizes and
