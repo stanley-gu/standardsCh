@@ -1550,7 +1550,13 @@ number of optimization algorithms including genetic and simulated annealing
 approaches.
 
 ### SBMLToolbox
-(<http://sbml.org/Software/SBMLToolbox>)
+
+SBMLToolbox (<http://sbml.org/Software/SBMLToolbox>) is an open source MATLAB
+toolbox developed by the SBML Team [@keating2006sbmltoolbox]. SBMLToolbox ports
+functionality from libSBML into MATLAB, by creating MATLAB structures that
+mirror the functionality of libSBML. SBMLToolbox is also compatible with Octave
+(<http://www.gnu.org/software/octave/>), a free and open source computing
+environment that is similar to MATLAB.
 
 ### SBML to MATLAB Translation
 
