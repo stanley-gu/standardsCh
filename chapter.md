@@ -1331,30 +1331,33 @@ a supercomputer cluster.
 ### VCell
 
 The Virtual Cell (VCell; <http://vcell.org/>) is a client/server based tool that
-specializes in three-dimensional cell simulations [@VCELL,@moraru2008virtual]. It
-is unique in that it provides a framework for not only modeling biochemical
-networks but also electrophysiological, and transport phenomena while at the
-same time considering the subcellular localization of the molecules that take
-part in them. This localization can take the form of a three-dimensional
-arbitrarily shaped cell, where the molecular species might be heterogeneously
-distributed. In addition, the geometry of the cell, including the locations and
-shapes of subcellular organelles, can be imported directly from microscope
-images. VCell is written in Java but has numerical analysis carried out by C/C++
-and FORTRAN coded software to improve performance. Currently, modeling must be
-carried out using the client/server model which necessitates a connection to the
-internet. In addition models are generally stored on the VCell remote server
-rather than the clients desktop. This operating model is not always agreeable to
-users and as a result the VCell team are reorganizing the software so that it
-can also be run as a stand-alone application on a researchers machine. The VCell
-team has incorporated the BioNetGen [@blinov2004bionetgen] network generator
-which allows models to be specified in a rule based manner. VCell is also one of
-the few tools that can both import and export SBML and CellML. This feature
-could in principle be used to translate between SBML and CellML models.
+specializes in three-dimensional whole cell simulations
+[@VCELL,@moraru2008virtual]. It is unique in that it provides a framework for
+not only modeling biochemical networks but also electrophysiological, and
+transport phenomena while at the same time considering the subcellular
+localization of the molecules that take part in them. This localization can take
+the form of a three-dimensional arbitrarily shaped cell, where the molecular
+species might be heterogeneously distributed. In addition, the geometry of the
+cell, including the locations and shapes of subcellular organelles, can be
+imported directly from microscope images. VCell is written in Java but has
+numerical analysis carried out by C/C++ and FORTRAN coded software to improve
+performance. Currently, modeling must be carried out using the client/server
+model which necessitates a connection to the internet. In addition models are
+generally stored on the VCell remote server rather than the clients desktop.
+This operating model is not always agreeable to users and as a result the VCell
+team are reorganizing the software so that it can also be run as a stand-alone
+application on a researchers machine. The VCell team has incorporated the
+BioNetGen [@blinov2004bionetgen] network generator which allows models to be
+specified in a rule based manner. VCell is also one of the few tools that can
+both import and export SBML and CellML. This feature could in principle be used
+to translate between SBML and CellML models.
 
 ### Other Modeling Tools
 
 #### BioNetGen
-Tool for rule-based, domain-oriented modeling. Originally, it was
+Tool for rule-based modeling of biochemical systems. In rule-based models,
+molecules and their complexes are represented using graphs, and their consequent
+interactions will cause rewiring of the graph based on rules. Originally, it was
 developed to study the problem of combinatorial complexity of signal
 transduction systems, such as antibody receptor binding 
 
@@ -1370,48 +1373,35 @@ optimizations of ODE based models to data
 - <http://www.gepasi.org/> [@Gepasi:1993]
 
 #### iBioSim
-Tool for the design and analysis of synthetic genetic circuits, including
-a project management system, graphical user interface, and stochastic simulator.
+Tool for the design and analysis of genetic circuits, with applications to both
+systems and synthetic biology. Models can be constructed manually or imported
+from various databases and then analyzed with a variety of ODE and stochastic
+simulators.
 
 - Open source; Linux, Mac OS, Microsoft Windows
 - (<http://www.async.ece.utah.edu/iBioSim/>) [@myers2009ibiosim]
 
 #### JigCell
-JigCell is a set of computational tools with user-friendly interfaces developed
-for studying complex biochemical regulatory systems in general and the cell
-cycle control system in particular. For example, The JigCell Model Builder
-(JCMB) aides the modeler in defining a system to be modeled using SBML with a
-novel spreadsheet interface, allowing a large amount of data to be displayed in
-an organized manner. The JigCell Run Manager (JCRM) allows a user to specify a
-set of specifications for simulation runs using a spreadsheet interface. JigCell
-Aggregation Connector has been designed to define models in terms of components,
-for the purpose of being combined in a larger model. JigCell also aims in
-parameter estimation. A parameter estimator (PET, Parameter Estimation Toolkit)
-takes a biological model, experimental data, and the relationship between the
-model and data. Using this information the parameter estimator uses numerical
-tools to vary the parameters to the model looking for the parameters that best
-fit the experimental data.
+A suite of computational tools with graphical user interfaces that includes
+model building, simulation, and parameter estimation. A unique feature of
+JigCell is its display of data and simulation experiments in a spreadsheet
+format and run in batch mode.
 
 - Closed source; Linux, Mac OS, Microsoft Windows
 - <http://jigcell.cs.vt.edu/> [@vass2004jigcell, @vass2006jigcell]
 
 #### ProMot
-The process modeling tool ProMoT is a software for the set-up and manipulation
-of models of complex technical or biological systems. Key features are the
-support of modular models, modeling libraries for different application areas,
-efficient and robust numerical algorithms, a own modeling language MDL and
-advanced graphical support. Dynamic models can contain DAE and discrete events
-for simulation in DIVA, Diana or MATLAB. Logical (Boolean) models are exported
-to CellNetAnalyzer.
+Short for "process modeling tool", this is a software package for simulating and
+manipulating models. Some key features are its support of modular models,
+modeling libraries, its own modeling language MDL, and graphical capabilities.
 
 - Open source; Linux, Microsoft Windows
 - <http://www.mpi-magdeburg.mpg.de/projects/promot> [@mirschel2009promot]
 
 #### SBSI
-SBSI provides high performance fitting of model parameters to experimental data,
-with especial focus on models with oscillatory components. Additionally SBSI
-provides a modelling environment for the Bio-PEPA and Kappa languages, as well
-as standard model editing and simulation capabilities
+Provides fitting of model parameters to experimental data, especially on models
+with oscillatory components, as well as standard model editing and simulation
+capabilities.
 
 - Open source; Linux, Mac OS, Microsoft Windows
 - <http://www.sbsi.ed.ac.uk/> [@adams2013sbsi]
@@ -1419,7 +1409,7 @@ as standard model editing and simulation capabilities
 #### WinSCAMP
 A script based GUI application, which like Gepasi has a long
 tradition. Specialized for time course, steady state and metabolic control
-analysis of ODE based models.  
+analysis of ODE based models.
 
 - Source available upon request; Windows
 - <http://sbw.kgi.edu/software/winscamp.htm> [@SauroF91, @SauroScamp93]
