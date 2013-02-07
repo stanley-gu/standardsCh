@@ -677,6 +677,35 @@ team emerged CellML [@LloydCellML2004]. Members from the BTK group subsequently
 took their experience and contributed significantly to the other major model
 exchange standard, called SBML [@hucka:2002d].
 
+### CellML
+
+CellML [@LloydCellML2004] represents cellular models using a mathematical
+description similar to equation (@eqGeneral). CellML also has provisions for
+metadata annotations to allow MIRIAM compliance. In addition, CellML represents
+entities using a component based approach where relationships between components
+are represented by connections. In many ways CellML represents a literal
+translation of the mathematical equations, except that the relationship between
+dependent and independent species is implied rather than explicit. The literal
+translation of the mathematics however goes much further, in fact the
+representation that CellML uses is very reminiscent of the way an engineer might
+wire up an analog computer to solve the equations (though without specifying the
+integrators). As a result CellML is very general and in principle could probably
+represent any system that has a mathematical description (and not just the kind
+indicated by equation (@eqSystem)). CellML is also very precise in that every
+item in a model is defined explicitly. However, the generality and explicit
+nature of CellML also results in increased complexity especially for software
+developers. Another side effect of the increased complexity is that models that
+are represented using CellML tend to be quite large. On average, my own analysis
+of a sample from the CellML repository (<http://models.cellml.org/cellml>)
+indicates that each reaction in a model requires about 5 kilobytes of storage.
+
+Owing to the complexity of CellML, one unfortunate side effect is that there are
+substantially fewer tools which can read and write CellML compared to SBML. The
+CellML team (<http://cellml.sourceforge.net/>) also provides their own software
+tools to third-party developers, including the CellML API 
+(<http://cellml-api.sourceforge.net/>), which is a library much like libSBML 
+that allows software developers to read and write CellML models.
+
 ### Systems Biology Markup Language (SBML)
 
 SBML was developed in 2000 at Caltech, Pasadena as a result of funding received
@@ -760,13 +789,14 @@ popular standard. Initially the original authors provided a simple library for
 the Windows platform since the bulk of biology based users tend to be Windows
 users. Today this library is still used by a number of tools including Gepasi,
 Jarnac and JDesigner. With the growing popularity of SBML, the community has
-since developed a comprehensive cross platform tool
+since developed a comprehensive cross platform tool libSBML
 (<http://sbml.sourceforge.org>) which is now the recommended SBML toolkit to use
-(libSBML). LibSBML was developed in C/C++ for maximum portability.
+. LibSBML was developed in C/C++, with bindings to a number of
+different languages, for maximum portability.
 
 #### Practical Considerations
 
-While CellML is very general, SBML is more specific, as result, the storage
+Whereas CellML is very general, SBML is more specific, as result, the storage
 requirement for SBML is much less. It takes on average roughly 1.5Kbytes to
 store a single chemical transformation in SBML Level 2 (compared to 5K for
 CellML). Interestingly it only takes roughly 50 to 100 bytes to store single
@@ -802,34 +832,6 @@ software packages are officially listed on the SBML Software Guide
 interchange format for the SBW project (<http://sys-bio.org/>), the
 international *E. coli* alliance, and the receptor tyrosine kinase consortium.
 
-### CellML
-
-CellML [@LloydCellML2004] represents cellular models using a mathematical
-description similar to equation (@eqGeneral). CellML also has provisions for
-metadata annotations to allow MIRIAM compliance. In addition, CellML represents
-entities using a component based approach where relationships between components
-are represented by connections. In many ways CellML represents a literal
-translation of the mathematical equations, except that the relationship between
-dependent and independent species is implied rather than explicit. The literal
-translation of the mathematics however goes much further, in fact the
-representation that CellML uses is very reminiscent of the way an engineer might
-wire up an analog computer to solve the equations (though without specifying the
-integrators). As a result CellML is very general and in principle could probably
-represent any system that has a mathematical description (and not just the kind
-indicated by equation (@eqSystem)). CellML is also very precise in that every
-item in a model is defined explicitly. However, the generality and explicit
-nature of CellML also results in increased complexity especially for software
-developers. Another side effect of the increased complexity is that models that
-are represented using CellML tend to be quite large. On average, my own analysis
-of a sample from the CellML repository (<http://models.cellml.org/cellml>)
-indicates that each reaction in a model requires about 5 kilobytes of storage.
-
-Owing to the complexity of CellML, one unfortunate side effect is that there are
-substantially fewer tools which can read and write CellML compared to SBML. The
-CellML team (<http://cellml.sourceforge.net/>) also provides their own software
-tools to third-party developers, including the CellML API 
-(<http://cellml-api.sourceforge.net/>), which is a library much like libSBML 
-that allows software developers to read and write CellML models.
 
 ### NeuroML
 
