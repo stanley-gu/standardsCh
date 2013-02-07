@@ -636,50 +636,55 @@ analyze models, it will also power the search algorithms used by the databases
 of models. The use of SBO terms within SBML will also allow, to a limited
 extent, the ability to remove the explicit mathematics in the model itself, and
 enable the online downloading of appropriate kinetic equations instead
-[@le2006model].
+.
 
 ### Model Annotations
 
+One of the ways that modelers directly interact with ontologies is through the
+annotations within a model. This section will present an overview of the major
+components of the model and some of the most commonly used external resources
+and controlled vocabularies used for annotating them.
+
 #### Model Metadata
-Reactome
-(<http://www.reactome.org/ReactomeGWT/entrypoint.html>)
-[@joshi2005reactome]
 
-KEGG Pathway
-(<http://www.genome.jp/kegg/>)
-[@ogata1999kegg]
-
-UniProt 
-[@bairoch2005universal]
-(<http://www.uniprot.org/>)
+In the model metadata, the information about the model itself, a number of
+different ontologies may be used to inform what the model describes. In
+biological pathway models, Reactome 
+(<http://www.reactome.org/ReactomeGWT/entrypoint.html) [@joshi2005reactome]
+and KEGG Pathway (<http://www.genome.jp/kegg/>) [@ogata1999kegg] are
+comprehensive, human-curated, pathway databases that are often referenced
+Information regarding the taxonomy of the biological pathway can be referenced
+in the UniProt Taxonomy database (<http://www.uniprot.org/>)
+[@bairoch2005universal].
 
 #### Mathematics
-SBO (<http://www.ebi.ac.uk/sbo/main/>)
-GO
-Reactome
+
+When describing the mathematics in a model, the Systems Biology Onotology (SBO)
+(<http://www.ebi.ac.uk/sbo/main/>) is a recently developed vocabulary used for
+specifying the roles of biochemical species, parameters, kinetic laws, and other
+model components in relation to a systems biology model. For instance, SBO
+annotations can denote the substrate, products, and Michaelis-Menten constant in
+a model [@le2006model]. GO and Reactome may also be used to describe what
+biological process a kinetic rate law is describing.
 
 #### Physical Entities
-GO
-KEGG Compounds
-ChEBI
-(<http://www.ebi.ac.uk/chebi/>)
-[@degtyarenko2008chebi]
 
-### Simulation Annotations
+When it comes to describing the biophysical constituents, or species, in a
+model, a number of different ontologies can be referenced. GO and UniProt may be
+referenced for proteins, and KEGG and ChEBI (<http://www.ebi.ac.uk/chebi/>)
+[@degtyarenko2008chebi] may be used for small molecules and chemical compounds
+that are related to biological processes.
 
-(<http://biomodels.net/kisao/>)
-(<http://www.ebi.ac.uk/compneur-srv/teddy/>)
-Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics
-(TEDDY)
+### Simulation Experiment Annotations
 
-Together, SBO, KiSAO, and TEDDY provide stable and perennial identifiers,
-referencing machine-readable, software-interpretable, regulated terms. These
-ontologies define semantics for the aspects of models, which correspond to the
-three steps of the modeling and simulation process. SBO is a well-established
-software tool, KiSAO gathers increasing community support and TEDDY is as yet
-in its infancy, being primarily a research project. All three ontologies aim to
-fill specific niches in the concept space covered by the OBO foundry
-[@courtot2011controlled].
+Ontologies for describing simulation procedure and numerical results are
+relatively newer than model annotations, and is currently an active field of
+work and new changes. The Kinetic Simulation of Algorithm Ontology (KiSAO)
+(<http://biomodels.net/kisao/>) is currently being developed to describe the
+precise numerical steps and procedures taken in a simulation experiment. When
+looking at the numerical output of a simulation experiment, the Terminology for
+the Description of Dynamics (TEDDY) (<http://www.ebi.ac.uk/compneur-srv/teddy/>)
+is being designed to describe dynamical behavior [@courtot2011controlled].
 
 ## Physiological Models
 
