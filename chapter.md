@@ -566,7 +566,7 @@ The provision of this information, along with a set of required models,
 guarantees that the simulation experiment represents the intention of the
 original authors. Following MIASE guidelines will thus improve the quality of
 scientific reporting, and will also allow more collaborative and distributed
-efforts in computational modeling and simulation of biological processes .
+efforts in computational modeling and simulation of biological processes.
 
 ## Ontologies
 
@@ -586,17 +586,6 @@ three main branches: biological process, cellular component, or molecular
 functions. GO terms have been used in millions of
 annotations relating to gene products described in protein databases such as
 UnitProt and Ensembl [@smith2005relations].
-
-Table: External Resources in Annotation of SBML Model (ontologies in **bold**)
-
-Model Tag       External Resource
-------------    -------------------------
-model           Submitter, Creator, publication, **GO**, **KEGG**, 
-                Reactome
-compartment     **GO**
-species         **ChEBI**, **Ensembl**, **GO**, **UniPro**, **InterPro**
-reaction        **GO**, 
-
 
 ### Open Biomedical Ontologies (OBO)
 
