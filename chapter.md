@@ -561,12 +561,12 @@ All information necessary to obtain the desired numerical results must be provid
 
 * * * *
 
-REWORD
-The provision of this information, along with a set of required models,
-guarantees that the simulation experiment represents the intention of the
-original authors. Following MIASE guidelines will thus improve the quality of
-scientific reporting, and will also allow more collaborative and distributed
-efforts in computational modeling and simulation of biological processes.
+By providing the information specified by these guidelines, along with the
+required models, modelers can be reasonably assured that the simulation
+experiment represents the intention of the original authors. Thus, as adoption
+of MIASE spreads, the quality of scientific reporting will increase, and
+collaborative efforts in computational modeling and simulation of biological
+systems is encouraged.
 
 ## Ontologies
 
