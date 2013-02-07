@@ -1172,8 +1172,8 @@ refer to a recent review [@copeland2012computational] and a very comprehensive
 listing of SBML compatible software provided by the SBML consortium
 (<http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>).
 
-![The Release of Software Tools for Computational Systems Biology over Time.
-years.\label{figure:apps}](images/ToolsPerYear.pdf)
+![The release of software tools for computational systems biology over time.
+\label{figure:apps}](images/ToolsPerYear.pdf)
 
 ## Modeling
 
