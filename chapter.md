@@ -813,13 +813,6 @@ large model this clearly would generate huge amounts of XML based data. One of
 the things that has yet to be addressed by either standard is the how model
 variants can be efficiently stored.
 
-XML is a popular choice for model exchange languages because
-[@bray1997extensible]:
-
-#. XML is easily transmitted through the Internet (much like HTML).
-#. There are a large number of software tools and libraries for parsing XML.
-#. XML documents are human legible, reasonably clear, and easy to modify.
-
 #### Usage
 
 Both SBML and CellML have been taken up by many software developers and
