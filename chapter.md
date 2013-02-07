@@ -571,12 +571,12 @@ efforts in computational modeling and simulation of biological processes.
 ## Ontologies
 
 The MIRIAM guidelines state that a model's constituents must be unambiguously
-annotated. The value of any kind of data is greatly enhanced when it exists in a
-form that allows it to be integrated with other data. Thus, a common language is
-necessary for different models that may describe the same physical entity or
-biological process. One approach to integration is through the annotation of
-multiple bodies of data using common controlled and structured vocabularies or
-"ontologies".
+annotated. The value of any kind of data is greatly enhanced when it can be
+easily integrated and interpreted by other systems or third parties. Thus, a
+common language is necessary for different models to describe the same physical
+entity or biological process. One approach to integration is through the
+annotation of multiple bodies of data using common controlled and structured
+vocabularies or "ontologies".
 
 One of the most successful examples of the use of a biomedical ontology,
 measured by both the number of users and its reach across different subdomains
