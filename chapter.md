@@ -570,47 +570,32 @@ systems is encouraged.
 
 ## Ontologies
 
-The MIRIAM guidelines state that a model's constituents must be unambiguously
-annotated. The value of any kind of data is greatly enhanced when it can be
-easily integrated and interpreted by other systems or third parties. Thus, a
-common language is necessary for different models to describe the same physical
-entity or biological process. One approach to integration is through the
-annotation of multiple bodies of data using common controlled and structured
-vocabularies or "ontologies".
+The value of any kind of data is greatly enhanced when it can be easily
+integrated and interpreted by other systems or third parties. Towards this goal,
+the MIRIAM and MIASE guidelines state that a model's constituents and simulation
+procedure must be unambiguously annotated.  Thus, a common language is necessary
+for different models to describe the same physical entity or biological process.
+One approach is through the annotation of multiple bodies of data using common
+controlled and structured vocabularies or "ontologies".
 
-One successful biomedical ontology, measured by both the number of users and its
-reach across different subdomains is the Gene Ontology (GO). GO defines specific
-gene products across different species. All terms are organized in a
-hierarchical structure, where there are three main branches: biological process,
-cellular component, or molecular functions. GO terms have been used in millions
-of annotations relating to gene products described in protein databases such as
-UnitProt and Ensembl [@smith2005relations].
+For example, one successful biomedical ontology is the Gene Ontology (GO). GO
+defines specific gene products across different species. All terms are organized
+in a hierarchical structure, where there are three main branches: biological
+process, cellular component, or molecular functions. GO terms have been used in
+millions of annotations relating to gene products described in protein databases
+[@smith2005relations].
 
 ### Open Biomedical Ontologies (OBO)
 
-Unfortunately, the success of this approach has led to dizzying number of
-different ontologies, the sheer number which may create an obstacle to
-integration. OBO was created in 2001 to address this issue by serving as an
-umbrella body for the developers of life-science ontologies. OBO applies the key
-principles led to the success of GO, such as having ontologies that are *open*
-and *orthogonal*. Onotologies within OBO are *open* in the sense that its usage
-should be available without any constraints or licenses, and new applications
-may build upon OBO without restriction. Ontologies within OBO are *orthogonal*
-such that vocabulary is non-overlapping with other ontologies.
-
-OBO now comprises over 60 ontologies, and its role as an ontology information
-resource is supported by the NIH Roadmap National Center for Biomedical Ontology
-(NCBO) through BioPortal (<http://bioportal.bioontology.org/>)
-[@noy2009bioportal]. At the same time, the developers of a subset of OBO
-ontologies have initiated the OBO Foundry (<http://obofoundry.org>), a
-collaborative experiment based on the voluntary acceptance by its participants
-of an evolving set of principles  that extend those of the original OBO by
-requiring in addition that ontologies (i) be developed in a collaborative
-effort, (ii) use common relations that are unambiguously defined, (iii) provide
-procedures for user feedback and for identifying successive versions and (iv)
-have a clearly bounded subject-matter (so that an ontology devoted to cell
-components, for example, should not include terms like 'database' or 'integer')
-[@smith2007obo].
+The success of the ontology approach has led to dizzying number of different
+ontologies, the sheer number which may create an obstacle to integration. OBO
+(<http://obofoundry.org>) was created in 2001 to address this issue by serving
+as an umbrella body for the developers of life-science ontologies. The key
+principles behind OBO ontologies are that they must be *open* and *orthogonal*.
+Onotologies within OBO are *open* in the sense that its usage should be
+available without any constraints or licenses, and new applications may build
+upon OBO without restriction. Ontologies within OBO are *orthogonal* such that
+vocabulary is non-overlapping with other ontologies [@smith2007obo].
 
 ### Model Annotations
 
