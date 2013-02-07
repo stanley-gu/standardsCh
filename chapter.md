@@ -578,13 +578,12 @@ entity or biological process. One approach to integration is through the
 annotation of multiple bodies of data using common controlled and structured
 vocabularies or "ontologies".
 
-One of the most successful examples of the use of a biomedical ontology,
-measured by both the number of users and its reach across different subdomains
-is the Gene Ontology (GO), which defines specific gene products across different
-species. All terms are organized in a hierarchical structure, where there are
-three main branches: biological process, cellular component, or molecular
-functions. GO terms have been used in millions of
-annotations relating to gene products described in protein databases such as
+One successful biomedical ontology, measured by both the number of users and its
+reach across different subdomains is the Gene Ontology (GO). GO defines specific
+gene products across different species. All terms are organized in a
+hierarchical structure, where there are three main branches: biological process,
+cellular component, or molecular functions. GO terms have been used in millions
+of annotations relating to gene products described in protein databases such as
 UnitProt and Ensembl [@smith2005relations].
 
 ### Open Biomedical Ontologies (OBO)
@@ -639,7 +638,38 @@ extent, the ability to remove the explicit mathematics in the model itself, and
 enable the online downloading of appropriate kinetic equations instead
 [@le2006model].
 
-#### Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics
+### Model Annotations
+
+#### Model Metadata
+Reactome
+(<http://www.reactome.org/ReactomeGWT/entrypoint.html>)
+[@joshi2005reactome]
+
+KEGG Pathway
+(<http://www.genome.jp/kegg/>)
+[@ogata1999kegg]
+
+UniProt 
+[@bairoch2005universal]
+(<http://www.uniprot.org/>)
+
+#### Mathematics
+SBO (<http://www.ebi.ac.uk/sbo/main/>)
+GO
+Reactome
+
+#### Physical Entities
+GO
+KEGG Compounds
+ChEBI
+(<http://www.ebi.ac.uk/chebi/>)
+[@degtyarenko2008chebi]
+
+### Simulation Annotations
+
+(<http://biomodels.net/kisao/>)
+(<http://www.ebi.ac.uk/compneur-srv/teddy/>)
+Kinetic Simulation Algorithm Ontology (KiSAO) and Description of Dynamics
 (TEDDY)
 
 Together, SBO, KiSAO, and TEDDY provide stable and perennial identifiers,
