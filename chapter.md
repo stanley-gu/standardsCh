@@ -462,12 +462,14 @@ vastly different locations, and facilitates model sharing and reuse by the
 general modeling community. MIRIAM can be implemented in any structured format
 used to encode computational models [@novere2005minimum].
 
-A challenge that MIRIAM faces is that encoded models in scientific publications
-or online are not in a standard format. And, of those that are encoded in a
-standard format, many actually fail compliance and validation tests developed
-for the standards. Failures may occur for a variety of reasons, ranging from
-minor syntactic errors to significant conceptual problems. Further semantic
-inaccuracies may lie within the model structure. With models that are not
+A challenge that MIRIAM faces is that encoded models in scientific
+publications or online are
+not in a standard format. And, of those that are encoded in a standard format, 
+many actually fail compliance and validation tests developed for
+the standards. Failures may occur for a variety of reasons, ranging from minor
+syntactic errors to significant conceptual problems. Further semantic
+inaccuracies may lie within the
+model structure. With models that are not
 annotated, users are faced with ambiguous reaction specifications, such as
 species 'A' and 'B' producing 'C'.
 
@@ -501,16 +503,24 @@ External resource annotation:
 :	Qualifiers (optional) should refine the link between the model constituent and the piece of knowledge: “has a”, “is version of”, “is homolog to”, etc.
 :	The community has to agree upon a set of standard valid URIs. A database and the associated API (Web Services) have been developed at the EBI to provide the generation and interpretation of URIs.
 
-MIRIAM applies to a broad range of quantitative models that can be simulated
-over a range of parameter values and provide numerical results. This encompasses
-not only models that can be integrated or iterated forwards in time, such as
-ordinary and partial differential equation models and differential algebraic
-equation models, but also other quantitative approaches such as steady-state
-models (*e.g.*, Metabolic Control Analysis, Flux Balance Analysis). The
-comparison of these predictions with the reference description of the model is a
-crucial test of MIRIAM compliance.
+MIRIAM applies these guidelines to a wide range of quantitative models, which
+may use a variety of different mathematical representations, such as ODE, PDE,
+or DAEs. However, the ultimate test is to compare simulation results from a
+model representation with the reference description of the model.
 
 ### Minimum Information About a Simulation Experiment (MIASE)
+
+While the MIRIAM guidelines promote the inclusion of many crucial pieces of
+information within a computational model, it is vague about the advanced
+numerical algorithms and modeling workflows that are used in a modern
+computational setting. Without this information on the original simulations in
+the model context were performed, reproducibility of the model results is still
+questionable. Thus, the Minimum Information About a Simulation Experiment
+(MIASE) guidelines describe the minimal set of information that a model
+description must provide regarding the implementation of its simulation
+[@waltemath2011minimuma]. This includes the list of models that were used, any
+modifications that were made, simulation procedures that were applied, and how
+the raw numerical results were processed to produce the final output.
 
 The MIRIAM guidelines promote the exchange and reuse of biochemical
 computational models. However, information about a model alone is not sufficient
@@ -525,9 +535,9 @@ use and their modifications, all the simulation procedures to apply and in which
 order, the processing of the raw numerical results, and the description of the
 final output.
 
-* * * *
+The MIASE guidelines are comprised of the following:
 
-**MIASE Guidelines**
+* * * *
 
 All models used in the experiment must be identified, accessible, and fully described.
 
@@ -551,13 +561,12 @@ All information necessary to obtain the desired numerical results must be provid
 
 * * * *
 
-MIASE allows for the reproduction of any simulation experiment. The provision of
-this information, along with a set of required models, guarantees that the
-simulation experiment represents the intention of the original authors.
-Following MIASE guidelines will thus improve the quality of scientific
-reporting, and will also allow collaborative, more distributed efforts in
-computational modeling and simulation of biological processes
-[@waltemath2011minimum].
+REWORD
+The provision of this information, along with a set of required models,
+guarantees that the simulation experiment represents the intention of the
+original authors. Following MIASE guidelines will thus improve the quality of
+scientific reporting, and will also allow more collaborative and distributed
+efforts in computational modeling and simulation of biological processes .
 
 ## Ontologies
 
