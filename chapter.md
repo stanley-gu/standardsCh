@@ -478,32 +478,32 @@ species 'A' and 'B' producing 'C'.
 Thus, to address these quality issues, MIRIAM comprises of the following
 guidelines:
 
-Reference correspondence:
+**Reference correspondence**
 
-:	The model must be encoded in a public, standardized, machine-readable format (SBML, CellML, GENESIS, ...).
-:	The model must comply with the standard in which it is encoded.
-:	The model must be clearly related to a single reference description. If a model is composed from different parts, there should still be a description of the derived/combined model.
-:	The encoded model structure must reflect the biological processes described by the reference description.
-:	The model must be instantiable in a simulation: all quantitative attributes must be defined, including initial conditions.
-:	When instantiated, the model must be able to reproduce all results given in the reference description within an epsilon (algorithms, round-up errors).
+* The model must be encoded in a public, standardized, machine-readable format (SBML, CellML, GENESIS, ...).
+* The model must comply with the standard in which it is encoded.
+* The model must be clearly related to a single reference description. If a model is composed from different parts, there should still be a description of the derived/combined model.
+* The encoded model structure must reflect the biological processes described by the reference description.
+* The model must be instantiable in a simulation: all quantitative attributes must be defined, including initial conditions.
+* When instantiated, the model must be able to reproduce all results given in the reference description within an epsilon (algorithms, round-up errors).
 
-Attribution annotation:
+**Attribution annotation**
 
-:	The model has to be named.
-:	A citation to the reference description must be provided (complete citation, unique identifier, unambiguous URL). The citation should identify the authors of the model.
-:	The name and contact information for model creators must be provided.
-:	The date and time of model creation and last modification should be specified. A history is useful but not required.
-:	The model should be linked to a precise statement about the terms of it's distribution. MIRIAM does not require “freedom of use” or “no cost”.
+* The model has to be named.
+* A citation to the reference description must be provided (complete citation, unique identifier, unambiguous URL). The citation should identify the authors of the model.
+* The name and contact information for model creators must be provided.
+* The date and time of model creation and last modification should be specified. A history is useful but not required.
+* The model should be linked to a precise statement about the terms of it's distribution. MIRIAM does not require "freedom of use" or "no cost".
 
-External resource annotation:
+**External resource annotation**
 
-:	The annotation must unambiguously relate a piece of knowledge to a model constituent.
-:	The referenced information should be described using a triplet {collection, identifier, qualifier}:
-:	The annotation should be written as a Uniform Resource Identifier (URI).
-:	The identifier should be considered within the context of the framework of the collection.
-:	Collection namespace and identifier are combined into a single URI, such as: http://identifiers.org/collection/identifier. For example: http://identifiers.org/uniprot/P62158.
-:	Qualifiers (optional) should refine the link between the model constituent and the piece of knowledge: “has a”, “is version of”, “is homolog to”, etc.
-:	The community has to agree upon a set of standard valid URIs. A database and the associated API (Web Services) have been developed at the EBI to provide the generation and interpretation of URIs.
+* The annotation must unambiguously relate a piece of knowledge to a model constituent.
+* The referenced information should be described using a triplet {collection, identifier, qualifier}:
+* The annotation should be written as a Uniform Resource Identifier (URI).
+* The identifier should be considered within the context of the framework of the collection.
+* Collection namespace and identifier are combined into a single URI, such as: http://identifiers.org/collection/identifier. For example: http://identifiers.org/uniprot/P62158.
+* Qualifiers (optional) should refine the link between the model constituent and the piece of knowledge: "has a", "is version of", "is homolog to", etc.
+* The community has to agree upon a set of standard valid URIs. A database and the associated API (Web Services) have been developed at the EBI to provide the generation and interpretation of URIs.
 
 MIRIAM applies these guidelines to a wide range of quantitative models, which
 may use a variety of different mathematical representations, such as ODE, PDE,
@@ -520,7 +520,7 @@ the model context were performed, reproducibility of the model results is still
 questionable. Thus, the Minimum Information About a Simulation Experiment
 (MIASE) guidelines describe the minimal set of information that a model
 description must provide regarding the implementation of its simulation
-[@waltemath2011minimuma]. This includes the list of models that were used, any
+[@waltemath2011minimum]. This includes the list of models that were used, any
 modifications that were made, simulation procedures that were applied, and how
 the raw numerical results were processed to produce the final output.
 
@@ -548,7 +548,7 @@ All models used in the experiment must be identified, accessible, and fully desc
 *	If a model is not encoded in an open format or code, its full description must be provided, sufficient to re-implement it.
 *	Any modification of a model (pre-processing) required before the execution of a step of the simulation experiment must be described.
 
-A precise description of the simulation steps and other procedures used by\
+A precise description of the simulation steps and other procedures used by
 the experiment must be provided.
 
 *	All simulation steps must be clearly described, including the simulation algorithms to be used, the models on which to apply each simulation, the order of the simulation steps, and the data processing to be done between the simulation steps.
