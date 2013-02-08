@@ -518,9 +518,9 @@ numerical algorithms and modeling workflows that are used in a modern
 computational setting. Without this information on the original simulations in
 the model context were performed, reproducibility of the model results is still
 questionable. Thus, the Minimum Information About a Simulation Experiment
-(MIASE) guidelines describe the minimal set of information that a model
-description must provide regarding the implementation of its simulation
-[@waltemath2011minimum]. This includes the list of models that were used, any
+(MIASE) guidelines [@waltemath2011minimum] describe the minimal set of
+information that a model description must provide regarding the implementation
+of its simulation. This includes the list of models that were used, any
 modifications that were made, simulation procedures that were applied, and how
 the raw numerical results were processed to produce the final output.
 
@@ -850,9 +850,9 @@ The share and reuse of biological models are primary challenges in the field of
 computational biology. While the previous discussed model exchange formats
 address issues of reproducing the structural components of the model, there are
 still missing elements in the computational procedure to unambiguously generate
-or reproduce relevant simulation results. MIRIAM does not require that these
-relevant simulation results, nor the process of obtaining them how to obtain
-them. Thus, it is crucial to also provide [@waltemath2011minimum]
+or reproduce relevant simulation results. This section will cover several
+standards that implement the MIASE guidelines and enable the transmission and
+sharing of simulation experimental procedures and results 
 
 ### Simulation Experiment Description Markup Language (SED-ML)
 
