@@ -176,7 +176,7 @@ Differential-algebraic equations (DAEs):
 		solution of the ODEs. Such a situation is often termed a DAE system.
 		The simplest constraints are mass conservation constraints, however
 		these are linear and can be handled efficiently and easily using
-		simple assignment equations (see equation (@eqGeneral)). DAE solvers
+		simple assignment equations (see equation \ref{eq:general}). DAE solvers
 		need only be used when the constraints are nonlinear.
 
 Partial differential equations (PDEs):
@@ -202,9 +202,9 @@ It is probably fair to say that most of the successful models to be found in the
 literature are based on ordinary differential equations.  Many researchers will
 express these models using the following equation:
 
-(@eqSystem) \begin{center} 
-		$\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)$
-		\end{center}
+\begin{equation} \label{eq:system}
+		\frac{\bdS}{\bdt} = \bN \bv (\bS (\bp), \bp)
+\end{equation}
 
 Where $\bS$ is the vector of molecular species concentrations, $\bN$, the
 stoichiometry matrix; $\bv$ the rate vector and $\bp$ a vector of parameters
@@ -243,36 +243,38 @@ simple time course simulations, the separation is also useful because it enables
 the number of differential equations to be reduced in number and thereby improve
 computational efficiency.
 
-Equation (@eqSystem) is therefore better expressed as:
+Equation \ref{eq:system} is therefore better expressed as:
 
-(@eqGeneral) \begin{center}
-		$\begin{aligned} 
+\begin{eqnarray} \label{eq:general}
 		\bSd &=& \bLo \bSi + \bT \nonumber \\
 		\bdSidt &=& \bNr \bv (\bSi (p), \bSd, \bp) 
-		\end{aligned}$
-		\end{center}
+\end{eqnarray}
 
 In these equations, $\bSi$ is the vector of independent species, $\bSd$, the
 vector of dependent species, $\bLo$ the link matrix, $\bT$ the total mass
 vector, $\bNr$ the reduced stoichiometry matrix, $\bv$ the rate vector and $\bp$
-the vector of parameters. Equation (@eqGeneral) constitutes the most general
+the vector of parameters. Equation \ref{eq:general} constitutes the most general
 expression of an ODE based temporal model [@hofmeyr-nutshell,@Schuster:Book].
-The symbolism used in equation (@eqGeneral) is the standard notation used by
+The symbolism used in equation \ref{eq:general} is the standard notation used by
 many in the systems biology community.
 
 Although mathematically, reaction based models are given by equations
-(@eqSystem) and (@eqGeneral), many researchers are more familiar with expressing
-models in the form of a reaction scheme. For example, the following describes
-part of glycolysis:
+\ref{eq:system} and \ref{eq:general}, many researchers are more familiar with
+expressing models in the form of a reaction scheme. For example, the following
+describes part of glycolysis:
 
-(@scheme)	`Glucose-6-P -> Fructose-6-Phosphate Fructose-6-Phosphate + ATP ->`
-			`Fructose-1-6-Bisphosphate + ADP Fructose-1-6-Bisphosphate -> DHAP + GAP`
+\label{scheme}
+\begin{verbatim}
+	Glucose-6-P -> Fructose-6-Phosphate
+	Fructose-6-Phosphate + ATP -> Fructose-1-6-Bisphosphate + ADP
+	Fructose-1-6-Bisphosphate -> DHAP + GAP
+\end{verbatim}
 
 For brevity, the rates laws that accompany each reaction have been left out.
 Such notation is well understood by biologists. It is not straight forward
 however to convert this representation to the representation give by equation
-(@eqGeneral). However, many software tools will permit users to enter models as
-a list of reactions and then automatically generate the mathematical model
+\ref{eq:general}. However, many software tools will permit users to enter models
+as a list of reactions and then automatically generate the mathematical model
 [@SauroF91; @sauro:2000; @Sauro:Omics].
 
 \setlength\fboxsep{18pt}
@@ -655,11 +657,11 @@ standards useful?
 Over the years, there has been an ever increasing list of wide ranging cellular
 models published in the literature. For most of scientific publishing history,
 each author has a particular notation that they use to publish the model. Some
-authors will publish the model as a reaction scheme, see equation (@scheme),
-much like the notation given in scheme. Others will itemize the actual
-mathematical representation in the form of a list of differential equations.
-Some authors do not publish the model at all but provide the model as
-supplementary information.  Until recently, there has been no way to publish
+authors will publish the model as a reaction scheme, see the example in Section
+\ref{scheme}, much like the notation given in scheme. Others will itemize the
+actual mathematical representation in the form of a list of differential
+equations.  Some authors do not publish the model at all but provide the model
+as supplementary information.  Until recently, there has been no way to publish
 models in a standard format.  Without a standard format it has proved very
 difficult if not impossible in many cases to implement and use published models
 without considerable effort.
@@ -680,7 +682,7 @@ exchange standard, called SBML [@hucka:2002d].
 ### CellML
 
 CellML [@LloydCellML2004] represents cellular models using a mathematical
-description similar to equation (@eqGeneral). CellML also has provisions for
+description similar to equation \ref{eq:general}. CellML also has provisions for
 metadata annotations to allow MIRIAM compliance. In addition, CellML represents
 entities using a component based approach where relationships between components
 are represented by connections. In many ways CellML represents a literal
@@ -691,13 +693,13 @@ representation that CellML uses is very reminiscent of the way an engineer might
 wire up an analog computer to solve the equations (though without specifying the
 integrators). As a result CellML is very general and in principle could probably
 represent any system that has a mathematical description (and not just the kind
-indicated by equation (@eqSystem)). CellML is also very precise in that every
-item in a model is defined explicitly. However, the generality and explicit
-nature of CellML also results in increased complexity especially for software
-developers. Another side effect of the increased complexity is that models that
-are represented using CellML tend to be quite large. On average, 
-a sample from the CellML repository (<http://models.cellml.org/cellml>)
-indicates that each reaction in a model requires about 5 kilobytes of storage.
+indicated by equation \ref{eq:system}). CellML is also very precise in that
+every item in a model is defined explicitly. However, the generality and
+explicit nature of CellML also results in increased complexity especially for
+software developers. Another side effect of the increased complexity is that
+models that are represented using CellML tend to be quite large. On average, a
+sample from the CellML repository (<http://models.cellml.org/cellml>) indicates
+that each reaction in a model requires about 5 kilobytes of storage.
 
 Owing to the complexity of CellML, one unfortunate side effect is that there are
 substantially fewer tools which can read and write CellML compared to SBML. The
@@ -1391,7 +1393,7 @@ analysis of ODE based models.
 - Source available upon request; Windows
 - <http://sbw.kgi.edu/software/winscamp.htm> [@SauroF91, @SauroScamp93]
 
-## Simulation Engines
+## Simulation Engines Libraries
 
 Simulation and modeling is one of the standard approaches to understanding
 complex biochemical processes. Therefore, there is a growing need for software
