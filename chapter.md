@@ -823,7 +823,6 @@ software packages are officially listed on the SBML Software Guide
 interchange format for the SBW project (<http://sys-bio.org/>), the
 international *E. coli* alliance, and the receptor tyrosine kinase consortium.
 
-
 ### NeuroML
 
 Paralleling efforts in SBML and CellML in molecular pathway and cell physiology
@@ -930,7 +929,7 @@ gene regulation, to metabolism, to cellular signaling.
 SBGN defines three orthogonal and complementary types of diagrams that can be
 seen as three alternative projections of the underlying more complex biological
 information. The process diagram draws its inspiration from process-style
-notations, borrowing ideas from the work of Kitano. By contrast, the entity
+notations, borrowing ideas from the work of Kitano. In contrast, the entity
 relationship diagram is based to a large extent on Kohn's notation. The SBGN
 activity flow diagram depicts only the cascade of activity, thus making the
 notation similar to the reduced representations often used in the current
@@ -960,9 +959,9 @@ from SBML models directly.
 
 ## Other Standards
 
-Apart from using XML to define an interchange format, there are two other
-mediums for representing models, these include, human readable text based
-formats and visual formats.
+Apart from the aforementioned interchange formats, there are many other mediums
+for representing models. This section will briefly cover several additional
+formats.
 
 ### Human Readable Formats
 
@@ -978,6 +977,17 @@ this have been employed by a number of simulators since, including, SCAMP
 many advantages, including, conciseness, easily understood and manipulated using
 a simple editor, flexible, portable and above all extremely easy to include
 commenting and annotation.
+
+#### Mathematical Markup Language (MML)
+
+MML is a text-based format that is the primary form of model representations in
+the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML,
+MML uses its own a C-styled language for model declaration. MML models are often
+expressed generally in terms of mathematical equations -- any mixture of
+ordinary and partial differential equations, implicit equations, integrations,
+discrete events, and even external programming code, such as Java, C, or MATLAB.
+One feature that sets MML apart from other model languages is its awareness of
+physical units when run through JSim's MML compiler [@chizeck2009].
 
 #### PySCeS
 
@@ -1022,7 +1032,6 @@ elements onto SBML or cellML for unambiguous identification of substances
 [@demir2010biopax;@stromback2005representations]. However, it is possible for to
 convert, or map, from SBML to BioPAX (
 <http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>).
-
 
 ## Model Databases
 
@@ -1198,16 +1207,6 @@ JSim's capabilities are more advanced than previous NSR software systems SIMCON
 [3], for simulation control, and XSIM [4] for X-terminal operation. JSim source
 code, binaries (for Windows, Macintosh and Linux) and documentation  are
 available free for non-commercial use at <http://physiome.org/>.
-
-MML is a text-based format that is the primary form of model representations in
-the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML,
-MML uses its own a C-styled language for model declaration. MML models are often
-expressed generally in terms of mathematical equations -- any mixture of
-ordinary and partial differential equations, implicit equations, integrations,
-discrete events, and even external programming code, such as Java, C, or MATLAB.
-One feature that sets MML apart from other model languages is its awareness of
-physical units when run through JSim's MML compiler [@chizeck2009].
-
 
 ### JDesigner and Jarnac
 
