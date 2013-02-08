@@ -1012,14 +1012,15 @@ verbose and uses infix to represent expressions rather than MathML.
 
 #### Antimony
 
-Antimony is a more recent scripting language that combines the relative
-simplicity of languages like Jarnac, PySCeS, and SBML-shorthand with the
-modularity of languages like little-b (<http://www.littleb.org/>), without
-forcing the modeler learn a general programming language [@smith2009antimony].
-Antimony- formatted files may be read by other software packages, like PySCeS
-using the libAntimony library. Furthermore, Antimony to SBML converters extend
-Antimony's usefulness by allowing users to convert their modules into a form
-usable with the vast number of SBML-compliant software.
+Antimony (<http://antimony.sourceforge.net/main.html>) [@smith2009antimony] is a
+more recent scripting language that combines the relative simplicity of
+languages like Jarnac, PySCeS, and SBML-shorthand with the modularity of
+languages like little-b (<http://www.littleb.org/>), without forcing the modeler
+learn a general programming language.  Antimony- formatted files may be read by
+other software packages, like PySCeS using the libAntimony library. Furthermore,
+Antimony to SBML converters extend Antimony's usefulness by allowing users to
+convert their modules into a form usable with the vast number of SBML-compliant
+software.
 
 ### Biological Pathway Exchange (BioPAX)
 
