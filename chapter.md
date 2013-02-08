@@ -1055,14 +1055,18 @@ BioModels Database (<http://www.ebi.ac.uk/biomodels/>) is one largest open-
 access databases in systems biology. Part of the international initiative
 BioModels.net, BioModels provides access to peer-reviewed and published models
 [@le2006biomodels]. Each model is manually curated by the database maintainers
-to verify that it corresponds to the reference publication and gives the expected
-numerical results. Curators also annotate the components of the models with
-terms from controlled vocabularies (Taxonomy, Gene Ontology, ChEBI, etc.) and
-links to other databases (UniProt, KEGG, Reactome, etc.). This annotation is a
-crucial feature of BioModels Database in that it permits the unambiguous
+to verify that it corresponds to the reference publication and gives the
+expected numerical results. Curators also annotate the components of the models
+with terms from controlled vocabularies (Taxonomy, Gene Ontology, ChEBI, etc.)
+and links to other databases (UniProt, KEGG, Reactome, etc.). This annotation is
+a crucial feature of BioModels Database in that it permits the unambiguous
 identification of molecular species or reactions and enables effective search
-algorithms. Upon this writing, 923 SBML models are available on the database,
-roughly half of which are curated.
+algorithms. As of December 2012, the database contains 142,973 models,
+comprising of 923 models published in literature, of which roughly half are
+manually curated by BioModels, and 142,050 models automatically generated from
+the Path2Models project (<http://code.google.com/p/path2models/>), an effort
+aimed at automatically converting biological pathway databases (such as KEGG)
+into corresponding SBML models 
 
 ### CellML Repository
 
