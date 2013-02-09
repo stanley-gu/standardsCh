@@ -1517,16 +1517,15 @@ environment that is similar to MATLAB.
 
 It is also possible to export SBML models into MATLAB scripts without the need
 for any additional toolboxes. SBML2MATLAB
-(<http://stanley-gu.github.com/sbml2matlab/>) is a cross-platform tool for
+(<http://sysbio-online.org/sbml2matlab/>) is a cross-platform tool for
 performing such conversions. The SBML model structures and mathematics are
 mapped to MATLAB functions and structures, allowing users to easily manipulate
 the models through additional MATLAB scripting. SBML2MATLAB has also been
-integrated as a standalone web application
-(<http://stanley-gu.github.com/node-sbml2matlab/>) that provides a user friendly
+integrated as a standalone web application that provides a user friendly
 interface for using SBML2MATLAB without any need for installing software.
 
 In addition, a web application for viewing, editing, and simulating SBML models
-is also actively being developed (<http://stanley-gu.github.com/snap/>), which
+is also actively being developed (<http://sysbio-online.org>) which
 would allow modelers work on any platform that supports a web browser,
 circumvent the need to install any software, and not be limited by the local
 computer hardware power by performing computationally intensive calculations on
