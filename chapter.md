@@ -1094,32 +1094,32 @@ endocrine function, etc.) are also within the scope of CellML.
 
 ### Physiome Repository
 
-The CellML model repository represents a relatively simple storage facility for
-CellML models.Although all the models in the repository were freely accessible
-to the public, there was no mechanism in place to promote the sharing of models
-with their revision history intact. Furthermore, collaboration between several
-researchers is often required during the development of a model. Collaboration
-on a model can be greatly simplified by a tool which records the change history
-of a model, and makes that history available to other collaborators. Finally,
-once a model is ready to be published, it must be indexed and presented so that
-it can be easily searched for and viewed, thereby avoiding unnecessary
-duplication of modeling efforts. Since it was not possible to extend the
-original repository software to support these more advanced usage requirements,
-a complete rewrite was required, and the Physiome Model Repository 2 (PMR2) was
-created [@yu2011physiome].
+The CellML model repository represents a relatively straightforward storage
+facility for CellML models. Although all the models in the repository were
+freely accessible to the public, there was no mechanism in place to promote the
+sharing of models with their revision history intact. Furthermore, collaboration
+between several researchers is often required during the development of a model.
+Collaboration on a model can be greatly simplified by a tool which records the
+change history of a model, and makes that history available to other
+collaborators. Finally, once a model is ready to be published, it must be
+indexed and presented so that it can be easily searched for and viewed, thereby
+avoiding unnecessary duplication of modeling efforts. Since it was not possible
+to extend the original repository software to support these more advanced usage
+requirements, a complete rewrite was required, and the Physiome Model Repository
+2 (PMR2) was created [@yu2011physiome].
 
 Workspaces, distributed version control systems and model revision history All
 the files related to a particular model are stored together in PMR2 within a
 defined workspace, which can be regarded as a folder. The implementation of
-workspaces uses a distributed version control system (DVCS) called Mercurial
+workspaces uses a distributed version control system called Mercurial
 [@o2007distributed]. By providing version tracking, this system ensures that
 users within a group cannot accidentally overwrite or purge changes of other
 users. Furthermore, each change made to a model, or its associated files, is
 recorded as a single change with a time-stamped, informative comment from an
 identifiable user describing the changes they have made. As model files
-are progressively altered, the changesets preserve the history of model
+are progressively altered, the change logs preserve the history of model
 development. Finally, even if two users simultaneously change the same model
-file, distinct changesets allow their work to be later merged in a controlled
+file, distinct change logs allow their work to be later merged in a controlled
 manner.
 
 ### JWS Online
@@ -1215,7 +1215,7 @@ JSim's capabilities are more advanced than previous NSR software systems SIMCON
 code, binaries (for Windows, Macintosh and Linux) and documentation  are
 available free for non-commercial use at <http://physiome.org/>.
 
-### JDesigner and Jarnac
+### JDesigner
 
 One of the first visualization tools, JDesigner [@Sauro:Omics] implements a
 traditional way to depict networks (see Figure \ref{Figure:jdesigner}) using a
@@ -1244,14 +1244,14 @@ Python libraries.
 
 ### Systems Biology Workbench (SBW)
 
-SBW [@bergmann2006sbw] is an extensible software framework that is both
-platform and language independent. Its primary purpose is to encourage code
-reuse among members of the systems biology community.  Developers can run SBW on
-Linux, Windows or Mac OS and can develop software in a variety of different
-languages including C/C++, Java, Delphi, FORTRAN, MATLAB, Perl, Python and any
-.NET language (e.g. Visual Basic or C#). The SBW was originally developed in
-parallel with SBML  as part of the Symbiotic Systems Project ERATO project at
-Caltech, Pasadena.
+SBW (<http://www.sys-bio.org>) [@bergmann2006sbw] is an extensible software
+framework that is both platform and language independent. Its primary purpose is
+to encourage code reuse among members of the systems biology community.
+Developers can run SBW on Linux, Windows or Mac OS and can develop software in a
+variety of different languages including C/C++, Java, Delphi, FORTRAN, MATLAB,
+Perl, Python and any .NET language (e.g. Visual Basic or C#). The SBW was
+originally developed in parallel with SBML  as part of the Symbiotic Systems
+Project ERATO project at Caltech, Pasadena.
 
 The central component of SBW is the broker, which is responsible for
 coordinating interactions among the different resources connected to it.  These
@@ -1263,15 +1263,6 @@ exploit resources provided by other modules; this dramatically improves
 productivity by allowing developers to build on existing tools rather than
 continuously reinvent.
 
-In the past other similar architectures have been developed, most notably CORBA.
-When SBW was being developed, CORBA was seriously considered but a number of
-problems arose, first the learning curve for CORBA is very steep which means
-that it is out of reach for most developers except highly skilled individuals;
-the aim of SBW was to allow the average computational biologists to develop new
-SBW modules hence the programming model had to be simple. Finally, there were
-very few open source equivalents to the SBW broker and many of them were
-incompatible with each other.
-
 ![The Systems Biology Workbench (SBW) is a dynamic open-source distributed
 system. Client modules can attach and detach at runtime.  Client modules can be
 written in a variety of languages, including, C/C++, Java, Delphi, FORTRAN,
@@ -1280,8 +1271,7 @@ binary messages which can include any combination of bytes, integers, floating
 point, complex numbers, strings, arrays and lists.  Currently the available
 modules include, simulators, model editors, SBML manipulation, math library,
 frequency analyzer, bifurcation discover and analysis modules, structural
-analysis modules and others. Further details to be found at
-<http://www.sys-bio.org>.\label{Figure:sbw}](images/sbwFig.eps)
+analysis modules and others.
 
 An SBW module (the client) provides one or more interfaces or services.  Each
 service provides one or more methods. Modules register the services they provide
@@ -1294,23 +1284,6 @@ this eliminates the irrational language and operating systems wars that often
 plague software development. In addition to providing support for multiple
 languages there is also the facility to automatically generate web services from
 any SBW module.
-
-#### Messaging Protocols
-
-At the heart of SBW is the messaging protocol used to exchange information
-between the different modules. For efficiency reasons, messages that are
-exchanged between modules are simple sequences of binary data. For each
-programming language there is a language binding library which takes care of
-much, if not all, of the housekeeping necessary to operate through SBW,
-including connection and transmission of data. In addition, issues such as
-little and big-endian byte ordering need not concern the developer as this is
-taken care of automatically by the binding libraries. Each binding also provides
-the necessary message packing and unpacking logic and exposes functionality in
-the form of an easy-to-use API.
-
-Since SBW message passing is based on TCP/IP sockets it is straight forward to
-run SBW across the internet or more significantly across computational nodes on
-a supercomputer cluster.
 
 ### VCell
 
