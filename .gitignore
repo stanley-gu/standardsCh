@@ -9,3 +9,4 @@
 /chapter/*
 test*
 node_modules
+*.vim

@@ -723,16 +723,16 @@ simpler and much less verbose. Like CellML, SBML is based on XML, however unlike
 CellML, it takes a different approach to representing cellular models. The way
 SBML represents models closely maps the way existing modeling packages
 represent models. Whereas CellML represents models as a mathematical wiring
-diagram, SBML represent models as a list of chemical transformations much like
-the example indicated in Figure \ref{Figure:sbw}. Since every process in a
-biological cells can ultimately be broken down into one or more chemical
-transformations this was the natural representation to use. However SBML does
-not have generalized elements such as components and connections, SBML employs
-specific elements to represent spatial compartments, molecular species and
-chemical transformations. In addition to these, SBML also has provision for
-rules which can be used to represent constraints, derived values and general
-math which for one reason or another cannot be transformed into a chemical
-scheme. Like CellML, the dependent and independent species are implied.
+diagram, SBML represent models as a list of chemical transformations. Since
+every process in a biological cells can ultimately be broken down into one or
+more chemical transformations this was the natural representation to use.
+However SBML does not have generalized elements such as components and
+connections, SBML employs specific elements to represent spatial compartments,
+molecular species and chemical transformations. In addition to these, SBML also
+has provision for rules which can be used to represent constraints, derived
+values and general math which for one reason or another cannot be transformed
+into a chemical scheme. Like CellML, the dependent and independent species are
+implied.
 
 The development of SBML is stratified in order to organize architectural changes
 and versioning. Major editions of SBML are termed Levels and represent
@@ -1151,13 +1151,12 @@ previous section.
 
 The first systems biology simulation package, BIOSIM, was written in the 1960s
 [@Ga68]. Especially in recent years, there has been a boom of software
-applications for the systems biology community (Figure \ref{figure:apps}).
-While, most software projects have ended development over the years, for a
-variety of reasons, such as lack of funding or maintainers, there are still far
-too many different modeling platforms to possibly be covered in this chapter.
-Thus, in this section will highlight specific software tools that have had a
-significant impact on the communit, or some
-unique features that set them aside.
+applications for the systems biology community. While, most software projects
+have ended development over the years, for a variety of reasons, such as lack
+of funding or maintainers, there are still far too many different modeling
+platforms to possibly be covered in this chapter.  Thus, in this section will
+highlight specific software tools that have had a significant impact on the
+community, or some unique features that set them aside.
 
 Furthermore, discussion will be focused specifically on modeling and simulation
 tools, and not more advanced analytical techniques, such as metabolic flux
@@ -1165,9 +1164,6 @@ balance analysis. For more detailed discussion on flux balance software, please
 refer to a recent review [@copeland2012computational] and a very comprehensive
 listing of SBML compatible software provided by the SBML consortium
 (<http://sbml.org/SBML_Software_Guide/SBML_Software_Matrix>).
-
-![The release of software tools for computational systems biology over time.
-\label{figure:apps}](images/ToolsPerYear.pdf)
 
 ## Modeling
 
