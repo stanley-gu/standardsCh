@@ -1702,13 +1702,15 @@ Three main web sources which are of interest to readers of this chapter include:
 
 # Acknowledgments
 
-I would first like to acknowledge the generous support from the Japan Science
-and Technology Agency, DARPA (BAA01-26 Bio-Computation) and the US Department of
-Energy GTL program, without which the bulk of the work described in this chapter
-would not have been carried out. I would also like to acknowledge Mike Hucka,
-Andrew Finney and Hamid Bolouri for their initial work on the Systems Biology
-Workbench and in more recent years the tremendous programming work done by Frank
-Bergmann and the critical support given by Sri Paladugu and Vijay Chickarmane to
-the development of novel computational methods in Systems Biology.
+We would like to acknowledge the generous support from the Japan Science and
+Technology Agency, DARPA (BAA01-26 Bio-Computation), the US Department of Energy
+GTL program, and the National Institute of General Medical Sciences (NIGMS
+GM081070) without which the bulk of the work described in this chapter would not
+have been carried out. We would also like to acknowledge Mike Hucka, Andrew
+Finney and Hamid Bolouri for their initial work on the Systems Biology
+Workbench, Frank Bergmann for his tremendous programming work, Sri Paladugu and
+Vijay Chickarmane for their critical support in the development of novel
+computational methods in Systems Biology, and Maxwell Neal for his help and
+expertise on biomedical ontologies.
 
 # References
