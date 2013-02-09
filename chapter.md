@@ -1388,20 +1388,20 @@ against an online suite of SBML test cases (<http://sbml.org/Facilities/Online_S
 
 ### COPASI
 
-COPASI [@hoops2006copasi] is the successor to Gepasi and comes
-in two versions: a graphical and a command line interface. The command line
-version is designed for batch jobs where a graphical user interface is
-unnecessary and where runs can be carried out without human supervision. COPASI
-uses its own file format to store models, however like all the tools discussed
-here, it can import and export SBML. One of its undoubted strengths is
-optimization and parameter fitting which it inherited from its predecessor. It
-has a unique ability to optimize on a great variety of different criteria
-including metrics such as eigenvalues, transient times etc.  This makes COPASI
-extremely flexible for optimization problems. Installation is very simple and
-entails using a one-click installer. Although the source code to COPASI is
-available and can be freely used for research purposes in academia, owing to the
-way in which the development of COPASI was funded there are restrictions on
-commercial use.
+COPASI [@hoops2006copasi] (<http://www.copasi.org/tiki-view_articles.php>) is
+the successor to Gepasi and comes in two versions: a graphical and a command
+line interface. The command line version is designed for batch jobs where a
+graphical user interface is unnecessary and where runs can be carried out
+without human supervision. COPASI uses its own file format to store models,
+however like all the tools discussed here, it can import and export SBML. One of
+its undoubted strengths is optimization and parameter fitting which it inherited
+from its predecessor. It has a unique ability to optimize on a great variety of
+different criteria including metrics such as eigenvalues, transient times etc.
+This makes COPASI extremely flexible for optimization problems. Installation is
+very simple and entails using a one-click installer. Although the source code to
+COPASI is available and can be freely used for research purposes in academia,
+owing to the way in which the development of COPASI was funded there are
+restrictions on commercial use.
 
 The graphical user interface is based on a menu/dialog approach, much like its
 immediate predecessor, Gepasi. COPASI has capabilities to simulate deterministic
@@ -1623,7 +1623,7 @@ crucial to determine the validity of the model and can be used to design
 additional experiments to either refute the model or increase the precision of
 the model parameters. As a result of these requirements, computing a global
 optimization can take a considerable time. For example, in a recent study, Vijay
-Chickarmane estimated that the time required to fit a model of approximately
+Chickarmane[^corr] estimated that the time required to fit a model of approximately
 three hundred parameters would be of the order of seven years on a normal
 desktop computer. Luckily, global optimization can be easily parallelized given
 a suitable optimizer (for example a genetic algorithm based optimizer) and the
@@ -1635,6 +1635,8 @@ node on the cluster would act as the primary optimizer; this node in turn would
 farm out the time consuming simulation computations to the remaining nodes on
 the computer. For very large models, Grid computing [@GridComputing:Abbas] may
 be very appropriate for solving this kind of problem.
+
+[^corr]: Personal correspondence
 
 # Future Prospects and Conclusion
 
