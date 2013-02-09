@@ -1311,65 +1311,65 @@ to translate between SBML and CellML models.
 
 ### Other Modeling Tools
 
-#### BioNetGen
+#### BioNetGen [@blinov2004bionetgen]
 Tool for rule-based modeling of biochemical systems. In rule-based models,
 molecules and their complexes are represented using graphs, and their consequent
 interactions will cause rewiring of the graph based on rules. Originally, it was
 developed to study the problem of combinatorial complexity of signal
-transduction systems, such as antibody receptor binding 
+transduction systems, such as antibody receptor binding.
 
 - Open source; Linux, Mac OS, Microsoft Windows
-- <http://bionetgen.org/index.php/Main_Page> [@blinov2004bionetgen]
+- <http://bionetgen.org/index.php/Main_Page>
 
-#### Gepasi
-This is a forms based application which has been maintained for many
-years by a dedicated author, the tool is particularly adept at carrying out
-optimizations of ODE based models to data 
+#### Gepasi [@Gepasi:1993]
+This is forms based application was one of the first simulation platforms
+written for the PC. The tool is particularly adept at carrying out optimizations
+of ODE based models to data.
 
 - Closed source; Microsoft Windows
-- <http://www.gepasi.org/> [@Gepasi:1993]
+- <http://www.gepasi.org/>
 
-#### iBioSim
+#### iBioSim [@myers2009ibiosim]
 Tool for the design and analysis of genetic circuits, with applications to both
 systems and synthetic biology. Models can be constructed manually or imported
 from various databases and then analyzed with a variety of ODE and stochastic
 simulators.
 
 - Open source; Linux, Mac OS, Microsoft Windows
-- (<http://www.async.ece.utah.edu/iBioSim/>) [@myers2009ibiosim]
+- (<http://www.async.ece.utah.edu/iBioSim/>)
 
-#### JigCell
+#### JigCell [@vass2004jigcell] [@vass2006jigcell]
 A suite of computational tools with graphical user interfaces that includes
 model building, simulation, and parameter estimation. A unique feature of
 JigCell is its display of data and simulation experiments in a spreadsheet
 format and run in batch mode.
 
 - Closed source; Linux, Mac OS, Microsoft Windows
-- <http://jigcell.cs.vt.edu/> [@vass2004jigcell, @vass2006jigcell]
+- <http://jigcell.cs.vt.edu/>
 
-#### ProMot
+#### ProMot [@mirschel2009promot]
 Short for "process modeling tool", this is a software package for simulating and
 manipulating models. Some key features are its support of modular models,
 modeling libraries, its own modeling language MDL, and graphical capabilities.
 
 - Open source; Linux, Microsoft Windows
-- <http://www.mpi-magdeburg.mpg.de/projects/promot> [@mirschel2009promot]
+- <http://www.mpi-magdeburg.mpg.de/projects/promot>
 
-#### SBSI
+#### SBSI [@adams2013sbsi]
 Provides fitting of model parameters to experimental data, especially on models
 with oscillatory components, as well as standard model editing and simulation
 capabilities.
 
 - Open source; Linux, Mac OS, Microsoft Windows
-- <http://www.sbsi.ed.ac.uk/> [@adams2013sbsi]
+- <http://www.sbsi.ed.ac.uk/>
 
-#### WinSCAMP
+#### WinSCAMP [@SauroF91, @SauroScamp93]
 A script based GUI application, which like Gepasi has a long
 tradition. Specialized for time course, steady state and metabolic control
 analysis of ODE based models.
 
 - Source available upon request; Windows
-- <http://sbw.kgi.edu/software/winscamp.htm> [@SauroF91, @SauroScamp93]
+- <http://sbw.kgi.edu/software/winscamp.htm>
 
 ## Simulation Engines Libraries
 
@@ -1384,26 +1384,24 @@ software should be actively maintained and updated by its authors.
 This section will cover some of the most widely used, open source, simulation
 libraries that many modeling platforms depend on for computation. These
 libraries all support the simulation of SBML models, and have been validated
-against an online suite of SBML test cases provided by the SBML consortium
-(<http://sbml.org/Facilities/Online_SBML_Test_Suite>).
+against an online suite of SBML test cases (<http://sbml.org/Facilities/Online_SBML_Test_Suite>) provided by the SBML consortium.
 
 ### COPASI
 
-Pedro Mendes wrote one of the earliest PC simulators which he called Gepasi
-[@Gepasi:1993]. COPASI [@hoops2006copasi] is essentially a rewrite of
-Gepasi, that comes in two versions: a graphical user interface and a command
-line version. The command line version is designed for batch jobs where a
-graphical user interface is unnecessary and where runs can be carried out
-without human supervision. COPASI uses its own file format to store models,
-however like all the tools discussed here, it can import and export SBML. One of
-its undoubted strengths is optimization and parameter fitting which it inherited
-from its predecessor. It has a unique ability to optimize on a great variety of
-different criteria including metrics such as eigenvalues, transient times etc.
-This makes COPASI extremely flexible for optimization problems. Installation is
-very simple and entails using a one-click installer. Although the source code to
-COPASI is available and can be freely used for research purposes in academia,
-owing to the way in which the development of COPASI was funded there are
-restrictions on commercial use.
+COPASI [@hoops2006copasi] is the successor to Gepasi and comes
+in two versions: a graphical and a command line interface. The command line
+version is designed for batch jobs where a graphical user interface is
+unnecessary and where runs can be carried out without human supervision. COPASI
+uses its own file format to store models, however like all the tools discussed
+here, it can import and export SBML. One of its undoubted strengths is
+optimization and parameter fitting which it inherited from its predecessor. It
+has a unique ability to optimize on a great variety of different criteria
+including metrics such as eigenvalues, transient times etc.  This makes COPASI
+extremely flexible for optimization problems. Installation is very simple and
+entails using a one-click installer. Although the source code to COPASI is
+available and can be freely used for research purposes in academia, owing to the
+way in which the development of COPASI was funded there are restrictions on
+commercial use.
 
 The graphical user interface is based on a menu/dialog approach, much like its
 immediate predecessor, Gepasi. COPASI has capabilities to simulate deterministic
