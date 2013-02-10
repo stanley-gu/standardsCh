@@ -22,7 +22,7 @@ watchr.watch({
 
             if (filePath.indexOf('.md') > -1 || filePath.indexOf('publishChapter') > -1) {
 
-                child = exec('./publishChapter',
+                child = exec('make pdf',
 
                 function(error, stdout, stderr) {
                     console.log('stdout: ' + stdout);
