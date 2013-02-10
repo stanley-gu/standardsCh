@@ -12,14 +12,13 @@ pandoctex:
 tex: pandoctex
 	cp -r images ./chapter/
 	cp -r bib ./chapter/
-	-latex --output-directory=chapter chapter/chapter.tex
+	-cd chapter; latex chapter
 
 bibtex: tex
-	-bibtex chapter/chapter
+	-cd chapter; bibtex chapter; latex chapter
 
 pdf: bibtex
-	-latex --output-directory=chapter chapter/chapter
-	-pdflatex --output-directory=chapter chapter/chapter
+	-cd chapter; pdflatex chapter
 
 clean:
 	rm -r chapter
