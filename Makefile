@@ -18,7 +18,7 @@ bibtex: tex
 	-cd chapter; bibtex chapter; latex chapter
 
 pdf: bibtex
-	-cd chapter; pdflatex chapter
+	-cd chapter; pdflatex -shell-escape chapter
 
 clean:
 	rm -r chapter

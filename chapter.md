@@ -983,7 +983,7 @@ using a simple editor, flexible, portable and above all extremely easy to
 include commenting and annotation. Users of Jarnac also have access to an
 advanced graphical user interface (GUI) (Figure \ref{Figure:jarnac}) 
 
-![User interface for Jarnac\label{Figure:jarnac}](images/jarnac.jpg)
+![User interface for Jarnac\label{Figure:jarnac}](images/jarnac.eps)
 
 #### Mathematical Markup Language (MML)
 
