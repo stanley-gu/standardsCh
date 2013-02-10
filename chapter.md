@@ -37,8 +37,6 @@
 \newcommand{\bv}{\mbox{\boldmath $v$}}
 \newcommand{\bp}{\mbox{\boldmath $p$}}
 
-![Standards](images/standards.png)
-
 \newpage
 \tableofcontents
 \newpage
