@@ -476,7 +476,9 @@ species 'A' and 'B' producing 'C'.
 Thus, to address these quality issues, MIRIAM comprises of the following
 guidelines:
 
-**Reference correspondence**
+* * * *
+
+Reference correspondence
 
 * The model must be encoded in a public, standardized, machine-readable format (SBML, CellML, GENESIS, ...).
 * The model must comply with the standard in which it is encoded.
@@ -485,7 +487,7 @@ guidelines:
 * The model must be instantiable in a simulation: all quantitative attributes must be defined, including initial conditions.
 * When instantiated, the model must be able to reproduce all results given in the reference description within an epsilon (algorithms, round-up errors).
 
-**Attribution annotation**
+Attribution annotation
 
 * The model has to be named.
 * A citation to the reference description must be provided (complete citation, unique identifier, unambiguous URL). The citation should identify the authors of the model.
@@ -493,7 +495,7 @@ guidelines:
 * The date and time of model creation and last modification should be specified. A history is useful but not required.
 * The model should be linked to a precise statement about the terms of it's distribution. MIRIAM does not require "freedom of use" or "no cost".
 
-**External resource annotation**
+External resource annotation
 
 * The annotation must unambiguously relate a piece of knowledge to a model constituent.
 * The referenced information should be described using a triplet {collection, identifier, qualifier}:
@@ -502,6 +504,8 @@ guidelines:
 * Collection namespace and identifier are combined into a single URI, such as: http://identifiers.org/collection/identifier. For example: http://identifiers.org/uniprot/P62158.
 * Qualifiers (optional) should refine the link between the model constituent and the piece of knowledge: "has a", "is version of", "is homolog to", etc.
 * The community has to agree upon a set of standard valid URIs. A database and the associated API (Web Services) have been developed at the EBI to provide the generation and interpretation of URIs.
+
+* * * *
 
 MIRIAM applies these guidelines to a wide range of quantitative models, which
 may use a variety of different mathematical representations, such as ODE, PDE,
@@ -781,16 +785,16 @@ entities and processes rather than quantitative ones [@hucka2010systems].
 
 Early on in the development of SBML, the original authors decided to provide
 software tools almost immediately for the community. Since XML at the time was
-not well understood by many software developers the provision of such assistance
-was crucial. In hindsight, this is probably one reason why SBML has become a
-popular standard. Initially the original authors provided a simple library for
-the Windows platform since the bulk of biology based users tend to be Windows
-users. Today this library is still used by a number of tools including Gepasi,
-Jarnac and JDesigner. With the growing popularity of SBML, the community has
-since developed a comprehensive cross platform tool libSBML
-(<http://sbml.sourceforge.org>) which is now the recommended SBML toolkit to use
-. LibSBML was developed in C/C++, with bindings to a number of
-different languages, for maximum portability.
+not well understood by many software developers the provision of such
+assistance was crucial. In hindsight, this is probably one reason why SBML has
+become a popular standard. Initially the original authors provided a simple
+library for the Windows platform since the bulk of biology based users tend to
+be Windows users. Today this library is still used by a number of tools
+including Gepasi, Jarnac and JDesigner (discussed later). With the growing
+popularity of SBML, the community has since developed a comprehensive cross
+platform tool libSBML (<http://sbml.sourceforge.org>) which is now the
+recommended SBML toolkit to use . LibSBML was developed in C/C++, with bindings
+to a number of different languages, for maximum portability.
 
 #### Practical Considerations
 
@@ -970,13 +974,16 @@ formats.
 In addition to visualization approaches and the use of XML to represent models,
 there has been a long tradition in the field to describe models using human
 readable text based formats. Indeed the very first simulator BIOSSIM, [@Ga68],
-allowed a user to describe a model using a list of reaction schemes. Variants of
-this have been employed by a number of simulators since, including, SCAMP
+allowed a user to describe a model using a list of reaction schemes. Variants
+of this have been employed by a number of simulators since, including, SCAMP
 [@SauroF91], Jarnac [@sauro:2000], E-Cell [@ECELL] and more recently PySCeS
 [@Pysces2004]. Being able to represent models in a human readable format offers
-many advantages, including, conciseness, easily understood and manipulated using
-a simple editor, flexible, portable and above all extremely easy to include
-commenting and annotation.
+many advantages, including, conciseness, easily understood and manipulated
+using a simple editor, flexible, portable and above all extremely easy to
+include commenting and annotation. Users of Jarnac also have access to an
+advanced graphical user interface (GUI) (Figure \ref{Figure:jarnac}) 
+
+![User interface for Jarnac\label{Figure:jarnac}](images/jarnac.jpg)
 
 #### Mathematical Markup Language (MML)
 
@@ -1200,7 +1207,7 @@ JSim uses a model specification language, MML (for Mathematical Modeling
 Language) which supports ordinary and partial differential equations, implicit
 equations, integrals, summations, discrete events, and allows calls to external
 procedures. JSim's compiler translates MML into Java code in which the numeric
-results are calculated. Within the JSim graphical user interface (GUI) users
+results are calculated. Within the JSim GUI users
 adjust parameter values, initiate model runs, plot data, and perform behavioral
 analysis, sensitivity analysis, parameter optimization for curve fitting.
 Alternatively one can use JSim's command line interfaces (jsbatch and jsfim).
