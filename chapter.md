@@ -37,7 +37,7 @@
 \newcommand{\bv}{\mbox{\boldmath $v$}}
 \newcommand{\bp}{\mbox{\boldmath $p$}}
 
-[![Standards](images/standards.png)](images/standards.png)
+![Standards](images/standards.png)
 
 \newpage
 \tableofcontents
@@ -254,7 +254,7 @@ In these equations, $\bSi$ is the vector of independent species, $\bSd$, the
 vector of dependent species, $\bLo$ the link matrix, $\bT$ the total mass
 vector, $\bNr$ the reduced stoichiometry matrix, $\bv$ the rate vector and $\bp$
 the vector of parameters. Equation \ref{eq:general} constitutes the most general
-expression of an ODE based temporal model [@hofmeyr-nutshell,@Schuster:Book].
+expression of an ODE based temporal model [@hofmeyr-nutshell][@Schuster:Book].
 The symbolism used in equation \ref{eq:general} is the standard notation used by
 many in the systems biology community.
 
@@ -611,7 +611,7 @@ and controlled vocabularies used for annotating them.
 In the model metadata, the information about the model itself, a number of
 different ontologies may be used to inform what the model describes. In
 biological pathway models, Reactome 
-(<http://www.reactome.org/ReactomeGWT/entrypoint.html) [@joshi2005reactome]
+(<http://www.reactome.org/ReactomeGWT/entrypoint.html>) [@joshi2005reactome]
 and KEGG Pathway (<http://www.genome.jp/kegg/>) [@ogata1999kegg] are
 comprehensive, human-curated, pathway databases that are often referenced
 Information regarding the taxonomy of the biological pathway can be referenced
@@ -1285,7 +1285,7 @@ any SBW module.
 
 The Virtual Cell (VCell; <http://vcell.org/>) is a client/server based tool that
 specializes in three-dimensional whole cell simulations
-[@VCELL,@moraru2008virtual]. It is unique in that it provides a framework for
+[@VCELL][@moraru2008virtual]. It is unique in that it provides a framework for
 not only modeling biochemical networks but also electrophysiological, and
 transport phenomena while at the same time considering the subcellular
 localization of the molecules that take part in them. This localization can take
@@ -1359,7 +1359,7 @@ capabilities.
 - Open source; Linux, Mac OS, Microsoft Windows
 - <http://www.sbsi.ed.ac.uk/>
 
-#### WinSCAMP [@SauroF91, @SauroScamp93]
+#### WinSCAMP [@SauroF9] [@SauroScamp93]
 A script based GUI application, which like Gepasi has a long
 tradition. Specialized for time course, steady state and metabolic control
 analysis of ODE based models.
