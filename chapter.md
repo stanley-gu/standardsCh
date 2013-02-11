@@ -874,8 +874,8 @@ details can be found by consulting the NuML specification
 
 ## Visualization
 
-Circuit diagrams and Unified Modeling Language diagrams are just two examples of
-standard visual languages that help accelerate work by promoting regularity,
+Circuit diagrams and Unified Modeling Language diagrams are just two examples
+of standard visual languages that help accelerate work by promoting regularity,
 removing ambiguity and enabling software tool support for communication of
 complex information. Ironically, despite having one of the highest ratios of
 graphical to textual information, biology still lacks standard graphical
@@ -903,50 +903,39 @@ by a community of biochemists, modelers and computer scientists. SBGN consists
 of three complementary languages: process diagram, entity relationship diagram
 and activity flow diagram. Together they enable scientists to represent
 networks of biochemical interactions in a standard, unambiguous way. The
-success of SBGN will foster efficient and accurate representation,
-visualization, storage, exchange and reuse of information on all kinds of
-biological knowledge, from gene regulation, to metabolism, to cellular
-signaling.
-
-SBGN defines three orthogonal and complementary types of diagrams that can be
-seen as three alternative projections of the underlying more complex biological
-information. The process diagram draws its inspiration from process-style
-notations, borrowing ideas from the work of Kitano. In contrast, the entity
-relationship diagram is based to a large extent on Kohn's notation. The SBGN
-activity flow diagram depicts only the cascade of activity, thus making the
-notation similar to the reduced representations often used in the current
-literature to describe signaling pathways and gene regulatory networks.
+process diagram draws its inspiration from process-style notations, borrowing
+ideas from the work of Kitano. In contrast, the entity relationship diagram is
+based to a large extent on Kohn's notation. The SBGN activity flow diagram
+depicts only the cascade of activity, thus making the notation most similar to
+the representations often used in the current literature to describe signaling
+pathways.
 
 #### SBGN-ML
 
-SBGN only defines how biological information should be visualized, but not how
-the mapping should be stored electronically. SBGN-ML
+While SBGN defines how biological information should be visualized, it does not
+specify how the mapping should be stored electronically. SBGN-ML
 (<http://www.sbgn.org/LibSBGN/Exchange_Format>) [@le2010report] is a dedicated
-file format to allow the efficient integration of SBGN into the research
-workflow. Thus, SBGN-ML can be used to store and transfer the information
-necessary for software to faithfully render the corresponding SBGN map. The
-software library libSBGN (<http://www.sbgn.org/SBGN_Software/LibSBGN>)
-complements the file format. It consists of two parallel implementations
-[@van2012software] in Java and C++, which can be easily translated to different
-programming languages.
+file format that can be used to store and transfer the information necessary
+for software to faithfully render the corresponding SBGN diagram. The software
+library libSBGN (<http://www.sbgn.org/SBGN_Software/LibSBGN>) complements the
+file format. It consists of two parallel implementations [@van2012software] in
+Java and C++, which can be easily ported to different programming languages.
 
-The plugin cySBGN
-(<http://www.ebi.ac.uk/saezrodriguez/cysbgn/>) [@goncalves2013cysbgn], through use
-of libSBGN and SBGN-ML allows SBGN diagrams to be imported, modified, and
-analyzed within Cytoscape (<http://www.cytoscape.org/>), a popular network
-visualizer. Coupled with the cySBML (<http://sourceforge.net/projects/cysbml/>)
-[@konig2012cysbml] plugin, which allows SBML models to be imported into
-Cytoscape, SBGN maps can be generated from SBML models directly.
+The plugin cySBGN (<http://www.ebi.ac.uk/saezrodriguez/cysbgn/>)
+[@goncalves2013cysbgn], through use of libSBGN and SBGN-ML, allows SBGN
+diagrams to be imported, modified, and analyzed within Cytoscape
+(<http://www.cytoscape.org/>), a popular network visualizer. Coupled with the
+cySBML (<http://sourceforge.net/projects/cysbml/>) [@konig2012cysbml] plugin,
+which allows SBML models to be imported into Cytoscape, SBGN maps can be
+generated from SBML models directly.
 
 ## Other Standards
 
-Apart from the aforementioned interchange formats, there are many other mediums
-for representing models. This section will briefly cover several additional
-formats.
+Apart from the mentioned model interchange formats, there are many other
+mediums for representing models. This section will briefly cover several
+additional formats.
 
 ### Human Readable Formats
-
-#### Jarnac
 
 In addition to visualization approaches and the use of XML to represent models,
 there has been a long tradition in the field to describe models using human
@@ -957,7 +946,11 @@ of this have been employed by a number of simulators since, including, SCAMP
 [@Pysces2004]. Being able to represent models in a human readable format offers
 many advantages, including, conciseness, easily understood and manipulated
 using a simple editor, flexible, portable and above all extremely easy to
-include commenting and annotation. Users of Jarnac also have access to an
+include commenting and annotation.
+
+#### Jarnac
+
+Users of Jarnac also have access to an
 advanced graphical user interface (GUI) (Figure \ref{Figure:jarnac}) 
 
 ![User interface for Jarnac\label{Figure:jarnac}](images/jarnac.eps)
@@ -978,13 +971,13 @@ JSim's MML compiler [@chizeck2009].
 
 PySCeS is a console based application written in the Python
 (<http://www.python.org>) programming language that runs on all major computing
-platforms [@Pysces2004]. Although users interact with PySCeS via Python scripts,
-many of the underlying numerical capabilities are provided by well established
-C/C++ or FORTRAN based numerical libraries through the SciPy package
-[@olivier2002modelling]. While it is possible to build models directly in Python
-using SciPy, PySCeS was written by team experienced with biochemical modeling to
-provide a high-level modeling interface that saves the modeler from needing to
-work with low level numerical algorithms.
+platforms [@Pysces2004]. Although users interact with PySCeS via Python
+scripts, many of the underlying numerical capabilities are provided by well
+established C/C++ or FORTRAN based numerical libraries through the SciPy
+package [@olivier2002modelling]. While it is possible to build models directly
+in Python using SciPy, PySCeS was written by team experienced with biochemical
+modeling to provide a high-level modeling interface that saves the modeler from
+needing to work with low level numerical algorithms.
 
 #### SBML-Shorthand
 
@@ -1016,8 +1009,8 @@ to extract data from many of the pathway databases and integrate the data
 directly into SBML (or CellML) via BioPAX. The BioPAX group proposes to embed
 BioPAX elements onto SBML or cellML for unambiguous identification of
 substances (metabolites, enzymes) and reactions. However, it is possible for to
-convert, or map, from SBML to BioPAX (
-<http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>).
+convert, or map, from SBML to BioPAX
+(<http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>).
 
 ## Model Databases
 
@@ -1044,23 +1037,24 @@ of the models with terms from controlled vocabularies (Taxonomy, Gene Ontology,
 ChEBI, etc.) and links to other databases (UniProt, KEGG, Reactome, etc.). This
 annotation is a crucial feature of BioModels Database in that it permits the
 unambiguous identification of molecular species or reactions and enables
-effective search algorithms. As of December 2012, the database contains 142,973
-models, comprising of 923 models published in literature, of which roughly half
-are manually curated by BioModels, and 142,050 models automatically generated
-from the Path2Models project (<http://code.google.com/p/path2models/>), an
-effort aimed at automatically converting biological pathway databases (such as
-KEGG) into corresponding SBML models 
+effective search algorithms in finding model and model components of interest.
+As of December 2012, the database contains 142,973 models, comprising of 923
+models published in literature, of which roughly half are manually curated by
+BioModels, and 142,050 models automatically generated from the Path2Models
+project (<http://code.google.com/p/path2models/>), an effort aimed at
+automatically converting biological pathway databases (such as KEGG) into
+corresponding SBML models 
 
 ### CellML Repository
 
 The CellML Model Repository (<http://www.cellml.org/models>) [@lloyd2008cellml]
-is a similar effort, which contains hundreds of biochemical pathway models that
-have been described in peer- review publications.[@beard2009cellml]. CellML and
-the CellML Model Repository are part of the IUPS Physiome Project effort to
+[@beard2009cellml] is a similar effort, which contains hundreds of biochemical
+pathway models that have been described in peer-reviewed publications. CellML
+and the CellML Model Repository are part of the IUPS Physiome Project effort to
 create a virtual physiological human [@hunter2005integration]. The explicit
 representation of modularity, together with the flexible nature of the CellML
 language which allows the description of a diverse range of cellular and
-subcellular systems.
+sub-cellular systems.
 
 The CellML Model Repository contains over 330 freely available, quantitative
 models of biological processes taken from the peer-reviewed literature. In
@@ -1077,33 +1071,13 @@ endocrine function, etc.) are also within the scope of CellML.
 
 ### Physiome Repository
 
-The CellML model repository represents a relatively straightforward storage
-facility for CellML models. Although all the models in the repository were
-freely accessible to the public, there was no mechanism in place to promote the
-sharing of models with their revision history intact. Furthermore, collaboration
-between several researchers is often required during the development of a model.
-Collaboration on a model can be greatly simplified by a tool which records the
-change history of a model, and makes that history available to other
-collaborators. Finally, once a model is ready to be published, it must be
-indexed and presented so that it can be easily searched for and viewed, thereby
-avoiding unnecessary duplication of modeling efforts. Since it was not possible
-to extend the original repository software to support these more advanced usage
-requirements, a complete rewrite was required, and the Physiome Model Repository
-2 (PMR2) [@yu2011physiome] was created.
-
-Workspaces, distributed version control systems and model revision history All
-the files related to a particular model are stored together in PMR2 within a
-defined workspace, which can be regarded as a folder. The implementation of
-workspaces uses a distributed version control system called Mercurial
-[@o2007distributed]. By providing version tracking, this system ensures that
-users within a group cannot accidentally overwrite or purge changes of other
-users. Furthermore, each change made to a model, or its associated files, is
-recorded as a single change with a time-stamped, informative comment from an
-identifiable user describing the changes they have made. As model files
-are progressively altered, the change logs preserve the history of model
-development. Finally, even if two users simultaneously change the same model
-file, distinct change logs allow their work to be later merged in a controlled
-manner.
+The Physiome Model Repository (<http://www.cellml.org/tools/pmr>)
+[@yu2011physiome] is an offshoot of the CellML repository, which is unique in
+that it allows users to make their own copies of CellML and keep track of model
+changes using a distributed version control system, Mercurial
+[@o2007distributed]. One of the primary goals of this platform is to facilitate
+collaboration between several researchers, a common occurence during model
+development.
 
 ### JSim Repository
 
@@ -1114,11 +1088,11 @@ in the web browser using the JSim Java applet.
 
 ### JWS Online
 
-JWS Online (<http://jjj.biochem.sun.ac.za/>) is a repository of kinetic models,
-describing biological systems, which can be interactively run and interrogated
-over the Internet. At the time of this writing, JWS Online contains 131 models,
-downloadable to SBML, while also providing a web browser interface to a
-simulation server [@olivier2004web].
+JWS Online (<http://jjj.biochem.sun.ac.za/>) [@olivier2004web] is a repository
+of kinetic models, describing biological systems, which can be interactively
+run and interrogated over the Internet. As of December 2012, JWS Online
+contains 131 models, downloadable to SBML, while also providing a web browser
+interface to a simulation server.
 
 ## Future Considerations
 
@@ -1127,17 +1101,19 @@ representations of biological models, quantitative modeling has surged in
 popularity. However, the ever-growing number of published dynamic models
 published also presents a significant challenge in terms of model reuse and
 integration. While there is currently no agreed upon way to merge smaller sub-
-models into larger models, MIRIAM and MIASE annotations enable model composition
-software to make use of the semantic information and enable algorithms parse
-through models, or parts of models, of interest to the user. Recent efforts in
-this arena include semanticSBML [@krause2010annotation], SemSim
-[@neal2009advances], and the SBML Reaction Finder [@neal2012sbml].
+models into larger models, MIRIAM and MIASE annotations enable model
+composition software to make use of the semantic information and enable
+algorithms parse through models, or parts of models, of interest to the user.
+Recent efforts in this arena include semanticSBML [@krause2010annotation],
+SemSim [@neal2009advances], and the SBML Reaction Finder [@neal2012sbml].
 
 # Platforms
 
 This section will focus on the different modeling and simulation platforms that
 are available, which implement the systems biology standards highlighted in the
-previous section.
+previous section. While this section is certainly not an exhaustive list of all
+modeling platforms, highly influential or previously mentioned software
+packages will be discussed.
 
 The first systems biology simulation package, BIOSIM, was written in the 1960s
 [@Ga68]. Especially in recent years, there has been a boom of software
@@ -1202,16 +1178,13 @@ documentation  are available free for non-commercial use at
 
 ### JDesigner
 
-One of the first visualization tools, JDesigner [@Sauro:Omics] implements a
-traditional way to depict networks (see Figure \ref{Figure:jdesigner}) using a
-pictorial representation to indicate substances and reactions. JDesigner also
-employs Bezier curves to represent arcs in an attempt to make the diagrams
-similar to the notation found in many molecular biology text books. JDesigner
-can use Jarnac's extensive simulation capabilities (both ODE and stochastic) via
-SBW.
-
-Both JDesigner and Jarnac are open source, and available on Windows
-[@sauro:2000] [@Sauro:Omics].
+One of the first visualization tools, JDesigner [@Sauro:Omics] [@sauro:2000]
+implements a traditional way to depict networks (see Figure
+\ref{Figure:jdesigner}) using a pictorial representation to indicate substances
+and reactions. JDesigner also employs Bezier curves to represent arcs in an
+attempt to make the diagrams similar to the notation found in many molecular
+biology text books. JDesigner can use Jarnac's extensive simulation
+capabilities (both ODE and stochastic) via SBW.
 
 ![Example of JDesigner's visual
 format\label{Figure:jdesigner}](images/JDesigner1.eps)
@@ -1220,7 +1193,7 @@ format\label{Figure:jdesigner}](images/JDesigner1.eps)
 
 While PySCeS has already been mentioned earlier as a human readable format for
 expressing biological models, the software package warrants mention again as a
-full-fledged modeling platform that can be used interactively and as a library.
+full-featured modeling platform that can be used interactively and as a library.
 along with its scripted model description language, PySCeS is SBML compatible,
 and provides a full set of simulation tools, including stoichiometric,
 simulation, steady state, metabolic control, and Eigen analysis. Two and
@@ -1235,16 +1208,16 @@ to encourage code reuse among members of the systems biology community.
 Developers can run SBW on Linux, Windows or Mac OS and can develop software in a
 variety of different languages including C/C++, Java, Delphi, FORTRAN, MATLAB,
 Perl, Python and any .NET language (*e.g.* Visual Basic or C#). The SBW was
-originally developed in parallel with SBML  as part of the Symbiotic Systems
+originally developed in parallel with SBML as part of the Symbiotic Systems
 Project ERATO project at Caltech, Pasadena.
 
 The central component of SBW is the broker, which is responsible for
 coordinating interactions among the different resources connected to it.  These
 resources include simulation engines, model editors, SBML translators,
 databases, visualization tools and a variety of analysis packages. All modules
-in SBW connect via defined interfaces, which allows any one of the modules to be
-easily replaced if necessary. The key concept in SBW is that any new module may
-exploit resources provided by other modules; this dramatically improves
+in SBW connect via defined interfaces, which allows any one of the modules to
+be easily replaced if necessary. The key concept in SBW is that any new module
+may exploit resources provided by other modules; this dramatically improves
 productivity by allowing developers to build on existing tools rather than
 continuously reinvent.
 
@@ -1285,6 +1258,10 @@ both import and export SBML and CellML. This feature could in principle be used
 to translate between SBML and CellML models.
 
 ### Other Modeling Tools
+
+Several other modeling tools will be mentioned in this section but with shorter
+descriptions. Some basic information on which platforms this software is
+available on and a URL to find more information will be provided.
 
 #### BioNetGen [@blinov2004bionetgen]
 Tool for rule-based modeling of biochemical systems. In rule-based models,
@@ -1441,25 +1418,25 @@ depends on CVODE and NLEQ being available on the platform.
 ### SBMLSimulator
 
 SBMLsimulator (<http://www.cogsys.cs.uni-tuebingen.de/software/SBMLsimulator/>)
-is a simulation library and accompanying GUI that is implemented in Java. In
-particular, the Java developer community benefits greatly from Java
-software to ease the ability to implement third party dependencies. Analogous to
-the way COPASI and RoadRunner are built from libSBML (C/C++), SBMLsimulator
-depends on JSBML, an SBML document manipulation library written entirely in
-Java (<http://sbml.org/Software/JSBML>) [@drager2011jsbml].
+[@drager2011jsbml] is a simulation library and accompanying GUI that is
+implemented in Java. In particular, the Java developer community benefits
+greatly from Java software to ease the ability to implement third party
+dependencies. Analogous to the way COPASI and RoadRunner are built from libSBML
+(C/C++), SBMLsimulator depends on JSBML, an SBML document manipulation library
+written entirely in Java (<http://sbml.org/Software/JSBML>).
 
 ## MATLAB
 
 MATLAB (<http://www.mathworks.com/products/matlab/>) is one of the most widely
-used numerical platforms in science and engineering. MATLAB contains an
-excellent numerical and data analysis methods useful for systems biology. Many
-add-ons, referred to as "toolboxes" are available commercially or open-source to
-extend the functionality of MATLAB.
+used numerical platforms in science and engineering. MATLAB contains excellent
+numerical and data analysis methods useful for systems biology. Many add-ons,
+referred to as "toolboxes" are available commercially or open-source to extend
+the functionality of MATLAB.
 
 ### SimBiology
 
 MathWorks offers a specialized toolbox called SimBiology
-(<http://www.mathworks.com/products/simbiology/>, @simbiology) which offers many
+(<http://www.mathworks.com/products/simbiology/>) which offers many
 useful capabilities. SimBiology provides graphical and programmatic tools to
 model, simulate, and analyze dynamic biological systems. SimBiology also
 includes a library of common pharmacokinetic/pharmacodynamic models. Users may
@@ -1519,18 +1496,18 @@ biology.
 As a user, one of the most important aspects that is considered is the range of
 techniques that are available for analyzing a model. The purpose of building a
 model is not simply to generate a predictive tool, if that was solely the case,
-than one could probably use empirical statistical techniques or machine learning
-approaches rather than the mechanistic models discussed in this chapter. An
-additional important role of model building is to also gain a deeper
-understanding into the properties of the model and to how the
-structure of the model leads it to behave the way it does. In order to answer
-these kinds of questions one needs techniques that can interrogate the model in
-a variety of different ways.
+than one could probably use empirical statistical techniques or machine
+learning approaches rather than the mechanistic models discussed in this
+chapter. An additional important role of model building is to also gain a
+deeper understanding into the properties of the model and to how the structure
+of the model leads it to behave the way it does. In order to answer these kinds
+of questions one needs techniques that can interrogate the model in a variety
+of different ways.
 
-The list below outlines some of the most important techniques that are available
-for analyzing models. Without these techniques, a model will often be as
-difficult to understand as the real system it attempts to model; the application
-of these techniques is therefore important.
+The list below outlines some of the most important techniques that are
+available for analyzing models. Without these techniques, a model will often be
+as difficult to understand as the real system it attempts to model; the
+application of these techniques is therefore important.
 
 * * * *
 
