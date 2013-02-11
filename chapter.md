@@ -888,12 +888,19 @@ it was obtained, SED-ML is used for a detailed description of the operations
 that generate simulation results. This means SED-ML could be used for a detailed
 description of the specific operations that led to the data in SBRML. One way to
 achieve this might be the inclusion of an SED-ML container in an SBRML file in
-similar way to SBML container in ‘model’ element of SBRML [@dada2010sbrml].
+similar way to SBML container in "model" element of SBRML [@dada2010sbrml].
 
 ### Numerical Markup Language (NuML)
 
 NuML (<http://code.google.com/p/numl/>) aims to standardize the exchange of
-numerical results, and is planned to be used by SED-ML and SBRML.
+numerical results, and is planned to be used by SED-ML and SBRML. NuML is
+designed to support any type of numerical result through the powerful coupling of ontology
+terms with one or more result components. Ontology terms reference external
+resources that define the vocabulary and terms used to describe the results in
+the NuML file. The results of the NuML file contains two principle components,
+a description of the results and the results themselves. Further details can be
+found by consulting the NuML specification
+(<http://numl.googlecode.com/svn/trunk/numl-spec-l1v1.pdf>).
 
 ## Visualization
 
