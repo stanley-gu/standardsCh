@@ -43,8 +43,8 @@
 
 # Summary
 
-With the sequencing of the human genome, it has become apparent that Systems
-Biology, the understanding of cellular networks through dynamical analysis is
+With the sequencing of the human genome, it has become apparent that systems
+biology, the understanding of cellular networks through dynamical analysis is
 becoming an important part of research for mainstream biologists. One of the
 indicative trends to emerge in recent years is the development of model
 interchange standards that permit biologists to easily exchange dynamical models
@@ -160,7 +160,7 @@ Ordinary differential equations (ODEs):
 
 Deterministic hybrid:
 :   A deterministic hybrid model is one which combines a continuous
-		model (e.g ODE model) with discrete events. These models are
+		model (*e.g* ODE model) with discrete events. These models are
 		notoriously difficult to solve efficiently and require carefully
 		crafted numerical solvers. The events can occur either in the state
 		variables or parameters and can be time dependent or independent. A
@@ -185,7 +185,7 @@ Stochastic:
 :   At the molecular level concentrations are discrete, but as long as
 		the concentrations levels are sufficiently high, the continuous
 		model is perfectly adequate. When concentrations fall below
-		approximately one hundred molecules in the volume considered (e.g.
+		approximately one hundred molecules in the volume considered (*e.g.*
 		the cell or compartment) one has to consider using stochastic
 		modeling. The great disadvantage in this approach is that one
 		looses almost all the analytical methods that are available for
@@ -234,7 +234,7 @@ for most other analyses it is critical and for stiff integration methods highly
 desirable. The reason is that many numerical methods, including the stiff
 integrators, employ a measure called the Jacobian matrix as part of the
 numerical calculation. If the separation is not carried out, the Jacobian
-becomes singular and thereby rendering most analyses (e.g. steady state
+becomes singular and thereby rendering most analyses (*e.g.* steady state
 location, bifurcation analysis, certain optimization methods and sensitivity
 methods etc.) numerically unstable if not impossible. Even when carrying out
 simple time course simulations, the separation is also useful because it enables
@@ -410,21 +410,21 @@ for developing standardized digital annotations and representations.
 
 At the turn of the millennium, with the sequencing of the human genome and the
 rise of DNA microarray technologies, standards development for systems biology
-reached its first major milestone Given increasingly large and complex
-experiments, involving numerous biological samples and different experimental
-conditions, researchers within the DNA microarray quickly realized that if one
-was to make sense of the results from any analysis, a new way of storing and
-retrieving this complex information was needed. Scientists struggled to
-coordinate the outputs of different software platforms, identify the ancillary
-information needed to interpret results, and define the data necessary to enable
-reproduction of results. Through discussions between interested members of the
-community, public presentations, and workshop meetings, the Microarray Gene
-Expression Data Society (MGED) outlined the Minimum Information About a
-Microarray Experiment (MIAME) specification and Microarray Gene Expression
-Markup Language (MAGE-ML) [@brazma2001minimum;@spellman2002design]. As we will
-discuss in the following sections, in many ways, this has become the prototype
-for subsequent data annotation guidelines in systems biology
-[@quackenbush2006standardizing].
+reached its first major milestone. Given increasingly large and complex
+experiments involving numerous biological samples and different experimental
+conditions, researchers within the DNA microarray community quickly realized
+that if one was to make sense of the results from any such analysis, a new way
+of storing and retrieving this complex information was needed. Scientists
+struggled to coordinate the outputs of different software platforms, identify
+the ancillary information needed to interpret results, and define the data
+necessary to enable reproduction of results. Through discussions between
+interested members of the community, public presentations, and workshop
+meetings, the Microarray Gene Expression Data Society (MGED) outlined the
+Minimum Information About a Microarray Experiment (MIAME) specification and
+Microarray Gene Expression Markup Language (MAGE-ML)
+[@brazma2001minimum;@spellman2002design]. As we will discuss in the following
+sections, in many ways, this has become the prototype for subsequent data
+annotation guidelines in systems biology [@quackenbush2006standardizing].
 
 The early success of MIAME and its widespread adoption led to the development of
 many domain-specific extensions and variations. MIAME is now accompanied by a
@@ -450,28 +450,27 @@ standards under the same requisites, and thus ensuring that models are easily
 testable, reproducible, and comparable, the utility of quantitative modeling may
 be enhanced for the benefit of biomedical research. However, the ultimate impact
 of these standards depends on their adoption throughout the community and the
-number of software tools that are developed to facilitate its use.
+number of software tools that are developed to facilitate its use (more issues
+that we will discuss later in this chapter).
 
 The MIRIAM Guidelines are an effort to standardize the essential, minimal set of
 information that is sufficient to annotate a model in such a way as to
 facilitate its reuse. This includes the ability to identify the model itself,
 the components of which it is composed, and a means by which unambiguous
 annotation of components should be encoded. This is essential to allowing
-collaborative work by different groups, which may be geographically separated by
-vastly different locations, and facilitates model sharing and reuse by the
-general modeling community. MIRIAM can be implemented in any structured format
-used to encode computational models [@novere2005minimum].
+collaborative work between different groups, which may be geographically
+separated by vastly different locations, and facilitates model sharing and
+reuse by the general modeling community. MIRIAM can be implemented in any
+structured format used to encode computational models [@novere2005minimum].
 
-A challenge that MIRIAM faces is that encoded models in scientific
-publications or online are
-not in a standard format. And, of those that are encoded in a standard format, 
-many actually fail compliance and validation tests developed for
-the standards. Failures may occur for a variety of reasons, ranging from minor
-syntactic errors to significant conceptual problems. Further semantic
-inaccuracies may lie within the
-model structure. With models that are not
-annotated, users are faced with ambiguous reaction specifications, such as
-species 'A' and 'B' producing 'C'.
+Traditionally, a challenge that MIRIAM faces is that encoded models in
+scientific publications or online are not in a standard format. And, of those
+that are encoded in a standard format, many actually fail compliance and
+validation tests developed for the standards. Failures may occur for a variety
+of reasons, ranging from minor syntactic errors to significant conceptual
+problems. Further semantic inaccuracies may lie within the model structure.
+With models that are not annotated, users are faced with ambiguous reaction
+specifications, such as species "A" and "B" producing "C".
 
 Thus, to address these quality issues, MIRIAM comprises of the following
 guidelines:
@@ -519,25 +518,12 @@ information within a computational model, it is vague about the advanced
 numerical algorithms and modeling workflows that are used in a modern
 computational setting. Without this information on the original simulations in
 the model context were performed, reproducibility of the model results is still
-questionable. Thus, the Minimum Information About a Simulation Experiment
+uncertain. Thus, the Minimum Information About a Simulation Experiment
 (MIASE) guidelines [@waltemath2011minimum] describe the minimal set of
 information that a model description must provide regarding the implementation
 of its simulation. This includes the list of models that were used, any
 modifications that were made, simulation procedures that were applied, and how
 the raw numerical results were processed to produce the final output.
-
-The MIRIAM guidelines promote the exchange and reuse of biochemical
-computational models. However, information about a model alone is not sufficient
-to enable its efficient reuse in a computational setting. Advanced numerical
-algorithms and complex modeling workflows used in modern computational biology
-make reproduction of simulations difficult. It is therefore essential to define
-the core information necessary to perform simulations of those models. The
-Minimum Information About a Simulation Experiment (MIASE) guidelines describe
-the minimal set of information that must be provided to make the description of
-a simulation experiment available to others. It includes the list of models to
-use and their modifications, all the simulation procedures to apply and in which
-order, the processing of the raw numerical results, and the description of the
-final output.
 
 The MIASE guidelines are comprised of the following:
 
@@ -1264,7 +1250,7 @@ framework that is both platform and language independent. Its primary purpose is
 to encourage code reuse among members of the systems biology community.
 Developers can run SBW on Linux, Windows or Mac OS and can develop software in a
 variety of different languages including C/C++, Java, Delphi, FORTRAN, MATLAB,
-Perl, Python and any .NET language (e.g. Visual Basic or C#). The SBW was
+Perl, Python and any .NET language (*e.g.* Visual Basic or C#). The SBW was
 originally developed in parallel with SBML  as part of the Symbiotic Systems
 Project ERATO project at Caltech, Pasadena.
 
@@ -1392,7 +1378,7 @@ Simulation and modeling is one of the standard approaches to understanding
 complex biochemical processes. Therefore, there is a growing need for software
 tools that allow access to diverse simulation and modeling methods as well as
 support for the usage of these methods. These software libraries should be
-compatible, e.g. via file standards, platform independent and user friendly to
+compatible, *e.g.* via file standards, platform independent and user friendly to
 avoid time-consuming conversions and learning procedures. In addition, the
 software should be actively maintained and updated by its authors.
 
@@ -1675,7 +1661,7 @@ own SBML parser. In terms of other possible libraries, examples include,
 open-source Gillespie based stochastic solvers and ODE solvers. Further more,
 hybrid methods combining continuous and stochastic methods is a pressing need
 at the current time. Many biological systems interface noisy sensory apparatus
-(e.g. ligand binding to the surface of a cell membrane) to internal continuous
+(*e.g.* ligand binding to the surface of a cell membrane) to internal continuous
 analog networks [@SauroReview:2004]. In addition to the core solvers, there is
 also need for scalable analysis tools, particularly bifurcation and sensitivity
 analysis tools. On the model validation front, much remains to be done,
