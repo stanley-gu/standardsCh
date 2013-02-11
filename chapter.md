@@ -992,16 +992,17 @@ advanced graphical user interface (GUI) (Figure \ref{Figure:jarnac})
 
 ![User interface for Jarnac\label{Figure:jarnac}](images/jarnac.eps)
 
-#### Mathematical Markup Language (MML)
+#### Mathematical Modeling Language (MML)
 
 MML is a text-based format that is the primary form of model representations in
-the JSim platform [@raymond03]. Unlike SBML and CellML which are based on XML,
-MML uses its own a C-styled language for model declaration. MML models are often
-expressed generally in terms of mathematical equations -- any mixture of
-ordinary and partial differential equations, implicit equations, integrations,
-discrete events, and even external programming code, such as Java, C, or MATLAB.
-One feature that sets MML apart from other model languages is its awareness of
-physical units when run through JSim's MML compiler [@chizeck2009].
+the JSim platform [@raymond03] (discussed in Section \ref{jsim}). Unlike SBML
+and CellML which are based on XML, MML uses its own a C-styled language for
+model declaration. MML models are often expressed generally in terms of
+mathematical equations, any mixture of ordinary and partial differential
+equations, implicit equations, integrations, discrete events, and even external
+programming code, such as Java, C, or MATLAB.  One feature that sets MML apart
+from other modeling languages is its awareness of physical units when run through
+JSim's MML compiler [@chizeck2009].
 
 #### PySCeS
 
@@ -1134,6 +1135,13 @@ development. Finally, even if two users simultaneously change the same model
 file, distinct change logs allow their work to be later merged in a controlled
 manner.
 
+### JSim Repository
+
+The JSim (discussed in Section \ref{jsim}) group provides a repository of 370
+freely-accessible MML models (<http://www.physiome.org/jsim/db/>). These may be
+either downloaded to the desktop as JSim project files, or directly simulated
+in the web browser using the JSim Java applet.
+
 ### JWS Online
 
 JWS Online (<http://jjj.biochem.sun.ac.za/>) is a repository of kinetic models,
@@ -1201,27 +1209,26 @@ networks. CellDesigner supports simulation and parameter scanning through a
 selection of different simulation engines, SBML ODE Solver, COPASI, or SBW
 [@funahashi2003celldesigner;@funahashi2008celldesigner].
 
-### JSim
+### JSim \label{jsim}
 
 JSim [@raymond03] is a Java-based simulation system for building quantitative
 numeric models and  analyzing them with respect to experimental reference data.
-JSim was developed primarily for generating model solutions for use in designing
-experiments and analyzing data in physiological and biochemical studies, but its
-computational engine is general and equally applicable to  solving equations in
-physics, chemistry, and mechanics. JSim has been under development at the
-National Simulation Resource for Mass Transport and Metabolism (NSR) since 1999.
-JSim uses a model specification language, MML (for Mathematical Modeling
-Language) which supports ordinary and partial differential equations, implicit
-equations, integrals, summations, discrete events, and allows calls to external
-procedures. JSim's compiler translates MML into Java code in which the numeric
-results are calculated. Within the JSim GUI users
-adjust parameter values, initiate model runs, plot data, and perform behavioral
-analysis, sensitivity analysis, parameter optimization for curve fitting.
-Alternatively one can use JSim's command line interfaces (jsbatch and jsfim).
-JSim's capabilities are more advanced than previous NSR software systems SIMCON
-[3], for simulation control, and XSIM [4] for X-terminal operation. JSim source
-code, binaries (for Windows, Macintosh and Linux) and documentation  are
-available free for non-commercial use at <http://physiome.org/>.
+JSim was developed primarily for generating model solutions for use in
+designing experiments and analyzing data in physiological and biochemical
+studies, but its computational engine is general and equally applicable to
+solving equations in physics, chemistry, and mechanics. JSim has been under
+development at the National Simulation Resource for Mass Transport and
+Metabolism (NSR) since 1999. JSim uses a model specification language, MML
+(for Mathematical Modeling Language) which supports ordinary and partial
+differential equations, implicit equations, integrals, summations, discrete
+events, and allows calls to external procedures. JSim's compiler translates MML
+into Java code in which the numeric results are calculated. Within the JSim GUI
+users adjust parameter values, initiate model runs, plot data, and perform
+behavioral analysis, sensitivity analysis, parameter optimization for curve
+fitting. Alternatively one can use JSim's command line interfaces (jsbatch and
+jsfim). JSim source code, binaries (for Windows, Macintosh and Linux) and
+documentation  are available free for non-commercial use at
+<http://physiome.org/>.
 
 ### JDesigner
 
