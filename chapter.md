@@ -420,11 +420,11 @@ the ancillary information needed to interpret results, and define the data
 necessary to enable reproduction of results. Through discussions between
 interested members of the community, public presentations, and workshop
 meetings, the Microarray Gene Expression Data Society (MGED) outlined the
-Minimum Information About a Microarray Experiment (MIAME) specification and
-Microarray Gene Expression Markup Language (MAGE-ML)
-[@brazma2001minimum;@spellman2002design]. As we will discuss in the following
-sections, in many ways, this has become the prototype for subsequent data
-annotation guidelines in systems biology [@quackenbush2006standardizing].
+Minimum Information About a Microarray Experiment (MIAME) specification
+[@brazma2001minimum] and Microarray Gene Expression Markup Language (MAGE-ML)
+[@spellman2002design]. As we will discuss in the following sections, in many
+ways, this has become the prototype [@quackenbush2006standardizing] for
+subsequent data annotation guidelines in systems biology.
 
 The early success of MIAME and its widespread adoption led to the development of
 many domain-specific extensions and variations. MIAME is now accompanied by a
@@ -569,13 +569,13 @@ products described in protein databases.
 
 The success of the ontology approach has led to dizzying number of different
 ontologies, the sheer number which may create an obstacle to integration. OBO
-(<http://obofoundry.org>) was created in 2001 to address this issue by serving
-as an umbrella body for the developers of life-science ontologies. The key
-principles behind OBO ontologies are that they must be *open* and *orthogonal*.
-Onotologies within OBO are *open* in the sense that its usage should be
-available without any constraints or licenses, and new applications may build
-upon OBO without restriction. Ontologies within OBO are *orthogonal* such that
-vocabulary is non-overlapping with other ontologies [@smith2007obo].
+(<http://obofoundry.org>) [@smith2007obo] was created in 2001 to address this
+issue by serving as an umbrella body for the developers of life-science
+ontologies. The key principles behind OBO ontologies are that they must be
+*open* and *orthogonal*.  Onotologies within OBO are *open* in the sense that
+its usage should be available without any constraints or licenses, and new
+applications may build upon OBO without restriction. Ontologies within OBO are
+*orthogonal* such that vocabulary is non-overlapping with other ontologies.
 
 ### Model Annotations
 
