@@ -1663,28 +1663,33 @@ software is a potential solution. Examples of reusable software are extensible
 frameworks, such as SBW, and suites of open-source libraries that can carry out
 specific functionality. An example of this is libSBML which enables other
 developers to concentrate on unique features, such as graphical interface or
-simulation capability, rather than waste unnecessary effort developing their own
-SBML parser. In terms of other possible libraries, examples include, open-source
-Gillespie based stochastic solvers and ODE solvers. In both cases there is also
-the need to develop scalable and robust methods for computing the dependent and
-independent species. Further more, hybrid methods combining continuous and
-stochastic methods is a pressing need at the current time. Many biological
-systems interface noisy sensory apparatus (e.g. ligand binding to the surface of
-a cell membrane) to internal continuous analog networks [@SauroReview:2004]. In
-addition to the core solvers, there is also need for scalable analysis tools,
-particularly bifurcation and sensitivity analysis tools. On the
-model validation front, much remains to be done, particularly the relationship
-between model validation and how this can direct future experimentation. This
-leads on to the development of new methods and algorithms for analyzing the
-complex networks in particular methods should be developed to modularize large
-networks since understanding an entire network is virtually impossible without
-some recourse to a hierarchical modularization.
+simulation capability, rather than waste unnecessary effort developing their
+own SBML parser. In terms of other possible libraries, examples include,
+open-source Gillespie based stochastic solvers and ODE solvers. Further more,
+hybrid methods combining continuous and stochastic methods is a pressing need
+at the current time. Many biological systems interface noisy sensory apparatus
+(e.g. ligand binding to the surface of a cell membrane) to internal continuous
+analog networks [@SauroReview:2004]. In addition to the core solvers, there is
+also need for scalable analysis tools, particularly bifurcation and sensitivity
+analysis tools. On the model validation front, much remains to be done,
+particularly the relationship between model validation and how this can direct
+future experimentation. This leads on to the development of new methods and
+algorithms for analyzing the complex networks in particular methods should be
+developed to modularize large networks since understanding an entire network is
+virtually impossible without some recourse to a hierarchical modularization.
 
-Finally, the role of high performance computing in systems biology is still very
-novel and relatively unexplored. When done correctly, this is an extremely
-computationally intensive calculation and is an ideal candidate for large
-cluster machines. In fact, one wonders whether this is the application for
-systems biology which could benefit from grid or cloud computing.
+In conclusion, while there is certainly much to be done in this field, it is a
+very exciting time for systems biology and the role that standards and software
+platforms will play. The development of standards and their adoption in the
+community have accelerated drastically over the years. Furthermore, the
+tremendous efforts of many systems biology groups worldwide have made available
+an unprecedented number of resources and tools for building, sharing, and
+publishing models. We believe that more modular designs will accelerate the
+development of standards [@hucka2010systems], and promote the re-usability of
+models, or parts of models [@neal2012sbml]. Furthermore, recent advancements in
+cloud computing and web technologies could potentially lead to many exciting
+and novel approaches in addressing the current challenges in computational
+systems biology.
 
 # Recommended Resources
 
