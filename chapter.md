@@ -426,15 +426,15 @@ Minimum Information About a Microarray Experiment (MIAME) specification
 ways, this has become the prototype [@quackenbush2006standardizing] for
 subsequent data annotation guidelines in systems biology.
 
-The early success of MIAME and its widespread adoption led to the development of
-many domain-specific extensions and variations. MIAME is now accompanied by a
-myriad of "minimum information" reporting standards groups that cover
-practically every corner of the biomedical field [@naturebiotechnology2006]. The
-Minimum Reporting Guidelines for Biological and Biomedical Investigations
-(MIBBI) project has arisen as a comprehensive source of these reporting
-"checklists" [@taylor2008promoting]. MIBBI maintains a web-based and freely
-accessible resource for minimum information standards (<http://www.mibbi.org/>),
-providing access to existing checklists, complementary data formats, controlled
+The early success of MIAME and its widespread adoption led to the development
+of many domain-specific extensions and variations. MIAME is now accompanied by
+a myriad of "minimum information" reporting standards groups that cover
+practically every corner of the biomedical field [@naturebiotechnology2006].
+The Minimum Reporting Guidelines for Biological and Biomedical Investigations
+(MIBBI) [@taylor2008promoting] project has arisen as a comprehensive source of
+these reporting "checklists". MIBBI maintains a web-based and freely accessible
+resource for minimum information standards (<http://www.mibbi.org/>), providing
+access to existing checklists, complementary data formats, controlled
 vocabularies, tools, and databases. This resource thereby enhances both
 transparency and accessibility of experimental results to the wider bioscience
 community.
@@ -507,9 +507,9 @@ model representation with the reference description of the model.
 While the MIRIAM guidelines promote the inclusion of many crucial pieces of
 information within a computational model, it is vague about the advanced
 numerical algorithms and modeling workflows that are used in a modern
-computational setting. Without this information on the original simulations in
-the model context were performed, reproducibility of the model results is still
-uncertain. Thus, the Minimum Information About a Simulation Experiment
+computational setting. Without this information on the model context in which
+the original simulations were performed, reproducibility of the model results
+is still ambiguous. Thus, the Minimum Information About a Simulation Experiment
 (MIASE) guidelines [@waltemath2011minimum] describe the minimal set of
 information that a model description must provide regarding the implementation
 of its simulation. This includes the list of models that were used, any
@@ -571,9 +571,9 @@ The success of the ontology approach has led to dizzying number of different
 ontologies, the sheer number which may create an obstacle to integration. OBO
 (<http://obofoundry.org>) [@smith2007obo] was created in 2001 to address this
 issue by serving as an umbrella body for the developers of life-science
-ontologies. The key principles behind OBO [@smith2007obo] ontologies are that they must be
-*open* and *orthogonal*.  Onotologies within OBO are *open* in the sense that
-its usage should be available without any constraints or licenses, and new
+ontologies. The key principles behind OBO [@smith2007obo] ontologies are that
+they must be *open* and *orthogonal*. Onotologies within OBO are *open* in the
+sense that its usage should be available without any constraints, and new
 applications may build upon OBO without restriction. Ontologies within OBO are
 *orthogonal* such that vocabulary is non-overlapping with other ontologies.
 
@@ -586,44 +586,45 @@ and controlled vocabularies used for annotating them.
 
 #### Model Metadata
 
-In the model metadata, the information about the model itself, a number of
-different ontologies may be used to inform what the model describes. In
-biological pathway models, Reactome 
-(<http://www.reactome.org/ReactomeGWT/entrypoint.html>) [@joshi2005reactome]
-and KEGG Pathway (<http://www.genome.jp/kegg/>) [@ogata1999kegg] are
-comprehensive, human-curated, pathway databases that are often referenced
-Information regarding the taxonomy of the biological pathway can be referenced
-in the UniProt Taxonomy database (<http://www.uniprot.org/>)
+In the model metadata, the information for what the model is describing, a
+number of different ontologies may be used. In biological pathway models,
+Reactome (<http://www.reactome.org/ReactomeGWT/entrypoint.html>)
+[@joshi2005reactome] and KEGG Pathway (<http://www.genome.jp/kegg/>)
+[@ogata1999kegg] are comprehensive, human-curated, pathway databases that are
+often referenced. Information regarding the taxonomy of the biological pathway
+can be referenced in the UniProt Taxonomy database (<http://www.uniprot.org/>)
 [@bairoch2005universal].
 
 #### Mathematics
 
 When describing the mathematics in a model, the Systems Biology Onotology (SBO)
-(<http://www.ebi.ac.uk/sbo/main/>) is a recently developed vocabulary used for
-specifying the roles of biochemical species, parameters, kinetic laws, and other
-model components in relation to a systems biology model. For instance, SBO
-annotations can denote the substrate, products, and Michaelis-Menten constant in
-a model [@le2006model]. GO and Reactome may also be used to describe what
-biological process a kinetic rate law is describing.
+(<http://www.ebi.ac.uk/sbo/main/>) [@le2006model] is a recently developed
+vocabulary used for specifying the roles of biochemical species, parameters,
+kinetic laws, and other model components in relation to a systems biology
+model. For instance, SBO annotations can denote the substrate, products, and
+Michaelis-Menten constant in a model. GO and Reactome may also be used to
+describe what biological process a kinetic rate law is describing.
 
 #### Physical Entities
 
 When it comes to describing the biophysical constituents, or species, in a
-model, a number of different ontologies can be referenced. GO and UniProt may be
-referenced for proteins, and KEGG and ChEBI (<http://www.ebi.ac.uk/chebi/>)
-[@degtyarenko2008chebi] may be used for small molecules and chemical compounds
-that are related to biological processes.
+model, several different ontologies can be referenced, sometimes in
+combination. GO and UniProt are often referenced for annotating proteins, and
+KEGG and ChEBI (<http://www.ebi.ac.uk/chebi/>) [@degtyarenko2008chebi] may be
+used for annotating small molecules and chemical compounds that are related to
+biological processes.
 
 ### Simulation Experiment Annotations
 
 Ontologies for describing simulation procedure and numerical results are
-relatively newer than model annotations, and is currently an active field of
-work and new changes. The Kinetic Simulation of Algorithm Ontology (KiSAO)
-(<http://biomodels.net/kisao/>) is currently being developed to describe the
-precise numerical steps and procedures taken in a simulation experiment. When
-looking at the numerical output of a simulation experiment, the Terminology for
-the Description of Dynamics (TEDDY) (<http://www.ebi.ac.uk/compneur-srv/teddy/>)
-is being designed to describe dynamical behavior [@courtot2011controlled].
+relatively newer than the previously described model annotations, and is
+currently an active field of work and new changes. The Kinetic Simulation of
+Algorithm Ontology (KiSAO) (<http://biomodels.net/kisao/>) is currently being
+developed to describe the precise numerical steps and procedures taken in a
+simulation experiment. When looking at the numerical output of a simulation
+experiment, the Terminology for the Description of Dynamics (TEDDY)
+(<http://www.ebi.ac.uk/compneur-srv/teddy/>) [@courtot2011controlled] is being
+designed to describe the observed dynamical behavior in a simulation.
 
 ## Physiological Models
 
@@ -635,12 +636,12 @@ standards useful?
 Over the years, there has been an ever increasing list of wide ranging cellular
 models published in the literature. For most of scientific publishing history,
 each author has a particular notation that they use to publish the model. Some
-authors will publish the model as a reaction scheme, see the example in Section
-\ref{scheme}, much like the notation given in scheme. Others will itemize the
+authors will publish the model as a reaction scheme (see the example in Section
+\ref{scheme}), much like the notation given in scheme. Others will itemize the
 actual mathematical representation in the form of a list of differential
-equations.  Some authors do not publish the model at all but provide the model
-as supplementary information.  Until recently, there has been no way to publish
-models in a standard format.  Without a standard format it has proved very
+equations. Some authors do not publish the model at all but provide the model
+as supplementary information. Until recently, there has been no way to publish
+models in a standard format. Without a standard format it has proved very
 difficult if not impossible in many cases to implement and use published models
 without considerable effort.
 
@@ -713,8 +714,8 @@ values and general math which for one reason or another cannot be transformed
 into a chemical scheme. Like CellML, the dependent and independent species are
 implied.
 
-The development of SBML is stratified in order to organize architectural changes
-and versioning. Major editions of SBML are termed Levels and represent
+The development of SBML is stratified in order to organize architectural
+changes and versioning. Major editions of SBML are termed Levels and represent
 substantial changes to the composition and structure of the language. Models
 defined in lower Levels of SBML can always be represented in higher Levels,
 though some translation may be necessary. The converse (from higher Level to
@@ -731,7 +732,7 @@ a given SBML specification.
 It was realized early on by the authors of SBML that as systems biology
 developed there would be pressure from the community to make additional
 functionality available in SBML. To address this issue, SBML has a formal means
-for adding extensions in the form of *annotations*. There now exist
+for adding extensions in the form of annotations. There now exist
 a number of annotations that are used by software developers. Some of these
 address issues such as providing visualization information to allow software
 tools to render the model in some meaningful way (two examples of these will be
@@ -778,27 +779,28 @@ to a number of different languages, for maximum portability.
 Whereas CellML is very general, SBML is more specific, as result, the storage
 requirement for SBML is much less. It takes on average roughly 1.5 kilobytes to
 store a single chemical transformation in SBML Level 2 (compared to 5 kilobytes
-for CellML). Interestingly it only takes roughly 50 to 100 bytes to store single
-transformations in raw binary format where there is minimal extraneous syntax.
-Some readers may feel that with todays cheap storage technologies, that
-discussions on storage requirements is unnecessary. Indeed for small models it
-is not an issue.  However, in future very large models are likely to be
-developed. There is, for example a serious attempt (<www.physiome.org>) now
-underway to model in the long term entire organs and even whole organisms. The
-amount of information in these cases is huge and the question of efficient
-storage is not so trivial. Obviously XML is highly compressible and large models
-can be stored in this way. However, inefficient storage also increases the time
-taken to manipulate the models. Furthermore, in a modeling environment, model
-authors tend to generate hundreds of variants while developing the model. For a
-large model this clearly would generate huge amounts of XML based data. One of
-the things that has yet to be addressed by either standard is the how model
-variants can be efficiently stored.
+for CellML). Interestingly it only takes roughly 50 to 100 bytes to store
+single transformations in raw binary format where there is minimal extraneous
+syntax.  Some readers may feel that with todays cheap storage technologies,
+that discussions on storage requirements is unnecessary. Indeed for small
+models it is not an issue.  However, in future very large models are likely to
+be developed. There is, for example a serious attempt
+(<http://www.physiome.org>) now underway to model in the long term entire
+organs and even whole organisms. The amount of information in these cases is
+huge and the question of efficient storage is not so trivial. Obviously XML is
+highly compressible and large models can be stored in this way. However,
+inefficient storage also increases the time taken to manipulate the models.
+Furthermore, in a modeling environment, model authors tend to generate hundreds
+of variants while developing the model. For a large model this clearly would
+generate huge amounts of XML based data. One of the things that has yet to be
+addressed by either standard is the how model variants can be efficiently
+stored.
 
 #### Usage
 
 Both SBML and CellML have been taken up by many software developers and
 implemented in their software. Over the past decade, SBML has become the *de
-facto* standard for systems biology models. As of this writing, 251 different
+facto* standard for systems biology models. As December 2012, 251 different
 software packages are officially listed on the SBML Software Guide
 (<http://sbml.org/SBML_Software_Guide>). In addition, SBML is the official model
 interchange format for the SBW project (<http://sys-bio.org/>), the
@@ -807,8 +809,8 @@ international *E. coli* alliance, and the receptor tyrosine kinase consortium.
 ### NeuroML
 
 Paralleling efforts in SBML and CellML in molecular pathway and cell physiology
-modeling, NeuroML [@goddard:2001] provides a common data format for defining and exchanging
-descriptions of neuronal cell networks. Level 1 (MorphML), Level
+modeling, NeuroML [@goddard:2001] provides a common data format for defining
+and exchanging descriptions of neuronal cell networks. Level 1 (MorphML), Level
 2 (ChannelML), and Level 3 (NetworkML) describe neuronal systems to different
 levels of biological granularity.
 
@@ -816,12 +818,12 @@ A number of software of packages are written to work with NeuroML,  NEURON
 [@carnevale2006neuron], GENESIS [@bower1995book], MOOSE [@ray2008pymoose], NEST
 [@diesmann2001nest], and PSICS [@cannon2010stochastic]. These different
 environments were successfully able to reproduce the same model simulation
-(including a reconstruction of the 3D structure of a neural pathway), using
-NeuroML as the exchange format [@gleeson2010].
+(including a reconstruction of the 3D structure of a neural pathway)
+[@gleeson2010], using NeuroML as the exchange format.
 
-There are recent efforts to convert NeuroML into SBML [@keating2012encoding],
-which may allow NeuroML models and modelers access to the vast library of SBML
-compliant software tools.
+There are also recent efforts to convert NeuroML into SBML
+[@keating2012encoding], which may allow NeuroML models and modelers access to
+the vast library of SBML compliant software tools.
 
 ## Simulation
 
@@ -840,33 +842,23 @@ storage and exchange of part of the information required to implement the MIASE
 guidelines.  It covers information about the simulation settings, including
 information about the models, changes on them, simulation settings applied to
 the models and output definitions. SED-ML is independent of the formats used to
-encode the models  as long as they are expressed in XML, and it is independent
-of the software tools used to run the simulations. Several test implementations
-are being developed to benchmark SED-ML on simple cases, and pave the way to a
-more complete support of MIASE. The share and reuse of biochemical models have
-become two of the main issues in the field of Computational Systems Biology.
-The community believes that providing detailed information about simulation
-recipes will highly improve the efficient use of existing models, encoded in
-widely accept formats of model structure, such as SBML and CellML.
+encode the models as long as they are expressed in XML, and it is independent
+of the software tools used to run the simulations.  The community believes that
+providing detailed information about simulation recipes will highly improve the
+efficient use of existing models, encoded in widely accept formats of model
+structure, such as SBML and CellML.
 
 ### Systems Biology Results Markup Language (SBRML)
 
-SBRML (<http://www.comp-sys-bio.org/SBRML>) [@dada2010sbrml] is an XML-based
-language that associates a model with several datasets. Each dataset is
-represented as a series of values associated with model variables, and their
-corresponding parameter values. SBRML provides a flexible way of indexing the
-results to model parameter values, which supports both spreadsheet-like data
-and multidimensional data cubes. SBRML may be used in applications such as
-enzyme kinetics, microarray gene expression and various types of simulation
-results.
-
-SBRML and SED-ML are also complementary. While the main purpose of SBRML is to
-encode the simulation results and/or experimental data and all context in which
-it was obtained, SED-ML is used for a detailed description of the operations
-that generate simulation results. This means SED-ML could be used for a
-detailed description of the specific operations that led to the data in SBRML.
-One way to achieve this might be the inclusion of an SED-ML container in an
-SBRML file in similar way to SBML container in "model" element of SBRML.
+SBRML (<http://www.comp-sys-bio.org/SBRML>) [@dada2010sbrml] is another
+standardization effort that essentially associates a model with one or more
+datasets. Each dataset is represented as a series of values associated with the
+model variables. SBRML and SED-ML are complementary. While the main purpose of
+SBRML is to encode the simulation results, or even experimental data and the
+context in which it was obtained, SED-ML is used as a more detailed description
+of the operations that generate simulation results.  This means that a SED-ML
+document can be used to describe the specific operations that led to the data
+contained in an SBRML document 
 
 ### Numerical Markup Language (NuML)
 
