@@ -151,7 +151,7 @@ Boolean:
 		been used to model gene networks.
 
 Ordinary differential equations (ODEs):
-:   This is the commonest and arguably most useful representation.
+:   This is the most common and arguably most useful representation.
 		Although based on a continuum model, ODE models have proved to be
 		excellent descriptions of many biological systems. Another advantage
 		to using ODEs is the wide range of analytical and numerical methods
@@ -571,7 +571,7 @@ The success of the ontology approach has led to dizzying number of different
 ontologies, the sheer number which may create an obstacle to integration. OBO
 (<http://obofoundry.org>) [@smith2007obo] was created in 2001 to address this
 issue by serving as an umbrella body for the developers of life-science
-ontologies. The key principles behind OBO ontologies are that they must be
+ontologies. The key principles behind OBO [@smith2007obo] ontologies are that they must be
 *open* and *orthogonal*.  Onotologies within OBO are *open* in the sense that
 its usage should be available without any constraints or licenses, and new
 applications may build upon OBO without restriction. Ontologies within OBO are
@@ -682,9 +682,10 @@ that each reaction in a model requires about 5 kilobytes of storage.
 Owing to the complexity of CellML, one unfortunate side effect is that there are
 substantially fewer tools which can read and write CellML compared to SBML. The
 CellML team (<http://cellml.sourceforge.net/>) also provides their own software
-tools to third-party developers, including the CellML API 
-(<http://cellml-api.sourceforge.net/>), which is a library much like libSBML 
-that allows software developers to read and write CellML models.
+tools to third-party developers, including the CellML API
+(<http://cellml-api.sourceforge.net/>), which is a library much like libSBML
+(discussed later in Section \ref{libsbml}) that allows software developers to
+read and write CellML models.
 
 ### Systems Biology Markup Language (SBML)
 
@@ -742,22 +743,22 @@ permits the most important and popular requests to be made part of SBML. It
 makes the process of SBML evolution more transparent and permits users to be
 more involved in the development of SBML.
 
-The latest generation of SBML, which is Level 3, is modular in the sense of
-having a defined core set of features and optional packages adding features on
-top of the core
-(<http://sbml.org/Documents/Specifications#SBML_Level_3_Packages>). This
-modular approach means that models can declare which feature-sets they use, and
+The current generation of SBML, Level 3
+(<http://sbml.org/Documents/Specifications#SBML_Level_3_Packages>)
+[@hucka2010systems], is modular in the sense of having a defined core set of
+features and optional packages adding features on top of the core. This modular
+approach means that models can declare which feature-sets they use, and
 likewise, software tools can declare which packages they support. It also means
-that the development of SBML Level 3 can proceed in a modular fashion. The
-development process for Level 3 is designed around this concept. SBML Level 3
-package development is today an ongoing activity, with packages being created to
-extend SBML in many areas that its core functionality does not directly support.
+that the development of SBML Level 3 can proceed in a concurrent manner, where
+each module is developed relatively independently. SBML Level 3 package
+development is today an ongoing activity, with packages being created to extend
+SBML in many areas that its core functionality does not directly support.
 Examples include models whose species have structure and/or state variables,
 models with spatially non-homogeneous compartments and spatially dependent
 processes, and models in which species and processes refer to qualitative
-entities and processes rather than quantitative ones [@hucka2010systems].
+entities and processes rather than quantitative ones.
 
-#### SBML Development Tools
+#### SBML Development Tools \label{libsbml}
 
 Early on in the development of SBML, the original authors decided to provide
 software tools almost immediately for the community. Since XML at the time was
@@ -769,7 +770,7 @@ be Windows users. Today this library is still used by a number of tools
 including Gepasi, Jarnac and JDesigner (discussed later). With the growing
 popularity of SBML, the community has since developed a comprehensive cross
 platform tool libSBML (<http://sbml.sourceforge.org>) which is now the
-recommended SBML toolkit to use . LibSBML was developed in C/C++, with bindings
+recommended SBML toolkit to use. LibSBML was developed in C/C++, with bindings
 to a number of different languages, for maximum portability.
 
 #### Practical Considerations
@@ -806,8 +807,8 @@ international *E. coli* alliance, and the receptor tyrosine kinase consortium.
 ### NeuroML
 
 Paralleling efforts in SBML and CellML in molecular pathway and cell physiology
-modeling, NeuroML provides a common data format for defining and exchanging
-descriptions of neuronal cell networks [@goddard:2001]. Level 1 (MorphML), Level
+modeling, NeuroML [@goddard:2001] provides a common data format for defining and exchanging
+descriptions of neuronal cell networks. Level 1 (MorphML), Level
 2 (ChannelML), and Level 3 (NetworkML) describe neuronal systems to different
 levels of biological granularity.
 
@@ -818,9 +819,9 @@ environments were successfully able to reproduce the same model simulation
 (including a reconstruction of the 3D structure of a neural pathway), using
 NeuroML as the exchange format [@gleeson2010].
 
-There are recent efforts to convert NeuroML into SBML, which may allow NeuroML
-models and modelers access to the vast library of SBML compliant software tools
-[@keating2012encoding].
+There are recent efforts to convert NeuroML into SBML [@keating2012encoding],
+which may allow NeuroML models and modelers access to the vast library of SBML
+compliant software tools.
 
 ## Simulation
 
@@ -834,48 +835,49 @@ sharing of simulation experimental procedures and results
 
 ### Simulation Experiment Description Markup Language (SED-ML)
 
-SED-ML (<http://sed-ml.org/>) is an XML format that enables the storage and
-exchange of part of the information required to implement the MIASE guidelines.
-It covers information about the simulation settings, including information about
-the models, changes on them, simulation settings applied to the models and
-output definitions. SED- ML is independent of the formats used to encode the
-models  as long as they are expressed in XML, and it is independent of the
-software tools used to run the simulations. Several test implementations are
-being developed to benchmark SED- ML on simple cases, and pave the way to a more
-complete support of MIASE [@kohn2008sed]. The share and reuse of biochemical
-models have become two of the main issues in the field of Computational Systems
-Biology. The community believes that providing detailed information about
-simulation recipes will highly improve the efficient use of existing models,
-encoded in widely accept formats of model structure, such as SBML and CellML.
+SED-ML (<http://sed-ml.org/>) [@kohn2008sed] is an XML format that enables the
+storage and exchange of part of the information required to implement the MIASE
+guidelines.  It covers information about the simulation settings, including
+information about the models, changes on them, simulation settings applied to
+the models and output definitions. SED-ML is independent of the formats used to
+encode the models  as long as they are expressed in XML, and it is independent
+of the software tools used to run the simulations. Several test implementations
+are being developed to benchmark SED-ML on simple cases, and pave the way to a
+more complete support of MIASE. The share and reuse of biochemical models have
+become two of the main issues in the field of Computational Systems Biology.
+The community believes that providing detailed information about simulation
+recipes will highly improve the efficient use of existing models, encoded in
+widely accept formats of model structure, such as SBML and CellML.
 
 ### Systems Biology Results Markup Language (SBRML)
 
-SBRML (<http://www.comp-sys-bio.org/SBRML>) is an XML-based language that
-associates a model with several datasets. Each dataset is represented as a
-series of values associated with model variables, and their corresponding
-parameter values. SBRML provides a flexible way of indexing the results to model
-parameter values, which supports both spreadsheet-like data and multidimensional
-data cubes. SBRML may be used in applications such as enzyme kinetics,
-microarray gene expression and various types of simulation results.
+SBRML (<http://www.comp-sys-bio.org/SBRML>) [@dada2010sbrml] is an XML-based
+language that associates a model with several datasets. Each dataset is
+represented as a series of values associated with model variables, and their
+corresponding parameter values. SBRML provides a flexible way of indexing the
+results to model parameter values, which supports both spreadsheet-like data
+and multidimensional data cubes. SBRML may be used in applications such as
+enzyme kinetics, microarray gene expression and various types of simulation
+results.
 
 SBRML and SED-ML are also complementary. While the main purpose of SBRML is to
 encode the simulation results and/or experimental data and all context in which
 it was obtained, SED-ML is used for a detailed description of the operations
-that generate simulation results. This means SED-ML could be used for a detailed
-description of the specific operations that led to the data in SBRML. One way to
-achieve this might be the inclusion of an SED-ML container in an SBRML file in
-similar way to SBML container in "model" element of SBRML [@dada2010sbrml].
+that generate simulation results. This means SED-ML could be used for a
+detailed description of the specific operations that led to the data in SBRML.
+One way to achieve this might be the inclusion of an SED-ML container in an
+SBRML file in similar way to SBML container in "model" element of SBRML.
 
 ### Numerical Markup Language (NuML)
 
 NuML (<http://code.google.com/p/numl/>) aims to standardize the exchange of
 numerical results, and is planned to be used by SED-ML and SBRML. NuML is
-designed to support any type of numerical result through the powerful coupling of ontology
-terms with one or more result components. Ontology terms reference external
-resources that define the vocabulary and terms used to describe the results in
-the NuML file. The results of the NuML file contains two principle components,
-a description of the results and the results themselves. Further details can be
-found by consulting the NuML specification
+designed to support any type of numerical result through the powerful coupling
+of ontology terms with one or more result components. Ontology terms reference
+external resources that define the vocabulary and terms used to describe the
+results in the NuML file. The results of the NuML file contains two principle
+components, a description of the results and the results themselves. Further
+details can be found by consulting the NuML specification
 (<http://numl.googlecode.com/svn/trunk/numl-spec-l1v1.pdf>).
 
 ## Visualization
@@ -903,15 +905,16 @@ be discussed later in this chapter, implemented this proposed format.
 
 ### Systems Biology Graphical Notation (SBGN)
 
-SBGN (<http://www.sbgn.org/>) has arisen in recent years as one of the most
-widely supported and comprehensive visual languages, developed by a community of
-biochemists, modelers and computer scientists [@le2009systems]. SBGN consists of
-three complementary languages: process diagram, entity relationship diagram and
-activity flow diagram. Together they enable scientists to represent networks of
-biochemical interactions in a standard, unambiguous way. The success of SBGN
-will foster efficient and accurate representation, visualization, storage,
-exchange and reuse of information on all kinds of biological knowledge, from
-gene regulation, to metabolism, to cellular signaling.
+SBGN (<http://www.sbgn.org/>) [@le2009systems] has arisen in recent years as
+one of the most widely supported and comprehensive visual languages, developed
+by a community of biochemists, modelers and computer scientists. SBGN consists
+of three complementary languages: process diagram, entity relationship diagram
+and activity flow diagram. Together they enable scientists to represent
+networks of biochemical interactions in a standard, unambiguous way. The
+success of SBGN will foster efficient and accurate representation,
+visualization, storage, exchange and reuse of information on all kinds of
+biological knowledge, from gene regulation, to metabolism, to cellular
+signaling.
 
 SBGN defines three orthogonal and complementary types of diagrams that can be
 seen as three alternative projections of the underlying more complex biological
@@ -926,23 +929,22 @@ literature to describe signaling pathways and gene regulatory networks.
 
 SBGN only defines how biological information should be visualized, but not how
 the mapping should be stored electronically. SBGN-ML
-(<http://www.sbgn.org/LibSBGN/Exchange_Format>) is a dedicated file format to
-allow the efficient integration of SBGN into the research workflow
-[@le2010report]. Thus, SBGN-ML can be used to store and transfer the information
+(<http://www.sbgn.org/LibSBGN/Exchange_Format>) [@le2010report] is a dedicated
+file format to allow the efficient integration of SBGN into the research
+workflow. Thus, SBGN-ML can be used to store and transfer the information
 necessary for software to faithfully render the corresponding SBGN map. The
 software library libSBGN (<http://www.sbgn.org/SBGN_Software/LibSBGN>)
-complements the file format. It consists of two parallel implementations in Java
-and C++, which can be easily translated to different programming languages
-[@van2012software].
+complements the file format. It consists of two parallel implementations
+[@van2012software] in Java and C++, which can be easily translated to different
+programming languages.
 
 The plugin cySBGN
-[<http://www.ebi.ac.uk/saezrodriguez/cysbgn/>,@goncalves2013cysbgn], through use
+(<http://www.ebi.ac.uk/saezrodriguez/cysbgn/>) [@goncalves2013cysbgn], through use
 of libSBGN and SBGN-ML allows SBGN diagrams to be imported, modified, and
 analyzed within Cytoscape (<http://www.cytoscape.org/>), a popular network
-visualizer. Coupled with the cySBML
-[<http://sourceforge.net/projects/cysbml/>,@konig2012cysbml] plugin, which
-allows SBML models to be imported into Cytoscape, SBGN maps can be generated
-from SBML models directly.
+visualizer. Coupled with the cySBML (<http://sourceforge.net/projects/cysbml/>)
+[@konig2012cysbml] plugin, which allows SBML models to be imported into
+Cytoscape, SBGN maps can be generated from SBML models directly.
 
 ## Other Standards
 
@@ -1013,15 +1015,15 @@ software.
 
 ### Biological Pathway Exchange (BioPAX)
 
-BioPAX (<http://www.biopax.org/>) is another proposed standard based on XML.
+BioPAX (<http://www.biopax.org/>) [@demir2010biopax]
+[@stromback2005representations] is another proposed standard based on XML.
 BioPAX aims to integrate many of the incompatible pathway related databases
-(such as BioCYC, BIND, WIT, aMAZE, KEGG and others) so that data from any one of
-these databases can be easily interchanged. In future it should be possible to
-extract data from many of the pathway databases and integrate the data directly
-into SBML (or CellML) via BioPAX. The BioPAX group proposes to embed BioPAX
-elements onto SBML or cellML for unambiguous identification of substances
-(metabolites, enzymes) and reactions
-[@demir2010biopax;@stromback2005representations]. However, it is possible for to
+(such as BioCYC, BIND, WIT, aMAZE, KEGG and others) so that data from any one
+of these databases can be easily interchanged. In future it should be possible
+to extract data from many of the pathway databases and integrate the data
+directly into SBML (or CellML) via BioPAX. The BioPAX group proposes to embed
+BioPAX elements onto SBML or cellML for unambiguous identification of
+substances (metabolites, enzymes) and reactions. However, it is possible for to
 convert, or map, from SBML to BioPAX (
 <http://www.ebi.ac.uk/compneur-srv/sbml/converters/SBMLtoBioPax.html>).
 
@@ -1040,33 +1042,33 @@ publication process.
 
 ### BioModels
 
-BioModels Database (<http://www.ebi.ac.uk/biomodels/>) is one largest open-
-access databases in systems biology. Part of the international initiative
-BioModels.net, BioModels provides access to peer-reviewed and published models
-[@le2006biomodels]. Each model is manually curated by the database maintainers
-to verify that it corresponds to the reference publication and gives the
-expected numerical results. Curators also annotate the components of the models
-with terms from controlled vocabularies (Taxonomy, Gene Ontology, ChEBI, etc.)
-and links to other databases (UniProt, KEGG, Reactome, etc.). This annotation is
-a crucial feature of BioModels Database in that it permits the unambiguous
-identification of molecular species or reactions and enables effective search
-algorithms. As of December 2012, the database contains 142,973 models,
-comprising of 923 models published in literature, of which roughly half are
-manually curated by BioModels, and 142,050 models automatically generated from
-the Path2Models project (<http://code.google.com/p/path2models/>), an effort
-aimed at automatically converting biological pathway databases (such as KEGG)
-into corresponding SBML models 
+BioModels Database (<http://www.ebi.ac.uk/biomodels/>) [@le2006biomodels] is
+one largest open- access databases in systems biology. Part of the
+international initiative BioModels.net, BioModels provides access to
+peer-reviewed and published models. Each model is manually curated by the
+database maintainers to verify that it corresponds to the reference publication
+and gives the expected numerical results. Curators also annotate the components
+of the models with terms from controlled vocabularies (Taxonomy, Gene Ontology,
+ChEBI, etc.) and links to other databases (UniProt, KEGG, Reactome, etc.). This
+annotation is a crucial feature of BioModels Database in that it permits the
+unambiguous identification of molecular species or reactions and enables
+effective search algorithms. As of December 2012, the database contains 142,973
+models, comprising of 923 models published in literature, of which roughly half
+are manually curated by BioModels, and 142,050 models automatically generated
+from the Path2Models project (<http://code.google.com/p/path2models/>), an
+effort aimed at automatically converting biological pathway databases (such as
+KEGG) into corresponding SBML models 
 
 ### CellML Repository
 
-The CellML Model Repository (<http://www.cellml.org/models>) is a similar
-effort, which contains hundreds of biochemical pathway models that have been
-described in peer- review publications.[@beard2009cellml]. CellML and the CellML
-Model Repository are part of the IUPS Physiome Project effort to create a
-virtual physiological human [@hunter2005integration]. The explicit
+The CellML Model Repository (<http://www.cellml.org/models>) [@lloyd2008cellml]
+is a similar effort, which contains hundreds of biochemical pathway models that
+have been described in peer- review publications.[@beard2009cellml]. CellML and
+the CellML Model Repository are part of the IUPS Physiome Project effort to
+create a virtual physiological human [@hunter2005integration]. The explicit
 representation of modularity, together with the flexible nature of the CellML
 language which allows the description of a diverse range of cellular and
-subcellular systems [@lloyd2008cellml].
+subcellular systems.
 
 The CellML Model Repository contains over 330 freely available, quantitative
 models of biological processes taken from the peer-reviewed literature. In
@@ -1095,7 +1097,7 @@ indexed and presented so that it can be easily searched for and viewed, thereby
 avoiding unnecessary duplication of modeling efforts. Since it was not possible
 to extend the original repository software to support these more advanced usage
 requirements, a complete rewrite was required, and the Physiome Model Repository
-2 (PMR2) was created [@yu2011physiome].
+2 (PMR2) [@yu2011physiome] was created.
 
 Workspaces, distributed version control systems and model revision history All
 the files related to a particular model are stored together in PMR2 within a
@@ -1168,7 +1170,7 @@ distinguishing feature among them is how easy they are to install and use. The
 more mature applications tend to be easier to install and have a much richer
 repertoire of functionality. Many of the applications are simple wrappers around
 standard ODE or Gillespie solvers and provide a simple means to load models and
-run time courses.  Some of the applications fall by the wayside because the
+run time courses. Some of the applications fall by the wayside because the
 author has lost interest or funding has stopped. It is important therefore that
 what ever tool one uses, that the ability to export and import a recognized
 standard (or at least a documented format) such as SBML and/or CellML be
@@ -1176,14 +1178,14 @@ available.
 
 ### CellDesigner
 
-CellDesigner (<http://www.celldesigner.org/>) is a structured diagram editor for
-drawing gene-regulatory and biochemical networks. Networks are drawn based on
-the process diagram, with graphical notation system that influenced the
-development of SBGN, and are stored using the Systems Biology Markup Language
-(SBML), a standard for representing models of biochemical and gene-regulatory
-networks. CellDesigner supports simulation and parameter scanning through a
-selection of different simulation engines, SBML ODE Solver, COPASI, or SBW
-[@funahashi2003celldesigner;@funahashi2008celldesigner].
+CellDesigner (<http://www.celldesigner.org/>) [@funahashi2003celldesigner]
+[@funahashi2008celldesigner] is a structured diagram editor for drawing
+gene-regulatory and biochemical networks. Networks are drawn based on the
+process diagram, with graphical notation system that influenced the development
+of SBGN, and are stored using the Systems Biology Markup Language (SBML), a
+standard for representing models of biochemical and gene-regulatory networks.
+CellDesigner supports simulation and parameter scanning through a selection of
+different simulation engines, SBML ODE Solver, COPASI, or SBW.
 
 ### JSim \label{jsim}
 
@@ -1217,7 +1219,7 @@ can use Jarnac's extensive simulation capabilities (both ODE and stochastic) via
 SBW.
 
 Both JDesigner and Jarnac are open source, and available on Windows
-[@sauro:2000; @Sauro:Omics].
+[@sauro:2000] [@Sauro:Omics].
 
 ![Example of JDesigner's visual
 format\label{Figure:jdesigner}](images/JDesigner1.eps)
@@ -1254,16 +1256,6 @@ exploit resources provided by other modules; this dramatically improves
 productivity by allowing developers to build on existing tools rather than
 continuously reinvent.
 
-![The Systems Biology Workbench (SBW) is a dynamic open-source distributed
-system. Client modules can attach and detach at runtime.  Client modules can be
-written in a variety of languages, including, C/C++, Java, Delphi, FORTRAN,
-Python, Perl, MATLAB, any .NET language.  Data is exchanged between modules via
-binary messages which can include any combination of bytes, integers, floating
-point, complex numbers, strings, arrays and lists.  Currently the available
-modules include, simulators, model editors, SBML manipulation, math library,
-frequency analyzer, bifurcation discover and analysis modules, structural
-analysis modules and others.
-
 An SBW module (the client) provides one or more interfaces or services.  Each
 service provides one or more methods. Modules register the services they provide
 with the SBW Broker. The module optionally places each service it provides into
@@ -1278,22 +1270,22 @@ any SBW module.
 
 ### VCell
 
-The Virtual Cell (VCell; <http://vcell.org/>) is a client/server based tool that
-specializes in three-dimensional whole cell simulations
-[@VCELL][@moraru2008virtual]. It is unique in that it provides a framework for
-not only modeling biochemical networks but also electrophysiological, and
-transport phenomena while at the same time considering the subcellular
-localization of the molecules that take part in them. This localization can take
-the form of a three-dimensional arbitrarily shaped cell, where the molecular
-species might be heterogeneously distributed. In addition, the geometry of the
-cell, including the locations and shapes of subcellular organelles, can be
-imported directly from microscope images. VCell is written in Java but has
-numerical analysis carried out by C/C++ and FORTRAN coded software to improve
-performance. Currently, modeling must be carried out using the client/server
-model which necessitates a connection to the internet. In addition models are
-generally stored on the VCell remote server rather than the clients desktop.
-This operating model is not always agreeable to users and as a result the VCell
-team are reorganizing the software so that it can also be run as a stand-alone
+The Virtual Cell (VCell; <http://vcell.org/>) [@VCELL] [@moraru2008virtual] is
+a client/server based tool that specializes in three-dimensional whole cell
+simulations. It is unique in that it provides a framework for not only modeling
+biochemical networks but also electrophysiological, and transport phenomena
+while at the same time considering the subcellular localization of the
+molecules that take part in them. This localization can take the form of a
+three-dimensional arbitrarily shaped cell, where the molecular species might be
+heterogeneously distributed. In addition, the geometry of the cell, including
+the locations and shapes of subcellular organelles, can be imported directly
+from microscope images. VCell is written in Java but has numerical analysis
+carried out by C/C++ and FORTRAN coded software to improve performance.
+Currently, modeling must be carried out using the client/server model which
+necessitates a connection to the internet. In addition models are generally
+stored on the VCell remote server rather than the clients desktop.  This
+operating model is not always agreeable to users and as a result the VCell team
+are reorganizing the software so that it can also be run as a stand-alone
 application on a researchers machine. The VCell team has incorporated the
 BioNetGen [@blinov2004bionetgen] network generator which allows models to be
 specified in a rule based manner. VCell is also one of the few tools that can
@@ -1368,14 +1360,16 @@ Simulation and modeling is one of the standard approaches to understanding
 complex biochemical processes. Therefore, there is a growing need for software
 tools that allow access to diverse simulation and modeling methods as well as
 support for the usage of these methods. These software libraries should be
-compatible, *e.g.* via file standards, platform independent and user friendly to
-avoid time-consuming conversions and learning procedures. In addition, the
+compatible, *e.g.* via file standards, platform independent and user friendly
+to avoid time-consuming conversions and learning procedures. In addition, the
 software should be actively maintained and updated by its authors.
 
 This section will cover some of the most widely used, open source, simulation
 libraries that many modeling platforms depend on for computation. These
 libraries all support the simulation of SBML models, and have been validated
-against an online suite of SBML test cases (<http://sbml.org/Facilities/Online_SBML_Test_Suite>) provided by the SBML consortium.
+against an online suite of SBML test cases
+(<http://sbml.org/Facilities/Online_SBML_Test_Suite>) provided by the SBML
+consortium.
 
 ### COPASI
 
@@ -1484,8 +1478,8 @@ simulation.
 
 ### Systems Biology Toolbox (SBToolBox2) and PottersWheel
 
-SBToolBox2 (<http://www.sbtoolbox2.org/main.php>) is a very extensive, open-
-source, MATLAB tool box developed by Henning Schmidt [@schmidt2006systems]. The
+SBToolBox2 (<http://www.sbtoolbox2.org/main.php>) [@schmidt2006systems] is a
+very extensive, open- source, MATLAB tool box developed by Henning Schmidt. The
 tool box has a wide range of capabilities. In addition, PottersWheel
 [@maiwald2008dynamical], is a very comprehensive parameter fitting tool that
 works well with the SBToolBox2 but can also be used alone. In a number of cases
@@ -1497,8 +1491,8 @@ approaches.
 
 ### SBMLToolbox
 
-SBMLToolbox (<http://sbml.org/Software/SBMLToolbox>) is an open source MATLAB
-toolbox developed by the SBML Team [@keating2006sbmltoolbox]. SBMLToolbox ports
+SBMLToolbox (<http://sbml.org/Software/SBMLToolbox>) [@keating2006sbmltoolbox]
+is an open source MATLAB toolbox developed by the SBML Team. SBMLToolbox ports
 functionality from libSBML into MATLAB, by creating MATLAB structures that
 mirror the functionality of libSBML. SBMLToolbox is also compatible with Octave
 (<http://www.gnu.org/software/octave/>), a free and open source computing
@@ -1524,8 +1518,9 @@ a remote server.
 
 # Applications
 
-This section will provide an overview for some of the different techniques and
-applications that are used on models in systems biology.
+This section will provide an overview for some of the different computational
+techniques and applications that are used with quantitative models in systems
+biology.
 
 ## Model Analysis
 
