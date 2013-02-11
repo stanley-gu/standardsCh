@@ -442,26 +442,17 @@ community.
 ### Minimum Information Required in the Annotation of Models (MIRIAM)
 
 Extending beyond the laboratory, the Minimum Information Requested In the
-Annotation of biochemical Models (MIRIAM) standard was developed for describing
-quantitative models of biochemical systems and bring together the new standards
-in computational systems biology, SBML and CellML (both are which discussed
-later in this chapter) [@le2006model]. By unifying different modeling sub-domain
-standards under the same requisites, and thus ensuring that models are easily
-testable, reproducible, and comparable, the utility of quantitative modeling may
-be enhanced for the benefit of biomedical research. However, the ultimate impact
-of these standards depends on their adoption throughout the community and the
-number of software tools that are developed to facilitate its use (more issues
-that we will discuss later in this chapter).
-
-The MIRIAM Guidelines are an effort to standardize the essential, minimal set of
-information that is sufficient to annotate a model in such a way as to
-facilitate its reuse. This includes the ability to identify the model itself,
-the components of which it is composed, and a means by which unambiguous
-annotation of components should be encoded. This is essential to allowing
-collaborative work between different groups, which may be geographically
-separated by vastly different locations, and facilitates model sharing and
-reuse by the general modeling community. MIRIAM can be implemented in any
-structured format used to encode computational models [@novere2005minimum].
+Annotation of biochemical Models (MIRIAM) standard [@novere2005minimum]
+[@le2006model] was developed for describing quantitative models of biochemical
+systems and bring together the new standards in computational systems biology,
+SBML and CellML (both are which discussed later in this chapter). By unifying
+different modeling sub-domain standards under the same requisites, and thus
+ensuring that models are easily testable, reproducible, and comparable, the
+utility of quantitative modeling may be enhanced for the benefit of biomedical
+research. However, the ultimate impact of these standards depends on their
+adoption throughout the community and the number of software tools that are
+developed to facilitate its use (more issues that we will discuss later in this
+chapter).
 
 Traditionally, a challenge that MIRIAM faces is that encoded models in
 scientific publications or online are not in a standard format. And, of those
@@ -551,12 +542,11 @@ All information necessary to obtain the desired numerical results must be provid
 
 * * * *
 
-By providing the information specified by these guidelines, along with the
-required models, modelers can be reasonably assured that the simulation
-experiment represents the intention of the original authors. Thus, as adoption
-of MIASE spreads, the quality of scientific reporting will increase, and
-collaborative efforts in computational modeling and simulation of biological
-systems is encouraged.
+By providing the information specified by these guidelines, modelers can be
+reasonably assured that the simulation experiment corresponds with those of the
+original authors. Thus, as adoption of MIASE spreads, the quality of scientific
+reporting will increase, and collaborative efforts in computational modeling
+and simulation of biological systems is encouraged.
 
 ## Ontologies
 
@@ -568,12 +558,12 @@ for different models to describe the same physical entity or biological process.
 One approach is through the annotation of multiple bodies of data using common
 controlled and structured vocabularies or "ontologies".
 
-For example, one successful biomedical ontology is the Gene Ontology (GO). GO
-defines specific gene products across different species. All terms are organized
-in a hierarchical structure, where there are three main branches: biological
-process, cellular component, or molecular functions. GO terms have been used in
-millions of annotations relating to gene products described in protein databases
-[@smith2005relations].
+For example, one successful biomedical ontology is the Gene Ontology (GO)
+[@smith2005relations]. GO defines specific gene products across different
+species. All terms are organized in a hierarchical structure, where there are
+three main branches: biological process, cellular component, or molecular
+functions. GO terms have been used in millions of annotations relating to gene
+products described in protein databases.
 
 ### Open Biomedical Ontologies (OBO)
 
