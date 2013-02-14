@@ -1,0 +1,4122 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{GridComputing:Abbas}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Abbas}{A.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Firewall Media}%
+  }
+  \strng{namehash}{AA1}
+  \strng{fullhash}{AA1}
+  \field{sortinit}{A}
+  \field{title}{Grid Computing: A Practical Guide to Tech. and App.}
+  \field{year}{2004}
+\endentry
+
+\entry{adams2013sbsi}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Adams}{A.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Clark}{C.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yamaguchi}{Y.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hanlon}{H.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tsorman}{T.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ali}{A.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lebedeva}{L.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goltsov}{G.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sorokin}{S.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Akman}{A.}%
+     {O.E.}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{AR+1}
+  \strng{fullhash}{ARCAYAHNTNASLGGASAAO+1}
+  \field{sortinit}{A}
+  \field{title}{SBSI: An extensible distributed software infrastructure for
+  parameter estimation in systems biology}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2013}
+\endentry
+
+\entry{bairoch2005universal}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Bairoch}{B.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Apweiler}{A.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {C.H.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barker}{B.}%
+     {W.C.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boeckmann}{B.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ferro}{F.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gasteiger}{G.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huang}{H.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lopez}{L.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Magrane}{M.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{BA+1}
+  \strng{fullhash}{BAARWCBWBBFSGEHHLRMM+1}
+  \field{sortinit}{B}
+  \field{number}{suppl 1}
+  \field{pages}{D154\bibrangedash D159}
+  \field{title}{The universal protein resource (UniProt)}
+  \field{volume}{33}
+  \field{journaltitle}{Nucleic acids research}
+  \field{year}{2005}
+\endentry
+
+\entry{Bakker:1997}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Bakker}{B.}%
+     {B.~M.}{B.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Michels}{M.}%
+     {P.~A.~M.}{P.~A.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Opperdoes}{O.}%
+     {F.~R.}{F.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Westerhoff}{W.}%
+     {H.~V.}{H.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BBM+1}
+  \strng{fullhash}{BBMMPAMOFRWHV1}
+  \field{sortinit}{B}
+  \field{pages}{3207\bibrangedash 3215}
+  \field{title}{Glycolysis in bloodstream form Trypanosoma brucei can be
+  understood in terms of the kinetics of the glycolytic enzymes.}
+  \field{volume}{272}
+  \field{journaltitle}{J. Biol. Chem.}
+  \field{year}{1997}
+\endentry
+
+\entry{BarabasiReview2004}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Barab{\'a}si}{B.}%
+     {A.L.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Oltvai}{O.}%
+     {Z.N.}{Z.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{BAOZ1}
+  \strng{fullhash}{BAOZ1}
+  \field{sortinit}{B}
+  \field{number}{2}
+  \field{pages}{101\bibrangedash 113}
+  \field{title}{Network biology: understanding the cell's functional
+  organization}
+  \field{volume}{5}
+  \field{journaltitle}{Nature Reviews Genetics}
+  \field{year}{2004}
+\endentry
+
+\entry{beard2009cellml}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Beard}{B.}%
+     {D.A.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Britten}{B.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cooling}{C.}%
+     {M.T.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Garny}{G.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halstead}{H.}%
+     {M.D.B.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hunter}{H.}%
+     {P.J.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lawson}{L.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lloyd}{L.}%
+     {C.M.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marsh}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miller}{M.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Royal Society}%
+  }
+  \strng{namehash}{BD+1}
+  \strng{fullhash}{BDBRCMGAHMHPLJLCMJMA+1}
+  \field{sortinit}{B}
+  \field{number}{1895}
+  \field{pages}{1845\bibrangedash 1867}
+  \field{title}{CellML metadata standards, associated tools and repositories}
+  \field{volume}{367}
+  \field{journaltitle}{Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences}
+  \field{year}{2009}
+\endentry
+
+\entry{bergmann2008comparing}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bergmann}{B.}%
+     {F.T.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{BFSH1}
+  \strng{fullhash}{BFSH1}
+  \field{sortinit}{B}
+  \field{number}{17}
+  \field{pages}{1963\bibrangedash 1965}
+  \field{title}{Comparing simulation results of SBML capable simulators}
+  \field{volume}{24}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2008}
+\endentry
+
+\entry{bergmann2006sbw}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bergmann}{B.}%
+     {F.T.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Winter Simulation Conference}%
+  }
+  \strng{namehash}{BFSH1}
+  \strng{fullhash}{BFSH1}
+  \field{sortinit}{B}
+  \field{booktitle}{Proceedings of the 38th conference on Winter simulation}
+  \field{pages}{1637\bibrangedash 1645}
+  \field{title}{SBW-a modular framework for systems biology}
+  \field{year}{2006}
+\endentry
+
+\entry{blinov2004bionetgen}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Blinov}{B.}%
+     {M.L.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Faeder}{F.}%
+     {J.R.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goldstein}{G.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hlavacek}{H.}%
+     {W.S.}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{BM+1}
+  \strng{fullhash}{BMFJGBHW1}
+  \field{sortinit}{B}
+  \field{number}{17}
+  \field{pages}{3289\bibrangedash 3291}
+  \field{title}{BioNetGen: software for rule-based modeling of signal
+  transduction based on the interactions of molecular domains}
+  \field{volume}{20}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2004}
+\endentry
+
+\entry{bower1995book}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Bower}{B.}%
+     {J.M.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Beeman}{B.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wylde}{W.}%
+     {A.M.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Telos New York}%
+  }
+  \strng{namehash}{BJBDWA1}
+  \strng{fullhash}{BJBDWA1}
+  \field{sortinit}{B}
+  \field{title}{The book of GENESIS: exploring realistic neural models with the
+  GEneral NEural SImulation System}
+  \field{year}{1995}
+\endentry
+
+\entry{brazma2001minimum}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Brazma}{B.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hingamp}{H.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Quackenbush}{Q.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sherlock}{S.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Spellman}{S.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoeckert}{S.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aach}{A.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ansorge}{A.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ball}{B.}%
+     {C.A.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Causton}{C.}%
+     {H.C.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {NATURE PUBLISHING CO.}%
+  }
+  \strng{namehash}{BA+2}
+  \strng{fullhash}{BAHPQJSGSPSCAJAWBCCH+1}
+  \field{sortinit}{B}
+  \field{number}{4}
+  \field{pages}{365\bibrangedash 372}
+  \field{title}{Minimum information about a microarray experiment
+  (MIAME)-toward standards for microarray data}
+  \field{volume}{29}
+  \field{journaltitle}{Nature genetics}
+  \field{year}{2001}
+\endentry
+
+\entry{cannon2010stochastic}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Cannon}{C.}%
+     {R.C.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {O'Donnell}{O.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nolan}{N.}%
+     {M.F.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Public Library of Science}%
+  }
+  \strng{namehash}{CROCNM1}
+  \strng{fullhash}{CROCNM1}
+  \field{sortinit}{C}
+  \field{number}{8}
+  \field{pages}{e1000886}
+  \field{title}{Stochastic ion channel gating in dendritic neurons: morphology
+  dependence and probabilistic synaptic activation of dendritic spikes}
+  \field{volume}{6}
+  \field{journaltitle}{PLoS computational biology}
+  \field{year}{2010}
+\endentry
+
+\entry{carnevale2006neuron}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Carnevale}{C.}%
+     {N.T.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hines}{H.}%
+     {M.L.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge University Press}%
+  }
+  \strng{namehash}{CNHM1}
+  \strng{fullhash}{CNHM1}
+  \field{sortinit}{C}
+  \field{title}{The NEURON book}
+  \field{year}{2006}
+\endentry
+
+\entry{Chance1943}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chance}{C.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CB1}
+  \strng{fullhash}{CB1}
+  \field{sortinit}{C}
+  \field{pages}{553\bibrangedash 577}
+  \field{title}{The Kinetics of the Enzyme-Substrate Compound of Peroxidase}
+  \field{volume}{151}
+  \field{journaltitle}{J. Biol. Chem.}
+  \field{year}{1943}
+\endentry
+
+\entry{chizeck2009}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chizeck}{C.}%
+     {HJ}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Butterworth}{B.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bassingthwaighte}{B.}%
+     {J.B.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{CHBEBJ1}
+  \strng{fullhash}{CHBEBJ1}
+  \field{sortinit}{C}
+  \field{number}{3}
+  \field{pages}{50\bibrangedash 58}
+  \field{title}{Error detection and unit conversion}
+  \field{volume}{28}
+  \field{journaltitle}{Engineering in Medicine and Biology Magazine, IEEE}
+  \field{year}{2009}
+\endentry
+
+\entry{cohen1996cvode}{article}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {Cohen}{C.}%
+     {S.D.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hindmarsh}{H.}%
+     {A.C.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CSHA+1}
+  \strng{fullhash}{CSHA+1}
+  \field{sortinit}{C}
+  \field{number}{2}
+  \field{pages}{138\bibrangedash 143}
+  \field{title}{CVODE, a stiff/nonstiff ODE solver in C}
+  \field{volume}{10}
+  \field{journaltitle}{Computers in physics}
+  \field{year}{1996}
+\endentry
+
+\entry{copeland2012computational}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Copeland}{C.}%
+     {W.B.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bartley}{B.}%
+     {B.A.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chandran}{C.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Galdzicki}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kim}{K.}%
+     {K.H.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sleight}{S.}%
+     {S.C.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maranas}{M.}%
+     {C.D.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{CW+1}
+  \strng{fullhash}{CWBBCDGMKKSSMCSH1}
+  \field{sortinit}{C}
+  \field{title}{Computational tools for metabolic engineering}
+  \field{journaltitle}{Metabolic engineering}
+  \field{year}{2012}
+\endentry
+
+\entry{courtot2011controlled}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Courtot}{C.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Juty}{J.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kn{\"u}pfer}{K.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Waltemath}{W.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhukova}{Z.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dr{\"a}ger}{D.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dumontier}{D.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Finney}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Golebiewski}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hastings}{H.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{CM+1}
+  \strng{fullhash}{CMJNKCWDZADADMFAGMHJ+1}
+  \field{sortinit}{C}
+  \field{number}{1}
+  \field{title}{Controlled vocabularies and semantics in systems biology}
+  \field{volume}{7}
+  \field{journaltitle}{Molecular systems biology}
+  \field{year}{2011}
+\endentry
+
+\entry{dada2010sbrml}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Dada}{D.}%
+     {J.O.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Spasi{\'c}}{S.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Paton}{P.}%
+     {N.W.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mendes}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{DJ+1}
+  \strng{fullhash}{DJSIPNMP1}
+  \field{sortinit}{D}
+  \field{number}{7}
+  \field{pages}{932\bibrangedash 938}
+  \field{title}{SBRML: a markup language for associating systems biology data
+  with models}
+  \field{volume}{26}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2010}
+\endentry
+
+\entry{degtyarenko2008chebi}{article}{}
+  \name{author}{10}{}{%
+    {{}%
+     {Degtyarenko}{D.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {De~Matos}{D.~M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ennis}{E.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hastings}{H.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zbinden}{Z.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mcnaught}{M.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Alc{\'a}ntara}{A.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Darsow}{D.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Guedj}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ashburner}{A.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{DK+1}
+  \strng{fullhash}{DKDMPEMHJZMMAARDMGMAM1}
+  \field{sortinit}{D}
+  \field{number}{suppl 1}
+  \field{pages}{D344\bibrangedash D350}
+  \field{title}{ChEBI: a database and ontology for chemical entities of
+  biological interest}
+  \field{volume}{36}
+  \field{journaltitle}{Nucleic acids research}
+  \field{year}{2008}
+\endentry
+
+\entry{DeJong2002}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {deJong}{d.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{dH1}
+  \strng{fullhash}{dH1}
+  \field{sortinit}{D}
+  \field{pages}{67\bibrangedash ???103}
+  \field{title}{Modeling and Simulation of Genetic Regulatory Systems: A
+  Literature Review}
+  \field{volume}{9}
+  \field{journaltitle}{Journal Computational Biology}
+  \field{year}{2002}
+\endentry
+
+\entry{demir2010biopax}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Demir}{D.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cary}{C.}%
+     {M.P.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Paley}{P.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fukuda}{F.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lemer}{L.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vastrik}{V.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {D'Eustachio}{D.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schaefer}{S.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Luciano}{L.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{DE+1}
+  \strng{fullhash}{DECMPSFKLCVIWGDPSCLJ+1}
+  \field{sortinit}{D}
+  \field{number}{9}
+  \field{pages}{935\bibrangedash 942}
+  \field{title}{The BioPAX community standard for pathway data sharing}
+  \field{volume}{28}
+  \field{journaltitle}{Nature biotechnology}
+  \field{year}{2010}
+\endentry
+
+\entry{diesmann2001nest}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Diesmann}{D.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gewaltig}{G.}%
+     {M.O.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DMGM1}
+  \strng{fullhash}{DMGM1}
+  \field{sortinit}{D}
+  \field{pages}{43\bibrangedash 70}
+  \field{title}{NEST: An environment for neural systems simulations}
+  \field{volume}{58}
+  \field{journaltitle}{Forschung und wisschenschaftliches Rechnen, Beitr{\"a}ge
+  zum Heinz-Billing-Preis}
+  \field{year}{2001}
+\endentry
+
+\entry{drager2011jsbml}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Dr{\"a}ger}{D.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rodriguez}{R.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dumousseau}{D.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {D{\"o}rr}{D.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wrzodek}{W.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Le~Nov{\`e}re}{L.~N.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zell}{Z.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hucka}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{DA+1}
+  \strng{fullhash}{DARNDMDAWCLNNZAHM1}
+  \field{sortinit}{D}
+  \field{number}{15}
+  \field{pages}{2167\bibrangedash 2168}
+  \field{title}{JSBML: a flexible Java library for working with SBML}
+  \field{volume}{27}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2011}
+\endentry
+
+\entry{Fell:Book}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Fell}{F.}%
+     {D.A.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Portland Press.}%
+  }
+  \strng{namehash}{FD1}
+  \strng{fullhash}{FD1}
+  \field{sortinit}{F}
+  \field{title}{Understanding the Control of Metabolism}
+  \list{location}{1}{%
+    {London}%
+  }
+  \field{year}{1997}
+\endentry
+
+\entry{funahashi2008celldesigner}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Funahashi}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matsuoka}{M.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jouraku}{J.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morohashi}{M.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kikuchi}{K.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kitano}{K.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{FA+1}
+  \strng{fullhash}{FAMYJAMMKNKH1}
+  \field{sortinit}{F}
+  \field{number}{8}
+  \field{pages}{1254\bibrangedash 1265}
+  \field{title}{CellDesigner 3.5: a versatile modeling tool for biochemical
+  networks}
+  \field{volume}{96}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{2008}
+\endentry
+
+\entry{CellDesigner2003}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Funahashi}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tanimura}{T.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morohashi}{M.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {H.~Kitano}{H.~K.}%
+     {H}{H}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FA+1}
+  \strng{fullhash}{FATNMMHKH1}
+  \field{sortinit}{F}
+  \field{pages}{159\bibrangedash 162}
+  \field{title}{CellDesigner: a process diagram editor for gene-regulatory and
+  biochemical networks}
+  \field{volume}{1}
+  \field{journaltitle}{BIOSILICO}
+  \field{year}{2003}
+\endentry
+
+\entry{funahashi2003celldesigner}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Funahashi}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morohashi}{M.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kitano}{K.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tanimura}{T.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier Science}%
+  }
+  \strng{namehash}{FA+1}
+  \strng{fullhash}{FAMMKHTN1}
+  \field{sortinit}{F}
+  \field{number}{5}
+  \field{pages}{159\bibrangedash 162}
+  \field{title}{CellDesigner: a process diagram editor for gene-regulatory and
+  biochemical networks}
+  \field{volume}{1}
+  \field{journaltitle}{Biosilico}
+  \field{year}{2003}
+\endentry
+
+\entry{Ga68}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Garfinkel}{G.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GD1}
+  \strng{fullhash}{GD1}
+  \field{sortinit}{G}
+  \field{pages}{31\bibrangedash 44}
+  \field{title}{A Machine-Independent Language for the Simulation of Complex
+  Chemical and Biochemical Systems.}
+  \field{volume}{2}
+  \field{journaltitle}{Comput. Biomed. Res.}
+  \field{year}{1968}
+\endentry
+
+\entry{Ga61}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Garfinkel}{G.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rutledge}{R.}%
+     {J.~D.}{J.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Higgins}{H.}%
+     {J.~J.}{J.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GDRJDHJJ1}
+  \strng{fullhash}{GDRJDHJJ1}
+  \field{sortinit}{G}
+  \field{pages}{559\bibrangedash 562}
+  \field{title}{Simulation and analysis of biochemical systems: I.
+  representation of chemical kinetics}
+  \field{volume}{4(12)}
+  \field{journaltitle}{Communications of the ACM}
+  \field{year}{1961}
+\endentry
+
+\entry{gillespie2006tools}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Gillespie}{G.}%
+     {C.S.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wilkinson}{W.}%
+     {D.J.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Proctor}{P.}%
+     {C.J.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shanley}{S.}%
+     {D.P.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boys}{B.}%
+     {R.J.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kirkwood}{K.}%
+     {T.B.L.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{GC+1}
+  \strng{fullhash}{GCWDPCSDBRKT1}
+  \field{sortinit}{G}
+  \field{number}{5}
+  \field{pages}{628\bibrangedash 629}
+  \field{title}{Tools for the SBML Community}
+  \field{volume}{22}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2006}
+\endentry
+
+\entry{gleeson2010}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Gleeson}{G.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Crook}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cannon}{C.}%
+     {R.C.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hines}{H.}%
+     {M.L.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Billings}{B.}%
+     {G.O.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Farinella}{F.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morse}{M.}%
+     {T.M.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Davison}{D.}%
+     {A.P.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ray}{R.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bhalla}{B.}%
+     {U.S.}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Public Library of Science}%
+  }
+  \strng{namehash}{GP+1}
+  \strng{fullhash}{GPCSCRHMBGFMMTDARSBU+1}
+  \field{sortinit}{G}
+  \field{number}{6}
+  \field{pages}{e1000815}
+  \field{title}{NeuroML: a language for describing data driven models of
+  neurons and networks with a high degree of biological detail}
+  \field{volume}{6}
+  \field{journaltitle}{PLoS computational biology}
+  \field{year}{2010}
+\endentry
+
+\entry{goddard:2001}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Goddard}{G.}%
+     {Nigel\~{}H.}{N.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hucka}{H.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Howell}{H.}%
+     {Fred}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cornelis}{C.}%
+     {Hugo}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shankar}{S.}%
+     {Kavita}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Beeman}{B.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GNH+1}
+  \strng{fullhash}{GNHHMHFCHSKBD1}
+  \field{sortinit}{G}
+  \field{title}{Towards NeuroML: Model Description Methods for Collaborative
+  Modelling in Neuroscience}
+  \field{journaltitle}{Philosophical Transactions of the Royal Society}
+  \field{year}{2001}
+\endentry
+
+\entry{goncalves2013cysbgn}{article}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {Goncalves}{G.}%
+     {E.J.V.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Saez-Rodriguez}{S.-R.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {BioMed Central Ltd}%
+  }
+  \strng{namehash}{GESRJ+1}
+  \strng{fullhash}{GESRJ+1}
+  \field{sortinit}{G}
+  \field{number}{1}
+  \field{pages}{17}
+  \field{title}{CySBGN: A Cytoscape plug-in to integrate SBGN maps}
+  \field{volume}{14}
+  \field{journaltitle}{BMC bioinformatics}
+  \field{year}{2013}
+\endentry
+
+\entry{harold:2001}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Harold}{H.}%
+     {E.~R.}{E.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Means}{M.}%
+     {E.~S.}{E.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HERMES1}
+  \strng{fullhash}{HERMES1}
+  \field{sortinit}{H}
+  \field{title}{XML in a Nutshell}
+  \field{year}{2001}
+\endentry
+
+\entry{Schuster:Book}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Heinrich}{H.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schuster}{S.}%
+     {S}{S}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {Chapman}%
+    {Hall}%
+  }
+  \strng{namehash}{HRSS1}
+  \strng{fullhash}{HRSS1}
+  \field{sortinit}{H}
+  \field{title}{The Regulation of Cellular Systems}
+  \field{year}{1996}
+\endentry
+
+\entry{Hi59}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Higgins}{H.}%
+     {J.~J.}{J.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HJJ1}
+  \strng{fullhash}{HJJ1}
+  \field{sortinit}{H}
+  \field{title}{Kinetic properties of sequential enzyme systems.}
+  \list{institution}{1}{%
+    {University of Pennsylvania}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{1959}
+\endentry
+
+\entry{hofmeyr-nutshell}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hofmeyr}{H.}%
+     {J.-H.~S.}{J.-H.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Caltech}%
+  }
+  \strng{namehash}{HJHS1}
+  \strng{fullhash}{HJHS1}
+  \field{sortinit}{H}
+  \field{booktitle}{Proceedings of the Second International Conference on
+  Systems Biology}
+  \field{title}{Metabolic Control Analysis in a Nutshell}
+  \field{year}{2001}
+\endentry
+
+\entry{hoops2006copasi}{article}{}
+  \name{author}{10}{}{%
+    {{}%
+     {Hoops}{H.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sahle}{S.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gauges}{G.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lee}{L.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pahle}{P.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Simus}{S.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Singhal}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xu}{X.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mendes}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kummer}{K.}%
+     {U.}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{HS+1}
+  \strng{fullhash}{HSSSGRLCPJSNSMXLMPKU1}
+  \field{sortinit}{H}
+  \field{number}{24}
+  \field{pages}{3067\bibrangedash 3074}
+  \field{title}{COPASI - a complex pathway simulator}
+  \field{volume}{22}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2006}
+\endentry
+
+\entry{hucka:2002d}{article}{}
+  \name{author}{42}{}{%
+    {{}%
+     {Hucka}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Finney}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.~M.}{H.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bolouri}{B.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Doyle}{D.}%
+     {J.~C.}{J.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kitano}{K.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Arkin}{A.}%
+     {A.~P.}{A.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bornstein}{B.}%
+     {B.~J.}{B.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bray}{B.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cornish-Bowden}{C.-B.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cuellar}{C.}%
+     {A.~A.}{A.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dronov}{D.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gilles}{G.}%
+     {E.~D.}{E.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ginkel}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gor}{G.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goryanin}{G.}%
+     {I.~I.}{I.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hedley}{H.}%
+     {W.~J.}{W.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hodgman}{H.}%
+     {T.~C.}{T.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hofmeyr}{H.}%
+     {J.-H.}{J.-H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hunter}{H.}%
+     {P.~J.}{P.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Juty}{J.}%
+     {N.~S.}{N.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kasberger}{K.}%
+     {J.~L.}{J.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kremling}{K.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kummer}{K.}%
+     {U.}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nov\`{e}re}{N.}%
+     {N.~Le}{N.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Loew}{L.}%
+     {L.~M.}{L.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lucio}{L.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mendes}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mjolsness}{M.}%
+     {E.~D.}{E.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nakayama}{N.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nelson}{N.}%
+     {M.~R.}{M.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nielsen}{N.}%
+     {P.~F.}{P.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sakurada}{S.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schaff}{S.}%
+     {J.~C.}{J.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shapiro}{S.}%
+     {B.~E.}{B.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shimizu}{S.}%
+     {T.~S.}{T.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Spence}{S.}%
+     {H.~D.}{H.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stelling}{S.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Takahashi}{T.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tomita}{T.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wagner}{W.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HM+1}
+  \strng{fullhash}{HMFASHMBHDJCKHAAPBBJBDCBACAADSGEDGMGVGIIHWJHTCHJHHPJJNSKJLK%
+AKUNNLLLMLDMPMEDNYNMRNPFSTSJCSBESTSSHDSJTKTMWJWJ1}
+  \field{sortinit}{H}
+  \field{pages}{524\bibrangedash 531}
+  \field{title}{The Systems Biology Markup Language (SBML): A Medium for
+  Representation and Exchange of Biochemical Network Models}
+  \field{volume}{19}
+  \field{journaltitle}{Boinformatics}
+  \field{year}{2003}
+\endentry
+
+\entry{hucka2010systems}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Hucka}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bergmann}{B.}%
+     {F.T.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Keating}{K.}%
+     {S.M.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schaff}{S.}%
+     {J.C.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smith}{S.}%
+     {L.P.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HM+1}
+  \strng{fullhash}{HMBFKSSJSL1}
+  \field{sortinit}{H}
+  \field{title}{The Systems Biology Markup Language (SBML): Language
+  Specification for Level 3 Version}
+  \field{year}{2010}
+\endentry
+
+\entry{hunter2005integration}{article}{}
+  \true{moreauthor}
+  \name{author}{4}{}{%
+    {{}%
+     {Hunter}{H.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smith}{S.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fernandez}{F.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tawhai}{T.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HP+1}
+  \strng{fullhash}{HPSNFJTM+1}
+  \field{sortinit}{H}
+  \field{number}{1}
+  \field{pages}{187}
+  \field{title}{Integration from proteins to organs: the IUPS Physiome
+  Project.}
+  \field{volume}{126}
+  \field{journaltitle}{Mechanisms of ageing and development}
+  \field{year}{2005}
+\endentry
+
+\entry{van2012software}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Iersel}{I.}%
+     {M.P.}{M.}%
+     {van}{v.}%
+     {}{}}%
+    {{}%
+     {Vill{\'e}ger}{V.}%
+     {A.C.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Czauderna}{C.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boyd}{B.}%
+     {S.E.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bergmann}{B.}%
+     {F.T.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Luna}{L.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Demir}{D.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sorokin}{S.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dogrusoz}{D.}%
+     {U.}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matsuoka}{M.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{IMv+1}
+  \strng{fullhash}{IMvVACTBSBFLADESADUMY+1}
+  \field{sortinit}{I}
+  \field{number}{15}
+  \field{pages}{2016\bibrangedash 2021}
+  \field{title}{Software support for SBGN maps: SBGN-ML and LibSBGN}
+  \field{volume}{28}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2012}
+\endentry
+
+\entry{joshi2005reactome}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Joshi-Tope}{J.-T.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gillespie}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vastrik}{V.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {D'Eustachio}{D.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schmidt}{S.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bono}{B.}%
+     {B.}{B.}%
+     {de}{d.}%
+     {}{}}%
+    {{}%
+     {Jassal}{J.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gopinath}{G.}%
+     {GR}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {GR}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matthews}{M.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{JTG+1}
+  \strng{fullhash}{JTGGMVIDPSEBBdJBGGWGML+1}
+  \field{sortinit}{J}
+  \field{number}{suppl 1}
+  \field{pages}{D428\bibrangedash D432}
+  \field{title}{Reactome: a knowledgebase of biological pathways}
+  \field{volume}{33}
+  \field{journaltitle}{Nucleic acids research}
+  \field{year}{2005}
+\endentry
+
+\entry{KB81}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kacser}{K.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Burns}{B.}%
+     {J.~A.}{J.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KHBJA1}
+  \strng{fullhash}{KHBJA1}
+  \field{sortinit}{K}
+  \field{pages}{1149\bibrangedash 1160}
+  \field{title}{The Molecular Basis of Dominance.}
+  \field{volume}{97}
+  \field{journaltitle}{Genetics}
+  \field{year}{1981}
+\endentry
+
+\entry{keating2012encoding}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Keating}{K.}%
+     {S.M.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nov{\`e}re}{N.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{KSNN1}
+  \strng{fullhash}{KSNN1}
+  \field{sortinit}{K}
+  \field{pages}{459\bibrangedash 488}
+  \field{title}{Encoding Neuronal Models in SBML}
+  \field{journaltitle}{Computational Systems Neurobiology}
+  \field{year}{2012}
+\endentry
+
+\entry{keating2006sbmltoolbox}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Keating}{K.}%
+     {S.M.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bornstein}{B.}%
+     {B.J.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Finney}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hucka}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{KS+1}
+  \strng{fullhash}{KSBBFAHM1}
+  \field{sortinit}{K}
+  \field{number}{10}
+  \field{pages}{1275\bibrangedash 1277}
+  \field{title}{SBMLToolbox: an SBML toolbox for MATLAB users}
+  \field{volume}{22}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2006}
+\endentry
+
+\entry{Kitano2003}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kitano}{K.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KH1}
+  \strng{fullhash}{KH1}
+  \field{sortinit}{K}
+  \field{pages}{169\bibrangedash 176}
+  \field{title}{A graphical notation for biochemical networks.}
+  \field{volume}{1}
+  \field{journaltitle}{BIOSILICO}
+  \field{year}{2003}
+\endentry
+
+\entry{kohn2008sed}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {K{\"o}hn}{K.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Le~Novere}{L.~N.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{KDLNN1}
+  \strng{fullhash}{KDLNN1}
+  \field{sortinit}{K}
+  \field{booktitle}{Computational Methods in Systems Biology}
+  \field{pages}{176\bibrangedash 190}
+  \field{title}{SED-ML--an XML format for the implementation of the MIASE
+  guidelines}
+  \field{year}{2008}
+\endentry
+
+\entry{Kohn2004}{book}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Kohn}{K.}%
+     {K.~W.}{K.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aladjem}{A.}%
+     {M.~I.}{M.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pasa}{P.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Parodi}{P.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pommier}{P.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group (c) 2002 Macmillan Publishers Ltd.}%
+  }
+  \strng{namehash}{KKW+1}
+  \strng{fullhash}{KKWAMIPSPSPY1}
+  \field{sortinit}{K}
+  \field{pages}{457\bibrangedash 474}
+  \field{title}{Cell cycle control: molecular interaction map.}
+  \list{location}{1}{%
+    {London}%
+  }
+  \field{year}{2004}
+\endentry
+
+\entry{Kohn1999}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kohn}{K.}%
+     {Kurt~W.}{K.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KKW1}
+  \strng{fullhash}{KKW1}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  Eventually to understand the integrated function of the cell cycle regulatory
+  network, we must organize the known interactions in the form of a diagram,
+  map, and/or database. A diagram convention was designed capable of
+  unambiguous representation of networks containing multiprotein complexes,
+  protein modifications, and enzymes that are substrates of other enzymes. To
+  facilitate linkage to a database, each molecular species is symbolically
+  represented only once in each diagram. Molecular species can be located on
+  the map by means of indexed grid coordinates. Each interaction is referenced
+  to an annotation list where pertinent information and references can be
+  found. Parts of the network are grouped into functional subsystems. The map
+  shows how multiprotein complexes could assemble and function at gene promoter
+  sites and at sites of DNA damage. It also portrays the richness of
+  connections between the p53-Mdm2 subsystem and other parts of the network.%
+  }
+  \field{number}{8}
+  \field{pages}{2703\bibrangedash 2734}
+  \field{title}{Molecular Interaction Map of the Mammalian Cell Cycle Control
+  and DNA Repair Systems}
+  \verb{url}
+  \verb http://www.molbiolcell.org/content/10/8/2703.abstract
+  \endverb
+  \field{volume}{10}
+  \field{journaltitle}{Molecular Biology of the Cell}
+  \field{year}{1999}
+\endentry
+
+\entry{konig2012cysbml}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {K{\"o}nig}{K.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dr{\"a}ger}{D.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Holzh{\"u}tter}{H.}%
+     {H.G.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{KMDAHH1}
+  \strng{fullhash}{KMDAHH1}
+  \field{sortinit}{K}
+  \field{number}{18}
+  \field{pages}{2402\bibrangedash 2403}
+  \field{title}{CySBML: a Cytoscape plugin for SBML}
+  \field{volume}{28}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2012}
+\endentry
+
+\entry{krause2010annotation}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Krause}{K.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Uhlendorf}{U.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lubitz}{L.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schulz}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klipp}{K.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liebermeister}{L.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{KF+1}
+  \strng{fullhash}{KFUJLTSMKELW1}
+  \field{sortinit}{K}
+  \field{number}{3}
+  \field{pages}{421\bibrangedash 422}
+  \field{title}{Annotation and merging of SBML models with semanticSBML}
+  \field{volume}{26}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2010}
+\endentry
+
+\entry{le2006model}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Le~Nov{\`e}re}{L.~N.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {BioMed Central Ltd}%
+  }
+  \strng{namehash}{LNN1}
+  \strng{fullhash}{LNN1}
+  \field{sortinit}{L}
+  \field{number}{Suppl 1}
+  \field{pages}{S11}
+  \field{title}{Model storage, exchange and integration}
+  \field{volume}{7}
+  \field{journaltitle}{BMC neuroscience}
+  \field{year}{2006}
+\endentry
+
+\entry{le2010report}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Le~Novere}{L.~N.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{LNN2}
+  \strng{fullhash}{LNN2}
+  \field{sortinit}{L}
+  \field{title}{Report on the status of SBGN ER and proposed extensions}
+  \field{year}{2010}
+\endentry
+
+\entry{le2006biomodels}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Le~Novere}{L.~N.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bornstein}{B.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Broicher}{B.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Courtot}{C.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Donizelli}{D.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dharuri}{D.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schilstra}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shapiro}{S.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{LNN+2}
+  \strng{fullhash}{LNNBBBACMDMDHLLSHSMSB+1}
+  \field{sortinit}{L}
+  \field{number}{suppl 1}
+  \field{pages}{D689\bibrangedash D691}
+  \field{title}{BioModels Database: a free, centralized database of curated,
+  published, quantitative kinetic models of biochemical and cellular systems}
+  \field{volume}{34}
+  \field{journaltitle}{Nucleic acids research}
+  \field{year}{2006}
+\endentry
+
+\entry{le2009systems}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Le~Nov{\`e}re}{L.~N.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hucka}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mi}{M.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moodie}{M.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schreiber}{S.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sorokin}{S.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Demir}{D.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wegner}{W.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aladjem}{A.}%
+     {M.I.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wimalaratne}{W.}%
+     {S.M.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{LNN+1}
+  \strng{fullhash}{LNNHMMHMSSFSADEWKAMWS+1}
+  \field{sortinit}{L}
+  \field{number}{8}
+  \field{pages}{735\bibrangedash 741}
+  \field{title}{The systems biology graphical notation}
+  \field{volume}{27}
+  \field{journaltitle}{Nature biotechnology}
+  \field{year}{2009}
+\endentry
+
+\entry{LloydCellML2004}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lloyd}{L.}%
+     {C.~M.}{C.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halstead}{H.}%
+     {M.~D.}{M.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nielsen}{N.}%
+     {P.~F.}{P.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LCMHMDNPF1}
+  \strng{fullhash}{LCMHMDNPF1}
+  \field{sortinit}{L}
+  \field{pages}{433\bibrangedash 50}
+  \field{title}{CellML: its future, present and past.}
+  \field{volume}{85}
+  \field{journaltitle}{Prog Biophys Mol Biol.}
+  \field{year}{2004}
+\endentry
+
+\entry{lloyd2008cellml}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Lloyd}{L.}%
+     {C.M.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lawson}{L.}%
+     {J.R.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hunter}{H.}%
+     {P.J.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nielsen}{N.}%
+     {P.F.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{LC+1}
+  \strng{fullhash}{LCLJHPNP1}
+  \field{sortinit}{L}
+  \field{number}{18}
+  \field{pages}{2122\bibrangedash 2123}
+  \field{title}{The CellML model repository}
+  \field{volume}{24}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2008}
+\endentry
+
+\entry{VCELL}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Loew}{L.}%
+     {L.~M.}{L.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schaff}{S.}%
+     {J.~C.}{J.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LLMSJC1}
+  \strng{fullhash}{LLMSJC1}
+  \field{sortinit}{L}
+  \field{pages}{401\bibrangedash 6}
+  \field{title}{The Virtual Cell: a software environment for computational cell
+  biology.}
+  \field{volume}{19}
+  \field{journaltitle}{Trends Biotechnol.}
+  \field{year}{2001}
+\endentry
+
+\entry{maiwald2008dynamical}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Maiwald}{M.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Timmer}{T.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{MTTJ1}
+  \strng{fullhash}{MTTJ1}
+  \field{sortinit}{M}
+  \field{number}{18}
+  \field{pages}{2037\bibrangedash 2043}
+  \field{title}{Dynamical modeling and multi-experiment fitting with
+  PottersWheel}
+  \field{volume}{24}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2008}
+\endentry
+
+\entry{Gepasi:1993}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mendes}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MP1}
+  \strng{fullhash}{MP1}
+  \field{sortinit}{M}
+  \field{pages}{563\bibrangedash 571}
+  \field{title}{GEPASI: A software package for modelling the dynamics, steady
+  states and control of biochemical and other systems.}
+  \field{volume}{9}
+  \field{journaltitle}{Comput. Applic. Biosci.}
+  \field{year}{1993}
+\endentry
+
+\entry{mirschel2009promot}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Mirschel}{M.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Steinmetz}{S.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rempel}{R.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ginkel}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gilles}{G.}%
+     {E.D.}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{MS+1}
+  \strng{fullhash}{MSSKRMGMGE1}
+  \field{sortinit}{M}
+  \field{number}{5}
+  \field{pages}{687\bibrangedash 689}
+  \field{title}{PROMOT: modular modeling for systems biology}
+  \field{volume}{25}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2009}
+\endentry
+
+\entry{moraru2008virtual}{article}{}
+  \name{author}{9}{}{%
+    {{}%
+     {Moraru}{M.}%
+     {I.I.}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schaff}{S.}%
+     {J.C.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Slepchenko}{S.}%
+     {B.M.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Blinov}{B.}%
+     {ML}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morgan}{M.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lakshminarayana}{L.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gao}{G.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Loew}{L.}%
+     {L.M.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IET}%
+  }
+  \strng{namehash}{MI+1}
+  \strng{fullhash}{MISJSBBMMFLAGFLYLL1}
+  \field{sortinit}{M}
+  \field{number}{5}
+  \field{pages}{352\bibrangedash 362}
+  \field{title}{Virtual Cell modelling and simulation software environment}
+  \field{volume}{2}
+  \field{journaltitle}{Systems Biology, IET}
+  \field{year}{2008}
+\endentry
+
+\entry{myers2009ibiosim}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Myers}{M.}%
+     {C.J.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barker}{B.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kuwahara}{K.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Madsen}{M.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nguyen}{N.}%
+     {N.P.D.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{MC+1}
+  \strng{fullhash}{MCBNJKKHMCNN1}
+  \field{sortinit}{M}
+  \field{number}{21}
+  \field{pages}{2848\bibrangedash 2849}
+  \field{title}{iBioSim: a tool for the analysis and design of genetic
+  circuits}
+  \field{volume}{25}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2009}
+\endentry
+
+\entry{neal2012sbml}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Neal}{N.}%
+     {M.L.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{NMSH1}
+  \strng{fullhash}{NMSH1}
+  \field{sortinit}{N}
+  \field{title}{SBML Reaction Finder: Retrieve and extract specific reactions
+  from the BioModels database}
+  \field{year}{2012}
+\endentry
+
+\entry{neal2009advances}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Neal}{N.}%
+     {M.L.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gennari}{G.}%
+     {J.H.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Arts}{A.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cook}{C.}%
+     {D.L.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {NIH Public Access}%
+  }
+  \strng{namehash}{NM+1}
+  \strng{fullhash}{NMGJATCD1}
+  \field{sortinit}{N}
+  \field{booktitle}{Pacific Symposium on Biocomputing. Pacific Symposium on
+  Biocomputing}
+  \field{pages}{304}
+  \field{title}{Advances in semantic representation for multiscale
+  biosimulation: a case study in merging models}
+  \field{year}{2009}
+\endentry
+
+\entry{novere2005minimum}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Novere}{N.}%
+     {N.L.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Finney}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hucka}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bhalla}{B.}%
+     {U.S.}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Campagne}{C.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Collado-Vides}{C.-V.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Crampin}{C.}%
+     {E.J.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halstead}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klipp}{K.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mendes}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{NN+1}
+  \strng{fullhash}{NNFAHMBUCFCVJCEHMKEMP+1}
+  \field{sortinit}{N}
+  \field{number}{12}
+  \field{pages}{1509\bibrangedash 1515}
+  \field{title}{Minimum information requested in the annotation of biochemical
+  models (MIRIAM)}
+  \field{volume}{23}
+  \field{journaltitle}{Nature biotechnology}
+  \field{year}{2005}
+\endentry
+
+\entry{ogata1999kegg}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Ogata}{O.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goto}{G.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sato}{S.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fujibuchi}{F.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bono}{B.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kanehisa}{K.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{OH+1}
+  \strng{fullhash}{OHGSSKFWBHKM1}
+  \field{sortinit}{O}
+  \field{number}{1}
+  \field{pages}{29\bibrangedash 34}
+  \field{title}{KEGG: Kyoto encyclopedia of genes and genomes}
+  \field{volume}{27}
+  \field{journaltitle}{Nucleic acids research}
+  \field{year}{1999}
+\endentry
+
+\entry{olivier2002modelling}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Olivier}{O.}%
+     {BG}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rohwer}{R.}%
+     {JM}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hofmeyr}{H.}%
+     {J.H.S.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{OBRJHJ2}
+  \strng{fullhash}{OBRJHJ2}
+  \field{sortinit}{O}
+  \field{number}{1}
+  \field{pages}{249\bibrangedash 254}
+  \field{title}{Modelling cellular processes with Python and Scipy}
+  \field{volume}{29}
+  \field{journaltitle}{Molecular biology reports}
+  \field{year}{2002}
+\endentry
+
+\entry{Pysces2004}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Olivier}{O.}%
+     {B.G.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rohwer}{R.}%
+     {J.M.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hofmeyr}{H.}%
+     {J.H.S.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{OBRJHJ1}
+  \strng{fullhash}{OBRJHJ1}
+  \field{sortinit}{O}
+  \field{title}{Modelling cellular systems with PySCeS}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2004}
+\endentry
+
+\entry{olivier2004web}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Olivier}{O.}%
+     {B.G.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Snoep}{S.}%
+     {J.L.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{OBSJ1}
+  \strng{fullhash}{OBSJ1}
+  \field{sortinit}{O}
+  \field{number}{13}
+  \field{pages}{2143\bibrangedash 2144}
+  \field{title}{Web-based kinetic modelling using JWS Online}
+  \field{volume}{20}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2004}
+\endentry
+
+\entry{o2007distributed}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {O'Sullivan}{O.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OB1}
+  \strng{fullhash}{OB1}
+  \field{sortinit}{O}
+  \field{title}{Distributed revision control with Mercurial}
+  \field{journaltitle}{Mercurial project}
+  \field{year}{2007}
+\endentry
+
+\entry{quackenbush2006standardizing}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Quackenbush}{Q.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{QJ1}
+  \strng{fullhash}{QJ1}
+  \field{sortinit}{Q}
+  \field{number}{1}
+  \field{title}{Standardizing the standards}
+  \field{volume}{2}
+  \field{journaltitle}{Molecular systems biology}
+  \field{year}{2006}
+\endentry
+
+\entry{RaoSauroArkin}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Rao}{R.}%
+     {C.V.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Arkin}{A.}%
+     {A.P.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RCSHAA1}
+  \strng{fullhash}{RCSHAA1}
+  \field{sortinit}{R}
+  \field{booktitle}{7th International Symposium on Dynamics and Control of
+  Process Systems, DYCOPS}
+  \field{title}{Putting the control in metabolic control analysis}
+  \field{volume}{7}
+  \field{year}{2004}
+\endentry
+
+\entry{ray2008pymoose}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ray}{R.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bhalla}{B.}%
+     {U.S.}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Frontiers Research Foundation}%
+  }
+  \strng{namehash}{RSBU1}
+  \strng{fullhash}{RSBU1}
+  \field{sortinit}{R}
+  \field{number}{6}
+  \field{pages}{1\bibrangedash 16}
+  \field{title}{PyMOOSE: interoperable scripting in Python for MOOSE}
+  \field{volume}{2}
+  \field{journaltitle}{Frontiers in neuroinformatics}
+  \field{year}{2008}
+\endentry
+
+\entry{raymond03}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Raymond}{R.}%
+     {GM}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Butterworth}{B.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bassingthwaighte}{B.}%
+     {JB}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RGBEBJ1}
+  \strng{fullhash}{RGBEBJ1}
+  \field{sortinit}{R}
+  \field{pages}{102\bibrangedash 107}
+  \field{title}{JSIM: Free software package for teaching physiological modeling
+  and research}
+  \field{volume}{280}
+  \field{journaltitle}{Experimental Biology}
+  \field{year}{2003}
+\endentry
+
+\entry{Re81}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Reich}{R.}%
+     {J.~G.}{J.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Selkov}{S.}%
+     {E.~E.}{E.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Academic Press}%
+  }
+  \strng{namehash}{RJGSEE1}
+  \strng{fullhash}{RJGSEE1}
+  \field{sortinit}{R}
+  \field{title}{Energy metabolism of the cell}
+  \list{location}{1}{%
+    {London}%
+  }
+  \field{year}{1981}
+\endentry
+
+\entry{sauro:2000}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sauro}{S.}%
+     {H.~M.}{H.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{3}{}{%
+    {{}%
+     {Hofmeyr}{H.}%
+     {J-H.~S.}{J.-H.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rohwer}{R.}%
+     {J.~M.}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Snoep}{S.}%
+     {J.~L.}{J.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Stellenbosch University Press}%
+  }
+  \strng{namehash}{SHM1}
+  \strng{fullhash}{SHM1}
+  \field{sortinit}{S}
+  \field{booktitle}{Animating the Cellular Map: Proceedings of the 9th
+  International Meeting on {BioThermoKinetics}}
+  \field{isbn}{ISBN 0-7972-0776-7}
+  \field{title}{Jarnac: A System for Interactive Metabolic Analysis}
+  \field{year}{2000}
+\endentry
+
+\entry{SauroF91}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sauro}{S.}%
+     {H.~M.}{H.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fell}{F.}%
+     {D.~A.}{D.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SHMFDA1}
+  \strng{fullhash}{SHMFDA1}
+  \field{sortinit}{S}
+  \field{pages}{15\bibrangedash 28}
+  \field{title}{SCAMP: A metabolic simulator and control analysis program.}
+  \field{volume}{15}
+  \field{journaltitle}{Mathl. Comput. Modelling}
+  \field{year}{1991}
+\endentry
+
+\entry{Sauro:ICycles2004}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sauro}{S.}%
+     {H.~M.}{H.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ingalls}{I.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SHMIB1}
+  \strng{fullhash}{SHMIB1}
+  \field{sortinit}{S}
+  \field{pages}{1\bibrangedash 15}
+  \field{title}{Conservation analysis in biochemical networks: computational
+  issues for software writers.}
+  \field{volume}{109}
+  \field{journaltitle}{Biophys Chem.}
+  \field{year}{2004}
+\endentry
+
+\entry{Sauro:Omics}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Sauro}{S.}%
+     {H.~M.}{H.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hucka}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Finney}{F.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wellock}{W.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bolouri}{B.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Doyle}{D.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {}{}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kitano}{K.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SHM+1}
+  \strng{fullhash}{SHMHMFAWCBHDJKH1}
+  \field{sortinit}{S}
+  \field{pages}{355\bibrangedash 372}
+  \field{title}{Next Generation Simulation Tools: The Systems Biology Workbench
+  and BioSPICE Integration}
+  \field{volume}{7(4)}
+  \field{journaltitle}{OMICS}
+  \field{year}{2003}
+\endentry
+
+\entry{SauroScamp93}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{SH1}
+  \strng{fullhash}{SH1}
+  \field{sortinit}{S}
+  \field{number}{4}
+  \field{pages}{441\bibrangedash 450}
+  \field{title}{SCAMP: a general-purpose simulator and metabolic control
+  analysis program}
+  \field{volume}{9}
+  \field{journaltitle}{Computer applications in the biosciences: CABIOS}
+  \field{year}{1993}
+\endentry
+
+\entry{Ingalls2004}{article}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ingalls}{I.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SHIB+1}
+  \strng{fullhash}{SHIB+1}
+  \field{sortinit}{S}
+  \field{number}{1}
+  \field{pages}{1}
+  \field{title}{Conservation analysis in biochemical networks: computational
+  issues for software writers.}
+  \field{volume}{109}
+  \field{journaltitle}{Biophysical chemistry}
+  \field{year}{2004}
+\endentry
+
+\entry{SauroReview:2004}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kholodenko}{K.}%
+     {B.N}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier Science}%
+  }
+  \strng{namehash}{SHKB1}
+  \strng{fullhash}{SHKB1}
+  \field{sortinit}{S}
+  \field{number}{1}
+  \field{pages}{5\bibrangedash 43}
+  \field{title}{Quantitative analysis of signaling networks}
+  \field{volume}{86}
+  \field{journaltitle}{Progress in biophysics and molecular biology}
+  \field{year}{2004}
+\endentry
+
+\entry{schmidt2006systems}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Schmidt}{S.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jirstrand}{J.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{SHJM1}
+  \strng{fullhash}{SHJM1}
+  \field{sortinit}{S}
+  \field{number}{4}
+  \field{pages}{514\bibrangedash 515}
+  \field{title}{Systems Biology Toolbox for MATLAB: a computational platform
+  for research in systems biology}
+  \field{volume}{22}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2006}
+\endentry
+
+\entry{smith2005relations}{article}{}
+  \name{author}{10}{}{%
+    {{}%
+     {Smith}{S.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ceusters}{C.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klagges}{K.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {K{\"o}hler}{K.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kumar}{K.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lomax}{L.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mungall}{M.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Neuhaus}{N.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rector}{R.}%
+     {A.L.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rosse}{R.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {BioMed Central Ltd}%
+  }
+  \strng{namehash}{SB+1}
+  \strng{fullhash}{SBCWKBKJKALJMCNFRARC1}
+  \field{sortinit}{S}
+  \field{number}{5}
+  \field{pages}{R46}
+  \field{title}{Relations in biomedical ontologies}
+  \field{volume}{6}
+  \field{journaltitle}{Genome biology}
+  \field{year}{2005}
+\endentry
+
+\entry{smith2007obo}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Smith}{S.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ashburner}{A.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rosse}{R.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bard}{B.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bug}{B.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ceusters}{C.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goldberg}{G.}%
+     {L.J.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eilbeck}{E.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ireland}{I.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mungall}{M.}%
+     {C.J.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{SB+1}
+  \strng{fullhash}{SBAMRCBJBWCWGLEKIAMC+1}
+  \field{sortinit}{S}
+  \field{number}{11}
+  \field{pages}{1251\bibrangedash 1255}
+  \field{title}{The OBO Foundry: coordinated evolution of ontologies to support
+  biomedical data integration}
+  \field{volume}{25}
+  \field{journaltitle}{Nature biotechnology}
+  \field{year}{2007}
+\endentry
+
+\entry{smith2009antimony}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Smith}{S.}%
+     {L.P.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bergmann}{B.}%
+     {F.T.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chandran}{C.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{SL+1}
+  \strng{fullhash}{SLBFCDSH1}
+  \field{sortinit}{S}
+  \field{number}{18}
+  \field{pages}{2452\bibrangedash 2454}
+  \field{title}{Antimony: a modular model definition language}
+  \field{volume}{25}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2009}
+\endentry
+
+\entry{spellman2002design}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Spellman}{S.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miller}{M.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stewart}{S.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Troup}{T.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sarkans}{S.}%
+     {U.}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chervitz}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bernhart}{B.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sherlock}{S.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ball}{B.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lepage}{L.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {BioMed Central Ltd}%
+  }
+  \strng{namehash}{SP+1}
+  \strng{fullhash}{SPMMSJTCSUCSBDSGBCLM+1}
+  \field{sortinit}{S}
+  \field{number}{9}
+  \field{pages}{research0046}
+  \field{title}{Design and implementation of microarray gene expression markup
+  language (MAGE-ML)}
+  \field{volume}{3}
+  \field{journaltitle}{Genome biology}
+  \field{year}{2002}
+\endentry
+
+\entry{naturebiotechnology2006}{article}{}
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \field{sortinit}{S}
+  \field{number}{11}
+  \field{pages}{1299}
+  \field{title}{Standard operating procedures}
+  \field{volume}{24}
+  \field{journaltitle}{Nature Biotechnology}
+\endentry
+
+\entry{stromback2005representations}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Str{\"o}mb{\"a}ck}{S.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lambrix}{L.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{SLLP1}
+  \strng{fullhash}{SLLP1}
+  \field{sortinit}{S}
+  \field{number}{24}
+  \field{pages}{4401\bibrangedash 4407}
+  \field{title}{Representations of molecular pathways: an evaluation of SBML,
+  PSI MI and BioPAX}
+  \field{volume}{21}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2005}
+\endentry
+
+\entry{taylor2008promoting}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Taylor}{T.}%
+     {C.F.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Field}{F.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sansone}{S.}%
+     {S.A.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aerts}{A.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Apweiler}{A.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ashburner}{A.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ball}{B.}%
+     {C.A.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Binz}{B.}%
+     {P.A.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bogue}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Booth}{B.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{TC+1}
+  \strng{fullhash}{TCFDSSAJARAMBCBPBMBT+1}
+  \field{sortinit}{T}
+  \field{number}{8}
+  \field{pages}{889\bibrangedash 896}
+  \field{title}{Promoting coherent minimum reporting guidelines for biological
+  and biomedical investigations: the MIBBI project}
+  \field{volume}{26}
+  \field{journaltitle}{Nature biotechnology}
+  \field{year}{2008}
+\endentry
+
+\entry{ECELL}{article}{}
+  \name{author}{10}{}{%
+    {{}%
+     {Tomita}{T.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hashimoto}{H.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Takahashi}{T.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shimizu}{S.}%
+     {T.~S.}{T.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matsuzaki}{M.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miyoshi~F}{M.~F.}%
+     {Saito~K}{S.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tanida}{T.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yugi}{Y.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Venter}{V.}%
+     {J.~C.}{J.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hutchison}{H.}%
+     {C.~A}{C.~A}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TM+1}
+  \strng{fullhash}{TMHKTKSTSMYMFSKTSYKVJCHCA1}
+  \field{sortinit}{T}
+  \field{pages}{72\bibrangedash 84}
+  \field{title}{E-CELL: software environment for whole-cell simulation.}
+  \field{volume}{15}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{1999}
+\endentry
+
+\entry{TysonNatReview2001}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Tyson}{T.}%
+     {J.~J.}{J.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Novak}{N.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TJJCKNB1}
+  \strng{fullhash}{TJJCKNB1}
+  \field{sortinit}{T}
+  \field{pages}{908\bibrangedash 916}
+  \field{title}{Network Dynamics And Cell Physiology}
+  \field{volume}{2}
+  \field{journaltitle}{Nature Reviews Molecular Cell Biology}
+  \field{year}{2001}
+\endentry
+
+\entry{vallabhajosyula2006conservation}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Vallabhajosyula}{V.}%
+     {R.R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chickarmane}{C.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sauro}{S.}%
+     {H.M.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{VRCVSH1}
+  \strng{fullhash}{VRCVSH1}
+  \field{sortinit}{V}
+  \field{number}{3}
+  \field{pages}{346\bibrangedash 353}
+  \field{title}{Conservation analysis of large biochemical networks}
+  \field{volume}{22}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2006}
+\endentry
+
+\entry{vass2004jigcell}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Vass}{V.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Allen}{A.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shaffer}{S.}%
+     {C.A.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ramakrishnan}{R.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Watson}{W.}%
+     {L.T.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tyson}{T.}%
+     {J.J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{VM+1}
+  \strng{fullhash}{VMANSCRNWLTJ1}
+  \field{sortinit}{V}
+  \field{number}{18}
+  \field{pages}{3680\bibrangedash 3681}
+  \field{title}{The JigCell model builder and run manager}
+  \field{volume}{20}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2004}
+\endentry
+
+\entry{vass2006jigcell}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Vass}{V.}%
+     {M.T.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shaffer}{S.}%
+     {C.A.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ramakrishnan}{R.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Watson}{W.}%
+     {L.T.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tyson}{T.}%
+     {J.J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{VM+2}
+  \strng{fullhash}{VMSCRNWLTJ1}
+  \field{sortinit}{V}
+  \field{number}{2}
+  \field{pages}{155\bibrangedash 164}
+  \field{title}{The JigCell model builder: a spreadsheet interface for creating
+  biochemical reaction network models}
+  \field{volume}{3}
+  \field{journaltitle}{Computational Biology and Bioinformatics, IEEE/ACM
+  Transactions on}
+  \field{year}{2006}
+\endentry
+
+\entry{waltemath2011minimum}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Waltemath}{W.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Adams}{A.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Beard}{B.}%
+     {D.A.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bergmann}{B.}%
+     {F.T.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bhalla}{B.}%
+     {U.S.}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Britten}{B.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chelliah}{C.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cooling}{C.}%
+     {M.T.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cooper}{C.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Crampin}{C.}%
+     {E.J.}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Public Library of Science}%
+  }
+  \strng{namehash}{WD+1}
+  \strng{fullhash}{WDARBDBFBUBRCVCMCJCE+1}
+  \field{sortinit}{W}
+  \field{number}{4}
+  \field{pages}{e1001122}
+  \field{title}{Minimum information about a simulation experiment (MIASE)}
+  \field{volume}{7}
+  \field{journaltitle}{PLoS computational biology}
+  \field{year}{2011}
+\endentry
+
+\entry{Wright1929}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wright}{W.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WS1}
+  \strng{fullhash}{WS1}
+  \field{sortinit}{W}
+  \field{pages}{274\bibrangedash 279}
+  \field{title}{Fisher's Theory of Dominance}
+  \field{volume}{63}
+  \field{journaltitle}{The American Naturalist}
+  \field{year}{1929}
+\endentry
+
+\entry{Wright1934}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wright}{W.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WS1}
+  \strng{fullhash}{WS1}
+  \field{sortinit}{W}
+  \field{pages}{24\bibrangedash 53}
+  \field{title}{Physiological and Evolutionary Theories of Dominance}
+  \field{volume}{68}
+  \field{journaltitle}{The American Naturalist}
+  \field{year}{1934}
+\endentry
+
+\entry{yu2011physiome}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Yu}{Y.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lloyd}{L.}%
+     {C.M.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nickerson}{N.}%
+     {D.P.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cooling}{C.}%
+     {M.T.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miller}{M.}%
+     {A.K.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Garny}{G.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Terkildsen}{T.}%
+     {J.R.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lawson}{L.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Britten}{B.}%
+     {R.D.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hunter}{H.}%
+     {P.J.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford Univ Press}%
+  }
+  \strng{namehash}{YT+1}
+  \strng{fullhash}{YTLCNDCMMAGATJLJBRHP+1}
+  \field{sortinit}{Y}
+  \field{number}{5}
+  \field{pages}{743\bibrangedash 744}
+  \field{title}{The physiome model repository 2}
+  \field{volume}{27}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2011}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

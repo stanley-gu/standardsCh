@@ -7,7 +7,6 @@
 /docx/*
 /beamer/*
 /chapter/*
-/chapterTex/*
 test*
 node_modules
 *.vim

@@ -1,0 +1,161 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Summary}{5}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Introduction}{5}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}What is Systems Biology?}{6}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Statement Of Problem}{6}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Quantitative Approaches}{6}{subsection.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Quantitative Models Based on Differential Equations}{8}{subsubsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Standards}{10}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Minimum Information (MI)}{11}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Minimum Information Required in the Annotation of Models (MIRIAM)}{11}{subsubsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2}Minimum Information About a Simulation Experiment (MIASE)}{13}{subsubsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Ontologies}{15}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Open Biomedical Ontologies (OBO)}{15}{subsubsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Model Annotations}{16}{subsubsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Model Metadata}{16}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Mathematics}{16}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Physical Entities}{16}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3}Simulation Experiment Annotations}{16}{subsubsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Physiological Models}{17}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}CellML}{17}{subsubsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}Systems Biology Markup Language (SBML)}{18}{subsubsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Extensibility}{19}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{SBML Development Tools }{20}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Practical Considerations}{20}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Usage}{20}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.3}NeuroML}{21}{subsubsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Simulation}{21}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1}Simulation Experiment Description Markup Language (SED-ML)}{21}{subsubsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2}Systems Biology Results Markup Language (SBRML)}{22}{subsubsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3}Numerical Markup Language (NuML)}{22}{subsubsection.3.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Visualization}{22}{subsection.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1}Systems Biology Graphical Notation (SBGN)}{23}{subsubsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{SBGN-ML}{23}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Other Standards}{23}{subsection.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.6.1}Human Readable Formats}{23}{subsubsection.3.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Jarnac}{24}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Mathematical Modeling Language (MML)}{24}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{PySCeS}{25}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{SBML-Shorthand}{25}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Antimony}{25}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.6.2}Biological Pathway Exchange (BioPAX)}{25}{subsubsection.3.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7}Model Databases}{26}{subsection.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.7.1}BioModels}{26}{subsubsection.3.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.7.2}CellML Repository}{26}{subsubsection.3.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.7.3}Physiome Repository}{27}{subsubsection.3.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.7.4}JSim Repository}{27}{subsubsection.3.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.7.5}JWS Online}{27}{subsubsection.3.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8}Future Considerations}{27}{subsection.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Platforms}{28}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Modeling}{28}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}CellDesigner}{29}{subsubsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}JSim }{29}{subsubsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3}JDesigner}{29}{subsubsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.4}PySCeS}{29}{subsubsection.4.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.5}Systems Biology Workbench (SBW)}{31}{subsubsection.4.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.6}VCell}{31}{subsubsection.4.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.7}Other Modeling Tools}{32}{subsubsection.4.1.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{BioNetGen \autocite {blinov2004bionetgen}}{32}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Gepasi \autocite {Gepasi:1993}}{32}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{iBioSim \autocite {myers2009ibiosim}}{32}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{JigCell \autocite {vass2004jigcell} \autocite {vass2006jigcell}}{33}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ProMot \autocite {mirschel2009promot}}{33}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{SBSI \autocite {adams2013sbsi}}{33}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{WinSCAMP {[}@SauroF9{]} \autocite {SauroScamp93}}{33}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Simulation Engines Libraries}{34}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}COPASI}{34}{subsubsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{SimpleCOPASI}{35}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}LibSBMLSim}{35}{subsubsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.3}RoadRunner}{35}{subsubsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.4}SBMLSimulator}{36}{subsubsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}MATLAB}{36}{subsection.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1}SimBiology}{36}{subsubsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.2}Systems Biology Toolbox (SBToolBox2) and PottersWheel}{36}{subsubsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.3}SBMLToolbox}{37}{subsubsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.4}SBML to MATLAB Translation}{37}{subsubsection.4.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Applications}{37}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Model Analysis}{37}{subsection.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Model Fitting and Validation}{39}{subsection.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Future Prospects and Conclusion}{39}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Recommended Resources}{40}{section.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Acknowledgments}{41}{section.8}
