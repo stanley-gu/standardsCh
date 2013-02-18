@@ -950,13 +950,13 @@ include commenting and annotation.
 
 #### Jarnac
 
-Jarnac [@sauro:2000,bergmann2006sbw] (also described later as part of the Jarnac
-modeling platform) implements two languages, a biochemical descriptive language which
-allows users to enter models as reaction schemes (similar to a SCAMP script)
-and a second language, the model control language which is a full featured
-scripting language that can be used to manipulate and analyze a model. The main
-advantage of Jarnac over other tools is that models can be very rapidly built
-and modeled.
+Jarnac [@sauro:2000] [@bergmann2006sbw] (also described later as part of the
+Jarnac modeling platform) implements two languages, a biochemical descriptive
+language which allows users to enter models as reaction schemes (similar to a
+SCAMP script) and a second language, the model control language which is a full
+featured scripting language that can be used to manipulate and analyze a model.
+The main advantage of Jarnac over other tools is that models can be very rapidly
+built and modeled.
 
 #### Mathematical Modeling Language (MML)
 
@@ -1160,7 +1160,7 @@ different simulation engines, SBML ODE Solver, COPASI, or SBW.
 
 ### Jarnac
 
-Jarnac [@sauro:2000,bergmann2006sbw] is a rapid prototyping script
+Jarnac [@sauro:2000] [@bergmann2006sbw] is a rapid prototyping script
 based tool that was developed as a successor to SCAMP [@SauroF91]. It
 is distributed as part of the Systems Biology Workbench which makes
 installation a on-click affair. Jarnac was developed in the late 1990s before
@@ -1183,7 +1183,7 @@ remedied by transferring a model directly to a tool such as COPASI via SBW.
 
 ### JDesigner
 
-JDesigner [@Sauro:Omics,BergmannCP:2006] is open source (BSD
+JDesigner [@Sauro:Omics] [@BergmannCP:2006] is open source (BSD
 licence) and runs under Windows. It requires SBW to enable
 simulation capabilities. With SBW, models can be constructed using
 JDesigner and seamlessly transferred to other tools such as COPASI
@@ -1356,7 +1356,7 @@ capabilities.
 - Open source; Linux, Mac OS, Microsoft Windows
 - <http://www.sbsi.ed.ac.uk/>
 
-#### WinSCAMP [@SauroF9] [@SauroScamp93]
+#### WinSCAMP [@SauroF91] [@SauroScamp93]
 A script based GUI application, which like Gepasi has a long
 tradition. Specialized for time course, steady state and metabolic control
 analysis of ODE based models.
@@ -1710,15 +1710,10 @@ Three main web sources which are of interest to readers of this chapter include:
 
 # Acknowledgments
 
-We would like to acknowledge the generous support from the Japan Science and
-Technology Agency, DARPA (BAA01-26 Bio-Computation), the US Department of Energy
-GTL program, and the National Institute of General Medical Sciences (NIGMS
-GM081070) without which the bulk of the work described in this chapter would not
-have been carried out. We would also like to acknowledge Mike Hucka, Andrew
-Finney and Hamid Bolouri for their initial work on the Systems Biology
-Workbench, Frank Bergmann for his tremendous programming work, Sri Paladugu and
-Vijay Chickarmane for their critical support in the development of novel
-computational methods in Systems Biology, and Maxwell Neal for his help and
-expertise on biomedical ontologies.
+This publication was made possible by grant number GM081070 from the National
+Institute for General Medical Sciences (NIGMS) at the National Institutes of
+Health. Its contents are solely the responsibility of the authors and do not
+necessarily represent the official views of NIGMS. We would also like to thank
+Maxwell Neal for his help and expertise on biomedical ontologies.
 
 # References
