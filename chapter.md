@@ -950,10 +950,13 @@ include commenting and annotation.
 
 #### Jarnac
 
-Users of Jarnac also have access to an
-advanced graphical user interface (GUI) (Figure \ref{Figure:jarnac}) 
-
-![User interface for Jarnac\label{Figure:jarnac}](images/jarnac.eps)
+Jarnac [@sauro:2000,bergmann2006sbw] (also described later as part of the Jarnac
+modeling platform) implements two languages, a biochemical descriptive language which
+allows users to enter models as reaction schemes (similar to a SCAMP script)
+and a second language, the model control language which is a full featured
+scripting language that can be used to manipulate and analyze a model. The main
+advantage of Jarnac over other tools is that models can be very rapidly built
+and modeled.
 
 #### Mathematical Modeling Language (MML)
 
@@ -1155,6 +1158,57 @@ standard for representing models of biochemical and gene-regulatory networks.
 CellDesigner supports simulation and parameter scanning through a selection of
 different simulation engines, SBML ODE Solver, COPASI, or SBW.
 
+### Jarnac
+
+Jarnac [@sauro:2000,bergmann2006sbw] is a rapid prototyping script
+based tool that was developed as a successor to SCAMP [@SauroF91]. It
+is distributed as part of the Systems Biology Workbench which makes
+installation a on-click affair. Jarnac was developed in the late 1990s before
+the advent of portable GUI toolkits which explains why it only runs under
+Windows although it runs well under Wine (Windows emulator) thus permitting it
+to run under Linux. Visually, Jarnac has two main windows, a console where
+commands can be issued and results returned and an editor where control scripts
+and models can be developed. The application also has a plotting window which
+is used when graphing commands are issued (see Figure \ref{Figure:jarnac}).
+
+![User interface for Jarnac\label{Figure:jarnac}](images/jarnac.eps)
+
+From our experience with using many simulation tools over the
+years, Jarnac probably offers the fastest development time for model building
+of any tool. Models can also be imported or exported as SBML. Like COPASI and
+PySCeS, Jarnac offers many analysis capabilities including extensive support
+for metabolic control analysis, structural analysis of networks and stochastic
+simulation. It has no explicit support for parameter fitting but this is easily
+remedied by transferring a model directly to a tool such as COPASI via SBW.
+
+### JDesigner
+
+JDesigner [@Sauro:Omics,BergmannCP:2006] is open source (BSD
+licence) and runs under Windows. It requires SBW to enable
+simulation capabilities. With SBW, models can be constructed using
+JDesigner and seamlessly transferred to other tools such as COPASI
+or any other SBW enabled tools. Unlike CellDesigner, JDesigner takes
+a minimal approach to representing networks. CellDesigner has twelve
+node types (plus variants) and six different transition types.
+JDesigner in contrast has one node type, one generic reaction type
+and two regulatory types. All networks can be constructed from these
+four basic types. This minimal approach reflects the fact that the
+underlying models are the same regardless of the molecules or
+reaction types. Thus protein network models and metabolic models are
+indistinguishable at the mathematical level. Although JDesigner has
+only a limited number of types, nodes, reactions and membranes can
+be modified visually to change colors, shapes etc. Moreover, nodes
+can be decorated with covalent sites and multimeric structures.
+JDesigner uses fully adjustable multi-bezier arcs to generate
+reactions and regulatory arcs and has a variety of export formats
+that allow camera-ready copy to be generated for publications (see Figure
+\ref{Figure:jdesigner} as an example).
+Models are stored in native SBML with specific open access annotations to store
+the visual information.
+
+![Example of JDesigner's visual
+format\label{Figure:jdesigner}](images/JDesigner1.eps)
+
 ### JSim \label{jsim}
 
 JSim [@raymond03] is a Java-based simulation system for building quantitative
@@ -1175,19 +1229,6 @@ fitting. Alternatively one can use JSim's command line interfaces (jsbatch and
 jsfim). JSim source code, binaries (for Windows, Macintosh and Linux) and
 documentation  are available free for non-commercial use at
 <http://physiome.org/>.
-
-### JDesigner
-
-One of the first visualization tools, JDesigner [@Sauro:Omics] [@sauro:2000]
-implements a traditional way to depict networks (see Figure
-\ref{Figure:jdesigner}) using a pictorial representation to indicate substances
-and reactions. JDesigner also employs Bezier curves to represent arcs in an
-attempt to make the diagrams similar to the notation found in many molecular
-biology text books. JDesigner can use Jarnac's extensive simulation
-capabilities (both ODE and stochastic) via SBW.
-
-![Example of JDesigner's visual
-format\label{Figure:jdesigner}](images/JDesigner1.eps)
 
 ### PySCeS
 
@@ -1400,20 +1441,28 @@ computing environments.
 
 ### RoadRunner
 
-RoadRunner is a powerful and portable simulation engine that is used in SBW, a
-resource sharing framework that allows applications to share functionality with
-each other [@bergmann2006sbw]. Jarnac and Roadrunner are already included with
-an SBW installation. COPASI and SBML ODE Solver may also be used as simulation
+RoadRunner is a powerful and portable simulation engine that was originally
+written in C# for SBW but is now available as a C/C++ library that can be
+called from other tools. RoadRunner works by generating C files containing the
+equations for the model from a loaded SBML file. The C file is compiled and
+linked at runtime into roadRunner. This results in improved performance when
+compared with traditional interpreter models. RoadRunner uses the integrator
+CVODE and NLEQ for steady state analysis [@cohen1996cvode]. To further
+speed up the simulation, the model is separated into a system of independent
+and dependent variables. This separation process is described in detail
+in [@vallabhajosyula2006conservation]. RoadRunner supports a threaded
+model where multiple models can be simulated simultaneously on multi-core
+machines. In addition roadRunner has a plugin interface that allows additional
+functionality to be added by a third-party. Most notable are the optimization
+plugins. At its core, roadRunner has the capacity to carry out time course
+simulations, compute the steady state, carry out sensitivity analysis together
+with all the usual coefficients as defined in metabolic control
+analysis [@hofmeyr-nutshell]. RoadRunner can also linearize the SBML
+model and perform a frequency analysis on the model. RoadRunner is available
+at <http://code.google.com/p/roadrunnerlib/> and can be compiled on Linux
+and Windows. Developers an access functionality either via the C API or a
+Python interface. COPASI and SBML ODE Solver may also be used as simulation
 engines alongside RoadRunner within SBW [@bergmann2008comparing].
-
-Instead of interpreting model equations, RoadRunner compiles the model
-equations dynamically, which results in  much improved performance when compared
-with traditional simulators. RoadRunner uses the integrator CVODE and NLEQ for
-steady state analysis [@cohen1996cvode]. To further speed up the simulation, the
-model is separated into a system of independent and dependent variables. This
-separation process is described in detail in [@vallabhajosyula2006conservation].
-Thus, all major operating systems are supported given that RoadRunner only
-depends on CVODE and NLEQ being available on the platform.
 
 ### SBMLSimulator
 
