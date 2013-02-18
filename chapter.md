@@ -571,11 +571,11 @@ The success of the ontology approach has led to dizzying number of different
 ontologies, the sheer number which may create an obstacle to integration. OBO
 (<http://obofoundry.org>) [@smith2007obo] was created in 2001 to address this
 issue by serving as an umbrella body for the developers of life-science
-ontologies. The key principles behind OBO [@smith2007obo] ontologies are that
-they must be *open* and *orthogonal*. Onotologies within OBO are *open* in the
-sense that its usage should be available without any constraints, and new
-applications may build upon OBO without restriction. Ontologies within OBO are
-*orthogonal* such that vocabulary is non-overlapping with other ontologies.
+ontologies. The key principles behind OBO ontologies are that they must be
+*open* and *orthogonal*. Onotologies within OBO are *open* in the sense that its
+usage should be available without any constraints, and new applications may
+build upon OBO without restriction. Ontologies within OBO are *orthogonal* such
+that vocabulary is non-overlapping with other ontologies.
 
 ### Model Annotations
 
