@@ -1072,16 +1072,6 @@ intracellular environment. Lumped parameter models dealing with systems
 physiology (e.g. blood pressure control, fluid retention, electrolyte balance,
 endocrine function, etc.) are also within the scope of CellML.
 
-### Physiome Repository
-
-The Physiome Model Repository (<http://www.cellml.org/tools/pmr>)
-[@yu2011physiome] is an offshoot of the CellML repository, which is unique in
-that it allows users to make their own copies of CellML and keep track of model
-changes using a distributed version control system, Mercurial
-[@o2007distributed]. One of the primary goals of this platform is to facilitate
-collaboration between several researchers, a common occurence during model
-development.
-
 ### JSim Repository
 
 The JSim (discussed in Section \ref{jsim}) group provides a repository of 370
@@ -1097,7 +1087,17 @@ run and interrogated over the Internet. As of December 2012, JWS Online
 contains 131 models, downloadable to SBML, while also providing a web browser
 interface to a simulation server.
 
-## Future Considerations
+#### Physiome Repository
+
+The Physiome Model Repository (<http://www.cellml.org/tools/pmr>)
+[@yu2011physiome] is an offshoot of the CellML repository, which is unique in
+that it allows users to make their own copies of CellML and keep track of model
+changes using a distributed version control system, Mercurial
+[@o2007distributed]. One of the primary goals of this platform is to facilitate
+collaboration between several researchers, a common occurence during model
+development.
+
+# Future Considerations
 
 With the success of Minimum Information guidelines and standardized
 representations of biological models, quantitative modeling has surged in
